@@ -45,6 +45,70 @@
                 </Example>
               </Examples>
             </Folder>
+            <Folder>
+              <Title>Working With Images</Title>
+              <Description>This section includes the sample examples for all image related operations which could be performed using Aspose.Pdf.</Description>
+              <FolderName>WorkingWithImages</FolderName>
+              <Order>2</Order>
+              <Examples>
+                <Example>
+                  <Title>Convert All PDF Pages to JPEG Images</Title>
+                  <Description>The JpegDevice class allows you to convert PDF pages to JPEG images using Aspose.Pdf. This class provides a method named Process which allows you to convert a particular page of the PDF file to JPEG image. If you want to convert all the pages to the images, you need to loop through all the pages of the PDF and then convert each page individually. You first need to create an object of Document class, so you could get the particular page which you want to convert to JPEG. After that, you need to call the Process method to convert the page to JPEG image.</Description>
+                  <FolderName>ConvertPagesToImages</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Convert all PDF pages to JPEG Images</DisplayName>
+                    <Url>Convert+all+PDF+pages+to+JPEG+Images</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\image1.jpg</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\image2.jpg</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\image3.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Working With Text</Title>
+              <Description>This section includes sample examples for all the text operations which could be performed using Aspose.PDF</Description>
+              <FolderName>WorkingWithText</FolderName>
+              <Order>3</Order>
+              <Examples>
+                <Example>
+                  <Title>Replace Text in All Pages of PDF</Title>
+                  <Description>In order to replace text in all the pages of a PDF document, you first need to use TextFragmentAbsorber to find the particular phrase you want to replace. After that, you need to go through all the TextFragments to replace the text and change any other attributes. Once you have done that, you only need to save the output PDF using Save method of the Document object. The example elaborates this in detail to replace text in a PDF document.</Description>
+                  <FolderName>ReplaceTextInAllPages</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Replace Text in All Pages of a PDF Document</DisplayName>
+                    <Url>Replace+Text+in+All+Pages+of+a+PDF+Document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
           </Folders>
         </Folder>
       </Folders>
