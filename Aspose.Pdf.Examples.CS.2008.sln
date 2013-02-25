@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProgrammersGuide", "ProgrammersGuide", "{3C28B2FB-A4F7-46A7-88D4-159410DA7AE1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkingWithAsposePDF", "WorkingWithAsposePDF", "{1670DD6E-4F07-4963-82D8-31C5D6EB2000}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkingWithPages", "WorkingWithPages", "{7388A035-A891-4CCA-9288-80B5D9AC85BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcatenatePdfFiles", "ProgrammersGuide\WorkingWithAsposePDF\WorkingWithPages\ConcatenatePdfFiles\CSharp\ConcatenatePdfFiles.csproj", "{94AF7299-E998-40DE-8026-F61FC48D30F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{94AF7299-E998-40DE-8026-F61FC48D30F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94AF7299-E998-40DE-8026-F61FC48D30F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94AF7299-E998-40DE-8026-F61FC48D30F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1670DD6E-4F07-4963-82D8-31C5D6EB2000} = {3C28B2FB-A4F7-46A7-88D4-159410DA7AE1}
+		{7388A035-A891-4CCA-9288-80B5D9AC85BB} = {1670DD6E-4F07-4963-82D8-31C5D6EB2000}
+		{94AF7299-E998-40DE-8026-F61FC48D30F1} = {7388A035-A891-4CCA-9288-80B5D9AC85BB}
+	EndGlobalSection
+EndGlobal

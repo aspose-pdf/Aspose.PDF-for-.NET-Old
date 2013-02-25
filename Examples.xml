@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Data>
+  <Folders>
+    <Folder>
+      <Title>Programmers Guide</Title>
+      <Description>Programmers Guide provides code samples about key programming concepts to build .NET and other applications that use Aspose.Pdf.</Description>
+      <FolderName>ProgrammersGuide</FolderName>
+      <Order>1</Order>
+      <Folders>
+        <Folder>
+          <Title>Working With Aspose.PDF</Title>
+          <Description>Samples and Examples for using Aspose.PDF in your applications.</Description>
+          <FolderName>WorkingWithAsposePDF</FolderName>
+          <Order>1</Order>
+          <Folders>
+            <Folder>
+              <Title>Working With Pages</Title>
+              <Description>This section includes sample examples for all the page level operations which could be performed using Aspose.PDF</Description>
+              <FolderName>WorkingWithPages</FolderName>
+              <Order>1</Order>
+              <Examples>
+                <Example>
+                  <Title>Concatenate PDF Files</Title>
+                  <Description>Example explaining concatenation of two PDF files.</Description>
+                  <FolderName>ConcatenatePdfFiles</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Concatenate PDF Files</DisplayName>
+                    <Url>Concatenate+PDF+Files</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input1.pdf</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\input2.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+          </Folders>
+        </Folder>
+      </Folders>
+    </Folder>
+  </Folders>
+</Data>
