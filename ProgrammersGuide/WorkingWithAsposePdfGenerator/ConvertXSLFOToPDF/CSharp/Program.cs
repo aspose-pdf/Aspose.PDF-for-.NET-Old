@@ -25,7 +25,7 @@ namespace ConvertXSLFOToPDF
             //License license = new License();
             //license.SetLicense(dataDir + "Aspose.Total.lic");
 
-            //Create a Converter object.
+            //Create a Converter object..
             Aspose.Pdf.Generator.Pdf app;
 
             System.IO.Stream pdf;
