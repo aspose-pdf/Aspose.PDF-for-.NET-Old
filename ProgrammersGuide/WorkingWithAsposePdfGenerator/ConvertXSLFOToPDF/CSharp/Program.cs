@@ -61,7 +61,7 @@ namespace ConvertXSLFOToPDF
             //app.BindFO(new System.IO.FileStream(fo, System.IO.FileMode.Open, System.IO.FileAccess.Read));
             app.Save(dataDir + name + "_fo_stream2string.pdf");
 
-            //4. fo:stream2stream
+            //4. fo:stream2stream 
             app = new Aspose.Pdf.Generator.Pdf();
             //app.BindFO(new System.IO.FileStream(fo, System.IO.FileMode.Open, System.IO.FileAccess.Read));
             //pdf = new System.IO.FileStream(name + "_fo_stream2stream.pdf", System.IO.FileMode.Create);
