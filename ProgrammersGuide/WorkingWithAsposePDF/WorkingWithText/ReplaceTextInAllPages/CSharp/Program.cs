@@ -38,8 +38,8 @@ namespace ReplaceTextInAllPages
                 textFragment.Text = "TEXT";
                 textFragment.TextState.Font = FontRepository.FindFont("Verdana");
                 textFragment.TextState.FontSize = 22;
-                textFragment.TextState.ForegroundColor = System.Drawing.Color.Blue;
-                textFragment.TextState.BackgroundColor = System.Drawing.Color.Green;
+                textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Blue);
+                textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
             }
 
             // Save resulting PDF document.
