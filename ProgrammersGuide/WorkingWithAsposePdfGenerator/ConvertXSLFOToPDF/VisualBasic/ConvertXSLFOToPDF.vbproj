@@ -40,7 +40,7 @@
   <ItemGroup>
     <Reference Include="Aspose.Pdf">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\Bin\net2.0\Aspose.Pdf.dll</HintPath>
+      <HintPath>..\..\..\..\..\Bin\net2.0\Aspose.Pdf.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
