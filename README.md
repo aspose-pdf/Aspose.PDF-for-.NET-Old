@@ -1,22 +1,20 @@
 #Aspose.Pdf for .NET Examples Repository
 
-This package contains C# and VB.NET Example Projects for [Aspose.Pdf for .NET](http://www.aspose.com/categories/.net-components/aspose.pdf-for-.net/default.aspx).
+This repository contains C# and VB.NET Example Projects for [Aspose.Pdf for .NET](http://www.aspose.com/categories/.net-components/aspose.pdf-for-.net/default.aspx).
 
-Aspose.Pdf for .NET is a PDF document creation and manipulation component that enables your .NET applications to read, write and manipulate existing PDF documents without using Adobe Acrobat. It also allows you to create forms and manage form fields embedded in a PDF document.
+##How to use the Examples?
 
-Using Aspose.Pdf for .NET in your project gives you the following benefits:
+###With the Examples Dashboard
 
-+ Rich Set of Features
+Download the [Aspose Examples Dashboard for .NET](http://www.aspose.com/community/files/51/.net-components/aspose-examples-for-.net/default.aspx) to view and run all these examples on your PC. It updates itself with the latest dependency libraries and examples.
 
-+ No Microsoft Word Automation
+![Aspose Examples Dashboard](http://www.aspose.com/blogs/wp-content/uploads/2013/04/Dotnet-Dashboard.png "Aspose Examples Dashboard")
 
-+ Platform Independence
+###With IDE
 
-+ Performance and Scalability
+Clone or Download the ZIP and extract the contents to your local hard drive. It has Solution (SLN) files for Microsoft Visual Studio 2005, 2008 and 2010.
 
-+ Minimal Learning Curve
-
-These example projects provide helpful demonstrations and code when using Aspose.Pdf for .NET .
+Also download the [latest version](http://www.aspose.com/community/files/51/.net-components/aspose.pdf-for-.net/default.aspx) of Aspose.Pdf for .NET and set/fix dll references.
 
 ## Open Source Feel of Aspose.Pdf
 
@@ -62,44 +60,6 @@ Each example is provided in both C# and Visual Basic.
   <tr><td>Move or Remove Field</td><td>Shows  how to move or remove a form field from a Pdf file.</td></tr>
   <tr><td>Northwind Examples</td><td>Has different examples using the Northwind database.</td></tr>  
 </table>
-
-###Data
-
-+ Input - Pdf files are taken as input from user.
-+ Northwind.mdb - Some examples use this Microsoft Access Database found under the "Resources\Database" directory.
-
-###Output
-
-+ Output PDF file is rendered to the user.
-
-
-###Help Material
-
-For further details on setting up the examples and any requirements refer to the readme.txt found in the root of the repository.
-
-
-##Download the Examples
-
-Please [Download the Aspose.Pdf for .NET Examples](https://github.com/asposepdf/Aspose_Pdf_NET/downloads) to try them at your end.
-
-
-##How to use the Examples?
-
-1. Firstly make sure that you have downloaded and installed the latest version of [Aspose.Pdf for .NET](http://www.aspose.com/community/files/51/.net-components/aspose.pdf-for-.net/category1184.aspx). We recommend using the .MSI installer for fast installation and seamless intergration with the examples.
-
-2. Download the examples from the above link. The solution files for Microsoft Visual Studio 2005, 2008 and 2010 are provided with the examples. 
-
-3. Once downloaded you can open the examples by opening the appropriate solution file (.sln) according to the version of Visual Studio installed on your system.
-
-+ Aspose.Pdf.Demos-2005.sln - Open with Microsoft Visual Studio 2005
-+ Aspose.Pdf.Demos-2008.sln - Open with Microsoft Visual Studio 2008
-+ Aspose.Pdf.Demos-2010.sln - Open with Microsoft Visual Studio 2010
-
-4. The example should be ready to compile. Click on "Debug" menu and choose one of the following menu items to start the example:
-
-- Start Debugging
-- Start Without Debugging
-
 
 ##Contact Us
 
