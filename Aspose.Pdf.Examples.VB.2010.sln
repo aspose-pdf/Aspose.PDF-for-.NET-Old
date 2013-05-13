@@ -24,6 +24,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeleteParticularPageFromPDF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpdatePageDimensions", "ProgrammersGuide\WorkingWithAsposePDF\WorkingWithPages\UpdatePageDimensions\VisualBasic\UpdatePageDimensions.vbproj", "{64B29320-74D2-4DE8-AE4C-51C7D7E02002}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddImageAsPageBackground", "ProgrammersGuide\WorkingWithAsposePDF\WorkingWithPages\AddImageAsPageBackground\VisualBasic\AddImageAsPageBackground.vbproj", "{81668E3A-5106-45AF-AE49-A030C45E4049}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkingWithImages", "WorkingWithImages", "{0C0DA8AF-B7F2-48EF-BFBA-EC9A235612DD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertPagesToImages", "ProgrammersGuide\WorkingWithAsposePDF\WorkingWithImages\ConvertPagesToImages\VisualBasic\ConvertPagesToImages.vbproj", "{7EC9BD7E-0F2F-41F7-9F1E-8604C931B894}"
@@ -31,6 +33,20 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkingWithText", "WorkingWithText", "{899E78C9-72B8-43E5-A25A-5B3645EEDAE4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReplaceTextInAllPages", "ProgrammersGuide\WorkingWithAsposePDF\WorkingWithText\ReplaceTextInAllPages\VisualBasic\ReplaceTextInAllPages.vbproj", "{39921F9C-C8B1-4E0C-A31A-D7091D3CD542}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtractTextFromAllPagesOfPDF", "ProgrammersGuide\WorkingWithAsposePDF\WorkingWithText\ExtractTextFromAllPagesOfPDF\VisualBasic\ExtractTextFromAllPagesOfPDF.vbproj", "{92064534-1D02-4E8A-A974-F25DEA4AB4C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtractTextFromIndividualPageOfPDF", "ProgrammersGuide\WorkingWithAsposePDF\WorkingWithText\ExtractTextFromIndividualPageOfPDF\VisualBasic\ExtractTextFromIndividualPageOfPDF.vbproj", "{8CFBC7C7-88FA-42BC-B6E4-2ACE9F6460D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchAndGetTextFromAllPagesOfPDF", "ProgrammersGuide\WorkingWithAsposePDF\WorkingWithText\SearchAndGetTextFromAllPagesOfPDF\VisualBasic\SearchAndGetTextFromAllPagesOfPDF.vbproj", "{64078DBC-B8E6-4260-A663-1BDA4B83483E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchAndGetTextFromSinglePageOfPDF", "ProgrammersGuide\WorkingWithAsposePDF\WorkingWithText\SearchAndGetTextFromSinglePageOfPDF\VisualBasic\SearchAndGetTextFromSinglePageOfPDF.vbproj", "{6B45089C-98C7-4D45-9757-9124CBF28727}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchAndGetTextSegmentsFromAllPagesOfPDF", "ProgrammersGuide\WorkingWithAsposePDF\WorkingWithText\SearchAndGetTextSegmentsFromAllPagesOfPDF\VisualBasic\SearchAndGetTextSegmentsFromAllPagesOfPDF.vbproj", "{32A6EB5B-51F3-4463-8574-B446CA09FE40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchAndGetTextSegmentsFromIndividualPageOfPDF", "ProgrammersGuide\WorkingWithAsposePDF\WorkingWithText\SearchAndGetTextSegmentsFromIndividualPageOfPDF\VisualBasic\SearchAndGetTextSegmentsFromIndividualPageOfPDF.vbproj", "{2EF3A91C-D307-458F-AE81-A56CE1C174B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchAndGetTextFromAllPagesUsingRegularExpression", "ProgrammersGuide\WorkingWithAsposePDF\WorkingWithText\SearchAndGetTextFromAllPagesUsingRegularExpression\VisualBasic\SearchAndGetTextFromAllPagesUsingRegularExpression.vbproj", "{DC64AD03-205C-470D-8CC1-D247D76CAFDE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkWithDocumentConversion", "WorkWithDocumentConversion", "{49D2454C-BA49-4054-8094-EEA55880ECAF}"
 EndProject
@@ -110,6 +126,33 @@ Global
 		{39921F9C-C8B1-4E0C-A31A-D7091D3CD542}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{39921F9C-C8B1-4E0C-A31A-D7091D3CD542}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39921F9C-C8B1-4E0C-A31A-D7091D3CD542}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92064534-1D02-4E8A-A974-F25DEA4AB4C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92064534-1D02-4E8A-A974-F25DEA4AB4C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92064534-1D02-4E8A-A974-F25DEA4AB4C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CFBC7C7-88FA-42BC-B6E4-2ACE9F6460D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CFBC7C7-88FA-42BC-B6E4-2ACE9F6460D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CFBC7C7-88FA-42BC-B6E4-2ACE9F6460D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64078DBC-B8E6-4260-A663-1BDA4B83483E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64078DBC-B8E6-4260-A663-1BDA4B83483E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64078DBC-B8E6-4260-A663-1BDA4B83483E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B45089C-98C7-4D45-9757-9124CBF28727}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B45089C-98C7-4D45-9757-9124CBF28727}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B45089C-98C7-4D45-9757-9124CBF28727}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32A6EB5B-51F3-4463-8574-B446CA09FE40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32A6EB5B-51F3-4463-8574-B446CA09FE40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32A6EB5B-51F3-4463-8574-B446CA09FE40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EF3A91C-D307-458F-AE81-A56CE1C174B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EF3A91C-D307-458F-AE81-A56CE1C174B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EF3A91C-D307-458F-AE81-A56CE1C174B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC64AD03-205C-470D-8CC1-D247D76CAFDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC64AD03-205C-470D-8CC1-D247D76CAFDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC64AD03-205C-470D-8CC1-D247D76CAFDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5C1B238-58D4-4466-8B20-7478EDB6E44C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5C1B238-58D4-4466-8B20-7478EDB6E44C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5C1B238-58D4-4466-8B20-7478EDB6E44C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5472A7EE-B872-44B4-93CD-0AB9113478A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5472A7EE-B872-44B4-93CD-0AB9113478A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5472A7EE-B872-44B4-93CD-0AB9113478A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E94DDEE9-7783-4A8E-928D-8230989E4736}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E94DDEE9-7783-4A8E-928D-8230989E4736}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E94DDEE9-7783-4A8E-928D-8230989E4736}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -167,6 +210,15 @@ Global
 		{7EC9BD7E-0F2F-41F7-9F1E-8604C931B894} = {0C0DA8AF-B7F2-48EF-BFBA-EC9A235612DD}
 		{899E78C9-72B8-43E5-A25A-5B3645EEDAE4} = {1670DD6E-4F07-4963-82D8-31C5D6EB2000}
 		{39921F9C-C8B1-4E0C-A31A-D7091D3CD542} = {899E78C9-72B8-43E5-A25A-5B3645EEDAE4}
+		{92064534-1D02-4E8A-A974-F25DEA4AB4C0} = {899E78C9-72B8-43E5-A25A-5B3645EEDAE4}
+		{8CFBC7C7-88FA-42BC-B6E4-2ACE9F6460D6} = {899E78C9-72B8-43E5-A25A-5B3645EEDAE4}
+		{64078DBC-B8E6-4260-A663-1BDA4B83483E} = {899E78C9-72B8-43E5-A25A-5B3645EEDAE4}
+		{6B45089C-98C7-4D45-9757-9124CBF28727} = {899E78C9-72B8-43E5-A25A-5B3645EEDAE4}
+		{32A6EB5B-51F3-4463-8574-B446CA09FE40} = {899E78C9-72B8-43E5-A25A-5B3645EEDAE4}
+		{2EF3A91C-D307-458F-AE81-A56CE1C174B6} = {899E78C9-72B8-43E5-A25A-5B3645EEDAE4}
+		{DC64AD03-205C-470D-8CC1-D247D76CAFDE} = {899E78C9-72B8-43E5-A25A-5B3645EEDAE4}
+		{B5C1B238-58D4-4466-8B20-7478EDB6E44C} = {899E78C9-72B8-43E5-A25A-5B3645EEDAE4}
+		{5472A7EE-B872-44B4-93CD-0AB9113478A0} = {899E78C9-72B8-43E5-A25A-5B3645EEDAE4}
 		{49D2454C-BA49-4054-8094-EEA55880ECAF} = {1670DD6E-4F07-4963-82D8-31C5D6EB2000}
 		{E94DDEE9-7783-4A8E-928D-8230989E4736} = {49D2454C-BA49-4054-8094-EEA55880ECAF}
 		{17357CBF-4D49-4AAC-8497-DCB43C79BA85} = {49D2454C-BA49-4054-8094-EEA55880ECAF}
