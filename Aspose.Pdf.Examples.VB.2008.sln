@@ -48,6 +48,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchAndGetTextSegmentsFro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchAndGetTextFromAllPagesUsingRegularExpression", "ProgrammersGuide\WorkingWithAsposePDF\WorkingWithText\SearchAndGetTextFromAllPagesUsingRegularExpression\VisualBasic\SearchAndGetTextFromAllPagesUsingRegularExpression.vbproj", "{DC64AD03-205C-470D-8CC1-D247D76CAFDE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReplaceTextInSinglePageOfPDF", "ProgrammersGuide\WorkingWithAsposePDF\WorkingWithText\ReplaceTextInSinglePageOfPDF\VisualBasic\ReplaceTextInSinglePageOfPDF.vbproj", "{5472A7EE-B872-44B4-93CD-0AB9113478A0}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkWithDocumentConversion", "WorkWithDocumentConversion", "{49D2454C-BA49-4054-8094-EEA55880ECAF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertPDFToDOC", "ProgrammersGuide\WorkingWithAsposePDF\WorkWithDocumentConversion\ConvertPDFToDOC\VisualBasic\ConvertPDFToDOC.vbproj", "{E94DDEE9-7783-4A8E-928D-8230989E4736}"
@@ -59,6 +61,20 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertXPSToPDF", "ProgrammersGuide\WorkingWithAsposePDF\WorkWithDocumentConversion\ConvertXPSToPDF\VisualBasic\ConvertXPSToPDF.vbproj", "{6D0B4CED-717C-42D4-AAE2-75521087F638}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertPDFToPDFA", "ProgrammersGuide\WorkingWithAsposePDF\WorkWithDocumentConversion\ConvertPDFToPDFA\VisualBasic\ConvertPDFToPDFA.vbproj", "{BFFF28FD-D51D-4788-A57F-9BBD0197EC73}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkingWithAnnotations", "WorkingWithAnnotations", "{023A85AE-2DFD-4C3C-9C5D-D5DD8E2FFCCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddAnnotationInExistingPDFFile", "ProgrammersGuide\WorkingWithAsposePDF\WorkingWithAnnotations\AddAnnotationInExistingPDFFile\VisualBasic\AddAnnotationInExistingPDFFile.vbproj", "{6A9F2DF8-14AE-47F1-9785-6CB604532FBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetParticularAnnotationFromPDFFile", "ProgrammersGuide\WorkingWithAsposePDF\WorkingWithAnnotations\GetParticularAnnotationFromPDFFile\VisualBasic\GetParticularAnnotationFromPDFFile.vbproj", "{EE2CC527-9940-4211-AB1D-183141FA3E42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetAllAnnotationsFromPageOfPDFDocument", "ProgrammersGuide\WorkingWithAsposePDF\WorkingWithAnnotations\GetAllAnnotationsFromPageOfPDFDocument\VisualBasic\GetAllAnnotationsFromPageOfPDFDocument.vbproj", "{55E05189-E2B6-4C0D-A772-983CEC0EC4E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeleteParticularAnnotationFromPDFFile", "ProgrammersGuide\WorkingWithAsposePDF\WorkingWithAnnotations\DeleteParticularAnnotationFromPDFFile\VisualBasic\DeleteParticularAnnotationFromPDFFile.vbproj", "{B6BF3155-86C6-41C8-BB48-ACABCBFF5505}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeleteAllAnnotationsFromPageOfPDFFile", "ProgrammersGuide\WorkingWithAsposePDF\WorkingWithAnnotations\DeleteAllAnnotationsFromPageOfPDFFile\VisualBasic\DeleteAllAnnotationsFromPageOfPDFFile.vbproj", "{B4F39F15-B67C-4655-BC55-82DFE6719317}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddSwfFileAsAnnotationToPDFDocument", "ProgrammersGuide\WorkingWithAsposePDF\WorkingWithAnnotations\AddSwfFileAsAnnotationToPDFDocument\VisualBasic\AddSwfFileAsAnnotationToPDFDocument.vbproj", "{6002DECC-A338-49F3-89AD-283A7C58C163}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkingWithAsposePdfGenerator", "WorkingWithAsposePdfGenerator", "{B8CF72DB-8020-4477-A974-1D66F60A7940}"
 EndProject
@@ -168,6 +184,27 @@ Global
 		{BFFF28FD-D51D-4788-A57F-9BBD0197EC73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BFFF28FD-D51D-4788-A57F-9BBD0197EC73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFFF28FD-D51D-4788-A57F-9BBD0197EC73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A9F2DF8-14AE-47F1-9785-6CB604532FBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A9F2DF8-14AE-47F1-9785-6CB604532FBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A9F2DF8-14AE-47F1-9785-6CB604532FBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE2CC527-9940-4211-AB1D-183141FA3E42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE2CC527-9940-4211-AB1D-183141FA3E42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE2CC527-9940-4211-AB1D-183141FA3E42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55E05189-E2B6-4C0D-A772-983CEC0EC4E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55E05189-E2B6-4C0D-A772-983CEC0EC4E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55E05189-E2B6-4C0D-A772-983CEC0EC4E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6BF3155-86C6-41C8-BB48-ACABCBFF5505}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6BF3155-86C6-41C8-BB48-ACABCBFF5505}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6BF3155-86C6-41C8-BB48-ACABCBFF5505}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4F39F15-B67C-4655-BC55-82DFE6719317}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4F39F15-B67C-4655-BC55-82DFE6719317}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4F39F15-B67C-4655-BC55-82DFE6719317}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6002DECC-A338-49F3-89AD-283A7C58C163}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6002DECC-A338-49F3-89AD-283A7C58C163}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6002DECC-A338-49F3-89AD-283A7C58C163}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD6A1540-932F-4D54-B277-B3B74BC0D340}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD6A1540-932F-4D54-B277-B3B74BC0D340}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD6A1540-932F-4D54-B277-B3B74BC0D340}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECE79A97-B3DD-4EF1-855B-BA90DE0BAFE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{ECE79A97-B3DD-4EF1-855B-BA90DE0BAFE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECE79A97-B3DD-4EF1-855B-BA90DE0BAFE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -225,6 +262,14 @@ Global
 		{8B3A35F6-C7E8-47B6-AD4D-46F6ADD367BF} = {49D2454C-BA49-4054-8094-EEA55880ECAF}
 		{6D0B4CED-717C-42D4-AAE2-75521087F638} = {49D2454C-BA49-4054-8094-EEA55880ECAF}
 		{BFFF28FD-D51D-4788-A57F-9BBD0197EC73} = {49D2454C-BA49-4054-8094-EEA55880ECAF}
+		{023A85AE-2DFD-4C3C-9C5D-D5DD8E2FFCCD} = {1670DD6E-4F07-4963-82D8-31C5D6EB2000}
+		{6A9F2DF8-14AE-47F1-9785-6CB604532FBB} = {023A85AE-2DFD-4C3C-9C5D-D5DD8E2FFCCD}
+		{EE2CC527-9940-4211-AB1D-183141FA3E42} = {023A85AE-2DFD-4C3C-9C5D-D5DD8E2FFCCD}
+		{55E05189-E2B6-4C0D-A772-983CEC0EC4E7} = {023A85AE-2DFD-4C3C-9C5D-D5DD8E2FFCCD}
+		{B6BF3155-86C6-41C8-BB48-ACABCBFF5505} = {023A85AE-2DFD-4C3C-9C5D-D5DD8E2FFCCD}
+		{B4F39F15-B67C-4655-BC55-82DFE6719317} = {023A85AE-2DFD-4C3C-9C5D-D5DD8E2FFCCD}
+		{6002DECC-A338-49F3-89AD-283A7C58C163} = {023A85AE-2DFD-4C3C-9C5D-D5DD8E2FFCCD}
+		{BD6A1540-932F-4D54-B277-B3B74BC0D340} = {023A85AE-2DFD-4C3C-9C5D-D5DD8E2FFCCD}
 		{B8CF72DB-8020-4477-A974-1D66F60A7940} = {3C28B2FB-A4F7-46A7-88D4-159410DA7AE1}
 		{ECE79A97-B3DD-4EF1-855B-BA90DE0BAFE8} = {B8CF72DB-8020-4477-A974-1D66F60A7940}
 		{3C0DF44D-61AC-4A24-9E02-F432F5E6A44A} = {B8CF72DB-8020-4477-A974-1D66F60A7940}
