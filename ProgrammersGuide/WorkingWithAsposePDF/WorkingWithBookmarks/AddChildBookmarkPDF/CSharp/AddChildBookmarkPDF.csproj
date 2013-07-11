@@ -1,14 +1,14 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{B5C1B238-58D4-4466-8B20-7478EDB6E44C}</ProjectGuid>
+    <ProjectGuid>{E5DB5DE3-EAD4-4538-9826-809FC5E2108A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>SearchAndGetTextFromSinglePageUsingRegularExpression</RootNamespace>
-    <AssemblyName>SearchAndGetTextFromSinglePageUsingRegularExpression</AssemblyName>
+    <RootNamespace>AddChildBookmarkPDF</RootNamespace>
+    <AssemblyName>AddChildBookmarkPDF</AssemblyName>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>3.5</OldToolsVersion>
@@ -43,6 +43,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Data\**\*" Exclude="..\Data\*Out*">
+      <Link>Data\Data\</Link>
+    </None>
   </ItemGroup>
   <!-- Conditional build path import - added for VS2005 compatibility (since there is no MSBuildToolsPath in VS2005) -->
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" Condition="$(MSBuildToolsPath) != ''" />
