@@ -48,6 +48,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchAndGetTextSegmentsFro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchAndGetTextFromAllPagesUsingRegularExpression", "ProgrammersGuide\WorkingWithAsposePDF\WorkingWithText\SearchAndGetTextFromAllPagesUsingRegularExpression\VisualBasic\SearchAndGetTextFromAllPagesUsingRegularExpression.vbproj", "{DC64AD03-205C-470D-8CC1-D247D76CAFDE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchAndGetTextFromSinglePageUsingRegularExpression", "ProgrammersGuide\WorkingWithAsposePDF\WorkingWithText\SearchAndGetTextFromSinglePageUsingRegularExpression\VisualBasic\SearchAndGetTextFromSinglePageUsingRegularExpression.vbproj", "{B5C1B238-58D4-4466-8B20-7478EDB6E44C}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReplaceTextInSinglePageOfPDF", "ProgrammersGuide\WorkingWithAsposePDF\WorkingWithText\ReplaceTextInSinglePageOfPDF\VisualBasic\ReplaceTextInSinglePageOfPDF.vbproj", "{5472A7EE-B872-44B4-93CD-0AB9113478A0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkWithDocumentConversion", "WorkWithDocumentConversion", "{49D2454C-BA49-4054-8094-EEA55880ECAF}"
@@ -95,6 +97,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddBookmarkInPDF", "ProgrammersGuide\WorkingWithAsposePDF\WorkingWithBookmarks\AddBookmarkInPDF\VisualBasic\AddBookmarkInPDF.vbproj", "{CED10958-F529-489C-80F8-21F7B0898B35}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddChildBookmarkPDF", "ProgrammersGuide\WorkingWithAsposePDF\WorkingWithBookmarks\AddChildBookmarkPDF\VisualBasic\AddChildBookmarkPDF.vbproj", "{E5DB5DE3-EAD4-4538-9826-809FC5E2108A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeleteAllBookmarksFromPDF", "ProgrammersGuide\WorkingWithAsposePDF\WorkingWithBookmarks\DeleteAllBookmarksFromPDF\VisualBasic\DeleteAllBookmarksFromPDF.vbproj", "{E402E6E6-FA6B-45E1-A23B-BAE2C29717DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeleteParticularBookmarkFromPDF", "ProgrammersGuide\WorkingWithAsposePDF\WorkingWithBookmarks\DeleteParticularBookmarkFromPDF\VisualBasic\DeleteParticularBookmarkFromPDF.vbproj", "{8F844457-850E-4AEA-AA2E-5DF686C547BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetBookmarksFromPDF", "ProgrammersGuide\WorkingWithAsposePDF\WorkingWithBookmarks\GetBookmarksFromPDF\VisualBasic\GetBookmarksFromPDF.vbproj", "{92A6E946-7E2A-4E03-8D7C-093EAF17E1C1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkingWithAsposePdfGenerator", "WorkingWithAsposePdfGenerator", "{B8CF72DB-8020-4477-A974-1D66F60A7940}"
 EndProject
@@ -249,6 +257,15 @@ Global
 		{E402E6E6-FA6B-45E1-A23B-BAE2C29717DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E402E6E6-FA6B-45E1-A23B-BAE2C29717DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E402E6E6-FA6B-45E1-A23B-BAE2C29717DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F844457-850E-4AEA-AA2E-5DF686C547BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F844457-850E-4AEA-AA2E-5DF686C547BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F844457-850E-4AEA-AA2E-5DF686C547BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92A6E946-7E2A-4E03-8D7C-093EAF17E1C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92A6E946-7E2A-4E03-8D7C-093EAF17E1C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92A6E946-7E2A-4E03-8D7C-093EAF17E1C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F3FD719-1393-437B-B383-759C3C700772}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F3FD719-1393-437B-B383-759C3C700772}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F3FD719-1393-437B-B383-759C3C700772}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECE79A97-B3DD-4EF1-855B-BA90DE0BAFE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{ECE79A97-B3DD-4EF1-855B-BA90DE0BAFE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECE79A97-B3DD-4EF1-855B-BA90DE0BAFE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -324,6 +341,9 @@ Global
 		{CED10958-F529-489C-80F8-21F7B0898B35} = {2A941E84-AD28-4E2E-8633-C25745BEF307}
 		{E5DB5DE3-EAD4-4538-9826-809FC5E2108A} = {2A941E84-AD28-4E2E-8633-C25745BEF307}
 		{E402E6E6-FA6B-45E1-A23B-BAE2C29717DE} = {2A941E84-AD28-4E2E-8633-C25745BEF307}
+		{8F844457-850E-4AEA-AA2E-5DF686C547BD} = {2A941E84-AD28-4E2E-8633-C25745BEF307}
+		{92A6E946-7E2A-4E03-8D7C-093EAF17E1C1} = {2A941E84-AD28-4E2E-8633-C25745BEF307}
+		{4F3FD719-1393-437B-B383-759C3C700772} = {2A941E84-AD28-4E2E-8633-C25745BEF307}
 		{B8CF72DB-8020-4477-A974-1D66F60A7940} = {3C28B2FB-A4F7-46A7-88D4-159410DA7AE1}
 		{ECE79A97-B3DD-4EF1-855B-BA90DE0BAFE8} = {B8CF72DB-8020-4477-A974-1D66F60A7940}
 		{3C0DF44D-61AC-4A24-9E02-F432F5E6A44A} = {B8CF72DB-8020-4477-A974-1D66F60A7940}

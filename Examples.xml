@@ -866,6 +866,140 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                 </Example>
               </Examples>
             </Folder>
+            <Folder>
+              <Title>Working with Bookmarks</Title>
+              <Description>This section includes the following examples:
+
+
+1: Add a Bookmark in the PDF Document
+2: Add a Child Bookmark in the PDF Document
+3: Delete All Bookmarks from the PDF Document
+4: Delete a Particular Bookmark from the PDF Document
+5: Get Bookmarks from the PDF Document
+6: Get ChildBookmarks From the PDF Document
+7: Update Bookmarks in a PDF Document
+8: Update Child Bookmarks in a PDF Document</Description>
+              <FolderName>WorkingWithBookmarks</FolderName>
+              <Order>7</Order>
+              <Examples>
+                <Example>
+                  <Title>Add a Bookmark in the PDF Document</Title>
+                  <Description>A bookmark can be added in a PDF document using OutlineItemCollection. First of all, you need to open the PDF document using Document object. After that, you can add the OutlineItemCollection in the Outlines collection of the Document object. However, before adding the OutlineItemCollection in the Outlines collection, you need to define the properties of the bookmark.</Description>
+                  <FolderName>AddBookmarkInPDF</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Add a Bookmark in the PDF Document</DisplayName>
+                    <Url>Add+a+Bookmark+in+the+PDF+Document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Add a Child Bookmark in the PDF Document</Title>
+                  <Description>In this example we will see how to add child bookmark in a PDF document using Aspose.Pdf.</Description>
+                  <FolderName>AddChildBookmarkPDF</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Add a Child Bookmark in the PDF Document</DisplayName>
+                    <Url>Add+a+Child+Bookmark+in+the+PDF+Document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Delete All Bookmarks from the PDF Document</Title>
+                  <Description>The Outline collection contains all the bookmarks of the PDF document. In order to delete all the bookmarks from the PDF file, you only need to call the Delete method of Outlines collection and then save the modified file using Save method of the Document object.</Description>
+                  <FolderName>DeleteAllBookmarksFromPDF</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Delete All Bookmarks from the PDF Document</DisplayName>
+                    <Url>Delete+All+Bookmarks+from+the+PDF+Document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Delete a Particular Bookmark from the PDF Document</Title>
+                  <Description>In order to delete a particular bookmark from the PDF file, you need to pass the bookmark title as parameter to the Delete method of the Outlines collection. The Outlines collection is provided by the Document object. The Delete method will remove the bookmark having the same Title as passed to the method. After that, just save the updated file using Save method of the Document object.</Description>
+                  <FolderName>DeleteParticularBookmarkFromPDF</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Delete a Particular Bookmark from the PDF Document</DisplayName>
+                    <Url>Delete+a+Particular+Bookmark+from+the+PDF+Document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Get Bookmarks from the PDF Document</Title>
+                  <Description>The Outlines collection of the Document object contains all a PDF file's bookmarks. To get those bookmarks, loop through the Outlines collection and get each bookmark in OutlineItemCollection. The OutlineItemCollection provides access to all the bookmrark's attributes.</Description>
+                  <FolderName>GetBookmarksFromPDF</FolderName>
+                  <Order>5</Order>
+                  <DocLink>
+                    <DisplayName>Get Bookmarks from the PDF Document</DisplayName>
+                    <Url>Get+Bookmarks+from+the+PDF+Document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Get ChildBookmarks From the PDF Document</Title>
+                  <Description>In order to get all the bookmarks you need to loop through the Outlines collections of Document object. However, if you want to get the child bookmarks as well then you also need to loop through all the bookmarks in each OutlineItemCollection object obtained in the above mentioned loop.</Description>
+                  <FolderName>GetChildBookmarksFromPDF</FolderName>
+                  <Order>6</Order>
+                  <DocLink>
+                    <DisplayName>Get ChildBookmarks From the PDF Document</DisplayName>
+                    <Url>Get+ChildBookmarks+From+the+PDF+Document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
           </Folders>
         </Folder>
         <Folder>
