@@ -998,6 +998,48 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                   </InputFiles>
                   <Type>Console</Type>
                 </Example>
+                <Example>
+                  <Title>Update Bookmarks in a PDF Document</Title>
+                  <Description>If you want to update an existing bookmark in a PDF file, you first need to get the particular bookmark from the Outlines collection of the Document object by specifying the Index of the particular bookmark. Once you retrieve the bookmark into OutlineItemCollection object, you can update its properties and then save the updated PDF file using Save method.</Description>
+                  <FolderName>UpdateBookmarksInPDF</FolderName>
+                  <Order>7</Order>
+                  <DocLink>
+                    <DisplayName>Update Bookmarks in a PDF Document</DisplayName>
+                    <Url>Update+Bookmarks+in+a+PDF+Document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Update Child Bookmarks in a PDF Document</Title>
+                  <Description>In order to update child bookmark, you first need to retrieve that particular child bookmark from the PDF file. You can do that by first getting the parent bookmark and then the child bookmark using appropriate Index values. You can get the particular bookmark from the Outlines collection of the Document object by specifying the Index of that bookmark, and then get the child bookmark by specifying the Index on this parent bookmark. Finally, you need to save the updated PDF file using Save method.</Description>
+                  <FolderName>UpdateChildBookmarksInPDF</FolderName>
+                  <Order>8</Order>
+                  <DocLink>
+                    <DisplayName>Update Child Bookmarks in a PDF Document</DisplayName>
+                    <Url>Update+Child+Bookmarks+in+a+PDF+Document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
               </Examples>
             </Folder>
           </Folders>
