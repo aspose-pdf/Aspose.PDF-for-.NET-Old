@@ -588,6 +588,111 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                   </OutputFiles>
                   <Type>Console</Type>
                 </Example>
+                <Example>
+                  <Title>Convert PDF to ePUB format</Title>
+                  <Description>Aspose.Pdf for .NET also supports the feature to convert PDF document to EPUB format. Aspose.Pdf for .NET has a class named EpubSaveOptions which can be used as second argument to Document.Save(..) method, in order to generate ePUB file.</Description>
+                  <FolderName>ConvertPDFToEPUB</FolderName>
+                  <Order>6</Order>
+                  <DocLink>
+                    <DisplayName>Convert PDF to ePUB format</DisplayName>
+                    <Url>Convert+PDF+to+ePUB+format</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\Sample.epub</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Convert SVG file to PDF format</Title>
+                  <Description>To convert SVG files to PDF, use the class named SvgLoadOptions which is used to initialize the LoadOptions object. Later, this object is passed as an argument during the Document object initialization and helps the PDF rendering engine to determine the input format of the source document.</Description>
+                  <FolderName>ConvertSVGToPDF</FolderName>
+                  <Order>7</Order>
+                  <DocLink>
+                    <DisplayName>Convert SVG file to PDF format</DisplayName>
+                    <Url>Convert+SVG+file+to+PDF+format</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\Example.svg</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\converted.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Get SVG dimensions</Title>
+                  <Description>We can also get the dimensions information of source SVG file being used. This information can be useful if we want the SVG to cover the entire page of resultant PDF document. A property named AdjustPageSize is present in SvgLoadOption class which fulfills this requirement. The default value of this property is false. If the value is set to true, then resultant PDF document will have same size (dimensions) as source svg file.</Description>
+                  <FolderName>GetSVGDimensions</FolderName>
+                  <Order>8</Order>
+                  <DocLink>
+                    <DisplayName>Convert SVG file to PDF format</DisplayName>
+                    <Url>Convert+SVG+file+to+PDF+format</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\Example.svg</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\SVG_test.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Convert PDF file into TeX format</Title>
+                  <Description>The LaTeX file format is a text file format with markup in the LaTeX 2ε derivative of the TeX family of languages and LaTeX is a derived format of the TeX system.</Description>
+                  <FolderName>ConvertPDFToTeX</FolderName>
+                  <Order>9</Order>
+                  <DocLink>
+                    <DisplayName>Convert PDF file into TeX format</DisplayName>
+                    <Url>Convert+PDF+file+into+TeX+format</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\Output.tex</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Convert EPUB file to PDF format</Title>
+                  <Description>To converting EPUB files to PDF format, Aspose.Pdf for .NET has a class named EpubLoadOptions which is used to initialize a LoadOptions object. After that, the object is passed as an argument during the Document object initialization and helps the PDF rendering engine determine the source document's input format.</Description>
+                  <FolderName>ConvertEPUBToPDF</FolderName>
+                  <Order>10</Order>
+                  <DocLink>
+                    <DisplayName>Convert EPUB file to PDF format</DisplayName>
+                    <Url>Convert+EPUB+file+to+PDF+format</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\Sample.epub</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
               </Examples>
             </Folder>
             <Folder>
@@ -1138,7 +1243,387 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                   </OutputFiles>
                   <Type>Console</Type>
                 </Example>
+                <Example>
+                  <Title>Validate PDF Document for PDF A Standard (A 1A and A 1B)</Title>
+                  <Description>In order to validate a PDF document for PDF/A-1a or PDF/A-1b standard, you can use Validate method of Document class. This method allows you to specify the name of the file in which the result is to be saved and the required validation type PdfFormat enumeration : PDF_A_1A or PDF_A_1B.</Description>
+                  <FolderName>ValidatePDFforPDFAStandard</FolderName>
+                  <Order>5</Order>
+                  <DocLink>
+                    <DisplayName>Validate PDF Document for PDF A Standard (A 1A and A 1B)</DisplayName>
+                    <Url>Validate+PDF+Document+for+PDF+A+Standard+%28A+1A+and+A+1B%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\validation-result-A1A.xml</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Get PDF File Information</Title>
+                  <Description>In order to get file specific information of a PDF file, you first need to get the DocumentInfo object using Info property of the Document object. Once the DocumentInfo object is retrieved, you can get the values of the individual properties.</Description>
+                  <FolderName>GetPDFFileInformation</FolderName>
+                  <Order>6</Order>
+                  <DocLink>
+                    <DisplayName>Get PDF File Information</DisplayName>
+                    <Url>Get+PDF+File+Information</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Set XMP Metadata in a PDF File</Title>
+                  <Description>Aspose.Pdf allows you to set metadata in a PDF file. In order to set metadata, you need to create a Document object and set the values using Metadata property. Once the values are set you can simply save the updated document using Save method of the Document object.</Description>
+                  <FolderName>SetXMPMetadata</FolderName>
+                  <Order>7</Order>
+                  <DocLink>
+                    <DisplayName>Set XMP Metadata in a PDF File</DisplayName>
+                    <Url>Set+XMP+Metadata+in+a+PDF+File</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Get XMP Metadata from PDF File</Title>
+                  <Description>In order to get metadata of a PDF file, you first need to create the Document object and open the input PDF file. After that, you can get the metadata using Metadata property of the Document object.</Description>
+                  <FolderName>GetXMPMetadata</FolderName>
+                  <Order>8</Order>
+                  <DocLink>
+                    <DisplayName>Get XMP Metadata from PDF File</DisplayName>
+                    <Url>Get+XMP+Metadata+from+PDF+File</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Add TOC in Existing PDF</Title>
+                  <Description>To support adding a TOC to an existing PDF file, a Heading class is available in the Aspose.Pdf namespace. The Aspose.Pdf namespace can both create new and manipulate existing PDF files. To add a TOC to an existing PDF, use the Aspose.Pdf namespace.</Description>
+                  <FolderName>AddTOCInExistingPDF</FolderName>
+                  <Order>9</Order>
+                  <DocLink>
+                    <DisplayName>Add TOC in Existing PDF</DisplayName>
+                    <Url>Add+TOC+in+Existing+PDF</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\TOC_Output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
               </Examples>
+              <Folders>
+                <Folder>
+                  <Title>Get-Set Zoom Factor of PDF file</Title>
+                  <Description>This section includes the following examples:
+
+1: Set Zoom Factor
+2: Get Zoom Factor</Description>
+                  <FolderName>GetSetZoomFactor</FolderName>
+                  <Order>10</Order>
+                  <Examples>
+                    <Example>
+                      <Title>Set Zoom Factor</Title>
+                      <Description>This example shows how to set the zoom factor of PDF file using Aspose.Pdf for .NET.</Description>
+                      <FolderName>SetZoomFactor</FolderName>
+                      <Order>1</Order>
+                      <DocLink>
+                        <DisplayName>Get-Set zoom factor of PDF file</DisplayName>
+                        <Url>Get-Set+zoom+factor+of+PDF+file</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\input.pdf</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\Zoomed_pdf.pdf</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Get Zoom Factor</Title>
+                      <Description>This example shows how to get the zoom factor information from a PDF document using Aspose.Pdf for .NET.</Description>
+                      <FolderName>GetZoomFactor</FolderName>
+                      <Order>2</Order>
+                      <DocLink>
+                        <DisplayName>Get-Set zoom factor of PDF file</DisplayName>
+                        <Url>Get-Set+zoom+factor+of+PDF+file</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\Zoomed_pdf.pdf</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                </Folder>
+              </Folders>
+            </Folder>
+            <Folder>
+              <Title>Working with Forms</Title>
+              <Description>This section includes the following examples:
+
+- Add Form Field in a PDF Document
+- Delete a Particular Form Field from a PDF Document
+- Modify Form Field in a PDF Document
+- Fill Form Field in a PDF Document
+- Get Value from an Individual Field of PDF Document
+- Get Values from all the Fields of PDF Document
+- Move Form Field to a New Location in a PDF File
+- Preserve Extended Rights feature while working with Forms
+- Add Tooltip to form field
+- Get Form Fields from a Specific Region of PDF file
+- Set Form Field Font Other Than the 14 Core PDF Fonts
+- Convert Dynamic XFA form to Standard AcroForm
+- working with XFA forms
+- Determine if field is marked as required
+- Set JavaScript on form field</Description>
+              <FolderName>WorkingWithForms</FolderName>
+              <Order>9</Order>
+              <Examples>
+                <Example>
+                  <Title>Delete a Particular Form Field from a PDF Document</Title>
+                  <Description>All the form fields are contained in the Form collection of the Document object. This collection provides different methods to manage form fields, including Delete method. If you want to delete a particular field, you can use Delete method and pass the field name as parameter. After that, you need to save the updated PDF document.</Description>
+                  <FolderName>DeleteFormField</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Delete a Particular Form Field from a PDF Document</DisplayName>
+                    <Url>Delete+a+Particular+Form+Field+from+a+PDF+Document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Modify Form Field in a PDF Document</Title>
+                  <Description>Form collection of Document object allows you to manage all the form fields in a PDF document. If you want to modify an existing form field, you can get the particular field from the Form collection and set its properties. After that, you will have to save the updated PDF document.</Description>
+                  <FolderName>ModifyFormField</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Modify Form Field in a PDF Document</DisplayName>
+                    <Url>Modify+Form+Field+in+a+PDF+Document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Fill Form Field in a PDF Document</Title>
+                  <Description>In order to fill a form field, you need to get the field from the Form collection of the Document object. After that, you can set the Value property of the field to set the field’s value. In this example, we have selected a TextBoxField and set its value using Value property.</Description>
+                  <FolderName>FillFormField</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Fill Form Field in a PDF Document</DisplayName>
+                    <Url>Fill+Form+Field+in+a+PDF+Document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Get Value from an Individual Field of PDF Document</Title>
+                  <Description>The Value property of the form field allows you to get the value of a particular field. In order to get the value, you first need to get the form field from the Form collection of the Document object. In this example, we have selected a TextBoxField and retrieved its value using the Value property.</Description>
+                  <FolderName>GetValueFromField</FolderName>
+                  <Order>5</Order>
+                  <DocLink>
+                    <DisplayName>Get Value from an Individual Field of PDF Document</DisplayName>
+                    <Url>Get+Value+from+an+Individual+Field+of+PDF+Document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Get Values from all the Fields of PDF Document</Title>
+                  <Description>In order to get values from all the fields of a PDF document, you need to navigate through all the form fields and then get the value using Value property. You can get each field, from the Form collection, in the base field type called Field and access its Value property.</Description>
+                  <FolderName>GetValuesFromAllFields</FolderName>
+                  <Order>6</Order>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Move Form Field to a New Location in a PDF File</Title>
+                  <Description>If you want to move a form field to a new location in the PDF page, you first need to get that particular object and then specify new value for its Rect property. A Rectangle object with new coordinates is assigned to the Rect property. After that, you only need to save the updated PDF using Save method of Document object.</Description>
+                  <FolderName>MoveFormField</FolderName>
+                  <Order>7</Order>
+                  <DocLink>
+                    <DisplayName>Move Form Field to a New Location in a PDF File</DisplayName>
+                    <Url>Move+Form+Field+to+a+New+Location+in+a+PDF+File</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Add Tooltip to form field</Title>
+                  <Description>The Document class provides a collection named Form which helps you manage form fields in a PDF document. To let you add a tooltip to a form field, we have introduced a property named AlternateName to the Field class. Alternate name is used as field tooltip in Adobe Acrobat.</Description>
+                  <FolderName>AddTooltipToField</FolderName>
+                  <Order>8</Order>
+                  <DocLink>
+                    <DisplayName>Add Tooltip to form field</DisplayName>
+                    <Url>Add+Tooltip+to+form+field</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Get Form Fields from a Specific Region of PDF file</Title>
+                  <Description>In order to get the form fields from a specific region of a PDF file, you need to open the PDF file using Document object. After that, you can get the Form from the Forms collection of PDF document using the document Object. Now, to get the fields from a specific region, you can specify the Rectangular Region and pass it to GetFieldsInRect method of Form object. A collection of Fields will be returned which can be used to manipulate the fields.</Description>
+                  <FolderName>GetFieldsFromARegion</FolderName>
+                  <Order>9</Order>
+                  <DocLink>
+                    <DisplayName>Get Form Fields from a Specific Region of PDF file</DisplayName>
+                    <Url>Get+Form+Fields+from+a+Specific+Region+of+PDF+file</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+              <Folders>
+                <Folder>
+                  <Title>Add Form Field in a PDF Document</Title>
+                  <Description>This section includes the following examples:
+
+- Adding TextBox Field
+- Adding RadioButton Field
+- Adding ComboBox Field</Description>
+                  <FolderName>AddFormFieldPDF</FolderName>
+                  <Order>1</Order>
+                  <Examples>
+                    <Example>
+                      <Title>Adding TextBox Field</Title>
+                      <Description>The following example show how to add TextBoxField field in a PDF document using Aspose.Pdf API.</Description>
+                      <FolderName>AddingTextBoxField</FolderName>
+                      <Order>1</Order>
+                      <DocLink>
+                        <DisplayName>Add Form Field in a PDF Document</DisplayName>
+                        <Url>Add+Form+Field+in+a+PDF+Document</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\input.pdf</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\output.pdf</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Adding RadioButton Field</Title>
+                      <Description>The following example shows how to add RadioButtonField in a PDF document using Aspose.Pdf API.</Description>
+                      <FolderName>AddingRadioButtonField</FolderName>
+                      <Order>2</Order>
+                      <DocLink>
+                        <DisplayName>Add Form Field in a PDF Document</DisplayName>
+                        <Url>Add+Form+Field+in+a+PDF+Document</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\output.pdf</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Adding ComboBox Field</Title>
+                      <Description>The following example shows how to add ComboBox field in a PDF document using Aspose.Pdf API.</Description>
+                      <FolderName>AddingComboBoxField</FolderName>
+                      <Order>3</Order>
+                      <DocLink>
+                        <DisplayName>Add Form Field in a PDF Document</DisplayName>
+                        <Url>Add+Form+Field+in+a+PDF+Document</Url>
+                      </DocLink>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                </Folder>
+              </Folders>
             </Folder>
           </Folders>
         </Folder>
