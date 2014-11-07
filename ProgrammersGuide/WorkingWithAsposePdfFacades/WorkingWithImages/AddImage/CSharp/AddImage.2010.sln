@@ -1,0 +1,18 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddImage", "AddImage.csproj", "{99E3DEB5-6ED4-4C77-A0DC-49C7A37405AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99E3DEB5-6ED4-4C77-A0DC-49C7A37405AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99E3DEB5-6ED4-4C77-A0DC-49C7A37405AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99E3DEB5-6ED4-4C77-A0DC-49C7A37405AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

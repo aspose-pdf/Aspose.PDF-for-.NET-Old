@@ -1,0 +1,18 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeleteAllAnnotations", "DeleteAllAnnotations.csproj", "{14F27EEB-5D93-4B5E-B875-74ED4837B7BD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14F27EEB-5D93-4B5E-B875-74ED4837B7BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14F27EEB-5D93-4B5E-B875-74ED4837B7BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14F27EEB-5D93-4B5E-B875-74ED4837B7BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
