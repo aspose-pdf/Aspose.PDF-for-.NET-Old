@@ -21,11 +21,9 @@ Namespace DeleteAllAnnotationsExistingPdfExample
 			Dim annotationEditor As New PdfAnnotationEditor()
 			annotationEditor.BindPdf(dataDir & "input.pdf")
 			'delete all annoations
-			annotationEditor.DeleteAnnotations("Text")
+			annotationEditor.DeleteAnnotations()
 			'save updated PDF
 			annotationEditor.Save(dataDir & "output.pdf")
-
-
 
 		End Sub
 	End Class

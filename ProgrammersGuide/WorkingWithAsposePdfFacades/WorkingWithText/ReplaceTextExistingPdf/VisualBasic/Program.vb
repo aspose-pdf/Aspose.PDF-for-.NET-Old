@@ -19,7 +19,7 @@ Namespace ReplaceTextExistingPdfExample
 			Dim dataDir As String = Path.GetFullPath("../../../Data/")
 			'open input PDF
 			Dim pdfContentEditor As New PdfContentEditor()
-			pdfContentEditor.BindPdf(dataDir & "input.pdf")
+			pdfContentEditor.BindPdf(dataDir & "input1.pdf")
 			'replace text on all pages
 			pdfContentEditor.ReplaceText("Hello", "World")
 			'save output PDF

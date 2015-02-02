@@ -5,6 +5,8 @@
 ' is only intended as a supplement to the documentation, and is provided
 ' "as is", without warranty of any kind, either expressed or implied.
 '////////////////////////////////////////////////////////////////////////
+
+Imports Microsoft.VisualBasic
 Imports System.IO
 
 Imports Aspose.Pdf

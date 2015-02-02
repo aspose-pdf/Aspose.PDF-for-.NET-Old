@@ -1,0 +1,18 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddAttachment", "AddAttachment.csproj", "{289094E9-3BD0-469A-A59C-D0D0BF0C7E6A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{289094E9-3BD0-469A-A59C-D0D0BF0C7E6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{289094E9-3BD0-469A-A59C-D0D0BF0C7E6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{289094E9-3BD0-469A-A59C-D0D0BF0C7E6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

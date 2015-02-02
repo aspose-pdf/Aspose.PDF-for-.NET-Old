@@ -46,19 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Import Include="Microsoft.VisualBasic" />
-    <Import Include="System.Collections.Generic" />
-    <Import Include="System.Collections" />
-    <Import Include="System.Diagnostics" />
-    <Import Include="System" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Program.vb" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\Data\**\*" Exclude="..\Data\*Out*">
-      <Link>Data\Data\</Link>
-    </None>
+<!-- DataFiles -->
   </ItemGroup>
   <!-- Conditional build path import - added for VS2005 compatibility (since there is no MSBuildToolsPath in VS2005) -->
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" Condition="$(MSBuildToolsPath) != ''" />

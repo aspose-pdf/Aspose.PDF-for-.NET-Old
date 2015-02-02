@@ -27,7 +27,9 @@ Namespace DetermineRequiredField
 			' Iterate through each field inside PDF form
 			For Each field As Aspose.Pdf.InteractiveFeatures.Forms.Field In pdf.Form.Fields
 				' Determine if the field is marked as required or not
-				If field.Required Then
+				Dim isRequired As Boolean = pdfForm.IsRequiredField(field.FullName)
+				If isRequired Then
+
 					' Print either the field is marked as required or not
 					Console.WriteLine("The field named " & field.FullName & " is required")
 				End If

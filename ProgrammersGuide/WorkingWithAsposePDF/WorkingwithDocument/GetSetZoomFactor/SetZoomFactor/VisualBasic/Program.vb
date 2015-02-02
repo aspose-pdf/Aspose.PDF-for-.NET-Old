@@ -21,11 +21,11 @@ Namespace SetZoomFactor
 			' instantiate new Document object
 			Dim doc As New Document(dataDir & "input.pdf")
 
-			'Set Left Right and Zoom factors
-			Dim parameters() As Double = {0,0,5}
+			'Set Left Right and Z factors
+			Dim parameters() As Double = {0,0,10}
 
 			'Set Explicit Destination
-			Dim ED As ExplicitDestination = ExplicitDestination.CreateDestination(1,ExplicitDestinationType.FitH,parameters)
+			Dim ED As ExplicitDestination = ExplicitDestination.CreateDestination(1,ExplicitDestinationType.XYZ,parameters)
 
 			'Set Action 
 			Dim action As New GoToAction(ED)

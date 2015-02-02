@@ -5,6 +5,8 @@
 ' is only intended as a supplement to the documentation, and is provided
 ' "as is", without warranty of any kind, either expressed or implied.
 '////////////////////////////////////////////////////////////////////////
+
+Imports Microsoft.VisualBasic
 Imports System.IO
 Imports System.Xml
 Imports System.Xml.XPath
@@ -19,10 +21,10 @@ Namespace ConvertXSLFOToPDF
 
 			'Set up your product license.
 			'If you just want to evaluate Aspose.Pdf, you can annotate these two lines.
-            'Dim license As New License()
-            'license.SetLicense(dataDir & "Aspose.Total.lic")
+			'License license = new License();
+			'license.SetLicense(dataDir + "Aspose.Total.lic");
 
-			'Create a Converter object.
+			'Create a Converter object..
 			Dim app As Aspose.Pdf.Generator.Pdf
 
 			Dim pdf As System.IO.Stream
@@ -58,7 +60,7 @@ Namespace ConvertXSLFOToPDF
 			'app.BindFO(new System.IO.FileStream(fo, System.IO.FileMode.Open, System.IO.FileAccess.Read));
 			app.Save(dataDir & name & "_fo_stream2string.pdf")
 
-			'4. fo:stream2stream
+			'4. fo:stream2stream 
 			app = New Aspose.Pdf.Generator.Pdf()
 			'app.BindFO(new System.IO.FileStream(fo, System.IO.FileMode.Open, System.IO.FileAccess.Read));
 			'pdf = new System.IO.FileStream(name + "_fo_stream2stream.pdf", System.IO.FileMode.Create);

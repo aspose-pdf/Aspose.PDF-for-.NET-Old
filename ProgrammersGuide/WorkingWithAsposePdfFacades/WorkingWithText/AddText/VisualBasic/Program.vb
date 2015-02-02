@@ -18,7 +18,7 @@ Namespace AddTextExample
 			' The path to the documents directory.
 			Dim dataDir As String = Path.GetFullPath("../../../Data/")
 			'create PdfFileMend object to add text
-			Dim mender As New PdfFileMend("input.pdf", "output.pdf")
+			Dim mender As New PdfFileMend(dataDir & "input.pdf", dataDir & "output.pdf")
 
 			'create formatted text
 			Dim text As New FormattedText("Aspose - Your File Format Experts!", System.Drawing.Color.AliceBlue, System.Drawing.Color.Gray, Aspose.Pdf.Facades.FontStyle.Courier, EncodingType.Winansi, True, 14)

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<pdf2xml pages="3">
+  <title />
+  <page width="612" height="792">
+    <font size="8" face="Times New Roman" color="#FF0064" src="Output_font1.ttf">
+      <text x="20" y="15" width="262.867" height="8.859">Evaluation Only. Created with Aspose.Pdf. Copyright 2002-2014 Aspose Pty Ltd.</text>
+    </font>
+    <font size="11" face="BFMHIQ+Arial,Bold" color="#FF0000" src="Output_font2.ttf">
+      <text x="72.048" y="82.13" width="424.573" height="12.468">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</text>
+      <text x="72.048" y="96.53" width="436.354" height="12.468">incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</text>
+      <text x="72.048" y="111.29" width="446.926" height="12.468">exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</text>
+      <text x="72.048" y="125.69" width="427.661" height="12.468">dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</text>
+      <text x="72.048" y="140.47" width="458.475" height="12.468">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit</text>
+      <text x="72.048" y="154.87" width="112.494" height="12.468">anim id est laborum."</text>
+      <img x="73.5" y="220.16" width="225" height="168.75" src="Output_pic1.jpg" />
+    </font>
+  </page>
+  <page width="612" height="792">
+    <font size="8" face="Times New Roman" color="#FF0064" src="Output_font1.ttf">
+      <text x="20" y="15" width="262.867" height="8.859">Evaluation Only. Created with Aspose.Pdf. Copyright 2002-2014 Aspose Pty Ltd.</text>
+    </font>
+    <font size="11" face="BFMHIQ+Arial,Bold" color="#548DD4" src="Output_font2.ttf">
+      <text x="72.048" y="132.91" width="424.573" height="12.468">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</text>
+      <text x="72.048" y="147.67" width="436.354" height="12.468">incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</text>
+      <text x="72.048" y="162.07" width="446.926" height="12.468">exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</text>
+      <text x="72.048" y="176.83" width="427.661" height="12.468">dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</text>
+      <text x="72.048" y="191.26" width="458.475" height="12.468">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit</text>
+      <text x="72.048" y="205.66" width="112.494" height="12.468">anim id est laborum."</text>
+      <img x="73.5" y="244.71" width="335.25" height="251.44" src="Output_pic2.jpg" />
+    </font>
+  </page>
+  <page width="612" height="792">
+    <font size="8" face="Times New Roman" color="#FF0064" src="Output_font1.ttf">
+      <text x="20" y="15" width="262.867" height="8.859">Evaluation Only. Created with Aspose.Pdf. Copyright 2002-2014 Aspose Pty Ltd.</text>
+    </font>
+    <font size="11" face="KWLFUG+Calibri,Bold" color="#C0504D" src="Output_font3.ttf">
+      <text x="72.048" y="107.69" width="460.924" height="13.623">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</text>
+      <text x="72.048" y="123.17" width="451.273" height="13.623">et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</text>
+      <text x="72.048" y="138.31" width="466.506" height="13.623">aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</text>
+      <text x="72.048" y="153.79" width="438.617" height="13.623">dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui</text>
+      <text x="72.048" y="169.27" width="202.693" height="13.623">officia deserunt mollit anim id est laborum."</text>
+      <img x="73.5" y="184.65" width="353.76" height="500.25" src="Output_pic3.jpg" />
+    </font>
+  </page>
+</pdf2xml>

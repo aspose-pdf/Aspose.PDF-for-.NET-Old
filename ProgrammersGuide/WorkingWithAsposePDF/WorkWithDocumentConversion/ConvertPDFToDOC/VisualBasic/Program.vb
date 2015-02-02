@@ -5,6 +5,8 @@
 ' is only intended as a supplement to the documentation, and is provided
 ' "as is", without warranty of any kind, either expressed or implied.
 '////////////////////////////////////////////////////////////////////////
+
+Imports Microsoft.VisualBasic
 Imports System.IO
 
 Imports Aspose.Pdf
@@ -32,7 +34,7 @@ Namespace ConvertPDFToDOC
 			saveOptions.Mode = DocSaveOptions.RecognitionMode.Flow
 
 			' set the Horizontal proximity as 2.5
-			saveOptions.RelativeHorizontalProximity = 2.5F
+			saveOptions.RelativeHorizontalProximity = 2.5f
 
 			' enable the value to recognize bullets during conversion process
 			saveOptions.RecognizeBullets = True

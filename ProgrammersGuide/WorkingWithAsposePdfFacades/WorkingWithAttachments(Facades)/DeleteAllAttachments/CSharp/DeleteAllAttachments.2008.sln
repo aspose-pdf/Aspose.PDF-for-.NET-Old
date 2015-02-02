@@ -1,0 +1,18 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeleteAllAttachments", "DeleteAllAttachments.csproj", "{E40E30FC-71CC-42D9-8CFB-82D5157B3FED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E40E30FC-71CC-42D9-8CFB-82D5157B3FED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E40E30FC-71CC-42D9-8CFB-82D5157B3FED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E40E30FC-71CC-42D9-8CFB-82D5157B3FED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -37,7 +37,7 @@ Namespace ExtractImagesFromParticularPageExample
 				pdfExtractor.GetNextImage(memoryStream)
 
 				'write to disk, if you like, or use it otherwise.
-				Dim fileStream As New FileStream(DateTime.Now.Ticks.ToString() & ".jpg", FileMode.Create)
+				Dim fileStream As New FileStream(dataDir & DateTime.Now.Ticks.ToString() & ".jpg", FileMode.Create)
 				memoryStream.WriteTo(fileStream)
 				fileStream.Close()
 			Loop
