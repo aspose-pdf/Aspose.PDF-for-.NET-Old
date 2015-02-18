@@ -13,9 +13,22 @@ Imports Aspose.Pdf
 
 Namespace SetZoomFactor
 	Public Class Program
-		Public Shared Sub Main(ByVal args() As String)
+		Public Shared Sub Main(ByVal args As String())
 			' The path to the documents directory.
 			Dim dataDir As String = Path.GetFullPath("../../../Data/")
+
+			' Create directory if it is not already present.
+			Dim IsExists As Boolean = System.IO.Directory.Exists(dataDir)
+			If (Not IsExists) Then
+				System.IO.Directory.CreateDirectory(dataDir)
+			End If
+
+			'Instantiate Pdf instance
+			Dim pdf1 As Aspose.Pdf.Generator.Pdf = New Aspose.Pdf.Generator.Pdf()
+
+			'Set the DestinationType property of Pdf instance to any pre-defined value
+			pdf1.DestinationType = Aspose.Pdf.Generator.DestinationType.FitPage
+			pdf1.Save(dataDir & "ZoomFactor.pdf")
 
 
 		End Sub

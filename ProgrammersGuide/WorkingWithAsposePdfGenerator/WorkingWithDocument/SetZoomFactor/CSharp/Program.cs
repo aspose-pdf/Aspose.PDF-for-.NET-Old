@@ -17,8 +17,20 @@ namespace SetZoomFactor
         {
             // The path to the documents directory.
             string dataDir = Path.GetFullPath("../../../Data/");
-            
-            
+
+            // Create directory if it is not already present.
+            bool IsExists = System.IO.Directory.Exists(dataDir);
+            if (!IsExists)
+                System.IO.Directory.CreateDirectory(dataDir);
+
+            //Instantiate Pdf instance
+            Aspose.Pdf.Generator.Pdf pdf1 = new Aspose.Pdf.Generator.Pdf(); 
+
+            //Set the DestinationType property of Pdf instance to any pre-defined value
+            pdf1.DestinationType = Aspose.Pdf.Generator.DestinationType.FitPage;
+            pdf1.Save(dataDir + "ZoomFactor.pdf");
+
+
         }
     }
 }
