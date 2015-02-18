@@ -28,7 +28,7 @@ Aspose.Pdf for .NET and Aspose.Pdf for Java are successful commercial products, 
 
 We think that customers who use our products feel that they use an open source product because of the extent they can influence the project, but with the security of a fully committed talented team working on the project.
 
-The Aspose.Pdf for .NET examples published here at GitHub is a part of the above effort.
+The Aspose.Pdf for .NET examples published here at GitHub are part of the above efforts.
 
 ##What's Included in this Examples Repository?
 
