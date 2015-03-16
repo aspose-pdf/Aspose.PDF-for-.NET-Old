@@ -9,7 +9,7 @@ using System.IO;
 
 using Aspose.Pdf;
 
-namespace SetPageTransitionEffect
+namespace SetTheAppearance
 {
     public class Program
     {
@@ -26,13 +26,11 @@ namespace SetPageTransitionEffect
             //Instantiate Pdf instance
             Aspose.Pdf.Generator.Pdf pdf1 = new Aspose.Pdf.Generator.Pdf();
 
-            //You may set OpenType poperty to full screen
-            pdf1.OpenType = Aspose.Pdf.Generator.OpenType.FullScreen;
+            //Set OpenType property of Pdf instance to any pre-defined value
+            pdf1.OpenType = Aspose.Pdf.Generator.OpenType.Thumbnails;
+            pdf1.Save(dataDir + "SetAppearance.pdf");
 
-            //Set PageTransitionType poperty of Pdf instance to a pre-defined desired value
-            pdf1.PageTransitionType = Aspose.Pdf.Generator.PageTransitionType.Dissolve; 
-            pdf1.Save(dataDir + "PageTransition.pdf");
-            
+
         }
     }
 }

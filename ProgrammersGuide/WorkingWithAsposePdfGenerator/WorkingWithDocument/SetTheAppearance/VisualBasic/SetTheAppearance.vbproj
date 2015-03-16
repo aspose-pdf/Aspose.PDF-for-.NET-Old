@@ -5,10 +5,10 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{EF466071-46D5-48EA-9B77-E9EE4603CE81}</ProjectGuid>
+    <ProjectGuid>{0604AAB9-AEA1-40B3-9B7C-AE87DF07E8D8}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace></RootNamespace>
-    <AssemblyName>SetPageTransitionEffect</AssemblyName>
+    <AssemblyName>SetTheAppearance</AssemblyName>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>3.5</OldToolsVersion>

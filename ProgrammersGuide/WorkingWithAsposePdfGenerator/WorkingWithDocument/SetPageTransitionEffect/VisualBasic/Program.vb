@@ -13,10 +13,25 @@ Imports Aspose.Pdf
 
 Namespace SetPageTransitionEffect
 	Public Class Program
-		Public Shared Sub Main(ByVal args() As String)
+		Public Shared Sub Main(ByVal args As String())
 			' The path to the documents directory.
 			Dim dataDir As String = Path.GetFullPath("../../../Data/")
 
+			' Create directory if it is not already present.
+			Dim IsExists As Boolean = System.IO.Directory.Exists(dataDir)
+			If (Not IsExists) Then
+				System.IO.Directory.CreateDirectory(dataDir)
+			End If
+
+			'Instantiate Pdf instance
+			Dim pdf1 As Aspose.Pdf.Generator.Pdf = New Aspose.Pdf.Generator.Pdf()
+
+			'You may set OpenType poperty to full screen
+			pdf1.OpenType = Aspose.Pdf.Generator.OpenType.FullScreen
+
+			'Set PageTransitionType poperty of Pdf instance to a pre-defined desired value
+			pdf1.PageTransitionType = Aspose.Pdf.Generator.PageTransitionType.Dissolve
+			pdf1.Save(dataDir & "PageTransition.pdf")
 
 		End Sub
 	End Class

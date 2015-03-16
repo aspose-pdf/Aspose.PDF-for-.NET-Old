@@ -10,24 +10,27 @@ Imports Microsoft.VisualBasic
 Imports System.IO
 
 Imports Aspose.Pdf
-Imports System.Text
-Imports System.Xml
 
-Namespace InlineHTMLFromXML
+Namespace SetTheAppearance
 	Public Class Program
 		Public Shared Sub Main(ByVal args As String())
 			' The path to the documents directory.
 			Dim dataDir As String = Path.GetFullPath("../../../Data/")
 
-			'Create pdf document
+			' Create directory if it is not already present.
+			Dim IsExists As Boolean = System.IO.Directory.Exists(dataDir)
+			If (Not IsExists) Then
+				System.IO.Directory.CreateDirectory(dataDir)
+			End If
+
+			'Instantiate Pdf instance
 			Dim pdf1 As Aspose.Pdf.Generator.Pdf = New Aspose.Pdf.Generator.Pdf()
 
-			'Bind XML into the document
-			pdf1.BindXML(dataDir & "TEST.xml", Nothing)
+			'Set OpenType property of Pdf instance to any pre-defined value
+			pdf1.OpenType = Aspose.Pdf.Generator.OpenType.Thumbnails
+			pdf1.Save(dataDir & "SetAppearance.pdf")
 
-			'Save the document
-			pdf1.Save(dataDir & "test.pdf")
+
 		End Sub
 	End Class
 End Namespace
-
