@@ -9,6 +9,10 @@
 Imports Microsoft.VisualBasic
 Imports System.IO
 
+
+Imports Aspose.Pdf.InteractiveFeatures.Forms
+Imports System.Collections
+
 Imports Aspose.Pdf
 Imports Aspose.Pdf.Facades
 

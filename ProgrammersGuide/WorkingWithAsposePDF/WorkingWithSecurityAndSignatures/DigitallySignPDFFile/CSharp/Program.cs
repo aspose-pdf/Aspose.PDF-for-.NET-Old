@@ -9,6 +9,8 @@ using System.IO;
 
 using Aspose.Pdf;
 using Aspose.Pdf.Facades;
+using Aspose.Pdf.InteractiveFeatures.Forms;
+using System.Collections;
 
 namespace DigitallySignPDFFile
 {
