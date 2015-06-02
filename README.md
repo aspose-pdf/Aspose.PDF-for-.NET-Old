@@ -16,4 +16,11 @@ Directory | Description
 [Examples](https://github.com/asposepdf/Aspose_Pdf_NET/tree/master/Examples)  | A collection of .NET examples that help you learn how to use product features.
 [Showcases](https://github.com/asposepdf/Aspose_Pdf_NET/tree/master/Showcases)  | Standalone ready-to-use applications that demonstrate some specific use cases.
 
+## Resources
 
++ **Website:** [www.aspose.com](http://www.aspose.com)
++ **Product Home:** [Aspose.Pdf for .NET](http://www.aspose.com/.net/pdf-component.aspx)
++ **Download:** [Download Aspose.Pdf for .NET](http://www.aspose.com/community/files/51/.net-components/aspose.pdf-for-.net/default.aspx)
++ **Documentation:** [Aspose.Pdf for .NET Documentation](http://www.aspose.com/docs/display/pdfnet/Home)
++ **Forum:** [Aspose.Pdf for .NET Forum](http://www.aspose.com/community/forums/aspose.pdf-product-family/75/showforum.aspx)
++ **Blog:** [Aspose.Pdf for .NET Blog](http://www.aspose.com/blogs/aspose-products/aspose-pdf-product-family.html)
