@@ -1,0 +1,490 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D8D9C6BA-A78F-4C66-A596-979B3E39D978}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>CSharp</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Pdf">
+      <HintPath>..\packages\Aspose.Pdf.10.5.1\lib\net2.0\Aspose.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AsposePdfFacades\Annotations\AddFreeTextAnnotation.vb" />
+    <Compile Include="AsposePdfFacades\Annotations\CreateFileAnnotation.vb" />
+    <Compile Include="AsposePdfFacades\Annotations\DeleteAllAnnotations.vb" />
+    <Compile Include="AsposePdfFacades\Annotations\ExportAnnotations.vb" />
+    <Compile Include="AsposePdfFacades\Annotations\ExtractAnnotations.vb" />
+    <Compile Include="AsposePdfFacades\Annotations\ImportAnnotations.vb" />
+    <Compile Include="AsposePdfFacades\Annotations\UpdateAnnotations.vb" />
+    <Compile Include="AsposePdfFacades\Attachments\AddAttachmentStream.vb" />
+    <Compile Include="AsposePdfFacades\Attachments\AddAttachment.vb" />
+    <Compile Include="AsposePdfFacades\Attachments\DeleteAllAttachments.vb" />
+    <Compile Include="AsposePdfFacades\Attachments\ExtractAllAttachments.vb" />
+    <Compile Include="AsposePdfFacades\Attachments\GetAttachmentNames.vb" />
+    <Compile Include="AsposePdfFacades\Bookmarks\AddBookmark.vb" />
+    <Compile Include="AsposePdfFacades\Bookmarks\AddChildBookmark.vb" />
+    <Compile Include="AsposePdfFacades\Bookmarks\CreateBookmarkPage.vb" />
+    <Compile Include="AsposePdfFacades\Bookmarks\CreateBookmarksAll.vb" />
+    <Compile Include="AsposePdfFacades\Bookmarks\CreateBookmarksPagesProperties.vb" />
+    <Compile Include="AsposePdfFacades\Bookmarks\DeleteAllBookmarks.vb" />
+    <Compile Include="AsposePdfFacades\Bookmarks\DeleteABookmark.vb" />
+    <Compile Include="AsposePdfFacades\Bookmarks\ExportToXML.vb" />
+    <Compile Include="AsposePdfFacades\Bookmarks\ExtractBookmarks.vb" />
+    <Compile Include="AsposePdfFacades\Bookmarks\GetFromPDF.vb" />
+    <Compile Include="AsposePdfFacades\Bookmarks\ImportFromXML.vb" />
+    <Compile Include="AsposePdfFacades\Bookmarks\UpdateBookmark.vb" />
+    <Compile Include="AsposePdfFacades\Forms\AddFormField.vb" />
+    <Compile Include="AsposePdfFacades\Forms\CopyInnerField.vb" />
+    <Compile Include="AsposePdfFacades\Forms\CopyOuterField.vb" />
+    <Compile Include="AsposePdfFacades\Forms\DecorateFields.vb" />
+    <Compile Include="AsposePdfFacades\Images\AddImage.vb" />
+    <Compile Include="AsposePdfFacades\Images\ConvertPageRegion.vb" />
+    <Compile Include="AsposePdfFacades\Images\ConvertToTIFFSettings.vb" />
+    <Compile Include="AsposePdfFacades\Images\ConvertPDFPages.vb" />
+    <Compile Include="AsposePdfFacades\Images\DeleteAllImages.vb" />
+    <Compile Include="AsposePdfFacades\Images\DeleteImagesPage.vb" />
+    <Compile Include="AsposePdfFacades\Images\ExtractImageExtractionMode.vb" />
+    <Compile Include="AsposePdfFacades\Images\ExtractImagesPage.vb" />
+    <Compile Include="AsposePdfFacades\Images\ExtractImages.vb" />
+    <Compile Include="AsposePdfFacades\Images\ExtractImagesStream.vb" />
+    <Compile Include="AsposePdfFacades\Images\ReplaceImage.vb" />
+    <Compile Include="AsposePdfFacades\Printing\PrintPageRange.vb" />
+    <Compile Include="AsposePdfFacades\Stamps-Watermarks\AddFooter.vb" />
+    <Compile Include="AsposePdfFacades\Stamps-Watermarks\AddHeader.vb" />
+    <Compile Include="AsposePdfFacades\Stamps-Watermarks\AddImageFooter.vb" />
+    <Compile Include="AsposePdfFacades\Stamps-Watermarks\AddImageStampAll.vb" />
+    <Compile Include="AsposePdfFacades\Stamps-Watermarks\AddImageStampPage.vb" />
+    <Compile Include="AsposePdfFacades\Stamps-Watermarks\AddPageNumber.vb" />
+    <Compile Include="AsposePdfFacades\Stamps-Watermarks\AddPageStampAll.vb" />
+    <Compile Include="AsposePdfFacades\Stamps-Watermarks\AddPageStampPage.vb" />
+    <Compile Include="AsposePdfFacades\Stamps-Watermarks\AddTextStampAll.vb" />
+    <Compile Include="AsposePdfFacades\Stamps-Watermarks\AddTextStampPage.vb" />
+    <Compile Include="AsposePdfFacades\Stamps-Watermarks\ChangeStampPosition.vb" />
+    <Compile Include="AsposePdfFacades\Stamps-Watermarks\ExtractImageImageStamp.vb" />
+    <Compile Include="AsposePdfFacades\Text\AddText.vb" />
+    <Compile Include="AsposePdfFacades\Text\ExtractTextPage.vb" />
+    <Compile Include="AsposePdfFacades\Text\ExtractText.vb" />
+    <Compile Include="AsposePdfFacades\Text\ExtractTextPageRange.vb" />
+    <Compile Include="AsposePdfFacades\Text\ReplaceText.vb" />
+    <Compile Include="AsposePdfFacades\Text\ReplaceTextPage.vb" />
+    <Compile Include="AsposePdfFacades\Working-Document\GetFileInfo.vb" />
+    <Compile Include="AsposePdfFacades\Working-Document\SetFileInfo.vb" />
+    <Compile Include="AsposePdfFacades\Working-Document\SetViewerPreference.vb" />
+    <Compile Include="AsposePdfFacades\Working-Document\SetXMPMetadata.vb" />
+    <Compile Include="AsposePdfGenerator\Conversion\HTMLToPDF.vb" />
+    <Compile Include="AsposePdfGenerator\Conversion\XSLFOToPDF.vb" />
+    <Compile Include="AsposePdfGenerator\Paragraphs\AssignID.vb" />
+    <Compile Include="AsposePdfGenerator\Paragraphs\Render.vb" />
+    <Compile Include="AsposePdfGenerator\Paragraphs\SetMargins.vb" />
+    <Compile Include="AsposePdfGenerator\Sections\SetPageBackgroundImage.vb" />
+    <Compile Include="AsposePdfGenerator\Text\CustomTabStops.vb" />
+    <Compile Include="AsposePdfGenerator\Text\InlineHTMLFromXML.vb" />
+    <Compile Include="AsposePdfGenerator\Text\TextFormattingTags.vb" />
+    <Compile Include="AsposePdfGenerator\Text\RTLLanguages.vb" />
+    <Compile Include="AsposePdfGenerator\Text\ChangeTextFormat.vb" />
+    <Compile Include="AsposePdfGenerator\Text\InheritTextFormat.vb" />
+    <Compile Include="AsposePdfGenerator\Text\SetTextBackgroundColor.vb" />
+    <Compile Include="AsposePdfGenerator\Text\SetRenderingMode.vb" />
+    <Compile Include="AsposePdfGenerator\Text\SetVerticalAlignment.vb" />
+    <Compile Include="AsposePdfGenerator\Text\UnderlineOverlineStrikeOut.vb" />
+    <Compile Include="AsposePdfGenerator\Text\LeftHangingTextParagraph.vb" />
+    <Compile Include="AsposePdfGenerator\Working-Document\AddJavaScript.vb" />
+    <Compile Include="AsposePdfGenerator\Working-Document\AddingXMPMetaData.vb" />
+    <Compile Include="AsposePdfGenerator\Working-Document\SetDocumentInfo.vb" />
+    <Compile Include="AsposePdfGenerator\Working-Document\SetPageTransitionEffect.vb" />
+    <Compile Include="AsposePdfGenerator\Working-Document\SetAppearance.vb" />
+    <Compile Include="AsposePdfGenerator\Working-Document\SetZoomFactor.vb" />
+    <Compile Include="AsposePDF\Annotations\AddAnnotation.vb" />
+    <Compile Include="AsposePDF\Annotations\AddSwfFileAsAnnotation.vb" />
+    <Compile Include="AsposePDF\Annotations\DeleteAllAnnotationsFromPage.vb" />
+    <Compile Include="AsposePDF\Annotations\DeleteParticularAnnotation.vb" />
+    <Compile Include="AsposePDF\Annotations\GetAllAnnotationsFromPage.vb" />
+    <Compile Include="AsposePDF\Annotations\GetParticularAnnotation.vb" />
+    <Compile Include="AsposePDF\Annotations\SetFreeTextAnnotationFormatting.vb" />
+    <Compile Include="AsposePDF\Attachments\AddAttachment.vb" />
+    <Compile Include="AsposePDF\Attachments\DeleteAllAttachments.vb" />
+    <Compile Include="AsposePDF\Attachments\DisableFilesCompression.vb" />
+    <Compile Include="AsposePDF\Attachments\GetAlltheAttachments.vb" />
+    <Compile Include="AsposePDF\Attachments\GetIndividualAttachment.vb" />
+    <Compile Include="AsposePDF\Attachments\GetAttachmentInfo.vb" />
+    <Compile Include="AsposePDF\Bookmarks\AddBookmark.vb" />
+    <Compile Include="AsposePDF\Bookmarks\AddChildBookmark.vb" />
+    <Compile Include="AsposePDF\Bookmarks\DeleteAllBookmarks.vb" />
+    <Compile Include="AsposePDF\Bookmarks\DeleteParticularBookmark.vb" />
+    <Compile Include="AsposePDF\Bookmarks\GetBookmarks.vb" />
+    <Compile Include="AsposePDF\Bookmarks\GetChildBookmarks.vb" />
+    <Compile Include="AsposePDF\Bookmarks\UpdateBookmarks.vb" />
+    <Compile Include="AsposePDF\Bookmarks\UpdateChildBookmarks.vb" />
+    <Compile Include="AsposePDF\DocumentConversion\CGMToPDF.vb" />
+    <Compile Include="AsposePDF\DocumentConversion\EPUBToPDF.vb" />
+    <Compile Include="AsposePDF\DocumentConversion\HTMLToPDF.vb" />
+    <Compile Include="AsposePDF\DocumentConversion\PCLToPDF.vb" />
+    <Compile Include="AsposePDF\DocumentConversion\PDFToDOC.vb" />
+    <Compile Include="AsposePDF\DocumentConversion\PDFToEPUB.vb" />
+    <Compile Include="AsposePDF\DocumentConversion\PDFToHTML.vb" />
+    <Compile Include="AsposePDF\DocumentConversion\PDFToPDFA.vb" />
+    <Compile Include="AsposePDF\DocumentConversion\PDFToTeX.vb" />
+    <Compile Include="AsposePDF\DocumentConversion\PDFToXML.vb" />
+    <Compile Include="AsposePDF\DocumentConversion\SVGToPDF.vb" />
+    <Compile Include="AsposePDF\DocumentConversion\XPSToPDF.vb" />
+    <Compile Include="AsposePDF\DocumentConversion\GetSVGDimensions.vb" />
+    <Compile Include="AsposePDF\Forms\ComboBox.vb" />
+    <Compile Include="AsposePDF\Forms\RadioButton.vb" />
+    <Compile Include="AsposePDF\Forms\TextBox.vb" />
+    <Compile Include="AsposePDF\Forms\DeleteFormField.vb" />
+    <Compile Include="AsposePDF\Forms\DetermineRequiredField.vb" />
+    <Compile Include="AsposePDF\Forms\DynamicXFAToAcroForm.vb" />
+    <Compile Include="AsposePDF\Forms\FillFormField.vb" />
+    <Compile Include="AsposePDF\Forms\FormFieldFont14.vb" />
+    <Compile Include="AsposePDF\Forms\GetFieldsFromRegion.vb" />
+    <Compile Include="AsposePDF\Forms\GetValueFromField.vb" />
+    <Compile Include="AsposePDF\Forms\GetValuesFromAllFields.vb" />
+    <Compile Include="AsposePDF\Forms\ModifyFormField.vb" />
+    <Compile Include="AsposePDF\Forms\MoveFormField.vb" />
+    <Compile Include="AsposePDF\Forms\SetJavaScript.vb" />
+    <Compile Include="AsposePDF\Forms\FillXFAFields.vb" />
+    <Compile Include="AsposePDF\Forms\GetXFAProperties.vb" />
+    <Compile Include="AsposePDF\Images\ConvertAllPagesToEMF.vb" />
+    <Compile Include="AsposePDF\Images\ConvertAllPagesToPNG.vb" />
+    <Compile Include="AsposePDF\Images\CGMImageToPDF.vb" />
+    <Compile Include="AsposePDF\Images\PagesToImages.vb" />
+    <Compile Include="AsposePDF\Images\PageToEMF.vb" />
+    <Compile Include="AsposePDF\Images\PageToPNG.vb" />
+    <Compile Include="AsposePDF\Images\PageToTIFF.vb" />
+    <Compile Include="AsposePDF\Images\DeleteImages.vb" />
+    <Compile Include="AsposePDF\Images\ExtractImages.vb" />
+    <Compile Include="AsposePDF\Images\ImagePlacements.vb" />
+    <Compile Include="AsposePDF\Images\ReplaceImage.vb" />
+    <Compile Include="AsposePDF\Images\SearchAndGetImages.vb" />
+    <Compile Include="AsposePDF\Links-Actions\AddHyperlink.vb" />
+    <Compile Include="AsposePDF\Links-Actions\CreateApplicationLink.vb" />
+    <Compile Include="AsposePDF\Links-Actions\CreateDocumentLink.vb" />
+    <Compile Include="AsposePDF\Links-Actions\ExtractLinks.vb" />
+    <Compile Include="AsposePDF\Links-Actions\RemoveOpenAction.vb" />
+    <Compile Include="AsposePDF\Links-Actions\SpecifyPageWhenViewing.vb" />
+    <Compile Include="AsposePDF\Links-Actions\UpdateLinks.vb" />
+    <Compile Include="AsposePDF\Pages\ImageAsBackground.vb" />
+    <Compile Include="AsposePDF\Pages\ConcatenatePdfFiles.vb" />
+    <Compile Include="AsposePDF\Pages\DeleteParticularPage.vb" />
+    <Compile Include="AsposePDF\Pages\GetNumberofPages.vb" />
+    <Compile Include="AsposePDF\Pages\GetProperties.vb" />
+    <Compile Include="AsposePDF\Pages\GetParticularPage.vb" />
+    <Compile Include="AsposePDF\Pages\InsertEmptyPageAtEnd.vb" />
+    <Compile Include="AsposePDF\Pages\InsertEmptyPage.vb" />
+    <Compile Include="AsposePDF\Pages\SplitToPages.vb" />
+    <Compile Include="AsposePDF\Pages\UpdateDimensions.vb" />
+    <Compile Include="AsposePDF\Security-Signatures\ChangePassword.vb" />
+    <Compile Include="AsposePDF\Security-Signatures\Decrypt.vb" />
+    <Compile Include="AsposePDF\Security-Signatures\IsPasswordProtected.vb" />
+    <Compile Include="AsposePDF\Security-Signatures\DigitallySign.vb" />
+    <Compile Include="AsposePDF\Security-Signatures\Encrypt.vb" />
+    <Compile Include="AsposePDF\Security-Signatures\ExtractingImage.vb" />
+    <Compile Include="AsposePDF\Security-Signatures\ExtractSignatureInfo.vb" />
+    <Compile Include="AsposePDF\Stamps-Watermarks\AddingDifferentHeaders.vb" />
+    <Compile Include="AsposePDF\Stamps-Watermarks\ImageInFooter.vb" />
+    <Compile Include="AsposePDF\Stamps-Watermarks\ImageinHeader.vb" />
+    <Compile Include="AsposePDF\Stamps-Watermarks\AddImageStamp.vb" />
+    <Compile Include="AsposePDF\Stamps-Watermarks\PDFPageStamps.vb" />
+    <Compile Include="AsposePDF\Stamps-Watermarks\TextinFooter.vb" />
+    <Compile Include="AsposePDF\Stamps-Watermarks\TextinHeader.vb" />
+    <Compile Include="AsposePDF\Stamps-Watermarks\AddTextStamp.vb" />
+    <Compile Include="AsposePDF\Stamps-Watermarks\PageNumberStamps.vb" />
+    <Compile Include="AsposePDF\Stamps-Watermarks\DefineAlignment.vb" />
+    <Compile Include="AsposePDF\Tables\AddTable.vb" />
+    <Compile Include="AsposePDF\Tables\IntegrateWithDatabase.vb" />
+    <Compile Include="AsposePDF\Tables\RenderTable.vb" />
+    <Compile Include="AsposePDF\Tables\SetBorder.vb" />
+    <Compile Include="AsposePDF\Tables\MarginsOrPadding.vb" />
+    <Compile Include="AsposePDF\Text\ExtractTextAll.vb" />
+    <Compile Include="AsposePDF\Text\ExtractTextPage.vb" />
+    <Compile Include="AsposePDF\Text\ReplaceTextAll.vb" />
+    <Compile Include="AsposePDF\Text\ReplaceTextPage.vb" />
+    <Compile Include="AsposePDF\Text\SearchAndGetTextAll.vb" />
+    <Compile Include="AsposePDF\Text\SearchRegularExpression.vb" />
+    <Compile Include="AsposePDF\Text\SearchAndGetTextPage.vb" />
+    <Compile Include="AsposePDF\Text\SearchRegularExpressionPage.vb" />
+    <Compile Include="AsposePDF\Text\SearchTextSegmentsAll.vb" />
+    <Compile Include="AsposePDF\Text\SearchTextSegmentsPage.vb" />
+    <Compile Include="AsposePDF\Text\SearchTextRegex.vb" />
+    <Compile Include="AsposePDF\Working-Document\AddTOC.vb" />
+    <Compile Include="AsposePDF\Working-Document\GetDocumentWindow.vb" />
+    <Compile Include="AsposePDF\Working-Document\GetFileInfo.vb" />
+    <Compile Include="AsposePDF\Working-Document\GetZoomFactor.vb" />
+    <Compile Include="AsposePDF\Working-Document\SetZoomFactor.vb" />
+    <Compile Include="AsposePDF\Working-Document\GetXMPMetadata.vb" />
+    <Compile Include="AsposePDF\Working-Document\OptimizeDocument.vb" />
+    <Compile Include="AsposePDF\Working-Document\SetDocumentWindow.vb" />
+    <Compile Include="AsposePDF\Working-Document\SetFileInfo.vb" />
+    <Compile Include="AsposePDF\Working-Document\SetXMPMetadata.vb" />
+    <Compile Include="AsposePDF\Working-Document\ValidatePDFAStandard.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="RunExamples.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AsposePdfFacades\Attachments\Data\test.txt" />
+    <Content Include="AsposePdfFacades\Bookmarks\Data\bookmarks.xml" />
+    <Content Include="AsposePdfFacades\Images\Data\aspose-logo.jpg" />
+    <Content Include="AsposePdfFacades\Images\Data\aspose-logo.png" />
+    <Content Include="AsposePdfFacades\Stamps-Watermarks\Data\aspose-logo.jpg" />
+    <Content Include="AsposePdfGenerator\Conversion\Data\HTMLToPDF.htm" />
+    <Content Include="AsposePdfGenerator\Conversion\Data\XSLFOToPDF.xml" />
+    <Content Include="AsposePdfGenerator\Conversion\Data\XSLFOToPDF.xsl" />
+    <Content Include="AsposePdfGenerator\Sections\Data\aspose-logo.jpg" />
+    <Content Include="AsposePdfGenerator\Text\Data\InlineHTMLFromXML.xml" />
+    <Content Include="AsposePdfGenerator\Text\Data\Aspose.Pdf.TruetypeFontMap.xml" />
+    <Content Include="AsposePDF\Annotations\Data\AddSwfFileAsAnnotation.swf" />
+    <Content Include="AsposePDF\Attachments\Data\AddAttachment.txt" />
+    <Content Include="AsposePDF\DocumentConversion\Data\HTMLToPDF.html" />
+    <Content Include="AsposePDF\DocumentConversion\Data\SVGToPDF.svg" />
+    <Content Include="AsposePDF\DocumentConversion\Data\GetSVGDimensions.svg" />
+    <Content Include="AsposePDF\Images\Data\aspose-logo.jpg" />
+    <Content Include="AsposePDF\Pages\Data\aspose-total-for-net.jpg" />
+    <Content Include="AsposePDF\Security-Signatures\Data\aspose-logo.jpg" />
+    <Content Include="AsposePDF\Stamps-Watermarks\Data\aspose-logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AsposePdfFacades\Annotations\Data\AddFreeTextAnnotation.pdf" />
+    <None Include="AsposePdfFacades\Annotations\Data\CreateFileAnnotation.pdf" />
+    <None Include="AsposePdfFacades\Annotations\Data\DeleteAllAnnotations.pdf" />
+    <None Include="AsposePdfFacades\Annotations\Data\ExportAnnotations.pdf" />
+    <None Include="AsposePdfFacades\Annotations\Data\ExtractAnnotations.pdf" />
+    <None Include="AsposePdfFacades\Annotations\Data\annotations.xfdf" />
+    <None Include="AsposePdfFacades\Annotations\Data\ImportAnnotations.pdf" />
+    <None Include="AsposePdfFacades\Attachments\Data\AddAttachment-Stream.pdf" />
+    <None Include="AsposePdfFacades\Attachments\Data\AddAttachment.pdf" />
+    <None Include="AsposePdfFacades\Attachments\Data\DeleteAllAttachments.pdf" />
+    <None Include="AsposePdfFacades\Attachments\Data\ExtractAllAttachments.pdf" />
+    <None Include="AsposePdfFacades\Attachments\Data\GetAttachmentNames.pdf" />
+    <None Include="AsposePdfFacades\Bookmarks\Data\AddBookmark.pdf" />
+    <None Include="AsposePdfFacades\Bookmarks\Data\AddChildBookmark.pdf" />
+    <None Include="AsposePdfFacades\Bookmarks\Data\CreateBookmark-Page.pdf" />
+    <None Include="AsposePdfFacades\Bookmarks\Data\CreateBookmarksAll.pdf" />
+    <None Include="AsposePdfFacades\Bookmarks\Data\CreateBookmarks-PagesProperties.pdf" />
+    <None Include="AsposePdfFacades\Bookmarks\Data\DeleteAllBookmarks.pdf" />
+    <None Include="AsposePdfFacades\Bookmarks\Data\DeleteABookmark.pdf" />
+    <None Include="AsposePdfFacades\Bookmarks\Data\ExportToXML.pdf" />
+    <None Include="AsposePdfFacades\Bookmarks\Data\ExtractBookmarks.pdf" />
+    <None Include="AsposePdfFacades\Bookmarks\Data\GetFromPDF.pdf" />
+    <None Include="AsposePdfFacades\Bookmarks\Data\ImportFromXML.pdf" />
+    <None Include="AsposePdfFacades\Bookmarks\Data\UpdateBookmark.pdf" />
+    <None Include="AsposePdfFacades\Forms\Data\AddFormField.pdf" />
+    <None Include="AsposePdfFacades\Forms\Data\AddListItem.pdf" />
+    <None Include="AsposePdfFacades\Forms\Data\CopyInnerField.pdf" />
+    <None Include="AsposePdfFacades\Forms\Data\CopyOuterField.pdf" />
+    <None Include="AsposePdfFacades\Forms\Data\DecorateFields.pdf" />
+    <None Include="AsposePdfFacades\Images\Data\AddImage.pdf" />
+    <None Include="AsposePdfFacades\Images\Data\Convert-PageRegion.pdf" />
+    <None Include="AsposePdfFacades\Images\Data\ConvertToTIFF.pdf" />
+    <None Include="AsposePdfFacades\Images\Data\ConvertToTIFF-Settings.pdf" />
+    <None Include="AsposePdfFacades\Images\Data\ConvertPDFPages.pdf" />
+    <None Include="AsposePdfFacades\Images\Data\DeleteAllImages.pdf" />
+    <None Include="AsposePdfFacades\Images\Data\DeleteImages-Page.pdf" />
+    <None Include="AsposePdfFacades\Images\Data\ExtractImageExtractionMode.pdf" />
+    <None Include="AsposePdfFacades\Images\Data\ExtractImages-Page.pdf" />
+    <None Include="AsposePdfFacades\Images\Data\ExtractImages-PagesRange.pdf" />
+    <None Include="AsposePdfFacades\Images\Data\ExtractImages.pdf" />
+    <None Include="AsposePdfFacades\Images\Data\ExtractImages-Stream.pdf" />
+    <None Include="AsposePdfFacades\Images\Data\ReplaceImage.pdf" />
+    <None Include="AsposePdfFacades\Printing\Data\Print-PageRange.pdf" />
+    <None Include="AsposePdfFacades\Stamps-Watermarks\Data\AddFooter.pdf" />
+    <None Include="AsposePdfFacades\Stamps-Watermarks\Data\AddHeader.pdf" />
+    <None Include="AsposePdfFacades\Stamps-Watermarks\Data\AddImage-Footer.pdf" />
+    <None Include="AsposePdfFacades\Stamps-Watermarks\Data\AddImage-Header.pdf" />
+    <None Include="AsposePdfFacades\Stamps-Watermarks\Data\AddImageStampAll.pdf" />
+    <None Include="AsposePdfFacades\Stamps-Watermarks\Data\AddImageStamp-Page.pdf" />
+    <None Include="AsposePdfFacades\Stamps-Watermarks\Data\AddPageNumber.pdf" />
+    <None Include="AsposePdfFacades\Stamps-Watermarks\Data\AddPageStampAll.pdf" />
+    <None Include="AsposePdfFacades\Stamps-Watermarks\Data\temp.pdf" />
+    <None Include="AsposePdfFacades\Stamps-Watermarks\Data\AddPageStamp-Page.pdf" />
+    <None Include="AsposePdfFacades\Stamps-Watermarks\Data\AddTextStampAll.pdf" />
+    <None Include="AsposePdfFacades\Stamps-Watermarks\Data\AddTextStamp-Page.pdf" />
+    <None Include="AsposePdfFacades\Stamps-Watermarks\Data\ChangeStampPosition.pdf" />
+    <None Include="AsposePdfFacades\Stamps-Watermarks\Data\ExtractImage-ImageStamp.pdf" />
+    <None Include="AsposePdfFacades\Text\Data\AddText.pdf" />
+    <None Include="AsposePdfFacades\Text\Data\ExtractText-Page.pdf" />
+    <None Include="AsposePdfFacades\Text\Data\ExtractText.pdf" />
+    <None Include="AsposePdfFacades\Text\Data\ExtractText-PageRange.pdf" />
+    <None Include="AsposePdfFacades\Text\Data\ReplaceText.pdf" />
+    <None Include="AsposePdfFacades\Text\Data\ReplaceText-Page.pdf" />
+    <None Include="AsposePdfFacades\Working-Document\Data\GetFileInfo.pdf" />
+    <None Include="AsposePdfFacades\Working-Document\Data\GetXMPMetadata.pdf" />
+    <None Include="AsposePdfFacades\Working-Document\Data\SetFileInfo.pdf" />
+    <None Include="AsposePdfFacades\Working-Document\Data\SetViewerPreference.pdf" />
+    <None Include="AsposePdfFacades\Working-Document\Data\SetXMPMetadata.pdf" />
+    <None Include="AsposePdfGenerator\Conversion\Data\XSLFOToPDF.fo" />
+    <None Include="AsposePdfGenerator\Paragraphs\Data\AssignID.pdf" />
+    <None Include="AsposePdfGenerator\Paragraphs\Data\Render.pdf" />
+    <None Include="AsposePdfGenerator\Paragraphs\Data\SetMargins.pdf" />
+    <None Include="AsposePdfGenerator\Sections\Data\SetPageBackgroundImage.pdf" />
+    <None Include="AsposePdfGenerator\Text\Data\CustomTabStops.pdf" />
+    <None Include="AsposePdfGenerator\Text\Data\TextFormattingTags.pdf" />
+    <None Include="AsposePDF\Annotations\Data\AddAnnotation.pdf" />
+    <None Include="AsposePDF\Annotations\Data\AddSwfFileAsAnnotation.pdf" />
+    <None Include="AsposePDF\Annotations\Data\DeleteAllAnnotationsFromPage.pdf" />
+    <None Include="AsposePDF\Annotations\Data\DeleteParticularAnnotation.pdf" />
+    <None Include="AsposePDF\Annotations\Data\GetAllAnnotationsFromPage.pdf" />
+    <None Include="AsposePDF\Annotations\Data\GetParticularAnnotation.pdf" />
+    <None Include="AsposePDF\Annotations\Data\SetFreeTextAnnotationFormatting.pdf" />
+    <None Include="AsposePDF\Attachments\Data\AddAttachment.pdf" />
+    <None Include="AsposePDF\Attachments\Data\DeleteAllAttachments.pdf" />
+    <None Include="AsposePDF\Attachments\Data\DisableFilesCompression.pdf" />
+    <None Include="AsposePDF\Attachments\Data\GetAlltheAttachments.pdf" />
+    <None Include="AsposePDF\Attachments\Data\GetIndividualAttachment.pdf" />
+    <None Include="AsposePDF\Attachments\Data\GetAttachmentInfo.pdf" />
+    <None Include="AsposePDF\Bookmarks\Data\AddBookmark.pdf" />
+    <None Include="AsposePDF\Bookmarks\Data\AddChildBookmark.pdf" />
+    <None Include="AsposePDF\Bookmarks\Data\DeleteAllBookmarks.pdf" />
+    <None Include="AsposePDF\Bookmarks\Data\DeleteParticularBookmark.pdf" />
+    <None Include="AsposePDF\Bookmarks\Data\GetBookmarks.pdf" />
+    <None Include="AsposePDF\Bookmarks\Data\GetChildBookmarks.pdf" />
+    <None Include="AsposePDF\Bookmarks\Data\UpdateBookmarks.pdf" />
+    <None Include="AsposePDF\Bookmarks\Data\UpdateChildBookmarks.pdf" />
+    <None Include="AsposePDF\DocumentConversion\Data\CGMToPDF.CGM" />
+    <None Include="AsposePDF\DocumentConversion\Data\EPUBToPDF.epub" />
+    <None Include="AsposePDF\DocumentConversion\Data\PCLToPDF.pcl" />
+    <None Include="AsposePDF\DocumentConversion\Data\PDFToDOC.pdf" />
+    <None Include="AsposePDF\DocumentConversion\Data\PDFToEPUB.pdf" />
+    <None Include="AsposePDF\DocumentConversion\Data\PDFToHTML.pdf" />
+    <None Include="AsposePDF\DocumentConversion\Data\PDFToPDFA.pdf" />
+    <None Include="AsposePDF\DocumentConversion\Data\PDFToTeX.pdf" />
+    <None Include="AsposePDF\DocumentConversion\Data\PDFToXML.pdf" />
+    <None Include="AsposePDF\DocumentConversion\Data\XPSToPDF.xps" />
+    <None Include="AsposePDF\DocumentConversion\Data\GetSVGDimensions.pdf" />
+    <None Include="AsposePDF\Forms\Data\TextField.pdf" />
+    <None Include="AsposePDF\Forms\Data\AddTooltipToField.pdf" />
+    <None Include="AsposePDF\Forms\Data\DeleteFormField.pdf" />
+    <None Include="AsposePDF\Forms\Data\DetermineRequiredField.pdf" />
+    <None Include="AsposePDF\Forms\Data\DynamicXFAToAcroForm.pdf" />
+    <None Include="AsposePDF\Forms\Data\FillFormField.pdf" />
+    <None Include="AsposePDF\Forms\Data\FormFieldFont14.pdf" />
+    <None Include="AsposePDF\Forms\Data\GetFieldsFromRegion.pdf" />
+    <None Include="AsposePDF\Forms\Data\GetValueFromField.pdf" />
+    <None Include="AsposePDF\Forms\Data\GetValuesFromAllFields.pdf" />
+    <None Include="AsposePDF\Forms\Data\ModifyFormField.pdf" />
+    <None Include="AsposePDF\Forms\Data\MoveFormField.pdf" />
+    <None Include="AsposePDF\Forms\Data\SetJavaScript.pdf" />
+    <None Include="AsposePDF\Forms\Data\FillXFAFields.pdf" />
+    <None Include="AsposePDF\Forms\Data\GetXFAProperties.pdf" />
+    <None Include="AsposePDF\Images\Data\AddImage.pdf" />
+    <None Include="AsposePDF\Images\Data\ConvertAllPagesToEMF.pdf" />
+    <None Include="AsposePDF\Images\Data\ConvertAllPagesToPNG.pdf" />
+    <None Include="AsposePDF\Images\Data\PagesToImages.pdf" />
+    <None Include="AsposePDF\Images\Data\PageToEMF.pdf" />
+    <None Include="AsposePDF\Images\Data\PageToPNG.pdf" />
+    <None Include="AsposePDF\Images\Data\DeleteImages.pdf" />
+    <None Include="AsposePDF\Images\Data\ExtractImages.pdf" />
+    <None Include="AsposePDF\Images\Data\ImageInformation.pdf" />
+    <None Include="AsposePDF\Images\Data\ImagePlacement.pdf" />
+    <None Include="AsposePDF\Images\Data\ReplaceImage.pdf" />
+    <None Include="AsposePDF\Images\Data\SearchAndGetImages.pdf" />
+    <None Include="AsposePDF\Links-Actions\Data\AddHyperlink.pdf" />
+    <None Include="AsposePDF\Links-Actions\Data\CreateApplicationLink.pdf" />
+    <None Include="AsposePDF\Links-Actions\Data\CreateDocumentLink.pdf" />
+    <None Include="AsposePDF\Links-Actions\Data\ExtractLinks.pdf" />
+    <None Include="AsposePDF\Links-Actions\Data\RemoveOpenAction.pdf" />
+    <None Include="AsposePDF\Links-Actions\Data\SpecifyPageWhenViewing.pdf" />
+    <None Include="AsposePDF\Links-Actions\Data\UpdateLinks.pdf" />
+    <None Include="AsposePDF\Pages\Data\Concat1.pdf" />
+    <None Include="AsposePDF\Pages\Data\Concat2.pdf" />
+    <None Include="AsposePDF\Pages\Data\DeleteParticularPage.pdf" />
+    <None Include="AsposePDF\Pages\Data\GetNumberofPages.pdf" />
+    <None Include="AsposePDF\Pages\Data\GetProperties.pdf" />
+    <None Include="AsposePDF\Pages\Data\GetParticularPage.pdf" />
+    <None Include="AsposePDF\Pages\Data\InsertEmptyPageAtEnd.pdf" />
+    <None Include="AsposePDF\Pages\Data\InsertEmptyPage.pdf" />
+    <None Include="AsposePDF\Pages\Data\SplitToPages.pdf" />
+    <None Include="AsposePDF\Pages\Data\UpdateDimensions.pdf" />
+    <None Include="AsposePDF\Security-Signatures\Data\ChangePassword.pdf" />
+    <None Include="AsposePDF\Security-Signatures\Data\Decrypt.pdf" />
+    <None Include="AsposePDF\Security-Signatures\Data\IsPasswordProtected.pdf" />
+    <None Include="AsposePDF\Security-Signatures\Data\DigitallySign.pdf" />
+    <None Include="AsposePDF\Security-Signatures\Data\Encrypt.pdf" />
+    <None Include="AsposePDF\Security-Signatures\Data\ExtractingImage.pdf" />
+    <None Include="AsposePDF\Security-Signatures\Data\ExtractSignatureInfo.pdf" />
+    <None Include="AsposePDF\Stamps-Watermarks\Data\AddingDifferentHeaders.pdf" />
+    <None Include="AsposePDF\Stamps-Watermarks\Data\ImageInFooter.pdf" />
+    <None Include="AsposePDF\Stamps-Watermarks\Data\ImageinHeader.pdf" />
+    <None Include="AsposePDF\Stamps-Watermarks\Data\AddImageStamp.pdf" />
+    <None Include="AsposePDF\Stamps-Watermarks\Data\PDFPageStamp.pdf" />
+    <None Include="AsposePDF\Stamps-Watermarks\Data\TextinFooter.pdf" />
+    <None Include="AsposePDF\Stamps-Watermarks\Data\TextinHeader.pdf" />
+    <None Include="AsposePDF\Stamps-Watermarks\Data\AddTextStamp.pdf" />
+    <None Include="AsposePDF\Stamps-Watermarks\Data\PageNumberStamp.pdf" />
+    <None Include="AsposePDF\Stamps-Watermarks\Data\DefineAlignment.pdf" />
+    <None Include="AsposePDF\Tables\Data\AddTable.pdf" />
+    <None Include="AsposePDF\Tables\Data\IntegrateTableWithDatabase.pdf" />
+    <None Include="AsposePDF\Tables\Data\RenderTable.pdf" />
+    <None Include="AsposePDF\Tables\Data\SetBorder.pdf" />
+    <None Include="AsposePDF\Tables\Data\MarginsOrPadding.pdf" />
+    <None Include="AsposePDF\Text\Data\ExtractTextAll.pdf" />
+    <None Include="AsposePDF\Text\Data\ExtractTextPage.pdf" />
+    <None Include="AsposePDF\Text\Data\ReplaceTextAll.pdf" />
+    <None Include="AsposePDF\Text\Data\ReplaceTextPage.pdf" />
+    <None Include="AsposePDF\Text\Data\SearchAndGetTextFromAll.pdf" />
+    <None Include="AsposePDF\Text\Data\SearchRegularExpressionAll.pdf" />
+    <None Include="AsposePDF\Text\Data\SearchAndGetTextPage.pdf" />
+    <None Include="AsposePDF\Text\Data\SearchRegularExpressionPage.pdf" />
+    <None Include="AsposePDF\Text\Data\SearchTextSegmentsAll.pdf" />
+    <None Include="AsposePDF\Text\Data\SearchTextSegmentsPage.pdf" />
+    <None Include="AsposePDF\Text\Data\SearchTextRegex.pdf" />
+    <None Include="AsposePDF\Working-Document\Data\AddTOC.pdf" />
+    <None Include="AsposePDF\Working-Document\Data\GetDocumentWindow.pdf" />
+    <None Include="AsposePDF\Working-Document\Data\GetFileInfo.pdf" />
+    <None Include="AsposePDF\Working-Document\Data\GetZoomFactor.pdf" />
+    <None Include="AsposePDF\Working-Document\Data\SetZoomFactor.pdf" />
+    <None Include="AsposePDF\Working-Document\Data\GetXMPMetadata.pdf" />
+    <None Include="AsposePDF\Working-Document\Data\OptimizeDocument.pdf" />
+    <None Include="AsposePDF\Working-Document\Data\SetDocumentWindow.pdf" />
+    <None Include="AsposePDF\Working-Document\Data\SetFileInfo.pdf" />
+    <None Include="AsposePDF\Working-Document\Data\SetXMPMetadata.pdf" />
+    <None Include="AsposePDF\Working-Document\Data\ValidatePDFAStandard.pdf" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
