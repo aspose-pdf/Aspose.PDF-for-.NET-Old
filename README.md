@@ -15,6 +15,7 @@ Directory | Description
 --------- | -----------
 [Examples](https://github.com/asposepdf/Aspose_Pdf_NET/tree/master/Examples)  | A collection of .NET examples that help you learn how to use product features.
 [Showcases](https://github.com/asposepdf/Aspose_Pdf_NET/tree/master/Showcases)  | Standalone ready-to-use applications that demonstrate some specific use cases.
+[Plugins](Plugins)  | Standalone Plugins that will demonstrate one or multiple features on Aspose.Pdf for .NET
 
 ## Resources
 
