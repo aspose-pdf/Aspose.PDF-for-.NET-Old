@@ -29,7 +29,7 @@ namespace CSharp.AsposePdf.Bookmarks
             pdfOutline.Bold = true;
             
             //set the destination page number
-            pdfOutline.Destination = new GoToAction(2);
+            pdfOutline.Destination = new GoToAction(pdfDocument.Pages[2]);
 
             //create a child bookmark object
             OutlineItemCollection pdfChildOutline = new OutlineItemCollection(pdfDocument.Outlines);
@@ -38,7 +38,7 @@ namespace CSharp.AsposePdf.Bookmarks
             pdfChildOutline.Bold = true;
             
             //set the destination page number for child outline
-            pdfChildOutline.Destination = new GoToAction(1);
+            pdfChildOutline.Destination = new GoToAction(pdfDocument.Pages[1]);
             
             //add child bookmark in parent bookmark's collection
             pdfOutline.Add(pdfChildOutline);

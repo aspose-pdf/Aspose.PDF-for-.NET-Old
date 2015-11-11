@@ -29,7 +29,7 @@ namespace CSharp.AsposePdf.LinksActions
             // Specify the destination for link object
             // The first parameter is document object, second is destination page number.
             // The 5ht argument is zoom factor when displaying the respective page. When using 2, the page will be displayed in 200% zoom
-            goToAction.Destination = new Aspose.Pdf.InteractiveFeatures.XYZExplicitDestination(doc, 1, 1, 2, 2);
+            goToAction.Destination = new Aspose.Pdf.InteractiveFeatures.XYZExplicitDestination(1, 1, 2, 2);
             // Save the document with updated link
             doc.Save(dataDir + "PDFLINK_Modified_UpdateLinks_out.pdf");
 

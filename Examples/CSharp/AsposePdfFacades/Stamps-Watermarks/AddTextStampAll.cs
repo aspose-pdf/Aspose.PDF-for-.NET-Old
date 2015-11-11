@@ -20,9 +20,12 @@ namespace CSharp.AsposePDFFacades.StampsWatermarks
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdfFacades_StampsWatermarks();
 
-            //open document
-            PdfFileStamp fileStamp = new PdfFileStamp(dataDir+ "AddTextStampAll.pdf", dataDir+  "AddTextStampAll_out.pdf");
+            //create PdfFileStamp object
+            PdfFileStamp fileStamp = new PdfFileStamp();
 
+            //Open Document
+            fileStamp.BindPdf(dataDir + "AddTextStampAll.pdf"); 
+           
             //create stamp
             Aspose.Pdf.Facades.Stamp stamp = new Aspose.Pdf.Facades.Stamp();
             stamp.BindLogo(new FormattedText("Hello World!", System.Drawing.Color.Blue, System.Drawing.Color.Gray, Aspose.Pdf.Facades.FontStyle.Helvetica, EncodingType.Winansi, true, 14));
@@ -34,6 +37,9 @@ namespace CSharp.AsposePDFFacades.StampsWatermarks
             fileStamp.AddStamp(stamp);
 
             //save updated PDF file
+            fileStamp.Save(dataDir + "AddTextStampAll_out.pdf");
+
+            //close fileStamp
             fileStamp.Close();
  
         }

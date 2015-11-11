@@ -18,8 +18,12 @@ namespace CSharp.AsposePDFFacades.Text
         {
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Text();
+
+            //open document
+            PdfFileMend mender = new PdfFileMend();
+
             //create PdfFileMend object to add text
-            PdfFileMend mender = new PdfFileMend(dataDir+ "AddText.pdf", dataDir+ "AddText_out.pdf");
+            mender.BindPdf(dataDir + "AddText.pdf");
 
             //create formatted text
             FormattedText text = new FormattedText("Aspose - Your File Format Experts!", System.Drawing.Color.AliceBlue, System.Drawing.Color.Gray, Aspose.Pdf.Facades.FontStyle.Courier, EncodingType.Winansi, true, 14);
@@ -30,6 +34,9 @@ namespace CSharp.AsposePDFFacades.Text
 
             //add text in the PDF file
             mender.AddText(text, 1, 100, 200, 200, 400);
+
+            //save changes
+            mender.Save(dataDir + "AddText_out.pdf");
 
             //close PdfFileMend object
             mender.Close();

@@ -18,20 +18,30 @@ namespace CSharp.AsposePDFFacades.Forms
         {
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
-            //create FormEditor object and open PDF file
-            FormEditor form = new FormEditor(dataDir+ "input_form.pdf", dataDir+ "DecorateFields_out.pdf");
+
+            //open document
+            FormEditor form = new FormEditor();
+
+            //open the document and create a FormEditor object
+            form.BindPdf(dataDir + "input_form.pdf");
+
             //create a new facade object
             FormFieldFacade facade = new FormFieldFacade();
+
             //assign the facade to form editor
             form.Facade = facade;
+
             //set the backgroud color as red
             facade.BackgroundColor = System.Drawing.Color.Red;
+
             //set the alignment as center
             facade.Alignment = FormFieldFacade.AlignCenter;
+
             //all text fields will be modified:
             form.DecorateField(FieldType.Text);
+
             //close and validate the modification like this:
-            form.Save();
+            form.Save(dataDir + "DecorateFields_out.pdf");
             
         }
     }

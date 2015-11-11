@@ -19,16 +19,23 @@ namespace CSharp.AsposePDFFacades.StampsWatermarks
         {
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdfFacades_StampsWatermarks();
-            //open document
-            PdfFileStamp fileStamp = new PdfFileStamp(dataDir+ "AddFooter.pdf", dataDir+ "AddFooter_out.pdf");
 
-            //create formatted text for page number
+            //create PdfFileStamp object
+            PdfFileStamp fileStamp = new PdfFileStamp();
+
+            //Open Document
+            fileStamp.BindPdf(dataDir + "AddFooter.pdf");
+
+           //create formatted text for page number
             FormattedText formattedText = new FormattedText("Aspose - Your File Format Experts!", System.Drawing.Color.Blue, System.Drawing.Color.Gray, Aspose.Pdf.Facades.FontStyle.Courier, EncodingType.Winansi, false, 14);
 
             //add footer
             fileStamp.AddFooter(formattedText, 10);
-
+            
             //save updated PDF file
+            fileStamp.Save(dataDir + "AddFooter_out.pdf");
+
+            //close fileStamp
             fileStamp.Close();
  
             

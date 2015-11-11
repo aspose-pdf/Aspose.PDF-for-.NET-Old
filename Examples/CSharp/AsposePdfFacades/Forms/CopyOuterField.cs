@@ -18,12 +18,18 @@ namespace CSharp.AsposePDFFacades.Forms
         {
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
+
+            //open document
+            FormEditor formEditor = new FormEditor();
+           
             //open the document and create a FormEditor object
-            FormEditor formEditor = new FormEditor(dataDir+ "input_form.pdf", dataDir+ "CopyOuterField_out.pdf");
+            formEditor.BindPdf(dataDir + "input_form.pdf");
+           
             //copy a text field from one document to another one
             formEditor.CopyOuterField("textfieldform.pdf", "textfield", 1);
+           
             //close and save the output document
-            formEditor.Save();
+            formEditor.Save(dataDir + "CopyOuterField_out.pdf");
             
             
         }

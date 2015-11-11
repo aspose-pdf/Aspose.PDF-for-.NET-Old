@@ -19,6 +19,7 @@ namespace CSharp.AsposePDFFacades.Images
         {
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Images();
+
             //create PdfConverter object
             PdfConverter objConverter = new PdfConverter();
 
@@ -27,7 +28,8 @@ namespace CSharp.AsposePDFFacades.Images
 
             //initialize the converting process
             objConverter.DoConvert();
-            objConverter.ShowHiddenAreas = true;
+
+            objConverter.CoordinateType = PageCoordinateType.CropBox;
 
             //check if pages exist and then convert to image one by one
             while (objConverter.HasNextImage())

@@ -19,11 +19,17 @@ namespace CSharp.AsposePDFFacades.Images
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Images();
 
-            //create PdfFileMend object to add text
-            PdfFileMend mender = new PdfFileMend(dataDir + "AddImage.pdf", dataDir + "AddImage_out.pdf");
+            //open document
+            PdfFileMend mender = new PdfFileMend();
 
-            //add image in the PDF file
+            //create PdfFileMend object to add text
+            mender.BindPdf(dataDir + "AddImage.pdf");
+
+           //add image in the PDF file
             mender.AddImage(dataDir+ "aspose-logo.jpg", 1, 100, 600, 200, 700);
+
+            //save changes
+            mender.Save(dataDir + "AddImage_out.pdf");
 
             //close PdfFileMend object
             mender.Close();

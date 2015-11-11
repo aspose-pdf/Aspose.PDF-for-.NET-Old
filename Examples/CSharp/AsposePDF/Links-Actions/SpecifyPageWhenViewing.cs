@@ -26,7 +26,7 @@ namespace CSharp.AsposePdf.LinksActions
             // create the variable to set the zoom factor of target page
             double zoom = 1;
             // create GoToAction instance
-            Aspose.Pdf.InteractiveFeatures.GoToAction action = new Aspose.Pdf.InteractiveFeatures.GoToAction();
+            Aspose.Pdf.InteractiveFeatures.GoToAction action = new Aspose.Pdf.InteractiveFeatures.GoToAction(doc.Pages[2]);
             // Go to 2 page
             action.Destination = new XYZExplicitDestination(page2, 0, page2.Rect.Height, zoom);
             // set the document open action
