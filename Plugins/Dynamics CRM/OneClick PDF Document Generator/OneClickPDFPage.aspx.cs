@@ -17,7 +17,7 @@ namespace OneClick_PDF_Document_Generator
     public partial class OneClickPDFPage : System.Web.UI.Page
     {
         OrganizationServiceProxy Service;
-        string TemplateEntityName = "aspose_oneclickwordconfiguration";
+        string TemplateEntityName = "aspose_oneclickpdfconfiguration";
         Guid EntityId = Guid.Empty;
         string EntityName;
         protected void Page_Load(object sender, EventArgs e)

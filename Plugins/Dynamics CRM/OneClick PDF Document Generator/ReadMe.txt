@@ -1,0 +1,3 @@
+The Aspose .NET OneClick PDF Document Generator is open source add-on used to generate and export PDFs from CRM. You can design template in word and attach in CRM and generate document as you want. You can use OneClick PDF Document Generator with Account, Contact, Lead, Opportunity and Quote Entity. It provides option to Attach the generated document with the record itself and you can download the document as well. This add-on can also resolve option set and look-up fields. In addition it allows you to generate the PDF from the Top ribbon button as well as via a single click button on the form.
+
+Aspose .NET OneClick PDF Document Generator can be used with CRM on-premises and CRM Online.
