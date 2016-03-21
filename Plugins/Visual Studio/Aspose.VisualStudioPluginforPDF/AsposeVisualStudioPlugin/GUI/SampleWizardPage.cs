@@ -561,7 +561,7 @@ namespace AsposeVisualStudioPluginPdf.GUI
                     newText.Append(' ');
                 newText.Append(text[i]);
             }
-            return newText.ToString().Replace("L I N Q", "LINQ").Replace("X M L", "XML");
+            return newText.ToString().Replace("L I N Q", "LINQ").Replace("X M L", "XML").Replace("P D F", "PDF");
         }
     }
 }

@@ -13,7 +13,7 @@
 </ul>
 <p>&nbsp;</p>
 
-<p style="text-align: center;"><a href="http://www.aspose.com/docs/display/pdfnet/Aspose.Pdf+Visual+Studio+Plugin"><img class="size-full wp-image-29055  aligncenter" title="VSPluginPdfNet5" src="http://www.aspose.com/blogs/wp-content/uploads/2016/03/VSPluginPdfNet5.png" alt="" width="590" height="484" /></a></p>
+<p style="text-align: center;"><a title="Explore Aspose.Pdf for .NET API Examples" href="http://www.aspose.com/blogs/wp-content/uploads/2016/03/VSPluginPdfNet5.png"><img class="aligncenter size-full wp-image-29238" title="Explore Aspose.Pdf for .NET API Examples" src="http://www.aspose.com/blogs/wp-content/uploads/2016/03/VSPluginPdfNet5.png" alt="Explore Aspose.Pdf for .NET API Examples" width="590" height="484" /></a></p>
 <h2>Aspose.Pdf for .NET</h2>
 <p><a href="http://www.aspose.com/.net/Pdf-component.aspx"> <img style="float: left; padding-right: 5px;" title="Aspose.Pdf or .NET logo" src="http://www.aspose.com/App_Themes/V2/images/productLogos/NET/aspose_Pdf-for-net.jpg" alt="" width="100" height="100" /> </a>Aspose.Pdf for .NET is a PDF document creation and manipulation component that enables your .NET applications to read, write and manipulate existing PDF documents without using Adobe Acrobat.</p>
 <p>For more details about <a title="Aspose.Pdf for .NET API" href="http://www.aspose.com/.net/Pdf-component.aspx"> Aspose.Pdf for .NET API</a></p>
