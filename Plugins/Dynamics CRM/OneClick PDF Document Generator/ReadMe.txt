@@ -1,14 +1,12 @@
-# Easily Configure and Generate PDF Documents by single button click directly on the form in Microsoft Dynamics CRM
+[![Aspose.Pdf for .NET logo](http://www.aspose.com/blogs/wp-content/uploads/2013/06/aspose-Pdf-for-net_100.png "Aspose.Pdf for .NET logo")](http://www.aspose.com/.net/pdf-component.aspx)The Aspose .NET OneClick PDF Document Generator is open source add-on used to generate and export PDFs from CRM. You can design template in word and attach in CRM and generate document as you want. You can use OneClick PDF Document Generator with Account, Contact, Lead, Opportunity and Quote Entity. It provides option to Attach the generated document with the record itself and you can download the document as well. This add-on can also resolve option set and look-up fields. In addition it allows you to generate the PDF from the Top ribbon button as well as via a single click button on the form. Aspose .NET OneClick PDF Document Generator can be used with CRM on-premises and CRM Online.
 
-[![Aspose.Pdf for .NET logo](http://www.aspose.com/blogs/wp-content/uploads/2013/06/aspose-Pdf-for-net_100.png "Aspose.Pdf for .NET logo")](http://www.aspose.com/blogs/wp-content/uploads/2013/06/aspose-Pdf-for-net_100.png)The Aspose .NET OneClick PDF Document Generator is open source add-on used to generate and export PDFs from CRM. You can design template in word and attach in CRM and generate document as you want. You can use OneClick PDF Document Generator with Account, Contact, Lead, Opportunity and Quote Entity. It provides option to Attach the generated document with the record itself and you can download the document as well. This add-on can also resolve option set and look-up fields. In addition it allows you to generate the PDF from the Top ribbon button as well as via a single click button on the form. Aspose .NET OneClick PDF Document Generator can be used with CRM on-premises and CRM Online.
-
-[![Free Download](http://cdn.aspose.com/Images/marketplace/free-download-icon-aspose-mp.png "Free Download")](https://asposepdfmscrm.codeplex.com/releases/view/620418 "Free Download") [![Video Demo](http://cdn.aspose.com/Images/marketplace/video-demo-icon-aspose-mp.png)](https://youtu.be/2HsE0Urado8 "Video Demo") [ ![Open Source](http://cdn.aspose.com/Images/marketplace/open-source-icon-aspose-mp.png "Source Code")](https://asposepdfmscrm.codeplex.com/SourceControl/latest "Source Code")
+[![Free Download](http://cdn.aspose.com/Images/marketplace/free-download-icon-aspose-mp.png "Free Download")](https://asposepdfmscrm.codeplex.com/releases/view/620418 "Free Download") [![Video Demo](http://cdn.aspose.com/Images/marketplace/video-demo-icon-aspose-mp.png)](https://youtu.be/yIIj_2G88CY "Video Demo") [![Open Source](http://cdn.aspose.com/Images/marketplace/open-source-icon-aspose-mp.png "Source Code")](https://asposepdfmscrm.codeplex.com/SourceControl/latest "Source Code")
 
 ## Features in this Release
 
-The release of this add-on supports the following features:
+This release of the add-on supports the following features:
 
-*   Create Template inside word and attach in CRM. (use merge field feature of word where you want to include CRM data)
+*   Create Template inside Microsoft Word and attach in CRM. (use merge field feature of MS Word where you want to include CRM data)
 *   Allow you to add Optionset as well as lookups.
 *   Works with Account, Contact, Lead, Opportunity and Quote.
 *   One click button that can Generate document.
@@ -26,7 +24,9 @@ Please check the links below to find instructions on downloading, installing, co
 
 ## Video
 
-Please check [this video](https://youtu.be/2HsE0Urado8) to see it in action.
+Please check [this video](https://youtu.be/yIIj_2G88CY) to see it in action.
+
+<iframe allowfullscreen="" frameborder="0" height="315" mce_src="https://www.youtube.com/embed/yIIj_2G88CY?rel=0" src="https://www.youtube.com/embed/yIIj_2G88CY?rel=0" width="560"></iframe>
 
 ## Start a Free Trial Today
 
