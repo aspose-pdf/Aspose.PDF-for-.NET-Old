@@ -23,5 +23,5 @@ Directory | Description
 + **Product Home:** [Aspose.Pdf for .NET](http://www.aspose.com/products/pdf/net)
 + **Download:** [Download Aspose.Pdf for .NET](http://www.aspose.com/downloads/pdf/net)
 + **Documentation:** [Aspose.Pdf for .NET Documentation](http://www.aspose.com/docs/display/pdfnet/Home)
-+ **Forum:** [Aspose.Pdf for .NET Forum](http://www.aspose.com/community/forums/aspose.pdf-product-family/75/showforum.aspx)
++ **Forum:** [Aspose.Pdf for .NET Forum](http://www.aspose.com/community/forums/aspose.pdf-product-family/20/showforum.aspx)
 + **Blog:** [Aspose.Pdf for .NET Blog](http://www.aspose.com/blogs/aspose-products/aspose-pdf-product-family.html)
