@@ -10,7 +10,7 @@ using System.IO;
 using Aspose.Pdf;
 using Aspose.Pdf.Facades;
 
-namespace CSharp.AsposePDFFacades.Annotations
+namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Annotations
 {
     public class DeleteAllAnnotations
     {

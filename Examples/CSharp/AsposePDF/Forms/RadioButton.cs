@@ -1,49 +1,42 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
+using System;
 using System.IO;
-
+using Aspose.Pdf.Forms;
 using Aspose.Pdf;
-using Aspose.Pdf.InteractiveFeatures.Forms;
-
-namespace CSharp.AsposePdf.Forms
+namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Forms
 {
     public class RadioButton
     {
         public static void Run()
         {
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+            try
+            {
+                // ExStart:RadioButton
+                // The path to the documents directory.
+                string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-            // Create directory if it is not already present.
-            bool IsExists = System.IO.Directory.Exists(dataDir);
-            if (!IsExists)
-                System.IO.Directory.CreateDirectory(dataDir);
+                // Instantiate Document object
+                Document pdfDocument = new Document();
+                // Add a page to PDF file
+                pdfDocument.Pages.Add();
+                // Instatiate RadioButtonField object with page number as argument
+                RadioButtonField radio = new RadioButtonField(pdfDocument.Pages[1]);
+                // Add first radio button option and also specify its origin using Rectangle object
+                radio.AddOption("Test", new Rectangle(0, 0, 20, 20));
+                // Add second radio button option
+                radio.AddOption("Test1", new Rectangle(20, 20, 40, 40));
+                // Add radio button to form object of Document object
+                pdfDocument.Form.Add(radio);
 
-            // instantiate Document object
-            Document pdfDocument = new Document();
-
-            // add a page to PDF file
-            pdfDocument.Pages.Add();
-
-            // instatiate RadioButtonField object with page number as argument
-            RadioButtonField radio = new RadioButtonField(pdfDocument.Pages[1]);
-
-            // add first radio button option and also specify its origin using Rectangle object
-            radio.AddOption("Test", new Aspose.Pdf.Rectangle(0, 0, 20, 20));
-
-            // add second radio button option
-            radio.AddOption("Test1", new Aspose.Pdf.Rectangle(20, 20, 40, 40));
-
-            // add radio button to form object of Document object
-            pdfDocument.Form.Add(radio);
-
-            // save the PDF file
-            pdfDocument.Save(dataDir + "RadioButton_out.pdf");
+                dataDir = dataDir + "RadioButton_out_.pdf";
+                // Save the PDF file
+                pdfDocument.Save(dataDir);
+                // ExEnd:RadioButton
+                Console.WriteLine("\nRadio button field added successfully.\nFile saved at " + dataDir);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
 
         }
     }

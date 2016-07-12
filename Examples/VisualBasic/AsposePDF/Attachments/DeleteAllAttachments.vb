@@ -1,31 +1,26 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Pdf. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
-Imports Microsoft.VisualBasic
 Imports System.IO
-
+Imports System
+Imports Microsoft.VisualBasic
 Imports Aspose.Pdf
-
-Namespace VisualBasic.AsposePdf.Attachments
+Namespace AsposePDF.Attachments
     Public Class DeleteAllAttachments
         Public Shared Sub Run()
+            ' ExStart:DeleteAllAttachments
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdf_Attachments()
 
-            'open document
-            Dim pdfDocument As New Document(dataDir & "DeleteAllAttachments.pdf")
+            ' Open document
+            Dim pdfDocument As New Document(dataDir & Convert.ToString("DeleteAllAttachments.pdf"))
 
-            'delete all attachments
+            ' Delete all attachments
             pdfDocument.EmbeddedFiles.Delete()
 
-            'save updated file
-            pdfDocument.Save(dataDir & "DeleteAllAttachments_out.pdf")
+            dataDir = dataDir & Convert.ToString("DeleteAllAttachments_out_.pdf")
 
+            ' Save updated file
+            pdfDocument.Save(dataDir)
+            ' ExEnd:DeleteAllAttachments
+            Console.WriteLine(Convert.ToString(vbLf & "All attachments deleted successfully." & vbLf & "File saved at ") & dataDir)
         End Sub
     End Class
 End Namespace

@@ -1,30 +1,32 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2014 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Pdf. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
-Imports Microsoft.VisualBasic
 Imports System.IO
-
-Imports Aspose.Pdf
 Imports System
-
-Namespace VisualBasic.AsposePdf.DocumentConversion
+Imports Microsoft.VisualBasic
+Imports Aspose.Pdf
+Namespace AsposePDF.DocumentConversion
     Public Class HTMLToPDF
         Public Shared Sub Run()
-            ' The path to the documents directory.
-            Dim dataDir As String = RunExamples.GetDataDir_AsposePdf_DocumentConversion()
+            Try
+                ' ExStart:HTMLToPDF
+                ' The path to the documents directory.
+                Dim dataDir As String = RunExamples.GetDataDir_AsposePdf_DocumentConversion()
 
-            ' Specify the The base path/url for the html file which serves as images database
-            Dim basePath As String = "C:/temp/"
-            Dim htmloptions As New HtmlLoadOptions(basePath)
-            ' Load HTML file
-            Dim doc As New Document(dataDir & "Input.html", htmloptions)
-            ' Save HTML file
-            doc.Save(dataDir & "HTMLToPDF_out.pdf")
+                Dim options As New HtmlLoadOptions()
+                options.CustomLoaderOfExternalResources = New LoadOptions.ResourceLoadingStrategy(AddressOf SamePictureLoader)
+
+                Dim pdfDocument As New Document(dataDir & Convert.ToString("HTMLToPDF.html"), options)
+                ' ExEnd:HTMLToPDF
+                pdfDocument.Save("HTMLToPDF_out_.pdf")
+            Catch ex As Exception
+                Console.WriteLine(ex.Message)
+            End Try
         End Sub
+        ' ExStart:HTMLToPDFHelper
+        Private Shared Function SamePictureLoader(resourceURI As String) As LoadOptions.ResourceLoadingResult
+            Dim dataDir As String = RunExamples.GetDataDir_AsposePdf_DocumentConversion()
+            Dim resultBytes As Byte() = File.ReadAllBytes(dataDir & Convert.ToString("aspose-logo.jpg"))
+            Dim result As New LoadOptions.ResourceLoadingResult(resultBytes)
+            Return result
+        End Function
+        ' ExEnd:HTMLToPDFHelper
     End Class
 End Namespace

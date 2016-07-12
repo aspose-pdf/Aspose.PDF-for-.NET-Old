@@ -11,7 +11,7 @@ using Aspose.Pdf;
 using Aspose.Pdf.Facades;
 using System;
 
-namespace CSharp.AsposePDFFacades.Bookmarks
+namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Bookmarks
 {
     public class GetFromPDF
     {

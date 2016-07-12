@@ -1,44 +1,40 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
 using System.IO;
-
 using Aspose.Pdf;
 using Aspose.Pdf.Text;
-
-namespace CSharp.AsposePdf.Text
+using System;
+namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
 {
     public class ExtractTextPage
     {
         public static void Run()
         {
+            // ExStart:ExtractTextPage
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-            //open document
+            // Open document
             Document pdfDocument = new Document(dataDir + "ExtractTextPage.pdf");
 
-            //create TextAbsorber object to extract text
+            // Create TextAbsorber object to extract text
             TextAbsorber textAbsorber = new TextAbsorber();
   
-            //accept the absorber for a particular page
+            // Accept the absorber for a particular page
             pdfDocument.Pages[1].Accept(textAbsorber);
             
-            //get the extracted text
+            // Get the extracted text
             string extractedText = textAbsorber.Text;
+
+            dataDir = dataDir + "extracted-text_out_.txt";
+            // Create a writer and open the file
+            TextWriter tw = new StreamWriter(dataDir);
             
-            // create a writer and open the file
-            TextWriter tw = new StreamWriter(dataDir + "extracted-text.txt");
-            
-            // write a line of text to the file
+            // Write a line of text to the file
             tw.WriteLine(extractedText);
             
-            // close the stream
+            // Close the stream
             tw.Close();
+            // ExEnd:ExtractTextPage            
+            Console.WriteLine("\nText extracted successfully from Pages of PDF Document.\nFile saved at " + dataDir);
         }
     }
 }

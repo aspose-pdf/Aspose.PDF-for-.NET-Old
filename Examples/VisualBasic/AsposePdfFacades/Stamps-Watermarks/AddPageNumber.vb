@@ -13,7 +13,7 @@ Imports Aspose.Pdf
 Imports Aspose.Pdf.Facades
 Imports System.Drawing
 
-Namespace VisualBasic.AsposePDFFacades.StampsWatermarks
+Namespace AsposePDFFacades.StampsWatermarks
     Public Class AddPageNumber
         Public Shared Sub Run()
             ' The path to the documents directory.

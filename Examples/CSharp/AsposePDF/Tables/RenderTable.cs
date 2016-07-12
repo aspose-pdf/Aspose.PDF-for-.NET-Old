@@ -1,29 +1,16 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
+using System;
 using System.IO;
-
 using Aspose.Pdf;
 using Aspose.Pdf.Text;
-
-namespace CSharp.AsposePdf.Tables
+namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Tables
 {
     public class RenderTable
     {
         public static void Run()
         {
+            // ExStart:RenderTable
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
-
-            // Create directory if it is not already present.
-            bool IsExists = System.IO.Directory.Exists(dataDir);
-            if (!IsExists)
-                System.IO.Directory.CreateDirectory(dataDir);
-
 
             Document doc = new Document();
             PageInfo pageInfo = doc.PageInfo;
@@ -65,8 +52,10 @@ namespace CSharp.AsposePdf.Tables
             table1.IsInNewPage = true;
             // I want to keep table 1 to next page please...
             paragraphs.Add(table1);
-
-            doc.Save(dataDir+ "IsNewPageProperty_Test.pdf");
+            dataDir = dataDir + "IsNewPageProperty_Test_out_.pdf";
+            doc.Save(dataDir);
+            // ExEnd:RenderTable
+            Console.WriteLine("\nTable render successfully on a page.\nFile saved at " + dataDir); 
             
             
         }

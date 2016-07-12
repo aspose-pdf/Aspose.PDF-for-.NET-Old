@@ -1,35 +1,27 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Pdf. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
-Imports Microsoft.VisualBasic
 Imports System.IO
-
-Imports Aspose.Pdf
 Imports System
+Imports Microsoft.VisualBasic
+Imports Aspose.Pdf
 
-Namespace VisualBasic.AsposePdf.Attachments
+Namespace AsposePDF.Attachments
     Public Class GetAlltheAttachments
         Public Shared Sub Run()
+            ' ExStart:GetAlltheAttachments
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdf_Attachments()
 
-            'open document
-            Dim pdfDocument As New Document(dataDir & "GetAlltheAttachments.pdf")
+            ' Open document
+            Dim pdfDocument As New Document(dataDir & Convert.ToString("GetAlltheAttachments.pdf"))
 
-            'get embedded files collection
+            ' Get embedded files collection
             Dim embeddedFiles As EmbeddedFileCollection = pdfDocument.EmbeddedFiles
 
-            'get count of the embedded files
+            ' Get count of the embedded files
             Console.WriteLine("Total files : {0}", embeddedFiles.Count)
 
             Dim count As Integer = 1
 
-            'loop through the collection to get all the attachments
+            ' Loop through the collection to get all the attachments
             For Each fileSpecification As FileSpecification In embeddedFiles
                 Console.WriteLine("Name: {0}", fileSpecification.Name)
                 Console.WriteLine("Description: {0}", fileSpecification.Description)
@@ -37,7 +29,7 @@ Namespace VisualBasic.AsposePdf.Attachments
 
 
 
-                'check if parameter object contains the parameters
+                ' Check if parameter object contains the parameters
                 If fileSpecification.Params IsNot Nothing Then
                     Console.WriteLine("CheckSum: {0}", fileSpecification.Params.CheckSum)
                     Console.WriteLine("Creation Date: {0}", fileSpecification.Params.CreationDate)
@@ -45,15 +37,15 @@ Namespace VisualBasic.AsposePdf.Attachments
                     Console.WriteLine("Size: {0}", fileSpecification.Params.Size)
                 End If
 
-                'get the attachment and write to file or stream
-                Dim fileContent(fileSpecification.Contents.Length - 1) As Byte
+                ' Get the attachment and write to file or stream
+                Dim fileContent As Byte() = New Byte(fileSpecification.Contents.Length - 1) {}
                 fileSpecification.Contents.Read(fileContent, 0, fileContent.Length)
-                Dim fileStream As New FileStream(dataDir & count & ".txt", FileMode.Create)
+                Dim fileStream As New FileStream((dataDir & count) + "_out_" + ".txt", FileMode.Create)
                 fileStream.Write(fileContent, 0, fileContent.Length)
                 fileStream.Close()
                 count += 1
-            Next fileSpecification
-
+            Next
+            ' ExEnd:GetAlltheAttachments
         End Sub
     End Class
 End Namespace

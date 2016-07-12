@@ -1,25 +1,18 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Pdf. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
-Imports Microsoft.VisualBasic
-Imports System.IO
-
-Imports Aspose.Pdf
+﻿Imports System.IO
 Imports System
-
-Namespace VB.AsposePdf.Images
+Imports Microsoft.VisualBasic
+Imports Aspose.Pdf
+Imports Aspose.Pdf.Operator
+Imports APO = Aspose.Pdf.Operator
+Namespace AsposePDF.Images
     Public Class ImageInformation
         Public Shared Sub Run()
+            ' ExStart:ImageInformation
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdf_Images()
 
             ' Load the source PDF file
-            Dim doc As New Document(dataDir & "ImageInformation.pdf")
+            Dim doc As New Document(dataDir & Convert.ToString("ImageInformation.pdf"))
 
             ' Define the default resolution for image
             Dim defaultResolution As Integer = 72
@@ -32,16 +25,16 @@ Namespace VB.AsposePdf.Images
             ' Get all the operators on first page of document
             For Each op As [Operator] In doc.Pages(1).Contents
                 ' Use GSave/GRestore operators to revert the transformations back to previously set
-				Dim opSaveState As Operator.GSave = TryCast(op, Operator.GSave)
-				Dim opRestoreState As Operator.GRestore = TryCast(op, Operator.GRestore)
+                Dim opSaveState As GSave = TryCast(op, GSave)
+                Dim opRestoreState As GRestore = TryCast(op, GRestore)
                 ' Instantiate ConcatenateMatrix object as it defines current transformation matrix.
-				Dim opCtm As Operator.ConcatenateMatrix = TryCast(op, Operator.ConcatenateMatrix)
+                Dim opCtm As ConcatenateMatrix = TryCast(op, ConcatenateMatrix)
                 ' Create Do operator which draws objects from resources. It draws Form objects and Image objects
-				Dim opDo As Operator.Do = TryCast(op, Operator.Do)
+                Dim opDo As APO.Do = TryCast(op, APO.Do)
 
                 If opSaveState IsNot Nothing Then
                     ' Save previous state and push current state to the top of the stack
-                    graphicsState.Push((CType(graphicsState.Peek(), System.Drawing.Drawing2D.Matrix)).Clone())
+                    graphicsState.Push(DirectCast(graphicsState.Peek(), System.Drawing.Drawing2D.Matrix).Clone())
                 ElseIf opRestoreState IsNot Nothing Then
                     ' Throw away current state and restore previous one
                     graphicsState.Pop()
@@ -49,13 +42,13 @@ Namespace VB.AsposePdf.Images
                     Dim cm As New System.Drawing.Drawing2D.Matrix(CSng(opCtm.Matrix.A), CSng(opCtm.Matrix.B), CSng(opCtm.Matrix.C), CSng(opCtm.Matrix.D), CSng(opCtm.Matrix.E), CSng(opCtm.Matrix.F))
 
                     ' Multiply current matrix with the state matrix
-                    CType(graphicsState.Peek(), System.Drawing.Drawing2D.Matrix).Multiply(cm)
+                    DirectCast(graphicsState.Peek(), System.Drawing.Drawing2D.Matrix).Multiply(cm)
 
                     Continue For
                 ElseIf opDo IsNot Nothing Then
                     ' In case this is an image drawing operator
                     If imageNames.Contains(opDo.Name) Then
-                        Dim lastCTM As System.Drawing.Drawing2D.Matrix = CType(graphicsState.Peek(), System.Drawing.Drawing2D.Matrix)
+                        Dim lastCTM As System.Drawing.Drawing2D.Matrix = DirectCast(graphicsState.Peek(), System.Drawing.Drawing2D.Matrix)
                         ' Create XImage object to hold images of first pdf page
                         Dim image As XImage = doc.Pages(1).Resources.Images(opDo.Name)
 
@@ -71,11 +64,11 @@ Namespace VB.AsposePdf.Images
                         Dim resVertical As Double = originalHeight * defaultResolution / scaledHeight
 
                         ' Display Dimension and Resolution information of each image
-                        Console.Out.WriteLine(String.Format(dataDir & "image {0} ({1:.##}:{2:.##}): res {3:.##} x {4:.##}", opDo.Name, scaledWidth, scaledHeight, resHorizontal, resVertical))
+                        Console.Out.WriteLine(String.Format(dataDir & Convert.ToString("image {0} ({1:.##}:{2:.##}): res {3:.##} x {4:.##}"), opDo.Name, scaledWidth, scaledHeight, resHorizontal, resVertical))
                     End If
                 End If
-            Next op
-
+            Next
+            ' ExEnd:ImageInformation
 
         End Sub
     End Class

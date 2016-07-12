@@ -10,10 +10,10 @@ using System.IO;
 using Aspose.Pdf;
 using Aspose.Pdf.Facades;
 using System;
-using Aspose.Pdf.InteractiveFeatures.Annotations;
+using Aspose.Pdf.Annotations;
 using System.Collections;
 
-namespace CSharp.AsposePDFFacades.Annotations
+namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Annotations
 {
     public class ExtractAnnotations
     {

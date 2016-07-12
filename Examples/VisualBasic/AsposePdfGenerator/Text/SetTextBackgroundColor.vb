@@ -1,17 +1,9 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Pdf. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
+Imports System
 Imports Microsoft.VisualBasic
 Imports System.IO
-
 Imports Aspose.Pdf
 
-Namespace VisualBasic.AsposePdfGenerator.Text
+Namespace AsposePdfGenerator.Text
     Public Class SetTextBackgroundColor
         Public Shared Sub Run()
             ' The path to the documents directory.
@@ -23,23 +15,23 @@ Namespace VisualBasic.AsposePdfGenerator.Text
                 System.IO.Directory.CreateDirectory(dataDir)
             End If
 
-            'Instantiate Pdf instance by calling its empty constructor
+            ' Instantiate Pdf instance by calling its empty constructor
             Dim pdf1 As New Aspose.Pdf.Generator.Pdf()
 
-            'Create a section in the Pdf object
+            ' Create a section in the Pdf object
             Dim sec1 As Aspose.Pdf.Generator.Section = pdf1.Sections.Add()
 
-            'Create a text paragraph
+            ' Create a text paragraph
             Dim text1 As New Aspose.Pdf.Generator.Text(sec1, "Hello Aspose.Pdf")
 
-            'Set the BackgroundColor of the text paragraph to Red
+            ' Set the BackgroundColor of the text paragraph to Red
             text1.TextInfo.BackgroundColor = New Aspose.Pdf.Generator.Color("Red")
 
-            'Add the text paragraph to the section
+            ' Add the text paragraph to the section
             sec1.Paragraphs.Add(text1)
 
-            'Save the Pdf
-            pdf1.Save(dataDir & "AsposeOutput.pdf")
+            ' Save the Pdf
+            pdf1.Save(dataDir & "SetTextBackgroundColor_out_.pdf")
 
 
         End Sub

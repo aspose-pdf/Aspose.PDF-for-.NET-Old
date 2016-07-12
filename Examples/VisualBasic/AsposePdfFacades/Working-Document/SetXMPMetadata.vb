@@ -12,7 +12,7 @@ Imports System.IO
 Imports Aspose.Pdf
 Imports Aspose.Pdf.Facades
 
-Namespace VisualBasic.AsposePDFFacades.WorkingDocument
+Namespace AsposePDFFacades.WorkingDocument
     Public Class SetXMPMetadata
         Public Shared Sub Run()
             ' The path to the documents directory.

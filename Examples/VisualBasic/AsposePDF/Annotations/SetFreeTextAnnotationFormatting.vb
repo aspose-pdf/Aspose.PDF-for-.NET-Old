@@ -1,43 +1,33 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Pdf. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
-Imports Microsoft.VisualBasic
 Imports System.IO
-
+Imports System
+Imports Microsoft.VisualBasic
+Imports Aspose.Pdf.Annotations
 Imports Aspose.Pdf
-Imports Aspose.Pdf.InteractiveFeatures.Annotations
-Imports Aspose.Pdf.InteractiveFeatures
-
-Namespace VisualBasic.AsposePdf.Annotations
+Namespace AsposePDF.Annotations
     Public Class SetFreeTextAnnotationFormatting
         Public Shared Sub Run()
+            ' ExStart:SetFreeTextAnnotationFormatting
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdf_Annotations()
 
-            'open document
-            Dim pdfDocument As New Document(dataDir & "SetFreeTextAnnotationFormatting.pdf")
+            ' Open document
+            Dim pdfDocument As New Document(dataDir & Convert.ToString("SetFreeTextAnnotationFormatting.pdf"))
 
-            ' instantiate DefaultAppearance object
-            Dim default_appearance As Aspose.Pdf.InteractiveFeatures.DefaultAppearance = New DefaultAppearance("Arial", 28, System.Drawing.Color.Red)
-
-            'create annotation
-            Dim freetext As New FreeTextAnnotation(pdfDocument.Pages(1), New Aspose.Pdf.Rectangle(200, 400, 400, 600), default_appearance)
-
-            ' specify the contents of annotation
+            ' Instantiate DefaultAppearance object
+            Dim default_appearance As New DefaultAppearance("Arial", 28, System.Drawing.Color.Red)
+            ' Create annotation
+            Dim freetext As New FreeTextAnnotation(pdfDocument.Pages(1), New Rectangle(200, 400, 400, 600), default_appearance)
+            ' Specify the contents of annotation
             freetext.Contents = "Free Text"
-
-            ' add anootation to annotations collection of page
+            ' Add anootation to annotations collection of page
             pdfDocument.Pages(1).Annotations.Add(freetext)
-
-            ' save the updated document
-            pdfDocument.Save(dataDir & "SetFreeTextAnnotationFormatting_out.pdf")
-
+            dataDir = dataDir & Convert.ToString("SetFreeTextAnnotationFormatting_out_.pdf")
+            ' Save the updated document
+            pdfDocument.Save(dataDir)
+            ' ExEnd:SetFreeTextAnnotationFormatting
+            Console.WriteLine(Convert.ToString(vbLf & "Free TextAnnotation with specific text formatting added successfully." & vbLf & "File saved at ") & dataDir)
 
         End Sub
     End Class
 End Namespace
+

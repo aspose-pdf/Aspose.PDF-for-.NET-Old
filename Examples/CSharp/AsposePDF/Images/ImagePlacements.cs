@@ -1,22 +1,14 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
 using System.IO;
-
 using Aspose.Pdf;
 using System;
 using System.Drawing;
-
-namespace CSharp.AsposePdf.Images
+namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Images
 {
     public class ImagePlacements
     {
         public static void Run()
         {
+            // ExStart:ImagePlacements
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
@@ -24,9 +16,11 @@ namespace CSharp.AsposePdf.Images
             // Load the source PDF document
             Aspose.Pdf.Document doc = new Aspose.Pdf.Document(dataDir+ "ImagePlacement.pdf");
             ImagePlacementAbsorber abs = new ImagePlacementAbsorber();
+            
             // Load the contents of first page
+            // ExStart:ExtractImageFromIndividualPage
             doc.Pages[1].Accept(abs);
-
+            // ExEnd:ExtractImageFromIndividualPage
             foreach (ImagePlacement imagePlacement in abs.ImagePlacements)
             {
                 // Get image properties
@@ -48,7 +42,7 @@ namespace CSharp.AsposePdf.Images
                     scaledImage = new Bitmap(resourceImage, (int)imagePlacement.Rectangle.Width, (int)imagePlacement.Rectangle.Height);
                 }
             }
-            
+            // ExEnd:ImagePlacements            
         }
     }
 }

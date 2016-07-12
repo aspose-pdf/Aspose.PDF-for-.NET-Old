@@ -1,22 +1,16 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
+using System;
 using System.IO;
-
 using Aspose.Pdf;
-using Aspose.Pdf.InteractiveFeatures.Forms;
+using Aspose.Pdf.Forms;
 using System.Drawing;
 
-namespace CSharp.AsposePdf.SecuritySignatures
+namespace Aspose.Pdf.Examples.CSharp.AsposePDF.SecuritySignatures
 {
     public class ExtractingImage
     {
         public static void Run()
         {
+            // ExStart:ExtractingImage
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
 
@@ -28,7 +22,7 @@ namespace CSharp.AsposePdf.SecuritySignatures
                     SignatureField sf = field as SignatureField;
                     if (sf != null)
                     {
-                        string outFile = dataDir+ @"output.jpg";
+                        string outFile = dataDir+ @"output_out_.jpg";
                         using (Stream imageStream = sf.ExtractImage())
                         {
                             if (imageStream != null)
@@ -42,7 +36,7 @@ namespace CSharp.AsposePdf.SecuritySignatures
                     }
                 }
             }
-            
+            // ExEnd:ExtractingImage
             
         }
     }

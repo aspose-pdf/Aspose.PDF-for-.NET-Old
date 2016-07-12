@@ -1,36 +1,28 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
 using System.IO;
-
 using Aspose.Pdf;
-
-namespace CSharp.AsposePdf.Pages
+namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Pages
 {
     public class ConcatenatePdfFiles
     {
         public static void Run()
         {
+            // ExStart:ConcatenatePdfFiles
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
 
-            //open first document
-            Document pdfDocument1 = new Document(dataDir + "input1.pdf");
-            //open second document
-            Document pdfDocument2 = new Document(dataDir + "input2.pdf");
+            // Open first document
+            Document pdfDocument1 = new Document(dataDir + "Concat1.pdf");
+            // Open second document
+            Document pdfDocument2 = new Document(dataDir + "Concat2.pdf");
 
-            //add pages of second document to the first
+            // Add pages of second document to the first
             pdfDocument1.Pages.Add(pdfDocument2.Pages);
 
-            //save concatenated output file
-            pdfDocument1.Save(dataDir + "ConcatenatePdfFiles_out.pdf");
-
-            // Display result.
-            System.Console.WriteLine("PDFs are concatenated successfully!");
+            dataDir = dataDir + "ConcatenatePdfFiles_out_.pdf";
+            // Save concatenated output file
+            pdfDocument1.Save(dataDir);
+            // ExEnd:ConcatenatePdfFiles
+            System.Console.WriteLine("\nPDFs are concatenated successfully.\nFile saved at " + dataDir);
         }
     }
 }

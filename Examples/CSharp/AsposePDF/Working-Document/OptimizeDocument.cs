@@ -1,32 +1,28 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
+using System;
 using System.IO;
-
 using Aspose.Pdf;
-
-namespace CSharp.AsposePdf.WorkingDocuments
+namespace Aspose.Pdf.Examples.CSharp.AsposePDF.WorkingDocuments
 {
     public class OptimizeDocument
     {
         public static void Run()
         {
+            // ExStart:OptimizeDocument
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-            //open document
+            // Open document
             Document pdfDocument = new Document(dataDir + "OptimizeDocument.pdf");
 
-            //optimize for web
+            // Optimize for web
             pdfDocument.Optimize();
 
-            //save output document
-            pdfDocument.Save(dataDir + "OptimizeDocument_out.pdf");
- 
+            dataDir = dataDir + "OptimizeDocument_out_.pdf";
+
+            // Save output document
+            pdfDocument.Save(dataDir);
+            // ExEnd:OptimizeDocument
+            Console.WriteLine("\nDocument optimized successfully for web.\nFile saved at " + dataDir);
         }
     }
 }

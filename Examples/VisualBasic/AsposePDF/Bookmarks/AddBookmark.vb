@@ -1,39 +1,32 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Pdf. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
-Imports Microsoft.VisualBasic
-Imports System.IO
-
+Imports Aspose.Pdf.Annotations
 Imports Aspose.Pdf
-
-Namespace VisualBasic.AsposePdf.Bookmarks
+Imports System
+Imports Microsoft.VisualBasic
+Namespace AsposePDF.Bookmarks
     Public Class AddBookmark
         Public Shared Sub Run()
+            ' ExStart:AddBookmark
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdf_Bookmarks()
 
-            'open document
-            Dim pdfDocument As New Document(dataDir & "AddBookmark.pdf")
+            ' Open document
+            Dim pdfDocument As New Document(dataDir & Convert.ToString("AddBookmark.pdf"))
 
-            'create a bookmark object
+            ' Create a bookmark object
             Dim pdfOutline As New OutlineItemCollection(pdfDocument.Outlines)
             pdfOutline.Title = "Test Outline"
             pdfOutline.Italic = True
             pdfOutline.Bold = True
-
-            'set the destination page number
-            pdfOutline.Action = New Aspose.Pdf.InteractiveFeatures.GoToAction(pdfDocument.Pages(1))
-
-            'add bookmark in the document's outline collection.
+            ' Set the destination page number
+            pdfOutline.Action = New GoToAction(pdfDocument.Pages(1))
+            ' Add bookmark in the document's outline collection.
             pdfDocument.Outlines.Add(pdfOutline)
 
-            'save output
-            pdfDocument.Save(dataDir & "AddBookmark_out.pdf")
+            dataDir = dataDir & Convert.ToString("AddBookmark_out_.pdf")
+            ' Save output
+            pdfDocument.Save(dataDir)
+            ' ExEnd:AddBookmark
+            Console.WriteLine(Convert.ToString(vbLf & "Bookmark added successfully." & vbLf & "File saved at ") & dataDir)
         End Sub
     End Class
 End Namespace

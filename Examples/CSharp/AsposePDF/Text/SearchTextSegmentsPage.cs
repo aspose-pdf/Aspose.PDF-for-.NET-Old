@@ -1,17 +1,9 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
-using System.IO;
 
+using System.IO;
 using Aspose.Pdf;
 using Aspose.Pdf.Text;
 using System;
-
-namespace CSharp.AsposePdf.Text
+namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
 {
     public class SearchTextSegmentsPage
     {
@@ -20,19 +12,20 @@ namespace CSharp.AsposePdf.Text
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-            //open document
+            // Open document
             Document pdfDocument = new Document(dataDir + "SearchTextSegmentsPage.pdf");
             
-            //create TextAbsorber object to find all instances of the input search phrase
+            // Create TextAbsorber object to find all instances of the input search phrase
             TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("text");
-            
-            //accept the absorber for all the pages
+            // ExStart:textFragmentAbsorber
+            // Accept the absorber for all the pages
             pdfDocument.Pages[2].Accept(textFragmentAbsorber);
+            // ExEnd:textFragmentAbsorber
             
-            //get the extracted text fragments
+            // Get the extracted text fragments
             TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
             
-            //loop through the fragments
+            // Loop through the fragments
             foreach (TextFragment textFragment in textFragmentCollection)
             {
                 foreach (TextSegment textSegment in textFragment.Segments)

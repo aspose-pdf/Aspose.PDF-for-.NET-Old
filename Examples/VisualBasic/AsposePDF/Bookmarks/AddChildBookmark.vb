@@ -1,52 +1,43 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Pdf. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
-Imports Microsoft.VisualBasic
 Imports System.IO
-
+Imports System
+Imports Microsoft.VisualBasic
+Imports Aspose.Pdf.Annotations
 Imports Aspose.Pdf
-Imports Aspose.Pdf.InteractiveFeatures
-
-Namespace VisualBasic.AsposePdf.Bookmarks
+Namespace AsposePDF.Bookmarks
     Public Class AddChildBookmark
         Public Shared Sub Run()
+            ' ExStart:AddChildBookmark
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdf_Bookmarks()
 
-            'open document
-            Dim pdfDocument As New Document(dataDir & "AddChildBookmark.pdf")
+            ' Open document
+            Dim pdfDocument As New Document(dataDir & Convert.ToString("AddChildBookmark.pdf"))
 
-            'create a parent bookmark object
+            ' Create a parent bookmark object
             Dim pdfOutline As New OutlineItemCollection(pdfDocument.Outlines)
             pdfOutline.Title = "Parent Outline"
             pdfOutline.Italic = True
             pdfOutline.Bold = True
+            ' Set the destination page number
+            pdfOutline.Destination = New GoToAction(9)
 
-            'set the destination page number
-            pdfOutline.Destination = New GoToAction(2)
-
-            'create a child bookmark object
+            ' Create a child bookmark object
             Dim pdfChildOutline As New OutlineItemCollection(pdfDocument.Outlines)
             pdfChildOutline.Title = "Child Outline"
             pdfChildOutline.Italic = True
             pdfChildOutline.Bold = True
-
-            'set the destination page number for child outline
-            pdfChildOutline.Destination = New GoToAction(1)
-
-            'add child bookmark in parent bookmark's collection
+            ' Set the destination page number for child outline
+            pdfChildOutline.Destination = New GoToAction(20)
+            ' Add child bookmark in parent bookmark's collection
             pdfOutline.Add(pdfChildOutline)
-
-            'add parent bookmark in the document's outline collection.
+            ' Add parent bookmark in the document's outline collection.
             pdfDocument.Outlines.Add(pdfOutline)
 
-            'save output
-            pdfDocument.Save(dataDir & "AddChildBookmark_out.pdf")
+            dataDir = dataDir & Convert.ToString("AddChildBookmark_out_.pdf")
+            ' Save output
+            pdfDocument.Save(dataDir)
+            ' ExEnd:AddChildBookmark
+            Console.WriteLine(Convert.ToString(vbLf & "Child bookmark added successfully." & vbLf & "File saved at ") & dataDir)
 
         End Sub
     End Class

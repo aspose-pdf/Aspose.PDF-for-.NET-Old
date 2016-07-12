@@ -2,565 +2,584 @@ Imports Microsoft.VisualBasic
 Imports System
 Imports System.Collections.Generic
 Imports System.IO
-Imports System.Text
-
-Imports VisualBasic.AsposePdf.Annotations
-Imports VisualBasic.AsposePdf.Attachments
-Imports VisualBasic.AsposePdf.Bookmarks
-Imports VisualBasic.AsposePdf.DocumentConversion
-Imports VisualBasic.AsposePdf.Forms
-Imports VisualBasic.AsposePdf.Images
-Imports VisualBasic.AsposePdf.LinksActions
-Imports VisualBasic.AsposePdf.Operators
-Imports VisualBasic.AsposePdf.Pages
-Imports VisualBasic.AsposePdf.SecuritySignatures
-Imports VisualBasic.AsposePdf.StampsWatermarks
-Imports VisualBasic.AsposePdf.Tables
-Imports VisualBasic.AsposePdf.Text
-Imports VisualBasic.AsposePdf.WorkingDocuments
-
-Imports VisualBasic.AsposePDFFacades.Annotations
-Imports VisualBasic.AsposePDFFacades.Attachments
-Imports VisualBasic.AsposePDFFacades.Bookmarks
-Imports VisualBasic.AsposePDFFacades.Forms
-Imports VisualBasic.AsposePDFFacades.Images
-Imports VisualBasic.AsposePDFFacades.Printing
-Imports VisualBasic.AsposePDFFacades.StampsWatermarks
-Imports VisualBasic.AsposePDFFacades.Text
-Imports VisualBasic.AsposePDFFacades.WorkingDocument
-
-Imports VisualBasic.AsposePdfGenerator.Conversion
-Imports VisualBasic.AsposePdfGenerator.Paragraphs
-Imports VisualBasic.AsposePdfGenerator.Sections
-Imports VisualBasic.AsposePdfGenerator.Text
-Imports VisualBasic.AsposePdfGenerator.WorkingDocuments
-
-Namespace VisualBasic
-    Friend Class RunExamples
-        <STAThread()> _
-        Public Shared Sub Main()
-            Console.WriteLine("Open RunExamples.cs. In Main() method, Un-comment the example that you want to run")
-            Console.WriteLine("=====================================================")
-            ' Un-comment the one you want to try out
-
-            ' =====================================================
-            ' =====================================================
-            ' Aspose.Pdf Annotations
-            ' =====================================================
-            ' =====================================================
-
-            AddAnnotation.Run()
-            'AddSwfFileAsAnnotation.Run();
-            'DeleteAllAnnotationsFromPage.Run();
-            'DeleteAllAnnotationsFromPage.Run();
-            'GetAllAnnotationsFromPage.Run();
-            'GetParticularAnnotation.Run();
-            'SetFreeTextAnnotationFormatting.Run();
-
-            '// =====================================================
-            '// =====================================================
-            '// Aspose.Pdf Attachments
-            '// =====================================================
-            '// =====================================================
-
-            'AsposePdf.Attachments.AddAttachment.Run();
-            'AsposePdf.Attachments.DeleteAllAttachments.Run();
-            'DisableFilesCompression.Run();
-            'GetAlltheAttachments.Run();
-            'GetAttachmentInfo.Run();
-            'GetIndividualAttachment.Run();
-
-            '// =====================================================
-            '// =====================================================
-            '// Aspose.Pdf Bookmarks
-            '// =====================================================
-            '// =====================================================
-
-            'AsposePdf.Bookmarks.AddBookmark.Run();
-            'AsposePdf.Bookmarks.AddChildBookmark.Run();
-            'AsposePdf.Bookmarks.DeleteAllBookmarks.Run();
-            'DeleteParticularBookmark.Run();
-            'GetBookmarks.Run();
-            'GetChildBookmarks.Run();
-            'UpdateBookmarks.Run();
-            'UpdateChildBookmarks.Run();
-
-
-            '// =====================================================
-            '// =====================================================
-            '// Aspose.Pdf Document Conversion
-            '// =====================================================
-            '// =====================================================
-
-            'CGMToPDF.Run();
-            'EPUBToPDF.Run();
-            'GetSVGDimensions.Run();
-            'AsposePdf.DocumentConversion.HTMLToPDF.Run();
-            'PCLToPDF.Run();
-            'PDFToDOC.Run();
-            'PDFToEPUB.Run();
-            'PDFToHTML.Run();
-            'PDFToPDFA.Run();
-            'PDFToTeX.Run();
-            'PDFToXML.Run();
-            'SVGToPDF.Run();
-            'XPSToPDF.Run();
-
-            '// =====================================================
-            '// =====================================================
-            '// Aspose.Pdf Fields
-            '// =====================================================
-            '// =====================================================
-
-            'AddTooltipToField.Run();
-            'ComboBox.Run();
-            'DeleteFormField.Run();
-            'DetermineRequiredField.Run();
-            'DynamicXFAToAcroForm.Run();
-            'FillFormField.Run();
-            'FillXFAFields.Run();
-            'FormFieldFont14.Run();
-            'GetFieldsFromRegion.Run();
-            'GetValueFromField.Run();
-            'GetValuesFromAllFields.Run();
-            'GetXFAProperties.Run();
-            'ModifyFormField.Run();
-            'MoveFormField.Run();
-            'RadioButton.Run();
-            'SetJavaScript.Run();
-            'TextBox.Run();
-
-            '// =====================================================
-            '// =====================================================
-            '// Aspose.Pdf Images
-            '// =====================================================
-            '// =====================================================
-
-            'AsposePdf.Images.AddImage.Run();
-            'CGMImageToPDF.Run();
-            'ConvertAllPagesToEMF.Run();
-            'ConvertAllPagesToPNG.Run();
-            'DeleteImages.Run();
-            'AsposePdf.Images.ExtractImages.Run();
-            'ImageInformation.Run();
-            'ImagePlacements.Run();
-            'PagesToImages.Run();
-            'PageToEMF.Run();
-            'PageToPNG.Run();
-            'PageToTIFF.Run();
-            'AsposePdf.Images.ReplaceImage.Run();
-            'SearchAndGetImages.Run();
-
-            '// =====================================================
-            '// =====================================================
-            '// Aspose.Pdf Links And Actions
-            '// =====================================================
-            '// =====================================================
-
-            'AddHyperlink.Run();
-            'CreateApplicationLink.Run();
-            'CreateDocumentLink.Run();
-            'ExtractLinks.Run();
-            'RemoveOpenAction.Run();
-            'SpecifyPageWhenViewing.Run();
-            'UpdateLinks.Run();
-
-            '// =====================================================
-            '// =====================================================
-            '// Aspose.Pdf Operators
-            '// =====================================================
-            '// =====================================================
-
-            'DrawXFormOnPage.Run();
-            'PDFOperators.Run();
-            'RemoveGraphicsObjects.Run();
-
-            '// =====================================================
-            '// =====================================================
-            '// Aspose.Pdf Pages
-            '// =====================================================
-            '// =====================================================
-
-            'ConcatenatePdfFiles.Run();
-            'DeleteParticularPage.Run();
-            'GetNumberofPages.Run();
-            'GetParticularPage.Run();
-            'GetProperties.Run();
-            'ImageAsBackground.Run();
-            'InsertEmptyPage.Run();
-            'InsertEmptyPageAtEnd.Run();
-            'SplitToPages.Run();
-            'UpdateDimensions.Run();
-
-            '// =====================================================
-            '// =====================================================
-            '// Aspose.Pdf Security and Signatures
-            '// =====================================================
-            '// =====================================================
-
-            'ChangePassword.Run();
-            'Decrypt.Run();
-            'DigitallySign.Run();
-            'Encrypt.Run();
-            'ExtractingImage.Run();
-            'ExtractSignatureInfo.Run();
-            'IsPasswordProtected.Run();
-
-            '// =====================================================
-            '// =====================================================
-            '// Aspose.Pdf Images
-            '// =====================================================
-            '// =====================================================
-
-            'AddImageStamp.Run();
-            'AddingDifferentHeaders.Run();
-            'AddTextStamp.Run();
-            'DefineAlignment.Run();
-            'ImageInFooter.Run();
-            'ImageinHeader.Run();
-            'PageNumberStamps.Run();
-            'PDFPageStamp.Run();
-            'TextinFooter.Run();
-            'TextinHeader.Run();
-
-
-            '// =====================================================
-            '// =====================================================
-            '// Aspose.Pdf Tables
-            '// =====================================================
-            '// =====================================================
-
-            'AddTable.Run();
-            'IntegrateWithDatabase.Run();
-            'MarginsOrPadding.Run();
-            'RenderTable.Run();
-            'SetBorder.Run();
-
-
-            '// =====================================================
-            '// =====================================================
-            '// Aspose.Pdf Text
-            '// =====================================================
-            '// =====================================================
-
-            'ExtractTextAll.Run();
-            'AsposePdf.Text.ExtractTextPage.Run();
-            'ReplaceTextAll.Run();
-            'AsposePdf.Text.ReplaceTextPage.Run();
-            'SearchAndGetTextAll.Run();
-            'SearchAndGetTextPage.Run();
-            'SearchRegularExpression.Run();
-            'SearchRegularExpressionPage.Run();
-            'SearchTextRegex.Run();
-            'SearchTextSegmentsAll.Run();
-            'SearchTextSegmentsPage.Run();
-
-
-            '// =====================================================
-            '// =====================================================
-            '// Aspose.Pdf Working with Documents
-            '// =====================================================
-            '// =====================================================
-
-            'AddLayers.Run();
-            'AddTOC.Run();
-            'GetDocumentWindow.Run();
-            'AsposePdf.WorkingDocuments.GetFileInfo.Run();
-            'GetXMPMetadata.Run();
-            'GetZoomFactor.Run();
-            'OptimizeDocument.Run();
-            'SetDocumentWindow.Run();
-            'AsposePdf.WorkingDocuments.SetFileInfo.Run();
-            'AsposePdf.WorkingDocuments.SetXMPMetadata.Run();
-            'AsposePdf.WorkingDocuments.SetZoomFactor.Run();
-            'ValidatePDFAStandard.Run();
-
-
-            '// =====================================================
-            '// =====================================================
-            '// Aspose.Pdf.Facades Annotations
-            '// =====================================================
-            '// =====================================================
-
-            'AddFreeTextAnnotation.Run();
-            'CreateFileAnnotation.Run();
-            'DeleteAllAnnotations.Run();
-            'ExportAnnotations.Run();
-            'ExtractAnnotations.Run();
-            'ImportAnnotations.Run();
-            'UpdateAnnotations.Run();
-
-            '// =====================================================
-            '// =====================================================
-            '// Aspose.Pdf.Facades Attachments
-            '// =====================================================
-            '// =====================================================
-
-            'AsposePDFFacades.Attachments.AddAttachment.Run();
-            'AddAttachmentStream.Run();
-            'AsposePDFFacades.Attachments.DeleteAllAttachments.Run();
-            'ExtractAllAttachments.Run();
-            'GetAttachmentNames.Run();
-
-            '// =====================================================
-            '// =====================================================
-            '// Aspose.Pdf.Facades Bookmarks
-            '// =====================================================
-            '// =====================================================
-
-            'AsposePDFFacades.Bookmarks.AddBookmark.Run();
-            'AsposePDFFacades.Bookmarks.AddChildBookmark.Run();
-            'CreateBookmarkPage.Run();
-            'CreateBookmarksAll.Run();
-            'CreateBookmarksPagesProperties.Run();
-            'DeleteABookmark.Run();
-            'AsposePDFFacades.Bookmarks.DeleteAllBookmarks.Run();
-            'ExportToXML.Run();
-            'ExtractBookmarks.Run();
-            'GetFromPDF.Run();
-            'ImportFromXML.Run();
-            'UpdateBookmark.Run();
-
-            '// =====================================================
-            '// =====================================================
-            '// Aspose.Pdf.Facades Forms
-            '// =====================================================
-            '// =====================================================
-
-            'AddFormField.Run();
-            'CopyInnerField.Run();
-            'CopyOuterField.Run();
-            'DecorateFields.Run();
-
-            '// =====================================================
-            '// =====================================================
-            '// Aspose.Pdf.Facades Images
-            '// =====================================================
-            '// =====================================================
-
-            'AsposePDFFacades.Images.AddImage.Run();
-            'ConvertPageRegion.Run();
-            'ConvertPDFPages.Run();
-            'ConvertToTIFFSettings.Run();
-            'DeleteAllImages.Run();
-            'DeleteImagesPage.Run();
-            'ExtractImageExtractionMode.Run();
-            'AsposePDFFacades.Images.ExtractImages.Run();
-            'ExtractImagesPage.Run();
-            'ExtractImagesStream.Run();
-            'AsposePDFFacades.Images.ReplaceImage.Run();
-
-            '// =====================================================
-            '// =====================================================
-            '// Aspose.Pdf.Facades Printing
-            '// =====================================================
-            '// =====================================================
-
-            'PrintPageRange.Run();
-
-            '// =====================================================
-            '// =====================================================
-            '// Aspose.Pdf.Facades Stamps and Watermarks
-            '// =====================================================
-            '// =====================================================
-
-            'AddFooter.Run();
-            'AddHeader.Run();
-            'AddImageFooter.Run();
-            'AddImageStampAll.Run();
-            'AddImageStampPage.Run();
-            'AddPageNumber.Run();
-            'AddPageStampAll.Run();
-            'AddPageStampPage.Run();
-            'AddTextStampAll.Run();
-            'AddTextStampPage.Run();
-            'ChangeStampPosition.Run();
-            'ExtractImageImageStamp.Run();
-
-            '// =====================================================
-            '// =====================================================
-            '// Aspose.Pdf.Facades Text
-            '// =====================================================
-            '// =====================================================
-
-            'AsposePDFFacades.Text.AddText.Run();
-            'ExtractText.Run();
-            'AsposePDFFacades.Text.ExtractTextPage.Run();
-            'ExtractTextPageRange.Run();
-            'ReplaceText.Run();
-            'AsposePDFFacades.Text.ReplaceTextPage.Run();
-
-
-            '// =====================================================
-            '// =====================================================
-            '// Aspose.Pdf.Facades Working with Documents
-            '// =====================================================
-            '// =====================================================
-
-            'AsposePDFFacades.WorkingDocument.GetFileInfo.Run();
-            'AsposePDFFacades.WorkingDocument.SetFileInfo.Run();
-            'SetViewerPreference.Run();
-            'AsposePDFFacades.WorkingDocument.SetXMPMetadata.Run();
-
-            '// =====================================================
-            '// =====================================================
-            '// Aspose.Pdf.Generator Conversion
-            '// =====================================================
-            '// =====================================================
-
-            'AsposePdfGenerator.Conversion.HTMLToPDF.Run();
-            'XSLFOToPDF.Run();
-
-            '// =====================================================
-            '// =====================================================
-            '// Aspose.Pdf.Generator Paragraphs 
-            '// =====================================================
-            '// =====================================================
-
-            'AssignID.Run();
-            'Render.Run();
-            'SetMargins.Run();
-
-            '// =====================================================
-            '// =====================================================
-            '// Aspose.Pdf.Generator Sections
-            '// =====================================================
-            '// =====================================================
-
-            'SetPageBackgroundImage.Run();
-
-            '// =====================================================
-            '// =====================================================
-            '// Aspose.Pdf.Generator Text
-            '// =====================================================
-            '// =====================================================
-
-            'ChangeTextFormat.Run();
-            'CustomTabStops.Run();
-            'InheritTextFormat.Run();
-            'InlineHTMLFromXML.Run();
-            'LeftHangingTextParagraph.Run();
-            'RTLLanguages.Run();
-            'SetRenderingMode.Run();
-            'SetTextBackgroundColor.Run();
-            'SetVerticalAlignment.Run();
-            'TextFormattingTags.Run();
-            'UnderlineOverlineStrikeOut.Run();
-
-            '// =====================================================
-            '// =====================================================
-            '// Aspose.Pdf.Generator Working with Documents
-            '// =====================================================
-            '// =====================================================
-
-            'AddingXMPMetaData.Run();
-            'AddJavaScript.Run();
-            'SetAppearance.Run();
-            'SetDocumentInfo.Run();
-            'SetPageTransitionEffect.Run();
-            'AsposePdfGenerator.WorkingDocuments.SetZoomFactor.Run();      
-
-
-            ' Stop before exiting
-            Console.WriteLine(Constants.vbLf + Constants.vbLf & "Program Finished. Press any key to exit....")
-            Console.ReadKey()
-        End Sub
-
-        Public Shared Function GetDataDir_AsposePdf_Annotations() As String
-            Return Path.GetFullPath("../../AsposePDF/Annotations/Data/")
-        End Function
-
-        Public Shared Function GetDataDir_AsposePdf_Attachments() As String
-            Return Path.GetFullPath("../../AsposePDF/Attachments/Data/")
-        End Function
-        Public Shared Function GetDataDir_AsposePdf_Bookmarks() As String
-            Return Path.GetFullPath("../../AsposePDF/Bookmarks/Data/")
-        End Function
-        Public Shared Function GetDataDir_AsposePdf_DocumentConversion() As String
-            Return Path.GetFullPath("../../AsposePDF/DocumentConversion/Data/")
-        End Function
-        Public Shared Function GetDataDir_AsposePdf_Forms() As String
-            Return Path.GetFullPath("../../AsposePDF/Forms/Data/")
-        End Function
-        Public Shared Function GetDataDir_AsposePdf_Images() As String
-            Return Path.GetFullPath("../../AsposePDF/Images/Data/")
-        End Function
-        Public Shared Function GetDataDir_AsposePdf_LinksActions() As String
-            Return Path.GetFullPath("../../AsposePDF/Links-Actions/Data/")
-        End Function
-        Public Shared Function GetDataDir_AsposePdf_Operators() As String
-            Return Path.GetFullPath("../../AsposePDF/Operators/Data/")
-        End Function
-        Public Shared Function GetDataDir_AsposePdf_Pages() As String
-            Return Path.GetFullPath("../../AsposePDF/Pages/Data/")
-        End Function
-        Public Shared Function GetDataDir_AsposePdf_SecuritySignatures() As String
-            Return Path.GetFullPath("../../AsposePDF/Security-Signatures/Data/")
-        End Function
-        Public Shared Function GetDataDir_AsposePdf_StampsWatermarks() As String
-            Return Path.GetFullPath("../../AsposePDF/Stamps-Watermarks/Data/")
-        End Function
-        Public Shared Function GetDataDir_AsposePdf_Tables() As String
-            Return Path.GetFullPath("../../AsposePDF/Tables/Data/")
-        End Function
-        Public Shared Function GetDataDir_AsposePdf_Text() As String
-            Return Path.GetFullPath("../../AsposePDF/Text/Data/")
-        End Function
-        Public Shared Function GetDataDir_AsposePdf_WorkingDocuments() As String
-            Return Path.GetFullPath("../../AsposePDF/Working-Documents/Data//")
-        End Function
-
-
-
-        Public Shared Function GetDataDir_AsposePdfFacades_Annotations() As String
-            Return Path.GetFullPath("../../AsposePdfFacades/Annotations/Data/")
-        End Function
-
-        Public Shared Function GetDataDir_AsposePdfFacades_Attachments() As String
-            Return Path.GetFullPath("../../AsposePdfFacades/Attachments/Data/")
-        End Function
-        Public Shared Function GetDataDir_AsposePdfFacades_Bookmarks() As String
-            Return Path.GetFullPath("../../AsposePdfFacades/Bookmarks/Data/")
-        End Function
-
-        Public Shared Function GetDataDir_AsposePdfFacades_Forms() As String
-            Return Path.GetFullPath("../../AsposePdfFacades/Forms/Data/")
-        End Function
-        Public Shared Function GetDataDir_AsposePdfFacades_Images() As String
-            Return Path.GetFullPath("../../AsposePdfFacades/Images/Data/")
-        End Function
-
-        Public Shared Function GetDataDir_AsposePdfFacades_StampsWatermarks() As String
-            Return Path.GetFullPath("../../AsposePdfFacades/Stamps-Watermarks/Data/")
-        End Function
-        Public Shared Function GetDataDir_AsposePdfFacades_Printing() As String
-            Return Path.GetFullPath("../../AsposePdfFacades/Printing/Data/")
-        End Function
-        Public Shared Function GetDataDir_AsposePdfFacades_Text() As String
-            Return Path.GetFullPath("../../AsposePdfFacades/Text/Data/")
-        End Function
-        Public Shared Function GetDataDir_AsposePdfFacades_WorkingDocuments() As String
-            Return Path.GetFullPath("../../AsposePdfFacades/Working-Documents/Data/")
-        End Function
-
-
-
-
-        Public Shared Function GetDataDir_AsposePdfGenerator_Conversion() As String
-            Return Path.GetFullPath("../../AsposePdfGenerator/Conversion/Data/")
-        End Function
-
-        Public Shared Function GetDataDir_AsposePdfGenerator_Paragraphs() As String
-            Return Path.GetFullPath("../../AsposePdfGenerator/Paragraphs/Data/")
-        End Function
-        Public Shared Function GetDataDir_AsposePdfGenerator_Sections() As String
-            Return Path.GetFullPath("../../AsposePdfGenerator/Sections/Data/")
-        End Function
-        Public Shared Function GetDataDir_AsposePdfGenerator_Text() As String
-            Return Path.GetFullPath("../../AsposePdfGenerator/Text/Data/")
-        End Function
-        Public Shared Function GetDataDir_AsposePdfGenerator_WorkingDocuments() As String
-            Return Path.GetFullPath("../../AsposePdfGenerator/Working-Documents/Data/")
-        End Function
-    End Class
-End Namespace
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePDF.Annotations
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePDF.Attachments
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePDF.Bookmarks
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePDF.DocumentConversion
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePDF.Forms
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePDF.Images
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePDF.LinksActions
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePDF.Pages
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePDF.SecuritySignatures
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePDF.StampsWatermarks
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePDF.Tables
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePDF.Text
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePDF.WorkingDocuments
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePDF.Operators
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePDF.Miscellaneous
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePDF.Graphs
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePDF.Headings
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePDF.DocumentConversion.PDFToHTMLFormat
+
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePdfGenerator.General
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePdfGenerator.Text
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePdfGenerator.Sections
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePdfGenerator.Paragraphs
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePdfGenerator.WorkingDocuments
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePdfGenerator.Tables
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePdfGenerator.Headings
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePdfGenerator.Graphs
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePdfGenerator.Images
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePdfGenerator.Hyperlinks
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePdfGenerator.Attachments
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePdfGenerator.SecurityFeatures
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePdfGenerator.UtilityFeatures
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePdfGenerator.AdvanceFeatures
+
+Module RunExamples
+    Sub Main()
+        Console.WriteLine("Open RunExamples.cs. " & vbLf & "In Main() method uncomment the example that you want to run.")
+        Console.WriteLine("=====================================================")
+        '' Uncomment the one you want to try out
+
+        '' =====================================================
+        '' =====================================================
+        '' Aspose.Pdf 
+        '' =====================================================
+        '' =====================================================
+
+        '''' Text
+        '''' =====================================================            
+        'AsposePDF.Text.ExtractTextPage.Run()
+        'ReplaceTextAll.Run()
+        'SearchAndGetTextAll.Run()
+        'SearchAndGetTextPage.Run()
+        'SearchRegularExpression.Run()
+        'ReplaceTextonRegularExpression.Run()
+        'ReplaceFirstOccurrence.Run()
+        'SearchTextSegmentsPage.Run()
+        'AsposePDF.Text.AddText.Run()
+        'ExtractTextUsingTextDevice.Run()
+        'ReplaceFonts.Run()
+        'HighlightCharacterInPDF.Run()
+        'AddHTMLUsingDOM.Run()
+        'RearrangeContentsUsingTextReplacement.Run()
+        'FootAndEndNotes.Run()
+        'SearchTextAndAddHyperlink.Run()
+        'TextAndImageAsParagraph.Run()
+        'ExtractColumnsText.Run()
+        'SpecifyCharacterSpacing.Run()
+        'CreateMultiColumnPdf.Run()
+        'AsposePDF.Text.CustomTabStops.Run()
+        'RenderingReplaceableSymbols.Run()
+        'ReplaceableSymbolsInHeaderFooter.Run()
+        'AsposePDF.Text.AddTransparentText.Run()
+
+        '''' Images
+        '''' =====================================================   
+        'AddImage.Run()
+        'DeleteImages.Run()
+        'ExtractImages.Run()
+        'ReplaceImage.Run()
+        'PagesToImages.Run()
+        'ConvertAllPagesToPNG.Run()
+        'PageToTIFF.Run()
+        'AllPagesToTIFF.Run()
+        'BradleyAlgorithm.Run()
+        'ConvertAllPagesToEMF.Run()
+        'PageToEMF.Run()
+        'CGMImageToPDF.Run()
+        'LargeCGMImageToPDF.Run()
+        'ImageToPDF.Run()
+        'ConvertToBMP.Run()
+        'IdentifyImages.Run()
+        'ConvertPageRegionToDOM.Run()
+
+        '''' Stamps-Watermarks
+        '''' =====================================================   
+        'AddTextStamp.Run()
+        'AddImageStamp.Run()
+        'AddPDFPageStamp.Run()
+        'PageNumberStamps.Run()
+        'TextinHeader.Run()
+        'TextinFooter.Run()
+        'ImageinHeader.Run()
+        'ImageInFooter.Run()
+        'AddingDifferentHeaders.Run()
+        'DefineAlignment.Run()
+        'AddDateTimeStamp.Run()
+
+        '''' Attachments
+        '''' =====================================================   
+        'AddAttachment.Run()
+        'GetAlltheAttachments.Run()
+        'GetIndividualAttachment.Run()
+        'GetAttachmentInfo.Run()
+        'DisableFilesCompression.Run()
+
+        '''' Pages
+        '''' =====================================================   
+        'GetNumberofPages.Run()
+        'GetPageCount.Run()
+        'GetProperties.Run()
+        'ConcatenatePdfFiles.Run()
+        'InsertEmptyPage.Run()
+        'InsertEmptyPageAtEnd.Run()
+        'SplitToPages.Run()
+        'GetParticularPage.Run()
+        'DeleteParticularPage.Run()
+        'UpdateDimensions.Run()
+        'GetDimensions.Run()
+        'ImageAsBackground.Run()
+        'DeterminePageColor.Run()
+        'ChangeOrientation.Run()
+        'ZoomToPageContents.Run()
+
+        '''' Working-Document
+        '''' =====================================================   
+        'SetDocumentWindow.Run()
+        'GetDocumentWindow.Run()
+        'ValidatePDFAStandard.Run()
+        'OptimizeDocument.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePDF.WorkingDocuments.SetFileInfo.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePDF.WorkingDocuments.GetFileInfo.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePDF.WorkingDocuments.SetXMPMetadata.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePDF.WorkingDocuments.GetXMPMetadata.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePDF.WorkingDocuments.SetZoomFactor.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePDF.WorkingDocuments.GetZoomFactor.Run()
+        'AddTOC.Run()
+        'OptimizeFileSize.Run()
+        'TrimWhiteSpace.Run()
+        'AddJavaScriptToPage.Run()
+        'AddRemoveJavascriptToDoc.Run()
+        'AddLayers.Run()
+        'EmbedFont.Run()
+        'EmbedFontWhileDocCreation.Run()
+        'ConvertFromRGBToGrayscale.Run()
+        'SetExpiryDate.Run()
+
+        '''' Bookmarks
+        '''' =====================================================   
+        'Aspose.Pdf.Examples.VisualBasic.AsposePDF.Bookmarks.AddBookmark.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePDF.Bookmarks.AddChildBookmark.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePDF.Bookmarks.DeleteAllBookmarks.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePDF.Bookmarks.DeleteParticularBookmark.Run()
+        'GetBookmarks.Run()
+        'GetChildBookmarks.Run()
+        'UpdateBookmarks.Run()
+        'UpdateChildBookmarks.Run()
+        'InheritZoom.Run()
+        'ExpandBookmarks.Run()
+
+        '''' Annotations
+        '''' =====================================================   
+        'AddAnnotation.Run()
+        'InvisibleAnnotation.Run()
+        'AddlnkAnnotation.Run()
+        'lnkAnnotationLineWidth.Run()
+        'GetParticularAnnotation.Run()
+        'GetAllAnnotationsFromPage.Run()
+        'DeleteParticularAnnotation.Run()
+        'DeleteAllAnnotationsFromPage.Run()
+        'AddSwfFileAsAnnotation.Run()
+        'SetFreeTextAnnotationFormatting.Run()
+        'StrikeOutWords.Run()
+
+        '''' Forms
+        '''' =====================================================   
+        'TextBox.Run()
+        'RadioButtonWithOptions.Run()
+        'ComboBox.Run()
+        'DeleteFormField.Run()
+        'ModifyFormField.Run()
+        'FillFormField.Run()
+        'ArabicTextFilling.Run()
+        'SelectRadioButton.Run()
+        'GetValueFromField.Run()
+        'GetValueFromField.Run()
+        'SetFieldLimit.Run()
+        'MoveFormField.Run()
+        'AddTooltipToField.Run()
+        'GetFieldsFromRegion.Run()
+        'FormFieldFont14.Run()
+        'DynamicXFAToAcroForm.Run()
+        'FillXFAFields.Run()
+        'GetXFAProperties.Run()
+        'DetermineRequiredField.Run()
+        'SetJavaScript.Run()
+        'HorizontallyAndVerticallyRadioButtons.Run()
+        'GroupedCheckBoxes.Run()
+
+
+        '''' Links-Actions
+        '''' =====================================================   
+        'CreateApplicationLink.Run()
+        'CreateDocumentLink.Run()
+        'RemoveOpenAction.Run()
+        'ExtractLinks.Run()
+        'AddHyperlink.Run()
+        'UpdateLinks.Run()
+        'SetDestinationLink.Run()
+        'UpdateLinkTextColor.Run()
+        'SpecifyPageWhenViewing.Run()
+        'GetHyperlinkDestinations.Run()
+        'GetHyperlinkText.Run()
+        'CreateLocalHyperlink.Run()
+
+        '''' Security-Signatures
+        '''' =====================================================   
+        'Encrypt.Run()
+        'Decrypt.Run()
+        'ChangePassword.Run()
+        'IsPasswordProtected.Run()
+        'DetermineCorrectPassword.Run()
+        'ExtractingImage.Run()
+        'SetPrivileges.Run()
+
+        '''' Operators
+        '''' =====================================================   
+        'DrawXFormOnPage.Run()
+        'PDFOperators.Run()
+        'RemoveGraphicsObjects.Run()
+
+        '''' Miscellaneous
+        '''' =====================================================   
+        'GetBuildInformation.Run()
+        'UseMeasureWithLineAnnotation.Run()
+        'UseMeasureWithPolylineAnnotation.Run()
+
+        '''' Tables
+        '''' =====================================================   
+        'AddTable.Run()
+        'AutoFitToWindow.Run()
+        'MarginsOrPadding.Run()
+        'SetBorder.Run()
+        'IntegrateWithDatabase.Run()
+        'RenderTable.Run()
+        'AddSVGObject.Run()
+        'ExtractBorder.Run()
+        'InsertPageBreak.Run()
+        'DetermineTableBreak.Run()
+
+        '''' Graphs
+        '''' =====================================================   
+        'CreateFilledRectangle.Run()
+        'AddLineObject.Run()
+        'DashLength.Run()
+        'DrawingLine.Run()
+        'CreateRectangleWithAlphaColor.Run()
+        'AddDrawing.Run()
+        'ControlRectangleZOrder.Run()
+
+        '''' Headings
+        '''' =====================================================   
+        'ApplyNumberStyle.Run()
+
+        '''' DocumentConversion
+        '''' =====================================================   
+        'PDFToPDFA.Run()
+        'PDFToPDFA3b.Run()
+        'AddAttachmentToPDFA.Run()
+        'PDFToDOC.Run()
+        'PDFToTeX.Run()
+        'SVGToPDF.Run()
+        'GetSVGDimensions.Run()
+        'PDFToEPUB.Run()
+        'PDFToXPS.Run()
+        'PDFToXLS.Run()
+        'PDFToSVG.Run()
+        'PDFToXML.Run()
+        'MHTToPDF.Run()
+        'TextToPDF.Run()
+        'CGMToPDF.Run()
+        'PDFToPPT.Run()
+        'PDFAToPDF.Run()
+        'XMLToPDF.Run()
+
+        '' =====================================================
+        '' =====================================================
+        '' Aspose.Pdf.Generator
+        '' =====================================================
+        '' =====================================================
+
+        '''/ General
+        '''/ =====================================================            
+        'HelloWorldUsingXML.Run()
+        'HelloWorldUsingAPI.Run()
+        'HelloWorldUsingXMLAndAPI.Run()
+        'HelloWorldUsingXSLT.Run()
+        'FloatingBoxLook.Run()
+        'PositionFloatingBox.Run()
+
+        '''' Working-Document
+        '''' =====================================================            
+        'SetDocumentInfo.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePdfGenerator.WorkingDocuments.SetZoomFactor.Run()
+        'SetAppearance.Run()
+        'SetPageTransitionEffect.Run()
+        'AddJavaScript.Run()
+        'AddingXMPMetaData.Run()
+
+        '''' Sections
+        '''' =====================================================            
+        'SetPageBackgroundImage.Run()
+        'SetPageSize.Run()
+        'SetPageMargin.Run()
+        'SetHeaderAndFooter.Run()
+        'AdvancedHeaderAndFooter.Run()
+
+        '''' Paragraphs
+        '''' =====================================================            
+        'SetMargins.Run()
+        'AssignID.Run()
+        'Render.Run()
+
+        '''' Text
+        '''' =====================================================            
+        'InlineParagraph.Run()
+        'TextLayout.Run()
+        'InheritTextFormat.Run()
+        'SymbolFont.Run()
+        'PFMFont.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePdfGenerator.Text.EmbedFont.Run()
+        'ReplaceableSymbols.Run()
+        'RTLLanguages.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePdfGenerator.Text.CustomTabStops.Run()
+        'HyperlinkTags.Run()
+        'SuperSubscript.Run()
+        'AddFootnotes.Run()
+        'AddEndnote.Run()
+        'InlineRadioButton.Run()
+
+        '''' Graphs
+        '''' =====================================================            
+        'GraphCoordinate.Run()
+        'GraphFormat.Run()
+        'RotationAndScaling.Run()
+
+        '''' Images
+        '''' =====================================================            
+        'ImageFromLocalDisk.Run()
+        'ImageFromMemory.Run()
+        'ImageFromWeb.Run()
+        'CCITTImage.Run()
+
+        '''' Headings
+        '''' =====================================================            
+        'ApplyingNumber.Run()
+        'SpecifyHeadingLevel.Run()
+        'SystemBullets.Run()
+        'UserDefinedBullets.Run()
+
+        '''' Tables
+        '''' =====================================================            
+        'SetBorderAndPadding.Run()
+        'SetColumnWidthAndSpan.Run()
+        'TableAndRowSplitting.Run()
+        'CompleteClone.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePdfGenerator.Tables.IntegrateWithDatabase.Run()
+        'CellInformation.Run()
+        'RowAndColumnFormat.Run()
+        'NestedTables.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePdfGenerator.Tables.RoundedCornerTable.Run()
+        'NonEnglishText.Run()
+
+        '''' Hyperlinks
+        '''' =====================================================            
+        'HyperlinkPages.Run()
+        'HyperlinkOtherPdf.Run()
+        'HyperlinkNonPdfFile.Run()
+        'HyperlinkToWeb.Run()
+
+        '''' Attachments
+        '''' =====================================================            
+        'AttachAnyFile.Run()
+        'AttachNoteAnnotation.Run()
+        'CustomizeNotePosition.Run()
+
+        '''' SecurityFeatures
+        '''' =====================================================            
+        'SetPassword.Run()
+        'SetEncryption.Run()
+        'AllowDisallowPrivileges.Run()
+
+        '''' UtilityFeatures
+        '''' =====================================================            
+        'AddingList.Run()
+        'AddThreeList.Run()
+        'SpecifyListItem.Run()
+        'ManipulatingFormFields.Run()
+        'ManipulatingColumns.Run()
+        'CustomizingWatermark.Run()
+        'CreatePdf.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePdfGenerator.UtilityFeatures.AddBookmark.Run()
+        'AddTableOfContents.Run()
+
+        '''' Conversion
+        '''' =====================================================            
+        'Aspose.Pdf.Examples.VisualBasic.AsposePdfGenerator.Conversion.XSLFOToPDF.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePdfGenerator.Conversion.PCLToPDF.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePdfGenerator.Conversion.SVGToPDF.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePdfGenerator.Conversion.HTMLToPDF.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePdfGenerator.Conversion.WebToPDF.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePdfGenerator.Conversion.HTMLToPDFUsingStream.Run()
+
+        '''' AdvanceFeatures
+        '''' =====================================================            
+        'TableMinimumColumnWidth.Run()
+        'AddPageBorder.Run()
+        'MergeXMLFiles.Run()
+        'XSLToPdf.Run()
+        'XMLAsTemplate.Run()
+        'LoadDataInXMLTemplate.Run()
+
+        ' Stop before exiting
+        Console.WriteLine(vbLf & vbLf & "Program Finished. Press any key to exit....")
+        Console.ReadKey()
+    End Sub
+    Public Function GetDataDir_AsposePdf_DocumentConversion_PDFToHTMLFormat() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() + "AsposePDF/DocumentConversion/PDFToHTMLFormat/")
+    End Function
+
+    Public Function GetDataDir_AsposePdf_Headings() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("AsposePDF/Headings/"))
+    End Function
+    Public Function GetDataDir_AsposePdf_Graphs() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("AsposePDF/Graphs/"))
+    End Function
+    Public Function GetDataDir_AsposePdf_Annotations() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("AsposePDF/Annotations/"))
+    End Function
+    Public Function GetDataDir_AsposePdf_Miscellaneous() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("AsposePDF/Miscellaneous/"))
+    End Function
+
+    Public Function GetDataDir_AsposePdf_Attachments() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("AsposePDF/Attachments/"))
+    End Function
+    Public Function GetDataDir_AsposePdf_Bookmarks() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("AsposePDF/Bookmarks/"))
+    End Function
+    Public Function GetDataDir_AsposePdf_DocumentConversion() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("AsposePDF/DocumentConversion/"))
+    End Function
+    Public Function GetDataDir_AsposePdf_Forms() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("AsposePDF/Forms/"))
+    End Function
+    Public Function GetDataDir_AsposePdf_Images() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("AsposePDF/Images/"))
+    End Function
+    Public Function GetDataDir_AsposePdf_LinksActions() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("AsposePDF/Links-Actions/"))
+    End Function
+    Public Function GetDataDir_AsposePdf_Operators() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("AsposePDF/Operators/"))
+    End Function
+    Public Function GetDataDir_AsposePdf_Pages() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("AsposePDF/Pages/"))
+    End Function
+    Public Function GetDataDir_AsposePdf_SecuritySignatures() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("AsposePDF/Security-Signatures/"))
+    End Function
+    Public Function GetDataDir_AsposePdf_StampsWatermarks() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("AsposePDF/Stamps-Watermarks/"))
+    End Function
+    Public Function GetDataDir_AsposePdf_Tables() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("AsposePDF/Tables/"))
+    End Function
+    Public Function GetDataDir_AsposePdf_Text() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("AsposePDF/Text/"))
+    End Function
+    Public Function GetDataDir_AsposePdf_WorkingDocuments() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("AsposePDF/Working-Document/"))
+    End Function
+    Public Function GetDataDir_AsposePdfFacades_Annotations() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("AsposePdfFacades/Annotations/"))
+    End Function
+
+    Public Function GetDataDir_AsposePdfFacades_Attachments() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("AsposePdfFacades/Attachments/"))
+    End Function
+    Public Function GetDataDir_AsposePdfFacades_Bookmarks() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("AsposePdfFacades/Bookmarks/"))
+    End Function
+
+    Public Function GetDataDir_AsposePdfFacades_Forms() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("AsposePdfFacades/Forms/"))
+    End Function
+    Public Function GetDataDir_AsposePdfFacades_Images() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("AsposePdfFacades/Images/"))
+    End Function
+
+    Public Function GetDataDir_AsposePdfFacades_StampsWatermarks() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("AsposePdfFacades/Stamps-Watermarks/"))
+    End Function
+    Public Function GetDataDir_AsposePdfFacades_Printing() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("AsposePdfFacades/Printing/"))
+    End Function
+    Public Function GetDataDir_AsposePdfFacades_Text() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("AsposePdfFacades/Text/"))
+    End Function
+    Public Function GetDataDir_AsposePdfFacades_WorkingDocuments() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("AsposePdfFacades/Working-Documents/"))
+    End Function
+    Public Function GetDataDir_AsposePdfGenerator_Conversion() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("AsposePdfGenerator/Conversion/"))
+    End Function
+
+    Public Function GetDataDir_AsposePdfGenerator_Paragraphs() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("AsposePdfGenerator/Paragraphs/"))
+    End Function
+    Public Function GetDataDir_AsposePdfGenerator_Sections() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("AsposePdfGenerator/Sections/"))
+    End Function
+    Public Function GetDataDir_AsposePdfGenerator_Text() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("AsposePdfGenerator/Text/"))
+    End Function
+    Public Function GetDataDir_AsposePdfGenerator_General() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("AsposePdfGenerator/General/"))
+    End Function
+    Public Function GetDataDir_AsposePdfGenerator_WorkingDocuments() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("AsposePdfGenerator/Working-Documents/"))
+    End Function
+    Public Function GetDataDir_AsposePdfGenerator_Graphs() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() + "AsposePdfGenerator/Graphs/")
+    End Function
+    Public Function GetDataDir_AsposePdfGenerator_Images() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() + "AsposePdfGenerator/Images/")
+    End Function
+    Public Function GetDataDir_AsposePdfGenerator_Headings() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() + "AsposePdfGenerator/Headings/")
+    End Function
+    Public Function GetDataDir_AsposePdfGenerator_Tables() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() + "AsposePdfGenerator/Tables/")
+    End Function
+    Public Function GetDataDir_AsposePdfGenerator_Hyperlinks() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() + "AsposePdfGenerator/Hyperlinks/")
+    End Function
+    Public Function GetDataDir_AsposePdfGenerator_SecurityFeatures() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() + "AsposePdfGenerator/SecurityFeatures/")
+    End Function
+    Public Function GetDataDir_AsposePdfGenerator_Attachments() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() + "AsposePdfGenerator/Attachments/")
+    End Function
+    Public Function GetDataDir_AsposePdfGenerator_UtilityFeatures() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() + "AsposePdfGenerator/UtilityFeatures/")
+    End Function
+    Public Function GetDataDir_AsposePdfGenerator_AdvanceFeatures() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() + "AsposePdfGenerator/AdvanceFeatures/")
+    End Function
+    Public Function GetDataDir_Data() As String
+        Dim parent = Directory.GetParent(Directory.GetCurrentDirectory()).Parent
+        Dim startDirectory As String = Nothing
+        If parent IsNot Nothing Then
+            Dim directoryInfo = parent.Parent
+            If directoryInfo IsNot Nothing Then
+                startDirectory = directoryInfo.FullName
+            End If
+        Else
+            startDirectory = parent.FullName
+        End If
+        Return Path.Combine(startDirectory, "Data\")
+    End Function
+End Module

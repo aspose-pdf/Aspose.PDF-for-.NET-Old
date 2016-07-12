@@ -1,42 +1,33 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Pdf. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
-Imports Microsoft.VisualBasic
 Imports System.IO
-
+Imports System
+Imports Microsoft.VisualBasic
 Imports Aspose.Pdf
+Imports AP = Aspose.Pdf
 Imports System.Collections
-
-Namespace VB.AsposePdf.Operators
+Namespace AsposePDF.Operators
     Public Class RemoveGraphicsObjects
         Public Shared Sub Run()
+            ' ExStart:RemoveGraphicsObjects
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdf_Operators()
 
-            Dim doc As New Document(dataDir & "RemoveGraphicsObjects.pdf")
+            Dim doc As New Document(dataDir & Convert.ToString("RemoveGraphicsObjects.pdf"))
             Dim page As Page = doc.Pages(2)
             Dim oc As OperatorCollection = page.Contents
 
-            ' used path-painting operators
-			Dim operators() As [Operator] = { New Operator.Stroke(), New Operator.ClosePathStroke(), New Operator.Fill() }
+            ' Used path-painting operators
+            Dim opera As [Operator]() = New [Operator]() {New AP.Operator.Stroke(), New AP.Operator.ClosePathStroke(), New AP.Operator.Fill()}
 
             Dim list As New ArrayList()
-            For Each op As [Operator] In operators
+            For Each op As [Operator] In opera
                 Dim os As New OperatorSelector(op)
                 oc.Accept(os)
                 list.AddRange(os.Selected)
-            Next op
+            Next
 
             oc.Delete(list)
-
-            doc.Save(dataDir & "No_Graphics.pdf")
-
-
+            doc.Save(dataDir & Convert.ToString("No_Graphics_out_.pdf"))
+            ' ExEnd:RemoveGraphicsObjects
         End Sub
     End Class
 End Namespace

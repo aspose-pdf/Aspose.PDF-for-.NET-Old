@@ -10,7 +10,7 @@ using System.IO;
 using Aspose.Pdf;
 using Aspose.Pdf.Facades;
 
-namespace CSharp.AsposePDFFacades.WorkingDocument
+namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.WorkingDocument
 {
     public class SetViewerPreference
     {

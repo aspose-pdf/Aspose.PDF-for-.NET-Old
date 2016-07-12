@@ -1,51 +1,48 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Pdf. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
+﻿Imports System.IO
+Imports System
 Imports Microsoft.VisualBasic
-Imports System.IO
-
 Imports Aspose.Pdf
-
-Namespace VB.AsposePdf.Images
+Imports Aspose.Pdf.Operator
+Imports APO = Aspose.Pdf.Operator
+Namespace AsposePDF.Images
     Public Class AddImage
         Public Shared Sub Run()
+            ' ExStart:AddImage
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdf_Images()
 
-            'open document
-            Dim pdfDocument As New Document(dataDir & "AddImage.pdf")
+            ' Open document
+            Dim pdfDocument As New Document(dataDir & Convert.ToString("AddImage.pdf"))
 
-            'set coordinates
+            ' Set coordinates
             Dim lowerLeftX As Integer = 100
             Dim lowerLeftY As Integer = 100
             Dim upperRightX As Integer = 200
             Dim upperRightY As Integer = 200
 
-            'get the page where image needs to be added
+            ' Get the page where image needs to be added
             Dim page As Page = pdfDocument.Pages(1)
-            'load image into stream
-            Dim imageStream As New FileStream(dataDir & "aspose-logo.jpg", FileMode.Open)
-            'add image to Images collection of Page Resources
+            ' Load image into stream
+            Dim imageStream As New FileStream(dataDir & Convert.ToString("aspose-logo.jpg"), FileMode.Open)
+            ' Add image to Images collection of Page Resources
             page.Resources.Images.Add(imageStream)
-            'using GSave operator: this operator saves current graphics state
-			page.Contents.Add(New Operator.GSave())
-            'create Rectangle and Matrix objects
-            Dim rectangle As New Aspose.Pdf.Rectangle(lowerLeftX, lowerLeftY, upperRightX, upperRightY)
-            Dim matrix As New Aspose.Pdf.DOM.Matrix(New Double() {rectangle.URX - rectangle.LLX, 0, 0, rectangle.URY - rectangle.LLY, rectangle.LLX, rectangle.LLY})
-            'using ConcatenateMatrix (concatenate matrix) operator: defines how image must be placed
-			page.Contents.Add(New Operator.ConcatenateMatrix(matrix))
+            ' Using GSave operator: this operator saves current graphics state
+            page.Contents.Add(New GSave())
+            ' Create Rectangle and Matrix objects
+            Dim rectangle As New Rectangle(lowerLeftX, lowerLeftY, upperRightX, upperRightY)
+            Dim matrix As New Matrix(New Double() {rectangle.URX - rectangle.LLX, 0, 0, rectangle.URY - rectangle.LLY, rectangle.LLX, rectangle.LLY})
+            ' Using ConcatenateMatrix (concatenate matrix) operator: defines how image must be placed
+            page.Contents.Add(New ConcatenateMatrix(matrix))
             Dim ximage As XImage = page.Resources.Images(page.Resources.Images.Count)
-            'using Do operator: this operator draws image
-			page.Contents.Add(New Operator.Do(ximage.Name))
-            'using GRestore operator: this operator restores graphics state
-			page.Contents.Add(New Operator.GRestore())
-            'save updated document
-            pdfDocument.Save(dataDir & "AddImage_out.pdf")
+            ' Using Do operator: this operator draws image
+            page.Contents.Add(New APO.Do(ximage.Name))
+            ' Using GRestore operator: this operator restores graphics state
+            page.Contents.Add(New GRestore())
+            dataDir = dataDir & Convert.ToString("AddImage_out_.pdf")
+            ' Save updated document
+            pdfDocument.Save(dataDir)
+            ' ExEnd:AddImage
+            Console.WriteLine(Convert.ToString(vbLf & "Image added successfully." & vbLf & "File saved at ") & dataDir)
         End Sub
     End Class
 End Namespace

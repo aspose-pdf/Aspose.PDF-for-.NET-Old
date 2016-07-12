@@ -1,43 +1,30 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Pdf. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
-Imports Microsoft.VisualBasic
 Imports System.IO
-
-Imports Aspose.Pdf
-
-Namespace VisualBasic.AsposePdfGenerator.WorkingDocuments
+Imports System
+Imports Microsoft.VisualBasic
+Imports AP = Aspose.Pdf
+Namespace AsposePdfGenerator.WorkingDocuments
     Public Class AddJavaScript
         Public Shared Sub Run()
+            ' ExStart:AddJavaScript
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdfGenerator_WorkingDocuments()
-            ' Create directory if it is not already present.
-            Dim IsExists As Boolean = System.IO.Directory.Exists(dataDir)
-            If (Not IsExists) Then
-                System.IO.Directory.CreateDirectory(dataDir)
-            End If
 
+            ' Instantiate a PDF Object 
+            Dim pdf As New AP.Generator.Pdf()
 
-            'Instantiate a PDF Object 
-            Dim pdf As New Aspose.Pdf.Generator.Pdf()
+            ' Instantiate a Aspose PDF JavaScript Object
+            pdf.JavaScripts = New AP.Generator.JavaScripts()
 
-            'Instantiate a Aspose PDF JavaScript Object
-            pdf.JavaScripts = New Aspose.Pdf.Generator.JavaScripts()
-
-            'Call the Add method and pass JavaScript statement as an argument, to show Print Dialog
+            ' Call the Add method and pass JavaScript statement as an argument, to show Print Dialog
             pdf.JavaScripts.Add("this.print(true);")
 
-            'Call the Add method and JavaScript statement as an argument, to show alert
+            ' Call the Add method and JavaScript statement as an argument, to show alert
             pdf.JavaScripts.Add("app.alert(""hello world"");")
-
-            'Save Pdf Document
-            pdf.Save(dataDir & "Aspose.pdf")
-
+            dataDir = dataDir & Convert.ToString("AddJavaScript_out_.pdf")
+            ' Save Pdf Document
+            pdf.Save(dataDir)
+            ' ExEnd:AddJavaScript
+            Console.WriteLine(Convert.ToString(vbLf & "Javascript added successfully." & vbLf & "File saved at ") & dataDir)
 
         End Sub
     End Class

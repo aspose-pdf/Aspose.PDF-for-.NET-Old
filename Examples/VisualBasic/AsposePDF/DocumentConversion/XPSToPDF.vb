@@ -1,30 +1,28 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Pdf. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
-Imports Microsoft.VisualBasic
 Imports System.IO
-
+Imports System
+Imports Microsoft.VisualBasic
 Imports Aspose.Pdf
-
-Namespace VisualBasic.AsposePdf.DocumentConversion
+Namespace AsposePDF.DocumentConversion
     Public Class XPSToPDF
         Public Shared Sub Run()
-            ' The path to the documents directory.
-            Dim dataDir As String = RunExamples.GetDataDir_AsposePdf_DocumentConversion()
+            Try
+                ' ExStart:XPSToPDF
+                ' The path to the documents directory.
+                Dim dataDir As String = RunExamples.GetDataDir_AsposePdf_DocumentConversion()
 
-            ' instantiate LoadOption object using XPS load option
-            Dim options As Aspose.Pdf.LoadOptions = New XpsLoadOptions()
+                ' Instantiate LoadOption object using XPS load option
+                Dim options As LoadOptions = New XpsLoadOptions()
 
-            ' create document object 
-            Dim document As New Aspose.Pdf.Document(dataDir & "test.xps", options)
+                ' Create document object 
+                Dim document As New Document(dataDir & Convert.ToString("XPSToPDF.xps"), options)
 
-            ' save the resultant PDF document
-            document.Save(dataDir & "resultant.pdf")
+                ' Save the resultant PDF document
+                ' ExEnd:XPSToPDF
+                document.Save(dataDir & Convert.ToString("XPSToPDF_out_.pdf"))
+            Catch ex As Exception
+
+                Console.WriteLine(ex.Message)
+            End Try
         End Sub
     End Class
 End Namespace

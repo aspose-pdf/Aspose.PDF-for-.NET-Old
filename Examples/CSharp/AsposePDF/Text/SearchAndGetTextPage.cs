@@ -1,60 +1,45 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
-using System.IO;
 
+using System.IO;
 using Aspose.Pdf;
 using Aspose.Pdf.Text;
 using System;
-
-namespace CSharp.AsposePdf.Text
+namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
 {
     public class SearchAndGetTextPage
     {
         public static void Run()
         {
+            // ExStart:SearchAndGetTextPage
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-            //open document
+            // Open document
             Document pdfDocument = new Document(dataDir + "SearchAndGetTextPage.pdf");
-           
-            //create TextAbsorber object to find all instances of the input search phrase
-            TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("text");
-            
-            //accept the absorber for a single page
-            pdfDocument.Pages[2].Accept(textFragmentAbsorber);
-            
-            //get the extracted text fragments
+
+            // Create TextAbsorber object to find all instances of the input search phrase
+            TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("Figure");
+            // Accept the absorber for all the pages
+            pdfDocument.Pages.Accept(textFragmentAbsorber);
+            // Get the extracted text fragments
             TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
-            
-            //loop through the fragments
+            // Loop through the fragments
             foreach (TextFragment textFragment in textFragmentCollection)
             {
-                Console.WriteLine("Text : {0} ", textFragment.Text);
-                Console.WriteLine("Position : {0} ", textFragment.Position);
-                Console.WriteLine("XIndent : {0} ",
-                textFragment.Position.XIndent);
-                Console.WriteLine("YIndent : {0} ",
-                textFragment.Position.YIndent);
-                Console.WriteLine("Font - Name : {0}",
-                textFragment.TextState.Font.FontName);
-                Console.WriteLine("Font - IsAccessible : {0} ",
-                textFragment.TextState.Font.IsAccessible);
-                Console.WriteLine("Font - IsEmbedded : {0} ",
-                textFragment.TextState.Font.IsEmbedded);
-                Console.WriteLine("Font - IsSubset : {0} ",
-                textFragment.TextState.Font.IsSubset);
-                Console.WriteLine("Font Size : {0} ",
-                textFragment.TextState.FontSize);
-                Console.WriteLine("Foreground Color : {0} ",
-                textFragment.TextState.ForegroundColor);
+                foreach (TextSegment textSegment in textFragment.Segments)
+                {
+                    Console.WriteLine("Text : {0} ", textSegment.Text);
+                    Console.WriteLine("Position : {0} ", textSegment.Position);
+                    Console.WriteLine("XIndent : {0} ", textSegment.Position.XIndent);
+                    Console.WriteLine("YIndent : {0} ", textSegment.Position.YIndent);
+                    Console.WriteLine("Font - Name : {0}", textSegment.TextState.Font.FontName);
+                    Console.WriteLine("Font - IsAccessible : {0} ", textSegment.TextState.Font.IsAccessible);
+                    Console.WriteLine("Font - IsEmbedded : {0} ", textSegment.TextState.Font.IsEmbedded);
+                    Console.WriteLine("Font - IsSubset : {0} ", textSegment.TextState.Font.IsSubset);
+                    Console.WriteLine("Font Size : {0} ", textSegment.TextState.FontSize);
+                    Console.WriteLine("Foreground Color : {0} ", textSegment.TextState.ForegroundColor);
+                }
             }
-            
+            // ExEnd:SearchAndGetTextPage            
         }
     }
 }

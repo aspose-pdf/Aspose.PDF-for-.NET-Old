@@ -1,49 +1,37 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Pdf. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
-Imports Microsoft.VisualBasic
 Imports System.IO
-
+Imports System
+Imports Microsoft.VisualBasic
+Imports Aspose.Pdf.Forms
 Imports Aspose.Pdf
-Imports Aspose.Pdf.InteractiveFeatures.Forms
-
-Namespace VisualBasic.AsposePdf.Forms
+Namespace AsposePDF.Forms
     Public Class RadioButton
         Public Shared Sub Run()
-            ' The path to the documents directory.
-            Dim dataDir As String = RunExamples.GetDataDir_AsposePdf_Forms()
+            Try
+                ' ExStart:RadioButton
+                ' The path to the documents directory.
+                Dim dataDir As String = RunExamples.GetDataDir_AsposePdf_Forms()
 
-            ' Create directory if it is not already present.
-            Dim IsExists As Boolean = System.IO.Directory.Exists(dataDir)
-            If (Not IsExists) Then
-                System.IO.Directory.CreateDirectory(dataDir)
-            End If
+                ' Instantiate Document object
+                Dim pdfDocument As New Document()
+                ' Add a page to PDF file
+                pdfDocument.Pages.Add()
+                ' Instatiate RadioButtonField object with page number as argument
+                Dim radio As New RadioButtonField(pdfDocument.Pages(1))
+                ' Add first radio button option and also specify its origin using Rectangle object
+                radio.AddOption("Test", New Rectangle(0, 0, 20, 20))
+                ' Add second radio button option
+                radio.AddOption("Test1", New Rectangle(20, 20, 40, 40))
+                ' Add radio button to form object of Document object
+                pdfDocument.Form.Add(radio)
 
-            ' instantiate Document object
-            Dim pdfDocument As New Document()
-
-            ' add a page to PDF file
-            pdfDocument.Pages.Add()
-
-            ' instatiate RadioButtonField object with page number as argument
-            Dim radio As New RadioButtonField(pdfDocument.Pages(1))
-
-            ' add first radio button option and also specify its origin using Rectangle object
-            radio.AddOption("Test", New Aspose.Pdf.Rectangle(0, 0, 20, 20))
-
-            ' add second radio button option
-            radio.AddOption("Test1", New Aspose.Pdf.Rectangle(20, 20, 40, 40))
-
-            ' add radio button to form object of Document object
-            pdfDocument.Form.Add(radio)
-
-            ' save the PDF file
-            pdfDocument.Save(dataDir & "RadioButton_out.pdf")
+                dataDir = dataDir & Convert.ToString("RadioButton_out_.pdf")
+                ' Save the PDF file
+                pdfDocument.Save(dataDir)
+                ' ExEnd:RadioButton
+                Console.WriteLine(Convert.ToString(vbLf & "Radio button field added successfully." & vbLf & "File saved at ") & dataDir)
+            Catch ex As Exception
+                Console.WriteLine(ex.Message)
+            End Try
 
         End Sub
     End Class

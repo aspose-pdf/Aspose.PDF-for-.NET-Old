@@ -1,34 +1,46 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
 using System.IO;
-
 using Aspose.Pdf;
 using System;
 
-namespace CSharp.AsposePdf.WorkingDocuments
+namespace Aspose.Pdf.Examples.CSharp.AsposePDF.WorkingDocuments
 {
     public class SetXMPMetadata
     {
         public static void Run()
         {
+            // ExStart:SetXMPMetadata
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-            //open document
+            // Open document
             Document pdfDocument = new Document(dataDir + "SetXMPMetadata.pdf");
 
-            //set properties
+            // Set properties
             pdfDocument.Metadata["xmp:CreateDate"] = DateTime.Now;
             pdfDocument.Metadata["xmp:Nickname"] = "Nickname";
             pdfDocument.Metadata["xmp:CustomProperty"] = "Custom Value";
 
-            //save document
-            pdfDocument.Save(dataDir + "SetXMPMetadata_out.pdf");
+            dataDir = dataDir + "SetXMPMetadata_out_.pdf";
+            // Save document
+            pdfDocument.Save(dataDir);
+            // ExEnd:SetXMPMetadata
+            Console.WriteLine("\nXMP metadata in a pdf file setup successfully.\nFile saved at " + dataDir);
+        }
+        public static void SetPrefixMetadata()
+        {
+            // ExStart:SetPrefixMetadata
+            // The path to the documents directory.
+            string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+            // Open document
+            Document pdfDocument = new Document(dataDir + "SetXMPMetadata.pdf");
+            pdfDocument.Metadata.RegisterNamespaceUri("xmp", "http://ns.adobe.com/xap/1.0/"); // xmlns prefix was removed
+            pdfDocument.Metadata["xmp:ModifyDate"] = DateTime.Now;
+
+            dataDir = dataDir + "SetPrefixMetadata_out_.pdf";
+            // Save document
+            pdfDocument.Save(dataDir);
+            // ExEnd:SetPrefixMetadata
 
         }
     }

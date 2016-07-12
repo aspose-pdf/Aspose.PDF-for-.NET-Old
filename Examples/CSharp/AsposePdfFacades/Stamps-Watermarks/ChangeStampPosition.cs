@@ -10,7 +10,7 @@ using System.IO;
 using Aspose.Pdf;
 using Aspose.Pdf.Facades;
 
-namespace CSharp.AsposePDFFacades.StampsWatermarks
+namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.StampsWatermarks
 {
     public class ChangeStampPosition
     {
@@ -33,7 +33,7 @@ namespace CSharp.AsposePDFFacades.StampsWatermarks
             //Change the position of the stamp to new x and y position
             pdfContentEditor.MoveStamp(pageId, stampIndex, x, y);
 
-            //Save the PDF file
+            // Save the Pdf file
             pdfContentEditor.Save(dataDir+ "ChangeStampPosition_out.pdf");
         }
     }

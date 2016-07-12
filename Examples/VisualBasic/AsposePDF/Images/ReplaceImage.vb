@@ -1,32 +1,25 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Pdf. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
+﻿Imports System.IO
+Imports System
 Imports Microsoft.VisualBasic
-Imports System.IO
-
 Imports Aspose.Pdf
-
-Namespace VisualBasic.AsposePdf.Images
+Namespace AsposePDF.Images
     Public Class ReplaceImage
         Public Shared Sub Run()
+            ' ExStart:ReplaceImage
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdf_Images()
 
-            'open document
-            Dim pdfDocument As New Document(dataDir & "ReplaceImage.pdf")
+            ' Open document
+            Dim pdfDocument As New Document(dataDir & Convert.ToString("ReplaceImage.pdf"))
 
-            'replace a particular image
-            pdfDocument.Pages(1).Resources.Images.Replace(1, New FileStream(dataDir & "aspose-logo.jpg", FileMode.Open))
+            ' Replace a particular image
+            pdfDocument.Pages(1).Resources.Images.Replace(1, New FileStream(dataDir & Convert.ToString("aspose-logo.jpg"), FileMode.Open))
 
-            'save updated PDF file
-            pdfDocument.Save(dataDir & "ReplaceImage_out.pdf")
-
-
+            dataDir = dataDir & Convert.ToString("ReplaceImage_out_.pdf")
+            ' Save updated PDF file
+            pdfDocument.Save(dataDir)
+            ' ExEnd:ReplaceImage
+            Console.WriteLine(Convert.ToString(vbLf & "Image replaced successfully." & vbLf & "File saved at ") & dataDir)
         End Sub
     End Class
 End Namespace

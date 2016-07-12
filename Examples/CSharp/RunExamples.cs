@@ -2,595 +2,642 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using Aspose.Pdf.Examples.CSharp.AsposePDF.Annotations;
+using Aspose.Pdf.Examples.CSharp.AsposePDF.Attachments;
+using Aspose.Pdf.Examples.CSharp.AsposePDF.Bookmarks;
+using Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion;
+using Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion.PDFToHTMLFormat;
+using Aspose.Pdf.Examples.CSharp.AsposePDF.Forms;
+using Aspose.Pdf.Examples.CSharp.AsposePDF.Images;
+using Aspose.Pdf.Examples.CSharp.AsposePDF.LinksActions;
+using Aspose.Pdf.Examples.CSharp.AsposePDF.Operators;
+using Aspose.Pdf.Examples.CSharp.AsposePDF.Pages;
+using Aspose.Pdf.Examples.CSharp.AsposePDF.SecuritySignatures;
+using Aspose.Pdf.Examples.CSharp.AsposePDF.StampsWatermarks;
+using Aspose.Pdf.Examples.CSharp.AsposePDF.Tables;
+using Aspose.Pdf.Examples.CSharp.AsposePDF.Text;
+using Aspose.Pdf.Examples.CSharp.AsposePDF.WorkingDocuments;
+using Aspose.Pdf.Examples.CSharp.AsposePDF.Miscellaneous;
+using Aspose.Pdf.Examples.CSharp.AsposePDF.Graphs;
+using Aspose.Pdf.Examples.CSharp.AsposePDF.Headings;
 
-using CSharp.AsposePdf.Annotations;
-using CSharp.AsposePdf.Attachments;
-using CSharp.AsposePdf.Bookmarks;
-using CSharp.AsposePdf.DocumentConversion;
-using CSharp.AsposePdf.Forms;
-using CSharp.AsposePdf.Images;
-using CSharp.AsposePdf.LinksActions;
-using CSharp.AsposePdf.Operators;
-using CSharp.AsposePdf.Pages;
-using CSharp.AsposePdf.SecuritySignatures;
-using CSharp.AsposePdf.StampsWatermarks;
-using CSharp.AsposePdf.Tables;
-using CSharp.AsposePdf.Text;
-using CSharp.AsposePdf.WorkingDocuments;
+using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Annotations;
+using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Attachments;
+using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Bookmarks;
+using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Forms;
+using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Images;
+using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Printing;
+using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.StampsWatermarks;
+using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Text;
+using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.WorkingDocument;
 
-using CSharp.AsposePDFFacades.Annotations;
-using CSharp.AsposePDFFacades.Attachments;
-using CSharp.AsposePDFFacades.Bookmarks;
-using CSharp.AsposePDFFacades.Forms;
-using CSharp.AsposePDFFacades.Images;
-using CSharp.AsposePDFFacades.Printing;
-using CSharp.AsposePDFFacades.StampsWatermarks;
-using CSharp.AsposePDFFacades.Text;
-using CSharp.AsposePDFFacades.WorkingDocument;
-
-using CSharp.AsposePdfGenerator.Conversion;
-using CSharp.AsposePdfGenerator.Paragraphs;
-using CSharp.AsposePdfGenerator.Sections;
-using CSharp.AsposePdfGenerator.Text;
-using CSharp.AsposePdfGenerator.WorkingDocuments;
-
-namespace CSharp
+using Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Conversion;
+using Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Paragraphs;
+using Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Sections;
+using Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Text;
+using Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.WorkingDocuments;
+using Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.General;
+using Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Graphs;
+using Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Images;
+using Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Headings;
+using Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Tables;
+using Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Hyperlinks;
+using Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Attachments;
+using Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.SecurityFeatures;
+using Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.UtilityFeatures;
+using Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.AdvanceFeatures;
+namespace Aspose.Pdf.Examples.CSharp
 {
     class RunExamples
     {
         [STAThread]
         public static void Main()
         {
-            Console.WriteLine("Open RunExamples.cs. In Main() method, Un-comment the example that you want to run");
+            Console.WriteLine("Open RunExamples.cs. \nIn Main() method uncomment the example that you want to run.");
             Console.WriteLine("=====================================================");
-            // Un-comment the one you want to try out
+            // Uncomment the one you want to try out
 
             // =====================================================
             // =====================================================
-            // Aspose.Pdf Annotations
+            // Aspose.Pdf 
             // =====================================================
             // =====================================================
 
-            AddAnnotation.Run();
-            //AddSwfFileAsAnnotation.Run();
-            //DeleteAllAnnotationsFromPage.Run();
-            //DeleteAllAnnotationsFromPage.Run();
-            //GetAllAnnotationsFromPage.Run();
-            //GetParticularAnnotation.Run();
-            //SetFreeTextAnnotationFormatting.Run();
+            //// Text
+            //// =====================================================            
+            //Aspose.Pdf.Examples.CSharp.AsposePDF.Text.ExtractTextPage.Run();
+            //ReplaceTextAll.Run();           
+            //SearchAndGetTextAll.Run();
+            //SearchAndGetTextPage.Run();
+            //SearchRegularExpression.Run();
+            //ReplaceTextonRegularExpression.Run();
+            //ReplaceFirstOccurrence.Run();
+            //SearchTextSegmentsPage.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePDF.Text.AddText.Run();
+            //ExtractTextUsingTextDevice.Run();
+            //ReplaceFonts.Run();
+            //HighlightCharacterInPDF.Run();
+            //AddHTMLUsingDOM.Run();
+            //RearrangeContentsUsingTextReplacement.Run();
+            //FootAndEndNotes.Run();
+            //SearchTextAndAddHyperlink.Run();
+            //TextAndImageAsParagraph.Run();
+            //ExtractColumnsText.Run();
+            //SpecifyCharacterSpacing.Run();
+            //CreateMultiColumnPdf.Run();
+            //AsposePDF.Text.CustomTabStops.Run();
+            //RenderingReplaceableSymbols.Run();
+            //ReplaceableSymbolsInHeaderFooter.Run();
+            //AddTransparentText.Run();
+            //SearchTextAndDrawRectangle.Run();
 
-            //// =====================================================
-            //// =====================================================
-            //// Aspose.Pdf Attachments
-            //// =====================================================
-            //// =====================================================
+            //// Images
+            //// =====================================================   
+            //Aspose.Pdf.Examples.CSharp.AsposePDF.Images.AddImage.Run();   
+            //DeleteImages.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePDF.Images.ExtractImages.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePDF.Images.ReplaceImage.Run();
+            //PagesToImages.Run();
+            //ConvertAllPagesToPNG.Run();
+            //PageToTIFF.Run();
+            //AllPagesToTIFF.Run();
+            //BradleyAlgorithm.Run();
+            //ConvertAllPagesToEMF.Run();
+            //PageToEMF.Run();
+            //CGMImageToPDF.Run();
+            //LargeCGMImageToPDF.Run();
+            //ImageToPDF.Run();
+            //ConvertToBMP.Run();
+            //IdentifyImages.Run();
+            //ConvertPageRegionToDOM.Run();
 
-            //AsposePdf.Attachments.AddAttachment.Run();
-            //AsposePdf.Attachments.DeleteAllAttachments.Run();
-            //DisableFilesCompression.Run();
+            //// Stamps-Watermarks
+            //// =====================================================   
+            //AddTextStamp.Run();
+            //AddImageStamp.Run();
+            //AddPDFPageStamp.Run();
+            //PageNumberStamps.Run();
+            //TextinHeader.Run();
+            //TextinFooter.Run();
+            //ImageinHeader.Run();
+            //ImageInFooter.Run();    
+            //AddingDifferentHeaders.Run();
+            //DefineAlignment.Run();
+            //AddDateTimeStamp.Run();
+
+            //// Attachments
+            //// =====================================================   
+            //Aspose.Pdf.Examples.CSharp.AsposePDF.Attachments.AddAttachment.Run();
             //GetAlltheAttachments.Run();
-            //GetAttachmentInfo.Run();
             //GetIndividualAttachment.Run();
+            //GetAttachmentInfo.Run();
+            //DisableFilesCompression.Run();
 
-            //// =====================================================
-            //// =====================================================
-            //// Aspose.Pdf Bookmarks
-            //// =====================================================
-            //// =====================================================
+            //// Pages
+            //// =====================================================   
+            //GetNumberofPages.Run();
+            //GetPageCount.Run();
+            //GetProperties.Run();
+            //ConcatenatePdfFiles.Run();
+            //InsertEmptyPage.Run();
+            //InsertEmptyPageAtEnd.Run();
+            //SplitToPages.Run();
+            //GetParticularPage.Run();
+            //DeleteParticularPage.Run();
+            //UpdateDimensions.Run();
+            //GetDimensions.Run();
+            //ImageAsBackground.Run();
+            //DeterminePageColor.Run(); 
+            //ChangeOrientation.Run();
+            //ZoomToPageContents.Run();
 
-            //AsposePdf.Bookmarks.AddBookmark.Run();
-            //AsposePdf.Bookmarks.AddChildBookmark.Run();
-            //AsposePdf.Bookmarks.DeleteAllBookmarks.Run();
-            //DeleteParticularBookmark.Run();
+            //// Working-Document
+            //// =====================================================   
+            //SetDocumentWindow.Run();
+            //GetDocumentWindow.Run();
+            //ValidatePDFAStandard.Run();
+            //OptimizeDocument.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePDF.WorkingDocuments.SetFileInfo.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePDF.WorkingDocuments.GetFileInfo.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePDF.WorkingDocuments.SetXMPMetadata.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePDF.WorkingDocuments.GetXMPMetadata.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePDF.WorkingDocuments.SetZoomFactor.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePDF.WorkingDocuments.GetZoomFactor.Run();
+            //AddTOC.Run();
+            //OptimizeFileSize.Run();
+            //TrimWhiteSpace.Run();
+            //AddJavaScriptToPage.Run();
+            //AddRemoveJavascriptToDoc.Run();
+            //AddLayers.Run();
+            //EmbedFont.Run();
+            //EmbedFontWhileDocCreation.Run();
+            //ConvertFromRGBToGrayscale.Run();
+            //SetExpiryDate.Run();
+
+            //// Bookmarks
+            //// =====================================================   
+            //Aspose.Pdf.Examples.CSharp.AsposePDF.Bookmarks.AddBookmark.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePDF.Bookmarks.AddChildBookmark.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePDF.Bookmarks.DeleteAllBookmarks.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePDF.Bookmarks.DeleteParticularBookmark.Run();
             //GetBookmarks.Run();
             //GetChildBookmarks.Run();
             //UpdateBookmarks.Run();
             //UpdateChildBookmarks.Run();
+            //InheritZoom.Run();
+            //ExpandBookmarks.Run();
 
+            //// Annotations
+            //// =====================================================   
+            //AddAnnotation.Run();
+            //InvisibleAnnotation.Run();
+            //AddlnkAnnotation.Run();
+            //lnkAnnotationLineWidth.Run();
+            //GetParticularAnnotation.Run();
+            //GetAllAnnotationsFromPage.Run();
+            //DeleteParticularAnnotation.Run();
+            //DeleteAllAnnotationsFromPage.Run();
+            //AddSwfFileAsAnnotation.Run();
+            //SetFreeTextAnnotationFormatting.Run();
+            //StrikeOutWords.Run();
 
-            //// =====================================================
-            //// =====================================================
-            //// Aspose.Pdf Document Conversion
-            //// =====================================================
-            //// =====================================================
-            
-            //CGMToPDF.Run();
-            //EPUBToPDF.Run();
-            //GetSVGDimensions.Run();
-            //AsposePdf.DocumentConversion.HTMLToPDF.Run();
-            //PCLToPDF.Run();
-            //PDFToDOC.Run();
-            //PDFToEPUB.Run();
-            //PDFToHTML.Run();
-            //PDFToPDFA.Run();
-            //PDFToTeX.Run();
-            //PDFToXML.Run();
-            //SVGToPDF.Run();
-            //XPSToPDF.Run();
-
-            //// =====================================================
-            //// =====================================================
-            //// Aspose.Pdf Fields
-            //// =====================================================
-            //// =====================================================
-            
-            //AddTooltipToField.Run();
-            //ComboBox.Run();
-            //DeleteFormField.Run();
-            //DetermineRequiredField.Run();
-            //DynamicXFAToAcroForm.Run();
-            //FillFormField.Run();
-            //FillXFAFields.Run();
-            //FormFieldFont14.Run();
-            //GetFieldsFromRegion.Run();
-            //GetValueFromField.Run();
-            //GetValuesFromAllFields.Run();
-            //GetXFAProperties.Run();
-            //ModifyFormField.Run();
-            //MoveFormField.Run();
-            //RadioButton.Run();
-            //SetJavaScript.Run();
+            //// Forms
+            //// =====================================================   
             //TextBox.Run();
+            //RadioButtonWithOptions.Run();
+            //ComboBox.Run();
+            //DeleteFormField.Run();  
+            //ModifyFormField.Run();   
+            //FillFormField.Run();
+            //ArabicTextFilling.Run();
+            //SelectRadioButton.Run();
+            //GetValueFromField.Run();
+            //GetValueFromField.Run(); 
+            //SetFieldLimit.Run();
+            //MoveFormField.Run();
+            //AddTooltipToField.Run();
+            //GetFieldsFromRegion.Run();
+            //FormFieldFont14.Run();
+            //DynamicXFAToAcroForm.Run();
+            //FillXFAFields.Run();
+            //GetXFAProperties.Run();
+            //DetermineRequiredField.Run();
+            //SetJavaScript.Run();
+            //HorizontallyAndVerticallyRadioButtons.Run();
+            //GroupedCheckBoxes.Run();
 
-            //// =====================================================
-            //// =====================================================
-            //// Aspose.Pdf Images
-            //// =====================================================
-            //// =====================================================
-
-            //AsposePdf.Images.AddImage.Run();
-            //CGMImageToPDF.Run();
-            //ConvertAllPagesToEMF.Run();
-            //ConvertAllPagesToPNG.Run();
-            //DeleteImages.Run();
-            //AsposePdf.Images.ExtractImages.Run();
-            //ImageInformation.Run();
-            //ImagePlacements.Run();
-            //PagesToImages.Run();
-            //PageToEMF.Run();
-            //PageToPNG.Run();
-            //PageToTIFF.Run();
-            //AsposePdf.Images.ReplaceImage.Run();
-            //SearchAndGetImages.Run();
-
-            //// =====================================================
-            //// =====================================================
-            //// Aspose.Pdf Links And Actions
-            //// =====================================================
-            //// =====================================================
-
-            //AddHyperlink.Run();
+            //// Links-Actions
+            //// =====================================================   
             //CreateApplicationLink.Run();
             //CreateDocumentLink.Run();
-            //ExtractLinks.Run();
             //RemoveOpenAction.Run();
-            //SpecifyPageWhenViewing.Run();
+            //ExtractLinks.Run();
+            //AddHyperlink.Run();
             //UpdateLinks.Run();
+            //SetDestinationLink.Run();
+            //UpdateLinkTextColor.Run();
+            //SpecifyPageWhenViewing.Run();
+            //GetHyperlinkDestinations.Run();
+            //GetHyperlinkText.Run();
+            //CreateLocalHyperlink.Run();
 
-            //// =====================================================
-            //// =====================================================
-            //// Aspose.Pdf Operators
-            //// =====================================================
-            //// =====================================================
-            
+            //// Security-Signatures
+            //// =====================================================   
+            //Encrypt.Run();
+            //Decrypt.Run();
+            //ChangePassword.Run();
+            //IsPasswordProtected.Run();
+            //DetermineCorrectPassword.Run();
+            //ExtractingImage.Run();
+            //SetPrivileges.Run();
+
+            //// Operators
+            //// =====================================================   
             //DrawXFormOnPage.Run();
             //PDFOperators.Run();
             //RemoveGraphicsObjects.Run();
 
-            //// =====================================================
-            //// =====================================================
-            //// Aspose.Pdf Pages
-            //// =====================================================
-            //// =====================================================
+            //// Miscellaneous
+            //// =====================================================   
+            //GetBuildInformation.Run();
+            //UseMeasureWithLineAnnotation.Run();
+            //UseMeasureWithPolylineAnnotation.Run();
 
-            //ConcatenatePdfFiles.Run();
-            //DeleteParticularPage.Run();
-            //GetNumberofPages.Run();
-            //GetParticularPage.Run();
-            //GetProperties.Run();
-            //ImageAsBackground.Run();
-            //InsertEmptyPage.Run();
-            //InsertEmptyPageAtEnd.Run();
-            //SplitToPages.Run();
-            //UpdateDimensions.Run();
-
-            //// =====================================================
-            //// =====================================================
-            //// Aspose.Pdf Security and Signatures
-            //// =====================================================
-            //// =====================================================
-
-            //ChangePassword.Run();
-            //Decrypt.Run();
-            //DigitallySign.Run();
-            //Encrypt.Run();
-            //ExtractingImage.Run();
-            //ExtractSignatureInfo.Run();
-            //IsPasswordProtected.Run();
-
-            //// =====================================================
-            //// =====================================================
-            //// Aspose.Pdf Images
-            //// =====================================================
-            //// =====================================================
-
-            //AddImageStamp.Run();
-            //AddingDifferentHeaders.Run();
-            //AddTextStamp.Run();
-            //DefineAlignment.Run();
-            //ImageInFooter.Run();
-            //ImageinHeader.Run();
-            //PageNumberStamps.Run();
-            //PDFPageStamp.Run();
-            //TextinFooter.Run();
-            //TextinHeader.Run();
-
-
-            //// =====================================================
-            //// =====================================================
-            //// Aspose.Pdf Tables
-            //// =====================================================
-            //// =====================================================
-            
+            //// Tables
+            //// =====================================================   
             //AddTable.Run();
-            //IntegrateWithDatabase.Run();
+            //AutoFitToWindow.Run();  
             //MarginsOrPadding.Run();
-            //RenderTable.Run();
             //SetBorder.Run();
+            //IntegrateWithDatabase.Run();
+            //RenderTable.Run();
+            //AddSVGObject.Run();
+            //ExtractBorder.Run();
+            //InsertPageBreak.Run();
+            //DetermineTableBreak.Run();
 
+            //// Graphs
+            //// =====================================================   
+            //CreateFilledRectangle.Run();
+            //AddLineObject.Run();
+            //DashLength.Run();
+            //DrawingLine.Run();
+            //CreateRectangleWithAlphaColor.Run();
+            //AddDrawing.Run();
+            //ControlRectangleZOrder.Run();
 
-            //// =====================================================
-            //// =====================================================
-            //// Aspose.Pdf Text
-            //// =====================================================
-            //// =====================================================
+            //// Headings
+            //// =====================================================   
+            //ApplyNumberStyle.Run();
 
-            //ExtractTextAll.Run();
-            //AsposePdf.Text.ExtractTextPage.Run();
-            //ReplaceTextAll.Run();
-            //AsposePdf.Text.ReplaceTextPage.Run();
-            //SearchAndGetTextAll.Run();
-            //SearchAndGetTextPage.Run();
-            //SearchRegularExpression.Run();
-            //SearchRegularExpressionPage.Run();
-            //SearchTextRegex.Run();
-            //SearchTextSegmentsAll.Run();
-            //SearchTextSegmentsPage.Run();
+            //  DocumentConversion
+            // =====================================================   
+            //PDFToPDFA.Run();
+            //PDFToPDFA3b.Run();
+            //AddAttachmentToPDFA.Run();
+            //PDFToDOC.Run();
+            //PDFToTeX.Run();
+            //SVGToPDF.Run();
+            //GetSVGDimensions.Run();
+            //EPUBToPDF.Run();
+            //PDFToEPUB.Run();
+            //PDFToXPS.Run();
+            //PDFToXLS.Run();
+            //PDFToSVG.Run();
+            //PDFToXML.Run();
+            //MHTToPDF.Run();
+            //TextToPDF.Run();
+            //CGMToPDF.Run();
+            //PDFToPPT.Run();
+            //PDFAToPDF.Run();
+            //XMLToPDF.Run();
 
+            // =====================================================
+            // =====================================================
+            // Aspose.Pdf.Generator
+            // =====================================================
+            // =====================================================
 
-            //// =====================================================
-            //// =====================================================
-            //// Aspose.Pdf Working with Documents
-            //// =====================================================
-            //// =====================================================
+            //// General
+            //// =====================================================            
+            //HelloWorldUsingXML.Run();
+            //HelloWorldUsingAPI.Run();
+            //HelloWorldUsingXMLAndAPI.Run();
+            //HelloWorldUsingXSLT.Run();
+            //FloatingBoxLook.Run();
+            //PositionFloatingBox.Run();
 
-            //AddLayers.Run();
-            //AddTOC.Run();
-            //GetDocumentWindow.Run();
-            //AsposePdf.WorkingDocuments.GetFileInfo.Run();
-            //GetXMPMetadata.Run();
-            //GetZoomFactor.Run();
-            //OptimizeDocument.Run();
-            //SetDocumentWindow.Run();
-            //AsposePdf.WorkingDocuments.SetFileInfo.Run();
-            //AsposePdf.WorkingDocuments.SetXMPMetadata.Run();
-            //AsposePdf.WorkingDocuments.SetZoomFactor.Run();
-            //ValidatePDFAStandard.Run();
+            //// Working-Document
+            //// =====================================================            
+            //SetDocumentInfo.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.WorkingDocuments.SetZoomFactor.Run();
+            //SetAppearance.Run();
+            //SetPageTransitionEffect.Run();
+            //AddJavaScript.Run();
+            //AddingXMPMetaData.Run();
 
+            //// Sections
+            //// =====================================================            
+            //SetPageBackgroundImage.Run();
+            //SetPageSize.Run();
+            //SetPageMargin.Run();
+            //SetHeaderAndFooter.Run();
+            //AdvancedHeaderAndFooter.Run();
 
-            //// =====================================================
-            //// =====================================================
-            //// Aspose.Pdf.Facades Annotations
-            //// =====================================================
-            //// =====================================================
-            
-            //AddFreeTextAnnotation.Run();
-            //CreateFileAnnotation.Run();
-            //DeleteAllAnnotations.Run();
-            //ExportAnnotations.Run();
-            //ExtractAnnotations.Run();
-            //ImportAnnotations.Run();
-            //UpdateAnnotations.Run();
-
-            //// =====================================================
-            //// =====================================================
-            //// Aspose.Pdf.Facades Attachments
-            //// =====================================================
-            //// =====================================================
-
-            //AsposePDFFacades.Attachments.AddAttachment.Run();
-            //AddAttachmentStream.Run();
-            //AsposePDFFacades.Attachments.DeleteAllAttachments.Run();
-            //ExtractAllAttachments.Run();
-            //GetAttachmentNames.Run();
-
-            //// =====================================================
-            //// =====================================================
-            //// Aspose.Pdf.Facades Bookmarks
-            //// =====================================================
-            //// =====================================================
-            
-            //AsposePDFFacades.Bookmarks.AddBookmark.Run();
-            //AsposePDFFacades.Bookmarks.AddChildBookmark.Run();
-            //CreateBookmarkPage.Run();
-            //CreateBookmarksAll.Run();
-            //CreateBookmarksPagesProperties.Run();
-            //DeleteABookmark.Run();
-            //AsposePDFFacades.Bookmarks.DeleteAllBookmarks.Run();
-            //ExportToXML.Run();
-            //ExtractBookmarks.Run();
-            //GetFromPDF.Run();
-            //ImportFromXML.Run();
-            //UpdateBookmark.Run();
-
-            //// =====================================================
-            //// =====================================================
-            //// Aspose.Pdf.Facades Forms
-            //// =====================================================
-            //// =====================================================
-            
-            //AddFormField.Run();
-            //CopyInnerField.Run();
-            //CopyOuterField.Run();
-            //DecorateFields.Run();
-
-            //// =====================================================
-            //// =====================================================
-            //// Aspose.Pdf.Facades Images
-            //// =====================================================
-            //// =====================================================
-
-            //AsposePDFFacades.Images.AddImage.Run();
-            //ConvertPageRegion.Run();
-            //ConvertPDFPages.Run();
-            //ConvertToTIFFSettings.Run();
-            //DeleteAllImages.Run();
-            //DeleteImagesPage.Run();
-            //ExtractImageExtractionMode.Run();
-            //AsposePDFFacades.Images.ExtractImages.Run();
-            //ExtractImagesPage.Run();
-            //ExtractImagesStream.Run();
-            //AsposePDFFacades.Images.ReplaceImage.Run();
-
-            //// =====================================================
-            //// =====================================================
-            //// Aspose.Pdf.Facades Printing
-            //// =====================================================
-            //// =====================================================
-            
-            //PrintPageRange.Run();
-
-            //// =====================================================
-            //// =====================================================
-            //// Aspose.Pdf.Facades Stamps and Watermarks
-            //// =====================================================
-            //// =====================================================
-
-            //AddFooter.Run();
-            //AddHeader.Run();
-            //AddImageFooter.Run();
-            //AddImageStampAll.Run();
-            //AddImageStampPage.Run();
-            //AddPageNumber.Run();
-            //AddPageStampAll.Run();
-            //AddPageStampPage.Run();
-            //AddTextStampAll.Run();
-            //AddTextStampPage.Run();
-            //ChangeStampPosition.Run();
-            //ExtractImageImageStamp.Run();
-
-            //// =====================================================
-            //// =====================================================
-            //// Aspose.Pdf.Facades Text
-            //// =====================================================
-            //// =====================================================
-
-            //AsposePDFFacades.Text.AddText.Run();
-            //ExtractText.Run();
-            //AsposePDFFacades.Text.ExtractTextPage.Run();
-            //ExtractTextPageRange.Run();
-            //ReplaceText.Run();
-            //AsposePDFFacades.Text.ReplaceTextPage.Run();
-
-
-            //// =====================================================
-            //// =====================================================
-            //// Aspose.Pdf.Facades Working with Documents
-            //// =====================================================
-            //// =====================================================
-            
-            //AsposePDFFacades.WorkingDocument.GetFileInfo.Run();
-            //AsposePDFFacades.WorkingDocument.SetFileInfo.Run();
-            //SetViewerPreference.Run();
-            //AsposePDFFacades.WorkingDocument.SetXMPMetadata.Run();
-
-            //// =====================================================
-            //// =====================================================
-            //// Aspose.Pdf.Generator Conversion
-            //// =====================================================
-            //// =====================================================
-            
-            //AsposePdfGenerator.Conversion.HTMLToPDF.Run();
-            //XSLFOToPDF.Run();
-
-            //// =====================================================
-            //// =====================================================
-            //// Aspose.Pdf.Generator Paragraphs 
-            //// =====================================================
-            //// =====================================================
-            
+            //// Paragraphs
+            //// =====================================================            
+            //SetMargins.Run();
             //AssignID.Run();
             //Render.Run();
-            //SetMargins.Run();
 
-            //// =====================================================
-            //// =====================================================
-            //// Aspose.Pdf.Generator Sections
-            //// =====================================================
-            //// =====================================================
-            
-            //SetPageBackgroundImage.Run();
-
-            //// =====================================================
-            //// =====================================================
-            //// Aspose.Pdf.Generator Text
-            //// =====================================================
-            //// =====================================================
-            
-            //ChangeTextFormat.Run();
-            //CustomTabStops.Run();
+            //// Text
+            //// =====================================================            
+            //InlineParagraph.Run();
+            //TextLayout.Run();
             //InheritTextFormat.Run();
-            //InlineHTMLFromXML.Run();
-            //LeftHangingTextParagraph.Run();
+            //SymbolFont.Run();
+            //PFMFont.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Text.EmbedFont.Run();
+            //ReplaceableSymbols.Run();
             //RTLLanguages.Run();
-            //SetRenderingMode.Run();
-            //SetTextBackgroundColor.Run();
-            //SetVerticalAlignment.Run();
-            //TextFormattingTags.Run();
-            //UnderlineOverlineStrikeOut.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Text.CustomTabStops.Run();            
+            //HyperlinkTags.Run();
+            //SuperSubscript.Run();
+            //AddFootnotes.Run();
+            //AddEndnote.Run();
+            //InlineRadioButton.Run();
 
-            //// =====================================================
-            //// =====================================================
-            //// Aspose.Pdf.Generator Working with Documents
-            //// =====================================================
-            //// =====================================================
+            //// Graphs
+            //// =====================================================            
+            //GraphCoordinate.Run();
+            //GraphFormat.Run();
+            //RotationAndScaling.Run();
 
-            //AddingXMPMetaData.Run();
-            //AddJavaScript.Run();
-            //SetAppearance.Run();
-            //SetDocumentInfo.Run();
-            //SetPageTransitionEffect.Run();
-            //AsposePdfGenerator.WorkingDocuments.SetZoomFactor.Run();      
-                        
+            //// Images
+            //// =====================================================            
+            //ImageFromLocalDisk.Run();
+            //ImageFromMemory.Run();
+            //ImageFromWeb.Run();
+            //CCITTImage.Run();
 
+            //// Headings
+            //// =====================================================            
+            //ApplyingNumber.Run();
+            //SpecifyHeadingLevel.Run();
+            //SystemBullets.Run();
+            //UserDefinedBullets.Run();
+
+            //// Tables
+            //// =====================================================            
+            //SetBorderAndPadding.Run();
+            //SetColumnWidthAndSpan.Run();
+            //TableAndRowSplitting.Run();
+            //CompleteClone.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Tables.IntegrateWithDatabase.Run();
+            //CellInformation.Run();
+            //RowAndColumnFormat.Run();
+            //NestedTables.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Tables.RoundedCornerTable.Run();
+            //NonEnglishText.Run();
+
+            //// Hyperlinks
+            //// =====================================================            
+            //HyperlinkPages.Run();
+            //HyperlinkOtherPdf.Run();
+            //HyperlinkNonPdfFile.Run();
+            //HyperlinkToWeb.Run();
+
+            //// Attachments
+            //// =====================================================            
+            //AttachAnyFile.Run();
+            //AttachNoteAnnotation.Run();
+            //CustomizeNotePosition.Run();
+
+            //// SecurityFeatures
+            //// =====================================================            
+            //SetPassword.Run();
+            //SetEncryption.Run();
+            //AllowDisallowPrivileges.Run();
+
+            //// UtilityFeatures
+            //// =====================================================            
+            //AddingList.Run();
+            //AddThreeList.Run();
+            //SpecifyListItem.Run();
+            //ManipulatingFormFields.Run();
+            //ManipulatingColumns.Run();
+            //CustomizingWatermark.Run();
+            //CreatePdf.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.UtilityFeatures.AddBookmark.Run();
+            //AddTableOfContents.Run();
+
+            //// Conversion
+            //// =====================================================            
+            //XSLFOToPDF.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Conversion.PCLToPDF.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Conversion.SVGToPDF.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Conversion.HTMLToPDF.Run();
+            //WebToPDF.Run();
+            //HTMLToPDFUsingStream.Run();
+
+            //// AdvanceFeatures
+            //// =====================================================            
+            //TableMinimumColumnWidth.Run();
+            //AddPageBorder.Run();
+            //MergeXMLFiles.Run();
+            //XSLToPdf.Run();
+            //XMLAsTemplate.Run();
+            //LoadDataInXMLTemplate.Run();
+                                 
             // Stop before exiting
             Console.WriteLine("\n\nProgram Finished. Press any key to exit....");
             Console.ReadKey();
         }
-
+        public static String GetDataDir_AsposePdf_DocumentConversion_PDFToHTMLFormat()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePDF/DocumentConversion/PDFToHTMLFormat/");
+        }
         public static String GetDataDir_AsposePdf_Annotations()
         {
-            return Path.GetFullPath("../../AsposePDF/Annotations/Data/");
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePDF/Annotations/");
         }
-
+        public static String GetDataDir_AsposePdf_Graphs()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePDF/Graphs/");
+        }
+        public static String GetDataDir_AsposePdf_Headings()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePDF/Headings/");
+        }
+        public static String GetDataDir_AsposePdf_Miscellaneous()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePDF/Miscellaneous/");
+        }
         public static String GetDataDir_AsposePdf_Attachments()
         {
-            return Path.GetFullPath("../../AsposePDF/Attachments/Data/");
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePDF/Attachments/");
         }
         public static String GetDataDir_AsposePdf_Bookmarks()
         {
-            return Path.GetFullPath("../../AsposePDF/Bookmarks/Data/");
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePDF/Bookmarks/");
         }
         public static String GetDataDir_AsposePdf_DocumentConversion()
         {
-            return Path.GetFullPath("../../AsposePDF/DocumentConversion/Data/");
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePDF/DocumentConversion/");
         }
         public static String GetDataDir_AsposePdf_Forms()
         {
-            return Path.GetFullPath("../../AsposePDF/Forms/Data/");
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePDF/Forms/");
         }
         public static String GetDataDir_AsposePdf_Images()
         {
-            return Path.GetFullPath("../../AsposePDF/Images/Data/");
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePDF/Images/");
         }
         public static String GetDataDir_AsposePdf_LinksActions()
         {
-            return Path.GetFullPath("../../AsposePDF/Links-Actions/Data/");
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePDF/Links-Actions/");
         }
         public static String GetDataDir_AsposePdf_Operators()
         {
-            return Path.GetFullPath("../../AsposePDF/Operators/Data/");
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePDF/Operators/");
         }
         public static String GetDataDir_AsposePdf_Pages()
         {
-            return Path.GetFullPath("../../AsposePDF/Pages/Data/");
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePDF/Pages/");
         }
         public static String GetDataDir_AsposePdf_SecuritySignatures()
         {
-            return Path.GetFullPath("../../AsposePDF/Security-Signatures/Data/");
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePDF/Security-Signatures/");
         }
         public static String GetDataDir_AsposePdf_StampsWatermarks()
         {
-            return Path.GetFullPath("../../AsposePDF/Stamps-Watermarks/Data/");
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePDF/Stamps-Watermarks/");
         }
         public static String GetDataDir_AsposePdf_Tables()
         {
-            return Path.GetFullPath("../../AsposePDF/Tables/Data/");
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePDF/Tables/");
         }
         public static String GetDataDir_AsposePdf_Text()
         {
-            return Path.GetFullPath("../../AsposePDF/Text/Data/");
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePDF/Text/");
         }
         public static String GetDataDir_AsposePdf_WorkingDocuments()
         {
-            return Path.GetFullPath("../../AsposePDF/Working-Documents/Data//");
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePDF/Working-Document/");
         }
-
-
-
         public static String GetDataDir_AsposePdfFacades_Annotations()
         {
-            return Path.GetFullPath("../../AsposePdfFacades/Annotations/Data/");
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePdfFacades/Annotations/");
         }
-
         public static String GetDataDir_AsposePdfFacades_Attachments()
         {
-            return Path.GetFullPath("../../AsposePdfFacades/Attachments/Data/");
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePdfFacades/Attachments/");
         }
         public static String GetDataDir_AsposePdfFacades_Bookmarks()
         {
-            return Path.GetFullPath("../../AsposePdfFacades/Bookmarks/Data/");
-        }
-        
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePdfFacades/Bookmarks/");
+        }        
         public static String GetDataDir_AsposePdfFacades_Forms()
         {
-            return Path.GetFullPath("../../AsposePdfFacades/Forms/Data/");
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePdfFacades/Forms/");
         }
         public static String GetDataDir_AsposePdfFacades_Images()
         {
-            return Path.GetFullPath("../../AsposePdfFacades/Images/Data/");
-        }
-        
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePdfFacades/Images/");
+        }        
         public static String GetDataDir_AsposePdfFacades_StampsWatermarks()
         {
-            return Path.GetFullPath("../../AsposePdfFacades/Stamps-Watermarks/Data/");
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePdfFacades/Stamps-Watermarks/");
         }
         public static String GetDataDir_AsposePdfFacades_Printing()
         {
-            return Path.GetFullPath("../../AsposePdfFacades/Printing/Data/");
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePdfFacades/Printing/");
         }
         public static String GetDataDir_AsposePdfFacades_Text()
         {
-            return Path.GetFullPath("../../AsposePdfFacades/Text/Data/");
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePdfFacades/Text/");
         }
         public static String GetDataDir_AsposePdfFacades_WorkingDocuments()
         {
-            return Path.GetFullPath("../../AsposePdfFacades/Working-Documents/Data/");
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePdfFacades/Working-Documents/");
         }
-
-
-
-
         public static String GetDataDir_AsposePdfGenerator_Conversion()
         {
-            return Path.GetFullPath("../../AsposePdfGenerator/Conversion/Data/");
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePdfGenerator/Conversion/");
         }
-
         public static String GetDataDir_AsposePdfGenerator_Paragraphs()
         {
-            return Path.GetFullPath("../../AsposePdfGenerator/Paragraphs/Data/");
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePdfGenerator/Paragraphs/");
         }
         public static String GetDataDir_AsposePdfGenerator_Sections()
         {
-            return Path.GetFullPath("../../AsposePdfGenerator/Sections/Data/");
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePdfGenerator/Sections/");
         }
         public static String GetDataDir_AsposePdfGenerator_Text()
         {
-            return Path.GetFullPath("../../AsposePdfGenerator/Text/Data/");
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePdfGenerator/Text/");
         }
         public static String GetDataDir_AsposePdfGenerator_WorkingDocuments()
         {
-            return Path.GetFullPath("../../AsposePdfGenerator/Working-Documents/Data/");
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePdfGenerator/Working-Documents/");
         }
+        public static String GetDataDir_AsposePdfGenerator_General()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePdfGenerator/General/");
+        }
+        public static String GetDataDir_AsposePdfGenerator_Graphs()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePdfGenerator/Graphs/");
+        }
+        public static String GetDataDir_AsposePdfGenerator_Images()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePdfGenerator/Images/");
+        }
+        public static String GetDataDir_AsposePdfGenerator_Headings()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePdfGenerator/Headings/");
+        }
+        public static String GetDataDir_AsposePdfGenerator_Tables()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePdfGenerator/Tables/");
+        }
+        public static String GetDataDir_AsposePdfGenerator_Hyperlinks()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePdfGenerator/Hyperlinks/");
+        }
+        public static String GetDataDir_AsposePdfGenerator_SecurityFeatures()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePdfGenerator/SecurityFeatures/");
+        }
+        public static String GetDataDir_AsposePdfGenerator_Attachments()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePdfGenerator/Attachments/");
+        }
+        public static String GetDataDir_AsposePdfGenerator_UtilityFeatures()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePdfGenerator/UtilityFeatures/");
+        }
+        public static String GetDataDir_AsposePdfGenerator_AdvanceFeatures()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePdfGenerator/AdvanceFeatures/");
+        }
+        public static string GetDataDir_Data()
+        {
+            var parent = Directory.GetParent(Directory.GetCurrentDirectory()).Parent;
+            string startDirectory = null;
+            if (parent != null)
+            {
+                var directoryInfo = parent.Parent;
+                if (directoryInfo != null)
+                {
+                    startDirectory = directoryInfo.FullName;
+                }
+            }
+            else
+            {
+                startDirectory = parent.FullName;
+            }
+            return Path.Combine(startDirectory, "Data\\");
+        }   
     }
 }

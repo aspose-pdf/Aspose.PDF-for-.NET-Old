@@ -11,7 +11,7 @@ using Aspose.Pdf;
 using Aspose.Pdf.Facades;
 using System.Drawing;
 
-namespace CSharp.AsposePDFFacades.StampsWatermarks
+namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.StampsWatermarks
 {
     public class AddFooter
     {

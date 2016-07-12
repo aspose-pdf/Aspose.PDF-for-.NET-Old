@@ -1,21 +1,15 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
 using System.IO;
-
+using System;
 using Aspose.Pdf;
 using Aspose.Pdf.Text;
 
-namespace CSharp.AsposePdf.WorkingDocuments
+namespace Aspose.Pdf.Examples.CSharp.AsposePDF.WorkingDocuments
 {
     public class AddTOC
     {
         public static void Run()
         {
+            // ExStart:AddTOC
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
@@ -61,9 +55,11 @@ namespace CSharp.AsposePdf.WorkingDocuments
                 // Add heading to page containing TOC
                 tocPage.Paragraphs.Add(heading2);
             }
+            dataDir = dataDir + "TOC_out_.pdf";
             // Save the updated document
-            doc.Save(dataDir + "TOC_Output.pdf");
-
+            doc.Save(dataDir);
+            // ExEnd:AddTOC
+            Console.WriteLine("\nTOC added successfully to an existing PDF.\nFile saved at " + dataDir);
         }
     }
 }

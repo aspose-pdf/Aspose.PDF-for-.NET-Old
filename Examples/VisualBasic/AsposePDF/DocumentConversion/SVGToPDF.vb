@@ -1,30 +1,23 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Pdf. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
-Imports Microsoft.VisualBasic
 Imports System.IO
-
+Imports System
+Imports Microsoft.VisualBasic
 Imports Aspose.Pdf
-
-Namespace VisualBasic.AsposePdf.DocumentConversion
+Namespace AsposePDF.DocumentConversion
     Public Class SVGToPDF
         Public Shared Sub Run()
+            ' ExStart:SVGToPDF
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdf_DocumentConversion()
 
             ' Instantiate LoadOption object using SVG load option
-            Dim loadopt As Aspose.Pdf.LoadOptions = New Aspose.Pdf.SvgLoadOptions()
+            Dim loadopt As LoadOptions = New SvgLoadOptions()
 
             ' Create Document object
-            Dim doc As New Aspose.Pdf.Document(dataDir & "example.svg", loadopt)
+            Dim doc As New Document(dataDir & Convert.ToString("SVGToPDF.svg"), loadopt)
 
             ' Save the resultant PDF document
-            doc.Save(dataDir & "converted.pdf")
+            doc.Save(dataDir & Convert.ToString("SVGToPDF_out_.pdf"))
+            ' ExEnd:SVGToPDF
         End Sub
     End Class
 End Namespace

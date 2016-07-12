@@ -1,31 +1,27 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
+using System;
 using System.IO;
-
 using Aspose.Pdf;
-
-namespace CSharp.AsposePdf.Bookmarks
+namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Bookmarks
 {
     public class DeleteParticularBookmark
     {
         public static void Run()
         {
+            // ExStart:DeleteParticularBookmark
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
-            //open document
+            // Open document
             Document pdfDocument = new Document(dataDir + "DeleteParticularBookmark.pdf");
 
-            //delete particular outline by Title
+            // Delete particular outline by Title
             pdfDocument.Outlines.Delete("Child Outline");
-            
-            //save updated file
-            pdfDocument.Save(dataDir + "DeleteParticularBookmark_out.pdf");
+
+            dataDir = dataDir + "DeleteParticularBookmark_out_.pdf";
+            // Save updated file
+            pdfDocument.Save(dataDir);
+            // ExEnd:DeleteParticularBookmark
+            Console.WriteLine("\nParticular bookmark deleted successfully.\nFile saved at " + dataDir);
 
         }
     }

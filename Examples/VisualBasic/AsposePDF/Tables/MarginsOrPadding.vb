@@ -1,68 +1,55 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Pdf. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
-Imports Microsoft.VisualBasic
 Imports System.IO
-
+Imports System
+Imports Microsoft.VisualBasic
 Imports Aspose.Pdf
 Imports Aspose.Pdf.Text
-
-Namespace VisualBasic.AsposePdf.Tables
+Namespace AsposePDF.Tables
     Public Class MarginsOrPadding
         Public Shared Sub Run()
+            ' ExStart:MarginsOrPadding
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdf_Tables()
 
-            ' Create directory if it is not already present.
-            Dim IsExists As Boolean = System.IO.Directory.Exists(dataDir)
-            If (Not IsExists) Then
-                System.IO.Directory.CreateDirectory(dataDir)
-            End If
-
-
-            'Instntiate the Document object by calling its empty constructor
+            ' Instntiate the Document object by calling its empty constructor
             Dim doc As New Document()
             Dim page As Page = doc.Pages.Add()
-            'Instantiate a table object
-            Dim tab1 As New Aspose.Pdf.Table()
-            'Add the table in paragraphs collection of the desired section
+            ' Instantiate a table object
+            Dim tab1 As New Table()
+            ' Add the table in paragraphs collection of the desired section
             page.Paragraphs.Add(tab1)
-            'Set with column widths of the table
+            ' Set with column widths of the table
             tab1.ColumnWidths = "50 50 50"
-            'Set default cell border using BorderInfo object
-            tab1.DefaultCellBorder = New Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 0.1F)
-            'Set table border using another customized BorderInfo object
-            tab1.Border = New Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 1.0F)
-            'Create MarginInfo object and set its left, bottom, right and top margins
-            Dim margin As New Aspose.Pdf.MarginInfo()
+            ' Set default cell border using BorderInfo object
+            tab1.DefaultCellBorder = New BorderInfo(BorderSide.All, 0.1F)
+            ' Set table border using another customized BorderInfo object
+            tab1.Border = New BorderInfo(BorderSide.All, 1.0F)
+            ' Create MarginInfo object and set its left, bottom, right and top margins
+            Dim margin As New MarginInfo()
             margin.Top = 5.0F
             margin.Left = 5.0F
             margin.Right = 5.0F
             margin.Bottom = 5.0F
-            'Set the default cell padding to the MarginInfo object
+            ' Set the default cell padding to the MarginInfo object
             tab1.DefaultCellPadding = margin
-            'Create rows in the table and then cells in the rows
-            Dim row1 As Aspose.Pdf.Row = tab1.Rows.Add()
+            ' Create rows in the table and then cells in the rows
+            Dim row1 As Row = tab1.Rows.Add()
             row1.Cells.Add("col1")
             row1.Cells.Add("col2")
             row1.Cells.Add()
             Dim mytext As New TextFragment("col3 with large text string")
-            'row1.Cells.Add("col3 with large text string to be placed inside cell");
+            ' Row1.Cells.Add("col3 with large text string to be placed inside cell");
             row1.Cells(2).Paragraphs.Add(mytext)
             row1.Cells(2).IsWordWrapped = False
-            'row1.Cells[2].Paragraphs[0].FixedWidth= 80;
-            Dim row2 As Aspose.Pdf.Row = tab1.Rows.Add()
+            ' Row1.Cells[2].Paragraphs[0].FixedWidth= 80;
+            Dim row2 As Row = tab1.Rows.Add()
             row2.Cells.Add("item1")
             row2.Cells.Add("item2")
             row2.Cells.Add("item3")
+            dataDir = dataDir & Convert.ToString("MarginsOrPadding_out_.pdf")
             'Save the Pdf
-            doc.Save(dataDir & "MarginsOrPadding_out.pdf")
-
+            doc.Save(dataDir)
+            ' ExEnd:MarginsOrPadding
+            Console.WriteLine(Convert.ToString(vbLf & "Cell and table border width setup successfully." & vbLf & "File saved at ") & dataDir)
 
         End Sub
     End Class

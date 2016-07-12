@@ -13,7 +13,7 @@ Imports Aspose.Pdf
 Imports Aspose.Pdf.Facades
 Imports System
 
-Namespace VisualBasic.AsposePDFFacades.WorkingDocument
+Namespace AsposePDFFacades.WorkingDocument
     Public Class GetFileInfo
         Public Shared Sub Run()
             ' The path to the documents directory.

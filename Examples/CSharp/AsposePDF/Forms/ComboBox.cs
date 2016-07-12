@@ -1,45 +1,46 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
+using System;
 using System.IO;
-
 using Aspose.Pdf;
-using Aspose.Pdf.InteractiveFeatures.Forms;
-
-namespace CSharp.AsposePdf.Forms
+using Aspose.Pdf.Forms;
+namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Forms
 {
     public class ComboBox
     {
         public static void Run()
         {
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+            try
+            {
+                // ExStart:ComboBox
+                // The path to the documents directory.
+                string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-            // create Document object
-            Document doc = new Document();
+                // Create Document object
+                Document doc = new Document();
 
-            // add page to document object
-            doc.Pages.Add();
+                // Add page to document object
+                doc.Pages.Add();
 
-            // instantiate ComboBox Field object
-            ComboBoxField combo = new ComboBoxField(doc.Pages[1], new Aspose.Pdf.Rectangle(100, 600, 150, 616));
+                // Instantiate ComboBox Field object
+                ComboBoxField combo = new ComboBoxField(doc.Pages[1], new Aspose.Pdf.Rectangle(100, 600, 150, 616));
 
-            // add option to ComboBox
-            combo.AddOption("Red");
-            combo.AddOption("Yellow");
-            combo.AddOption("Green");
-            combo.AddOption("Blue");
+                // Add option to ComboBox
+                combo.AddOption("Red");
+                combo.AddOption("Yellow");
+                combo.AddOption("Green");
+                combo.AddOption("Blue");
 
-            // add combo box object to form fields collection of document object
-            doc.Form.Add(combo);
-
-            // save the PDF document
-            doc.Save(dataDir + "ComboBox_out.pdf");
-
+                // Add combo box object to form fields collection of document object
+                doc.Form.Add(combo);
+                dataDir = dataDir + "ComboBox_out_.pdf";
+                // Save the PDF document
+                doc.Save(dataDir);
+                // ExEnd:ComboBox
+                Console.WriteLine("\nCombobox field added successfully.\nFile saved at " + dataDir);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }

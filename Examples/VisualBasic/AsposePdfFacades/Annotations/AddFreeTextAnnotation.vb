@@ -13,7 +13,7 @@ Imports Aspose.Pdf
 Imports Aspose.Pdf.Facades
 Imports System.Drawing
 
-Namespace VisualBasic.AsposePDFFacades.Annotations
+Namespace AsposePDFFacades.Annotations
     Public Class AddFreeTextAnnotation
         Public Shared Sub Run()
             ' The path to the documents directory.

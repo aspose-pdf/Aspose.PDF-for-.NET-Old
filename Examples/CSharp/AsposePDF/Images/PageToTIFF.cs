@@ -1,44 +1,38 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
 using System.IO;
-
+using System;
 using Aspose.Pdf;
 using Aspose.Pdf.Devices;
 
-namespace CSharp.AsposePdf.Images
+namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Images
 {
     public class PageToTIFF
     {
         public static void Run()
         {
+            // ExStart:PageToTIFF
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-            //Open document
+            // Open document
             Document pdfDocument = new Document(dataDir+ "PageToTIFF.pdf");
 
-            //Create Resolution object
+            // Create Resolution object
             Resolution resolution = new Resolution(300);
 
-            //Create TiffSettings object
+            // Create TiffSettings object
             TiffSettings tiffSettings = new TiffSettings();
             tiffSettings.Compression = CompressionType.None;
             tiffSettings.Depth = ColorDepth.Default;
             tiffSettings.Shape = ShapeType.Landscape;
             tiffSettings.SkipBlankPages = false;
 
-            //Create TIFF device
+            // Create TIFF device
             TiffDevice tiffDevice = new TiffDevice(resolution, tiffSettings);
 
-
-            //Convert a particular page and save the image to stream
-            tiffDevice.Process(pdfDocument, 1, 1, dataDir + "output.tif");
-            
+            // Convert a particular page and save the image to stream
+            tiffDevice.Process(pdfDocument, 1, 1, dataDir + "PageToTIFF_out_.tif");
+            // ExEnd:PageToTIFF
+            System.Console.WriteLine("PDF one page converted to tiff successfully!");
         }
     }
 }

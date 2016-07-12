@@ -1,32 +1,27 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
 using System.IO;
-
+using System;
 using Aspose.Pdf;
-
-namespace CSharp.AsposePdf.Annotations
+namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Annotations
 {
     public class DeleteAllAnnotationsFromPage
     {
         public static void Run()
         {
+            // ExStart:DeleteAllAnnotationsFromPage
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-            //open document
+            // Open document
             Document pdfDocument = new Document(dataDir + "DeleteAllAnnotationsFromPage.pdf");
 
-            //delete particular annotation
+            // Delete particular annotation
             pdfDocument.Pages[1].Annotations.Delete();
 
-            //save updated document
-            pdfDocument.Save(dataDir + "DeleteAllAnnotationsFromPage_out.pdf");
-
+            dataDir = dataDir + "DeleteAllAnnotationsFromPage_out_.pdf";
+            // Save updated document
+            pdfDocument.Save(dataDir);
+            // ExEnd:DeleteAllAnnotationsFromPage
+            Console.WriteLine("\nAll annotation from a page deleted successfully.\nFile saved at " + dataDir);
         }
     }
 }

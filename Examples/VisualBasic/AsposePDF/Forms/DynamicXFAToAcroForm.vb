@@ -1,32 +1,26 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Pdf. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
-Imports Microsoft.VisualBasic
 Imports System.IO
-
+Imports System
+Imports Microsoft.VisualBasic
 Imports Aspose.Pdf
-Imports Aspose.Pdf.InteractiveFeatures.Forms
-
-Namespace VisualBasic.AsposePdf.Forms
+Imports Aspose.Pdf.Forms
+Namespace AsposePDF.Forms
     Public Class DynamicXFAToAcroForm
         Public Shared Sub Run()
+            ' ExStart:DynamicXFAToAcroForm
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdf_Forms()
 
-            ' load dynamic XFA form
-            Dim document As New Document(dataDir & "Dynamic_XFA.pdf")
+            ' Load dynamic XFA form
+            Dim document As New Document(dataDir & Convert.ToString("DynamicXFAToAcroForm.pdf"))
 
-            ' set the form fields type as standard AcroForm
+            ' Set the form fields type as standard AcroForm
             document.Form.Type = FormType.Standard
 
-            ' save the resultant PDF
-            document.Save(dataDir & "Standard_AcroForm.pdf")
-
+            dataDir = dataDir & Convert.ToString("Standard_AcroForm_out_.pdf")
+            ' Save the resultant PDF
+            document.Save(dataDir)
+            ' ExEnd:DynamicXFAToAcroForm
+            Console.WriteLine(Convert.ToString(vbLf & "Dynamic XFA form converted to standard AcroForm successfully." & vbLf & "File saved at ") & dataDir)
         End Sub
     End Class
 End Namespace

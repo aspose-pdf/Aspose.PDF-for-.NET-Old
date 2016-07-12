@@ -1,50 +1,71 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
 using System.IO;
-
+using System;
 using Aspose.Pdf;
 using Aspose.Pdf.Devices;
-
-namespace CSharp.AsposePdf.Images
+namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Images
 {
     public class PagesToImages
     {
         public static void Run()
         {
+            // ExStart:PagesToImages
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
             
-            //open document
+            // Open document
             Document pdfDocument = new Document(dataDir + "PagesToImages.pdf");
 
             for (int pageCount = 1; pageCount <= pdfDocument.Pages.Count; pageCount++)
             {
-                using (FileStream imageStream = new FileStream(dataDir + "image" + pageCount + ".jpg", FileMode.Create))
+                using (FileStream imageStream = new FileStream(dataDir + "image" + pageCount + "_out_" + ".jpg", FileMode.Create))
                 {
-                    //create JPEG device with specified attributes
-                    //Width, Height, Resolution, Quality
-                    //Quality [0-100], 100 is Maximum
-                    //create Resolution object
+                    // Create JPEG device with specified attributes
+                    // Width, Height, Resolution, Quality
+                    // Quality [0-100], 100 is Maximum
+                    // Create Resolution object
                     Resolution resolution = new Resolution(300);
                     
-                    //JpegDevice jpegDevice = new JpegDevice(500, 700, resolution, 100);
+                    // JpegDevice jpegDevice = new JpegDevice(500, 700, resolution, 100);
                     JpegDevice jpegDevice = new JpegDevice(resolution, 100);
 
-                    //convert a particular page and save the image to stream
+                    // Convert a particular page and save the image to stream
                     jpegDevice.Process(pdfDocument.Pages[pageCount], imageStream);
 
-                    //close stream
+                    // Close stream
                     imageStream.Close();
 
                 }
             }
-
+            // ExEnd:PagesToImages
             System.Console.WriteLine("PDF pages are converted to individual images successfully!");
+        }
+        public static void SinglePageToImage()
+        {
+           
+            // The path to the documents directory.
+            string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+            // Open document
+            Document pdfDocument = new Document(dataDir + "PagesToImages.pdf");
+           
+            using (FileStream imageStream = new FileStream(dataDir + "image" + 1 + ".jpg", FileMode.Create))
+            {
+                // Create JPEG device with specified attributes
+                // Width, Height, Resolution, Quality
+                // Quality [0-100], 100 is Maximum
+                // Create Resolution object
+                Resolution resolution = new Resolution(300);
+
+                // JpegDevice jpegDevice = new JpegDevice(500, 700, resolution, 100);
+                JpegDevice jpegDevice = new JpegDevice(resolution, 100);
+                // ExStart:ConvertParticularPage
+                // Convert a particular page and save the image to stream
+                jpegDevice.Process(pdfDocument.Pages[1], imageStream);
+                // ExEnd:ConvertParticularPage
+                // Close stream
+                imageStream.Close();
+            }            
+          
         }
     }
 }

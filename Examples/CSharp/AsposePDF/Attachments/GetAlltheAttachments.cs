@@ -1,36 +1,29 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
 using System.IO;
-
 using Aspose.Pdf;
 using System;
 
-namespace CSharp.AsposePdf.Attachments
+namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Attachments
 {
     public class GetAlltheAttachments
     {
         public static void Run()
         {
+            // ExStart:GetAlltheAttachments
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
 
-            //open document
+            // Open document
             Document pdfDocument = new Document(dataDir + "GetAlltheAttachments.pdf");
             
-            //get embedded files collection
+            // Get embedded files collection
             EmbeddedFileCollection embeddedFiles = pdfDocument.EmbeddedFiles;
             
-            //get count of the embedded files
+            // Get count of the embedded files
             Console.WriteLine("Total files : {0}", embeddedFiles.Count);
 
             int count = 1;
             
-            //loop through the collection to get all the attachments
+            // Loop through the collection to get all the attachments
             foreach (FileSpecification fileSpecification in embeddedFiles)
             {
                 Console.WriteLine("Name: {0}", fileSpecification.Name);
@@ -40,7 +33,7 @@ namespace CSharp.AsposePdf.Attachments
 
                 
                 
-                //check if parameter object contains the parameters
+                // Check if parameter object contains the parameters
                 if (fileSpecification.Params != null)
                 {
                     Console.WriteLine("CheckSum: {0}",
@@ -52,17 +45,17 @@ namespace CSharp.AsposePdf.Attachments
                     Console.WriteLine("Size: {0}", fileSpecification.Params.Size);
                 }
                 
-                //get the attachment and write to file or stream
+                // Get the attachment and write to file or stream
                 byte[] fileContent = new byte[fileSpecification.Contents.Length];
                 fileSpecification.Contents.Read(fileContent, 0,
                 fileContent.Length);
-                FileStream fileStream = new FileStream(dataDir + count + ".txt",
+                FileStream fileStream = new FileStream(dataDir + count + "_out_" + ".txt",
                 FileMode.Create);
                 fileStream.Write(fileContent, 0, fileContent.Length);
                 fileStream.Close();
                 count+=1;
             }
-
+            // ExEnd:GetAlltheAttachments
         }
     }
 }

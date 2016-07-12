@@ -1,36 +1,31 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
 using System.IO;
-
 using Aspose.Pdf;
-
-namespace CSharp.AsposePdf.Pages
+using System;
+namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Pages
 {
     public class GetParticularPage
     {
         public static void Run()
         {
+            // ExStart:GetParticularPage
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
 
-            //open document
+            // Open document
             Document pdfDocument = new Document(dataDir + "GetParticularPage.pdf");
 
-            //get particular page
+            // Get particular page
             Page pdfPage = pdfDocument.Pages[2];
 
-            //save the page as PDF file
+            // Save the page as PDF file
             Document newDocument = new Document();
 
             newDocument.Pages.Add(pdfPage);
 
-            newDocument.Save(dataDir + "GetParticularPage_out.pdf");
-
+            dataDir = dataDir + "GetParticularPage_out_.pdf";
+            newDocument.Save(dataDir);
+            // ExEnd:GetParticularPage
+            System.Console.WriteLine("\nParticular page accessed successfully.\nFile saved at " + dataDir);
         }
     }
 }

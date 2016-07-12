@@ -1,36 +1,30 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Pdf. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
-Imports Microsoft.VisualBasic
 Imports System.IO
-
+Imports System
+Imports Microsoft.VisualBasic
 Imports Aspose.Pdf
 
-Namespace VisualBasic.AsposePdf.DocumentConversion
+Namespace AsposePDF.DocumentConversion
     Public Class PDFToTeX
         Public Shared Sub Run()
+            ' ExStart:PDFToTeX
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdf_DocumentConversion()
 
-            ' create Document object
-            Dim doc As New Aspose.Pdf.Document(dataDir & "PDFToTeX.pdf")
+            ' Create Document object
+            Dim doc As New Document(dataDir & Convert.ToString("PDFToTeX.pdf"))
 
-            ' instantiate LaTex save option            
+            ' Instantiate LaTex save option            
             Dim saveOptions As New LaTeXSaveOptions()
 
-            ' specify the output directory 
+            ' Specify the output directory 
             Dim pathToOutputDirectory As String = dataDir
 
-            ' set the output directory path for save option object
+            ' Set the output directory path for save option object
             saveOptions.OutDirectoryPath = pathToOutputDirectory
 
-            ' save PDF file into LaTex format            
-            doc.Save(dataDir & "Output.tex", saveOptions)
+            ' Save PDF file into LaTex format            
+            doc.Save(dataDir & Convert.ToString("PDFToTeX_out_.tex"), saveOptions)
+            ' ExEnd:PDFToTeX
         End Sub
     End Class
 End Namespace

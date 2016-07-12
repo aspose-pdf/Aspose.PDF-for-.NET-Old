@@ -1,44 +1,41 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Pdf. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
-Imports Microsoft.VisualBasic
 Imports System.IO
-
+Imports System
+Imports Microsoft.VisualBasic
 Imports Aspose.Pdf
-Imports Aspose.Pdf.InteractiveFeatures.Forms
-
-Namespace VisualBasic.AsposePdf.Forms
+Imports Aspose.Pdf.Forms
+Namespace AsposePDF.Forms
     Public Class ComboBox
         Public Shared Sub Run()
-            ' The path to the documents directory.
-            Dim dataDir As String = RunExamples.GetDataDir_AsposePdf_Forms()
+            Try
+                ' ExStart:ComboBox
+                ' The path to the documents directory.
+                Dim dataDir As String = RunExamples.GetDataDir_AsposePdf_Forms()
 
-            ' create Document object
-            Dim doc As New Document()
+                ' Create Document object
+                Dim doc As New Document()
 
-            ' add page to document object
-            doc.Pages.Add()
+                ' Add page to document object
+                doc.Pages.Add()
 
-            ' instantiate ComboBox Field object
-            Dim combo As New ComboBoxField(doc.Pages(1), New Aspose.Pdf.Rectangle(100, 600, 150, 616))
+                ' Instantiate ComboBox Field object
+                Dim combo As New ComboBoxField(doc.Pages(1), New Rectangle(100, 600, 150, 616))
 
-            ' add option to ComboBox
-            combo.AddOption("Red")
-            combo.AddOption("Yellow")
-            combo.AddOption("Green")
-            combo.AddOption("Blue")
+                ' Add option to ComboBox
+                combo.AddOption("Red")
+                combo.AddOption("Yellow")
+                combo.AddOption("Green")
+                combo.AddOption("Blue")
 
-            ' add combo box object to form fields collection of document object
-            doc.Form.Add(combo)
-
-            ' save the PDF document
-            doc.Save(dataDir & "ComboBox_out.pdf")
-
+                ' Add combo box object to form fields collection of document object
+                doc.Form.Add(combo)
+                dataDir = dataDir & Convert.ToString("ComboBox_out_.pdf")
+                ' Save the PDF document
+                doc.Save(dataDir)
+                ' ExEnd:ComboBox
+                Console.WriteLine(Convert.ToString(vbLf & "Combobox field added successfully." & vbLf & "File saved at ") & dataDir)
+            Catch ex As Exception
+                Console.WriteLine(ex.Message)
+            End Try
         End Sub
     End Class
 End Namespace

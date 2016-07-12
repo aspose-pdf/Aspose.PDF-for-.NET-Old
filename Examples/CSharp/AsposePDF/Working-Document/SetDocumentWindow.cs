@@ -1,66 +1,61 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
 using System.IO;
-
 using Aspose.Pdf;
-using Aspose.Pdf.DOM;
-
-namespace CSharp.AsposePdf.WorkingDocuments
+using System;
+namespace Aspose.Pdf.Examples.CSharp.AsposePDF.WorkingDocuments
 {
     public class SetDocumentWindow
     {
         public static void Run()
         {
+            // ExStart:SetDocumentWindow
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-            //open document
+            // Open document
             Document pdfDocument = new Document(dataDir + "SetDocumentWindow.pdf");
 
-            //set different document properties
-            //sepcify to position document's window - Default: false
+            // Set different document properties
+            // Sepcify to position document's window - Default: false
             pdfDocument.CenterWindow = true;
             
-            //predominant reading order; determins the position of page
-            //when displayed side by side - Default: L2R
+            // Predominant reading order; determins the position of page
+            // When displayed side by side - Default: L2R
             pdfDocument.Direction = Direction.R2L;
             
-            //specify whether window's title bar should display document title
-            //if false, title bar displays PDF file name - Default: false
+            // Specify whether window's title bar should display document title
+            // If false, title bar displays PDF file name - Default: false
             pdfDocument.DisplayDocTitle = true;
             
-            //specify whether to resize the document's window to fit the size of
-            //first displayed page - Default: false
+            // Specify whether to resize the document's window to fit the size of
+            // First displayed page - Default: false
             pdfDocument.FitWindow = true;
             
-            //specify whether to hide menu bar of the viewer application - Default: false
+            // Specify whether to hide menu bar of the viewer application - Default: false
             pdfDocument.HideMenubar = true;
             
-            //specify whether to hide tool bar of the viewer application - Default: false
+            // Specify whether to hide tool bar of the viewer application - Default: false
             pdfDocument.HideToolBar = true;
             
-            //specify whether to hide UI elements like scroll bars
-            //and leaving only the page contents displayed - Default: false
+            // Specify whether to hide UI elements like scroll bars
+            // And leaving only the page contents displayed - Default: false
             pdfDocument.HideWindowUI = true;
             
-            //document's page mode. specify how to display document on exiting full-screen mode.
+            // Document's page mode. specify how to display document on exiting full-screen mode.
             pdfDocument.NonFullScreenPageMode = PageMode.UseOC;
             
-            //specify the page layout i.e. single page, one column
+            // Specify the page layout i.e. single page, one column
             pdfDocument.PageLayout = PageLayout.TwoColumnLeft;
             
-            //specify how the document should display when opened
-            //i.e. show thumbnails, full-screen, show attachment panel
+            // Specify how the document should display when opened
+            // i.e. show thumbnails, full-screen, show attachment panel
             pdfDocument.PageMode = PageMode.UseThumbs;
-            
-            //save updated PDF file
-            pdfDocument.Save(dataDir + "SetDocumentWindow_out.pdf");
-  
+
+            dataDir = dataDir + "SetDocumentWindow_out_.pdf";
+            // Save updated PDF file
+            pdfDocument.Save(dataDir);
+            // ExEnd:SetDocumentWindow 
+            Console.WriteLine("\nDocument window and page display properties setup successfully.\nFile saved at " + dataDir);
+             
         }
     }
 }

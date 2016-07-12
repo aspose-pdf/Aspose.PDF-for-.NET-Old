@@ -1,33 +1,26 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Pdf. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
-Imports Microsoft.VisualBasic
 Imports System.IO
-
+Imports System
+Imports Microsoft.VisualBasic
+Imports Aspose.Pdf.Forms
 Imports Aspose.Pdf
-Imports Aspose.Pdf.InteractiveFeatures.Forms
-
-Namespace VB.AsposePdf.Forms
+Namespace AsposePDF.Forms
     Public Class AddTooltipToField
         Public Shared Sub Run()
+            ' ExStart:AddTooltipToField
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdf_Forms()
 
             ' Load source PDF form
-            Dim doc As New Document(dataDir & "AddTooltipToField.pdf")
+            Dim doc As New Document(dataDir & Convert.ToString("AddTooltipToField.pdf"))
 
             ' Set the tooltip for textfield
-			(TryCast(doc.Form("textbox1"), Field)).AlternateName = "Text box tool tip"
+            TryCast(doc.Form("textbox1"), Field).AlternateName = "Text box tool tip"
 
+            dataDir = dataDir & Convert.ToString("AddTooltipToField_out_.pdf")
             ' Save the updated document
-            doc.Save(dataDir & "AddTooltipToField_out.pdf")
-
-
+            doc.Save(dataDir)
+            ' ExEnd:AddTooltipToField   
+            Console.WriteLine(Convert.ToString(vbLf & "Tooltip added successfully." & vbLf & "File saved at ") & dataDir)
         End Sub
     End Class
 End Namespace

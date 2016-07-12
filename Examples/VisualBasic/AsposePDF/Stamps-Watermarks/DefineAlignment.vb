@@ -1,48 +1,42 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Pdf. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
+﻿Imports System.IO
+Imports System
 Imports Microsoft.VisualBasic
-Imports System.IO
-
 Imports Aspose.Pdf
 Imports Aspose.Pdf.Facades
-
-Namespace VisualBasic.AsposePdf.StampsWatermarks
+Namespace AsposePDF.StampsWatermarks
     Public Class DefineAlignment
         Public Shared Sub Run()
+            ' ExStart:DefineAlignment
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdf_StampsWatermarks()
 
             ' Instantiate Document object with input file
-            Dim doc As New Document(dataDir & "DefineAlignment.pdf")
-            ' instantiate FormattedText object with sample string
+            Dim doc As New Document(dataDir & Convert.ToString("DefineAlignment.pdf"))
+            ' Instantiate FormattedText object with sample string
             Dim text As New FormattedText("This")
-            ' add new text line to FormattedText
+            ' Add new text line to FormattedText
             text.AddNewLineText("is sample")
             text.AddNewLineText("Center Aligned")
             text.AddNewLineText("TextStamp")
             text.AddNewLineText("Object")
-            ' create TextStamp object using FormattedText
+            ' Create TextStamp object using FormattedText
             Dim stamp As New TextStamp(text)
-            ' specify the Horizontal Alignment of text stamp as Center aligned
+            ' Specify the Horizontal Alignment of text stamp as Center aligned
             stamp.HorizontalAlignment = HorizontalAlignment.Center
-            ' specify the Vertical Alignment of text stamp as Center aligned
+            ' Specify the Vertical Alignment of text stamp as Center aligned
             stamp.VerticalAlignment = VerticalAlignment.Center
-            ' specify the Text Horizontal Alignment of TextStamp as Center aligned
+            ' Specify the Text Horizontal Alignment of TextStamp as Center aligned
             stamp.TextAlignment = HorizontalAlignment.Center
-            ' set top margin for stamp object
+            ' Set top margin for stamp object
             stamp.TopMargin = 20
-            ' add the stamp object over first page of document
+            ' Add the stamp object over first page of document
             doc.Pages(1).AddStamp(stamp)
-            ' save the udpated document
-            doc.Save(dataDir & "StampedPDF.pdf")
 
-
+            dataDir = dataDir & Convert.ToString("StampedPDF_out_.pdf")
+            ' Save the udpated document
+            doc.Save(dataDir)
+            ' ExEnd:DefineAlignment            
+            Console.WriteLine(Convert.ToString(vbLf & "Alignment defined successfully for text stamp." & vbLf & "File saved at ") & dataDir)
         End Sub
     End Class
 End Namespace

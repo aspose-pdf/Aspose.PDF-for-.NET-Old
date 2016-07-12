@@ -10,7 +10,7 @@ using System.IO;
 using Aspose.Pdf;
 using Aspose.Pdf.Facades;
 
-namespace CSharp.AsposePDFFacades.Forms
+namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Forms
 {
     public class CopyInnerField
     {

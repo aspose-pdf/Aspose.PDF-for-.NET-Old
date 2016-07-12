@@ -1,21 +1,14 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
 using System.IO;
-
+using Aspose.Pdf.Forms;
 using Aspose.Pdf;
-using Aspose.Pdf.InteractiveFeatures.Forms;
-
-namespace CSharp.AsposePdf.Forms
+using System;
+namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Forms
 {
     public class AddTooltipToField
     {
         public static void Run()
         {
+            // ExStart:AddTooltipToField
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
@@ -25,10 +18,11 @@ namespace CSharp.AsposePdf.Forms
             // Set the tooltip for textfield
             (doc.Form["textbox1"] as Field).AlternateName = "Text box tool tip";
 
+            dataDir = dataDir + "AddTooltipToField_out_.pdf";
             // Save the updated document
-            doc.Save(dataDir + "AddTooltipToField_out.pdf");
-
-            
+            doc.Save(dataDir);
+            // ExEnd:AddTooltipToField   
+            Console.WriteLine("\nTooltip added successfully.\nFile saved at " + dataDir);
         }
     }
 }

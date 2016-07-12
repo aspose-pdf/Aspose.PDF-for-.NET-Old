@@ -1,39 +1,31 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
 using System.IO;
-
 using Aspose.Pdf;
-using Aspose.Pdf.InteractiveFeatures.Annotations;
+using Aspose.Pdf.Annotations;
 using System.Collections;
+using System;
 
-namespace CSharp.AsposePdf.LinksActions
+namespace Aspose.Pdf.Examples.CSharp.AsposePDF.LinksActions
 {
     public class ExtractLinks
     {
         public static void Run()
         {
+            // ExStart:ExtractLinks
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
-
-
-            //Open document
+            // Open document
             Document document = new Document(dataDir+ "ExtractLinks.pdf");
-
-            //Extract actions
+            // Extract actions
             Page page = document.Pages[1];
             AnnotationSelector selector = new AnnotationSelector(new LinkAnnotation(page, Aspose.Pdf.Rectangle.Trivial));
             page.Accept(selector);
             IList list = selector.Selected;
-
             Annotation annotation = (Annotation)list[0];
-
-            //Save updated document
-            document.Save(dataDir + "ExtractLinks_out.pdf");
+            dataDir = dataDir + "ExtractLinks_out_.pdf";
+            // Save updated document
+            document.Save(dataDir);
+            // ExEnd:ExtractLinks
+            Console.WriteLine("\nLinks extracted successfully.\nFile saved at " + dataDir);
             
         }
     }

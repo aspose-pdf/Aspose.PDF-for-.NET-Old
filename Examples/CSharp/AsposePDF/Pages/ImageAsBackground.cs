@@ -1,41 +1,36 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
+using System;
 using System.IO;
-
 using Aspose.Pdf;
-
-namespace CSharp.AsposePdf.Pages
+namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Pages
 {
     public class ImageAsBackground
     {
         public static void Run()
         {
+            // ExStart:ImageAsBackground
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
 
-            // create a new Document object
+            // Create a new Document object
             Document doc = new Document();
 
-            // add a new page to document object
+            // Add a new page to document object
             Page page = doc.Pages.Add();
 
-            // create BackgroundArtifact object
+            // Create Background Artifact object
             BackgroundArtifact background = new BackgroundArtifact();
 
-            // specify the image for backgroundartifact object
+            // Specify the image for backgroundartifact object
             background.BackgroundImage = File.OpenRead(dataDir + "aspose-total-for-net.jpg");
 
-            // add backgroundartifact to artifacts collection of page
+            // Add backgroundartifact to artifacts collection of page
             page.Artifacts.Add(background);
 
-            // save the document
-            doc.Save(dataDir + "ImageAsBackground_out.pdf");
-
+            dataDir = dataDir + "ImageAsBackground_out_.pdf";
+            // Save the document
+            doc.Save(dataDir);
+            // ExEnd:ImageAsBackground
+            System.Console.WriteLine("\nImage as page background added successfully.\nFile saved at " + dataDir);
         }
     }
 }

@@ -1,50 +1,40 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Pdf. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
+﻿Imports System.IO
+Imports System
 Imports Microsoft.VisualBasic
-Imports System.IO
-
 Imports Aspose.Pdf
 Imports Aspose.Pdf.Text
-Imports System
-
-Namespace VisualBasic.AsposePdf.Text
+Namespace AsposePDF.Text
     Public Class SearchAndGetTextPage
         Public Shared Sub Run()
+            ' ExStart:SearchAndGetTextPage
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdf_Text()
 
-            'open document
-            Dim pdfDocument As New Document(dataDir & "SearchAndGetTextPage.pdf")
+            ' Open document
+            Dim pdfDocument As New Document(dataDir & Convert.ToString("SearchAndGetTextPage.pdf"))
 
-            'create TextAbsorber object to find all instances of the input search phrase
-            Dim textFragmentAbsorber As New TextFragmentAbsorber("text")
-
-            'accept the absorber for a single page
-            pdfDocument.Pages(2).Accept(textFragmentAbsorber)
-
-            'get the extracted text fragments
+            ' Create TextAbsorber object to find all instances of the input search phrase
+            Dim textFragmentAbsorber As New TextFragmentAbsorber("Figure")
+            ' Accept the absorber for all the pages
+            pdfDocument.Pages.Accept(textFragmentAbsorber)
+            ' Get the extracted text fragments
             Dim textFragmentCollection As TextFragmentCollection = textFragmentAbsorber.TextFragments
-
-            'loop through the fragments
+            ' Loop through the fragments
             For Each textFragment As TextFragment In textFragmentCollection
-                Console.WriteLine("Text : {0} ", textFragment.Text)
-                Console.WriteLine("Position : {0} ", textFragment.Position)
-                Console.WriteLine("XIndent : {0} ", textFragment.Position.XIndent)
-                Console.WriteLine("YIndent : {0} ", textFragment.Position.YIndent)
-                Console.WriteLine("Font - Name : {0}", textFragment.TextState.Font.FontName)
-                Console.WriteLine("Font - IsAccessible : {0} ", textFragment.TextState.Font.IsAccessible)
-                Console.WriteLine("Font - IsEmbedded : {0} ", textFragment.TextState.Font.IsEmbedded)
-                Console.WriteLine("Font - IsSubset : {0} ", textFragment.TextState.Font.IsSubset)
-                Console.WriteLine("Font Size : {0} ", textFragment.TextState.FontSize)
-                Console.WriteLine("Foreground Color : {0} ", textFragment.TextState.ForegroundColor)
-            Next textFragment
-
+                For Each textSegment As TextSegment In textFragment.Segments
+                    Console.WriteLine("Text : {0} ", textSegment.Text)
+                    Console.WriteLine("Position : {0} ", textSegment.Position)
+                    Console.WriteLine("XIndent : {0} ", textSegment.Position.XIndent)
+                    Console.WriteLine("YIndent : {0} ", textSegment.Position.YIndent)
+                    Console.WriteLine("Font - Name : {0}", textSegment.TextState.Font.FontName)
+                    Console.WriteLine("Font - IsAccessible : {0} ", textSegment.TextState.Font.IsAccessible)
+                    Console.WriteLine("Font - IsEmbedded : {0} ", textSegment.TextState.Font.IsEmbedded)
+                    Console.WriteLine("Font - IsSubset : {0} ", textSegment.TextState.Font.IsSubset)
+                    Console.WriteLine("Font Size : {0} ", textSegment.TextState.FontSize)
+                    Console.WriteLine("Foreground Color : {0} ", textSegment.TextState.ForegroundColor)
+                Next
+            Next
+            ' ExEnd:SearchAndGetTextPage            
         End Sub
     End Class
 End Namespace

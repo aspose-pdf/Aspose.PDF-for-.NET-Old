@@ -11,7 +11,7 @@ using Aspose.Pdf;
 using Aspose.Pdf.Facades;
 using System.Drawing;
 
-namespace CSharp.AsposePDFFacades.Annotations
+namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Annotations
 {
     public class AddFreeTextAnnotation
     {

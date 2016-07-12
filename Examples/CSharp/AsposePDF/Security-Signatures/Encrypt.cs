@@ -1,31 +1,24 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
+using System;
 using System.IO;
-
 using Aspose.Pdf;
-
-namespace CSharp.AsposePdf.SecuritySignatures
+namespace Aspose.Pdf.Examples.CSharp.AsposePDF.SecuritySignatures
 {
     public class Encrypt
     {
         public static void Run()
         {
+            // ExStart:Encrypt
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
-
-            //open document
+            // Open document
             Document document = new Document(dataDir+ "Encrypt.pdf");
-            //encrypt PDF
+            // Encrypt PDF
             document.Encrypt("user", "owner", 0, CryptoAlgorithm.RC4x128);
-            //save updated PDF
-            document.Save(dataDir + "Encrypt_out.pdf");
-            
-            
+            dataDir = dataDir + "Encrypt_out_.pdf";
+            // Save updated PDF
+            document.Save(dataDir);
+            // ExEnd:Encrypt   
+            Console.WriteLine("\nPDF file encrypted successfully.\nFile saved at " + dataDir);
         }
     }
 }

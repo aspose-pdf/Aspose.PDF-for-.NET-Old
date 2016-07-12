@@ -1,27 +1,20 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
 using System.IO;
-
 using Aspose.Pdf;
-
-namespace CSharp.AsposePdf.StampsWatermarks
+using System;
+namespace Aspose.Pdf.Examples.CSharp.AsposePDF.StampsWatermarks
 {
     public class AddImageStamp
     {
         public static void Run()
         {
+            // ExStart:AddImageStamp
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
-            //Open document
+            // Open document
             Document pdfDocument = new Document(dataDir+ "AddImageStamp.pdf");
 
-            //Create image stamp
+            // Create image stamp
             ImageStamp imageStamp = new ImageStamp(dataDir + "aspose-logo.jpg");
             imageStamp.Background = true;
             imageStamp.XIndent = 100;
@@ -30,12 +23,14 @@ namespace CSharp.AsposePdf.StampsWatermarks
             imageStamp.Width = 300;
             imageStamp.Rotate = Rotation.on270;
             imageStamp.Opacity = 0.5;
-            //Add stamp to particular page
+            // Add stamp to particular page
             pdfDocument.Pages[1].AddStamp(imageStamp);
 
-            //Save output document
-            pdfDocument.Save(dataDir + "AddImageStamp_out.pdf");
-            
+            dataDir = dataDir + "AddImageStamp_out_.pdf";
+            // Save output document
+            pdfDocument.Save(dataDir);
+            // ExEnd:AddImageStamp
+            Console.WriteLine("\nImage stamp added successfully.\nFile saved at " + dataDir);
             
         }
     }

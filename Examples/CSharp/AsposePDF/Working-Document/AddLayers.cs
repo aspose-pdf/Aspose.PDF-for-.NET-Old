@@ -1,22 +1,15 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2014 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
 using System.IO;
-
 using Aspose.Pdf;
 using System.Collections;
 using System.Collections.Generic;
-
-namespace CSharp.AsposePdf.WorkingDocuments
+using System;
+namespace Aspose.Pdf.Examples.CSharp.AsposePDF.WorkingDocuments
 {
     public class AddLayers
     {
         public static void Run()
         {
+            // ExStart:AddLayers
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
@@ -41,7 +34,10 @@ namespace CSharp.AsposePdf.WorkingDocuments
             layer.Contents.Add(new Operator.LineTo(400, 800));
             layer.Contents.Add(new Operator.Stroke());
             page.Layers.Add(layer);
-            doc.Save(dataDir+ "AddLayers_out.pdf");
+            dataDir = dataDir + "AddLayers_out_.pdf";
+            doc.Save(dataDir);
+            // ExEnd:AddLayers
+            Console.WriteLine("\nLayers added successfully to PDF file.\nFile saved at " + dataDir);
         }
     }
 }

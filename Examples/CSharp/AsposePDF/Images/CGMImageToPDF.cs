@@ -1,26 +1,25 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
+using System;
 using System.IO;
-
 using Aspose.Pdf;
 using Aspose.Pdf.Facades;
-
-namespace CSharp.AsposePdf.Images
+namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Images
 {
     public class CGMImageToPDF
     {
         public static void Run()
         {
+            // ExStart:CGMImageToPDF
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-           
+            string inputFile = dataDir + "corvette.cgm";
+            dataDir = dataDir + "CGMImageToPDF_out_.pdf";
+            // Save CGM into PDF format
+            PdfProducer.Produce(inputFile, ImportFormat.Cgm, dataDir);
+            // ExEnd:CGMImageToPDF
+            Console.WriteLine("\nCGM file converted to pdf successfully.\nFile saved at " + dataDir); 
             
         }
+        
     }
 }

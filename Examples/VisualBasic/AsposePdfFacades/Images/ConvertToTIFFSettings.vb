@@ -13,7 +13,7 @@ Imports Aspose.Pdf
 Imports Aspose.Pdf.Facades
 Imports Aspose.Pdf.Devices
 
-Namespace VisualBasic.AsposePDFFacades.Images
+Namespace AsposePDFFacades.Images
     Public Class ConvertToTIFFSettings
         Public Shared Sub Run()
             ' The path to the documents directory.

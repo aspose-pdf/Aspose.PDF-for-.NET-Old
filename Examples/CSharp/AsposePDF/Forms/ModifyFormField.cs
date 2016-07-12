@@ -1,38 +1,31 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
+using System;
 using System.IO;
-
+using Aspose.Pdf.Forms;
 using Aspose.Pdf;
-using Aspose.Pdf.InteractiveFeatures.Forms;
-using Aspose.Pdf.InteractiveFeatures.Annotations;
-
-namespace CSharp.AsposePdf.Forms
+namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Forms
 {
     public class ModifyFormField
     {
         public static void Run()
         {
+            // ExStart:ModifyFormField
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-            //open document
+            // Open document
             Document pdfDocument = new Document(dataDir + "ModifyFormField.pdf");
 
-            //get a field
+            // Get a field
             TextBoxField textBoxField = pdfDocument.Form["textbox1"] as TextBoxField;
 
-            //modify field value
+            // Modify field value
             textBoxField.Value = "New Value";
             textBoxField.ReadOnly = true;
-            
-            //save updated document
-            pdfDocument.Save(dataDir + "ModifyFormField_out.pdf");
-
+            dataDir = dataDir + "ModifyFormField_out_.pdf";
+            // Save updated document
+            pdfDocument.Save(dataDir);
+            // ExEnd:ModifyFormField
+            Console.WriteLine("\nForm field modified successfully.\nFile saved at " + dataDir);
         }
     }
 }

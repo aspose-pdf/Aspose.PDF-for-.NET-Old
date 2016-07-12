@@ -13,7 +13,7 @@ Imports Aspose.Pdf
 Imports Aspose.Pdf.Facades
 Imports System
 
-Namespace VisualBasic.AsposePDFFacades.Images
+Namespace AsposePDFFacades.Images
     Public Class ConvertPDFPages
         Public Shared Sub Run()
             ' The path to the documents directory.

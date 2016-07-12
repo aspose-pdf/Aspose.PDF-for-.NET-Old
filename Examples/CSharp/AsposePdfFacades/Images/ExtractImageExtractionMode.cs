@@ -13,7 +13,7 @@ using System;
 using System.Drawing;
 using System.Drawing.Imaging;
 
-namespace CSharp.AsposePDFFacades.Images
+namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Images
 {
     public class ExtractImageExtractionMode
     {

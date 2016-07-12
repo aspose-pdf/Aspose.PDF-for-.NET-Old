@@ -1,33 +1,28 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
+using System;
 using System.IO;
-
 using Aspose.Pdf;
-using Aspose.Pdf.InteractiveFeatures.Forms;
-
-namespace CSharp.AsposePdf.Forms
+using Aspose.Pdf.Forms;
+namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Forms
 {
     public class DynamicXFAToAcroForm
     {
         public static void Run()
         {
+            // ExStart:DynamicXFAToAcroForm
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-            // load dynamic XFA form
-            Document document = new Document(dataDir + "Dynamic_XFA.pdf");
+            // Load dynamic XFA form
+            Document document = new Document(dataDir + "DynamicXFAToAcroForm.pdf");
 
-            // set the form fields type as standard AcroForm
+            // Set the form fields type as standard AcroForm
             document.Form.Type = FormType.Standard;
 
-            // save the resultant PDF
-            document.Save(dataDir + "Standard_AcroForm.pdf");
-
+            dataDir = dataDir + "Standard_AcroForm_out_.pdf";
+            // Save the resultant PDF
+            document.Save(dataDir);
+            // ExEnd:DynamicXFAToAcroForm
+            Console.WriteLine("\nDynamic XFA form converted to standard AcroForm successfully.\nFile saved at " + dataDir);
         }
     }
 }

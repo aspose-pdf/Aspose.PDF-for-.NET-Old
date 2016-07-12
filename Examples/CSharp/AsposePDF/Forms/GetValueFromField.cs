@@ -1,35 +1,41 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
 using System.IO;
-
+using Aspose.Pdf.Forms;
 using Aspose.Pdf;
-using Aspose.Pdf.InteractiveFeatures.Forms;
+using Aspose.Pdf.Annotations;
 using System;
-
-namespace CSharp.AsposePdf.Forms
+namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Forms
 {
     public class GetValueFromField
     {
         public static void Run()
         {
+            // ExStart:GetValueFromField
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-            //open document
+            // Open document
             Document pdfDocument = new Document(dataDir + "GetValueFromField.pdf");
 
-            //get a field
+            // Get a field
             TextBoxField textBoxField = pdfDocument.Form["textbox1"] as TextBoxField;
 
-            //get field value
+            // Get field value
             Console.WriteLine("PartialName : {0} ", textBoxField.PartialName);
             Console.WriteLine("Value : {0} ", textBoxField.Value);
+            // ExEnd:GetValueFromField
+        }
+        public static void GetSubmitButtonURL()
+        {
+            // ExStart:GetSubmitButtonURL
+            // The path to the documents directory.
+            string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
+            // Open document
+            Document pdfDocument = new Document(dataDir + "GetValueFromField.pdf");
+            SubmitFormAction act = pdfDocument.Form[1].OnActivated as SubmitFormAction;
+            if(act != null)
+            Console.WriteLine(act.Url.Name);
+            // ExEnd:GetSubmitButtonURL
         }
     }
 }

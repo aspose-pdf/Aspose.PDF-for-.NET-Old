@@ -1,31 +1,25 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
 using System.IO;
-
+using System;
 using Aspose.Pdf;
-
-namespace CSharp.AsposePdf.DocumentConversion
+namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion
 {
     public class GetSVGDimensions
     {
         public static void Run()
         {
+            // ExStart:GetSVGDimensions
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
             
             var loadopt = new SvgLoadOptions();
             loadopt.AdjustPageSize = true;
-            var svgDoc = new Document(dataDir + "Example.svg", loadopt);
+            var svgDoc = new Document(dataDir + "GetSVGDimensions.svg", loadopt);
             svgDoc.Pages[1].PageInfo.Margin.Top = 0;
             svgDoc.Pages[1].PageInfo.Margin.Left = 0;
             svgDoc.Pages[1].PageInfo.Margin.Bottom = 0;
             svgDoc.Pages[1].PageInfo.Margin.Right = 0;
-            svgDoc.Save(dataDir + "SVG_test.pdf");
+            svgDoc.Save(dataDir + "GetSVGDimensions_out_.pdf");
+            // ExEnd:GetSVGDimensions
         }
     }
 }

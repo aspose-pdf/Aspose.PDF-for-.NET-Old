@@ -13,7 +13,7 @@ Imports Aspose.Pdf
 Imports Aspose.Pdf.Facades
 Imports System
 
-Namespace VisualBasic.AsposePDFFacades.Bookmarks
+Namespace AsposePDFFacades.Bookmarks
     Public Class ExtractBookmarks
         Public Shared Sub Run()
             ' The path to the documents directory.

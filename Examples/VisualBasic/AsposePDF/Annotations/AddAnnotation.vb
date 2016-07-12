@@ -1,28 +1,20 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Pdf. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
-Imports Microsoft.VisualBasic
 Imports System.IO
-
+Imports System
+Imports Microsoft.VisualBasic
+Imports Aspose.Pdf.Annotations
 Imports Aspose.Pdf
-Imports Aspose.Pdf.InteractiveFeatures.Annotations
-
-Namespace VisualBasic.AsposePdf.Annotations
+Namespace AsposePDF.Annotations
     Public Class AddAnnotation
         Public Shared Sub Run()
+            ' ExStart:AddAnnotation
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdf_Annotations()
 
-            'open document
-            Dim pdfDocument As New Document(dataDir & "AddAnnotation.pdf")
+            ' Open document
+            Dim pdfDocument As New Document(dataDir & Convert.ToString("AddAnnotation.pdf"))
 
-            'create annotation
-            Dim textAnnotation As New TextAnnotation(pdfDocument.Pages(1), New Aspose.Pdf.Rectangle(200, 400, 400, 600))
+            ' Create annotation
+            Dim textAnnotation As New TextAnnotation(pdfDocument.Pages(1), New Rectangle(200, 400, 400, 600))
             textAnnotation.Title = "Sample Annotation Title"
             textAnnotation.Subject = "Sample Subject"
             textAnnotation.State = AnnotationState.Accepted
@@ -34,14 +26,15 @@ Namespace VisualBasic.AsposePdf.Annotations
             border.Width = 5
             border.Dash = New Dash(1, 1)
             textAnnotation.Border = border
-            textAnnotation.Rect = New Aspose.Pdf.Rectangle(200, 400, 400, 600)
+            textAnnotation.Rect = New Rectangle(200, 400, 400, 600)
 
-            'add annotation in the annotations collection of the page
+            ' Add annotation in the annotations collection of the page
             pdfDocument.Pages(1).Annotations.Add(textAnnotation)
-
-            '//save output file
-            pdfDocument.Save(dataDir & "AddAnnotation_out.pdf")
-
+            dataDir = dataDir & Convert.ToString("AddAnnotation_out_.pdf")
+            ' Save output file
+            pdfDocument.Save(dataDir)
+            ' ExEnd:AddAnnotation
+            Console.WriteLine(Convert.ToString(vbLf & "Annotation added successfully." & vbLf & "File saved at ") & dataDir)
         End Sub
     End Class
 End Namespace

@@ -1,47 +1,66 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
+using System;
 using System.IO;
-
 using Aspose.Pdf;
-
-namespace CSharp.AsposePdf.DocumentConversion
+namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion
 {
     public class PDFToDOC
     {
         public static void Run()
         {
+            // ExStart:PDFToDOC
+            // The path to the documents directory.
+            string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();          
+            
+            // open the source PDF document
+            Document pdfDocument = new Document(dataDir + "PDFToDOC.pdf");
+
+            // Save the file into MS document format
+            pdfDocument.Save(dataDir + "PDFToDOC_out_.doc", SaveFormat.Doc);
+            // ExEnd:PDFToDOC        
+            
+        }
+        public  static void SaveUsingSaveOptions()
+        {
+            // ExStart:SaveUsingSaveOptions
+            // The path to the documents directory.
+            string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();           
+          
+            // Open the source PDF document
+            Document pdfDocument = new Document(dataDir + "PDFToDOC.pdf");            
+
+            // Save using save options
+            // Create DocSaveOptions object
+            DocSaveOptions saveOptions = new DocSaveOptions();
+
+            // Set the recognition mode as Flow
+            saveOptions.Mode = DocSaveOptions.RecognitionMode.Flow;
+
+            // Set the Horizontal proximity as 2.5
+            saveOptions.RelativeHorizontalProximity = 2.5f;
+
+            // Enable the value to recognize bullets during conversion process
+            saveOptions.RecognizeBullets = true;
+
+            // Save the resultant DOC file
+            pdfDocument.Save(dataDir + "saveOptionsOutput_out_.doc", saveOptions);
+            // ExEnd:SaveUsingSaveOptions
+        }
+        public static void ConvertToDOCX()
+        {
+            // ExStart:ConvertToDOCX
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
-            //open the source PDF document
+            // Open the source PDF document
             Document pdfDocument = new Document(dataDir + "PDFToDOC.pdf");
 
-            // 1.
-            // saving using direct method
-            // save the file into MS document format
-            pdfDocument.Save(dataDir + "simpleOutput.doc", SaveFormat.Doc);
-
-            // 2.
-            // save using save options
-            // create DocSaveOptions object
+            // Instantiate DocSaveOptions object
             DocSaveOptions saveOptions = new DocSaveOptions();
-
-            // set the recognition mode as Flow
-            saveOptions.Mode = DocSaveOptions.RecognitionMode.Flow;
-            
-            // set the Horizontal proximity as 2.5
-            saveOptions.RelativeHorizontalProximity = 2.5f;
-            
-            // enable the value to recognize bullets during conversion process
-            saveOptions.RecognizeBullets = true;
-            
-            // save the resultant DOC file
-            pdfDocument.Save(dataDir + "saveOptionsOutput.doc", saveOptions);
+            // Specify the output format as DOCX
+            saveOptions.Format = DocSaveOptions.DocFormat.DocX;
+            // Save document in docx format
+            pdfDocument.Save("ConvertToDOCX_out_.docx", saveOptions);
+            // ExEnd:ConvertToDOCX
         }
     }
 }

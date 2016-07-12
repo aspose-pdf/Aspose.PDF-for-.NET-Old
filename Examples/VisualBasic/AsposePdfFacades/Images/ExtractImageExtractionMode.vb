@@ -15,7 +15,7 @@ Imports System
 Imports System.Drawing
 Imports System.Drawing.Imaging
 
-Namespace VisualBasic.AsposePDFFacades.Images
+Namespace AsposePDFFacades.Images
     Public Class ExtractImageExtractionMode
         Public Shared Sub Run()
             ' The path to the documents directory.

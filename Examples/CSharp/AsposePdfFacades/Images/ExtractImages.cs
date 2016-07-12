@@ -11,7 +11,7 @@ using Aspose.Pdf;
 using Aspose.Pdf.Facades;
 using System;
 
-namespace CSharp.AsposePDFFacades.Images
+namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Images
 {
     public class ExtractImages
     {

@@ -13,7 +13,7 @@ Imports Aspose.Pdf
 Imports Aspose.Pdf.Facades
 Imports System.Text
 
-Namespace VisualBasic.AsposePDFFacades.Text
+Namespace AsposePDFFacades.Text
     Public Class ExtractTextPageRange
         Public Shared Sub Run()
             ' The path to the documents directory.

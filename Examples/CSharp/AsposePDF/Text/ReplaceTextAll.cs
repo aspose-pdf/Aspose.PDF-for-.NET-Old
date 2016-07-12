@@ -1,40 +1,34 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
+using System;
 using System.IO;
-
 using Aspose.Pdf;
 using Aspose.Pdf.Text;
 
-namespace CSharp.AsposePdf.Text
+namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
 {
     public class ReplaceTextAll
     {
         public static void Run()
         {
+            // ExStart:ReplaceTextAll
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-            //open document
+            // Open document
             Document pdfDocument = new Document(dataDir + "ReplaceTextAll.pdf");
             
-            //create TextAbsorber object to find all instances of the input search phrase
+            // Create TextAbsorber object to find all instances of the input search phrase
             TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("text");
             
-            //accept the absorber for all the pages
+            // Accept the absorber for all the pages
             pdfDocument.Pages.Accept(textFragmentAbsorber);
             
-            //get the extracted text fragments
+            // Get the extracted text fragments
             TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
             
-            //loop through the fragments
+            // Loop through the fragments
             foreach (TextFragment textFragment in textFragmentCollection)
             {
-                //update text and other properties
+                // Update text and other properties
                 textFragment.Text = "TEXT";
                 textFragment.TextState.Font = FontRepository.FindFont("Verdana");
                 textFragment.TextState.FontSize = 22;
@@ -42,11 +36,11 @@ namespace CSharp.AsposePdf.Text
                 textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
             }
 
+            dataDir = dataDir + "ReplaceTextAll_out_.pdf";
             // Save resulting PDF document.
-            pdfDocument.Save(dataDir + "ReplaceTextAll_out.pdf");
-
-            // Let user know about the outcome of the processing.
-            System.Console.WriteLine("Text replaced successfully!");
+            pdfDocument.Save(dataDir);
+            // ExEnd:ReplaceTextAll
+            Console.WriteLine("\nText replaced  successfully.\nFile saved at " + dataDir);
         }
     }
 }

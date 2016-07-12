@@ -1,43 +1,35 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Pdf. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
-Imports Microsoft.VisualBasic
 Imports System.IO
-
-Imports Aspose.Pdf
-Imports Aspose.Pdf.InteractiveFeatures.Forms
 Imports System
+Imports Microsoft.VisualBasic
+Imports Aspose.Pdf
+Imports Aspose.Pdf.Forms
 
-Namespace VisualBasic.AsposePdf.Forms
+Namespace AsposePDF.Forms
     Public Class GetFieldsFromRegion
         Public Shared Sub Run()
+            ' ExStart:GetFieldsFromRegion
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdf_Forms()
 
-            'Open pdf file
-            Dim doc As New Aspose.Pdf.Document(dataDir & "GetFieldsFromRegion.pdf")
+            ' Open pdf file
+            Dim doc As New Document(dataDir & Convert.ToString("GetFieldsFromRegion.pdf"))
 
-            'Create rectangle object to get fields in that area
-            Dim rectangle As New Aspose.Pdf.Rectangle(35, 30, 500, 500)
+            ' Create rectangle object to get fields in that area
+            Dim rectangle As New Rectangle(35, 30, 500, 500)
 
-            'Get the PDF form
-            Dim form As Aspose.Pdf.InteractiveFeatures.Forms.Form = doc.Form
+            ' Get the PDF form
+            Dim form As Form = doc.Form
 
-            'get fields in the rectangular area
-            Dim fields() As Aspose.Pdf.InteractiveFeatures.Forms.Field = form.GetFieldsInRect(rectangle)
+            ' Get fields in the rectangular area
+            Dim fields As Field() = form.GetFieldsInRect(rectangle)
 
-            'Display Field names and values
+            ' Display Field names and values
             For Each field As Field In fields
-
-                'Display image placement properties for all placements
-                Console.Out.WriteLine("Field Name: " & field.FullName & "-" & "Field Value: " & field.Value)
-            Next field
-
+                ' Display image placement properties for all placements
+                Console.Out.WriteLine("Field Name: " + field.FullName + "-" + "Field Value: " + field.Value)
+            Next
+            ' ExEnd:GetFieldsFromRegion
         End Sub
     End Class
 End Namespace
+

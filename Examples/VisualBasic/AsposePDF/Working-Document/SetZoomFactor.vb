@@ -1,40 +1,26 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Pdf. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
-Imports Microsoft.VisualBasic
 Imports System.IO
-
+Imports System
+Imports Microsoft.VisualBasic
 Imports Aspose.Pdf
-Imports Aspose.Pdf.InteractiveFeatures
-
-Namespace VisualBasic.AsposePdf.WorkingDocuments
+Imports Aspose.Pdf.Annotations
+Namespace AsposePDF.WorkingDocuments
     Public Class SetZoomFactor
         Public Shared Sub Run()
+            ' ExStart:SetZoomFactor
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdf_WorkingDocuments()
 
-            ' instantiate new Document object
-            Dim doc As New Document(dataDir & "SetZoomFactor.pdf")
+            ' Instantiate new Document object
+            Dim doc As New Document(dataDir & Convert.ToString("SetZoomFactor.pdf"))
 
-            'Set Left Right and Z factors
-            Dim parameters() As Double = {0, 0, 10}
-
-            'Set Explicit Destination
-            Dim ED As ExplicitDestination = ExplicitDestination.CreateDestination(1, ExplicitDestinationType.XYZ, parameters)
-
-            'Set Action 
-            Dim action As New GoToAction(ED)
-
-            'Set Open action of document
+            Dim action As New GoToAction(New XYZExplicitDestination(1, 0, 0, 0.5))
             doc.OpenAction = action
-
-            'Save the document
-            doc.Save(dataDir & "Zoomed_pdf.pdf")
+            dataDir = dataDir & Convert.ToString("Zoomed_pdf_out_.pdf")
+            ' Save the document
+            doc.Save(dataDir)
+            ' ExEnd:SetZoomFactor
+            Console.WriteLine(Convert.ToString(vbLf & "Zoom factor setup successfully." & vbLf & "File saved at ") & dataDir)
         End Sub
     End Class
 End Namespace
+

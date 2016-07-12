@@ -10,7 +10,7 @@ using System.IO;
 using Aspose.Pdf;
 using Aspose.Pdf.Facades;
 
-namespace CSharp.AsposePDFFacades.StampsWatermarks
+namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.StampsWatermarks
 {
     public class AddImageStampAll
     {

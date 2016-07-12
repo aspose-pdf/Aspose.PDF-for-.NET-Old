@@ -11,7 +11,7 @@ using Aspose.Pdf;
 using Aspose.Pdf.Facades;
 using System.Text;
 
-namespace CSharp.AsposePDFFacades.Text
+namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Text
 {
     public class ExtractTextPage
     {

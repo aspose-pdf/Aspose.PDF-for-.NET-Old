@@ -1,49 +1,44 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
+using System;
 using System.IO;
-
 using Aspose.Pdf;
 using Aspose.Pdf.Facades;
-
-namespace CSharp.AsposePdf.StampsWatermarks
+namespace Aspose.Pdf.Examples.CSharp.AsposePDF.StampsWatermarks
 {
     public class DefineAlignment
     {
         public static void Run()
         {
+            // ExStart:DefineAlignment
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
             // Instantiate Document object with input file
             Document doc = new Document(dataDir+ "DefineAlignment.pdf");
-            // instantiate FormattedText object with sample string
+            // Instantiate FormattedText object with sample string
             FormattedText text = new FormattedText("This");
-            // add new text line to FormattedText
+            // Add new text line to FormattedText
             text.AddNewLineText("is sample");
             text.AddNewLineText("Center Aligned");
             text.AddNewLineText("TextStamp");
             text.AddNewLineText("Object");
-            // create TextStamp object using FormattedText
+            // Create TextStamp object using FormattedText
             TextStamp stamp = new TextStamp(text);
-            // specify the Horizontal Alignment of text stamp as Center aligned
+            // Specify the Horizontal Alignment of text stamp as Center aligned
             stamp.HorizontalAlignment = HorizontalAlignment.Center;
-            // specify the Vertical Alignment of text stamp as Center aligned
+            // Specify the Vertical Alignment of text stamp as Center aligned
             stamp.VerticalAlignment = VerticalAlignment.Center;
-            // specify the Text Horizontal Alignment of TextStamp as Center aligned
+            // Specify the Text Horizontal Alignment of TextStamp as Center aligned
             stamp.TextAlignment = HorizontalAlignment.Center;
-            // set top margin for stamp object
+            // Set top margin for stamp object
             stamp.TopMargin = 20;
-            // add the stamp object over first page of document
+            // Add the stamp object over first page of document
             doc.Pages[1].AddStamp(stamp);
-            // save the udpated document
-            doc.Save(dataDir+ "StampedPDF.pdf");
-            
-            
+
+            dataDir = dataDir + "StampedPDF_out_.pdf";
+            // Save the udpated document
+            doc.Save(dataDir);
+            // ExEnd:DefineAlignment            
+            Console.WriteLine("\nAlignment defined successfully for text stamp.\nFile saved at " + dataDir);
         }
     }
 }

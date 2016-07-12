@@ -1,31 +1,24 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Pdf. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
-Imports Microsoft.VisualBasic
 Imports System.IO
-
+Imports System
+Imports Aspose.Pdf.Annotations
 Imports Aspose.Pdf
-Imports Aspose.Pdf.InteractiveFeatures
-
-Namespace VisualBasic.AsposePdf.WorkingDocuments
+Namespace AsposePDF.WorkingDocuments
     Public Class GetZoomFactor
         Public Shared Sub Run()
+            ' ExStart:GetZoomFactor
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdf_WorkingDocuments()
 
-            ' instantiate new Document object
-            Dim doc As New Document(dataDir & "Zoomed_pdf.pdf")
+            ' Instantiate new Document object
+            Dim doc As New Document(dataDir & Convert.ToString("Zoomed_pdf.pdf"))
 
-            ' create GoToAction object
+            ' Create GoToAction object
             Dim action As GoToAction = TryCast(doc.OpenAction, GoToAction)
 
-            ' get the Zoom factor of PDF file
-            System.Console.WriteLine((TryCast(action.Destination, XYZExplicitDestination)).Zoom) ' Document zoom value;
+            ' Get the Zoom factor of PDF file
+            System.Console.WriteLine(TryCast(action.Destination, XYZExplicitDestination).Zoom)
+            ' Document zoom value;
+            ' ExEnd:GetZoomFactor
         End Sub
     End Class
 End Namespace

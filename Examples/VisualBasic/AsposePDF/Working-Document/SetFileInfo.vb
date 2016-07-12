@@ -1,27 +1,18 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Pdf. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
-Imports Microsoft.VisualBasic
 Imports System.IO
-
-Imports Aspose.Pdf
 Imports System
-
-Namespace VisualBasic.AsposePdf.WorkingDocuments
+Imports Microsoft.VisualBasic
+Imports Aspose.Pdf
+Namespace AsposePDF.WorkingDocuments
     Public Class SetFileInfo
         Public Shared Sub Run()
+            ' ExStart:SetFileInfo
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdf_WorkingDocuments()
 
-            'open document
-            Dim pdfDocument As New Document(dataDir & "SetFileInfo.pdf")
+            ' Open document
+            Dim pdfDocument As New Document(dataDir & Convert.ToString("SetFileInfo.pdf"))
 
-            'specify document information
+            ' Specify document information
             Dim docInfo As New DocumentInfo(pdfDocument)
 
             docInfo.Author = "Aspose"
@@ -31,9 +22,11 @@ Namespace VisualBasic.AsposePdf.WorkingDocuments
             docInfo.Subject = "PDF Information"
             docInfo.Title = "Setting PDF Document Information"
 
-            'save output document
-            pdfDocument.Save(dataDir & "SetFileInfo_out.pdf")
-
+            dataDir = dataDir & Convert.ToString("SetFileInfo_out_.pdf")
+            ' Save output document
+            pdfDocument.Save(dataDir)
+            ' ExEnd:SetFileInfo
+            Console.WriteLine(Convert.ToString(vbLf & "File informations setup successfully." & vbLf & "File saved at ") & dataDir)
 
         End Sub
     End Class

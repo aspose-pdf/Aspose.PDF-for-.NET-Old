@@ -1,40 +1,35 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Pdf. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
-Imports Microsoft.VisualBasic
 Imports System.IO
-
+Imports System
+Imports Microsoft.VisualBasic
 Imports Aspose.Pdf
-
-Namespace VisualBasic.AsposePdf.Pages
+Namespace AsposePDF.Pages
     Public Class ImageAsBackground
         Public Shared Sub Run()
+            ' ExStart:ImageAsBackground
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdf_Pages()
 
-            ' create a new Document object
+            ' Create a new Document object
             Dim doc As New Document()
 
-            ' add a new page to document object
+            ' Add a new page to document object
             Dim page As Page = doc.Pages.Add()
 
-            ' create BackgroundArtifact object
+            ' Create Background Artifact object
             Dim background As New BackgroundArtifact()
 
-            ' specify the image for backgroundartifact object
-            background.BackgroundImage = File.OpenRead(dataDir & "aspose-total-for-net.jpg")
+            ' Specify the image for backgroundartifact object
+            background.BackgroundImage = File.OpenRead(dataDir & Convert.ToString("aspose-total-for-net.jpg"))
 
-            ' add backgroundartifact to artifacts collection of page
+            ' Add backgroundartifact to artifacts collection of page
             page.Artifacts.Add(background)
 
-            ' save the document
-            doc.Save(dataDir & "ImageAsBackground_out.pdf")
-
+            dataDir = dataDir & Convert.ToString("ImageAsBackground_out_.pdf")
+            ' Save the document
+            doc.Save(dataDir)
+            ' ExEnd:ImageAsBackground
+            System.Console.WriteLine(Convert.ToString(vbLf & "Image as page background added successfully." & vbLf & "File saved at ") & dataDir)
         End Sub
     End Class
 End Namespace
+

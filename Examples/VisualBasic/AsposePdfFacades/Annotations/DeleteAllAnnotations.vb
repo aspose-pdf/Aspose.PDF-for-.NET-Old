@@ -12,7 +12,7 @@ Imports System.IO
 Imports Aspose.Pdf
 Imports Aspose.Pdf.Facades
 
-Namespace VisualBasic.AsposePDFFacades.Annotations
+Namespace AsposePDFFacades.Annotations
     Public Class DeleteAllAnnotations
         Public Shared Sub Run()
             ' The path to the documents directory.

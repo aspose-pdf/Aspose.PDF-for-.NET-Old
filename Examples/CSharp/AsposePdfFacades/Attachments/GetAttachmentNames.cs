@@ -11,7 +11,7 @@ using Aspose.Pdf;
 using Aspose.Pdf.Facades;
 using System;
 
-namespace CSharp.AsposePDFFacades.Attachments
+namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Attachments
 {
     public class GetAttachmentNames
     {

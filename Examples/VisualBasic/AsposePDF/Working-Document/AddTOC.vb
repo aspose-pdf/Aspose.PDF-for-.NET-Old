@@ -1,25 +1,18 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Pdf. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
-Imports Microsoft.VisualBasic
 Imports System.IO
-
+Imports System
+Imports Microsoft.VisualBasic
 Imports Aspose.Pdf
 Imports Aspose.Pdf.Text
 
-Namespace VisualBasic.AsposePdf.WorkingDocuments
+Namespace AsposePDF.WorkingDocuments
     Public Class AddTOC
         Public Shared Sub Run()
+            ' ExStart:AddTOC
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdf_WorkingDocuments()
 
             ' Load an existing PDF files
-            Dim doc As New Document(dataDir & "AddTOC.pdf")
+            Dim doc As New Document(dataDir & Convert.ToString("AddTOC.pdf"))
 
             ' Get access to first page of PDF file
             Dim tocPage As Page = doc.Pages.Insert(1)
@@ -35,14 +28,14 @@ Namespace VisualBasic.AsposePdf.WorkingDocuments
             tocPage.TocInfo = tocInfo
 
             ' Create string objects which will be used as TOC elements
-            Dim titles(3) As String
+            Dim titles As String() = New String(3) {}
             titles(0) = "First page"
             titles(1) = "Second page"
             titles(2) = "Third page"
             titles(3) = "Fourth page"
             For i As Integer = 0 To 1
                 ' Create Heading object
-                Dim heading2 As New Aspose.Pdf.Heading(1)
+                Dim heading2 As New Heading(1)
                 Dim segment2 As New TextSegment()
                 heading2.TocPage = tocPage
                 heading2.Segments.Add(segment2)
@@ -58,10 +51,12 @@ Namespace VisualBasic.AsposePdf.WorkingDocuments
 
                 ' Add heading to page containing TOC
                 tocPage.Paragraphs.Add(heading2)
-            Next i
+            Next
+            dataDir = dataDir & Convert.ToString("TOC_out_.pdf")
             ' Save the updated document
-            doc.Save(dataDir & "TOC_Output.pdf")
-
+            doc.Save(dataDir)
+            ' ExEnd:AddTOC
+            Console.WriteLine(Convert.ToString(vbLf & "TOC added successfully to an existing PDF." & vbLf & "File saved at ") & dataDir)
         End Sub
     End Class
 End Namespace

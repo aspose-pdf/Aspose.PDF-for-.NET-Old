@@ -1,35 +1,26 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Pdf. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
-Imports Microsoft.VisualBasic
 Imports System.IO
-
-Imports Aspose.Pdf
 Imports System
+Imports Aspose.Pdf
 
-Namespace VisualBasic.AsposePdf.Attachments
+Namespace AsposePDF.Attachments
     Public Class GetIndividualAttachment
         Public Shared Sub Run()
+            ' ExStart:GetIndividualAttachment
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdf_Attachments()
 
-            'open document
-            Dim pdfDocument As New Document(dataDir & "GetIndividualAttachment.pdf")
+            ' Open document
+            Dim pdfDocument As New Document(dataDir & Convert.ToString("GetIndividualAttachment.pdf"))
 
-            'get particular embedded file
+            ' Get particular embedded file
             Dim fileSpecification As FileSpecification = pdfDocument.EmbeddedFiles(1)
 
-            'get the file properties
+            ' Get the file properties
             Console.WriteLine("Name: {0}", fileSpecification.Name)
             Console.WriteLine("Description: {0}", fileSpecification.Description)
             Console.WriteLine("Mime Type: {0}", fileSpecification.MIMEType)
 
-            'check if parameter object contains the parameters
+            ' Check if parameter object contains the parameters
             If fileSpecification.Params IsNot Nothing Then
                 Console.WriteLine("CheckSum: {0}", fileSpecification.Params.CheckSum)
                 Console.WriteLine("Creation Date: {0}", fileSpecification.Params.CreationDate)
@@ -38,15 +29,14 @@ Namespace VisualBasic.AsposePdf.Attachments
             End If
 
 
-            'get the attachment and write to file or stream
+            ' Get the attachment and write to file or stream
             Dim fileContent(fileSpecification.Contents.Length - 1) As Byte
             fileSpecification.Contents.Read(fileContent, 0, fileContent.Length)
 
-            Dim fileStream As New FileStream(dataDir & "test.txt", FileMode.Create)
+            Dim fileStream As New FileStream((dataDir & Convert.ToString("test_out_")) + ".txt", FileMode.Create)
             fileStream.Write(fileContent, 0, fileContent.Length)
             fileStream.Close()
-
-
+            ' ExEnd:GetIndividualAttachment
         End Sub
     End Class
 End Namespace

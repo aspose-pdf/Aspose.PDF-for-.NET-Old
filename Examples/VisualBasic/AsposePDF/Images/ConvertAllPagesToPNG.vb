@@ -1,45 +1,35 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Pdf. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
-Imports Microsoft.VisualBasic
+﻿Imports System
 Imports System.IO
-
 Imports Aspose.Pdf
 Imports Aspose.Pdf.Devices
-
-Namespace VisualBasic.AsposePdf.Images
+Namespace AsposePDF.Images
     Public Class ConvertAllPagesToPNG
         Public Shared Sub Run()
+            ' ExStart:ConvertAllPagesToPNG
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdf_Images()
-
-            'Open document
-            Dim pdfDocument As New Document(dataDir & "ConvertAllPagesToPNG.pdf")
-
-
+            ' Open document
+            Dim pdfDocument As New Document(dataDir & Convert.ToString("ConvertAllPagesToPNG.pdf"))
             For pageCount As Integer = 1 To pdfDocument.Pages.Count
-                Using imageStream As New FileStream(dataDir & "image" & pageCount & ".png", FileMode.Create)
-                    'create PNG device with specified attributes
-                    'Width, Height, Resolution, Quality
-                    'Quality [0-100], 100 is Maximum
-                    'Create Resolution object
+                Using imageStream As New FileStream("image" & pageCount & "_out_" & ".png", FileMode.Create)
+                    ' Create PNG device with specified attributes
+                    ' Width, Height, Resolution, Quality
+                    ' Quality [0-100], 100 is Maximum
+                    ' Create Resolution object
                     Dim resolution As New Resolution(300)
                     Dim pngDevice As New PngDevice(resolution)
 
-                    'Convert a particular page and save the image to stream
+                    ' Convert a particular page and save the image to stream
                     pngDevice.Process(pdfDocument.Pages(pageCount), imageStream)
 
-                    'Close stream
+                    ' Close stream
                     imageStream.Close()
 
                 End Using
             Next pageCount
-
+            ' ExEnd:ConvertAllPagesToPNG
+            System.Console.WriteLine("PDF pages are converted to PNG successfully!")
         End Sub
+
     End Class
 End Namespace

@@ -1,44 +1,35 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
-using System.IO;
-
 using Aspose.Pdf;
 using Aspose.Pdf.Text;
 using Aspose.Pdf.Text.TextOptions;
 using System;
-
-namespace CSharp.AsposePdf.Text
+namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
 {
     public class SearchRegularExpression
     {
         public static void Run()
         {
+            // ExStart:SearchRegularExpression
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-            //open document
-            Document pdfDocument = new Document(dataDir + "SearchRegularExpression.pdf");
+            // Open document
+            Document pdfDocument = new Document(dataDir + "SearchRegularExpressionAll.pdf");
             
-            //create TextAbsorber object to find all the phrases matching the regular expression
+            // Create TextAbsorber object to find all the phrases matching the regular expression
             TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("\\d{4}-\\d{4}"); //like 1999-2000
             
-            //set text search option to specify regular expression usage
+            // Set text search option to specify regular expression usage
             TextSearchOptions textSearchOptions = new TextSearchOptions(true);
             
             textFragmentAbsorber.TextSearchOptions = textSearchOptions;
             
-            //accept the absorber for all the pages
+            // Accept the absorber for all the pages
             pdfDocument.Pages.Accept(textFragmentAbsorber);
             
-            //get the extracted text fragments
+            // Get the extracted text fragments
             TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
             
-            //loop through the fragments
+            // Loop through the fragments
             foreach (TextFragment textFragment in textFragmentCollection)
             {
                 Console.WriteLine("Text : {0} ", textFragment.Text);
@@ -51,7 +42,8 @@ namespace CSharp.AsposePdf.Text
                 Console.WriteLine("Font - IsSubset : {0} ", textFragment.TextState.Font.IsSubset);
                 Console.WriteLine("Font Size : {0} ", textFragment.TextState.FontSize);
                 Console.WriteLine("Foreground Color : {0} ", textFragment.TextState.ForegroundColor);
-            } 
+            }
+            // ExEnd:SearchRegularExpression
         }
     }
 }

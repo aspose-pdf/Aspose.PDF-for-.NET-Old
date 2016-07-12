@@ -1,40 +1,34 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
 using System.IO;
-
+using System;
 using Aspose.Pdf;
-
-namespace CSharp.AsposePdf.StampsWatermarks
+namespace Aspose.Pdf.Examples.CSharp.AsposePDF.StampsWatermarks
 {
     public class ImageInFooter
     {
         public static void Run()
         {
+            // ExStart:ImageInFooter
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
-
-            //open document
+            // Open document
             Document pdfDocument = new Document(dataDir+ "ImageInFooter.pdf");
-            //create footer
+            // Create footer
             ImageStamp imageStamp = new ImageStamp(dataDir+ "aspose-logo.jpg");
-            //set properties of the stamp
+            // Set properties of the stamp
             imageStamp.BottomMargin = 10;
             imageStamp.HorizontalAlignment = HorizontalAlignment.Center;
             imageStamp.VerticalAlignment = VerticalAlignment.Bottom;
-            //add footer on all pages
+            // Add footer on all pages
             foreach (Page page in pdfDocument.Pages)
             {
                 page.AddStamp(imageStamp);
             }
-
-            //save updated PDF file
-            pdfDocument.Save(dataDir+ "ImageInFooter_out.pdf");
+            dataDir = dataDir + "ImageInFooter_out_.pdf";
+            // Save updated PDF file
+            pdfDocument.Save(dataDir);
+            // ExEnd:ImageInFooter
+            Console.WriteLine("\nImage in footer added successfully.\nFile saved at " + dataDir);
         }
     }
 }

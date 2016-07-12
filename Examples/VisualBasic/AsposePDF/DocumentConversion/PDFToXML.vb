@@ -1,26 +1,18 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2014 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Pdf. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
-Imports Microsoft.VisualBasic
 Imports System.IO
-
+Imports System
+Imports Microsoft.VisualBasic
 Imports Aspose.Pdf
-
-Namespace VisualBasic.AsposePdf.DocumentConversion
+Namespace AsposePDF.DocumentConversion
     Public Class PDFToXML
         Public Shared Sub Run()
+            ' ExStart:PDFToXML
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdf_DocumentConversion()
-
             ' Load source PDF file
-            Dim doc As New Document(dataDir & "Input_new.pdf")
+            Dim doc As New Document(dataDir & Convert.ToString("input.pdf"))
             ' Save output in XML format
-            doc.Save(dataDir & "Output.xml", SaveFormat.MobiXml)
+            doc.Save(dataDir & Convert.ToString("PDFToXML_out_.xml"), SaveFormat.MobiXml)
+            ' ExEnd:PDFToXML
         End Sub
     End Class
 End Namespace

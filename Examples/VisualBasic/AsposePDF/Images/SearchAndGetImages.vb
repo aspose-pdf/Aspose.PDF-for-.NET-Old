@@ -1,25 +1,15 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Pdf. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
-Imports Microsoft.VisualBasic
-Imports System.IO
-
-Imports Aspose.Pdf
+﻿Imports System.IO
 Imports System
-
-Namespace VisualBasic.AsposePdf.Images
+Imports Aspose.Pdf
+Namespace AsposePDF.Images
     Public Class SearchAndGetImages
         Public Shared Sub Run()
+            ' ExStart:SearchAndGetImages 
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdf_Images()
 
             ' Open document
-            Dim doc As New Aspose.Pdf.Document(dataDir & "SearchAndGetImages.pdf")
+            Dim doc As New Document(dataDir & Convert.ToString("SearchAndGetImages.pdf"))
 
             ' Create ImagePlacementAbsorber object to perform image placement search
             Dim abs As New ImagePlacementAbsorber()
@@ -27,22 +17,20 @@ Namespace VisualBasic.AsposePdf.Images
             ' Accept the absorber for all the pages
             doc.Pages.Accept(abs)
 
-            'Loop through all ImagePlacements, get image and ImagePlacement Properties
+            ' Loop through all ImagePlacements, get image and ImagePlacement Properties
             For Each imagePlacement As ImagePlacement In abs.ImagePlacements
-                'Get the image using ImagePlacement object
+                ' Get the image using ImagePlacement object
                 Dim image As XImage = imagePlacement.Image
 
-                'Display image placement properties for all placements
-                Console.Out.WriteLine("image width:" & imagePlacement.Rectangle.Width)
-                Console.Out.WriteLine("image height:" & imagePlacement.Rectangle.Height)
-                Console.Out.WriteLine("image LLX:" & imagePlacement.Rectangle.LLX)
-                Console.Out.WriteLine("image LLY:" & imagePlacement.Rectangle.LLY)
-                Console.Out.WriteLine("image horizontal resolution:" & imagePlacement.Resolution.X)
-                Console.Out.WriteLine("image vertical resolution:" & imagePlacement.Resolution.Y)
-            Next imagePlacement
-
-
-
+                ' Display image placement properties for all placements
+                Console.Out.WriteLine("image width:" + imagePlacement.Rectangle.Width.ToString())
+                Console.Out.WriteLine("image height:" + imagePlacement.Rectangle.Height.ToString())
+                Console.Out.WriteLine("image LLX:" + imagePlacement.Rectangle.LLX.ToString())
+                Console.Out.WriteLine("image LLY:" + imagePlacement.Rectangle.LLY.ToString())
+                Console.Out.WriteLine("image horizontal resolution:" + imagePlacement.Resolution.X.ToString())
+                Console.Out.WriteLine("image vertical resolution:" + imagePlacement.Resolution.Y.ToString())
+            Next
+            ' ExEnd:SearchAndGetImages 
         End Sub
     End Class
 End Namespace

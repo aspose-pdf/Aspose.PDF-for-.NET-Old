@@ -1,41 +1,32 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
+using System;
 using System.IO;
-
+using Aspose.Pdf.Annotations;
 using Aspose.Pdf;
-using Aspose.Pdf.InteractiveFeatures;
-
-namespace CSharp.AsposePdf.LinksActions
+namespace Aspose.Pdf.Examples.CSharp.AsposePDF.LinksActions
 {
     public class SpecifyPageWhenViewing
     {
         public static void Run()
         {
+            // ExStart:SpecifyPageWhenViewing
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
-            // load the PDF file
-            Document doc = new Document(dataDir+ "SpecifyPageWhenViewing.pdf");
-            // get the instance of second page of document
+            // Load the PDF file
+            Document doc = new Document(dataDir + "SpecifyPageWhenViewing.pdf");
+            // Get the instance of second page of document
             Page page2 = doc.Pages[2];
-            // create the variable to set the zoom factor of target page
+            // Create the variable to set the zoom factor of target page
             double zoom = 1;
-            // create GoToAction instance
-            Aspose.Pdf.InteractiveFeatures.GoToAction action = new Aspose.Pdf.InteractiveFeatures.GoToAction(doc.Pages[2]);
+            // Create GoToAction instance
+            GoToAction action = new GoToAction(doc.Pages[2]);
             // Go to 2 page
             action.Destination = new XYZExplicitDestination(page2, 0, page2.Rect.Height, zoom);
-            // set the document open action
+            // Set the document open action
             doc.OpenAction = action;
-            // save updated document
-            doc.Save(dataDir + "goto2page.pdf");
- 
-            
-            
+            // Save updated document
+            doc.Save(dataDir + "goto2page_out_.pdf");
+            // ExEnd:SpecifyPageWhenViewing                        
         }
     }
 }

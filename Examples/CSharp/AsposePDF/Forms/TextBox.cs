@@ -1,34 +1,27 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
 using System.IO;
-
+using System;
+using Aspose.Pdf.Forms;
 using Aspose.Pdf;
-using Aspose.Pdf.InteractiveFeatures.Forms;
-using Aspose.Pdf.InteractiveFeatures.Annotations;
-
-namespace CSharp.AsposePdf.Forms
+using Aspose.Pdf.Annotations;
+namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Forms
 {
     public class TextBox
     {
         public static void Run()
         {
+            // ExStart:AddTextBoxField
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
             //Open document
-            Document pdfDocument = new Document(dataDir + "TextBox.pdf");
+            Document pdfDocument = new Document(dataDir + "TextField.pdf");
 
-            //Create a field
+            // Create a field
             TextBoxField textBoxField = new TextBoxField(pdfDocument.Pages[1], new Aspose.Pdf.Rectangle(100, 200, 300, 300));
             textBoxField.PartialName = "textbox1";
             textBoxField.Value = "Text Box";
-            
-            //textBoxField.Border = new Border(
+
+            // TextBoxField.Border = new Border(
             Border border = new Border(textBoxField);
             border.Width = 5;
             border.Dash = new Dash(1, 1);
@@ -36,11 +29,14 @@ namespace CSharp.AsposePdf.Forms
 
             textBoxField.Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
 
-            //Add field to the document
+            // Add field to the document
             pdfDocument.Form.Add(textBoxField, 1);
 
-            //Save modified PDF
-            pdfDocument.Save(dataDir + "TextBox_out.pdf");
+            dataDir = dataDir + "TextBox_out_.pdf";
+            // Save modified PDF
+            pdfDocument.Save(dataDir);
+            // ExEnd:AddTextBoxField
+            Console.WriteLine("\nTextbox field added successfully.\nFile saved at " + dataDir);
 
         }
     }

@@ -1,40 +1,34 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
-using System.IO;
-
+using System;
+using Aspose.Pdf.Annotations;
 using Aspose.Pdf;
-
-namespace CSharp.AsposePdf.Bookmarks
+namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Bookmarks
 {
     public class AddBookmark
     {
         public static void Run()
         {
+            // ExStart:AddBookmark
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
-            //open document
+            // Open document
             Document pdfDocument = new Document(dataDir + "AddBookmark.pdf");
 
-            //create a bookmark object
+            // Create a bookmark object
             OutlineItemCollection pdfOutline = new OutlineItemCollection(pdfDocument.Outlines);
             pdfOutline.Title = "Test Outline";
             pdfOutline.Italic = true;
             pdfOutline.Bold = true;
-
-            //set the destination page number
-            pdfOutline.Action = new Aspose.Pdf.InteractiveFeatures.GoToAction(pdfDocument.Pages[1]);
-
-            //add bookmark in the document's outline collection.
+            // Set the destination page number
+            pdfOutline.Action = new GoToAction(pdfDocument.Pages[1]);
+            // Add bookmark in the document's outline collection.
             pdfDocument.Outlines.Add(pdfOutline);
 
-            //save output
-            pdfDocument.Save(dataDir + "AddBookmark_out.pdf");
+            dataDir = dataDir + "AddBookmark_out_.pdf";
+            // Save output
+            pdfDocument.Save(dataDir);
+            // ExEnd:AddBookmark
+            Console.WriteLine("\nBookmark added successfully.\nFile saved at " + dataDir);
         }
     }
 }

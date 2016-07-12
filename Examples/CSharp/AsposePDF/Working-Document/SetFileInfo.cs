@@ -1,28 +1,20 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
-using System.IO;
-
-using Aspose.Pdf;
 using System;
-
-namespace CSharp.AsposePdf.WorkingDocuments
+using System.IO;
+using Aspose.Pdf;
+namespace Aspose.Pdf.Examples.CSharp.AsposePDF.WorkingDocuments
 {
     public class SetFileInfo
     {
         public static void Run()
         {
+            // ExStart:SetFileInfo
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-            //open document
+            // Open document
             Document pdfDocument = new Document(dataDir + "SetFileInfo.pdf");
 
-            //specify document information
+            // Specify document information
             DocumentInfo docInfo = new DocumentInfo(pdfDocument);
 
             docInfo.Author = "Aspose";
@@ -32,9 +24,11 @@ namespace CSharp.AsposePdf.WorkingDocuments
             docInfo.Subject = "PDF Information";
             docInfo.Title = "Setting PDF Document Information";
 
-            //save output document
-            pdfDocument.Save(dataDir + "SetFileInfo_out.pdf");
-
+            dataDir = dataDir + "SetFileInfo_out_.pdf";
+            // Save output document
+            pdfDocument.Save(dataDir);
+            // ExEnd:SetFileInfo
+            Console.WriteLine("\nFile informations setup successfully.\nFile saved at " + dataDir);
             
         }
     }

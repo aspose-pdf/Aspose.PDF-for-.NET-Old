@@ -1,31 +1,25 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Pdf. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
-Imports Microsoft.VisualBasic
 Imports System.IO
-
+Imports System
+Imports Microsoft.VisualBasic
 Imports Aspose.Pdf
-
-Namespace VisualBasic.AsposePdf.Annotations
+Namespace AsposePDF.Annotations
     Public Class DeleteParticularAnnotation
         Public Shared Sub Run()
+            ' ExStart:DeleteParticularAnnotation
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdf_Annotations()
 
-            'open document
-            Dim pdfDocument As New Document(dataDir & "DeleteParticularAnnotation.pdf")
+            ' Open document
+            Dim pdfDocument As New Document(dataDir & Convert.ToString("DeleteParticularAnnotation.pdf"))
 
-            'delete particular annotation
+            ' Delete particular annotation
             pdfDocument.Pages(1).Annotations.Delete(1)
 
-            'save updated document
-            pdfDocument.Save(dataDir & "DeleteParticularAnnotation_out.pdf")
-
+            dataDir = dataDir & Convert.ToString("DeleteParticularAnnotation_out_.pdf")
+            ' Save updated document
+            pdfDocument.Save(dataDir)
+            ' ExEnd:DeleteParticularAnnotation
+            Console.WriteLine(Convert.ToString(vbLf & "Particular annotation deleted successfully." & vbLf & "File saved at ") & dataDir)
         End Sub
     End Class
 End Namespace

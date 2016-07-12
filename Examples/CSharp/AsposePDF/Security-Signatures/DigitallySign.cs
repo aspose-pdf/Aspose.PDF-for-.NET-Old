@@ -1,63 +1,64 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
 using System.IO;
-
+using System;
 using Aspose.Pdf;
 using Aspose.Pdf.Facades;
-using Aspose.Pdf.InteractiveFeatures.Forms;
 using System.Collections;
-
-namespace CSharp.AsposePdf.SecuritySignatures
+using Aspose.Pdf.Forms;
+namespace Aspose.Pdf.Examples.CSharp.AsposePDF.SecuritySignatures
 {
     public class DigitallySign
     {
         public static void Run()
         {
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
-
-            string inFile = dataDir+ @"DigitallySign.pdf";
-            string outFile = dataDir + @"DigitallySign_out.pdf";
-            using (Document document = new Document(inFile))
+            try
             {
-                using (PdfFileSignature signature = new PdfFileSignature(document))
+                // ExStart:DigitallySign
+                // The path to the documents directory.
+                string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+                string pbxFile = "";
+                string inFile = dataDir + @"DigitallySign.pdf";
+                string outFile = dataDir + @"DigitallySign_out_.pdf";
+                using (Document document = new Document(inFile))
                 {
-                    PKCS7 pkcs = new PKCS7(@"c:\test.pfx", "WebSales"); // Use PKCS7/PKCS7Detached objects
-                    DocMDPSignature docMdpSignature = new DocMDPSignature(pkcs, DocMDPAccessPermissions.FillingInForms);
-                    System.Drawing.Rectangle rect = new System.Drawing.Rectangle(100, 100, 200, 100);
-                    //set signature appearance
-                    signature.SignatureAppearance = dataDir + @"aspose-logo.jpg";
-                    //create any of the three signature types
-                    signature.Certify(1, "Signature Reason", "Contact", "Location", true, rect, docMdpSignature);
-                    //save output PDF file
-                    signature.Save(outFile);
-                }
-            }
-
-            using (Document document = new Document(outFile))
-            {
-                using (PdfFileSignature signature = new PdfFileSignature(document))
-                {
-                    IList sigNames = signature.GetSignNames();
-                    if (sigNames.Count > 0) // Any signatures?
+                    using (PdfFileSignature signature = new PdfFileSignature(document))
                     {
-                        if (signature.VerifySigned(sigNames[0] as string)) // Verify first one
+                        PKCS7 pkcs = new PKCS7(pbxFile, "WebSales"); // Use PKCS7/PKCS7Detached objects
+                        DocMDPSignature docMdpSignature = new DocMDPSignature(pkcs, DocMDPAccessPermissions.FillingInForms);
+                        System.Drawing.Rectangle rect = new System.Drawing.Rectangle(100, 100, 200, 100);
+                        // Set signature appearance
+                        signature.SignatureAppearance = dataDir + @"aspose-logo.jpg";
+                        // Create any of the three signature types
+                        signature.Certify(1, "Signature Reason", "Contact", "Location", true, rect, docMdpSignature);
+                        // Save output PDF file
+                        signature.Save(outFile);
+                    }
+                }
+
+                using (Document document = new Document(outFile))
+                {
+                    using (PdfFileSignature signature = new PdfFileSignature(document))
+                    {
+                        IList sigNames = signature.GetSignNames();
+                        if (sigNames.Count > 0) // Any signatures?
                         {
-                            if (signature.IsCertified) // Certified?
+                            if (signature.VerifySigned(sigNames[0] as string)) // Verify first one
                             {
-                                if (signature.GetAccessPermissions() == DocMDPAccessPermissions.FillingInForms) // Get access permission
+                                if (signature.IsCertified) // Certified?
                                 {
-                                    // Do something
+                                    if (signature.GetAccessPermissions() == DocMDPAccessPermissions.FillingInForms) // Get access permission
+                                    {
+                                        // Do something
+                                    }
                                 }
                             }
                         }
                     }
                 }
+                // ExEnd:DigitallySign
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
             }
         }
     }
