@@ -3,21 +3,21 @@ using Aspose.Pdf;
 using Aspose.Pdf.Facades;
 namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Annotations
 {
-    public class DeleteAllAnnotations
+    public class DeleteSpecificAnnotations
     {
         public static void Run()
         {
-            // ExStart:DeleteAllAnnotations
+            // ExStart:DeleteSpecificAnnotations
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Annotations();
             // Open document
             PdfAnnotationEditor annotationEditor = new PdfAnnotationEditor();
             annotationEditor.BindPdf(dataDir+ "DeleteAllAnnotations.pdf");
-            // Delete all annoations
-            annotationEditor.DeleteAnnotations();
+            // Delete specific annoations
+            annotationEditor.DeleteAnnotations("Text");
             // Save updated PDF
-            annotationEditor.Save(dataDir+ "DeleteAllAnnotations_out_.pdf");
-            // ExEnd:DeleteAllAnnotations
+            annotationEditor.Save(dataDir + "DeleteSpecificAnnotations_out_.pdf");
+            // ExEnd:DeleteSpecificAnnotations
         }
     }
 }

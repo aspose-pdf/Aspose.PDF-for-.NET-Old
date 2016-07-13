@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="AsposePdfFacades\Annotations\AddFreeTextAnnotation.cs" />
     <Compile Include="AsposePdfFacades\Annotations\CreateFileAnnotation.cs" />
+    <Compile Include="AsposePdfFacades\Annotations\DeleteSpecificAnnotations.cs" />
     <Compile Include="AsposePdfFacades\Annotations\DeleteAllAnnotations.cs" />
     <Compile Include="AsposePdfFacades\Annotations\ExportAnnotations.cs" />
     <Compile Include="AsposePdfFacades\Annotations\ExtractAnnotations.cs" />

@@ -448,6 +448,30 @@ namespace Aspose.Pdf.Examples.CSharp
             //XSLToPdf.Run();
             //XMLAsTemplate.Run();
             //LoadDataInXMLTemplate.Run();
+
+            // =====================================================
+            // =====================================================
+            // Aspose.Pdf.Facades
+            // =====================================================
+            // =====================================================
+
+            //// Text
+            //// =====================================================            
+            //ReplaceText.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Text.ReplaceTextPage.Run();
+            //ExtractText.Run();
+            //ExtractTextPageRange.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Text.ExtractTextPage.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Text.AddText.Run();
+
+            //// Annotations
+            //// =====================================================            
+            //AddFreeTextAnnotation.Run();
+            //CreateFileAnnotation.Run();
+            //DeleteAllAnnotations.Run();
+            //UpdateAnnotations.Run();
+            //ImportAnnotations.Run();
+            //ExportAnnotations.Run();           
                                  
             // Stop before exiting
             Console.WriteLine("\n\nProgram Finished. Press any key to exit....");

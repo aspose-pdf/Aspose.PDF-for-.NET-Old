@@ -21,7 +21,7 @@ Namespace AsposePDF.Annotations
             lineInfo.Visibility = True
             lineInfo.LineColor = System.Drawing.Color.Red
             lineInfo.LineWidth = 2
-            Dim length As Integer = lineInfo.VerticeCoordinate.Length / 2
+            Dim length As Integer = Convert.ToInt32( lineInfo.VerticeCoordinate.Length / 2)
             Dim gesture As Point() = New Point(length - 1) {}
             For i As Integer = 0 To length - 1
                 gesture(i) = New Point(lineInfo.VerticeCoordinate(2 * i), lineInfo.VerticeCoordinate(2 * i + 1))

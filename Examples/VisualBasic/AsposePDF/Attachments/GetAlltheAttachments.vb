@@ -38,7 +38,7 @@ Namespace AsposePDF.Attachments
                 End If
 
                 ' Get the attachment and write to file or stream
-                Dim fileContent As Byte() = New Byte(fileSpecification.Contents.Length - 1) {}
+                Dim fileContent As Byte() = New Byte(Convert.ToInt32(fileSpecification.Contents.Length - 1)) {}
                 fileSpecification.Contents.Read(fileContent, 0, fileContent.Length)
                 Dim fileStream As New FileStream((dataDir & count) + "_out_" + ".txt", FileMode.Create)
                 fileStream.Write(fileContent, 0, fileContent.Length)

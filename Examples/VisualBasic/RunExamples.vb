@@ -36,6 +36,9 @@ Imports Aspose.Pdf.Examples.VisualBasic.AsposePdfGenerator.SecurityFeatures
 Imports Aspose.Pdf.Examples.VisualBasic.AsposePdfGenerator.UtilityFeatures
 Imports Aspose.Pdf.Examples.VisualBasic.AsposePdfGenerator.AdvanceFeatures
 
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Text
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Annotations
+
 Module RunExamples
     Sub Main()
         Console.WriteLine("Open RunExamples.cs. " & vbLf & "In Main() method uncomment the example that you want to run.")
@@ -210,7 +213,6 @@ Module RunExamples
         'HorizontallyAndVerticallyRadioButtons.Run()
         'GroupedCheckBoxes.Run()
 
-
         '''' Links-Actions
         '''' =====================================================   
         'CreateApplicationLink.Run()
@@ -302,8 +304,8 @@ Module RunExamples
         '' =====================================================
         '' =====================================================
 
-        '''/ General
-        '''/ =====================================================            
+        '''' General
+        '''' =====================================================            
         'HelloWorldUsingXML.Run()
         'HelloWorldUsingAPI.Run()
         'HelloWorldUsingXMLAndAPI.Run()
@@ -432,6 +434,30 @@ Module RunExamples
         'XSLToPdf.Run()
         'XMLAsTemplate.Run()
         'LoadDataInXMLTemplate.Run()
+
+        '' =====================================================
+        '' =====================================================
+        '' Aspose.Pdf.Facades
+        '' =====================================================
+        '' =====================================================
+
+        '''' Text
+        '''' =====================================================            
+        'ReplaceText.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Text.ReplaceTextPage.Run()
+        'ExtractText.Run()
+        'ExtractTextPageRange.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Text.ExtractTextPage.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Text.AddText.Run()
+
+        '''' Annotations
+        '''' =====================================================            
+        'AddFreeTextAnnotation.Run()
+        'CreateFileAnnotation.Run()
+        'DeleteAllAnnotations.Run()
+        'UpdateAnnotations.Run()
+        'ImportAnnotations.Run()
+        'ExportAnnotations.Run()
 
         ' Stop before exiting
         Console.WriteLine(vbLf & vbLf & "Program Finished. Press any key to exit....")

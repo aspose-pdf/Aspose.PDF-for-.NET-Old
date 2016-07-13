@@ -32,7 +32,7 @@ Namespace AsposePDF.DocumentConversion.PDFToHTMLFormat
         End Sub
         ' ExStart:SavingToStream
         Private Shared Sub SavingToStream(htmlSavingInfo As HtmlSaveOptions.HtmlPageMarkupSavingInfo)
-            Dim resultHtmlAsBytes As Byte() = New Byte(htmlSavingInfo.ContentStream.Length - 1) {}
+            Dim resultHtmlAsBytes As Byte() = New Byte(Convert.ToInt32(htmlSavingInfo.ContentStream.Length - 1)) {}
             htmlSavingInfo.ContentStream.Read(resultHtmlAsBytes, 0, resultHtmlAsBytes.Length)
             ' Here You can use any writable stream, file stream is taken just as example
             Dim fileName As String = "stream_out_.html"

@@ -17,7 +17,7 @@ Namespace AsposePDF.Images
             Dim page As Page = doc.Pages.Add()
             ' Load the source image file to Stream object
             Dim fs As New FileStream(dataDir & Convert.ToString("aspose-logo.jpg"), FileMode.Open, FileAccess.Read)
-            Dim tmpBytes(fs.Length) As Byte
+            Dim tmpBytes(Convert.ToInt32(fs.Length)) As Byte
             fs.Read(tmpBytes, 0, Convert.ToInt32(fs.Length))
 
             Dim mystream As MemoryStream = New MemoryStream(tmpBytes)

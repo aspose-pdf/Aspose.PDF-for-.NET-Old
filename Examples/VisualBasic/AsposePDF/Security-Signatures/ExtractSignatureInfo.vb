@@ -19,7 +19,7 @@ Namespace AsposePDF.SecuritySignatures
                             Dim cerStream As Stream = sf.ExtractCertificate()
                             If cerStream IsNot Nothing Then
                                 Using cerStream
-                                    Dim bytes As Byte() = New Byte(cerStream.Length - 1) {}
+                                    Dim bytes As Byte() = New Byte(Convert.ToInt32(cerStream.Length - 1)) {}
                                     Using fs As New FileStream(dataDir & Convert.ToString("input.cer"), FileMode.CreateNew)
                                         cerStream.Read(bytes, 0, bytes.Length)
                                         fs.Write(bytes, 0, bytes.Length)

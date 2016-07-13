@@ -50,6 +50,7 @@
     <Compile Include="AsposePdfFacades\Annotations\AddFreeTextAnnotation.vb" />
     <Compile Include="AsposePdfFacades\Annotations\CreateFileAnnotation.vb" />
     <Compile Include="AsposePdfFacades\Annotations\DeleteAllAnnotations.vb" />
+    <Compile Include="AsposePdfFacades\Annotations\DeleteSpecificAnnotations.vb" />
     <Compile Include="AsposePdfFacades\Annotations\ExportAnnotations.vb" />
     <Compile Include="AsposePdfFacades\Annotations\ExtractAnnotations.vb" />
     <Compile Include="AsposePdfFacades\Annotations\ImportAnnotations.vb" />
