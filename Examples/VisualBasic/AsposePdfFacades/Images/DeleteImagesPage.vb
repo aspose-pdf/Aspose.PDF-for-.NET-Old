@@ -1,36 +1,27 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2014 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Pdf. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
-Imports Microsoft.VisualBasic
 Imports System.IO
-
+Imports System
 Imports Aspose.Pdf
 Imports Aspose.Pdf.Facades
 
 Namespace AsposePDFFacades.Images
     Public Class DeleteImagesPage
         Public Shared Sub Run()
+            ' ExStart:DeleteImagesPage
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdfFacades_Images()
-            'open PDF file
+            ' Open PDF file
             Dim contentEditor As New PdfContentEditor()
-            contentEditor.BindPdf(dataDir & "DeleteImages-Page.pdf")
+            contentEditor.BindPdf(dataDir & Convert.ToString("DeleteImages-Page.pdf"))
 
-            'array of images to be deleted
-            Dim imageIndex() As Integer = {1}
+            ' Array of images to be deleted
+            Dim imageIndex As Integer() = New Integer() {1}
 
-            'delete the images from the particular page
+            ' Delete the images from the particular page
             contentEditor.DeleteImage(2, imageIndex)
 
-            'save output PDF
-            contentEditor.Save(dataDir & "DeleteImages-Page_out.pdf")
-
-
+            ' Save output PDF
+            contentEditor.Save(dataDir & Convert.ToString("DeleteImages-Page_out_.pdf"))
+            ' ExEnd:DeleteImagesPage           
 
         End Sub
     End Class

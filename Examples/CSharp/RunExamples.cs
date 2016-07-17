@@ -471,7 +471,38 @@ namespace Aspose.Pdf.Examples.CSharp
             //DeleteAllAnnotations.Run();
             //UpdateAnnotations.Run();
             //ImportAnnotations.Run();
-            //ExportAnnotations.Run();           
+            //ExportAnnotations.Run(); 
+
+            //// Attachments
+            //// =====================================================            
+            //Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Attachments.AddAttachment.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Attachments.AddAttachmentStream.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Attachments.DeleteAllAttachments.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Attachments.ExtractAllAttachments.Run();
+            //GetAttachmentNames.Run();
+
+            //// Working-Document
+            //// =====================================================   
+            //SetViewerPreference.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePDFFacades.WorkingDocument.SetFileInfo.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePDFFacades.WorkingDocument.GetFileInfo.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePDFFacades.WorkingDocument.SetXMPMetadata.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePDFFacades.WorkingDocument.GetXMPMetadata.Run();
+            //PageBreak.Run();
+
+            //// Images
+            //// =====================================================   
+            //Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Images.ReplaceImage.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Images.ExtractImages.Run();
+            //ExtractImagesStream.Run();
+            //ExtractImagesPage.Run();
+            //DeleteAllImages.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Images.AddImage.Run();
+            //ConvertPDFPages.Run();
+            //ConvertToTIFFSettings.Run();
+            //ConvertToTIFF.Run();
+            //ConvertPageRegion.Run();
+            //ExtractImageExtractionMode.Run();
                                  
             // Stop before exiting
             Console.WriteLine("\n\nProgram Finished. Press any key to exit....");
@@ -583,7 +614,7 @@ namespace Aspose.Pdf.Examples.CSharp
         }
         public static String GetDataDir_AsposePdfFacades_WorkingDocuments()
         {
-            return Path.GetFullPath(GetDataDir_Data() + "AsposePdfFacades/Working-Documents/");
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePdfFacades/Working-Document/");
         }
         public static String GetDataDir_AsposePdfGenerator_Conversion()
         {

@@ -1,33 +1,25 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2014 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Pdf. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
+Imports System
 Imports Microsoft.VisualBasic
 Imports System.IO
-
 Imports Aspose.Pdf
 Imports Aspose.Pdf.Facades
 
 Namespace AsposePDFFacades.Attachments
     Public Class ExtractAllAttachments
         Public Shared Sub Run()
+            ' ExStart:ExtractAllAttachments
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdfFacades_Attachments()
-            'open document
+            ' Open document
             Dim pdfExtractor As New PdfExtractor()
             pdfExtractor.BindPdf(dataDir & "ExtractAllAttachments.pdf")
 
-            'extract attachments
+            ' Extract attachments
             pdfExtractor.ExtractAttachment()
 
-            'get extracted attachments
-            pdfExtractor.GetAttachment(dataDir & ".\output")
-
-
+            ' Get extracted attachments
+            pdfExtractor.GetAttachment(dataDir)
+            ' ExEnd:ExtractAllAttachments
         End Sub
     End Class
 End Namespace

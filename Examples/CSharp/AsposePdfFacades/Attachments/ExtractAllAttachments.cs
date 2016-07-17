@@ -1,33 +1,26 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2014 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
+using System;
 using System.IO;
-
 using Aspose.Pdf;
 using Aspose.Pdf.Facades;
-
 namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Attachments
 {
     public class ExtractAllAttachments
     {
         public static void Run()
         {
+            // ExStart:ExtractAllAttachments
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Attachments();
-            //open document
+            // Open document
             PdfExtractor pdfExtractor = new PdfExtractor();
             pdfExtractor.BindPdf(dataDir+ "ExtractAllAttachments.pdf");
 
-            //extract attachments
+            // Extract attachments
             pdfExtractor.ExtractAttachment();
 
-            //get extracted attachments
-            pdfExtractor.GetAttachment(dataDir+ ".\\output");
-            
+            // Get extracted attachments
+            pdfExtractor.GetAttachment(dataDir);
+            // ExEnd:ExtractAllAttachments
             
         }
     }

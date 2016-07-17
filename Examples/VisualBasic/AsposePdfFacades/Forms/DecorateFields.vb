@@ -30,7 +30,7 @@ Namespace AsposePDFFacades.Forms
             'all text fields will be modified:
             form.DecorateField(FieldType.Text)
             'close and validate the modification like this:
-            form.Save()
+            form.Save(dataDir + "DecorateFields_out_.pdf")
 
         End Sub
     End Class

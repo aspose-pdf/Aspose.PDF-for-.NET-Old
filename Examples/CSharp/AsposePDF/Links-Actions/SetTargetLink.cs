@@ -20,7 +20,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.LinksActions
 
                 GoToRemoteAction goToR = (GoToRemoteAction)linkAnnot.Action;
                 // Next line update destination, do not update file
-                goToR.Destination = new XYZExplicitDestination(document, 2, 0, 0, 1.5);
+                goToR.Destination = new XYZExplicitDestination(2, 0, 0, 1.5);
                 // Next line update file
                 goToR.File = new FileSpecification(dataDir +  "input.pdf");
 

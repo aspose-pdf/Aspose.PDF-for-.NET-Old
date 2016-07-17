@@ -30,7 +30,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Annotations
             }
 
             inkList.Add(gesture);
-            InkAnnotation a1 = new InkAnnotation(doc.Pages[1], new Aspose.Pdf.Rectangle(10, 10, 200, 200), inkList);
+            InkAnnotation a1 = new InkAnnotation(doc.Pages[1], new Aspose.Pdf.Rectangle(100, 100, 300, 300), inkList);
             a1.Subject = "Test";
             a1.Title = "Title";
             a1.Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);

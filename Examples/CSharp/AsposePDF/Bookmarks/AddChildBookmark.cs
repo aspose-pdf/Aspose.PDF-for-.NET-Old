@@ -19,17 +19,14 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Bookmarks
             OutlineItemCollection pdfOutline = new OutlineItemCollection(pdfDocument.Outlines);
             pdfOutline.Title = "Parent Outline";
             pdfOutline.Italic = true;
-            pdfOutline.Bold = true;
-            // Set the destination page number
-            pdfOutline.Destination = new GoToAction(9);
-
+            pdfOutline.Bold = true;      
+          
             // Create a child bookmark object
             OutlineItemCollection pdfChildOutline = new OutlineItemCollection(pdfDocument.Outlines);
             pdfChildOutline.Title = "Child Outline";
             pdfChildOutline.Italic = true;
             pdfChildOutline.Bold = true;
-            // Set the destination page number for child outline
-            pdfChildOutline.Destination = new GoToAction(20);
+     
             // Add child bookmark in parent bookmark's collection
             pdfOutline.Add(pdfChildOutline);
             // Add parent bookmark in the document's outline collection.

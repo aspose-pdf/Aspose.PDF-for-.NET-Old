@@ -1,34 +1,26 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2014 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
+using System;
 using System.IO;
-
 using Aspose.Pdf;
 using Aspose.Pdf.Facades;
-
 namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Attachments
 {
     public class DeleteAllAttachments
     {
         public static void Run()
         {
+            // ExStart:DeleteAllAttachments
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Attachments();
-            //open document
+            // Open document
             PdfContentEditor contentEditor = new PdfContentEditor();
             contentEditor.BindPdf(dataDir+ "DeleteAllAttachments.pdf");
 
-            //delete attachments
+            // Delete attachments
             contentEditor.DeleteAttachments();
 
-            //save updated PDF
-            contentEditor.Save(dataDir+ "DeleteAllAttachments_out.pdf");
-            
-            
+            // Save updated PDF
+            contentEditor.Save(dataDir+ "DeleteAllAttachments_out_.pdf");
+            // ExEnd:DeleteAllAttachments            
         }
     }
 }

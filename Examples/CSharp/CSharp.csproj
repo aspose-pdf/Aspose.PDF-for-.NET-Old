@@ -87,6 +87,7 @@
     <Compile Include="AsposePdfFacades\Forms\DecorateFields.cs" />
     <Compile Include="AsposePdfFacades\Images\AddImage.cs" />
     <Compile Include="AsposePdfFacades\Images\ConvertPageRegion.cs" />
+    <Compile Include="AsposePdfFacades\Images\ConvertToTIFF.cs" />
     <Compile Include="AsposePdfFacades\Images\ConvertToTIFFSettings.cs" />
     <Compile Include="AsposePdfFacades\Images\ConvertPDFPages.cs" />
     <Compile Include="AsposePdfFacades\Images\DeleteAllImages.cs" />
@@ -116,8 +117,10 @@
     <Compile Include="AsposePdfFacades\Text\ReplaceText.cs" />
     <Compile Include="AsposePdfFacades\Text\ReplaceTextPage.cs" />
     <Compile Include="AsposePdfFacades\Working-Document\GetFileInfo.cs" />
+    <Compile Include="AsposePdfFacades\Working-Document\PageBreak.cs" />
     <Compile Include="AsposePdfFacades\Working-Document\SetFileInfo.cs" />
     <Compile Include="AsposePdfFacades\Working-Document\SetViewerPreference.cs" />
+    <Compile Include="AsposePdfFacades\Working-Document\GetXMPMetadata.cs" />
     <Compile Include="AsposePdfFacades\Working-Document\SetXMPMetadata.cs" />
     <Compile Include="AsposePdfGenerator\AdvanceFeatures\SendingPdfToBrowser.cs" />
     <Compile Include="AsposePdfGenerator\AdvanceFeatures\LoadDataInXMLTemplate.cs" />

@@ -38,6 +38,9 @@ Imports Aspose.Pdf.Examples.VisualBasic.AsposePdfGenerator.AdvanceFeatures
 
 Imports Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Text
 Imports Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Annotations
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Attachments
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.WorkingDocument
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Images
 
 Module RunExamples
     Sub Main()
@@ -459,6 +462,38 @@ Module RunExamples
         'ImportAnnotations.Run()
         'ExportAnnotations.Run()
 
+        '''' Attachments
+        '''' =====================================================            
+        'Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Attachments.AddAttachment.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Attachments.AddAttachmentStream.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Attachments.DeleteAllAttachments.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Attachments.ExtractAllAttachments.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Attachments.GetAttachmentNames.Run()
+    
+        '''' Working-Document
+        '''' =====================================================   
+        'SetViewerPreference.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.WorkingDocument.SetFileInfo.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.WorkingDocument.GetFileInfo.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.WorkingDocument.SetXMPMetadata.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.WorkingDocument.GetXMPMetadata.Run()
+        'PageBreak.Run()
+
+        '''' Images
+        '''' =====================================================   
+        'Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Images.ReplaceImage.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Images.ExtractImages.Run()
+        'ExtractImagesStream.Run()
+        'ExtractImagesPage.Run()
+        'DeleteAllImages.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Images.AddImage.Run()
+        'ConvertPDFPages.Run()
+        'ConvertToTIFFSettings.Run()
+        'ConvertToTIFF.Run()
+        'ConvertPageRegion.Run()
+        'ExtractImageExtractionMode.Run()
+
+
         ' Stop before exiting
         Console.WriteLine(vbLf & vbLf & "Program Finished. Press any key to exit....")
         Console.ReadKey()
@@ -547,7 +582,7 @@ Module RunExamples
         Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("AsposePdfFacades/Text/"))
     End Function
     Public Function GetDataDir_AsposePdfFacades_WorkingDocuments() As [String]
-        Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("AsposePdfFacades/Working-Documents/"))
+        Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("AsposePdfFacades/Working-Document/"))
     End Function
     Public Function GetDataDir_AsposePdfGenerator_Conversion() As [String]
         Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("AsposePdfGenerator/Conversion/"))

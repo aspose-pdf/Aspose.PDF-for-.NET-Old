@@ -18,16 +18,13 @@ Namespace AsposePDF.Bookmarks
             pdfOutline.Title = "Parent Outline"
             pdfOutline.Italic = True
             pdfOutline.Bold = True
-            ' Set the destination page number
-            pdfOutline.Destination = New GoToAction(9)
 
             ' Create a child bookmark object
             Dim pdfChildOutline As New OutlineItemCollection(pdfDocument.Outlines)
             pdfChildOutline.Title = "Child Outline"
             pdfChildOutline.Italic = True
             pdfChildOutline.Bold = True
-            ' Set the destination page number for child outline
-            pdfChildOutline.Destination = New GoToAction(20)
+         
             ' Add child bookmark in parent bookmark's collection
             pdfOutline.Add(pdfChildOutline)
             ' Add parent bookmark in the document's outline collection.

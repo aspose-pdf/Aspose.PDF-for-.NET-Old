@@ -1,15 +1,7 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2014 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
 using System.IO;
-
+using System;
 using Aspose.Pdf;
 using Aspose.Pdf.Facades;
-using System;
 
 namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Attachments
 {
@@ -17,20 +9,22 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Attachments
     {
         public static void Run()
         {
+            // ExStart:GetAttachmentNames
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Attachments();
-            //open document
+            // Open document
             PdfExtractor pdfExtractor = new PdfExtractor();
             pdfExtractor.BindPdf(dataDir+ "GetAttachmentNames.pdf");
 
-            //extract attachments
+            // Extract attachments
             pdfExtractor.ExtractAttachment();
 
-            //get attachment names
+            // Get attachment names
             System.Collections.IList attachmentNames = (System.Collections.IList)pdfExtractor.GetAttachNames();
 
             foreach (string attachmentName in attachmentNames)
                 Console.WriteLine("Name : {0}", attachmentName);
+            // ExEnd:GetAttachmentNames
             
         }
     }

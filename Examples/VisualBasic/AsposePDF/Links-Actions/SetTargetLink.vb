@@ -17,7 +17,7 @@ Namespace AsposePDF.LinksActions
 
                 Dim goToR As GoToRemoteAction = DirectCast(linkAnnot.Action, GoToRemoteAction)
                 ' Next line update destination, do not update file
-                goToR.Destination = New XYZExplicitDestination(document, 2, 0, 0, 1.5)
+                goToR.Destination = New XYZExplicitDestination(2, 0, 0, 1.5)
                 ' Next line update file
                 goToR.File = New FileSpecification(dataDir & Convert.ToString("input.pdf"))
 

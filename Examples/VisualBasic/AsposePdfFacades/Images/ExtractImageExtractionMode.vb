@@ -1,42 +1,31 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2014 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Pdf. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
-Imports Microsoft.VisualBasic
 Imports System.IO
-
+Imports System
 Imports Aspose.Pdf
 Imports Aspose.Pdf.Facades
-Imports System
 Imports System.Drawing
 Imports System.Drawing.Imaging
 
 Namespace AsposePDFFacades.Images
     Public Class ExtractImageExtractionMode
         Public Shared Sub Run()
+            ' ExStart:ExtractImageExtractionMode
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdfFacades_Images()
-            'open input PDF
+            ' Open input PDF
             Dim extractor As New PdfExtractor()
-            extractor.BindPdf(dataDir & "ExtractImageExtractionMode.pdf")
+            extractor.BindPdf(dataDir & Convert.ToString("ExtractImageExtractionMode.pdf"))
 
-            'Specify Image Extraction Mode
+            ' Specify Image Extraction Mode
             extractor.ExtractImageMode = ExtractImageMode.DefinedInResources
 
-            'Extract Images based on Image Extraction Mode
+            ' Extract Images based on Image Extraction Mode
             extractor.ExtractImage()
 
-            'Get all the extracted images
-            Do While extractor.HasNextImage()
-                extractor.GetNextImage(dataDir & DateTime.Now.Ticks.ToString() & ".png", System.Drawing.Imaging.ImageFormat.Png)
-            Loop
-
-
-
+            ' Get all the extracted images
+            While extractor.HasNextImage()
+                extractor.GetNextImage((dataDir & DateTime.Now.Ticks.ToString()) + "_out_.png", System.Drawing.Imaging.ImageFormat.Png)
+            End While
+            ' ExEnd:ExtractImageExtractionMode
         End Sub
     End Class
 End Namespace

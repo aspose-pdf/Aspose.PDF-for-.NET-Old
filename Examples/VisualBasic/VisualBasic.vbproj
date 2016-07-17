@@ -79,6 +79,7 @@
     <Compile Include="AsposePdfFacades\Images\AddImage.vb" />
     <Compile Include="AsposePdfFacades\Images\ConvertPageRegion.vb" />
     <Compile Include="AsposePdfFacades\Images\ConvertPDFPages.vb" />
+    <Compile Include="AsposePdfFacades\Images\ConvertToTIFF.vb" />
     <Compile Include="AsposePdfFacades\Images\ConvertToTIFFSettings.vb" />
     <Compile Include="AsposePdfFacades\Images\DeleteAllImages.vb" />
     <Compile Include="AsposePdfFacades\Images\DeleteImagesPage.vb" />
@@ -107,6 +108,8 @@
     <Compile Include="AsposePdfFacades\Text\ReplaceText.vb" />
     <Compile Include="AsposePdfFacades\Text\ReplaceTextPage.vb" />
     <Compile Include="AsposePdfFacades\Working-Document\GetFileInfo.vb" />
+    <Compile Include="AsposePdfFacades\Working-Document\GetXMPMetadata.vb" />
+    <Compile Include="AsposePdfFacades\Working-Document\PageBreak.vb" />
     <Compile Include="AsposePdfFacades\Working-Document\SetFileInfo.vb" />
     <Compile Include="AsposePdfFacades\Working-Document\SetViewerPreference.vb" />
     <Compile Include="AsposePdfFacades\Working-Document\SetXMPMetadata.vb" />

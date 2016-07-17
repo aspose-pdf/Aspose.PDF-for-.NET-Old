@@ -1,12 +1,4 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2014 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
 using System.IO;
-
 using Aspose.Pdf;
 using Aspose.Pdf.Facades;
 using System;
@@ -17,27 +9,28 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Images
     {
         public static void Run()
         {
+            // ExStart:ConvertPDFPages
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Images();
 
-            //create PdfConverter object
+            // Create PdfConverter object
             PdfConverter objConverter = new PdfConverter();
 
-            //bind input pdf file
+            // Bind input pdf file
             objConverter.BindPdf(dataDir+ "ConvertPDFPages.pdf");
 
-            //initialize the converting process
+            // Initialize the converting process
             objConverter.DoConvert();
 
-            objConverter.CoordinateType = PageCoordinateType.CropBox;
+            objConverter.CoordinateType = PageCoordinateType.CropBox;           
 
-            //check if pages exist and then convert to image one by one
+            // Check if pages exist and then convert to image one by one
             while (objConverter.HasNextImage())
-                objConverter.GetNextImage(dataDir+ DateTime.Now.Ticks.ToString() + ".jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
+                objConverter.GetNextImage(dataDir+ DateTime.Now.Ticks.ToString() + "_out_.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
 
-            //close the PdfConverter object
+            // Close the PdfConverter object
             objConverter.Close();
- 
+            // ExEnd:ConvertPDFPages
             
         }
     }
