@@ -2,6 +2,7 @@
 Imports System
 Imports Microsoft.VisualBasic
 Imports Aspose.Pdf
+
 Namespace AsposePdfGenerator.Graphs
     Public Class RotationAndScaling
         Public Shared Sub Run()

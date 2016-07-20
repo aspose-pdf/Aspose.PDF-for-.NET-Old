@@ -2,6 +2,7 @@
 Imports System
 Imports Microsoft.VisualBasic
 Imports Aspose.Pdf
+
 Namespace AsposePdfGenerator.Graphs
     Public Class GraphFormat
         Public Shared Sub Run()

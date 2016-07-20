@@ -2,7 +2,8 @@ Imports System.IO
 Imports System
 Imports Microsoft.VisualBasic
 Imports Aspose.Pdf
-Namespace AsposePDF.DocumentConversion
+
+Namespace AsposePDF
     Public Class CGMToPDF
         Public Shared Sub Run()
             ' ExStart:CGMToPDF

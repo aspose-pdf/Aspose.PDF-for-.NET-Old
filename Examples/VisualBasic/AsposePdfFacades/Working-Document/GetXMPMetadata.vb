@@ -2,6 +2,7 @@
 Imports System
 Imports Aspose.Pdf
 Imports Aspose.Pdf.Facades
+
 Namespace AsposePDFFacades.WorkingDocument
     Public Class GetXMPMetadata
         Public Shared Sub Run()

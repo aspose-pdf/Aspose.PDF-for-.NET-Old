@@ -4,6 +4,7 @@ using Aspose.Pdf;
 using Aspose.Pdf.Text;
 using System.Collections;
 using Aspose.Pdf.Annotations;
+
 namespace Aspose.Pdf.Examples.CSharp.AsposePDF.LinksActions
 {
     public class GetHyperlinkText

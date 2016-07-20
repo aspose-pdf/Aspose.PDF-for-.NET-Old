@@ -1,6 +1,7 @@
 using System.IO;
 using Aspose.Pdf;
 using System;
+
 namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Pages
 {
     public class DeterminePageColor

@@ -3,6 +3,7 @@ Imports System
 Imports Microsoft.VisualBasic
 Imports Aspose.Pdf
 Imports Aspose.Pdf.Text
+
 Namespace AsposePDF.Text
     Public Class ExtractColumnsText
         Public Shared Sub Run()

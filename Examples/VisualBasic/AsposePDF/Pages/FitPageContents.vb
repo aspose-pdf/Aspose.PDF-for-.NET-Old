@@ -1,6 +1,7 @@
 ﻿
 Imports System.IO
 Imports Aspose.Pdf
+
 Namespace AsposePDF.Pages
     Public Class FitPageContents
         Public Shared Sub Run()

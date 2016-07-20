@@ -2,6 +2,7 @@
 Imports System
 Imports Microsoft.VisualBasic
 Imports Aspose.Pdf
+
 Namespace AsposePdfGenerator.Tables
     Public Class NonEnglishText
         Public Shared Sub Run()

@@ -3,6 +3,7 @@ Imports System
 Imports Microsoft.VisualBasic
 Imports Aspose.Pdf
 Imports AP = Aspose.Pdf
+
 Namespace AsposePDF.Operators
     Public Class PDFOperators
         Public Shared Sub Run()

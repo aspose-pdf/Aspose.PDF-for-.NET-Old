@@ -1,6 +1,7 @@
 using System.IO;
 using Aspose.Pdf.Annotations;
 using Aspose.Pdf;
+
 namespace Aspose.Pdf.Examples.CSharp.AsposePDF.WorkingDocuments
 {
     public class GetZoomFactor

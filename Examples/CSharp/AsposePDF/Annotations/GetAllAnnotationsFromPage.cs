@@ -2,6 +2,7 @@ using System.IO;
 using Aspose.Pdf.Annotations;
 using Aspose.Pdf;
 using System;
+
 namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Annotations
 {
     public class GetAllAnnotationsFromPage

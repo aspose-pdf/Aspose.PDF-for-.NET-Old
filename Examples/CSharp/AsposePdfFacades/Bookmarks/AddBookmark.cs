@@ -1,12 +1,4 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2014 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
 using System.IO;
-
 using Aspose.Pdf;
 using Aspose.Pdf.Facades;
 
@@ -16,23 +8,22 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Bookmarks
     {
         public static void Run()
         {
+            // ExStart:AddBookmark
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
-            //create bookmark
+            // Create bookmark
             Bookmark boomark = new Bookmark();
             boomark.PageNumber = 1;
             boomark.Title = "New Bookmark";
-            //create PdfBookmarkEditor class
+            // Create PdfBookmarkEditor class
             PdfBookmarkEditor bookmarkEditor = new PdfBookmarkEditor();
-            //bind PDF document
+            // Bind PDF document
             bookmarkEditor.BindPdf(dataDir+ "AddBookmark.pdf");
-            //create bookmarks
+            // Create bookmarks
             bookmarkEditor.CreateBookmarks(boomark);
-            //save updated document
-            bookmarkEditor.Save(dataDir+ "AddBookmark_out.pdf");
- 
-            
-            
+            // Save updated document
+            bookmarkEditor.Save(dataDir+ "AddBookmark_out_.pdf");
+            // ExEnd:AddBookmark
         }
     }
 }

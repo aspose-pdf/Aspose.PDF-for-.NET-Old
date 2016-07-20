@@ -6,6 +6,7 @@ Imports Aspose.Pdf.Facades
 Imports Aspose.Pdf.Devices
 Imports Aspose.Pdf.Text
 Imports System.Drawing
+
 Namespace AsposePDF.Text
     Public Class HighlightCharacterInPDF
         Public Shared Sub Run()

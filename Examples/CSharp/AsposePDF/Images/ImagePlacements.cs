@@ -2,6 +2,7 @@ using System.IO;
 using Aspose.Pdf;
 using System;
 using System.Drawing;
+
 namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Images
 {
     public class ImagePlacements

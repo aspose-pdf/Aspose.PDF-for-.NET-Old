@@ -2,6 +2,7 @@
 Imports Microsoft.VisualBasic
 Imports System
 Imports Aspose.Pdf
+
 Namespace AsposePDF.StampsWatermarks
     Public Class AddPDFPageStamp
         Public Shared Sub Run()

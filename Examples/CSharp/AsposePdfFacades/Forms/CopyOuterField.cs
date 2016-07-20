@@ -1,12 +1,5 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2014 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
 using System.IO;
-
+using System;
 using Aspose.Pdf;
 using Aspose.Pdf.Facades;
 
@@ -16,21 +9,29 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Forms
     {
         public static void Run()
         {
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
+            try
+            {
+                // ExStart:CopyOuterField
+                // The path to the documents directory.
+                string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
 
-            //open document
-            FormEditor formEditor = new FormEditor();
-           
-            //open the document and create a FormEditor object
-            formEditor.BindPdf(dataDir + "input_form.pdf");
-           
-            //copy a text field from one document to another one
-            formEditor.CopyOuterField("textfieldform.pdf", "textfield", 1);
-           
-            //close and save the output document
-            formEditor.Save(dataDir + "CopyOuterField_out.pdf");
-            
+                // Open document
+                FormEditor formEditor = new FormEditor();
+
+                // Open the document and create a FormEditor object
+                formEditor.BindPdf(dataDir + "CopyOuterField.pdf");
+
+                // Copy a text field from one document to another one
+                formEditor.CopyOuterField( dataDir + "input.pdf", "textfield", 1);
+
+                // Close and save the output document
+                formEditor.Save(dataDir + "CopyOuterField_out_.pdf");
+                // ExEnd:CopyOuterField
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message + "\nThis example will only work if you apply a valid Aspose License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.");
+            }           
             
         }
     }

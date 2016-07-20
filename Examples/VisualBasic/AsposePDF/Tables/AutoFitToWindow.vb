@@ -2,6 +2,7 @@
 Imports System
 Imports Microsoft.VisualBasic
 Imports Aspose.Pdf
+
 Namespace AsposePDF.Tables
     Public Class AutoFitToWindow
         Public Shared Sub Run()

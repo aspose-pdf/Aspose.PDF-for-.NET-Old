@@ -4,6 +4,7 @@ using Aspose.Pdf;
 using Aspose.Pdf.Facades;
 using System;
 using System.Collections;
+
 namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Annotations
 {
     public class lnkAnnotationLineWidth

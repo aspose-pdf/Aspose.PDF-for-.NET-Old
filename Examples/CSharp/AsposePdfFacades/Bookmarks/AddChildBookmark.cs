@@ -1,12 +1,4 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2014 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
 using System.IO;
-
 using Aspose.Pdf;
 using Aspose.Pdf.Facades;
 
@@ -16,9 +8,10 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Bookmarks
     {
         public static void Run()
         {
+            // ExStart:AddChildBookmark
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
-            //create bookmarks
+            // Create bookmarks
             Aspose.Pdf.Facades.Bookmarks bookmarks = new Aspose.Pdf.Facades.Bookmarks();
             Bookmark childBookmark1 = new Bookmark();
             childBookmark1.PageNumber = 1;
@@ -37,15 +30,15 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Bookmarks
 
             bookmark.ChildItems = bookmarks;
 
-            //create PdfBookmarkEditor class
+            // Create PdfBookmarkEditor class
             PdfBookmarkEditor bookmarkEditor = new PdfBookmarkEditor();
-            //bind PDF document
+            // Bind PDF document
             bookmarkEditor.BindPdf(dataDir+ "AddChildBookmark.pdf");
-            //create bookmarks
+            // Create bookmarks
             bookmarkEditor.CreateBookmarks(bookmark);
-            //save updated document
-            bookmarkEditor.Save(dataDir+ "AddChildBookmark_out.pdf");
-            
+            // Save updated document
+            bookmarkEditor.Save(dataDir+ "AddChildBookmark_out_.pdf");
+            // ExEnd:AddChildBookmark
         }
     }
 }

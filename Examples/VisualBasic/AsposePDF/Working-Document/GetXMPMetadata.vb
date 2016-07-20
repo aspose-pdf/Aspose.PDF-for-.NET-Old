@@ -1,6 +1,7 @@
 Imports System.IO
 Imports System
 Imports Aspose.Pdf
+
 Namespace AsposePDF.WorkingDocuments
     Public Class GetXMPMetadata
         Public Shared Sub Run()

@@ -1,12 +1,5 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2014 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
 using System.IO;
-
+using System;
 using Aspose.Pdf;
 using Aspose.Pdf.Facades;
 
@@ -16,18 +9,26 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Forms
     {
         public static void Run()
         {
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
-            //create FormEditor object
-            FormEditor formEditor = new FormEditor();
-            //Open Document
-            formEditor.BindPdf(dataDir+ "CopyInnerField.pdf");
-            //copy a field to another page
-            formEditor.CopyInnerField("textfield", "newfieldname", 0);
+            try
+            {
+                // ExStart:CopyInnerField
+                // The path to the documents directory.
+                string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
+                // Create FormEditor object
+                FormEditor formEditor = new FormEditor();
+                // Open Document
+                formEditor.BindPdf(dataDir + "CopyInnerField.pdf");
+                // Copy a field to another page
+                formEditor.CopyInnerField("textfield", "newfieldname", 1);
 
-            //close and save the output document
-            formEditor.Save(dataDir+ "CopyInnerField_out.pdf");
-            
+                // Close and save the output document
+                formEditor.Save(dataDir + "CopyInnerField_out_.pdf");
+                // ExEnd:CopyInnerField
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message + "\nThis example will only work if you apply a valid Aspose License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.");
+            }
             
         }
     }

@@ -41,6 +41,11 @@ Imports Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Annotations
 Imports Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Attachments
 Imports Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.WorkingDocument
 Imports Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Images
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.StampsWatermarks
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Bookmarks
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.LinksActions
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Forms
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Printing
 
 Module RunExamples
     Sub Main()
@@ -469,7 +474,7 @@ Module RunExamples
         'Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Attachments.DeleteAllAttachments.Run()
         'Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Attachments.ExtractAllAttachments.Run()
         'Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Attachments.GetAttachmentNames.Run()
-    
+
         '''' Working-Document
         '''' =====================================================   
         'SetViewerPreference.Run()
@@ -493,6 +498,77 @@ Module RunExamples
         'ConvertPageRegion.Run()
         'ExtractImageExtractionMode.Run()
 
+        '''' Stamps-Watermarks
+        '''' =====================================================   
+        'Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.StampsWatermarks.AddTextStampAll.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.StampsWatermarks.AddTextStampPage.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.StampsWatermarks.AddImageStampAll.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.StampsWatermarks.AddImageStampPage.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.StampsWatermarks.AddPageStampAll.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.StampsWatermarks.AddPageStampPage.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.StampsWatermarks.AddPageNumber.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.StampsWatermarks.AddHeader.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.StampsWatermarks.AddFooter.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.StampsWatermarks.AddImageFooter.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.StampsWatermarks.AddImageHeader.Run()
+
+        '''' Bookmarks
+        '''' =====================================================   
+        'CreateBookmarksAll.Run()
+        'CreateBookmarksPagesProperties.Run()
+        'CreateBookmarkPage.Run()
+        'CreateBookmarkPageRange.Run()
+        'UpdateBookmark.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Bookmarks.DeleteAllBookmarks.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Bookmarks.DeleteABookmark.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Bookmarks.AddBookmark.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Bookmarks.AddChildBookmark.Run()
+        'ImportFromXML.Run()
+        'ExportToXML.Run()
+        'ExtractBookmarks.Run()
+        'GetFromPDF.Run()
+
+        '''' Links-Actions
+        '''' =====================================================   
+        'CreateAppLink.Run()
+        'CreateAppLinkWithColor.Run()
+        'CreateLocalLink.Run()
+        'CreateJSLink.Run()
+        'RemoveAction.Run()
+        'CreateDocAdditionalAction.Run()
+        'CreateDocLink.Run()
+
+        '''' Forms
+        '''' =====================================================   
+        'FillFormFieldF.Run()
+        'AddFormField.Run()
+        'GetFormFieldValue.Run()
+        'DeleteField.Run()
+        'MoveField.Run()
+        'GetFieldValue.Run()
+        'FlattenAllFields.Run()
+        'DecorateParticularField.Run()
+        'DecorateFields.Run()
+        'AddListItem.Run()
+        'DeleteListItem.Run()
+        'SetSubmitButtonURL.Run()
+        'SetJSPushButton.Run()
+        'CopyInnerField.Run()
+        'CopyOuterField.Run()
+        'ExportDataToXML.Run()
+        'ExportDataToPdf.Run()
+        'ImportDataFromPdf.Run()
+        'ExportDataToXFDF.Run()
+        'ImportDataFromXFDF.Run()
+
+        '''' Printing
+        '''' =====================================================   
+        'PrintToDefaultPrinter.Run()
+        'PrintoXPSPrinter.Run()
+        'PdfToPostScript.Run()
+        'CheckPrintJobStatus.Run()
+        'PrintPages.Run()
+        'PrintPageRange.Run()
 
         ' Stop before exiting
         Console.WriteLine(vbLf & vbLf & "Program Finished. Press any key to exit....")
@@ -530,6 +606,9 @@ Module RunExamples
     Public Function GetDataDir_AsposePdf_Images() As [String]
         Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("AsposePDF/Images/"))
     End Function
+    Public Function GetDataDir_AsposePdfFacades_SecuritySignatures() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() + "AsposePdfFacades/Security-Signatures/")
+    End Function
     Public Function GetDataDir_AsposePdf_LinksActions() As [String]
         Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("AsposePDF/Links-Actions/"))
     End Function
@@ -564,7 +643,9 @@ Module RunExamples
     Public Function GetDataDir_AsposePdfFacades_Bookmarks() As [String]
         Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("AsposePdfFacades/Bookmarks/"))
     End Function
-
+    Public Function GetDataDir_AsposePdfFacades_LinksActions() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() + "AsposePdfFacades/Links-Actions/")
+    End Function
     Public Function GetDataDir_AsposePdfFacades_Forms() As [String]
         Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("AsposePdfFacades/Forms/"))
     End Function
@@ -587,7 +668,6 @@ Module RunExamples
     Public Function GetDataDir_AsposePdfGenerator_Conversion() As [String]
         Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("AsposePdfGenerator/Conversion/"))
     End Function
-
     Public Function GetDataDir_AsposePdfGenerator_Paragraphs() As [String]
         Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("AsposePdfGenerator/Paragraphs/"))
     End Function

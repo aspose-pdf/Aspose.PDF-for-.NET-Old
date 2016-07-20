@@ -4,6 +4,7 @@ Imports Microsoft.VisualBasic
 Imports Aspose.Pdf
 Imports System.Collections
 Imports Aspose.Pdf.Annotations
+
 Namespace AsposePDF.LinksActions
     Public Class GetHyperlinkDestinations
         Public Shared Sub Run()

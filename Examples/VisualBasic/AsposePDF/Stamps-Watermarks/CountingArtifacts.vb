@@ -1,6 +1,7 @@
 ﻿Imports System.IO
 Imports System
 Imports Aspose.Pdf
+
 Namespace AsposePDF.StampsWatermarks
     Public Class CountingArtifacts
         Public Shared Sub Run()

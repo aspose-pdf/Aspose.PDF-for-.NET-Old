@@ -2,6 +2,7 @@ Imports System.IO
 Imports System
 Imports Aspose.Pdf
 Imports Aspose.Pdf.Facades
+
 Namespace AsposePDFFacades.Images
     Public Class ReplaceImage
         Public Shared Sub Run()

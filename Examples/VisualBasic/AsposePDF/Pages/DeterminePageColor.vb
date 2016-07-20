@@ -1,6 +1,7 @@
 ﻿Imports System.IO
 Imports System
 Imports Aspose.Pdf
+
 Namespace AsposePDF.Pages
     Public Class DeterminePageColor
         Public Shared Sub Run()

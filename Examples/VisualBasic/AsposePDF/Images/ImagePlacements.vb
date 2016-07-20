@@ -3,6 +3,7 @@ Imports System
 Imports Microsoft.VisualBasic
 Imports Aspose.Pdf
 Imports System.Drawing
+
 Namespace AsposePDF.Images
     Public Class ImagePlacements
         Public Shared Sub Run()

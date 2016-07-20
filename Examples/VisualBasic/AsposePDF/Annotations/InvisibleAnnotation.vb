@@ -3,6 +3,7 @@ Imports System
 Imports Microsoft.VisualBasic
 Imports Aspose.Pdf.Annotations
 Imports Aspose.Pdf
+
 Namespace AsposePDF.Annotations
     Public Class InvisibleAnnotation
         Public Shared Sub Run()

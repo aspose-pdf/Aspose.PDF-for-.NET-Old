@@ -5,6 +5,7 @@ Imports Aspose.Pdf
 Imports Aspose.Pdf.Text
 Imports Aspose.Pdf.Facades
 Imports Aspose.Pdf.Text.TextOptions
+
 Namespace AsposePDF.Text
     Public Class FootAndEndNotes
         Public Shared Sub Run()

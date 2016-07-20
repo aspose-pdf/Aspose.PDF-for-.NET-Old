@@ -3,6 +3,7 @@ Imports System
 Imports Microsoft.VisualBasic
 Imports Aspose.Pdf.Drawing
 Imports Aspose.Pdf
+
 Namespace AsposePDF.Graphs
     Public Class AddLineObject
         Public Shared Sub Run()

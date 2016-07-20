@@ -2,6 +2,7 @@
 Imports System
 Imports Microsoft.VisualBasic
 Imports AP = Aspose.Pdf
+
 Namespace AsposePdfGenerator.General
     Public Class PositionFloatingBox
         Public Shared Sub Run()

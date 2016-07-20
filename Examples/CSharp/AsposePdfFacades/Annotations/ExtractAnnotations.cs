@@ -4,6 +4,7 @@ using Aspose.Pdf.Facades;
 using System;
 using Aspose.Pdf.Annotations;
 using System.Collections;
+
 namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Annotations
 {
     public class ExtractAnnotations

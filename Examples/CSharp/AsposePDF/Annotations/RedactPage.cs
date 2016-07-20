@@ -2,6 +2,7 @@ using System;
 using System.IO;
 using Aspose.Pdf.Annotations;
 using Aspose.Pdf;
+
 namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Annotations
 {
     public class RedactPage

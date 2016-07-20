@@ -5,6 +5,7 @@ using System.Drawing.Imaging;
 using System.Collections;
 using Aspose.Pdf;
 using Aspose.Pdf.Annotations;
+
 namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Tables
 {
     public class ExtractBorder

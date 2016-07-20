@@ -6,6 +6,7 @@ Imports Aspose.Pdf.Text
 Imports Aspose.Pdf.Devices
 Imports Aspose.Pdf.Text.TextOptions
 Imports System.Text
+
 Namespace AsposePDF.Text
     Public Class ExtractTextUsingTextDevice
         Public Shared Sub Run()

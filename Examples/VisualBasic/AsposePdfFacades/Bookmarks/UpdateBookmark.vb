@@ -1,32 +1,23 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2014 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Pdf. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
-Imports Microsoft.VisualBasic
 Imports System.IO
-
+Imports System
 Imports Aspose.Pdf
 Imports Aspose.Pdf.Facades
 
 Namespace AsposePDFFacades.Bookmarks
     Public Class UpdateBookmark
         Public Shared Sub Run()
+            ' ExStart:UpdateBookmark
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks()
-            'open document
+            ' Open document
             Dim bookmarkEditor As New PdfBookmarkEditor()
-            bookmarkEditor.BindPdf(dataDir & "UpdateBookmark.pdf")
-            'update bookmark
+            bookmarkEditor.BindPdf(dataDir & Convert.ToString("UpdateBookmark.pdf"))
+            ' Update bookmark
             bookmarkEditor.ModifyBookmarks("New Bookmark", "New Title")
-            'save updated PDF file
-            bookmarkEditor.Save(dataDir & "UpdateBookmark_out.pdf")
-
-
-
+            ' Save updated PDF file
+            bookmarkEditor.Save(dataDir & Convert.ToString("UpdateBookmark_out_.pdf"))
+            ' ExEnd:UpdateBookmark
         End Sub
     End Class
 End Namespace
+

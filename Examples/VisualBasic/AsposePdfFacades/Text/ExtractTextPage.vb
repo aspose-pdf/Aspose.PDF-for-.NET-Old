@@ -3,6 +3,7 @@ Imports System
 Imports Aspose.Pdf
 Imports Aspose.Pdf.Facades
 Imports System.Text
+
 Namespace AsposePDFFacades.Text
     Public Class ExtractTextPage
         Public Shared Sub Run()

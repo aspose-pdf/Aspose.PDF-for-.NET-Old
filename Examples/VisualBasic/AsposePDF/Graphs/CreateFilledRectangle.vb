@@ -3,6 +3,7 @@ Imports Aspose.Pdf
 Imports Microsoft.VisualBasic
 Imports System
 Imports APD = Aspose.Pdf.Drawing
+
 Namespace AsposePDF.Graphs
     Public Class CreateFilledRectangle
         Public Shared Sub Run()

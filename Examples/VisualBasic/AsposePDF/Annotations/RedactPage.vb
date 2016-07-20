@@ -4,6 +4,7 @@ Imports Microsoft.VisualBasic
 Imports Aspose.Pdf.Annotations
 Imports Aspose.Pdf
 Imports Aspose.Pdf.Facades
+
 Namespace AsposePDF.Annotations
     Public Class RedactPage
         Public Shared Sub Run()

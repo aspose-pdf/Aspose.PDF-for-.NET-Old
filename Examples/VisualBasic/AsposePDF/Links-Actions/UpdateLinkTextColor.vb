@@ -5,6 +5,7 @@ Imports Aspose.Pdf
 Imports Aspose.Pdf.Text
 Imports Aspose.Pdf.Text.TextOptions
 Imports Aspose.Pdf.Annotations
+
 Namespace AsposePDF.LinksActions
     Public Class UpdateLinkTextColor
         Public Shared Sub Run()

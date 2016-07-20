@@ -5,6 +5,7 @@ Imports Aspose.Pdf
 Imports Aspose.Pdf.Text
 Imports Aspose.Pdf.Text.TextOptions
 Imports Aspose.Pdf.Facades
+
 Namespace AsposePDF.Text
     Public Class SearchTextAndDrawRectangle
         Public Shared Sub Run()

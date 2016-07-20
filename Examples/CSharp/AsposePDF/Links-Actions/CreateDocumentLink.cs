@@ -2,6 +2,7 @@ using System.IO;
 using Aspose.Pdf.Annotations;
 using Aspose.Pdf;
 using System;
+
 namespace Aspose.Pdf.Examples.CSharp.AsposePDF.LinksActions
 {
     public class CreateDocumentLink
@@ -17,7 +18,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.LinksActions
             Page page = document.Pages[1];
             LinkAnnotation link = new LinkAnnotation(page, new Aspose.Pdf.Rectangle(100, 100, 300, 300));
             link.Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
-            link.Action = new GoToRemoteAction(dataDir + "CreateDocumentLink.pdf", 1);
+            link.Action = new GoToRemoteAction(dataDir + "RemoveOpenAction.pdf", 1);
             page.Annotations.Add(link);
             dataDir = dataDir + "CreateDocumentLink_out_.pdf";
             // Save updated document

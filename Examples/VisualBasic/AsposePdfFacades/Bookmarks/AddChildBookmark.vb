@@ -1,23 +1,15 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2014 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Pdf. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
-Imports Microsoft.VisualBasic
 Imports System.IO
-
+Imports System
 Imports Aspose.Pdf
 Imports Aspose.Pdf.Facades
 
 Namespace AsposePDFFacades.Bookmarks
     Public Class AddChildBookmark
         Public Shared Sub Run()
+            ' ExStart:AddChildBookmark
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks()
-            'create bookmarks
+            ' Create bookmarks
             Dim bookmarks As New Aspose.Pdf.Facades.Bookmarks()
             Dim childBookmark1 As New Bookmark()
             childBookmark1.PageNumber = 1
@@ -36,15 +28,15 @@ Namespace AsposePDFFacades.Bookmarks
 
             bookmark.ChildItems = bookmarks
 
-            'create PdfBookmarkEditor class
+            ' Create PdfBookmarkEditor class
             Dim bookmarkEditor As New PdfBookmarkEditor()
-            'bind PDF document
-            bookmarkEditor.BindPdf(dataDir & "AddChildBookmark.pdf")
-            'create bookmarks
+            ' Bind PDF document
+            bookmarkEditor.BindPdf(dataDir & Convert.ToString("AddChildBookmark.pdf"))
+            ' Create bookmarks
             bookmarkEditor.CreateBookmarks(bookmark)
-            'save updated document
-            bookmarkEditor.Save(dataDir & "AddChildBookmark_out.pdf")
-
+            ' Save updated document
+            bookmarkEditor.Save(dataDir & Convert.ToString("AddChildBookmark_out_.pdf"))
+            ' ExEnd:AddChildBookmark
         End Sub
     End Class
 End Namespace

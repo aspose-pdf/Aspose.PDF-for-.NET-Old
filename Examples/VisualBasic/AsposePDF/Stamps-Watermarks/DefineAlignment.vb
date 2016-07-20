@@ -3,6 +3,7 @@ Imports System
 Imports Microsoft.VisualBasic
 Imports Aspose.Pdf
 Imports Aspose.Pdf.Facades
+
 Namespace AsposePDF.StampsWatermarks
     Public Class DefineAlignment
         Public Shared Sub Run()

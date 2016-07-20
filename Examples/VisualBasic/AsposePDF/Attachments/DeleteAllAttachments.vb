@@ -2,6 +2,7 @@ Imports System.IO
 Imports System
 Imports Microsoft.VisualBasic
 Imports Aspose.Pdf
+
 Namespace AsposePDF.Attachments
     Public Class DeleteAllAttachments
         Public Shared Sub Run()

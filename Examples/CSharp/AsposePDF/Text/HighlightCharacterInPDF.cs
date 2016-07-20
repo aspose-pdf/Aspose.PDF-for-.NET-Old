@@ -5,6 +5,7 @@ using Aspose.Pdf.Devices;
 using Aspose.Pdf.Text;
 using System;
 using System.Drawing;
+
 namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
 {
     public class HighlightCharacterInPDF

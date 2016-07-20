@@ -5,6 +5,7 @@ Imports Aspose.Pdf.Text
 Imports Aspose.Pdf.Facades
 Imports Aspose.Pdf.Text.TextOptions
 Imports Microsoft.VisualBasic
+
 Namespace AsposePDF.Text
     Public Class AddText
         Public Shared Sub Run()

@@ -1,14 +1,5 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2014 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Pdf. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
-Imports Microsoft.VisualBasic
 Imports System.IO
-
+Imports System
 Imports Aspose.Pdf
 Imports Aspose.Pdf.Facades
 Imports System.Drawing
@@ -16,24 +7,35 @@ Imports System.Drawing
 Namespace AsposePDFFacades.StampsWatermarks
     Public Class AddPageNumber
         Public Shared Sub Run()
+            ' ExStart:AddPageNumber
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdfFacades_StampsWatermarks()
-            'open document
-            Dim fileStamp As New PdfFileStamp(dataDir & "Input_new.pdf", dataDir & "AddPageNumber_out.pdf")
 
-            'get total number of pages
+            ' Create PdfFileStamp object
+            Dim fileStamp As New PdfFileStamp()
 
-            Dim totalPages As Integer = New PdfFileInfo(dataDir & "Input_new.pdf").NumberOfPages
-            'create formatted text for page number
-            Dim formattedText As New FormattedText("Page # Of " & totalPages, System.Drawing.Color.Blue, System.Drawing.Color.Gray, Aspose.Pdf.Facades.FontStyle.Courier, EncodingType.Winansi, False, 14)
+            ' Open Document
+            fileStamp.BindPdf(dataDir & Convert.ToString("AddPageNumber.pdf"))
 
-            'set starting number for first page; you might want to start from 2 or more
+            ' Get total number of pages
+            Dim totalPages As Integer = New PdfFileInfo(dataDir & Convert.ToString("AddPageNumber.pdf")).NumberOfPages
+
+            ' Create formatted text for page number
+            Dim formattedText As New FormattedText("Page # Of " + totalPages.ToString(), System.Drawing.Color.Blue, System.Drawing.Color.Gray, Aspose.Pdf.Facades.FontStyle.Courier, EncodingType.Winansi, False, _
+                14)
+
+            ' Set starting number for first page; you might want to start from 2 or more
             fileStamp.StartingNumber = 1
-            'add page number
+
+            ' Add page number
             fileStamp.AddPageNumber(formattedText, 0)
 
-            'save updated PDF file
+            ' Save updated PDF file
+            fileStamp.Save(dataDir & Convert.ToString("AddPageNumber_out_.pdf"))
+
+            ' Close fileStamp
             fileStamp.Close()
+            ' ExEnd:AddPageNumber
 
         End Sub
     End Class

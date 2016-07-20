@@ -2,6 +2,7 @@
 Imports System
 Imports Microsoft.VisualBasic
 Imports AP = Aspose.Pdf
+
 Namespace AsposePdfGenerator.Text
     Public Class ReplaceableSymbols
         Public Shared Sub Run()

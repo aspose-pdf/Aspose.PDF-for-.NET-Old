@@ -1,6 +1,7 @@
 ﻿Imports System.IO
 Imports System
 Imports Aspose.Pdf
+
 Namespace AsposePdfGenerator.SecurityFeatures
     Public Class SetPassword
         Public Shared Sub Run()

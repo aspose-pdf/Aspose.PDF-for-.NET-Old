@@ -2,6 +2,7 @@
 Imports System
 Imports Microsoft.VisualBasic
 Imports AP = Aspose.Pdf
+
 Namespace AsposePdfGenerator.Sections
     Public Class SetPageMargin
         Public Shared Sub Run()

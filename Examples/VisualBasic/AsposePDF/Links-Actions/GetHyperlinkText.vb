@@ -5,6 +5,7 @@ Imports Aspose.Pdf
 Imports Aspose.Pdf.Text
 Imports System.Collections
 Imports Aspose.Pdf.Annotations
+
 Namespace AsposePDF.LinksActions
     Public Class GetHyperlinkText
         Public Shared Sub Run()

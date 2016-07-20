@@ -3,6 +3,7 @@ Imports System
 Imports Microsoft.VisualBasic
 Imports Aspose.Pdf.Text
 Imports Aspose.Pdf.Text.TextOptions
+
 Namespace AsposePDF.Text
     Public Class SearchRegularExpression
         Public Shared Sub Run()

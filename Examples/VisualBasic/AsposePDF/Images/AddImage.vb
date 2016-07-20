@@ -4,6 +4,7 @@ Imports Microsoft.VisualBasic
 Imports Aspose.Pdf
 Imports Aspose.Pdf.Operator
 Imports APO = Aspose.Pdf.Operator
+
 Namespace AsposePDF.Images
     Public Class AddImage
         Public Shared Sub Run()

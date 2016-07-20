@@ -3,6 +3,7 @@ Imports System
 Imports Microsoft.VisualBasic
 Imports Aspose.Pdf
 Imports Aspose.Pdf.Facades
+
 Namespace AsposePDF.SecuritySignatures
     Public Class DetermineCorrectPassword
         Public Shared Sub Run()

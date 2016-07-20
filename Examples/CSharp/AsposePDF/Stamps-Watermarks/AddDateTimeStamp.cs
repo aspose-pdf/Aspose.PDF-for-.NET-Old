@@ -3,6 +3,7 @@ using Aspose.Pdf;
 using Aspose.Pdf.Text;
 using System;
 using Aspose.Pdf.Annotations;
+
 namespace Aspose.Pdf.Examples.CSharp.AsposePDF.StampsWatermarks
 {
     public class AddDateTimeStamp

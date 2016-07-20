@@ -4,6 +4,7 @@ Imports Microsoft.VisualBasic
 Imports Aspose.Pdf
 Imports AP = Aspose.Pdf
 Imports System.Collections
+
 Namespace AsposePDF.Operators
     Public Class RemoveGraphicsObjects
         Public Shared Sub Run()

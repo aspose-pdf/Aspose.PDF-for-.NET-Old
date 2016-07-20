@@ -2,6 +2,7 @@
 Imports System
 Imports Microsoft.VisualBasic
 Imports Aspose.Pdf
+
 Namespace AsposePDF.Images
     Public Class DeleteImages
         Public Shared Sub Run()

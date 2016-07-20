@@ -2,6 +2,7 @@
 Imports System
 Imports Microsoft.VisualBasic
 Imports APG = Aspose.Pdf.Generator
+
 Namespace AsposePdfGenerator.General
     Public Class FloatingBoxLook
         Public Shared Sub Run()

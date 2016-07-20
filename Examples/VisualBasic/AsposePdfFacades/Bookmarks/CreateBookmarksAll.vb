@@ -1,31 +1,22 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2014 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Pdf. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
-Imports Microsoft.VisualBasic
 Imports System.IO
-
+Imports System
 Imports Aspose.Pdf
 Imports Aspose.Pdf.Facades
 
 Namespace AsposePDFFacades.Bookmarks
     Public Class CreateBookmarksAll
         Public Shared Sub Run()
+            ' ExStart:CreateBookmarksAll
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks()
-            'open document
+            ' Open document
             Dim bookmarkEditor As New PdfBookmarkEditor()
-            bookmarkEditor.BindPdf(dataDir & "CreateBookmarksAll.pdf")
-            'create bookmark of all pages
+            bookmarkEditor.BindPdf(dataDir & Convert.ToString("CreateBookmarksAll.pdf"))
+            ' Create bookmark of all pages
             bookmarkEditor.CreateBookmarks()
-            'save updated PDF file
-            bookmarkEditor.Save(dataDir & "Output.pdf")
-
-
+            ' Save updated PDF file
+            bookmarkEditor.Save(dataDir & Convert.ToString("Output_out_.pdf"))
+            ' ExEnd:CreateBookmarksAll
         End Sub
     End Class
 End Namespace

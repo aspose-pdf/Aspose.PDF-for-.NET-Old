@@ -2,6 +2,7 @@ using System.IO;
 using Aspose.Pdf;
 using System.Drawing.Imaging;
 using System;
+
 namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Images
 {
     public class IdentifyImages

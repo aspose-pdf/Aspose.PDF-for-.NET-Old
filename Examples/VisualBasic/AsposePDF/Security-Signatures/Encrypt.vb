@@ -2,6 +2,7 @@ Imports System.IO
 Imports System
 Imports Microsoft.VisualBasic
 Imports Aspose.Pdf
+
 Namespace AsposePDF.SecuritySignatures
     Public Class Encrypt
         Public Shared Sub Run()

@@ -3,6 +3,7 @@ using System.IO;
 using Aspose.Pdf;
 using System.Collections;
 using Aspose.Pdf.Annotations;
+
 namespace Aspose.Pdf.Examples.CSharp.AsposePDF.LinksActions
 {
     public class GetHyperlinkDestinations

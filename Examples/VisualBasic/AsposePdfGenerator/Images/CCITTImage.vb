@@ -2,6 +2,7 @@
 Imports System
 Imports Microsoft.VisualBasic
 Imports Aspose.Pdf
+
 Namespace AsposePdfGenerator.Images
     Public Class CCITTImage
         Public Shared Sub Run()

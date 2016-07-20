@@ -2,6 +2,7 @@ using System;
 using System.IO;
 using Aspose.Pdf.Facades;
 using Aspose.Pdf;
+
 namespace Aspose.Pdf.Examples.CSharp.AsposePDF.SecuritySignatures
 {
     public class SetPrivileges

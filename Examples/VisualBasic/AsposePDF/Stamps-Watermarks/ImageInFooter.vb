@@ -2,6 +2,7 @@
 Imports System
 Imports Microsoft.VisualBasic
 Imports Aspose.Pdf
+
 Namespace AsposePDF.StampsWatermarks
     Public Class ImageInFooter
         Public Shared Sub Run()

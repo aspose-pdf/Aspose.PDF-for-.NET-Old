@@ -3,6 +3,7 @@ Imports System.IO
 Imports System
 Imports Aspose.Pdf
 Imports Aspose.Pdf.Text
+
 Namespace AsposePDF.Pages
     Public Class GetPageCount
         Public Shared Sub Run()

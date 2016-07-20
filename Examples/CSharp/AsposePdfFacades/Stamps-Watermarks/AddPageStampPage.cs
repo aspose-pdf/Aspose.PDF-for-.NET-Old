@@ -1,12 +1,4 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2014 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
 using System.IO;
-
 using Aspose.Pdf;
 using Aspose.Pdf.Facades;
 
@@ -16,33 +8,35 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.StampsWatermarks
     {
         public static void Run()
         {
+            // ExStart:AddPageStampPage
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdfFacades_StampsWatermarks();
 
-            //create PdfFileStamp object
+            // Create PdfFileStamp object
             PdfFileStamp fileStamp = new PdfFileStamp();
 
-            //Open Document
+            // Open Document
             fileStamp.BindPdf(dataDir + "AddPageStamp-Page.pdf");
  
-            //create stamp
+            // Create stamp
             Aspose.Pdf.Facades.Stamp stamp = new Aspose.Pdf.Facades.Stamp();
             stamp.BindPdf(dataDir+ "temp.pdf", 1);
             stamp.SetOrigin(200, 200);
             stamp.Rotation = 90.0F;
             stamp.IsBackground = true;
 
-            //set particular pages
+            // Set particular pages
             stamp.Pages = new int[] { 2 };
 
-            //add stamp to PDF file
+            // Add stamp to PDF file
             fileStamp.AddStamp(stamp);
 
-            //save updated PDF file
-            fileStamp.Save(dataDir + "AddPageStamp-Page_out.pdf");
+            // Save updated PDF file
+            fileStamp.Save(dataDir + "AddPageStamp-Page_out_.pdf");
 
-            //close fileStamp
+            // Close fileStamp
             fileStamp.Close();
+            // ExEnd:AddPageStampPage
  
         }
     }

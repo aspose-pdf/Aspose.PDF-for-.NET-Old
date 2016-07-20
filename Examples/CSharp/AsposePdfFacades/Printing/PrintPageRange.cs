@@ -1,12 +1,5 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2014 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
 using System.IO;
-
+using System;
 using Aspose.Pdf;
 using Aspose.Pdf.Facades;
 
@@ -16,30 +9,39 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Printing
     {
         public static void Run()
         {
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+            try
+            {
+                // ExStart:PrintPageRange
+                // The path to the documents directory.
+                string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
-            Aspose.Pdf.Facades.PdfViewer pdfv = new Aspose.Pdf.Facades.PdfViewer();
+                Aspose.Pdf.Facades.PdfViewer pdfv = new Aspose.Pdf.Facades.PdfViewer();
 
-            pdfv.PdfQueryPageSettings += PdfvOnPdfQueryPageSettings;
+                pdfv.PdfQueryPageSettings += PdfvOnPdfQueryPageSettings;
 
-            System.Drawing.Printing.PageSettings pgs = new System.Drawing.Printing.PageSettings();
-            System.Drawing.Printing.PrinterSettings prin = new System.Drawing.Printing.PrinterSettings();
+                System.Drawing.Printing.PageSettings pgs = new System.Drawing.Printing.PageSettings();
+                System.Drawing.Printing.PrinterSettings prin = new System.Drawing.Printing.PrinterSettings();
 
-            pdfv.BindPdf(dataDir + "NewInput.pdf");
-            prin.PrinterName = "HP LaserJet M9050 MFP PCL6";
-            prin.DefaultPageSettings.PaperSize = new System.Drawing.Printing.PaperSize("A4", 827, 1169);
+                pdfv.BindPdf(dataDir + "Print-PageRange.pdf");
+                prin.PrinterName = "HP LaserJet M9050 MFP PCL6";
+                prin.DefaultPageSettings.PaperSize = new System.Drawing.Printing.PaperSize("A4", 827, 1169);
 
-            Aspose.Pdf.Facades.PdfPageEditor pageEditor = new Aspose.Pdf.Facades.PdfPageEditor();
-            pageEditor.BindPdf(dataDir+ "temp.pdf");
+                Aspose.Pdf.Facades.PdfPageEditor pageEditor = new Aspose.Pdf.Facades.PdfPageEditor();
+                pageEditor.BindPdf(dataDir + "input.pdf");
 
-            pgs.Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0);
-            pgs.PaperSize = prin.DefaultPageSettings.PaperSize;
+                pgs.Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0);
+                pgs.PaperSize = prin.DefaultPageSettings.PaperSize;
 
-            pdfv.PrintDocumentWithSettings(pgs, prin);
-            pdfv.Close();
+                pdfv.PrintDocumentWithSettings(pgs, prin);
+                pdfv.Close();
+                // ExEnd:PrintPageRange
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
-
+        // ExStart:PdfvOnPdfQueryPageSettings
         private static void PdfvOnPdfQueryPageSettings(object sender, System.Drawing.Printing.QueryPageSettingsEventArgs queryPageSettingsEventArgs, PdfPrintPageInfo currentPageInfo)
         {
             bool isOdd = currentPageInfo.PageNumber % 2 != 0;
@@ -51,7 +53,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Printing
             else
                 queryPageSettingsEventArgs.PageSettings.PaperSource = paperSources[1];
         }
-
+        // ExEnd:PdfvOnPdfQueryPageSettings
 
     }
 }

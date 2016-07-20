@@ -2,6 +2,7 @@
 Imports System
 Imports Microsoft.VisualBasic
 Imports Aspose.Pdf
+
 Namespace AsposePdfGenerator.Headings
     Public Class SystemBullets
         Public Shared Sub Run()

@@ -1,12 +1,4 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2014 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
 using System.IO;
-
 using Aspose.Pdf;
 using Aspose.Pdf.Facades;
 using System.Drawing;
@@ -17,27 +9,28 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.StampsWatermarks
     {
         public static void Run()
         {
+            // ExStart:AddHeader
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdfFacades_StampsWatermarks();
 
-            //create PdfFileStamp object
+            // Create PdfFileStamp object
             PdfFileStamp fileStamp = new PdfFileStamp();
 
-            //Open Document
+            // Open Document
             fileStamp.BindPdf(dataDir + "AddHeader.pdf");
          
-            //create formatted text for page number
+            // Create formatted text for page number
             FormattedText formattedText = new FormattedText("Aspose - Your File Format Experts!", System.Drawing.Color.Blue, System.Drawing.Color.Gray, Aspose.Pdf.Facades.FontStyle.Courier, EncodingType.Winansi, false, 14);
 
-            //add header
+            // Add header
             fileStamp.AddHeader(formattedText, 10);
            
-            //save updated PDF file
-            fileStamp.Save(dataDir + "AddHeader_out.pdf");
+            // Save updated PDF file
+            fileStamp.Save(dataDir + "AddHeader_out_.pdf");
             
-            //close fileStamp
+            // Close fileStamp
             fileStamp.Close();
- 
+            // ExEnd:AddHeader
         }
     }
 }

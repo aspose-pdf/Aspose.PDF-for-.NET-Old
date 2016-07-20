@@ -2,6 +2,7 @@ Imports System.IO
 Imports Aspose.Pdf
 Imports System
 Imports Microsoft.VisualBasic
+
 Namespace AsposePDF.Pages
     Public Class GetProperties
         Public Shared Sub Run()

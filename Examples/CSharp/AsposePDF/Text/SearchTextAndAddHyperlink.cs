@@ -5,7 +5,6 @@ using Aspose.Pdf.Text.TextOptions;
 using Aspose.Pdf.Facades;
 using System;
 
-
 namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
 {
     public class SearchTextAndAddHyperlink

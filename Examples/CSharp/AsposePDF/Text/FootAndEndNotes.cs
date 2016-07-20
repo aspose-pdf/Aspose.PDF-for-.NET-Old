@@ -4,6 +4,7 @@ using Aspose.Pdf;
 using Aspose.Pdf.Text;
 using Aspose.Pdf.Facades;
 using Aspose.Pdf.Text.TextOptions;
+
 namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
 {
     public class FootAndEndNotes

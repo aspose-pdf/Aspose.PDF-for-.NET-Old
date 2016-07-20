@@ -6,6 +6,7 @@ Imports Aspose.Pdf.Annotations
 Imports Aspose.Pdf.Text
 Imports Aspose.Pdf.Text.TextOptions
 Imports Aspose.Pdf.Facades
+
 Namespace AsposePDF.Text
     Public Class SearchTextAndAddHyperlink
         Public Shared Sub Run()

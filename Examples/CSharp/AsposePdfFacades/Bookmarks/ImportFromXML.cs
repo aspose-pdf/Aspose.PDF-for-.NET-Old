@@ -1,12 +1,4 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2014 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
 using System.IO;
-
 using Aspose.Pdf;
 using Aspose.Pdf.Facades;
 
@@ -16,18 +8,18 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Bookmarks
     {
         public static void Run()
         {
+            // ExStart:ImportFromXML
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
-            //create PdfBookmarkEditor class
+            // Create PdfBookmarkEditor class
             PdfBookmarkEditor bookmarkEditor = new PdfBookmarkEditor();
-            //open PDF file
+            // Open PDF file
             bookmarkEditor.BindPdf(dataDir+ "ImportFromXML.pdf");
-            //import bookmarks
+            // Import bookmarks
             bookmarkEditor.ImportBookmarksWithXML(dataDir+ "bookmarks.xml");
-            //save updated PDF file
-            bookmarkEditor.Save(dataDir+ "ImportFromXML_out.pdf");
- 
-            
+            // Save updated PDF file
+            bookmarkEditor.Save(dataDir+ "ImportFromXML_out_.pdf");
+            // ExEnd:ImportFromXML           
             
         }
     }

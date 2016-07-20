@@ -6,6 +6,7 @@ Imports Aspose.Pdf.Text
 Imports Aspose.Pdf.Facades
 Imports Aspose.Pdf.Text.TextOptions
 Imports APG = Aspose.Pdf.Generator
+
 Namespace AsposePDF.Text
     Public Class SpecifyCharacterSpacing
         Public Shared Sub Run()

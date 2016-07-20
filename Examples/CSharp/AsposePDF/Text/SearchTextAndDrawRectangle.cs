@@ -4,6 +4,7 @@ using Aspose.Pdf.Text;
 using Aspose.Pdf.Text.TextOptions;
 using System;
 using Aspose.Pdf.Facades;
+
 namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
 {
     public class SearchTextAndDrawRectangle

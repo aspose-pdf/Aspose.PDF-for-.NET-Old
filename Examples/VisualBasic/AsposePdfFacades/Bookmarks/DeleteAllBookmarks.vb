@@ -1,31 +1,24 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2014 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Pdf. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
-Imports Microsoft.VisualBasic
 Imports System.IO
-
+Imports System
 Imports Aspose.Pdf
 Imports Aspose.Pdf.Facades
 
 Namespace AsposePDFFacades.Bookmarks
     Public Class DeleteAllBookmarks
         Public Shared Sub Run()
+            ' ExStart:DeleteAllBookmarks
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks()
-            'open document
+            ' Open document
             Dim bookmarkEditor As New PdfBookmarkEditor()
-            bookmarkEditor.BindPdf(dataDir & "DeleteAllBookmarks.pdf")
-            'delete bookmark
+            bookmarkEditor.BindPdf(dataDir & Convert.ToString("DeleteAllBookmarks.pdf"))
+            ' Delete bookmark
             bookmarkEditor.DeleteBookmarks()
-            'save updated PDF file
-            bookmarkEditor.Save(dataDir & "DeleteAllBookmarks_out.pdf")
-
+            ' Save updated PDF file
+            bookmarkEditor.Save(dataDir & Convert.ToString("DeleteAllBookmarks_out_.pdf"))
+            ' ExEnd:DeleteAllBookmarks
 
         End Sub
     End Class
 End Namespace
+

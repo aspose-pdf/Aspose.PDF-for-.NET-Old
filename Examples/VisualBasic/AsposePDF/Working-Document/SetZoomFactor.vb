@@ -3,6 +3,7 @@ Imports System
 Imports Microsoft.VisualBasic
 Imports Aspose.Pdf
 Imports Aspose.Pdf.Annotations
+
 Namespace AsposePDF.WorkingDocuments
     Public Class SetZoomFactor
         Public Shared Sub Run()

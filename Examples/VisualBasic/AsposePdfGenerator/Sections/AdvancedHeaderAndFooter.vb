@@ -2,6 +2,7 @@
 Imports System
 Imports Microsoft.VisualBasic
 Imports AP = Aspose.Pdf
+
 Namespace AsposePdfGenerator.Sections
     Public Class AdvancedHeaderAndFooter
         Public Shared Sub Run()

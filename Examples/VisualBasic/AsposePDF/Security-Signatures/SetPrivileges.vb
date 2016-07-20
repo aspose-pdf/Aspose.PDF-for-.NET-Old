@@ -3,6 +3,7 @@ Imports System
 Imports Microsoft.VisualBasic
 Imports Aspose.Pdf.Facades
 Imports Aspose.Pdf
+
 Namespace AsposePDF.SecuritySignatures
     Public Class SetPrivileges
         Public Shared Sub Run()

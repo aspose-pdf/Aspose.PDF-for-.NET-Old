@@ -1,6 +1,7 @@
 using System.IO;
 using Aspose.Pdf;
 using Aspose.Pdf.Facades;
+
 namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Images
 {
     public class AddImage

@@ -2,6 +2,7 @@ Imports System.IO
 Imports System
 Imports Aspose.Pdf.Annotations
 Imports Aspose.Pdf
+
 Namespace AsposePDF.WorkingDocuments
     Public Class GetZoomFactor
         Public Shared Sub Run()

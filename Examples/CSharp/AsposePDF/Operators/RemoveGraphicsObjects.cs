@@ -2,6 +2,7 @@ using System.IO;
 using System;
 using Aspose.Pdf;
 using System.Collections;
+
 namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Operators
 {
     public class RemoveGraphicsObjects

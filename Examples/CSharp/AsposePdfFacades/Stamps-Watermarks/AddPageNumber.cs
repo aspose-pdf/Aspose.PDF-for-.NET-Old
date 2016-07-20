@@ -1,12 +1,4 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2014 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Pdf. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
 using System.IO;
-
 using Aspose.Pdf;
 using Aspose.Pdf.Facades;
 using System.Drawing;
@@ -17,32 +9,34 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.StampsWatermarks
     {
         public static void Run()
         {
+            // ExStart:AddPageNumber
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdfFacades_StampsWatermarks();
 
-            //create PdfFileStamp object
+            // Create PdfFileStamp object
             PdfFileStamp fileStamp = new PdfFileStamp();
 
-            //Open Document
-            fileStamp.BindPdf(dataDir + "Input_new.pdf");
+            // Open Document
+            fileStamp.BindPdf(dataDir + "AddPageNumber.pdf");
             
-            //get total number of pages
-            int totalPages = new PdfFileInfo(dataDir+ "Input_new.pdf").NumberOfPages;
+            // Get total number of pages
+            int totalPages = new PdfFileInfo(dataDir + "AddPageNumber.pdf").NumberOfPages;
 
-            //create formatted text for page number
+            // Create formatted text for page number
             FormattedText formattedText = new FormattedText("Page # Of " + totalPages, System.Drawing.Color.Blue, System.Drawing.Color.Gray, Aspose.Pdf.Facades.FontStyle.Courier, EncodingType.Winansi, false, 14);
 
-            //set starting number for first page; you might want to start from 2 or more
+            // Set starting number for first page; you might want to start from 2 or more
             fileStamp.StartingNumber = 1;
 
-            //add page number
+            // Add page number
             fileStamp.AddPageNumber(formattedText, 0);
 
-            //save updated PDF file
-            fileStamp.Save(dataDir + "AddPageNumber_out.pdf");
+            // Save updated PDF file
+            fileStamp.Save(dataDir + "AddPageNumber_out_.pdf");
 
-            //close fileStamp
+            // Close fileStamp
             fileStamp.Close();
+            // ExEnd:AddPageNumber
             
         }
     }

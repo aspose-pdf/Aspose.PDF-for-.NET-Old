@@ -1,6 +1,7 @@
 using System.IO;
 using System;
 using Aspose.Pdf;
+
 namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Attachments
 {
     public class DisableFilesCompression

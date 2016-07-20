@@ -30,6 +30,8 @@ using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Printing;
 using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.StampsWatermarks;
 using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Text;
 using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.WorkingDocument;
+using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.LinksActions;
+using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.SecuritySignatures;
 
 using Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Conversion;
 using Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Paragraphs;
@@ -503,6 +505,86 @@ namespace Aspose.Pdf.Examples.CSharp
             //ConvertToTIFF.Run();
             //ConvertPageRegion.Run();
             //ExtractImageExtractionMode.Run();
+
+            //// Stamps-Watermarks
+            //// =====================================================   
+            //Aspose.Pdf.Examples.CSharp.AsposePDFFacades.StampsWatermarks.AddTextStampAll.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePDFFacades.StampsWatermarks.AddTextStampPage.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePDFFacades.StampsWatermarks.AddImageStampAll.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePDFFacades.StampsWatermarks.AddImageStampPage.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePDFFacades.StampsWatermarks.AddPageStampAll.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePDFFacades.StampsWatermarks.AddPageStampPage.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePDFFacades.StampsWatermarks.AddPageNumber.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePDFFacades.StampsWatermarks.AddHeader.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePDFFacades.StampsWatermarks.AddFooter.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePDFFacades.StampsWatermarks.AddImageFooter.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePDFFacades.StampsWatermarks.AddImageHeader.Run();  
+
+            //// Bookmarks
+            //// =====================================================   
+            //CreateBookmarksAll.Run();
+            //CreateBookmarksPagesProperties.Run();
+            //CreateBookmarkPage.Run();
+            //CreateBookmarkPageRange.Run();
+            //UpdateBookmark.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Bookmarks.DeleteAllBookmarks.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Bookmarks.DeleteABookmark.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Bookmarks.AddBookmark.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Bookmarks.AddChildBookmark.Run();
+            //ImportFromXML.Run();
+            //ExportToXML.Run();
+            //ExtractBookmarks.Run();
+            //GetFromPDF.Run();
+
+            //// Links-Actions
+            //// =====================================================   
+            //CreateAppLink.Run();
+            //CreateAppLinkWithColor.Run();
+            //CreateLocalLink.Run();
+            //CreateJSLink.Run();
+            //RemoveAction.Run();
+            //CreateDocAdditionalAction.Run();
+            //CreateDocLink.Run();
+
+            //// Forms
+            //// =====================================================   
+            //FillFormFieldF.Run();
+            //AddFormField.Run();
+            //GetFormFieldValue.Run();
+            //DeleteField.Run();
+            //MoveField.Run();
+            //GetFieldValue.Run();
+            //FlattenAllFields.Run();
+            //DecorateParticularField.Run();
+            //DecorateFields.Run();
+            //AddListItem.Run();
+            //DeleteListItem.Run();
+            //SetSubmitButtonURL.Run();
+            //SetJSPushButton.Run();
+            //CopyInnerField.Run();
+            //CopyOuterField.Run();
+            //ExportDataToXML.Run();
+            //ExportDataToPdf.Run();
+            //ImportDataFromPdf.Run();
+            //ExportDataToXFDF.Run();
+            //ImportDataFromXFDF.Run();
+
+            //// Security-Signatures
+            //// =====================================================   
+            //EncryptFile.Run();
+            //DecryptFile.Run();   
+            //SetPrivilegesOnFile.Run();  
+            //ChangeFilePassword.Run();
+            //VerifySignature.Run();
+
+            //// Printing
+            //// =====================================================   
+            //PrintToDefaultPrinter.Run();
+            //PrintoXPSPrinter.Run();
+            //PdfToPostScript.Run();
+            //CheckPrintJobStatus.Run();
+            //PrintPages.Run();
+            //PrintPageRange.Run();
                                  
             // Stop before exiting
             Console.WriteLine("\n\nProgram Finished. Press any key to exit....");
@@ -580,6 +662,10 @@ namespace Aspose.Pdf.Examples.CSharp
         {
             return Path.GetFullPath(GetDataDir_Data() + "AsposePDF/Working-Document/");
         }
+        public static String GetDataDir_AsposePdfFacades_SecuritySignatures()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePdfFacades/Security-Signatures/");
+        }
         public static String GetDataDir_AsposePdfFacades_Annotations()
         {
             return Path.GetFullPath(GetDataDir_Data() + "AsposePdfFacades/Annotations/");
@@ -591,7 +677,11 @@ namespace Aspose.Pdf.Examples.CSharp
         public static String GetDataDir_AsposePdfFacades_Bookmarks()
         {
             return Path.GetFullPath(GetDataDir_Data() + "AsposePdfFacades/Bookmarks/");
-        }        
+        }
+        public static String GetDataDir_AsposePdfFacades_LinksActions()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePdfFacades/Links-Actions/");
+        }           
         public static String GetDataDir_AsposePdfFacades_Forms()
         {
             return Path.GetFullPath(GetDataDir_Data() + "AsposePdfFacades/Forms/");

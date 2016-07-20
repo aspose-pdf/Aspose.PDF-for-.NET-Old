@@ -2,6 +2,7 @@ using System.IO;
 using Aspose.Pdf;
 using Aspose.Pdf.Facades;
 using System.Text;
+
 namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Text
 {
     public class ExtractText

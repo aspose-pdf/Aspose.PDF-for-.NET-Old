@@ -2,6 +2,7 @@
 Imports System
 Imports Aspose.Pdf
 Imports System.Drawing.Imaging
+
 Namespace AsposePDF.Images
     Public Class IdentifyImages
         Public Shared Sub Run()

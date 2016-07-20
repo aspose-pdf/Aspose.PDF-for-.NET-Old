@@ -4,6 +4,7 @@ Imports Aspose.Pdf
 Imports Aspose.Pdf.Facades
 Imports Aspose.Pdf.Annotations
 Imports System.Collections
+
 Namespace AsposePDFFacades.Annotations
     Public Class ExtractAnnotations
         Public Shared Sub Run()

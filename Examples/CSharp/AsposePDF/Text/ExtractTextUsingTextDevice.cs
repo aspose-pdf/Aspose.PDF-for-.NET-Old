@@ -5,6 +5,7 @@ using Aspose.Pdf.Devices;
 using Aspose.Pdf.Text.TextOptions;
 using System;
 using System.Text;
+
 namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
 {
     public class ExtractTextUsingTextDevice

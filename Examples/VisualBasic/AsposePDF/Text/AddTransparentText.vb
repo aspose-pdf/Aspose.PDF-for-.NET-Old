@@ -4,6 +4,7 @@ Imports APD = Aspose.Pdf.Drawing
 Imports Microsoft.VisualBasic
 Imports AP = Aspose.Pdf
 Imports Aspose.Pdf.Text
+
 Namespace AsposePDF.Text
     Public Class AddTransparentText
         Public Shared Sub Run()
