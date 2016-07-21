@@ -32,6 +32,12 @@ using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Text;
 using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.WorkingDocument;
 using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.LinksActions;
 using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.SecuritySignatures;
+using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.Append;
+using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.ConcatenateDocuments;
+using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.DeletePages;
+using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.ExtractPages;
+using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.InsertPages;
+using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.MakeBooklet;
 
 using Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Conversion;
 using Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Paragraphs;
@@ -585,6 +591,51 @@ namespace Aspose.Pdf.Examples.CSharp
             //CheckPrintJobStatus.Run();
             //PrintPages.Run();
             //PrintPageRange.Run();
+
+            //// Pages
+            //// =====================================================
+
+            ////// Append
+            ////// =====================================================   
+            //AppendFiles.Run();
+            //AppendArrayOfFiles.Run();
+            //AppendFilesUsingStreams.Run();
+            //AppendArrayOfFilesUsingStream.Run();
+
+            ////// ConcatenateDocuments
+            ////// =====================================================   
+            //ConcatenateUsingPath.Run();
+            //ConcatenateWithBlankPdf.Run();
+            //ConcatenateArrayOfFilesWithPath.Run();
+            //ConcatenateUsingStreams.Run();
+            //ConcatenateBlankPdfUsingStreams.Run();
+            //ConcatenateArrayOfPdfUsingStreams.Run();
+
+            ////// DeletePages
+            ////// =====================================================   
+            //DeletePagesUsingFilePath.Run();
+            //DeletePagesUsingStream.Run();
+
+            ////// ExtractPages
+            ////// =====================================================   
+            //ExtractPagesBetweenNumbers.Run();
+            //ExtractArrayOfPages.Run();
+            //ExtractPagesBetweenTwoNumbersUsingStreams.Run();
+            //ExtractArrayOfPagesUsingStreams.Run();
+
+            ////// InsertPages
+            ////// =====================================================   
+            //InsertPagesBetweenNumbers.Run();
+            //InsertArrayOfPages.Run();
+            //InsertPagesUsingStreams.Run();
+            //InsertPagesUsingStreams.Run();
+
+            ////// MakeBooklet
+            ////// =====================================================   
+            //MakeBookletUsingPaths.Run();
+            //MakeBookletUsingPageSizeAndPaths.Run();            
+            //MakeBookletUsingStreams.Run();
+            //MakeBookletUsingPageSizeAndStreams.Run();
                                  
             // Stop before exiting
             Console.WriteLine("\n\nProgram Finished. Press any key to exit....");
@@ -705,6 +756,10 @@ namespace Aspose.Pdf.Examples.CSharp
         public static String GetDataDir_AsposePdfFacades_WorkingDocuments()
         {
             return Path.GetFullPath(GetDataDir_Data() + "AsposePdfFacades/Working-Document/");
+        }
+        public static String GetDataDir_AsposePdfFacades_Pages()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePdfFacades/Pages/");
         }
         public static String GetDataDir_AsposePdfGenerator_Conversion()
         {

@@ -46,6 +46,12 @@ Imports Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Bookmarks
 Imports Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.LinksActions
 Imports Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Forms
 Imports Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Printing
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Pages.Append
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Pages.ConcatenateDocuments
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Pages.DeletePages
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Pages.ExtractPages
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Pages.InsertPages
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Pages.MakeBooklet
 
 Module RunExamples
     Sub Main()
@@ -570,6 +576,52 @@ Module RunExamples
         'PrintPages.Run()
         'PrintPageRange.Run()
 
+        '''' Pages
+        '''' =====================================================
+
+        '''''' Append
+        '''''' =====================================================   
+        'AppendFiles.Run()
+        'AppendArrayOfFiles.Run()
+        'AppendFilesUsingStreams.Run()
+        'AppendArrayOfFilesUsingStream.Run()
+
+        '''''' ConcatenateDocuments
+        '''''' =====================================================   
+        'ConcatenateUsingPath.Run()
+        'ConcatenateWithBlankPdf.Run()
+        'ConcatenateArrayOfFilesWithPath.Run()
+        'ConcatenateUsingStreams.Run()
+        'ConcatenateBlankPdfUsingStreams.Run()
+        'ConcatenateArrayOfPdfUsingStreams.Run()
+
+        '''''' DeletePages
+        '''''' =====================================================   
+        'DeletePagesUsingFilePath.Run()
+        'DeletePagesUsingStream.Run()
+
+        '''''' ExtractPages
+        '''''' =====================================================   
+        'ExtractPagesBetweenNumbers.Run()
+        'ExtractArrayOfPages.Run()
+        'ExtractPagesBetweenTwoNumbersUsingStreams.Run()
+        'ExtractArrayOfPagesUsingStreams.Run()
+
+        '''''' InsertPages
+        '''''' =====================================================   
+        'InsertPagesBetweenNumbers.Run()
+        'InsertArrayOfPages.Run()
+        'InsertPagesUsingStreams.Run()
+        'InsertPagesUsingStreams.Run()
+
+        '''''' MakeBooklet
+        '''''' =====================================================   
+        'MakeBookletUsingPaths.Run()
+        'MakeBookletUsingPageSizeAndPaths.Run()
+        'MakeBookletUsingStreams.Run()
+        'MakeBookletUsingPageSizeAndStreams.Run()
+
+
         ' Stop before exiting
         Console.WriteLine(vbLf & vbLf & "Program Finished. Press any key to exit....")
         Console.ReadKey()
@@ -651,6 +703,9 @@ Module RunExamples
     End Function
     Public Function GetDataDir_AsposePdfFacades_Images() As [String]
         Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("AsposePdfFacades/Images/"))
+    End Function
+    Public Function GetDataDir_AsposePdfFacades_Pages() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() + "AsposePdfFacades/Pages/")
     End Function
 
     Public Function GetDataDir_AsposePdfFacades_StampsWatermarks() As [String]
