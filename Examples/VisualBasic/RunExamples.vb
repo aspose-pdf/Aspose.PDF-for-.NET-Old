@@ -52,6 +52,9 @@ Imports Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Pages.DeletePages
 Imports Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Pages.ExtractPages
 Imports Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Pages.InsertPages
 Imports Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Pages.MakeBooklet
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Pages.MakeNUp
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Pages.SplitPages
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Pages.ManipulatePageProperties
 
 Module RunExamples
     Sub Main()
@@ -620,6 +623,22 @@ Module RunExamples
         'MakeBookletUsingPageSizeAndPaths.Run()
         'MakeBookletUsingStreams.Run()
         'MakeBookletUsingPageSizeAndStreams.Run()
+
+        '''''' SplitPages
+        '''''' =====================================================   
+        'SplitPagesUsingPaths.Run()
+        'SplitPagesUsingStreams.Run()
+        'SplitPagesToBulkUsingPaths.Run()
+        'SplitPagesToBulkUsingStreams.Run()
+        'SplitPagesToEndUsingPaths.Run()
+        'SplitToIndividualPagesUsingPaths.Run()
+
+        '''''' ManipulatePageProperties
+        '''''' =====================================================   
+        GetPageProperties.Run()
+        SetPageProperties.Run()
+        ResizePageContents.Run()
+
 
 
         ' Stop before exiting

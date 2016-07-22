@@ -38,6 +38,9 @@ using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.DeletePages;
 using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.ExtractPages;
 using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.InsertPages;
 using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.MakeBooklet;
+using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.MakeNUp;
+using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.SplitPages;
+using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.ManipulatePageProperties;
 
 using Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Conversion;
 using Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Paragraphs;
@@ -636,6 +639,21 @@ namespace Aspose.Pdf.Examples.CSharp
             //MakeBookletUsingPageSizeAndPaths.Run();            
             //MakeBookletUsingStreams.Run();
             //MakeBookletUsingPageSizeAndStreams.Run();
+
+            ////// SplitPages
+            ////// =====================================================   
+            //SplitPagesUsingPaths.Run();
+            //SplitPagesUsingStreams.Run();
+            //SplitPagesToBulkUsingPaths.Run();
+            //SplitPagesToBulkUsingStreams.Run();
+            //SplitPagesToEndUsingPaths.Run();
+            //SplitToIndividualPagesUsingPaths.Run();
+
+            ////// ManipulatePageProperties
+            ////// =====================================================   
+            //GetPageProperties.Run();
+            //SetPageProperties.Run();
+            ResizePageContents.Run();
                                  
             // Stop before exiting
             Console.WriteLine("\n\nProgram Finished. Press any key to exit....");
