@@ -324,6 +324,7 @@
     <Compile Include="AsposePDF\Bookmarks\DeleteAllBookmarks.vb" />
     <Compile Include="AsposePDF\Bookmarks\DeleteParticularBookmark.vb" />
     <Compile Include="AsposePDF\Bookmarks\ExpandBookmarks.vb" />
+    <Compile Include="AsposePDF\Bookmarks\GetBookmarkPageNumber.vb" />
     <Compile Include="AsposePDF\Bookmarks\GetBookmarks.vb" />
     <Compile Include="AsposePDF\Bookmarks\GetChildBookmarks.vb" />
     <Compile Include="AsposePDF\Bookmarks\InheritZoom.vb" />

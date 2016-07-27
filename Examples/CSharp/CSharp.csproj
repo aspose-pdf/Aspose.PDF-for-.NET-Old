@@ -331,6 +331,7 @@
     <Compile Include="AsposePDF\Bookmarks\AddChildBookmark.cs" />
     <Compile Include="AsposePDF\Bookmarks\DeleteAllBookmarks.cs" />
     <Compile Include="AsposePDF\Bookmarks\DeleteParticularBookmark.cs" />
+    <Compile Include="AsposePDF\Bookmarks\GetBookmarkPageNumber.cs" />
     <Compile Include="AsposePDF\Bookmarks\GetBookmarks.cs" />
     <Compile Include="AsposePDF\Bookmarks\GetChildBookmarks.cs" />
     <Compile Include="AsposePDF\Bookmarks\ExpandBookmarks.cs" />
