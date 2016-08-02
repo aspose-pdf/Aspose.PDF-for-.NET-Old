@@ -48,9 +48,10 @@ Namespace AsposePDF.Images
                 'Create JPEG device with specified attributes (Width, Height, Resolution, Quality)
                 'Quality [0-100], 100 is Maximum
                 Dim jpegDevice As New JpegDevice(resolution, 100)
-
+                ' ExStart:ConvertParticularPage
                 'Convert a particular page and save the image to stream
                 jpegDevice.Process(pdfDocument.Pages(1), imageStream)
+                ' ExEnd:ConvertParticularPage
                 'Close stream
                 imageStream.Close()
 
