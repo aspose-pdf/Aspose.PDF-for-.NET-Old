@@ -1,6 +1,7 @@
 using System.IO;
 using Aspose.Pdf;
 using Aspose.Pdf.Text;
+using Aspose.Pdf.Text.TextOptions;
 using System;
 
 namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
@@ -37,6 +38,25 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
             System.IO.File.WriteAllText(dataDir, extractedText);           
             // ExEnd:ExtractColumnsText            
             Console.WriteLine("\nColumns text extracted successfully from Pages of PDF Document.\nFile saved at " + dataDir);
+        }
+        public static void UsingScaleFactor()
+        {
+            // ExStart:UsingScaleFactor
+            // The path to the documents directory.
+            string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+            // Open document
+            Document pdfDocument = new Document(dataDir + "ExtractTextPage.pdf");
+
+            TextAbsorber textAbsorber = new TextAbsorber();
+            textAbsorber.ExtractionOptions = new TextExtractionOptions(TextExtractionOptions.TextFormattingMode.Pure);
+            // Setting scale factor to 0.5 is enough to split columns in the majority of documents
+            // Setting of zero allows to algorithm choose scale factor automatically
+            textAbsorber.ExtractionOptions.ScaleFactor = 0.5; /* 0; */
+            pdfDocument.Pages.Accept(textAbsorber);
+            String extractedText = textAbsorber.Text;
+            System.IO.File.WriteAllText( dataDir + "ExtractTextUsingScaleFactor_out_.text", extractedText);
+            // ExEnd:UsingScaleFactor
         }
     }
 }
