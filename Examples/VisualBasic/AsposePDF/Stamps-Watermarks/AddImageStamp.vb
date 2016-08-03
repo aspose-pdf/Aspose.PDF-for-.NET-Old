@@ -31,6 +31,23 @@ Namespace AsposePDF.StampsWatermarks
             ' ExEnd:AddImageStamp
             Console.WriteLine(Convert.ToString(vbLf & "Image stamp added successfully." & vbLf & "File saved at ") & dataDir)
         End Sub
+        Public Shared Sub ControlImageQuality()
+            ' ExStart:ControlImageQuality
+            ' The path to the documents directory.
+            Dim dataDir As String = RunExamples.GetDataDir_AsposePdf_StampsWatermarks()
+
+            ' Open document
+            Dim pdfDocument As New Document(dataDir & Convert.ToString("AddImageStamp.pdf"))
+
+            ' Create image stamp
+            Dim imageStamp As New ImageStamp(dataDir & Convert.ToString("aspose-logo.jpg"))
+
+            imageStamp.Quality = 10
+            pdfDocument.Pages(1).AddStamp(imageStamp)
+            pdfDocument.Save(dataDir & Convert.ToString("ControlImageQuality_out_.pdf"))
+            ' ExEnd:ControlImageQuality
+        End Sub
+
     End Class
 End Namespace
 

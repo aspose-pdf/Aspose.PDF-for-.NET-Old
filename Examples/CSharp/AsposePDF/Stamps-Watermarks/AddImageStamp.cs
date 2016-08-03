@@ -34,5 +34,22 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.StampsWatermarks
             Console.WriteLine("\nImage stamp added successfully.\nFile saved at " + dataDir);
             
         }
+        public static void ControlImageQuality()
+        {
+            // ExStart:ControlImageQuality
+            // The path to the documents directory.
+            string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+
+            // Open document
+            Document pdfDocument = new Document(dataDir+ "AddImageStamp.pdf");
+
+            // Create image stamp
+            ImageStamp imageStamp = new ImageStamp(dataDir + "aspose-logo.jpg");
+
+            imageStamp.Quality = 10;
+            pdfDocument.Pages[1].AddStamp(imageStamp);
+            pdfDocument.Save(dataDir + "ControlImageQuality_out_.pdf");
+            // ExEnd:ControlImageQuality
+        }
     }
 }
