@@ -503,6 +503,7 @@
     <Compile Include="AsposePDF\Text\CustomTabStops.vb" />
     <Compile Include="AsposePDF\Text\ExtractColumnsText.vb" />
     <Compile Include="AsposePDF\Text\ExtractTextAll.vb" />
+    <Compile Include="AsposePDF\Text\ExtractTextFromPageRegion.vb" />
     <Compile Include="AsposePDF\Text\ExtractTextPage.vb" />
     <Compile Include="AsposePDF\Text\ExtractTextUsingTextDevice.vb" />
     <Compile Include="AsposePDF\Text\FootAndEndNotes.vb" />

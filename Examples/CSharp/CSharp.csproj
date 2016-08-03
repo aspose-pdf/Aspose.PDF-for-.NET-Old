@@ -507,6 +507,8 @@
     <Compile Include="AsposePDF\Text\CreateMultiColumnPdf.cs" />
     <Compile Include="AsposePDF\Text\AddHTMLUsingDOM.cs" />
     <Compile Include="AsposePDF\Text\AddTransparentText.cs" />
+    <Compile Include="AsposePDF\Text\ExtractTextFromPageRegion.cs" />
+    <Compile Include="AsposePDF\Text\ExtractTextAll.cs" />
     <Compile Include="AsposePDF\Text\ReplaceableSymbolsInHeaderFooter.cs" />
     <Compile Include="AsposePDF\Text\RenderingReplaceableSymbols.cs" />
     <Compile Include="AsposePDF\Text\ExtractColumnsText.cs" />
