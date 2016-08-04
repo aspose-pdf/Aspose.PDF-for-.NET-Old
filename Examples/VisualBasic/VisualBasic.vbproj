@@ -363,6 +363,7 @@
     <Compile Include="AsposePDF\DocumentConversion\PDFToXML.vb" />
     <Compile Include="AsposePDF\DocumentConversion\PDFToXPS.vb" />
     <Compile Include="AsposePDF\DocumentConversion\ProvideCredentialsDuringHTMLToPDF.vb" />
+    <Compile Include="AsposePDF\DocumentConversion\ReplaceMissingFonts.vb" />
     <Compile Include="AsposePDF\DocumentConversion\SVGToPDF.vb" />
     <Compile Include="AsposePDF\DocumentConversion\TeXToPDF.vb" />
     <Compile Include="AsposePDF\DocumentConversion\TextToPDF.vb" />
