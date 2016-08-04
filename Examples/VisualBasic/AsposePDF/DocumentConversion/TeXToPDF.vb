@@ -15,8 +15,8 @@ Namespace AsposePDF.DocumentConversion
                 ' Create Document object
                 Dim doc As New Document(dataDir & Convert.ToString("samplefile.tex"), Latexoptions)
                 ' Save the output in PDF file
-                ' ExEnd:TeXToPDF
                 doc.Save(dataDir & Convert.ToString("TeXToPDF_out_.pdf"))
+                ' ExEnd:TeXToPDF
             Catch ex As Exception
                 Console.WriteLine(ex.Message)
             End Try

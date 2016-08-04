@@ -21,8 +21,8 @@ Namespace AsposePDF.DocumentConversion.PDFToHTMLFormat
                 options.CustomResourceSavingStrategy = New HtmlSaveOptions.ResourceSavingStrategy(AddressOf Custom_processor_of_embedded_images)
 
                 ' Do conversion
-                ' ExEnd:PrefixForURLs
                 testDoc.Save(dataDir & Convert.ToString("PrefixForURLs_out_.html"), options)
+                ' ExEnd:PrefixForURLs
             Catch ex As Exception
                 Console.WriteLine(ex.Message)
             End Try

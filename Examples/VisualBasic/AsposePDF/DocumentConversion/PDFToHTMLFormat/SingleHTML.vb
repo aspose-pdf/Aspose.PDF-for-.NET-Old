@@ -25,8 +25,8 @@ Namespace AsposePDF.DocumentConversion.PDFToHTMLFormat
                 newOptions.FontSavingMode = HtmlSaveOptions.FontSavingModes.SaveInAllFormats
                 ' Output file path 
                 Dim outHtmlFile As String = "SingleHTML_out_.html"
-                ' ExEnd:SingleHTML
                 doc.Save(outHtmlFile, newOptions)
+                ' ExEnd:SingleHTML
             Catch ex As Exception
                 Console.WriteLine(ex.Message)
             End Try

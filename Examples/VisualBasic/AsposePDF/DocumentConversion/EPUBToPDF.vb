@@ -18,8 +18,8 @@ Namespace AsposePDF.DocumentConversion
                 Dim pdf As New Document(dataDir & Convert.ToString("EPUBToPDF.epub"), epubload)
 
                 ' Save the resultant PDF document
-                ' ExEnd:EPUBToPDF
                 pdf.Save(dataDir & Convert.ToString("EPUBToPDF_out_.pdf"))
+                ' ExEnd:EPUBToPDF
             Catch ex As Exception
                 Console.WriteLine(ex.Message)
             End Try

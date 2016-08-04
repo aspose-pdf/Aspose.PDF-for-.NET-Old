@@ -18,8 +18,8 @@ Namespace AsposePDF.DocumentConversion
                 Dim document As New Document(dataDir & Convert.ToString("XPSToPDF.xps"), options)
 
                 ' Save the resultant PDF document
-                ' ExEnd:XPSToPDF
                 document.Save(dataDir & Convert.ToString("XPSToPDF_out_.pdf"))
+                ' ExEnd:XPSToPDF
             Catch ex As Exception
 
                 Console.WriteLine(ex.Message)

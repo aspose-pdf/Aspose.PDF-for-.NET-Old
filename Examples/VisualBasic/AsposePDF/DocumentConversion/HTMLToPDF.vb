@@ -15,8 +15,9 @@ Namespace AsposePDF.DocumentConversion
                 options.CustomLoaderOfExternalResources = New LoadOptions.ResourceLoadingStrategy(AddressOf SamePictureLoader)
 
                 Dim pdfDocument As New Document(dataDir & Convert.ToString("HTMLToPDF.html"), options)
-                ' ExEnd:HTMLToPDF
+
                 pdfDocument.Save("HTMLToPDF_out_.pdf")
+                ' ExEnd:HTMLToPDF
             Catch ex As Exception
                 Console.WriteLine(ex.Message)
             End Try

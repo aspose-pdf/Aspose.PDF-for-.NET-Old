@@ -17,9 +17,8 @@ Namespace AsposePDF.DocumentConversion.PDFToHTMLFormat
                 Dim saveOptions As New HtmlSaveOptions()
                 saveOptions.FixedLayout = True
                 saveOptions.RasterImagesSavingMode = HtmlSaveOptions.RasterImagesSavingModes.AsEmbeddedPartsOfPngPageBackground
-
-                ' ExEnd:AvoidSavingImages
                 pdfDocument.Save(dataDir & Convert.ToString("AvoidSavingImages_out_.html"), saveOptions)
+                ' ExEnd:AvoidSavingImages
             Catch ex As Exception
                 Console.WriteLine(ex.Message)
             End Try

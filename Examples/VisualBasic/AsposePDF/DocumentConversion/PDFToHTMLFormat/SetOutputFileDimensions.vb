@@ -49,8 +49,8 @@ Namespace AsposePDF.DocumentConversion.PDFToHTMLFormat
                 ' Conversion to HTML itself
                 exportDoc.Save(dataDir & Convert.ToString("SetOutputFileDimensions_out_.html"), htmlOptions)
                 ' Close the stream object
-                ' ExEnd:SetOutputFileDimensions
                 output.Close()
+                ' ExEnd:SetOutputFileDimensions
             Catch ex As Exception
                 Console.WriteLine(ex.Message)
             End Try

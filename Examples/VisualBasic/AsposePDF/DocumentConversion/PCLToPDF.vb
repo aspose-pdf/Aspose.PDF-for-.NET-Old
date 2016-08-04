@@ -18,8 +18,8 @@ Namespace AsposePDF.DocumentConversion
                 Dim doc As New Document(dataDir & Convert.ToString("hidetext.pcl"), loadopt)
 
                 ' Save the resultant PDF document
-                ' ExEnd:PCLToPDF
                 doc.Save(dataDir & Convert.ToString("PCLToPDF_out_.pdf"))
+                ' ExEnd:PCLToPDF
             Catch ex As Exception
                 Console.WriteLine(ex.Message)
             End Try

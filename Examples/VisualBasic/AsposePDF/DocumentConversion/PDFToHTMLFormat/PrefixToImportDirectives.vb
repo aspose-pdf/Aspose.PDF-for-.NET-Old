@@ -25,8 +25,8 @@ Namespace AsposePDF.DocumentConversion.PDFToHTMLFormat
                 '----------------------------------------------------------------------------
                 ' Run converter
                 '----------------------------------------------------------------------------
-                ' ExEnd:PrefixToImportDirectives
                 pdfDocument.Save(outHtmlFile, saveOptions)
+                ' ExEnd:PrefixToImportDirectives
             Catch ex As Exception
                 Console.WriteLine(ex.Message)
             End Try

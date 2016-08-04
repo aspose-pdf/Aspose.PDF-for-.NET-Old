@@ -32,8 +32,8 @@ Namespace AsposePDF.DocumentConversion.PDFToHTMLFormat
                 End If
 
                 ' Save the output
-                ' ExEnd:SaveFonts
                 doc.Save(outFile, saveOptions)
+                ' ExEnd:SaveFonts
             Catch ex As Exception
                 Console.WriteLine(ex.Message)
             End Try

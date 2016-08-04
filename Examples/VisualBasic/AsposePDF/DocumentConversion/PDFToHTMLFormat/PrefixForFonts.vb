@@ -27,8 +27,8 @@ Namespace AsposePDF.DocumentConversion.PDFToHTMLFormat
                 ' Create HtmlSaveOption with custom saving strategy that will do all the job
                 Dim saveOptions As New HtmlSaveOptions()
                 saveOptions.CustomResourceSavingStrategy = New HtmlSaveOptions.ResourceSavingStrategy(AddressOf CustomResourcesProcessing)
-                ' ExEnd:PrefixForFonts
                 doc.Save(outHtmlFile, saveOptions)
+                ' ExEnd:PrefixForFonts
             Catch ex As Exception
                 Console.WriteLine(ex.Message)
             End Try

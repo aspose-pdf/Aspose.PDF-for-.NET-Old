@@ -15,8 +15,8 @@ Namespace AsposePDF.DocumentConversion.PDFToHTMLFormat
                 Dim outHtmlFile As String = dataDir & Convert.ToString("PrefixCSSClassNames_out_.html")
                 Dim saveOptions As New HtmlSaveOptions()
                 saveOptions.CssClassNamesPrefix = ".gDV__ .stl_"
-                ' ExEnd:PrefixCSSClassNames
                 pdfDocument.Save(outHtmlFile, saveOptions)
+                ' ExEnd:PrefixCSSClassNames
             Catch ex As Exception
                 Console.WriteLine(ex.Message)
             End Try

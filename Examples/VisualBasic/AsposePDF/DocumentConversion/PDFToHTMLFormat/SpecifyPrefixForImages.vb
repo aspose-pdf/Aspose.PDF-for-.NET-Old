@@ -18,9 +18,8 @@ Namespace AsposePDF.DocumentConversion.PDFToHTMLFormat
                 Dim saveOptions As New HtmlSaveOptions()
                 saveOptions.SplitIntoPages = False
                 saveOptions.CustomResourceSavingStrategy = New HtmlSaveOptions.ResourceSavingStrategy(AddressOf SavingTestStrategy_1)
-
-                ' ExEnd:SpecifyPrefixForImages
                 doc.Save(outFile, saveOptions)
+                ' ExEnd:SpecifyPrefixForImages
             Catch ex As Exception
                 Console.WriteLine(ex.Message)
             End Try

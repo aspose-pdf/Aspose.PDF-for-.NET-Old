@@ -28,8 +28,8 @@ Namespace AsposePDF.DocumentConversion
                 page.Paragraphs.Add(text)
 
                 ' Save resultant PDF file
-                ' ExEnd:TextToPDF
                 doc.Save(dataDir & Convert.ToString("TexttoPDF_out_.pdf"))
+                ' ExEnd:TextToPDF
             Catch ex As Exception
                 Console.WriteLine(ex.Message)
             End Try

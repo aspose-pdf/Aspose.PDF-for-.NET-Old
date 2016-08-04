@@ -21,8 +21,8 @@ Namespace AsposePDF.DocumentConversion.PDFToHTMLFormat
                 saveOptions.RasterImagesSavingMode = HtmlSaveOptions.RasterImagesSavingModes.AsExternalPngFilesReferencedViaSvg
 
                 ' Save the output in HTML format
-                ' ExEnd:SaveImages
                 doc.Save(dataDir & Convert.ToString("SaveImages_out_.html"), saveOptions)
+                ' ExEnd:SaveImages
             Catch ex As Exception
                 Console.WriteLine(ex.Message)
             End Try

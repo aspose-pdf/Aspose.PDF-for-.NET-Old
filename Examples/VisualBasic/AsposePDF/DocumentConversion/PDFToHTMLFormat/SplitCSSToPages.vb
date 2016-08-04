@@ -40,8 +40,8 @@ Namespace AsposePDF.DocumentConversion.PDFToHTMLFormat
                 options.CustomCssSavingStrategy = New HtmlSaveOptions.CssSavingStrategy(AddressOf Strategy_4_CSS_MULTIPAGE_SAVING_RIGHT_WAY)
                 options.CustomStrategyOfCssUrlCreation = New HtmlSaveOptions.CssUrlMakingStrategy(AddressOf Strategy_5_CSS_MAKING_CUSTOM_URL_FOR_MULTIPAGING)
                 ' 3) Do conversion
-                ' ExEnd:SplitCSSToPages
                 pdfDocument.Save(htmlFile, options)
+                ' ExEnd:SplitCSSToPages
             Catch ex As Exception
                 Console.WriteLine(ex.Message)
             End Try

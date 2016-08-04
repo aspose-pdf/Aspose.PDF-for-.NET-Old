@@ -37,8 +37,8 @@ Namespace AsposePDF.DocumentConversion
                 ' load HTML file
                 Dim pdfDocument As New Document(stream, options)
                 ' save resultant file
-                ' ExEnd:ProvideCredentialsDuringHTMLToPDF
                 pdfDocument.Save("ProvideCredentialsDuringHTMLToPDF_out_.pdf")
+                ' ExEnd:ProvideCredentialsDuringHTMLToPDF
             Catch ex As Exception
                 Console.WriteLine(ex.Message)
             End Try
