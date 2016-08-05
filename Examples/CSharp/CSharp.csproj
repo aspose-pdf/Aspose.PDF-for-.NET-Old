@@ -340,6 +340,7 @@
     <Compile Include="AsposePDF\Bookmarks\UpdateChildBookmarks.cs" />
     <Compile Include="AsposePDF\DocumentConversion\CGMToPDF.cs" />
     <Compile Include="AsposePDF\DocumentConversion\EPUBToPDF.cs" />
+    <Compile Include="AsposePDF\DocumentConversion\ReplaceMissingFonts.cs" />
     <Compile Include="AsposePDF\DocumentConversion\ProvideCredentialsDuringHTMLToPDF.cs" />
     <Compile Include="AsposePDF\DocumentConversion\HTMLToPDF.cs" />
     <Compile Include="AsposePDF\DocumentConversion\PDFAToPDF.cs" />

@@ -17,7 +17,7 @@ Namespace AsposePdfGenerator.WorkingDocuments
             pdf1.DestinationType = AP.Generator.DestinationType.FitPage
             dataDir = dataDir & Convert.ToString("ZoomFactor_out_.pdf")
             pdf1.Save(dataDir)
-            ' ExStart:SetZoomFactor
+            ' ExEnd:SetZoomFactor
             Console.WriteLine(Convert.ToString(vbLf & "Zoom factor setup successfully." & vbLf & "File saved at ") & dataDir)
 
         End Sub
