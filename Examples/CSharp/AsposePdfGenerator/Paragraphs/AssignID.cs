@@ -11,17 +11,13 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Paragraphs
             // ExStart:AssignID
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdfGenerator_Paragraphs();
-            
-            // Instantiate Pdf object by calling its empty constructor
-            Aspose.Pdf.Generator.Pdf pdf1 = new Aspose.Pdf.Generator.Pdf(); 
 
-            // Add a new section to the Pdf object
-            Aspose.Pdf.Generator.Section sec1 = pdf1.Sections.Add(); 
+            // Instantiate Pdf object by calling its empty constructor and add a new section to the Pdf object
+            Aspose.Pdf.Generator.Pdf pdf1 = new Aspose.Pdf.Generator.Pdf();             
+            Aspose.Pdf.Generator.Section sec1 = pdf1.Sections.Add();
 
-            // Create a text paragraph with the reference of a section, sec1
-            Aspose.Pdf.Generator.Text text3 = new Aspose.Pdf.Generator.Text(sec1, "product 1 info ...");
-
-            // Add the text paragraph in the section
+            // Create a text paragraph with the reference of a section, sec1 and add the text paragraph in the section
+            Aspose.Pdf.Generator.Text text3 = new Aspose.Pdf.Generator.Text(sec1, "product 1 info ...");    
             sec1.Paragraphs.Add(text3);
 
             // Set the text paragraph to be the first paragraph among the other ones

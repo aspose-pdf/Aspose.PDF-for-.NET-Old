@@ -13,17 +13,14 @@ Namespace AsposePdfGenerator.Paragraphs
             ' Instantiate Pdf instance by calling its empty constructor
             Dim pdf1 As New AP.Generator.Pdf()
 
-            ' Create a section in the Pdf document
-            Dim sec1 As AP.Generator.Section = pdf1.Sections.Add()
-
-            ' Add a text paragraph in the section
+            ' Create a section in the Pdf document and add a text paragraph in the section
+            Dim sec1 As AP.Generator.Section = pdf1.Sections.Add()            ' 
             sec1.Paragraphs.Add(New AP.Generator.Text("page 1"))
 
             ' Create another text paragraph that has to be rendered
             Dim t2 As New AP.Generator.Text("page2")
 
-            ' Set the IsFirstParagraph property of the text paragraph to true
-            ' to render it to a new page
+            ' Set the IsFirstParagraph property of the text paragraph to true to render it to a new page
             t2.IsFirstParagraph = True
 
             ' Add the text paragraph to be rendered to the section
