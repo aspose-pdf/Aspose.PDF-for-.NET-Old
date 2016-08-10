@@ -7,6 +7,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Text
     {
         public static void Run()
         {
+            // ExStart:ChangeTextFormat
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdfGenerator_Text();
            
@@ -71,7 +72,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Text
 
             // Save the document
             pdf1.Save(dataDir + "ChangeTextFormat_out_.pdf"); 
-            
+            // ExEnd:ChangeTextFormat
         }
     }
 }

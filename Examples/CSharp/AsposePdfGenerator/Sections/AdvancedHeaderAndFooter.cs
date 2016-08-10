@@ -8,7 +8,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Sections
     {
         public static void Run()
         {
-            
+            // ExStart:AdvancedHeaderAndFooter
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdfGenerator_Sections();
             
@@ -100,7 +100,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Sections
 
             //Save Pdf Document
             pdf1.Save(dataDir);
-            
+            // ExEnd:AdvancedHeaderAndFooter
             Console.WriteLine("\nAdvanced header and footer setup successfully.\nFile saved at " + dataDir);
         }
     }

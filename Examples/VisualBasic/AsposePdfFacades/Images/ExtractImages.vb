@@ -6,7 +6,7 @@ Imports Aspose.Pdf.Facades
 Namespace AsposePDFFacades.Images
     Public Class ExtractImages
         Public Shared Sub Run()
-            ' ExStart:ExtractImagesE:\Aspose\Examples\GitHub\Aspose.Pdf-for-.NET\Examples\VisualBasic\AsposePdfFacades\Images\ExtractImages.vb
+            ' ExStart:ExtractImages
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdfFacades_Images()
 

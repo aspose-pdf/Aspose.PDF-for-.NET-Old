@@ -7,6 +7,7 @@ Namespace AsposePdfGenerator.Sections
     Public Class AdvancedHeaderAndFooter
         Public Shared Sub Run()
 
+            ' ExStart:AdvancedHeaderAndFooter
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdfGenerator_Sections()
 
@@ -100,7 +101,7 @@ Namespace AsposePdfGenerator.Sections
 
             'Save Pdf Document
             pdf1.Save(dataDir)
-
+            ' ExEnd:AdvancedHeaderAndFooter
             Console.WriteLine(Convert.ToString(vbLf & "Advanced header and footer setup successfully." & vbLf & "File saved at ") & dataDir)
         End Sub
     End Class

@@ -8,7 +8,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Text
     {
         public static void Run()
         {
-            
+         
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdfGenerator_Text();
 
@@ -46,6 +46,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Text
         }
         public static void TrueTypeBoldFont()
         {
+          
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdfGenerator_Text();
 
@@ -67,6 +68,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Text
             dataDir = dataDir + "TrueTypeBoldFont_out_.pdf";
             // Create the result PDF Document
             pdf1.Save(dataDir);
+            
         }
         public static void TrueTypeFont()
         {

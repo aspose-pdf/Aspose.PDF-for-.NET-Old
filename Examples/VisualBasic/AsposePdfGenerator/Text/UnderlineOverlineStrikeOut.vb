@@ -6,6 +6,7 @@ Imports Aspose.Pdf
 Namespace AsposePdfGenerator.Text
     Public Class UnderlineOverlineStrikeOut
         Public Shared Sub Run()
+            ' ExStart:UnderlineOverlineStrikeOut
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdfGenerator_Text()
 
@@ -40,7 +41,7 @@ Namespace AsposePdfGenerator.Text
 
             ' Save the Pdf
             pdf1.Save(dataDir & "UnderlineOverlineStrike_out_.pdf")
-
+            ' ExEnd:UnderlineOverlineStrikeOut
 
         End Sub
     End Class

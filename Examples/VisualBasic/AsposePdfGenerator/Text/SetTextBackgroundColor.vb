@@ -6,6 +6,7 @@ Imports Aspose.Pdf
 Namespace AsposePdfGenerator.Text
     Public Class SetTextBackgroundColor
         Public Shared Sub Run()
+            ' ExStart:SetTextBackgroundColor
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdfGenerator_Text()
 
@@ -32,7 +33,7 @@ Namespace AsposePdfGenerator.Text
 
             ' Save the Pdf
             pdf1.Save(dataDir & "SetTextBackgroundColor_out_.pdf")
-
+            ' ExEnd:SetTextBackgroundColor
 
         End Sub
     End Class

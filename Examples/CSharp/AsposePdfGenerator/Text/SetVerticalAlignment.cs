@@ -7,6 +7,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Text
     {
         public static void Run()
         {
+            // ExStart:SetVerticalAlignment
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdfGenerator_Text();
 
@@ -37,8 +38,8 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Text
             seg2.TextInfo.FontSize = 5;
 
             // Save the Pdf
-            pdf1.Save(dataDir + "SetVerticalAlignment_out_.pdf");           
-            
+            pdf1.Save(dataDir + "SetVerticalAlignment_out_.pdf");
+            // ExEnd:SetVerticalAlignment
         }
     }
 }

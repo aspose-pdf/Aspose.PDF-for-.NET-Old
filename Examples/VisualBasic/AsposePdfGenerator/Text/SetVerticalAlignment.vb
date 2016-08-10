@@ -6,6 +6,7 @@ Imports System
 Namespace AsposePdfGenerator.Text
     Public Class SetVerticalAlignment
         Public Shared Sub Run()
+            ' ExStart:SetVerticalAlignment
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdfGenerator_Text()
 
@@ -38,7 +39,7 @@ Namespace AsposePdfGenerator.Text
 
             ' Save the Pdf
             pdf1.Save(dataDir & "SetVerticalAlignment_out_.pdf")
-
+            ' ExEnd:SetVerticalAlignment
         End Sub
     End Class
 End Namespace

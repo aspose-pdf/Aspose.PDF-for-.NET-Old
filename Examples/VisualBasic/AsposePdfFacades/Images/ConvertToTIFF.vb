@@ -20,7 +20,7 @@ Namespace AsposePDFFacades.Images
             pdfConverter.SaveAsTIFF(dataDir & Convert.ToString("output_out_.tif"))
             ' Close Converter object
             pdfConverter.Close()
-            ' ExStart:ConvertToTIFF
+            ' ExEnd:ConvertToTIFF
         End Sub
     End Class
 End Namespace

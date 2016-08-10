@@ -6,6 +6,7 @@ Imports Aspose.Pdf
 Namespace AsposePdfGenerator.Text
     Public Class SetRenderingMode
         Public Shared Sub Run()
+            ' ExStart:SetRenderingMode
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdfGenerator_Text()
 
@@ -47,7 +48,7 @@ Namespace AsposePdfGenerator.Text
 
             ' Save the Pdf
             pdf1.Save(dataDir & "SetRenderingMode_out_.pdf")
-
+            ' ExEnd:SetRenderingMode
         End Sub
 
     End Class

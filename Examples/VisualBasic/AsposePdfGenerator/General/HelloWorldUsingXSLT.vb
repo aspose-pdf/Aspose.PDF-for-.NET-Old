@@ -23,8 +23,8 @@ Namespace AsposePdfGenerator.General
 
                 dataDir = dataDir & Convert.ToString("HelloWorldUsingXSLT_out_.pdf")
                 ' Save the document
-                ' ExEnd:HelloWorldUsingXSLT
                 pdf1.Save(dataDir)
+                ' ExEnd:HelloWorldUsingXSLT
             Catch ex As Exception
                 Console.WriteLine(ex.Message + vbLf & "This example will only work if you apply a valid Aspose License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.")
             End Try

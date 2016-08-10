@@ -7,6 +7,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Text
     {
         public static void Run()
         {
+            // ExStart:SetRenderingMode
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdfGenerator_Text();
                          
@@ -47,7 +48,8 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Text
             sec1.Paragraphs.Add(text4);
 
             // Save the Pdf
-            pdf1.Save(dataDir + "SetRenderingMode_out_.pdf"); 
+            pdf1.Save(dataDir + "SetRenderingMode_out_.pdf");
+            // ExEnd:SetRenderingMode
         }
             
         }

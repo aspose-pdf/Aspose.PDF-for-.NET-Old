@@ -27,7 +27,7 @@ Namespace AsposePDFFacades.Images
             pdfConverter.SaveAsTIFF(dataDir & Convert.ToString("output_out_.tif"), 300, 300, tiffSettings)
             ' Close Converter object
             pdfConverter.Close()
-            ' ExStart:ConvertToTIFFSettings
+            ' ExEnd:ConvertToTIFFSettings
         End Sub
     End Class
 End Namespace

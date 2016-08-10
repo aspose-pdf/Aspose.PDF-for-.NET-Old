@@ -6,6 +6,7 @@ Imports Aspose.Pdf
 Namespace AsposePdfGenerator.Text
     Public Class ChangeTextFormat
         Public Shared Sub Run()
+            ' ExStart:ChangeTextFormat
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdfGenerator_Text()
 
@@ -76,6 +77,7 @@ Namespace AsposePdfGenerator.Text
 
             ' Save the document
             pdf1.Save(dataDir & "ChangeTextFormat_out_.pdf")
+            ' ExEnd:ChangeTextFormat
         End Sub
     End Class
 End Namespace

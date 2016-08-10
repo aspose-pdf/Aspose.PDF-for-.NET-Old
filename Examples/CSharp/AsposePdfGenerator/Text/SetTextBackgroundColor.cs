@@ -7,6 +7,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Text
     {
         public static void Run()
         {
+            // ExStart:SetTextBackgroundColor
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdfGenerator_Text();
          
@@ -15,6 +16,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Text
 
             // Create a section in the Pdf object
             Aspose.Pdf.Generator.Section sec1 = pdf1.Sections.Add();
+
 
             // Create a text paragraph
             Aspose.Pdf.Generator.Text text1 = new Aspose.Pdf.Generator.Text(sec1,"Hello Aspose.Pdf");
@@ -26,8 +28,8 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Text
             sec1.Paragraphs.Add(text1);
 
             // Save the Pdf
-            pdf1.Save(dataDir + "SetTextBackgroundColor_out_.pdf");            
-            
+            pdf1.Save(dataDir + "SetTextBackgroundColor_out_.pdf");
+            // ExEnd:SetTextBackgroundColor
         }
     }
 }

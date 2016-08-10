@@ -29,7 +29,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Images
             pdfConverter.SaveAsTIFF(dataDir+ "output_out_.tif", 300, 300, tiffSettings);
             // Close Converter object
             pdfConverter.Close();
-            // ExStart:ConvertToTIFFSettings
+            // ExEnd:ConvertToTIFFSettings
         }
     }
 }

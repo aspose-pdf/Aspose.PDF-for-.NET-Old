@@ -7,6 +7,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Text
     {
         public static void Run()
         {
+            // ExStart:UnderlineOverlineStrikeOut
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdfGenerator_Text();
 
@@ -41,7 +42,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Text
 
             // Save the Pdf
             pdf1.Save(dataDir + "UnderlineOverlineStrikeOut_out_.pdf");
-            
+            // ExEnd:UnderlineOverlineStrikeOut
         }
     }
 }
