@@ -39,5 +39,22 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.StampsWatermarks
             // ExEnd:AddPageNumber
             
         }
+        public static void CustomNumberStyle()
+        {
+            // ExStart:CustomNumberStyle
+            // The path to the documents directory.
+            string dataDir = RunExamples.GetDataDir_AsposePdfFacades_StampsWatermarks();
+            // Create PdfFileStamp object
+            PdfFileStamp fileStamp = new PdfFileStamp();
+            // Open Document
+            fileStamp.BindPdf(dataDir + "AddPageNumber.pdf");
+            // Specify numbering style as Numerals Roman UpperCase
+            fileStamp.NumberingStyle = NumberingStyle.NumeralsRomanUppercase;
+            // Add page number stamp at Bottom-Center of page
+            fileStamp.AddPageNumber("#");
+            // Save updated PDF file
+            fileStamp.Save(dataDir + "CustomNumberStyle_out_.pdf");
+            // ExEnd:CustomNumberStyle
+        }
     }
 }

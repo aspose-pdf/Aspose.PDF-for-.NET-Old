@@ -37,6 +37,31 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.StampsWatermarks
             {
                 Console.WriteLine(ex.Message);
             }
+            
+        }
+        public static void ChangeStampPositionByID()
+        {
+            // ExStart:ChangeStampPositionByID
+            // The path to the documents directory.
+            string dataDir = RunExamples.GetDataDir_AsposePdfFacades_StampsWatermarks();
+
+            // Instantiate PdfContentEditor Object
+            PdfContentEditor pdfContentEditor = new PdfContentEditor();
+
+            // Bind input PDF file
+            pdfContentEditor.BindPdf(dataDir + "ChangeStampPosition.pdf");
+
+            int pageId = 1;
+            int stampId = 1;
+            double x = 200;
+            double y = 200;
+
+            // Change the position of the stamp to new x and y position
+            pdfContentEditor.MoveStamp(pageId, stampId, x, y);
+
+            // Save the Pdf file
+            pdfContentEditor.Save(dataDir + "ChangeStampPositionByID_out_.pdf");
+            // ExEnd:ChangeStampPositionByID
         }
     }
 }

@@ -32,5 +32,29 @@ Namespace AsposePDFFacades.StampsWatermarks
                 Console.WriteLine(ex.Message)
             End Try
         End Sub
+        Public Shared Sub ChangeStampPositionByID()
+            ' ExStart:ChangeStampPositionByID
+            ' The path to the documents directory.
+            Dim dataDir As String = RunExamples.GetDataDir_AsposePdfFacades_StampsWatermarks()
+
+            ' Instantiate PdfContentEditor Object
+            Dim pdfContentEditor As New PdfContentEditor()
+
+            ' Bind input PDF file
+            pdfContentEditor.BindPdf(dataDir & Convert.ToString("ChangeStampPosition.pdf"))
+
+            Dim pageId As Integer = 1
+            Dim stampId As Integer = 1
+            Dim x As Double = 200
+            Dim y As Double = 200
+
+            ' Change the position of the stamp to new x and y position
+            pdfContentEditor.MoveStamp(pageId, stampId, x, y)
+
+            ' Save the Pdf file
+            pdfContentEditor.Save(dataDir & Convert.ToString("ChangeStampPositionByID_out_.pdf"))
+            ' ExEnd:ChangeStampPositionByID
+        End Sub
+
     End Class
 End Namespace

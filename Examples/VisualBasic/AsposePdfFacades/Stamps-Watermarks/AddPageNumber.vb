@@ -38,5 +38,22 @@ Namespace AsposePDFFacades.StampsWatermarks
             ' ExEnd:AddPageNumber
 
         End Sub
+        Public Shared Sub CustomNumberStyle()
+            ' ExStart:CustomNumberStyle
+            ' The path to the documents directory.
+            Dim dataDir As String = RunExamples.GetDataDir_AsposePdfFacades_StampsWatermarks()
+            ' Create PdfFileStamp object
+            Dim fileStamp As New PdfFileStamp()
+            ' Open Document
+            fileStamp.BindPdf(dataDir & Convert.ToString("AddPageNumber.pdf"))
+            ' Specify numbering style as Numerals Roman UpperCase
+            fileStamp.NumberingStyle = NumberingStyle.NumeralsRomanUppercase
+            ' Add page number stamp at Bottom-Center of page
+            fileStamp.AddPageNumber("#")
+            ' Save updated PDF file
+            fileStamp.Save(dataDir & Convert.ToString("CustomNumberStyle_out_.pdf"))
+            ' ExEnd:CustomNumberStyle
+        End Sub
+
     End Class
 End Namespace
