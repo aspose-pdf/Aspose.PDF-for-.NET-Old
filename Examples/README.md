@@ -1,13 +1,24 @@
+
+
 ##Aspose.Pdf for .NET Examples
 
-This package contains C# and VB.NET Example Projects for [Aspose.Pdf for .NET](http://www.aspose.com/categories/.net-components/aspose.pdf-for-.net/default.aspx).
+This repository contains C# and VB.NET examples for [Aspose.Pdf for .NET](http://www.aspose.com/products/pdf/net) which will help you learn Aspose.Pdf for .NET and write your own applications.
 
 <p align="center">
-  <a title="Download Examples ZIP" href="https://github.com/asposepdf/Aspose_Pdf_NET/archive/master.zip">
+  <a title="Download Examples ZIP" href="https://github.com/aspose-pdf/Aspose.Pdf-for-.NET/archive/master.zip">
 	<img src="https://raw.github.com/AsposeExamples/java-examples-dashboard/master/images/downloadZip-Button-Large.png" />
   </a>
 </p>
 
 ## How to Run the Examples?
 
-There are two Visual projects, one for C# and other for Visual Basic examples. You can just download the repository, browse the folder and open the file in Visual Studio. For more details, visit our [documentation website](http://www.aspose.com/docs/display/pdfnet/How+to+Run+Aspose.Pdf+for+.NET+Examples).
+After you have downloaded the ZIP file from the [Download ZIP](https://github.com/aspose-pdf/Aspose.Pdf-for-.NET/archive/master.zip) link above, please check the following link with detailed instructions on how to run these Source Code Examples.
+
+[How to Run the Examples](http://www.aspose.com/docs/display/notenet/How+to+Run+the+Examples)
+
+Please feel free to contact us if you have any question, issue or suggestion.
+
+
+
+
+
