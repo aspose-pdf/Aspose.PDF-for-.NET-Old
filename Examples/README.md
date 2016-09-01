@@ -12,7 +12,7 @@ This repository contains C# and VB.NET examples for [Aspose.Pdf for .NET](http:/
 
 After you have downloaded the ZIP file from the [Download ZIP](https://github.com/aspose-pdf/Aspose.Pdf-for-.NET/archive/master.zip) link above, please check the following link with detailed instructions on how to run these Source Code Examples.
 
-[How to Run the Examples](http://www.aspose.com/docs/display/notenet/How+to+Run+the+Examples)
+[How to Run the Examples](http://www.aspose.com/docs/display/pdfnet/How+to+Run+the+Examples)
 
 Please feel free to contact us if you have any question, issue or suggestion.
 
