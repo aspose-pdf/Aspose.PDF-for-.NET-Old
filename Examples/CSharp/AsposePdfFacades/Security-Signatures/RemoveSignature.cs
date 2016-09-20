@@ -69,7 +69,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.SecuritySignatures
             string inManySignedFile = @"C:\pdftest\PDFNEWNET_34561_ManySigned.pdf";
             string outManyUnsignedFile = @"C:\pdftest\PDFNEWNET_34561_ManyUnSigned.pdf";
             string inOutManyResignedFile = @"C:\pdftest\PDFNEWNET_34561_ManyReSigned.pdf";
-            PdfFileSignature pdfSignMany = new Aspose.Pdf.Facades.PdfFileSignature(inManySignedFile);
+            PdfFileSignature pdfSignMany = new Aspose.Pdf.Facades.PdfFileSignature();
 
             IList sigNames = pdfSignMany.GetSignNames();
             foreach (string sigName in sigNames)

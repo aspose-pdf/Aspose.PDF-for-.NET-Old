@@ -46,7 +46,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Printing
         }
         public static void ShowPrintDialog()
         {
-            // ExStart:PrintToDefaultPrinter
+          
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 

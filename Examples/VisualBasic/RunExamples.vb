@@ -742,6 +742,9 @@ Module RunExamples
     Public Function GetDataDir_AsposePdfGenerator_Conversion() As [String]
         Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("AsposePdfGenerator/Conversion/"))
     End Function
+    Public Function GetDataDir_AsposePdfGenerator_TechnicalArticles() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() + "AsposePdfGenerator/Technical-Articles/")
+    End Function
     Public Function GetDataDir_AsposePdfGenerator_Paragraphs() As [String]
         Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("AsposePdfGenerator/Paragraphs/"))
     End Function

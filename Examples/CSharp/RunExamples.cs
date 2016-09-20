@@ -57,6 +57,7 @@ using Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Attachments;
 using Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.SecurityFeatures;
 using Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.UtilityFeatures;
 using Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.AdvanceFeatures;
+using Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.TechnicalArticles;
 namespace Aspose.Pdf.Examples.CSharp
 {
     class RunExamples
@@ -460,6 +461,22 @@ namespace Aspose.Pdf.Examples.CSharp
             //XMLAsTemplate.Run();
             //LoadDataInXMLTemplate.Run();
 
+            //// TechnicalArticles
+            //// =====================================================            
+            //AddImageInTableCell.Run();
+            //ConvertTextFile.Run();
+            //FontsEmbedding.Run();
+            //ImageToPdf.Run();
+            //ConvertMemoryStreamImageToPdf.Run();
+            //CreateMultiColumnPdf.Run();
+            //SetTableColumnsWidth.Run();
+            //FigureOutTableBreak.Run();
+            //RemoveHyperlinksFromText.Run();
+            //ImageAndPageNumberInHeaderFooter.Run();  
+            //PlacingTextAroundImage.Run();
+            //SetPageOrientation.Run();
+            //TableInHeaderFooterSection.Run();
+
             // =====================================================
             // =====================================================
             // Aspose.Pdf.Facades
@@ -653,7 +670,7 @@ namespace Aspose.Pdf.Examples.CSharp
             ////// =====================================================   
             //GetPageProperties.Run();
             //SetPageProperties.Run();
-            ResizePageContents.Run();
+            //ResizePageContents.Run();
                                  
             // Stop before exiting
             Console.WriteLine("\n\nProgram Finished. Press any key to exit....");
@@ -802,6 +819,10 @@ namespace Aspose.Pdf.Examples.CSharp
         public static String GetDataDir_AsposePdfGenerator_General()
         {
             return Path.GetFullPath(GetDataDir_Data() + "AsposePdfGenerator/General/");
+        }
+        public static String GetDataDir_AsposePdfGenerator_TechnicalArticles()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePdfGenerator/Technical-Articles/");
         }
         public static String GetDataDir_AsposePdfGenerator_Graphs()
         {
