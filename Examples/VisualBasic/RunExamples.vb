@@ -20,6 +20,7 @@ Imports Aspose.Pdf.Examples.VisualBasic.AsposePDF.Miscellaneous
 Imports Aspose.Pdf.Examples.VisualBasic.AsposePDF.Graphs
 Imports Aspose.Pdf.Examples.VisualBasic.AsposePDF.Headings
 Imports Aspose.Pdf.Examples.VisualBasic.AsposePDF.DocumentConversion.PDFToHTMLFormat
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePDF.TechnicalArticles
 
 Imports Aspose.Pdf.Examples.VisualBasic.AsposePdfGenerator.General
 Imports Aspose.Pdf.Examples.VisualBasic.AsposePdfGenerator.Text
@@ -244,6 +245,12 @@ Module RunExamples
         'GetHyperlinkDestinations.Run()
         'GetHyperlinkText.Run()
         'CreateLocalHyperlink.Run()
+
+        '''' TechnicalArticles
+        '''' =====================================================            
+        'CreatePDFPortfolio.Run()
+        'ExtractFilesFromPortfolio.Run()
+        'RemoveFilesFromPortfolio.Run()
 
         '''' Security-Signatures
         '''' =====================================================   
@@ -645,6 +652,10 @@ Module RunExamples
         Console.WriteLine(vbLf & vbLf & "Program Finished. Press any key to exit....")
         Console.ReadKey()
     End Sub
+    Public Function GetDataDir_AsposePdf_TechnicalArticles() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() + "AsposePDF/Technical-Articles/")
+    End Function
+
     Public Function GetDataDir_AsposePdf_DocumentConversion_PDFToHTMLFormat() As [String]
         Return Path.GetFullPath(GetDataDir_Data() + "AsposePDF/DocumentConversion/PDFToHTMLFormat/")
     End Function

@@ -20,6 +20,7 @@ using Aspose.Pdf.Examples.CSharp.AsposePDF.WorkingDocuments;
 using Aspose.Pdf.Examples.CSharp.AsposePDF.Miscellaneous;
 using Aspose.Pdf.Examples.CSharp.AsposePDF.Graphs;
 using Aspose.Pdf.Examples.CSharp.AsposePDF.Headings;
+using Aspose.Pdf.Examples.CSharp.AsposePDF.TechnicalArticles;
 
 using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Annotations;
 using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Attachments;
@@ -238,6 +239,12 @@ namespace Aspose.Pdf.Examples.CSharp
             //HorizontallyAndVerticallyRadioButtons.Run();
             //GroupedCheckBoxes.Run();
 
+            //// TechnicalArticles
+            //// =====================================================            
+            //CreatePDFPortfolio.Run();
+            //ExtractFilesFromPortfolio.Run();
+            RemoveFilesFromPortfolio.Run();
+
             //// Links-Actions
             //// =====================================================   
             //CreateApplicationLink.Run();
@@ -397,7 +404,7 @@ namespace Aspose.Pdf.Examples.CSharp
             //ApplyingNumber.Run();
             //SpecifyHeadingLevel.Run();
             //SystemBullets.Run();
-            //UserDefinedBullets.Run();
+            //UserDefinedBullets.Run();            
 
             //// Tables
             //// =====================================================            
@@ -675,6 +682,10 @@ namespace Aspose.Pdf.Examples.CSharp
             // Stop before exiting
             Console.WriteLine("\n\nProgram Finished. Press any key to exit....");
             Console.ReadKey();
+        }
+        public static String GetDataDir_AsposePdf_TechnicalArticles()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePDF/Technical-Articles/");
         }
         public static String GetDataDir_AsposePdf_DocumentConversion_PDFToHTMLFormat()
         {

@@ -523,6 +523,9 @@
     <Compile Include="AsposePDF\Tables\InsertPageBreak.cs" />
     <Compile Include="AsposePDF\Tables\SetBorder.cs" />
     <Compile Include="AsposePDF\Tables\MarginsOrPadding.cs" />
+    <Compile Include="AsposePDF\TechnicalArticles\RemoveFilesFromPortfolio.cs" />
+    <Compile Include="AsposePDF\TechnicalArticles\ExtractFilesFromPortfolio.cs" />
+    <Compile Include="AsposePDF\TechnicalArticles\CreatePDFPortfolio.cs" />
     <Compile Include="AsposePDF\Text\CreateMultiColumnPdf.cs" />
     <Compile Include="AsposePDF\Text\AddHTMLUsingDOM.cs" />
     <Compile Include="AsposePDF\Text\AddTransparentText.cs" />

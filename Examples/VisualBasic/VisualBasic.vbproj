@@ -515,6 +515,9 @@
     <Compile Include="AsposePDF\Tables\RoundedCornerTable.vb" />
     <Compile Include="AsposePDF\Tables\SetBorder.vb" />
     <Compile Include="AsposePDF\Tables\MarginsOrPadding.vb" />
+    <Compile Include="AsposePDF\TechnicalArticles\CreatePDFPortfolio.vb" />
+    <Compile Include="AsposePDF\TechnicalArticles\ExtractFilesFromPortfolio.vb" />
+    <Compile Include="AsposePDF\TechnicalArticles\RemoveFilesFromPortfolio.vb" />
     <Compile Include="AsposePDF\Text\AddHTMLUsingDOM.vb" />
     <Compile Include="AsposePDF\Text\AddText.vb" />
     <Compile Include="AsposePDF\Text\AddTransparentText.vb" />
