@@ -12,7 +12,7 @@ Namespace AsposePDFFacades.Pages.ManipulatePageProperties
 
             ' Open document
             Dim pageEditor As New PdfPageEditor()
-            pageEditor.BindPdf(dataDir & Convert.ToString("input.pdf"))
+            pageEditor.BindPdf(dataDir & Convert.ToString("pageproperties.pdf"))
 
             ' Get page properties
             Console.WriteLine(pageEditor.GetPageRotation(1))

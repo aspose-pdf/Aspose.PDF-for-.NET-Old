@@ -18,11 +18,13 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Annotations
             // Open PDF document
             AnnotationEditor.BindPdf(dataDir+ "ExportAnnotations.pdf");
             // Export annotations
-            FileStream fileStream = new System.IO.FileStream(dataDir+ "annotations.xfdf", System.IO.FileMode.Create);
+            FileStream fileStream = new System.IO.FileStream(dataDir + "exportannotations.xfdf", System.IO.FileMode.Create);
             Enum[] annotType = { AnnotationType.FreeText, AnnotationType.Line };
             AnnotationEditor.ExportAnnotationsXfdf(fileStream, 1, 5, annotType);
             // Save output PDF
             AnnotationEditor.Save(dataDir+ "ExportAnnotations_out_.pdf");
+            fileStream.Flush();
+            fileStream.Close();            
             // ExEnd:ExportAnnotations
         }
     }

@@ -14,7 +14,7 @@ Namespace AsposePDFFacades.Pages.SplitPages
             Dim pdfEditor As New PdfFileEditor()
             Dim fileNumber As Integer = 1
             ' Split to pages
-            Dim outBuffer As MemoryStream() = pdfEditor.SplitToPages(dataDir & Convert.ToString("input.pdf"))
+            Dim outBuffer As MemoryStream() = pdfEditor.SplitToPages(dataDir & Convert.ToString("splitpages.pdf"))
             ' Save individual files
             For Each aStream As MemoryStream In outBuffer
                 Dim outStream As New FileStream((dataDir & Convert.ToString("File_")) + fileNumber.ToString() + "_out_.pdf", FileMode.Create)

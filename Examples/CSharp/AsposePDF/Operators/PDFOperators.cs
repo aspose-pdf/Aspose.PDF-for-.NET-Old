@@ -23,7 +23,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Operators
             // Get the page where image needs to be added
             Page page = pdfDocument.Pages[1];
             // Load image into stream
-            FileStream imageStream = new FileStream(dataDir + "aspose-logo.jpg", FileMode.Open);
+            FileStream imageStream = new FileStream(dataDir + "PDFOperators.jpg", FileMode.Open);
             // Add image to Images collection of Page Resources
             page.Resources.Images.Add(imageStream);
             // Using GSave operator: this operator saves current graphics state

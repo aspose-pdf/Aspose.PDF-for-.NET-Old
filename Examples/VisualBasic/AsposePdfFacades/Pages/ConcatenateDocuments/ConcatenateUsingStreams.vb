@@ -15,10 +15,14 @@ Namespace AsposePDFFacades.Pages.ConcatenateDocuments
             ' Output stream
             Dim outputStream As New FileStream(dataDir & Convert.ToString("ConcatenateUsingStreams_out_.pdf"), FileMode.Create)
             ' Input streams
-            Dim inputStream1 As New FileStream(dataDir & Convert.ToString("input.pdf"), FileMode.Open)
-            Dim inputStream2 As New FileStream(dataDir & Convert.ToString("input2.pdf"), FileMode.Open)
+            Dim inputStream1 As New FileStream(dataDir & Convert.ToString("test.pdf"), FileMode.Open)
+            Dim inputStream2 As New FileStream(dataDir & Convert.ToString("input5.pdf"), FileMode.Open)
             ' Concatenate file
             pdfEditor.Concatenate(inputStream1, inputStream2, outputStream)
+            inputStream1.Flush()
+            inputStream2.Flush()
+            inputStream1.Close()
+            inputStream2.Close()
             ' ExEnd:ConcatenateUsingStreams
         End Sub
         Public Shared Sub ConcatenateTaggedFiles()

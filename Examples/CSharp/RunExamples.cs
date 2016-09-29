@@ -182,7 +182,7 @@ namespace Aspose.Pdf.Examples.CSharp
             //AddJavaScriptToPage.Run();
             //AddRemoveJavascriptToDoc.Run();
             //AddLayers.Run();
-            //EmbedFont.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePDF.WorkingDocuments.EmbedFont.Run();
             //EmbedFontWhileDocCreation.Run();
             //ConvertFromRGBToGrayscale.Run();
             //SetExpiryDate.Run();
@@ -243,7 +243,7 @@ namespace Aspose.Pdf.Examples.CSharp
             //// =====================================================            
             //CreatePDFPortfolio.Run();
             //ExtractFilesFromPortfolio.Run();
-            RemoveFilesFromPortfolio.Run();
+            //RemoveFilesFromPortfolio.Run();
 
             //// Links-Actions
             //// =====================================================   
@@ -288,7 +288,7 @@ namespace Aspose.Pdf.Examples.CSharp
             //AutoFitToWindow.Run();  
             //MarginsOrPadding.Run();
             //SetBorder.Run();
-            //IntegrateWithDatabase.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePDF.Tables.IntegrateWithDatabase.Run();
             //RenderTable.Run();
             //AddSVGObject.Run();
             //ExtractBorder.Run();
@@ -316,7 +316,7 @@ namespace Aspose.Pdf.Examples.CSharp
             //AddAttachmentToPDFA.Run();
             //PDFToDOC.Run();
             //PDFToTeX.Run();
-            //SVGToPDF.Run();
+            //Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion.SVGToPDF.Run();
             //GetSVGDimensions.Run();
             //EPUBToPDF.Run();
             //PDFToEPUB.Run();
@@ -324,7 +324,7 @@ namespace Aspose.Pdf.Examples.CSharp
             //PDFToXLS.Run();
             //PDFToSVG.Run();
             //PDFToXML.Run();
-            //MHTToPDF.Run();
+            MHTToPDF.Run();
             //TextToPDF.Run();
             //CGMToPDF.Run();
             //PDFToPPT.Run();
@@ -506,7 +506,7 @@ namespace Aspose.Pdf.Examples.CSharp
             //DeleteAllAnnotations.Run();
             //UpdateAnnotations.Run();
             //ImportAnnotations.Run();
-            //ExportAnnotations.Run(); 
+            ExportAnnotations.Run(); 
 
             //// Attachments
             //// =====================================================            

@@ -11,7 +11,7 @@ Namespace AsposePDF.DocumentConversion
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdf_DocumentConversion()
             Dim options As New MhtLoadOptions()
             ' Load document
-            Dim document As New Document(dataDir & Convert.ToString("sample.mht"), options)
+            Dim document As New Document(dataDir & Convert.ToString("samplevb.mht"), options)
             ' Save the output as PDF document
             document.Save(dataDir & Convert.ToString("MHTToPDF_out_.pdf"))
             ' ExEnd:MHTToPDF

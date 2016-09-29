@@ -13,11 +13,13 @@ Namespace AsposePDFFacades.Pages.ExtractPages
             ' Create PdfFileEditor object
             Dim pdfEditor As New PdfFileEditor()
             ' Create streams
-            Dim inputStream As New FileStream(dataDir & Convert.ToString("MultiplePages.pdf"), FileMode.Open)
+            Dim inputStream As New FileStream(dataDir & Convert.ToString("MultiplePagesvb.pdf"), FileMode.Open)
             Dim outputStream As New FileStream(dataDir & Convert.ToString("ExtractArrayOfPagesUsingStreams_out_.pdf"), FileMode.Create)
             Dim pagesToExtract As Integer() = New Integer() {1, 2}
             ' Extract pages
             pdfEditor.Extract(inputStream, pagesToExtract, outputStream)
+            inputStream.Flush()
+            inputStream.Close()
             ' ExEnd:ExtractArrayOfPagesUsingStreams
         End Sub
     End Class

@@ -13,12 +13,16 @@ Namespace AsposePDFFacades.Pages.InsertPages
             ' Create PdfFileEditor object
             Dim pdfEditor As New PdfFileEditor()
             ' Create streams
-            Dim inputStream As New FileStream(dataDir & Convert.ToString("MultiplePages.pdf"), FileMode.Open)
-            Dim portStream As New FileStream(dataDir & Convert.ToString("InsertPages.pdf"), FileMode.Open)
+            Dim inputStream As New FileStream(dataDir & Convert.ToString("MultiplePagesvb.pdf"), FileMode.Open)
+            Dim portStream As New FileStream(dataDir & Convert.ToString("InsertPagesvb.pdf"), FileMode.Open)
             Dim outputStream As New FileStream(dataDir & Convert.ToString("InsertPagesUsingStreams_out_.pdf"), FileMode.Create)
             Dim pagesToInsert As Integer() = New Integer() {2, 3}
             ' Insert pages
             pdfEditor.Insert(inputStream, 1, portStream, pagesToInsert, outputStream)
+            inputStream.Flush()
+            inputStream.Close()
+            portStream.Flush()
+            portStream.Close()
             ' ExEnd:InsertPagesUsingStreams
         End Sub
     End Class

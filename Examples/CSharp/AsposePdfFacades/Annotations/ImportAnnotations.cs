@@ -23,6 +23,8 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Annotations
             AnnotationEditor.ImportAnnotationFromXfdf(fileStream, annotType);
             // Save output PDF
             AnnotationEditor.Save(dataDir + "ImportAnnotations_out_.pdf");
+            fileStream.Flush();
+            fileStream.Close();            
             // ExEnd:ImportAnnotations            
         }
     }

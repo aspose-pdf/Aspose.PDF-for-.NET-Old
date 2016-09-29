@@ -13,10 +13,12 @@ Namespace AsposePDFFacades.Pages.MakeBooklet
             ' Create PdfFileEditor object
             Dim pdfEditor As New PdfFileEditor()
             ' Create streams
-            Dim inputStream As New FileStream(dataDir & Convert.ToString("input.pdf"), FileMode.Open)
+            Dim inputStream As New FileStream(dataDir & Convert.ToString("test.pdf"), FileMode.Open)
             Dim outputStream As New FileStream(dataDir & Convert.ToString("MakeBookletUsingPageSizeAndStreams_out_.pdf"), FileMode.Create)
             ' Make booklet
             pdfEditor.MakeBooklet(inputStream, outputStream, PageSize.A5)
+            inputStream.Flush()
+            inputStream.Close()
             ' ExEnd:MakeBookletUsingPageSizeAndStreams
         End Sub
     End Class

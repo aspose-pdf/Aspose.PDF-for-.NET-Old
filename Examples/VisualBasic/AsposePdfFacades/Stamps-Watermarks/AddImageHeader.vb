@@ -17,7 +17,7 @@ Namespace AsposePDFFacades.StampsWatermarks
             fileStamp.BindPdf(dataDir & Convert.ToString("AddImage-Header.pdf"))
 
             ' Add Header
-            fileStamp.AddHeader(New FileStream(dataDir & Convert.ToString("aspose-logo.jpg"), FileMode.Open), 10)
+            fileStamp.AddHeader(New FileStream(dataDir & Convert.ToString("AddImageHeadervb.jpg"), FileMode.Open), 10)
 
             ' Save updated PDF file
             fileStamp.Save(dataDir & Convert.ToString("AddImage-Header_out_.pdf"))

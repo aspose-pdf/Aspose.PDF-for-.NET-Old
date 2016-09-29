@@ -15,11 +15,13 @@ Namespace AsposePDFFacades.Annotations
             ' Open PDF document
             AnnotationEditor.BindPdf(dataDir & Convert.ToString("ExportAnnotations.pdf"))
             ' Export annotations
-            Dim fileStream As FileStream = New System.IO.FileStream(dataDir & Convert.ToString("annotations.xfdf"), System.IO.FileMode.Create)
+            Dim fileStream As FileStream = New System.IO.FileStream(dataDir & Convert.ToString("exportannotationsvb.xfdf"), System.IO.FileMode.Create)
             Dim annotType As [Enum]() = {AnnotationType.FreeText, AnnotationType.Line}
             AnnotationEditor.ExportAnnotationsXfdf(fileStream, 1, 5, annotType)
             ' Save output PDF
             AnnotationEditor.Save(dataDir & Convert.ToString("ExportAnnotations_out_.pdf"))
+            fileStream.Flush()
+            fileStream.Close()
             ' ExEnd:ExportAnnotations
         End Sub
     End Class

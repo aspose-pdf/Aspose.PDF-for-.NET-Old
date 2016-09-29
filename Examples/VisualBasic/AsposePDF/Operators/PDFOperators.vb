@@ -23,7 +23,7 @@ Namespace AsposePDF.Operators
             ' Get the page where image needs to be added
             Dim page As Page = pdfDocument.Pages(1)
             ' Load image into stream
-            Dim imageStream As New FileStream(dataDir & Convert.ToString("aspose-logo.jpg"), FileMode.Open)
+            Dim imageStream As New FileStream(dataDir & Convert.ToString("PDFOperators.jpg"), FileMode.Open)
             ' Add image to Images collection of Page Resources
             page.Resources.Images.Add(imageStream)
             ' Using GSave operator: this operator saves current graphics state

@@ -98,10 +98,10 @@ Module RunExamples
 
         '''' Images
         '''' =====================================================   
-        'AddImage.Run()
+        'AsposePDF.Images.AddImage.Run()
         'DeleteImages.Run()
-        'ExtractImages.Run()
-        'ReplaceImage.Run()
+        'AsposePDF.Images.ExtractImages.Run()
+        'AsposePDF.Images.ReplaceImage.Run()
         'PagesToImages.Run()
         'ConvertAllPagesToPNG.Run()
         'PageToTIFF.Run()
@@ -132,7 +132,7 @@ Module RunExamples
 
         '''' Attachments
         '''' =====================================================   
-        'AddAttachment.Run()
+        'AsposePDF.Attachments.AddAttachment.Run()
         'GetAlltheAttachments.Run()
         'GetIndividualAttachment.Run()
         'GetAttachmentInfo.Run()
@@ -174,7 +174,7 @@ Module RunExamples
         'AddJavaScriptToPage.Run()
         'AddRemoveJavascriptToDoc.Run()
         'AddLayers.Run()
-        'EmbedFont.Run()
+        'Aspose.Pdf.Examples.VisualBasic.AsposePDF.WorkingDocuments.EmbedFont.Run()
         'EmbedFontWhileDocCreation.Run()
         'ConvertFromRGBToGrayscale.Run()
         'SetExpiryDate.Run()
@@ -280,7 +280,7 @@ Module RunExamples
         'AutoFitToWindow.Run()
         'MarginsOrPadding.Run()
         'SetBorder.Run()
-        'IntegrateWithDatabase.Run()
+        'AsposePDF.Tables.IntegrateWithDatabase.Run()
         'RenderTable.Run()
         'AddSVGObject.Run()
         'ExtractBorder.Run()
@@ -317,7 +317,7 @@ Module RunExamples
         'PDFToXML.Run()
         'MHTToPDF.Run()
         'TextToPDF.Run()
-        'CGMToPDF.Run()
+        'AsposePDF.CGMToPDF.Run()
         'PDFToPPT.Run()
         'PDFAToPDF.Run()
         'XMLToPDF.Run()
@@ -583,7 +583,6 @@ Module RunExamples
         'PrintoXPSPrinter.Run()
         'PdfToPostScript.Run()
         'CheckPrintJobStatus.Run()
-        'PrintPages.Run()
         'PrintPageRange.Run()
 
         '''' Pages
@@ -622,7 +621,6 @@ Module RunExamples
         'InsertPagesBetweenNumbers.Run()
         'InsertArrayOfPages.Run()
         'InsertPagesUsingStreams.Run()
-        'InsertPagesUsingStreams.Run()
 
         '''''' MakeBooklet
         '''''' =====================================================   
@@ -642,8 +640,8 @@ Module RunExamples
 
         '''''' ManipulatePageProperties
         '''''' =====================================================   
-        GetPageProperties.Run()
-        SetPageProperties.Run()
+        'GetPageProperties.Run()
+        'SetPageProperties.Run()
         ResizePageContents.Run()
 
 
