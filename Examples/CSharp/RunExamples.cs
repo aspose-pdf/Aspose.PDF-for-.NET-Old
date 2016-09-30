@@ -42,6 +42,7 @@ using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.MakeBooklet;
 using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.MakeNUp;
 using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.SplitPages;
 using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.ManipulatePageProperties;
+using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.TechnicalArticles;
 
 using Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Conversion;
 using Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Paragraphs;
@@ -324,7 +325,7 @@ namespace Aspose.Pdf.Examples.CSharp
             //PDFToXLS.Run();
             //PDFToSVG.Run();
             //PDFToXML.Run();
-            MHTToPDF.Run();
+            //MHTToPDF.Run();
             //TextToPDF.Run();
             //CGMToPDF.Run();
             //PDFToPPT.Run();
@@ -506,7 +507,7 @@ namespace Aspose.Pdf.Examples.CSharp
             //DeleteAllAnnotations.Run();
             //UpdateAnnotations.Run();
             //ImportAnnotations.Run();
-            ExportAnnotations.Run(); 
+            //ExportAnnotations.Run(); 
 
             //// Attachments
             //// =====================================================            
@@ -678,6 +679,17 @@ namespace Aspose.Pdf.Examples.CSharp
             //GetPageProperties.Run();
             //SetPageProperties.Run();
             //ResizePageContents.Run();
+
+            //// TechnicalArticles
+            //// =====================================================            
+            //DifferenceBetweenFile.Run();
+            //PdfFileEditorFeatures.Run();
+            //ExtensibleMetadataPlatform.Run();
+            //EditPdfPages.Run();
+            //ConcatenatingAllPdfFiles.Run();
+            //ConcatenatePDFForms.Run();
+            //PdfContainsTextOrImages.Run();
+            //ChangePageSizes.Run();
                                  
             // Stop before exiting
             Console.WriteLine("\n\nProgram Finished. Press any key to exit....");
@@ -686,6 +698,10 @@ namespace Aspose.Pdf.Examples.CSharp
         public static String GetDataDir_AsposePdf_TechnicalArticles()
         {
             return Path.GetFullPath(GetDataDir_Data() + "AsposePDF/Technical-Articles/");
+        }
+        public static String GetDataDir_AsposePdfFacades_TechnicalArticles()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePdfFacades/Technical-Articles/");
         }
         public static String GetDataDir_AsposePdf_DocumentConversion_PDFToHTMLFormat()
         {

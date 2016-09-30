@@ -56,6 +56,7 @@ Imports Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Pages.MakeBooklet
 Imports Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Pages.MakeNUp
 Imports Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Pages.SplitPages
 Imports Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.Pages.ManipulatePageProperties
+Imports Aspose.Pdf.Examples.VisualBasic.AsposePDFFacades.TechnicalArticles
 
 Module RunExamples
     Sub Main()
@@ -642,7 +643,18 @@ Module RunExamples
         '''''' =====================================================   
         'GetPageProperties.Run()
         'SetPageProperties.Run()
-        ResizePageContents.Run()
+        'ResizePageContents.Run()
+
+        '''' TechnicalArticles
+        '''' =====================================================            
+        DifferenceBetweenFile.Run()
+        PdfFileEditorFeatures.Run()
+        ExtensibleMetadataPlatform.Run()
+        EditPdfPages.Run()
+        ConcatenatingAllPdfFiles.Run()
+        ConcatenatePDFForms.Run()
+        PdfContainsTextOrImages.Run()
+        ChangePageSizes.Run()
 
 
 
@@ -652,6 +664,9 @@ Module RunExamples
     End Sub
     Public Function GetDataDir_AsposePdf_TechnicalArticles() As [String]
         Return Path.GetFullPath(GetDataDir_Data() + "AsposePDF/Technical-Articles/")
+    End Function
+    Public Function GetDataDir_AsposePdfFacades_TechnicalArticles() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() + "AsposePdfFacades/Technical-Articles/")
     End Function
 
     Public Function GetDataDir_AsposePdf_DocumentConversion_PDFToHTMLFormat() As [String]

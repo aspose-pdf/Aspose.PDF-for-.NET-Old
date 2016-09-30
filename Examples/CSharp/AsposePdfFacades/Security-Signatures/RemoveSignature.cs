@@ -65,8 +65,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.SecuritySignatures
                 Console.Write("Signature 1 check result : " + pdfSignSingle2.VerifySignature("Signature1").ToString() + " \n");
             }
 
-            // Test file with multiple signatures
-            string inManySignedFile = @"C:\pdftest\PDFNEWNET_34561_ManySigned.pdf";
+            // Test file with multiple signatures         
             string outManyUnsignedFile = @"C:\pdftest\PDFNEWNET_34561_ManyUnSigned.pdf";
             string inOutManyResignedFile = @"C:\pdftest\PDFNEWNET_34561_ManyReSigned.pdf";
             PdfFileSignature pdfSignMany = new Aspose.Pdf.Facades.PdfFileSignature();
