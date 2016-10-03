@@ -325,7 +325,7 @@ namespace Aspose.Pdf.Examples.CSharp
             //PDFToXLS.Run();
             //PDFToSVG.Run();
             //PDFToXML.Run();
-            //MHTToPDF.Run();
+            MHTToPDF.Run();
             //TextToPDF.Run();
             //CGMToPDF.Run();
             //PDFToPPT.Run();
