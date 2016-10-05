@@ -325,7 +325,7 @@ namespace Aspose.Pdf.Examples.CSharp
             //PDFToXLS.Run();
             //PDFToSVG.Run();
             //PDFToXML.Run();
-            MHTToPDF.Run();
+            //MHTToPDF.Run();
             //TextToPDF.Run();
             //CGMToPDF.Run();
             //PDFToPPT.Run();
@@ -690,6 +690,12 @@ namespace Aspose.Pdf.Examples.CSharp
             //ConcatenatePDFForms.Run();
             //PdfContainsTextOrImages.Run();
             //ChangePageSizes.Run();
+            //PageRotation.Run();
+            //AnnotationsImport.Run();
+            //AnnotationsExport.Run();
+            //RotatingStamp.Run();
+            //ConcatenateMultiplePDFUsingMemoryStream.Run();
+            //FormEditorFeatures.Run();
                                  
             // Stop before exiting
             Console.WriteLine("\n\nProgram Finished. Press any key to exit....");

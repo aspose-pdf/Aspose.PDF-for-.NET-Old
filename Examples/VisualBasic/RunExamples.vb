@@ -647,16 +647,20 @@ Module RunExamples
 
         '''' TechnicalArticles
         '''' =====================================================            
-        DifferenceBetweenFile.Run()
-        PdfFileEditorFeatures.Run()
-        ExtensibleMetadataPlatform.Run()
-        EditPdfPages.Run()
-        ConcatenatingAllPdfFiles.Run()
-        ConcatenatePDFForms.Run()
-        PdfContainsTextOrImages.Run()
-        ChangePageSizes.Run()
-
-
+        'DifferenceBetweenFile.Run()
+        'PdfFileEditorFeatures.Run()
+        'ExtensibleMetadataPlatform.Run()
+        'EditPdfPages.Run()
+        'ConcatenatingAllPdfFiles.Run()
+        'ConcatenatePDFForms.Run()
+        'PdfContainsTextOrImages.Run()
+        'ChangePageSizes.Run()
+        'PageRotation.Run()
+        'AnnotationsImport.Run()
+        'AnnotationsExport.Run()
+        'RotatingStamp.Run()
+        'ConcatenateMultiplePDFUsingMemoryStream.Run()
+        'FormEditorFeatures.Run()
 
         ' Stop before exiting
         Console.WriteLine(vbLf & vbLf & "Program Finished. Press any key to exit....")

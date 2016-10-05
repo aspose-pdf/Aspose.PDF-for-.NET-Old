@@ -202,6 +202,17 @@
     <Compile Include="AsposePdfFacades\Stamps-Watermarks\AddTextStampPage.cs" />
     <Compile Include="AsposePdfFacades\Stamps-Watermarks\ChangeStampPosition.cs" />
     <Compile Include="AsposePdfFacades\Stamps-Watermarks\ExtractImageImageStamp.cs" />
+    <Compile Include="AsposePdfFacades\TechnicalArticles\FormEditorFeatures.cs" />
+    <Compile Include="AsposePdfFacades\TechnicalArticles\ConcatenateMultiplePDFUsingMemoryStream.cs" />
+    <Compile Include="AsposePdfFacades\TechnicalArticles\PdfAnnotationEditorFeatures.cs" />
+    <Compile Include="AsposePdfFacades\TechnicalArticles\RotatingStamp.cs" />
+    <Compile Include="AsposePdfFacades\TechnicalArticles\AnnotationsExport.cs" />
+    <Compile Include="AsposePdfFacades\TechnicalArticles\AnnotationsImport.cs" />
+    <Compile Include="AsposePdfFacades\TechnicalArticles\ConvertPdfToXML.cs" />
+    <Compile Include="AsposePdfFacades\TechnicalArticles\CreateNestedBookmarks.cs" />
+    <Compile Include="AsposePdfFacades\TechnicalArticles\ChangingFieldAppearance.cs" />
+    <Compile Include="AsposePdfFacades\TechnicalArticles\PageRotation.cs" />
+    <Compile Include="AsposePdfFacades\TechnicalArticles\CustomPropertiesUsingMeta.cs" />
     <Compile Include="AsposePdfFacades\TechnicalArticles\ConcatenatePDFForms.cs" />
     <Compile Include="AsposePdfFacades\TechnicalArticles\ConcatenatingAllPdfFiles.cs" />
     <Compile Include="AsposePdfFacades\TechnicalArticles\ChangePageSizes.cs" />
