@@ -696,6 +696,13 @@ namespace Aspose.Pdf.Examples.CSharp
             //RotatingStamp.Run();
             //ConcatenateMultiplePDFUsingMemoryStream.Run();
             //FormEditorFeatures.Run();
+            //AddTextImagesUsingPdfFileMend.Run();
+            //PdfExtractorFeatures.Run();
+            //PDFSigningMechanism.Run();
+            //PDFToTIFFConversion.Run();
+            //IdentifyFormFields.Run();
+            //JustifyText.Run();
+            XMLToPdf.Run();
                                  
             // Stop before exiting
             Console.WriteLine("\n\nProgram Finished. Press any key to exit....");

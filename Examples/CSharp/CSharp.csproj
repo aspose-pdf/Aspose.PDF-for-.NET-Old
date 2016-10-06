@@ -202,6 +202,14 @@
     <Compile Include="AsposePdfFacades\Stamps-Watermarks\AddTextStampPage.cs" />
     <Compile Include="AsposePdfFacades\Stamps-Watermarks\ChangeStampPosition.cs" />
     <Compile Include="AsposePdfFacades\Stamps-Watermarks\ExtractImageImageStamp.cs" />
+    <Compile Include="AsposePdfFacades\TechnicalArticles\AddTextImagesUsingPdfFileMend.cs" />
+    <Compile Include="AsposePdfFacades\TechnicalArticles\XMLToPdf.cs" />
+    <Compile Include="AsposePdfFacades\TechnicalArticles\JustifyText.cs" />
+    <Compile Include="AsposePdfFacades\TechnicalArticles\ConcatenatePdfFilesAndCreateTOC.cs" />
+    <Compile Include="AsposePdfFacades\TechnicalArticles\IdentifyFormFields.cs" />
+    <Compile Include="AsposePdfFacades\TechnicalArticles\PDFToTIFFConversion.cs" />
+    <Compile Include="AsposePdfFacades\TechnicalArticles\PDFSigningMechanism.cs" />
+    <Compile Include="AsposePdfFacades\TechnicalArticles\PdfExtractorFeatures.cs" />
     <Compile Include="AsposePdfFacades\TechnicalArticles\FormEditorFeatures.cs" />
     <Compile Include="AsposePdfFacades\TechnicalArticles\ConcatenateMultiplePDFUsingMemoryStream.cs" />
     <Compile Include="AsposePdfFacades\TechnicalArticles\PdfAnnotationEditorFeatures.cs" />

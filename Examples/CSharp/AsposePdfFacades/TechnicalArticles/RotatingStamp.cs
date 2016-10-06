@@ -45,8 +45,9 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.TechnicalArticles
             // Set the size of the watermark
             aStamp.SetImageSize(100, 100);
 
+            Document doc = new Document(inFile);
             // Create PdfFileStamp class to bind input and output files
-            PdfFileStamp stamper = new PdfFileStamp(inFile, outFile);
+            PdfFileStamp stamper = new PdfFileStamp(doc);
 
             // Add the stamp in the PDF file
             stamper.AddStamp(aStamp);

@@ -41,9 +41,10 @@ Namespace AsposePDFFacades.TechnicalArticles
 
             ' Set the size of the watermark
             aStamp.SetImageSize(100, 100)
+            Dim doc As New Document(inFile)
 
             ' Create PdfFileStamp class to bind input and output files
-            Dim stamper As New PdfFileStamp(inFile, outFile)
+            Dim stamper As New PdfFileStamp(doc)
 
             ' Add the stamp in the PDF file
             stamper.AddStamp(aStamp)

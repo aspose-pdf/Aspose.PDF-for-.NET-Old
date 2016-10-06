@@ -17,7 +17,8 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.SecuritySignatures
                 // The path to the documents directory.
                 string dataDir = RunExamples.GetDataDir_AsposePdfFacades_SecuritySignatures();
                 string input = dataDir + "DigitallySign.pdf";
-                using (PdfFileSignature signature = new PdfFileSignature(input))
+                Document doc = new Document(input);
+                using (PdfFileSignature signature = new PdfFileSignature(doc))
                 {
                     if (signature.ContainsSignature())
                     {

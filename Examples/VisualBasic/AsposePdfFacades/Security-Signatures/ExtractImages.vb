@@ -13,7 +13,8 @@ Namespace AsposePDFFacades.SecuritySignatures
                 ' The path to the documents directory.
                 Dim dataDir As String = RunExamples.GetDataDir_AsposePdfFacades_SecuritySignatures()
                 Dim input As String = dataDir & Convert.ToString("DigitallySign.pdf")
-                Using signature As New PdfFileSignature(input)
+                Dim doc As New Document(input)
+                Using signature As New PdfFileSignature(doc)
                     If signature.ContainsSignature() Then
                         For Each sigName As String In signature.GetSignNames()
                             Dim outFile As String = dataDir & Convert.ToString("ExtractImages_out_.jpg")
