@@ -22,7 +22,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Annotations
             annotation.Flags = AnnotationFlags.Print | AnnotationFlags.NoView;
             doc.Pages[1].Annotations.Add(annotation);
 
-            dataDir = dataDir + "InvisibleAnnotation_out_.pdf";
+            dataDir = dataDir + "InvisibleAnnotation_out.pdf";
             // Save output file
             doc.Save(dataDir);
             // ExEnd:InvisibleAnnotation

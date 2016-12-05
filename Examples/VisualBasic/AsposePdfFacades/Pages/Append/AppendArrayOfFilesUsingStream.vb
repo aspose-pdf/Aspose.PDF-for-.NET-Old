@@ -20,7 +20,7 @@ Namespace AsposePDFFacades.Pages.Append
             portStreams(0) = New FileStream(dataDir & Convert.ToString("input2vb.pdf"), FileMode.Open)
             portStreams(1) = New FileStream(dataDir & Convert.ToString("input3vb.pdf"), FileMode.Open)
 
-            'Append file
+            ' Append file
             pdfEditor.Append(inputStream, portStreams, 1, 1, outputStream)
             ' ExEnd:AppendArrayOfFilesUsingStream
         End Sub

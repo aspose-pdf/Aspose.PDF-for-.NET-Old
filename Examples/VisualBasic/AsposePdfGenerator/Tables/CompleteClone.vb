@@ -14,7 +14,7 @@ Namespace AsposePdfGenerator.Tables
             Dim pdf1 As New Aspose.Pdf.Generator.Pdf()
 
             ' Call BindXML method to read information from RepeatExample.xml document. Second
-            ' parameter is for Xsl file. In our case, we don't need it so leave it as null.
+            ' Parameter is for Xsl file. In our case, we don' T need it so leave it as null.
             pdf1.BindXML(dataDir & Convert.ToString("RepeatExample.xml"), Nothing)
 
             ' Obtain the first section from the Pdf

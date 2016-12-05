@@ -43,7 +43,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.TechnicalArticles
                 section1.Paragraphs.Add(image1);
             }
             // Save the Pdf file
-            pdf.Save(dataDir + "SetPageOrientation_out_.pdf");
+            pdf.Save(dataDir + "SetPageOrientation_out.pdf");
             // ExEnd:SetPageOrientation           
         }
     }

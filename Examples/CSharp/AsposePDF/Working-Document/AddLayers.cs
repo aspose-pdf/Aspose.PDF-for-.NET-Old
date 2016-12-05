@@ -35,7 +35,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.WorkingDocuments
             layer.Contents.Add(new Operator.LineTo(400, 800));
             layer.Contents.Add(new Operator.Stroke());
             page.Layers.Add(layer);
-            dataDir = dataDir + "AddLayers_out_.pdf";
+            dataDir = dataDir + "AddLayers_out.pdf";
             doc.Save(dataDir);
             // ExEnd:AddLayers
             Console.WriteLine("\nLayers added successfully to PDF file.\nFile saved at " + dataDir);

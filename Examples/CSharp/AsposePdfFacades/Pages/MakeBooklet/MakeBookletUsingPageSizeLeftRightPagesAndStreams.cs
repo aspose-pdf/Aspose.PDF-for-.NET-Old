@@ -16,11 +16,11 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.MakeBooklet
             PdfFileEditor pdfEditor = new PdfFileEditor();
             // Create streams
             FileStream inputStream = new FileStream(dataDir + "MultiplePages.pdf", FileMode.Open);
-            FileStream outputStream = new FileStream(dataDir + "MakeBookletUsingPageSizeLeftRightPagesAndStreams_out_.pdf", FileMode.Create);
+            FileStream outputStream = new FileStream(dataDir + "MakeBookletUsingPageSizeLeftRightPagesAndStreams_out.pdf", FileMode.Create);
             // Set left and right pages
             int[] leftPages = new int[] { 1, 5};
             int[] rightPages = new int[] { 2, 3 };
-            //make booklet
+            // Make booklet
             pdfEditor.MakeBooklet(inputStream, outputStream, PageSize.A5, leftPages, rightPages);
             // ExEnd:MakeBookletUsingPageSizeLeftRightPagesAndStreams
         }

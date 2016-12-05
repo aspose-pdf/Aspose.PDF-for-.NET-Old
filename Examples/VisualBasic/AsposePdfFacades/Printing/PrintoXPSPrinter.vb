@@ -30,7 +30,7 @@ Namespace AsposePDFFacades.Printing
             ' Set XPS/PDF printer name
             ps.PrinterName = "Microsoft XPS Document Writer"
             ' or set the PDF printer
-            ' ps.PrinterName = "Adobe PDF";
+            ' Ps.PrinterName = "Adobe PDF";
 
             ' Set PageSize (if required)
             pgs.PaperSize = New System.Drawing.Printing.PaperSize("A4", 827, 1169)
@@ -96,7 +96,7 @@ Namespace AsposePDFFacades.Printing
             ' Set XPS/PDF printer name
             ps.PrinterName = "Microsoft XPS Document Writer"
             ' or set the PDF printer
-            ' ps.PrinterName = "Adobe PDF";
+            ' Ps.PrinterName = "Adobe PDF";
 
             ' Set PageSize (if required)
             pgs.PaperSize = New System.Drawing.Printing.PaperSize("A4", 827, 1169)

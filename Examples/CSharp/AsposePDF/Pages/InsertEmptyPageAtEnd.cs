@@ -18,7 +18,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Pages
             // Insert an empty page at the end of a PDF file
             pdfDocument1.Pages.Add();
 
-            dataDir = dataDir + "InsertEmptyPageAtEnd_out_.pdf";
+            dataDir = dataDir + "InsertEmptyPageAtEnd_out.pdf";
             // Save output file
             pdfDocument1.Save(dataDir);
             // ExEnd:InsertEmptyPageAtEnd

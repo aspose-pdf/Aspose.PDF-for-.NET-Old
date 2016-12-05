@@ -21,7 +21,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion
             // Perform conversion to PDF/A_3a so attachment is included in resultnat file
             doc.Convert(dataDir + "log.txt", Aspose.Pdf.PdfFormat.PDF_A_3A, ConvertErrorAction.Delete);
             // Save resultant file
-            doc.Save(dataDir + "AddAttachmentToPDFA_out_.pdf");
+            doc.Save(dataDir + "AddAttachmentToPDFA_out.pdf");
             // ExEnd:AddAttachmentToPDFA
             Console.WriteLine("\nAttachment added successfully to PDF/A file.\nFile saved at " + dataDir);
         }

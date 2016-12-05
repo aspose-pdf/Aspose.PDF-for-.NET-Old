@@ -18,7 +18,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Images
             // Delete a particular image
             pdfDocument.Pages[1].Resources.Images.Delete(1);
 
-            dataDir = dataDir + "DeleteImages_out_.pdf";
+            dataDir = dataDir + "DeleteImages_out.pdf";
             // Save updated PDF file
             pdfDocument.Save(dataDir);
             // ExEnd:DeleteImages

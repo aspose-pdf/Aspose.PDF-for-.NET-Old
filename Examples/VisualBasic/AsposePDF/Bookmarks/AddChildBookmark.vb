@@ -26,9 +26,9 @@ Namespace AsposePDF.Bookmarks
             pdfChildOutline.Italic = True
             pdfChildOutline.Bold = True
          
-            ' Add child bookmark in parent bookmark's collection
+            ' Add child bookmark in parent bookmark' S collection
             pdfOutline.Add(pdfChildOutline)
-            ' Add parent bookmark in the document's outline collection.
+            ' Add parent bookmark in the document' S outline collection.
             pdfDocument.Outlines.Add(pdfOutline)
 
             dataDir = dataDir & Convert.ToString("AddChildBookmark_out_.pdf")

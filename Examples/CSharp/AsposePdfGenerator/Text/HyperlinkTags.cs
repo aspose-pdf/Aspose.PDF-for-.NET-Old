@@ -23,7 +23,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Text
                 Aspose.Pdf.Generator.Section sec1 = pdf1.Sections.Add();
 
                 // Create a string variable with text containing hyperlink tag
-                string string1 = "<a href=\"http://www.aspose.com/\">This is a test</a>";
+                string string1 = "<a href=\"http:// Www.aspose.com/\">This is a test</a>";
 
                 // Create text paragraph containing HTML hyperlink tag
                 Aspose.Pdf.Generator.Text text1 = new Aspose.Pdf.Generator.Text(string1);
@@ -33,7 +33,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Text
                 sec1.Paragraphs.Add(text1);
 
                 // Save the document
-                pdf1.Save(dataDir + "HyperlinkTags_out_.pdf");
+                pdf1.Save(dataDir + "HyperlinkTags_out.pdf");
                 // ExEnd:HyperlinkTags
             }
             catch (Exception ex)

@@ -37,7 +37,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
             // Append the text fragment to the PDF page
             textBuilder.AppendText(textFragment);
             
-            dataDir = dataDir + "AddText_out_.pdf";
+            dataDir = dataDir + "AddText_out.pdf";
 
             // Save resulting PDF document.
             pdfDocument.Save(dataDir);
@@ -75,7 +75,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
             // Append TextFragment to PDF file
             tb.AppendText(fragment);
 
-            dataDir = dataDir + "AddUnderlineText_out_.pdf";
+            dataDir = dataDir + "AddUnderlineText_out.pdf";
 
             // Save resulting PDF document.
             pdfDocument.Save(dataDir);
@@ -96,7 +96,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
             lineInfo.Visibility = true;
             editor.CreatePolygon(lineInfo, 1, new System.Drawing.Rectangle(0, 0, 0, 0), "");
 
-            dataDir = dataDir + "AddingBorderAroundAddedText_out_.pdf";
+            dataDir = dataDir + "AddingBorderAroundAddedText_out.pdf";
 
             // Save resulting PDF document.
             editor.Save(dataDir);
@@ -130,7 +130,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
                     textBuilder.AppendText(textFragment);
                 }
 
-                dataDir = dataDir + "LoadingFontFromStream_out_.pdf";
+                dataDir = dataDir + "LoadingFontFromStream_out.pdf";
 
                 // Save resulting PDF document.
                 doc.Save(dataDir);
@@ -165,7 +165,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
             // Add paragraph
             builder.AppendParagraph(paragraph);
 
-            dataDir = dataDir + "AddTextUsingTextParagraph_out_.pdf";
+            dataDir = dataDir + "AddTextUsingTextParagraph_out.pdf";
 
             // Save resulting PDF document.
             doc.Save(dataDir);
@@ -207,7 +207,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
             // Add TextFragment to paragraphs collection of page object
             page1.Paragraphs.Add(tf);
 
-            dataDir = dataDir + "AddHyperlinkToTextSegment_out_.pdf";
+            dataDir = dataDir + "AddHyperlinkToTextSegment_out.pdf";
 
             // Save resulting PDF document.
             doc.Save(dataDir);
@@ -229,7 +229,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
             TextFragment fragment = new TextFragment("Sample Text in OTF font");
             // Find font inside system font directory
             // Fragment.TextState.Font = FontRepository.FindFont("HelveticaNeueLT Pro 45 Lt");
-            // or you can even specify the path of OTF font in system directory
+            // Or you can even specify the path of OTF font in system directory
             fragment.TextState.Font = FontRepository.OpenFont(dataDir + "space age.otf");
             // Specify to emend font inside PDF file, so that its displayed properly,
             // Even if specific font is not installed/present over target machine
@@ -237,7 +237,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
             // Add TextFragment to paragraphs collection of Page instance
             page.Paragraphs.Add(fragment);
 
-            dataDir = dataDir + "OTFFont_out_.pdf";
+            dataDir = dataDir + "OTFFont_out.pdf";
 
             // Save resulting PDF document.
             pdfDocument.Save(dataDir);
@@ -280,7 +280,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
                 textBuilder.AppendParagraph(par);
 
 
-                dataDir = dataDir + "AddNewLineFeed_out_.pdf";
+                dataDir = dataDir + "AddNewLineFeed_out.pdf";
 
                 // Save resulting PDF document.
                 pdfApplicationDoc.Save(dataDir);
@@ -325,7 +325,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
                 textBuilder.AppendText(textFragment);
 
 
-                dataDir = dataDir + "AddStrikeOutText_out_.pdf";
+                dataDir = dataDir + "AddStrikeOutText_out.pdf";
 
                 // Save resulting PDF document.
                 pdfDocument.Save(dataDir);

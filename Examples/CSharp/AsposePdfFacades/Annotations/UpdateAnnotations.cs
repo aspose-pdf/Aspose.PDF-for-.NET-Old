@@ -29,7 +29,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Annotations
             annotationEditor.ModifyAnnotations(1, 1, annotation);
 
             // Save updated PDF file
-            annotationEditor.Save("output_out_.pdf");
+            annotationEditor.Save("output_out.pdf");
             // ExEnd:UpdateAnnotations
         }
     }

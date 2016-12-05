@@ -33,7 +33,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Annotations
            
             // Add annotation in the annotations collection of the page
             pdfDocument.Pages[1].Annotations.Add(textAnnotation);
-            dataDir = dataDir + "AddAnnotation_out_.pdf";
+            dataDir = dataDir + "AddAnnotation_out.pdf";
             // Save output file
             pdfDocument.Save(dataDir);
             // ExEnd:AddAnnotation

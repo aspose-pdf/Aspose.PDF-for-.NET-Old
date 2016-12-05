@@ -26,7 +26,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Forms
             // Set the font information for form field
             // Field.DefaultAppearance = new Aspose.Pdf.Forms.in.DefaultAppearance(font, 10, System.Drawing.Color.Black);
 
-            dataDir = dataDir + "FormFieldFont14_out_.pdf";
+            dataDir = dataDir + "FormFieldFont14_out.pdf";
             // Save updated document
             pdfDocument.Save(dataDir);
             // ExEnd:FormFieldFont14

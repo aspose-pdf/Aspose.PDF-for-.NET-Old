@@ -12,7 +12,7 @@ Namespace AsposePDF.Images
             ' Open document
             Dim pdfDocument As New Document(dataDir & Convert.ToString("ConvertAllPagesToPNG.pdf"))
             For pageCount As Integer = 1 To pdfDocument.Pages.Count
-                Using imageStream As New FileStream("image" & pageCount & "_out_" & ".png", FileMode.Create)
+                Using imageStream As New FileStream("image" & pageCount & "_out" & ".png", FileMode.Create)
                     ' Create PNG device with specified attributes
                     ' Width, Height, Resolution, Quality
                     ' Quality [0-100], 100 is Maximum

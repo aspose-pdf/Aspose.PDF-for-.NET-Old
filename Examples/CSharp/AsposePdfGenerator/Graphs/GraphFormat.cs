@@ -36,7 +36,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Graphs
             // Enable the circle to be filled with the color specified above line
             circle1.GraphInfo.IsFilled = true;
 
-            dataDir = dataDir + "GraphFormat_out_.pdf";
+            dataDir = dataDir + "GraphFormat_out.pdf";
 
             // Save the Pdf
             pdf1.Save(dataDir);

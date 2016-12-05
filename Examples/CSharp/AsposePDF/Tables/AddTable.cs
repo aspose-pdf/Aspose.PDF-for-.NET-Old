@@ -32,7 +32,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Tables
             }
             // Add table object to first page of input document
             doc.Pages[1].Paragraphs.Add(table);
-            dataDir = dataDir + "document_with_table_out_.pdf";
+            dataDir = dataDir + "document_with_table_out.pdf";
             // Save updated document containing table object
             doc.Save(dataDir);
             // ExEnd:AddTable

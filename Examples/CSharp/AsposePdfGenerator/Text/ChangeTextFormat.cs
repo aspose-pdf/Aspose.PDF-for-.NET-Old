@@ -21,11 +21,11 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Text
             sec1.TextInfo.Color = new Aspose.Pdf.Generator.Color("Blue");
 
             // Add 1st paragraph (inheriting the text format settings from the section)
-            // to the section 
+            // To the section 
             sec1.Paragraphs.Add(new Aspose.Pdf.Generator.Text(sec1, "paragraph 1 "));
 
             // Add 2nd paragraph (inheriting the text format settings from the section)
-            // to the section
+            // To the section
             sec1.Paragraphs.Add(new Aspose.Pdf.Generator.Text(sec1, "paragraph 2"));
 
             // Create 3rd paragraph (inheriting the text format settings from the section) 
@@ -59,7 +59,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Text
             sec1.Paragraphs.Add(t3);
 
             // Add 4th paragraph (inheriting the text format settings from the section)
-            // to the section
+            // To the section
             sec1.Paragraphs.Add(new Aspose.Pdf.Generator.Text(sec1, "paragraph 4"));
 
             Aspose.Pdf.Generator.TextInfo info1 = t3.TextInfo.Clone() as Aspose.Pdf.Generator.TextInfo;
@@ -71,7 +71,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Text
             t3.TextInfo = info1;
 
             // Save the document
-            pdf1.Save(dataDir + "ChangeTextFormat_out_.pdf"); 
+            pdf1.Save(dataDir + "ChangeTextFormat_out.pdf"); 
             // ExEnd:ChangeTextFormat
         }
     }

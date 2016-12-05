@@ -27,7 +27,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.AdvanceFeatures
             // Add a text paragraph to the paragraphs collection of the section
             sec1.Paragraphs.Add(new Aspose.Pdf.Generator.Text("Hello World"));
 
-            dataDir = dataDir + "AddPageBorder_out_.pdf";
+            dataDir = dataDir + "AddPageBorder_out.pdf";
             // Save the Pdf
             pdf1.Save(dataDir);
             // ExEnd:AddPageBorder           

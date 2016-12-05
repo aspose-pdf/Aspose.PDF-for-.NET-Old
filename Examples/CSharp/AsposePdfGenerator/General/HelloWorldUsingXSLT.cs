@@ -24,7 +24,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.General
                 // Bind XML and XSLT files to the document
                 pdf1.BindXML(dataDir + "HelloWorldUsingXSLT.XML", dataDir + "HelloWorld.xslt");
 
-                dataDir = dataDir + "HelloWorldUsingXSLT_out_.pdf";
+                dataDir = dataDir + "HelloWorldUsingXSLT_out.pdf";
                 // Save the document
                 pdf1.Save(dataDir);
                 // ExEnd:HelloWorldUsingXSLT

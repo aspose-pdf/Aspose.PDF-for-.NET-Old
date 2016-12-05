@@ -15,11 +15,11 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion
                 // The path to the documents directory.
                 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
                 // Create a request for the URL.
-                WebRequest request = WebRequest.Create("https://en.wikipedia.org/wiki/Main_Page");
+                WebRequest request = WebRequest.Create("https:// En.wikipedia.org/wiki/Main_Page");
                 // If required by the server, set the credentials.
                 request.Credentials = CredentialCache.DefaultCredentials;
-                // time out in miliseconds before the request times out
-                // request.Timeout = 100;
+                // Time out in miliseconds before the request times out
+                // Request.Timeout = 100;
 
                 // Get the response.
                 HttpWebResponse response = (HttpWebResponse)request.GetResponse();
@@ -35,7 +35,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion
                 response.Close();
 
                 MemoryStream stream = new MemoryStream(System.Text.Encoding.UTF8.GetBytes(responseFromServer));
-                HtmlLoadOptions options = new HtmlLoadOptions("https://en.wikipedia.org/wiki/");
+                HtmlLoadOptions options = new HtmlLoadOptions("https:// En.wikipedia.org/wiki/");
 
 
                 // Load HTML file
@@ -44,7 +44,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion
                 options.PageInfo.IsLandscape = true;
 
                 // Save output as PDF format
-                pdfDocument.Save(dataDir + "WebPageToPDF_out_.pdf");
+                pdfDocument.Save(dataDir + "WebPageToPDF_out.pdf");
                 // ExEnd:WebPageToPDF
             }
             catch (Exception ex)

@@ -15,7 +15,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.ExtractPages
             // Create PdfFileEditor object
             PdfFileEditor pdfEditor = new PdfFileEditor();
             // Extract pages
-            pdfEditor.Extract(dataDir + "MultiplePages.pdf", 1, 3, dataDir + "ExtractPagesBetweenNumbers_out_.pdf");
+            pdfEditor.Extract(dataDir + "MultiplePages.pdf", 1, 3, dataDir + "ExtractPagesBetweenNumbers_out.pdf");
             // ExEnd:ExtractPagesBetweenNumbers
         }
     }

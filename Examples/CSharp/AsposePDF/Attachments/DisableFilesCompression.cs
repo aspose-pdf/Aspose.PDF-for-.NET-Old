@@ -14,12 +14,12 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Attachments
 
             Document pdfDocument = new Document(dataDir + "GetAlltheAttachments.pdf");
             // Setup new file to be added as attachment
-            FileSpecification fileSpecification = new FileSpecification("test_out_.txt", "Sample text file");
+            FileSpecification fileSpecification = new FileSpecification("test_out.txt", "Sample text file");
             // Specify Encoding proparty setting it to FileEncoding.None
             fileSpecification.Encoding = FileEncoding.None;
             // Add attachment to document's attachment collection
             pdfDocument.EmbeddedFiles.Add(fileSpecification);
-            dataDir = dataDir + "DisableFilesCompression_out_.pdf";
+            dataDir = dataDir + "DisableFilesCompression_out.pdf";
             // Save new output
             pdfDocument.Save(dataDir);
             // ExEnd:DisableFilesCompression

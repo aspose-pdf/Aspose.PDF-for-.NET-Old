@@ -23,7 +23,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Text
                 pdf1.BindXML(dataDir + "InlineHTMLFromXML.xml", null);
 
                 // Save the document
-                pdf1.Save(dataDir + "InlineHTMLFromXML_out_.pdf");
+                pdf1.Save(dataDir + "InlineHTMLFromXML_out.pdf");
                 // ExEnd:InlineHTMLFromXML
             }
             catch (Exception ex)
@@ -66,7 +66,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Text
             sec1.Paragraphs.Add(text3);
 
             // Save the pdf document
-            pdf1.Save(dataDir + "InlineHTMLFromXML_out_.pdf");
+            pdf1.Save(dataDir + "InlineHTMLFromXML_out.pdf");
             // ExEnd:TestHtml
         }
     }

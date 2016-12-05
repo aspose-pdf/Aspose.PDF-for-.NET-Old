@@ -60,7 +60,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Graphs
             // Adjust the horizontal size of the 3rd graph using ScalingRateX property
             graph3.GraphInfo.ScalingRateX = 1.5f;     
 
-            dataDir = dataDir + "RotationAndScaling_out_.pdf";
+            dataDir = dataDir + "RotationAndScaling_out.pdf";
 
             // Save the Pdf
             pdf1.Save(dataDir);

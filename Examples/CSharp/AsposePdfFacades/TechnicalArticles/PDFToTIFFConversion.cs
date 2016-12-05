@@ -24,7 +24,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.TechnicalArticles
             TiffSettings tiffSettings = new TiffSettings();
             tiffSettings.Depth = ColorDepth.Format1bpp;
             // Convert to TIFF image
-            pdfConverter.SaveAsTIFF(dataDir + "PDFToTIFFConversion_out_.tif", 300, 300, tiffSettings);
+            pdfConverter.SaveAsTIFF(dataDir + "PDFToTIFFConversion_out.tif", 300, 300, tiffSettings);
             pdfConverter.Close();
             // ExEnd:PDFToTIFFConversion                      
         }
@@ -42,7 +42,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.TechnicalArticles
             // Create TiffSettings object and set CompressionType
             TiffSettings tiffSettings = new TiffSettings();            
             // Convert to TIFF image
-            pdfConverter.SaveAsTIFF(dataDir + "PDFToTIFFConversion_out_.tif", 300, 300, tiffSettings, new WinAPIIndexBitmapConverter());
+            pdfConverter.SaveAsTIFF(dataDir + "PDFToTIFFConversion_out.tif", 300, 300, tiffSettings, new WinAPIIndexBitmapConverter());
             pdfConverter.Close();
             // ExEnd:NewApproach                      
         }
@@ -121,10 +121,10 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.TechnicalArticles
             if (bpp != 1 && bpp != 8 && bpp != 4) throw new System.ArgumentException("1 or 4 or 8 ", "bpp");
 
             // Plan: built into Windows GDI is the ability to convert
-            // bitmaps from one format to another. Most of the time, this
-            // job is actually done by the graphics hardware accelerator card
-            // and so is extremely fast. The rest of the time, the job is done by
-            // very fast native code.
+            // Bitmaps from one format to another. Most of the time, this
+            // Job is actually done by the graphics hardware accelerator card
+            // And so is extremely fast. The rest of the time, the job is done by
+            // Very fast native code.
             // We will call into this GDI functionality from C#. Our plan:
             // (1) Convert our Bitmap into a GDI hbitmap (ie. copy unmanaged->managed)
             // (2) Create a GDI monochrome hbitmap
@@ -132,21 +132,21 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.TechnicalArticles
             // (4) Convert the monochrone hbitmap into a Bitmap (ie. copy unmanaged->managed)
 
             int w = b.Width, h = b.Height;
-            IntPtr hbm = b.GetHbitmap(); // this is step (1)
+            IntPtr hbm = b.GetHbitmap(); // This is step (1)
             //
             // Step (2): create the monochrome bitmap.
             // "BITMAPINFO" is an interop-struct which we define below.
             // In GDI terms, it's a BITMAPHEADERINFO followed by an array of two RGBQUADs
             BITMAPINFO bmi = new BITMAPINFO();
-            bmi.biSize = 40;  // the size of the BITMAPHEADERINFO struct
+            bmi.biSize = 40;  // The size of the BITMAPHEADERINFO struct
             bmi.biWidth = w;
             bmi.biHeight = h;
             bmi.biPlanes = 1; // "planes" are confusing. We always use just 1. Read MSDN for more info.
-            bmi.biBitCount = (short)bpp; // ie. 1bpp or 8bpp
-            bmi.biCompression = BI_RGB; // ie. the pixels in our RGBQUAD table are stored as RGBs, not palette indexes
+            bmi.biBitCount = (short)bpp; // Ie. 1bpp or 8bpp
+            bmi.biCompression = BI_RGB; // Ie. the pixels in our RGBQUAD table are stored as RGBs, not palette indexes
             bmi.biSizeImage = (uint)(((w + 7) & 0xFFFFFFF8) * h / 8);
-            bmi.biXPelsPerMeter = 1000000; // not really important
-            bmi.biYPelsPerMeter = 1000000; // not really important
+            bmi.biXPelsPerMeter = 1000000; // Not really important
+            bmi.biYPelsPerMeter = 1000000; // Not really important
             // Now for the colour table.
             uint ncols = (uint)1 << bpp; // 2 colours for 1bpp; 256 colours for 8bpp
             bmi.biClrUsed = ncols;
@@ -160,7 +160,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.TechnicalArticles
             {
                 // For 8bpp we've created an palette with just greyscale colours.
                 // You can set up any palette you want here. Here are some possibilities:
-                // rainbow: 
+                // Rainbow: 
                 bmi.biClrUsed = 16;
                 bmi.biClrImportant = 16;
                 int[] colv = new int[16] { 8, 24, 38, 56, 72, 88, 104, 120, 136, 152, 168, 184, 210, 216, 232, 248 };
@@ -171,16 +171,16 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.TechnicalArticles
             {
                 // For 8bpp we've created an palette with just greyscale colours.
                 // You can set up any palette you want here. Here are some possibilities:
-                // rainbow:
+                // Rainbow:
                 bmi.biClrUsed = 216; bmi.biClrImportant = 216; int[] colv = new int[6] { 0, 51, 102, 153, 204, 255 };
                 for (int i = 0; i < 216; i++) bmi.cols[i] = MAKERGB(colv[i / 36], colv[(i / 6) % 6], colv[i % 6]);
-                // optimal: a difficult topic: http://en.wikipedia.org/wiki/Color_quantization
+                // Optimal: a difficult topic: http:// En.wikipedia.org/wiki/Color_quantization
             }
 
 
             // 
             // Now create the indexed bitmap "hbm0"
-            IntPtr bits0; // not used for our purposes. It returns a pointer to the raw bits that make up the bitmap.
+            IntPtr bits0; // Not used for our purposes. It returns a pointer to the raw bits that make up the bitmap.
             IntPtr hbm0 = CreateDIBSection(IntPtr.Zero, ref bmi, DIB_RGB_COLORS, out bits0, IntPtr.Zero, 0);
             //
             // Step (3): use GDI's BitBlt function to copy from original hbitmap into monocrhome bitmap
@@ -188,7 +188,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.TechnicalArticles
             IntPtr sdc = GetDC(IntPtr.Zero);       // First we obtain the DC for the screen
             // Next, create a DC for the original hbitmap
             IntPtr hdc = CreateCompatibleDC(sdc); SelectObject(hdc, hbm);
-            // and create a DC for the monochrome hbitmap
+            // And create a DC for the monochrome hbitmap
             IntPtr hdc0 = CreateCompatibleDC(sdc); SelectObject(hdc0, hbm0);
             // Now we can do the BitBlt:
             BitBlt(hdc0, 0, 0, w, h, hdc, 0, 0, SRCCOPY);

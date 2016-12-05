@@ -27,7 +27,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.StampsWatermarks
                 System.Drawing.Image image = infos[0].Image;
 
                 // Save the extracted image
-                image.Save(dataDir + "image_out_.jpg");
+                image.Save(dataDir + "image_out.jpg");
                 // ExEnd:ExtractImageImageStamp  
             }
             catch (Exception ex)

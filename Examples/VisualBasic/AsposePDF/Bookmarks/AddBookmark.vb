@@ -20,7 +20,7 @@ Namespace AsposePDF.Bookmarks
             pdfOutline.Bold = True
             ' Set the destination page number
             pdfOutline.Action = New GoToAction(pdfDocument.Pages(1))
-            ' Add bookmark in the document's outline collection.
+            ' Add bookmark in the document' S outline collection.
             pdfDocument.Outlines.Add(pdfOutline)
 
             dataDir = dataDir & Convert.ToString("AddBookmark_out_.pdf")

@@ -19,7 +19,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Forms
             // Set the tooltip for textfield
             (doc.Form["textbox1"] as Field).AlternateName = "Text box tool tip";
 
-            dataDir = dataDir + "AddTooltipToField_out_.pdf";
+            dataDir = dataDir + "AddTooltipToField_out.pdf";
             // Save the updated document
             doc.Save(dataDir);
             // ExEnd:AddTooltipToField   

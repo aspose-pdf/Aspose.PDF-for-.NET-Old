@@ -18,7 +18,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion
                 options.CustomLoaderOfExternalResources = new LoadOptions.ResourceLoadingStrategy(SamePictureLoader);
 
                 Document pdfDocument = new Document(dataDir + "HTMLToPDF.html", options);
-                pdfDocument.Save("HTMLToPDF_out_.pdf");
+                pdfDocument.Save("HTMLToPDF_out.pdf");
                 // ExEnd:HTMLToPDF
             }
             catch (Exception ex)

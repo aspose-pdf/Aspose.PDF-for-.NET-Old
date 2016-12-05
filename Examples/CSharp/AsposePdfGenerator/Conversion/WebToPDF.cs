@@ -14,7 +14,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Conversion
             string dataDir = RunExamples.GetDataDir_AsposePdfGenerator_Conversion();
 
             // The address of the web URL which you need to convert into PDF format
-            string WebUrl = "http://en.wikipedia.org/wiki/Main_Page";
+            string WebUrl = "http:// En.wikipedia.org/wiki/Main_Page";
             // Create a Web Request object to connect to remote URL
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(WebUrl);
             // Set the Web Request timeout
@@ -43,9 +43,9 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Conversion
             section.Paragraphs.Add(text2);
 
             // Specify the URL which serves as images database
-            // pdf.HtmlInfo.ImgUrl = "http://en.wikipedia.org/";
+            // Pdf.HtmlInfo.ImgUrl = "http:// En.wikipedia.org/";
             // Save the pdf document            
-            pdf.Save(dataDir + "WebToPDF_out_.pdf");
+            pdf.Save(dataDir + "WebToPDF_out.pdf");
             localWebResponse.Close();
             localResponseStream.Close();            
             // ExEnd:WebToPDF

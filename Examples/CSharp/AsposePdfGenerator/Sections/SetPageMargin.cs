@@ -40,9 +40,9 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Sections
             // Assign the marginInfo instance to Margin property of sec1.PageInfo
             section1.PageInfo.Margin = marginInfo;
             // ExEnd:SetPageMargin
-            dataDir = dataDir + "SetPageMargin_out_.pdf";
+            dataDir = dataDir + "SetPageMargin_out.pdf";
 
-            //Save Pdf Document
+            // Save Pdf Document
             pdf.Save(dataDir);
             
             Console.WriteLine("\nPage margin setup successfully.\nFile saved at " + dataDir);

@@ -19,7 +19,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Forms
 
             form.BindPdf( dataDir + "input.pdf");
             form.SetFieldLimit("textbox1", 15);
-            dataDir = dataDir + "SetFieldLimit_out_.pdf";
+            dataDir = dataDir + "SetFieldLimit_out.pdf";
             form.Save(dataDir);
             // ExEnd:SetFieldLimit
             Console.WriteLine("\nField added successfully with limit.\nFile saved at " + dataDir);

@@ -27,7 +27,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion.PDFToHTMLForma
                 newOptions.RasterImagesSavingMode = HtmlSaveOptions.RasterImagesSavingModes.AsEmbeddedPartsOfPngPageBackground;
                 newOptions.FontSavingMode = HtmlSaveOptions.FontSavingModes.SaveInAllFormats;
                 // Output file path 
-                string outHtmlFile = "SingleHTML_out_.html";
+                string outHtmlFile = "SingleHTML_out.html";
                 doc.Save(outHtmlFile, newOptions);
                 // ExEnd:SingleHTML
             }

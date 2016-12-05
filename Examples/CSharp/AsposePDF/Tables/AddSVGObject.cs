@@ -44,7 +44,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Tables
             // Add table to paragraphs collection of page object
             page.Paragraphs.Add(table);
 
-            dataDir = dataDir + "AddSVGObject_out_.pdf";
+            dataDir = dataDir + "AddSVGObject_out.pdf";
             // Save PDF file
             doc.Save(dataDir);
             // ExEnd:AddSVGObject

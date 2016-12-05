@@ -15,7 +15,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.MakeNUp
             // Create PdfFileEditor object
             PdfFileEditor pdfEditor = new PdfFileEditor();
             // Make NUp
-            pdfEditor.MakeNUp(dataDir + "MultiplePages.pdf", dataDir + "MakeNUpUsingPageSizeAndPaths_out_.pdf", 2, 3, PageSize.A5);
+            pdfEditor.MakeNUp(dataDir + "MultiplePages.pdf", dataDir + "MakeNUpUsingPageSizeAndPaths_out.pdf", 2, 3, PageSize.A5);
             // ExEnd:MakeNUpUsingPageSizeAndPaths
         }
     }

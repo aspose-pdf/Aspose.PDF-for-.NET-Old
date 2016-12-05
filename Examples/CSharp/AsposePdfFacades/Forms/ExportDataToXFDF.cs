@@ -26,7 +26,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Forms
             xfdfOutputStream.Close();
 
             // Save updated document
-            form.Save(dataDir + "ExportDataToXFDF_out_.pdf");
+            form.Save(dataDir + "ExportDataToXFDF_out.pdf");
             // ExEnd:ExportDataToXFDF
         }        
     }

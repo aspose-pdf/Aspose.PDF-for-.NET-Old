@@ -22,7 +22,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Images
             mender.AddImage(dataDir+ "aspose-logo.jpg", 1, 100, 600, 200, 700);
 
             // Save changes
-            mender.Save(dataDir + "AddImage_out_.pdf");
+            mender.Save(dataDir + "AddImage_out.pdf");
 
             // Close PdfFileMend object
             mender.Close();

@@ -17,7 +17,7 @@ Namespace AsposePdfGenerator.General
                 Dim sec1 As AP.Generator.Section = pdf1.Sections.Add()
                 ' Create FloatingBox with 108 as width and 80 as height
                 Dim box1 As New AP.Generator.FloatingBox(108, 80)
-                ' add FloatingBox to paragraphs collection of section object
+                ' Add FloatingBox to paragraphs collection of section object
                 sec1.Paragraphs.Add(box1)
                 ' ExStart:PositionFloatingBox-1
                 ' Specify the Horizontal Positioning type for FloatingBox as Margin

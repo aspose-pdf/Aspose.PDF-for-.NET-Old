@@ -25,7 +25,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Images
             xImage.Save(outputImage, ImageFormat.Jpeg);
             outputImage.Close();
 
-            dataDir = dataDir + "ExtractImages_out_.pdf";
+            dataDir = dataDir + "ExtractImages_out.pdf";
 
             // Save updated PDF file
             pdfDocument.Save(dataDir);

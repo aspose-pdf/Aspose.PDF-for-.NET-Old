@@ -49,7 +49,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.TechnicalArticles
             // Add table to paragraphs collection of section
             sec1.Paragraphs.Add(mytable);
             // Save the resultant PDF document
-            pdf.Save(dataDir + "SetTableColumnsWidth_out_.pdf");
+            pdf.Save(dataDir + "SetTableColumnsWidth_out.pdf");
             // ExEnd:SetTableColumnsWidth           
         }
     }

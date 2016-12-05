@@ -21,7 +21,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion
                 Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "XPSToPDF.xps", options);
 
                 // Save the resultant PDF document
-                document.Save(dataDir + "XPSToPDF_out_.pdf");
+                document.Save(dataDir + "XPSToPDF_out.pdf");
                 // ExEnd:XPSToPDF
             }
             catch(Exception ex)

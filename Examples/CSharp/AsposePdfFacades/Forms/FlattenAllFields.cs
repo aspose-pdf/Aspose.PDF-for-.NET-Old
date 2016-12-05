@@ -20,7 +20,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Forms
             pdfForm.FlattenAllFields();
 
             // Save output
-            pdfForm.Save( dataDir + "FlattenAllFields_out_.pdf");
+            pdfForm.Save( dataDir + "FlattenAllFields_out.pdf");
             // ExEnd:FlattenAllFields
         }
     }

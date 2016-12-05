@@ -24,7 +24,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Annotations
             freetext.Contents = "Free Text";
             // Add anootation to annotations collection of page
             pdfDocument.Pages[1].Annotations.Add(freetext);
-            dataDir = dataDir + "SetFreeTextAnnotationFormatting_out_.pdf";
+            dataDir = dataDir + "SetFreeTextAnnotationFormatting_out.pdf";
             // Save the updated document
             pdfDocument.Save(dataDir);
             // ExEnd:SetFreeTextAnnotationFormatting

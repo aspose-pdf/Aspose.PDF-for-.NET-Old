@@ -60,7 +60,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Tables
             pdf1.SetUnicode();           
 
             // Save the Pdf
-            pdf1.Save(dataDir + "Arabic_Farsi_Text_in_TableCell_out_.pdf");
+            pdf1.Save(dataDir + "Arabic_Farsi_Text_in_TableCell_out.pdf");
             // ExEnd:NonEnglishText   
                 
         }

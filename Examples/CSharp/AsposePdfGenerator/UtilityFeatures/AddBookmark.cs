@@ -42,7 +42,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.UtilityFeatures
             heading3.UserLabel = "bullet1";
             segment3.Content = "this is bullet style 1";
             sec1.Paragraphs.Add(heading3);
-            dataDir = dataDir + "AddBookmark_out_.pdf";
+            dataDir = dataDir + "AddBookmark_out.pdf";
             pdf1.Save(dataDir); 
             // ExEnd:AddBookmark           
         }        

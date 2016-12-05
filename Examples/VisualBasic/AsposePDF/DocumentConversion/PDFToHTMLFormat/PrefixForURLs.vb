@@ -33,12 +33,12 @@ Namespace AsposePDF.DocumentConversion.PDFToHTMLFormat
             '    This sample method saving strategy method saves image-files in some folder
             '    (including raster image files that are exctracted from that SVGs)
             '    Then it returns specific custom artificial  path
-            '    to be used as value of 'src' or 'data' relevant attribute in generated host-SVG(or HTML)
+            '    to be used as value of ' Src' or ' Data' Relevant attribute in generated host-SVG(or HTML)
             ' ____________________________________________________________________________
 
             '---------------------------------------------------------
             ' 1) All other files(f.e. fonts) will be processed with converter itself cause for them flag
-            '   resourceSavingInfo.CustomProcessingCancelled is set to 'true'
+            '   resourceSavingInfo.CustomProcessingCancelled is set to ' True'
             '---------------------------------------------------------
             If Not (TypeOf resourceSavingInfo Is HtmlSaveOptions.HtmlImageSavingInfo) Then
                 resourceSavingInfo.CustomProcessingCancelled = True

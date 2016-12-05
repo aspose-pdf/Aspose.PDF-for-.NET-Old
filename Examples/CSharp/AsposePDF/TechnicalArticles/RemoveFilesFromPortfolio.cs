@@ -15,7 +15,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.TechnicalArticles
             // Load source PDF Portfolio
             Aspose.Pdf.Document pdfDocument = new Aspose.Pdf.Document(dataDir + "PDFPortfolio.pdf");
             pdfDocument.Collection.Delete();
-            pdfDocument.Save(dataDir + "No_PortFolio_out_.pdf");
+            pdfDocument.Save(dataDir + "No_PortFolio_out.pdf");
             // ExEnd:RemoveFilesFromPortfolio                      
         }
     }

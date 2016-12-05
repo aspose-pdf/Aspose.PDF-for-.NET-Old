@@ -25,7 +25,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.TechnicalArticles
             Aspose.Pdf.Generator.Text t2 = new Aspose.Pdf.Generator.Text(tr.ReadToEnd());
             sec1.Paragraphs.Add(t2);
 
-            pdf1.Save(dataDir + "ConvertTextFile_out_.Pdf");
+            pdf1.Save(dataDir + "ConvertTextFile_out.Pdf");
             // ExEnd:ConvertTextFile           
             
         }
@@ -65,7 +65,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.TechnicalArticles
                 Console.WriteLine("File Does Not Exist");
 
             // Save the PDF file
-            pdf1.Save(dataDir + "ConvertLargeTextFile_out_.pdf");
+            pdf1.Save(dataDir + "ConvertLargeTextFile_out.pdf");
             // ExEnd:ConvertLargeTextFile
  
         }

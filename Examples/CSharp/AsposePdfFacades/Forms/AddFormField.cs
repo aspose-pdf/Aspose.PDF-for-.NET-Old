@@ -24,7 +24,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Forms
             formEditor.AddField(FieldType.MultiLineText, "multilinetextfield", 1, 100, 500, 200, 550);
 
             // Save updated file
-            formEditor.Save(dataDir+ "AddFormField_out_.pdf");
+            formEditor.Save(dataDir+ "AddFormField_out.pdf");
             // ExEnd:AddFormField
         }
     }

@@ -25,7 +25,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.WorkingDocuments
             docInfo.Subject = "PDF Information";
             docInfo.Title = "Setting PDF Document Information";
 
-            dataDir = dataDir + "SetFileInfo_out_.pdf";
+            dataDir = dataDir + "SetFileInfo_out.pdf";
             // Save output document
             pdfDocument.Save(dataDir);
             // ExEnd:SetFileInfo

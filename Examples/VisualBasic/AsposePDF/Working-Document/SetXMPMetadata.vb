@@ -32,7 +32,7 @@ Namespace AsposePDF.WorkingDocuments
             ' Open document
             Dim pdfDocument As New Document(dataDir & Convert.ToString("SetXMPMetadata.pdf"))
             pdfDocument.Metadata.RegisterNamespaceUri("xmp", "http://ns.adobe.com/xap/1.0/")
-            ' xmlns prefix was removed
+            ' Xmlns prefix was removed
             pdfDocument.Metadata("xmp:ModifyDate") = DateTime.Now
 
             dataDir = dataDir & Convert.ToString("SetPrefixMetadata_out_.pdf")

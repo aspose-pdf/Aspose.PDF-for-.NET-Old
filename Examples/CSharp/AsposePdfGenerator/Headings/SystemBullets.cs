@@ -59,7 +59,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Headings
             heading3.UserLabel = "Bullet3";
             sec1.Paragraphs.Add(heading3);
 
-            pdf1.Save(dataDir + "SystemBullets_out_.pdf");
+            pdf1.Save(dataDir + "SystemBullets_out.pdf");
             // ExEnd:SystemBullets   
                 
         }

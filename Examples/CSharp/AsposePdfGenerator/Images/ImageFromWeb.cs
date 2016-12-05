@@ -25,7 +25,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Images
             sec1.Paragraphs.Add(image1);
 
             // Set the path of image file
-            image1.ImageInfo.File = "http://www.aspose.com/Images/Apple.jpg";
+            image1.ImageInfo.File = "http:// Www.aspose.com/Images/Apple.jpg";
 
             // Set the type of image using ImageFileType enumeration
             image1.ImageInfo.ImageFileType = Aspose.Pdf.Generator.ImageFileType.Jpeg;
@@ -34,7 +34,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Images
             image1.ImageInfo.Title = "JPEG image";
 
             // Save the Pdf
-            pdf1.Save(dataDir + "ImageFromLocalDisk_out_.pdf");
+            pdf1.Save(dataDir + "ImageFromLocalDisk_out.pdf");
             // ExEnd:ImageFromWeb         
         }
     }

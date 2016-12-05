@@ -23,7 +23,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Printing
                 // Set PS printer, one can find this driver in the list of preinstalled printer drivers in Windows
                 printerSetttings.PrinterName = "HP LaserJet 2300 Series PS";
                 // Set output file name and PrintToFile attribute
-                printerSetttings.PrintFileName = dataDir + "PdfToPostScript_out_.ps";
+                printerSetttings.PrintFileName = dataDir + "PdfToPostScript_out.ps";
                 printerSetttings.PrintToFile = true;
                 // Disable print page dialog
                 viewer.PrintPageDialog = false;

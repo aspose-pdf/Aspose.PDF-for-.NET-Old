@@ -34,7 +34,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.TechnicalArticles
             editor.DeleteAnnotation("Stamp");
 
             // Extract annotations to an array list
-            // string[] annType = { "Text" };
+            // String[] annType = { "Text" };
             Enum[] annotType = { Aspose.Pdf.Annotations.AnnotationType.FreeText, Aspose.Pdf.Annotations.AnnotationType.Line };
             ArrayList list = (ArrayList)editor.ExtractAnnotations(1, 5, annotType);
             for (int index = 0; index < list.Count; index++)
@@ -49,7 +49,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.TechnicalArticles
             editor.ImportAnnotations(importFrom);
 
             // Finally save the output PDF file
-            editor.Save(dataDir + "PdfAnnotationEditorFeatures_out_.pdf");
+            editor.Save(dataDir + "PdfAnnotationEditorFeatures_out.pdf");
             // ExEnd:PdfAnnotationEditorFeatures                      
         }
     }

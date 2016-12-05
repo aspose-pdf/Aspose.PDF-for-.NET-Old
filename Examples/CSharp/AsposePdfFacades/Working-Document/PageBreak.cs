@@ -25,7 +25,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.WorkingDocument
                     new PdfFileEditor.PageBreak(1, 450) 
                 });
                 // Save resultant file
-                dest.Save(dataDir + "PageBreak_out_.pdf");
+                dest.Save(dataDir + "PageBreak_out.pdf");
                 // ExEnd:PageBreak  
             }
             catch (Exception ex)
@@ -45,7 +45,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.WorkingDocument
                 // Create PdfFileEditor object
                 PdfFileEditor fileEditor = new PdfFileEditor();
 
-                fileEditor.AddPageBreak(dataDir + "input.pdf", dataDir + "PageBreakWithDestPath_out_.pdf", new PdfFileEditor.PageBreak[] 
+                fileEditor.AddPageBreak(dataDir + "input.pdf", dataDir + "PageBreakWithDestPath_out.pdf", new PdfFileEditor.PageBreak[] 
                 { 
                     new PdfFileEditor.PageBreak(1, 450) 
                 });                                
@@ -65,7 +65,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.WorkingDocument
                 string dataDir = RunExamples.GetDataDir_AsposePdfFacades_WorkingDocuments();
 
                 Stream src = new FileStream( dataDir + "input.pdf", FileMode.Open, FileAccess.Read);
-                Stream dest = new FileStream(dataDir + "PageBreakWithStream_out_.pdf", FileMode.Create, FileAccess.ReadWrite);
+                Stream dest = new FileStream(dataDir + "PageBreakWithStream_out.pdf", FileMode.Create, FileAccess.ReadWrite);
                 PdfFileEditor fileEditor = new PdfFileEditor();
                 fileEditor.AddPageBreak(src, dest, new PdfFileEditor.PageBreak[] 
                 { 

@@ -13,10 +13,10 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion
 
             // Instantiate LoadOption object using CGMLoadOption
             Aspose.Pdf.CgmLoadOptions cgmload = new Aspose.Pdf.CgmLoadOptions();
-            // instantiate Document object
+            // Instantiate Document object
             Document doc = new Document(dataDir + "CGMToPDF.CGM", cgmload);
             // Save the resultant PDF document
-            doc.Save(dataDir+ "TECHDRAW_out_.pdf");
+            doc.Save(dataDir+ "TECHDRAW_out.pdf");
             // ExEnd:CGMToPDF
         }
     }

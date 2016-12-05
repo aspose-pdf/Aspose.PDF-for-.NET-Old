@@ -14,7 +14,7 @@ Namespace AsposePDF.DocumentConversion
             Try
                 originalFont = FontRepository.FindFont("AgencyFB")
             Catch generatedExceptionName As Exception
-                'Font is missing on destination machine
+                ' Font is missing on destination machine
                 FontRepository.Substitutions.Add(New SimpleFontSubstitution("AgencyFB", "Arial"))
             End Try
             Dim fileNew = New FileInfo(dataDir & Convert.ToString("newfile_out_.pdf"))

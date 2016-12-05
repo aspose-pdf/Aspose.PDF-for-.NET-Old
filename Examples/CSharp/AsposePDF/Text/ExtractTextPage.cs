@@ -25,7 +25,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
             // Get the extracted text
             string extractedText = textAbsorber.Text;
 
-            dataDir = dataDir + "extracted-text_out_.txt";
+            dataDir = dataDir + "extracted-text_out.txt";
             // Create a writer and open the file
             TextWriter tw = new StreamWriter(dataDir);
             

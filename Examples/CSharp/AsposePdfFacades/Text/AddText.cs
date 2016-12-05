@@ -29,7 +29,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Text
             mender.AddText(text, 1, 100, 200, 200, 400);
 
             // Save changes
-            mender.Save(dataDir + "AddText_out_.pdf");
+            mender.Save(dataDir + "AddText_out.pdf");
 
             // Close PdfFileMend object
             mender.Close();

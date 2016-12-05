@@ -18,7 +18,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Pages
             // Delete a particular page
             pdfDocument.Pages.Delete(2);
 
-            dataDir = dataDir + "DeleteParticularPage_out_.pdf";
+            dataDir = dataDir + "DeleteParticularPage_out.pdf";
             // Save updated PDF
             pdfDocument.Save(dataDir);
             // ExEnd:DeleteParticularPage

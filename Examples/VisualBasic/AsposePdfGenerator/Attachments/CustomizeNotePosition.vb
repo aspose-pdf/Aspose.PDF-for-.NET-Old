@@ -32,10 +32,10 @@ Namespace AsposePdfGenerator.Attachments
             ' Set the note to be opened when PDF document is opened
             noteAttachment.IsNoteOpen = True
 
-            ' Set the positioning type of the note's popup window to Absolute
+            ' Set the positioning type of the note' S popup window to Absolute
             noteAttachment.NoteWindowPositioningType = Aspose.Pdf.Generator.NoteWindowPositioningType.Absolute
 
-            ' Set the position of the note's popup window
+            ' Set the position of the note' S popup window
             noteAttachment.NoteWindowPosition = New Aspose.Pdf.Generator.RectangleArea(100, 100, 160, 100)
 
             dataDir = dataDir & Convert.ToString("CustomizeNotePosition_out_.pdf")

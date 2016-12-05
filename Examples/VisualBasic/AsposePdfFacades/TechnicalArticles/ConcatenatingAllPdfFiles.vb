@@ -22,8 +22,8 @@ Namespace AsposePDFFacades.TechnicalArticles
             ' Instantiate PdfFileEditor object
             Dim pdfEditor As Aspose.Pdf.Facades.PdfFileEditor = New PdfFileEditor()
 
-            'Call Concatenate method of PdfFileEditor object to concatenate all input files
-            'into a single output file
+            ' Call Concatenate method of PdfFileEditor object to concatenate all input files
+            ' Into a single output file
             pdfEditor.Concatenate(fileEntries, dataDir & masterFileName)
             ' ExEnd:ConcatenatingAllPdfFiles                      
         End Sub

@@ -19,7 +19,7 @@ Namespace AsposePDFFacades.TechnicalArticles
             For i As Integer = 0 To allfields.Length - 1
                 ' Get the appearance attributes of each field, consequtively
                 Dim facade As FormFieldFacade = form.GetFieldFacade(allfields(i))
-                ' Box in FormFieldFacade class holds field's location.
+                ' Box in FormFieldFacade class holds field' S location.
                 box(i) = facade.Box
             Next
             form.Save(dataDir & Convert.ToString("IdentifyFormFields_1_out_.pdf"))

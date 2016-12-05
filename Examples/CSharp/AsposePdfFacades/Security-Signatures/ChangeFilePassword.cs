@@ -17,7 +17,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.SecuritySignatures
 
             // Change password
             fileSecurity.ChangePassword("owner", "newuserpassword", "newownerpassword");
-            fileSecurity.Save(dataDir + "ChangeFilePassword_out_.pdf");
+            fileSecurity.Save(dataDir + "ChangeFilePassword_out.pdf");
             // ExEnd:ChangeFilePassword   
            
         }

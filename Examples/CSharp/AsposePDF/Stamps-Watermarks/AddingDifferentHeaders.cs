@@ -55,7 +55,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.StampsWatermarks
             doc.Pages[2].AddStamp(stamp2);
             // Third stamp is added on third page.
             doc.Pages[3].AddStamp(stamp3);
-            dataDir = dataDir + "multiheader_out_.pdf";
+            dataDir = dataDir + "multiheader_out.pdf";
             // Save the updated document
             doc.Save(dataDir);
             // ExEnd:AddingDifferentHeaders 

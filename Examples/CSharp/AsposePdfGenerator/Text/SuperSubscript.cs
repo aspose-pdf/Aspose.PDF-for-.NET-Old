@@ -33,7 +33,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Text
                 sec1.Paragraphs.Add(text1);
 
                 // Save the document
-                pdf1.Save(dataDir + "SuperSubscript_out_.pdf");
+                pdf1.Save(dataDir + "SuperSubscript_out.pdf");
                 // ExEnd:SuperSubscript
             }
             catch (Exception ex)

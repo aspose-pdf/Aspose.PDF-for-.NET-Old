@@ -39,7 +39,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.ManipulatePageProper
             fileEditor.ResizeContents(doc, new int[] { 1, 2 }, parameters);
 
             // Save document into new location.
-            doc.Save(dataDir + "ResizePageContents_out_.pdf");
+            doc.Save(dataDir + "ResizePageContents_out.pdf");
             // ExEnd:ResizePageContents
         }
     }

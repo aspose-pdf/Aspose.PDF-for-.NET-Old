@@ -14,7 +14,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.ConcatenateDocuments
             // Create PdfFileEditor object
             PdfFileEditor pdfEditor = new PdfFileEditor();
             // Concatenate files
-            pdfEditor.Concatenate(dataDir + "input.pdf", dataDir + "input2.pdf", dataDir + "ConcatenateUsingPath_out_.pdf");
+            pdfEditor.Concatenate(dataDir + "input.pdf", dataDir + "input2.pdf", dataDir + "ConcatenateUsingPath_out.pdf");
             // ExEnd:ConcatenateUsingPath
         }
         public static void CopyOutline()
@@ -26,7 +26,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.ConcatenateDocuments
             PdfFileEditor pfe = new PdfFileEditor();
             string[] files = Directory.GetFiles(dataDir);
             pfe.CopyOutlines = false;
-            pfe.Concatenate(files, dataDir + "CopyOutline_out_.pdf");
+            pfe.Concatenate(files, dataDir + "CopyOutline_out.pdf");
             // ExEnd:CopyOutline
  
         }

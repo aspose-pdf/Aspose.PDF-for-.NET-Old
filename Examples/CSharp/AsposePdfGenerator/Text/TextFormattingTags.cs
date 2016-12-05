@@ -46,7 +46,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Text
             sec1.Paragraphs.Add(text3);
 
             // Save the pdf document
-            pdf1.Save(dataDir + "TestHtml_out_.pdf");
+            pdf1.Save(dataDir + "TestHtml_out.pdf");
         }
     }
 }

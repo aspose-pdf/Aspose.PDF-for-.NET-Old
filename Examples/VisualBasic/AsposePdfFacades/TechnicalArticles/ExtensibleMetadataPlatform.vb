@@ -32,7 +32,7 @@ Namespace AsposePDFFacades.TechnicalArticles
             ' Add Creator Tool property to xmp metadata
             xmpMetaData.Add(DefaultMetadataProperties.CreatorTool, "Creator Tool Name")
 
-            'Add Modify Date to xmp metadata
+            ' Add Modify Date to xmp metadata
             xmpMetaData.Add(DefaultMetadataProperties.ModifyDate, System.DateTime.Now.ToString())
 
             ' Add Nick Name to xmp metadata

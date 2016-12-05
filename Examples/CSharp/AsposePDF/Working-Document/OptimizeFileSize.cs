@@ -24,7 +24,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.WorkingDocuments
                 CompressImages = true,
                 ImageQuality = 10
             });            
-            dataDir = dataDir + "OptimizeFileSize_out_.pdf";
+            dataDir = dataDir + "OptimizeFileSize_out.pdf";
             // Save output document
             pdfDocument.Save(dataDir);
             // ExEnd:OptimizeFileSize

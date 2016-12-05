@@ -15,7 +15,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.LinksActions
             Document document = new Document(dataDir + "RemoveOpenAction.pdf");
             // Remove document open action
             document.OpenAction = null;
-            dataDir = dataDir + "RemoveOpenAction_out_.pdf";
+            dataDir = dataDir + "RemoveOpenAction_out.pdf";
             // Save updated document
             document.Save(dataDir);
             // ExEnd:RemoveOpenAction

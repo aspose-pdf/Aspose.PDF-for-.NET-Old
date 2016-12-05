@@ -22,7 +22,7 @@ Namespace AsposePDF.Forms
                 field.PartialName = "NewField"
 
                 ' Add radio button options. please note that these options are situated 
-                ' neither horizontally nor vertically. 
+                ' Neither horizontally nor vertically. 
                 ' You can try to set any coordinates (and even size) for them. 
                 Dim opt1 As New RadioButtonOptionField()
                 opt1.Rect = New Rectangle(40, 650, 60, 670)

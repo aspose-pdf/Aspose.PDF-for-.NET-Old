@@ -72,7 +72,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.TechnicalArticles
             bm_parent2.ChildItems = bms_parent2;
            
             // Saves the result PDF to file
-            editor.Save(dataDir + "Nested_BookMarks_out_.pdf");
+            editor.Save(dataDir + "Nested_BookMarks_out.pdf");
             // ExEnd:CreateNestedBookmarks                      
         }
     }

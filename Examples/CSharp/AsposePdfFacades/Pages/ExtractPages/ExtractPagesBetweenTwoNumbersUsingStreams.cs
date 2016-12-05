@@ -16,7 +16,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.ExtractPages
             PdfFileEditor pdfEditor = new PdfFileEditor();
             // Create streams
             FileStream inputStream = new FileStream(dataDir + "MultiplePages.pdf", FileMode.Open);
-            FileStream outputStream = new FileStream(dataDir + "ExtractPagesBetweenTwoNumbers_out_.pdf", FileMode.Create);
+            FileStream outputStream = new FileStream(dataDir + "ExtractPagesBetweenTwoNumbers_out.pdf", FileMode.Create);
             // Extract pages
             pdfEditor.Extract(inputStream, 1, 3, outputStream);
             // ExEnd:ExtractPagesBetweenTwoNumbersUsingStreams

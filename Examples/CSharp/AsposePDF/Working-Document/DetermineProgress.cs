@@ -17,7 +17,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.WorkingDocuments
             DocSaveOptions saveOptions = new DocSaveOptions();
             saveOptions.CustomProgressHandler = new UnifiedSaveOptions.ConversionProgressEventHandler(ShowProgressOnConsole);
 
-            dataDir = dataDir + "DetermineProgress_out_.pdf";
+            dataDir = dataDir + "DetermineProgress_out.pdf";
             pdfDocument.Save(dataDir, saveOptions);
             Console.ReadLine();
             // ExEnd:DetermineProgress

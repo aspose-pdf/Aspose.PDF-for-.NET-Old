@@ -17,7 +17,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion
             
             pdfDocument.Convert(new MemoryStream(), PdfFormat.PDF_A_3B, ConvertErrorAction.Delete);
 
-            dataDir = dataDir + "PDFToPDFA3b_out_.pdf";
+            dataDir = dataDir + "PDFToPDFA3b_out.pdf";
             // Save output document
             pdfDocument.Save(dataDir);
             // ExEnd:PDFToPDFA3b

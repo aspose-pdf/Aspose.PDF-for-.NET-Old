@@ -21,7 +21,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion.PDFToHTMLForma
                 saveOptions.FixedLayout = true;
                 saveOptions.RasterImagesSavingMode = HtmlSaveOptions.RasterImagesSavingModes.AsEmbeddedPartsOfPngPageBackground;
 
-                pdfDocument.Save(dataDir + "AvoidSavingImages_out_.html", saveOptions);
+                pdfDocument.Save(dataDir + "AvoidSavingImages_out.html", saveOptions);
                 // ExEnd:AvoidSavingImages
             }
             catch (Exception ex)

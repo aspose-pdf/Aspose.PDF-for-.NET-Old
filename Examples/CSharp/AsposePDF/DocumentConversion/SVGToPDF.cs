@@ -19,7 +19,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion
             Aspose.Pdf.Document doc = new Aspose.Pdf.Document(dataDir + "SVGToPDF.svg", loadopt);
 
             // Save the resultant PDF document
-            doc.Save(dataDir + "SVGToPDF_out_.pdf");
+            doc.Save(dataDir + "SVGToPDF_out.pdf");
             // ExEnd:SVGToPDF
         }
     }

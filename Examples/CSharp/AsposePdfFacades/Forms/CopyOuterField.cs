@@ -25,7 +25,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Forms
                 formEditor.CopyOuterField( dataDir + "input.pdf", "textfield", 1);
 
                 // Close and save the output document
-                formEditor.Save(dataDir + "CopyOuterField_out_.pdf");
+                formEditor.Save(dataDir + "CopyOuterField_out.pdf");
                 // ExEnd:CopyOuterField
             }
             catch (Exception ex)

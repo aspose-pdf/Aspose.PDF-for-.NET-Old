@@ -23,7 +23,7 @@ Namespace AsposePDFFacades.Pages.ManipulatePageProperties
             pageRotations.Add(1, 90)
             pageRotations.Add(2, 180)
             pageRotations.Add(3, 270)
-            ' pageEditor.PageRotations = pageRotations;
+            ' PageEditor.PageRotations = pageRotations;
             ' Set zoom where 1.0f = 100% zoom
             pageEditor.Zoom = 2.0F
             ' Save updated PDF file

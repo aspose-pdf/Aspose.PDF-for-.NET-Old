@@ -16,7 +16,7 @@ Namespace AsposePDF.Images
 
             For pageCount As Integer = 1 To pdfDocument.Pages.Count
 
-                Using imageStream As New FileStream("image" & pageCount & "_out_" & ".jpg", FileMode.Create)
+                Using imageStream As New FileStream("image" & pageCount & "_out" & ".jpg", FileMode.Create)
                     ' Create Resolution object
                     Dim resolution As New Resolution(300)
                     ' Create JPEG device with specified attributes (Width, Height, Resolution, Quality)
@@ -42,17 +42,17 @@ Namespace AsposePDF.Images
             ' Open document
             Dim pdfDocument As New Document(dataDir & Convert.ToString("PagesToImages.pdf"))
 
-            Using imageStream As New FileStream("image" & 1 & "_out_" & ".jpg", FileMode.Create)
-                'Create Resolution object
+            Using imageStream As New FileStream("image" & 1 & "_out" & ".jpg", FileMode.Create)
+                ' Create Resolution object
                 Dim resolution As New Resolution(300)
-                'Create JPEG device with specified attributes (Width, Height, Resolution, Quality)
-                'Quality [0-100], 100 is Maximum
+                ' Create JPEG device with specified attributes (Width, Height, Resolution, Quality)
+                ' Quality [0-100], 100 is Maximum
                 Dim jpegDevice As New JpegDevice(resolution, 100)
                 ' ExStart:ConvertParticularPage
-                'Convert a particular page and save the image to stream
+                ' Convert a particular page and save the image to stream
                 jpegDevice.Process(pdfDocument.Pages(1), imageStream)
                 ' ExEnd:ConvertParticularPage
-                'Close stream
+                ' Close stream
                 imageStream.Close()
 
             End Using

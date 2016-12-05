@@ -21,7 +21,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.LinksActions
             page.Accept(selector);
             IList list = selector.Selected;
             Annotation annotation = (Annotation)list[0];
-            dataDir = dataDir + "ExtractLinks_out_.pdf";
+            dataDir = dataDir + "ExtractLinks_out.pdf";
             // Save updated document
             document.Save(dataDir);
             // ExEnd:ExtractLinks

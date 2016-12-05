@@ -101,7 +101,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Headings
             heading5.HeadingType = Aspose.Pdf.Generator.HeadingType.EnglishLower;
             heading5.IsAutoSequence = true;
             sec1.Paragraphs.Add(heading5);                       
-            pdf1.Save( dataDir + "headings_out_.pdf");            
+            pdf1.Save( dataDir + "headings_out.pdf");            
             // ExEnd:ApplyingNumber   
                 
         }

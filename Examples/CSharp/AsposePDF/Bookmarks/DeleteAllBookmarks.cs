@@ -18,7 +18,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Bookmarks
             // Delete all bookmarks
             pdfDocument.Outlines.Delete();
 
-            dataDir = dataDir + "DeleteAllBookmarks_out_.pdf";
+            dataDir = dataDir + "DeleteAllBookmarks_out.pdf";
             // Save updated file
             pdfDocument.Save(dataDir);
             // ExEnd:DeleteAllBookmarks

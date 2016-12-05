@@ -32,7 +32,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.AdvanceFeatures
                 // Bind the XML file
                 pdf1.BindXML(xmlDoc, null);
                 // Save the resultant PDF
-                pdf1.Save(dataDir + "XSLToPdf_out_.pdf");
+                pdf1.Save(dataDir + "XSLToPdf_out.pdf");
                 // ExEnd:XSLToPdf    
             }
             catch (Exception ex)

@@ -17,8 +17,8 @@ Namespace AsposePdfGenerator.AdvanceFeatures
             pdf.BindXML(dataDir & Convert.ToString("Sample.xml"), Nothing)
 
             ' In a real scenario, data is usually input from Database. So, we can get data
-            ' from a database. In this case, we are using a method that will provide us an
-            ' instance of DataTable. The implementation of this method is also given below.
+            ' From a database. In this case, we are using a method that will provide us an
+            ' Instance of DataTable. The implementation of this method is also given below.
             Dim getDT As DataTable = creatDataTable()
 
             ' Accessing a table through its ID
@@ -41,7 +41,7 @@ Namespace AsposePdfGenerator.AdvanceFeatures
             ' Adding columns to the DataTable
             dt.Columns.Add("Beginning of lease", GetType(Int32))
             dt.Columns.Add("End of lease", GetType(Int32))
-            dt.Columns.Add("Landlord's end-of-lease assessment", GetType(String))
+            dt.Columns.Add("Landlord' S end-of-lease assessment", GetType(String))
             dt.Columns.Add("Comments", GetType(String))
 
             ' Adding rows to the DataTable

@@ -11,12 +11,12 @@ Namespace AsposePDF.DocumentConversion.PDFToHTMLFormat
                 ' The path to the documents directory.
                 Dim dataDir As String = RunExamples.GetDataDir_AsposePdf_DocumentConversion_PDFToHTMLFormat()
                 Dim licenseFile As String = ""
-                'e.g F:\_Sources\Aspose_5\trunk\testdata\License\Aspose.Total.lic
+                ' E.g F:\_Sources\Aspose_5\trunk\testdata\License\Aspose.Total.lic
                 Dim license As New License()
                 license.SetLicense(licenseFile)
                 Dim doc As New Document(dataDir & Convert.ToString("input.pdf"))
                 Dim saveOptions As New HtmlSaveOptions()
-                ' saveOptions.CustomProgressHandler = new HtmlSaveOptions.ConversionProgessEventHandler(ShowProgressOnConsole);
+                ' SaveOptions.CustomProgressHandler = new HtmlSaveOptions.ConversionProgessEventHandler(ShowProgressOnConsole);
                 saveOptions.SplitIntoPages = False
                 doc.Save(dataDir & Convert.ToString("ProgressDetails_out_.html"), saveOptions)
                 ' ExEnd:ProgressDetails
@@ -35,7 +35,7 @@ Namespace AsposePDF.DocumentConversion.PDFToHTMLFormat
                     Console.WriteLine([String].Format("{0}  - Source page {1} of {2} analyzed.", DateTime.Now.TimeOfDay, eventInfo.Value.ToString(), eventInfo.MaxValue.ToString()))
                     Exit Select
                 Case HtmlSaveOptions.ProgressEventType.ResultPageCreated
-                    Console.WriteLine([String].Format("{0}  - Result page's {1} of {2} layout created.", DateTime.Now.TimeOfDay, eventInfo.Value.ToString(), eventInfo.MaxValue.ToString()))
+                    Console.WriteLine([String].Format("{0}  - Result page' S {1} of {2} layout created.", DateTime.Now.TimeOfDay, eventInfo.Value.ToString(), eventInfo.MaxValue.ToString()))
                     Exit Select
                 Case HtmlSaveOptions.ProgressEventType.ResultPageSaved
                     Console.WriteLine([String].Format("{0}  - Result page {1} of {2} exported.", DateTime.Now.TimeOfDay, eventInfo.Value.ToString(), eventInfo.MaxValue.ToString()))

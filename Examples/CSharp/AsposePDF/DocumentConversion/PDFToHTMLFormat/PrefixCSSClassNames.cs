@@ -15,7 +15,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion.PDFToHTMLForma
                 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion_PDFToHTMLFormat();
 
                 Document pdfDocument = new Document(dataDir + "input.pdf");
-                string outHtmlFile = dataDir + "PrefixCSSClassNames_out_.html";
+                string outHtmlFile = dataDir + "PrefixCSSClassNames_out.html";
                 HtmlSaveOptions saveOptions = new HtmlSaveOptions();
                 saveOptions.CssClassNamesPrefix = ".gDV__ .stl_";
                 pdfDocument.Save(outHtmlFile, saveOptions);

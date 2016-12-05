@@ -20,7 +20,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.AdvanceFeatures
             // Bind the XML and XSLT file
             pdf1.BindXML(fs1, fs2);
             // Save the resultant PDF
-            pdf1.Save(dataDir  + "XMlXSLTMERGE_out_.pdf");
+            pdf1.Save(dataDir  + "XMlXSLTMERGE_out.pdf");
 
             fs1.Close();
             fs2.Close();

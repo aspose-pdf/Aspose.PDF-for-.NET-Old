@@ -26,11 +26,11 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.ManipulatePageProper
             pageRotations.Add(1, 90);
             pageRotations.Add(2, 180);
             pageRotations.Add(3, 270);
-            // pageEditor.PageRotations = pageRotations;
+            // PageEditor.PageRotations = pageRotations;
             // Set zoom where 1.0f = 100% zoom
             pageEditor.Zoom = 2.0f;
             // Save updated PDF file
-            pageEditor.Save(dataDir + "SetPageProperties_out_.pdf");
+            pageEditor.Save(dataDir + "SetPageProperties_out.pdf");
             // ExEnd:SetPageProperties
         }
     }

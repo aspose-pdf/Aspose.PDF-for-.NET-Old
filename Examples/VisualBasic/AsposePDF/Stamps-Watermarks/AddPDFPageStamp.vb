@@ -21,7 +21,7 @@ Namespace AsposePDF.StampsWatermarks
             pageStamp.YIndent = 100
             pageStamp.Rotate = Rotation.on180
 
-            'add stamp to particular page
+            ' Add stamp to particular page
             pdfDocument.Pages(1).AddStamp(pageStamp)
 
             dataDir = dataDir & Convert.ToString("PDFPageStamp_out_.pdf")

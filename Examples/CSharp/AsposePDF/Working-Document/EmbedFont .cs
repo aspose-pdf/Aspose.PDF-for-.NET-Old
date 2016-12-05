@@ -44,7 +44,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.WorkingDocuments
                     }
                 }
             }
-            dataDir = dataDir + "EmbedFont_out_.pdf";
+            dataDir = dataDir + "EmbedFont_out.pdf";
             // Save PDF Document
             doc.Save(dataDir);
             // ExEnd:EmbedFont 

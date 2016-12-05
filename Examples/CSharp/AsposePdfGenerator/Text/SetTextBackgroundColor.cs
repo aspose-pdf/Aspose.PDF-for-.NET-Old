@@ -28,7 +28,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Text
             sec1.Paragraphs.Add(text1);
 
             // Save the Pdf
-            pdf1.Save(dataDir + "SetTextBackgroundColor_out_.pdf");
+            pdf1.Save(dataDir + "SetTextBackgroundColor_out.pdf");
             // ExEnd:SetTextBackgroundColor
         }
     }

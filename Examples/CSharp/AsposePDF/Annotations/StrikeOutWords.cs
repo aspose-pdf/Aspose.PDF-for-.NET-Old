@@ -55,7 +55,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Annotations
                 // Add annotation to annotations collection of TextFragment
                 textFragment.Page.Annotations.Add(strikeOut);
             }
-            dataDir = dataDir + "StrikeOutWords_out_.pdf";
+            dataDir = dataDir + "StrikeOutWords_out.pdf";
             document.Save(dataDir);
             // ExEnd:StrikeOutWords    
             Console.WriteLine("\nWords strikeout successfully.\nFile saved at " + dataDir);

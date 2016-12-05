@@ -15,7 +15,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.MakeBooklet
             // Create PdfFileEditor object
             PdfFileEditor pdfEditor = new PdfFileEditor();
             // Make booklet
-            pdfEditor.MakeBooklet(dataDir + "input.pdf", dataDir + "MakeBookletUsingPageSizeAndPaths_out_.pdf", PageSize.A5);
+            pdfEditor.MakeBooklet(dataDir + "input.pdf", dataDir + "MakeBookletUsingPageSizeAndPaths_out.pdf", PageSize.A5);
             // ExEnd:MakeBookletUsingPageSizeAndPaths
         }
     }

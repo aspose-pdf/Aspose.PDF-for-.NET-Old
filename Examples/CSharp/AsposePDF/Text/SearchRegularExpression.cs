@@ -17,7 +17,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
             Document pdfDocument = new Document(dataDir + "SearchRegularExpressionAll.pdf");
             
             // Create TextAbsorber object to find all the phrases matching the regular expression
-            TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("\\d{4}-\\d{4}"); //like 1999-2000
+            TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("\\d{4}-\\d{4}"); // Like 1999-2000
             
             // Set text search option to specify regular expression usage
             TextSearchOptions textSearchOptions = new TextSearchOptions(true);

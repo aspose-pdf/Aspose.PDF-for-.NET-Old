@@ -31,7 +31,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Pages
                 page.Rotate = Rotation.on90;
             }
 
-            dataDir = dataDir + "ChangeOrientation_out_.pdf";
+            dataDir = dataDir + "ChangeOrientation_out.pdf";
             // Save output file
             doc.Save(dataDir);
             // ExEnd:ChangeOrientation

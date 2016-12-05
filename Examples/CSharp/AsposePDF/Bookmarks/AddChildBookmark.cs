@@ -33,7 +33,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Bookmarks
             // Add parent bookmark in the document's outline collection.
             pdfDocument.Outlines.Add(pdfOutline);
             
-            dataDir = dataDir + "AddChildBookmark_out_.pdf";
+            dataDir = dataDir + "AddChildBookmark_out.pdf";
             // Save output
             pdfDocument.Save(dataDir);
             // ExEnd:AddChildBookmark

@@ -21,7 +21,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Forms
                 // Specify the index of radio button from group
                 radioField.Selected = 2;
 
-                dataDir = dataDir + "SelectRadioButton_out_.pdf";
+                dataDir = dataDir + "SelectRadioButton_out.pdf";
                 // Save the PDF file
                 pdfDocument.Save(dataDir);
                 // ExEnd:SelectRadioButton

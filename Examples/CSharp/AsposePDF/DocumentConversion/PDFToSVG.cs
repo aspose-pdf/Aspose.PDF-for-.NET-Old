@@ -19,7 +19,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion
             // Do not compress SVG image to Zip archive
             saveOptions.CompressOutputToZipArchive = false;
             // Save the output in SVG files
-            doc.Save(dataDir + "PDFToSVG_out_.svg", saveOptions);
+            doc.Save(dataDir + "PDFToSVG_out.svg", saveOptions);
             // ExEnd:PDFToSVG
         }
     }

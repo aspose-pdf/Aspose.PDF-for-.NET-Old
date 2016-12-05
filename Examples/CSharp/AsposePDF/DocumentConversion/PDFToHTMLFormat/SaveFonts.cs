@@ -15,7 +15,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion.PDFToHTMLForma
                 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion_PDFToHTMLFormat();
 
                 // Output HTML file path information
-                string outFile = Path.GetFullPath(dataDir + "36192_out_.html");
+                string outFile = Path.GetFullPath(dataDir + "36192_out.html");
 
                 // Source PDF document
                 Document doc = new Document(dataDir + "input.pdf");
@@ -64,7 +64,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion.PDFToHTMLForma
             htmlOptions.RasterImagesSavingMode = HtmlSaveOptions.RasterImagesSavingModes.AsExternalPngFilesReferencedViaSvg;
             htmlOptions.FontSavingMode = HtmlSaveOptions.FontSavingModes.SaveInAllFormats;
 
-            doc.Save(dataDir + "ThreeSetFonts_out_.html", htmlOptions);
+            doc.Save(dataDir + "ThreeSetFonts_out.html", htmlOptions);
             // ExEnd:ThreeSetFonts
 
         }

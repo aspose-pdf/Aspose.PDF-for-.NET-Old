@@ -98,7 +98,7 @@ Namespace AsposePdfGenerator.Text
             ' Create a section in the Pdf object
             Dim sec1 As AP.Generator.Section = pdf.Sections.Add()
 
-            ' To assign a unicode character by it's coding
+            ' To assign a unicode character by it' S coding
             Dim t1 As New AP.Generator.Text("&H25A0")
             ' Specify the font face name for first segment in text object
             t1.Segments(0).TextInfo.FontName = "Times New Roman"

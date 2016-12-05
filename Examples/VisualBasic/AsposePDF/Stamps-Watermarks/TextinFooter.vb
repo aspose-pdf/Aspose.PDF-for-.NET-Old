@@ -23,7 +23,7 @@ Namespace AsposePDF.StampsWatermarks
                 page.AddStamp(textStamp)
             Next
             dataDir = dataDir & Convert.ToString("TextinFooter_out_.pdf")
-            'save updated PDF file
+            ' Save updated PDF file
             pdfDocument.Save(dataDir)
             ' ExEnd:TextinFooter
             Console.WriteLine(Convert.ToString(vbLf & "Text in footer added successfully." & vbLf & "File saved at ") & dataDir)

@@ -59,7 +59,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Tables
             tab1.Rows[0].Cells[2].DefaultCellTextInfo = tinfo1; 
             
             // Save the Pdf
-            pdf1.Save(dataDir + "RowAndColumnFormat_out_.pdf");
+            pdf1.Save(dataDir + "RowAndColumnFormat_out.pdf");
             // ExEnd:RowAndColumnFormat   
                 
         }

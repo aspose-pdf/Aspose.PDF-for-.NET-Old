@@ -41,7 +41,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.TechnicalArticles
                         // Convert MemoryStream back to byte array
                         byte[] data = pdfStream.ToArray();
                         // Create a FileStream to save the output PDF file
-                        FileStream output = new FileStream(dataDir + "merged_out_.pdf", FileMode.Create,
+                        FileStream output = new FileStream(dataDir + "merged_out.pdf", FileMode.Create,
                         FileAccess.Write);
                         // Write byte array contents in the output file stream
                         output.Write(data, 0, data.Length);

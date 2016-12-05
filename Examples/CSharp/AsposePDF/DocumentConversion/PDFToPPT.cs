@@ -16,7 +16,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion
             // Instantiate PptxSaveOptions instance
             Aspose.Pdf.PptxSaveOptions pptx_save = new Aspose.Pdf.PptxSaveOptions();
             // Save the output in PPTX format
-            doc.Save(dataDir + "PDFToPPT_out_.pptx", pptx_save);
+            doc.Save(dataDir + "PDFToPPT_out.pptx", pptx_save);
             // ExEnd:PDFToPPT
         }        
     }

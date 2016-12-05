@@ -31,7 +31,7 @@ Namespace AsposePDFFacades.StampsWatermarks
             ' Save updated PDF file
             fileStamp.Save(dataDir & Convert.ToString("AddTextStampAll_out_.pdf"))
 
-            'close fileStamp
+            ' Close fileStamp
             fileStamp.Close()
             ' ExEnd:AddTextStampAll
         End Sub

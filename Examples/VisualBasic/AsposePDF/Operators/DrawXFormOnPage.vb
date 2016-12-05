@@ -19,7 +19,7 @@ Namespace AsposePDF.Operators
             Using doc As New Document(inFile)
                 Dim pageContents As OperatorCollection = doc.Pages(1).Contents
 
-                ' the sample demonstrates 
+                ' The sample demonstrates 
                 ' GSave/GRestore operators usage
                 ' ContatenateMatrix operator usage to position xForm
                 ' Do operator usage to draw xForm on page

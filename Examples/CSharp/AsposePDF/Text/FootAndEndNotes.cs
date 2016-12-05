@@ -52,7 +52,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
             // Add second text fragment to paragraphs collection of PDF file
             page.Paragraphs.Add(text);
 
-            dataDir = dataDir + "AddFootNote_out_.pdf";
+            dataDir = dataDir + "AddFootNote_out.pdf";
 
             // Save resulting PDF document.
             doc.Save(dataDir);
@@ -94,7 +94,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
             // Add second text fragment to paragraphs collection of PDF file
             page.Paragraphs.Add(text);
 
-            dataDir = dataDir + "CustomLineStyleForFootNote_out_.pdf";
+            dataDir = dataDir + "CustomLineStyleForFootNote_out.pdf";
 
             // Save resulting PDF document.
             doc.Save(dataDir);
@@ -131,7 +131,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
             // Add TextFragment to paragraphs collection of first page of document
             page.Paragraphs.Add(text);
 
-            dataDir = dataDir + "CustomizeFootNoteLabel_out_.pdf";
+            dataDir = dataDir + "CustomizeFootNoteLabel_out.pdf";
             // ExEnd:CustomizeFootNoteLabel
             Console.WriteLine("\nFootNote label customized successfully.\nFile saved at " + dataDir);
         }
@@ -159,7 +159,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
             table.Rows.Add().Cells.Add().Paragraphs.Add(new TextFragment("Row 1 Cell 1"));
             text.FootNote.Paragraphs.Add(table);
 
-            dataDir = dataDir + "AddImageAndTable_out_.pdf";
+            dataDir = dataDir + "AddImageAndTable_out.pdf";
 
             // Save resulting PDF document.
             doc.Save(dataDir);
@@ -184,7 +184,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
             // Add TextFragment to paragraphs collection of first page of document
             page.Paragraphs.Add(text);
 
-            dataDir = dataDir + "CreateEndNotes_out_.pdf";
+            dataDir = dataDir + "CreateEndNotes_out.pdf";
             // Save resulting PDF document.
             doc.Save(dataDir);
             // ExEnd:CreateEndNotes

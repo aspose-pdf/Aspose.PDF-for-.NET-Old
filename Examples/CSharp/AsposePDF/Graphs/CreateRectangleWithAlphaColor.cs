@@ -32,7 +32,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Graphs
             // Add graph instance to paragraph collection of page object
             page.Paragraphs.Add(canvas);
 
-            dataDir = dataDir + "CreateRectangleWithAlphaColor_out_.pdf";
+            dataDir = dataDir + "CreateRectangleWithAlphaColor_out.pdf";
             // Save PDF file
             doc.Save(dataDir);
             // ExEnd:CreateRectangleWithAlphaColor

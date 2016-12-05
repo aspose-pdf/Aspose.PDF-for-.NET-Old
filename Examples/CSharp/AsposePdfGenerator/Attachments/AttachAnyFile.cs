@@ -38,7 +38,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Attachments
             // Set the color of the icon to Brown
             fileAttachment.IconColor = new Aspose.Pdf.Generator.Color("Brown"); 
 
-            dataDir = dataDir + "AttachAnyFile_out_.pdf";
+            dataDir = dataDir + "AttachAnyFile_out.pdf";
             // Save the Pdf
             pdf1.Save(dataDir);
             // ExEnd:AttachAnyFile           

@@ -26,7 +26,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Graphs
             rect.GraphInfo.FillColor = Aspose.Pdf.Color.Red;
             // Add rectangle object to shapes collection of Graph object
             graph.Shapes.Add(rect);
-            dataDir = dataDir + "CreateFilledRectangle_out_.pdf";
+            dataDir = dataDir + "CreateFilledRectangle_out.pdf";
             // Save PDF file
             doc.Save(dataDir);
             // ExEnd:CreateFilledRectangle

@@ -19,7 +19,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Sections
             Aspose.Pdf.Generator.Section section1 = pdf.Sections.Add();
             // ExStart:SetHeaderAndFooter
             // Instantiate HeaderFooter object and pass the Section reference in which
-            // the header or footer is to be added
+            // The header or footer is to be added
             Aspose.Pdf.Generator.HeaderFooter hf1 = new Aspose.Pdf.Generator.HeaderFooter(section1);
 
             // Set the header of odd pages of the PDF document
@@ -32,12 +32,12 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Sections
             Aspose.Pdf.Generator.Text text = new Aspose.Pdf.Generator.Text(hf1, "header");
 
             // Add the text object to the Paragraphs collection of HeaderFooter object to
-            // display header on the pages of PDF document
+            // Display header on the pages of PDF document
             hf1.Paragraphs.Add(text);
             // ExEnd:SetHeaderAndFooter
-            dataDir = dataDir + "SetHeaderAndFooter_out_.pdf";
+            dataDir = dataDir + "SetHeaderAndFooter_out.pdf";
 
-            //Save Pdf Document
+            // Save Pdf Document
             pdf.Save(dataDir);
             
             Console.WriteLine("\nHeader and footer setup successfully.\nFile saved at " + dataDir);

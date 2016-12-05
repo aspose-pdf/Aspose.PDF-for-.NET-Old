@@ -16,7 +16,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Graphs
             Document pDoc = new Document();
             // Add page to pages collection of PDF document
             Page pg = pDoc.Pages.Add();
-            // set page margin on all sides as 0
+            // Set page margin on all sides as 0
             pg.PageInfo.Margin.Left = pg.PageInfo.Margin.Right = pg.PageInfo.Margin.Bottom = pg.PageInfo.Margin.Top = 0;
             // Create Graph object with Width and Height equal to page dimensions
             Aspose.Pdf.Drawing.Graph graph = new Aspose.Pdf.Drawing.Graph((float)pg.PageInfo.Width , (float)pg.PageInfo.Height);
@@ -31,7 +31,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Graphs
             // Add Graph object to paragraphs collection of page
             pg.Paragraphs.Add(graph);
 
-            dataDir = dataDir + "DrawingLine_out_.pdf";
+            dataDir = dataDir + "DrawingLine_out.pdf";
             // Save PDF file
             pDoc.Save(dataDir);
             // ExEnd:DrawingLine

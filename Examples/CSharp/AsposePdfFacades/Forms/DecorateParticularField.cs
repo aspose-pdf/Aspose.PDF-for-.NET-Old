@@ -23,7 +23,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Forms
             // Specify the form field which needs to be decorated
             form.DecorateField("textfield");
             // Save updated PDF form
-            form.Save(dataDir + "DecorateParticularField_out_.pdf");
+            form.Save(dataDir + "DecorateParticularField_out.pdf");
             // ExEnd:DecorateParticularField
         }
         public static void SetFont()
@@ -45,7 +45,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Forms
             // Specify the form field which needs to be decorated
             form.DecorateField("textfield");
             // Save updated PDF form
-            form.Save("SetFont_out_.pdf");
+            form.Save("SetFont_out.pdf");
             // ExEnd:SetFont
         }
     }

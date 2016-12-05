@@ -18,7 +18,7 @@ Namespace AsposePdfGenerator.Sections
             Dim sec1 As AP.Generator.Section = pdf1.Sections.Add()
 
             ' Instantiate First HeaderFooter object and pass the Section reference in which
-            ' the header or footer is to be added
+            ' The header or footer is to be added
             Dim hf1 As New AP.Generator.HeaderFooter(sec1)
 
             ' Set the header of odd pages of the PDF document
@@ -41,7 +41,7 @@ Namespace AsposePdfGenerator.Sections
             Dim text As New AP.Generator.Text(hf1, "header for first page")
 
             ' Add the text object to the Paragraphs collection of HeaderFooter object to
-            ' display header on the pages of PDF document
+            ' Display header on the pages of PDF document
             hf1.Paragraphs.Add(text)
 
             '
@@ -50,7 +50,7 @@ Namespace AsposePdfGenerator.Sections
 
 
             ' Instantiate Second HeaderFooter object and pass the Section reference in which
-            ' the header or footer is to be added
+            ' The header or footer is to be added
             Dim hf2 As New AP.Generator.HeaderFooter(sec1)
 
             ' Set the additional header of odd pages of the PDF document
@@ -67,7 +67,7 @@ Namespace AsposePdfGenerator.Sections
             text = New AP.Generator.Text(hf2, "odd header for subsequent pages")
 
             ' Add the text object to the Paragraphs collection of HeaderFooter object to
-            ' display header on the pages of PDF document
+            ' Display header on the pages of PDF document
             hf2.Paragraphs.Add(text)
 
             '
@@ -76,7 +76,7 @@ Namespace AsposePdfGenerator.Sections
 
 
             ' Instantiate Third HeaderFooter object and pass the Section reference in which
-            ' the header or footer is to be added
+            ' The header or footer is to be added
             Dim hf3 As New AP.Generator.HeaderFooter(sec1)
 
             ' Set the additional header of even pages of the PDF document
@@ -93,13 +93,13 @@ Namespace AsposePdfGenerator.Sections
             text = New AP.Generator.Text(hf3, "even header for subsequent pages")
 
             ' Add the text object to the Paragraphs collection of HeaderFooter object to
-            ' display header on the pages of PDF document
+            ' Display header on the pages of PDF document
             hf3.Paragraphs.Add(text)
 
             ' ExEnd:SetHeaderAndFooter
             dataDir = dataDir & Convert.ToString("AdvancedHeaderAndFooter_out_.pdf")
 
-            'Save Pdf Document
+            ' Save Pdf Document
             pdf1.Save(dataDir)
             ' ExEnd:AdvancedHeaderAndFooter
             Console.WriteLine(Convert.ToString(vbLf & "Advanced header and footer setup successfully." & vbLf & "File saved at ") & dataDir)

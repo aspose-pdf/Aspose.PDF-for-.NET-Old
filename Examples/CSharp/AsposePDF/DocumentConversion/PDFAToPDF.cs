@@ -18,7 +18,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion
             // Remove PDF/A compliance information
             doc.RemovePdfaCompliance();
             // Save updated document 
-            doc.Save(dataDir + "PDFAToPDF_out_.pdf");
+            doc.Save(dataDir + "PDFAToPDF_out.pdf");
             // ExEnd:PDFAToPDF
             
         }

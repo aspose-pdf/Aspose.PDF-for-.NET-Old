@@ -18,7 +18,7 @@ Namespace AsposePDFFacades.Pages.MakeBooklet
             ' Set left and right pages
             Dim leftPages As Integer() = New Integer() {1, 5}
             Dim rightPages As Integer() = New Integer() {2, 3}
-            'make booklet
+            ' Make booklet
             pdfEditor.MakeBooklet(inputStream, outputStream, PageSize.A5, leftPages, rightPages)
             ' ExEnd:MakeBookletUsingPageSizeLeftRightPagesAndStreams
         End Sub

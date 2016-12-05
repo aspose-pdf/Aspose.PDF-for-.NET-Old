@@ -25,7 +25,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.StampsWatermarks
             {
                 page.AddStamp(imageStamp);
             }
-            dataDir = dataDir + "ImageInFooter_out_.pdf";
+            dataDir = dataDir + "ImageInFooter_out.pdf";
             // Save updated PDF file
             pdfDocument.Save(dataDir);
             // ExEnd:ImageInFooter

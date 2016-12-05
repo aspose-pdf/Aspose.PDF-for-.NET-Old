@@ -32,7 +32,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.General
                 // Add sample text string to paragraphs collection of FloatingBox object
                 box1.Paragraphs.Add(new Aspose.Pdf.Generator.Text("Hello."));
 
-                dataDir = dataDir + "FloatingBox_out_.pdf";
+                dataDir = dataDir + "FloatingBox_out.pdf";
                 // Save the resultant PDF
                 pdf1.Save(dataDir);
                 // ExEnd:FloatingBoxLook

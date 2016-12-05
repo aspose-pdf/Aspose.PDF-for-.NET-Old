@@ -15,7 +15,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.Append
             // Create PdfFileEditor object
             PdfFileEditor pdfEditor = new PdfFileEditor();
             // Append file
-            pdfEditor.Append(dataDir + "input.pdf", dataDir +  "input2.pdf", 1, 1, dataDir + "AppendFiles_out_.pdf");
+            pdfEditor.Append(dataDir + "input.pdf", dataDir +  "input2.pdf", 1, 1, dataDir + "AppendFiles_out.pdf");
             // ExEnd:AppendFiles
         }
     }

@@ -25,7 +25,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.SecuritySignatures
                         pdfSign.RemoveUsageRights();
                     }
 
-                    pdfSign.Document.Save(dataDir + "RemoveRights_out_.pdf");
+                    pdfSign.Document.Save(dataDir + "RemoveRights_out.pdf");
                 }
                 // ExEnd:RemoveRights
             }

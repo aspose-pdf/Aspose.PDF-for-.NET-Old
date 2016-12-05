@@ -20,10 +20,10 @@ Namespace AsposePDF.DocumentConversion.PDFToHTMLFormat
                 newOptions.PartsEmbeddingMode = HtmlSaveOptions.PartsEmbeddingModes.EmbedAllIntoHtml
                 newOptions.LettersPositioningMethod = HtmlSaveOptions.LettersPositioningMethods.UseEmUnitsAndCompensationOfRoundingErrorsInCss
                 newOptions.SplitIntoPages = False
-                ' force write HTMLs of all pages into one output document
+                ' Force write HTMLs of all pages into one output document
                 newOptions.CustomHtmlSavingStrategy = New HtmlSaveOptions.HtmlPageMarkupSavingStrategy(AddressOf SavingToStream)
                 ' We can use some non-existing puth as result file name - all real saving will be done
-                ' In our custom method SavingToStream() (it's follows this one)          
+                ' In our custom method SavingToStream() (it' S follows this one)          
 
                 doc.Save(dataDir & Convert.ToString("OutPutToStream_out_.html"), newOptions)
                 ' ExEnd:OutPutToStream

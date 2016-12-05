@@ -21,7 +21,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.WorkingDocuments
             pdf1.Keywords = "Hello World";
             pdf1.Subject = "Example";
             pdf1.Title = "Example";
-            dataDir = dataDir + "DocInfo_out_.pdf";
+            dataDir = dataDir + "DocInfo_out.pdf";
             pdf1.Save(dataDir);
             // ExEnd:SetDocumentInfo 
             Console.WriteLine("\nDocument Info setup successfully.\nFile saved at " + dataDir);

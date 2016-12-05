@@ -18,7 +18,7 @@ Namespace AsposePDFFacades.TechnicalArticles
             For i As Integer = 0 To allfields.Length - 1
                 ' Get the appearance attributes of each field, consequtively
                 Dim facade As FormFieldFacade = form.GetFieldFacade(allfields(i))
-                ' Box in FormFieldFacade class holds field's location.
+                ' Box in FormFieldFacade class holds field' S location.
                 box(i) = facade.Box
             Next
             form.Save(dataDir & Convert.ToString("DifferenceBetweenFile_out_.pdf"))
@@ -31,7 +31,7 @@ Namespace AsposePDFFacades.TechnicalArticles
                 editor.AddField(FieldType.Text, "TextField" + i.ToString(), allfields(i), 1, box(i).Left, box(i).Top, _
                     box(i).Left + 50, box(i).Top + 10)
             Next
-            'Close the document
+            ' Close the document
             editor.Save(dataDir & Convert.ToString("DifferenceBetweenFile_out_.pdf"))
             ' ExEnd:DifferenceBetweenFile                      
         End Sub

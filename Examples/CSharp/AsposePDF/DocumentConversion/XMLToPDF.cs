@@ -24,7 +24,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion
             // Get reference of second TextSegment with ID strongHtml
             segment = (TextSegment)doc.GetObjectById("strongHtml");
             // Save resultant PDF file
-            doc.Save(dataDir + "XMLToPDF_out_.pdf");
+            doc.Save(dataDir + "XMLToPDF_out.pdf");
             // ExEnd:XMLToPDF
         }
         

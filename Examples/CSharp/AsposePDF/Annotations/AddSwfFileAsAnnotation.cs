@@ -25,7 +25,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Annotations
             // Add the annotation to annotations collection of page
             page.Annotations.Add(annotation);
 
-            dataDir = dataDir + "AddSwfFileAsAnnotation_out_.pdf";
+            dataDir = dataDir + "AddSwfFileAsAnnotation_out.pdf";
             // Save the update PDF document with annotation
             doc.Save(dataDir);
             // ExEnd:AddSwfFileAsAnnotation

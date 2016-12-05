@@ -20,7 +20,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.SplitPages
             // Save individual files
             foreach (MemoryStream aStream in outBuffer)
             {
-                FileStream outStream = new FileStream(dataDir + "File_" + fileNumber.ToString() + "_out_.pdf", FileMode.Create);
+                FileStream outStream = new FileStream(dataDir + "File_" + fileNumber.ToString() + "_out.pdf", FileMode.Create);
                 aStream.WriteTo(outStream);
                 outStream.Close();
                 fileNumber++;

@@ -24,7 +24,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.SecuritySignatures
 
             // Set document privileges
             fileSecurity.SetPrivilege(privilege);
-            fileSecurity.Save(dataDir + "SetPrivilegesOnFile_out_.pdf");
+            fileSecurity.Save(dataDir + "SetPrivilegesOnFile_out.pdf");
             // ExEnd:SetPrivilegesOnFile   
            
         }

@@ -50,7 +50,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
                 builder.Append(extractedText);
             }
 
-            dataDir = dataDir + "input_Text_Extracted_out_.txt";
+            dataDir = dataDir + "input_Text_Extracted_out.txt";
             // Save the extracted text in text file
             File.WriteAllText(dataDir, builder.ToString());
             // ExEnd:ExtractTextUsingTextDevice            

@@ -51,7 +51,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.TechnicalArticles
             box1.Paragraphs.Add(image1);
 
             // Save the reusltant PDF document
-            pdf.Save(dataDir + "CreateMultiLayerPdf_out_.pdf");
+            pdf.Save(dataDir + "CreateMultiLayerPdf_out.pdf");
             // ExEnd:CreateMultiLayerPdf           
         }
         public static void SecondApproach()
@@ -110,7 +110,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.TechnicalArticles
             ImageFloatingBox.Paragraphs.Add(image1);
 
             // Save the reusltant PDF document
-            pdf.Save(dataDir + @"Multilayer-2ndApproach_out_.pdf");
+            pdf.Save(dataDir + @"Multilayer-2ndApproach_out.pdf");
             // ExEnd:SecondApproach
         }
     }

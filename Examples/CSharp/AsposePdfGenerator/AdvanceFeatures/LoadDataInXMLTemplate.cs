@@ -20,8 +20,8 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.AdvanceFeatures
             pdf.BindXML(dataDir + "Sample.xml", null);
 
             // In a real scenario, data is usually input from Database. So, we can get data
-            // from a database. In this case, we are using a method that will provide us an
-            // instance of DataTable. The implementation of this method is also given below.
+            // From a database. In this case, we are using a method that will provide us an
+            // Instance of DataTable. The implementation of this method is also given below.
             DataTable getDT = creatDataTable();
 
             // Accessing a table through its ID
@@ -31,7 +31,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.AdvanceFeatures
             contenTable.ImportDataTable(getDT, false, 1, 1, 5, 4);
 
             // Saving the results
-            pdf.Save(dataDir + "Sample_out_.pdf");
+            pdf.Save(dataDir + "Sample_out.pdf");
             // ExEnd:LoadDataInXMLTemplate
         }
         // ExStart:creatDataTable

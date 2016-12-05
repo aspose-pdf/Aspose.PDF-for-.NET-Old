@@ -12,7 +12,7 @@ Namespace AsposePDF.Tables
                 ' The path to the documents directory.
                 Dim dataDir As String = RunExamples.GetDataDir_AsposePdf_Tables()
 
-                ' load existing PDF file
+                ' Load existing PDF file
                 Dim pdfDocument As New Document(dataDir & Convert.ToString("input.pdf"))
                 ' Create TableAbsorber object to find tables
                 Dim absorber As New TableAbsorber()

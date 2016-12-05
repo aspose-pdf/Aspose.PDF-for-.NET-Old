@@ -37,7 +37,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Annotations
             ia.Opacity = 0.5;
             pdfPage.Annotations.Add(ia);
 
-            dataDir = dataDir + "AddlnkAnnotation_out_.pdf";
+            dataDir = dataDir + "AddlnkAnnotation_out.pdf";
             // Save output file
             doc.Save(dataDir);
             // ExEnd:AddlnkAnnotation

@@ -53,12 +53,12 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Tables
             float TotalObjectsHeight = (float)page.PageInfo.Margin.Top + (float)page.PageInfo.Margin.Bottom + (float)table1.Margin.Top + (float)table1.GetHeight();
 
             // Display Page Height, Table Height, table Top margin and Page Top 
-            // and Bottom margin information
+            // And Bottom margin information
             Console.WriteLine("PDF document Height = " + pdf.PageInfo.Height.ToString() + "\nTop Margin Info = " + page.PageInfo.Margin.Top.ToString() + "\nBottom Margin Info = " + page.PageInfo.Margin.Bottom.ToString() + "\n\nTable-Top Margin Info = " + table1.Margin.Top.ToString() + "\nAverage Row Height = " + table1.Rows[0].MinRowHeight.ToString() + " \nTable height " + table1.GetHeight().ToString() + "\n ----------------------------------------" + "\nTotal Page Height =" + PageHeight.ToString() + "\nCummulative height including Table =" + TotalObjectsHeight.ToString());
 
             // Check if we deduct the sume of Page top margin + Page Bottom margin
             // + Table Top margin and table height from Page height and its less
-            // than 10 (an average row can be greater than 10)
+            // Than 10 (an average row can be greater than 10)
             if ((PageHeight - TotalObjectsHeight) <= 10)
                 // If the value is less than 10, then display the message. 
                 // Which shows that another row can not be placed and if we add new 
@@ -66,7 +66,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Tables
                 Console.WriteLine("Page Height - Objects Height < 10, so table will break");
 
 
-            dataDir = dataDir + "DetermineTableBreak_out_.pdf";
+            dataDir = dataDir + "DetermineTableBreak_out.pdf";
             // Save the pdf document
             pdf.Save(dataDir);
             // ExEnd:DetermineTableBreak

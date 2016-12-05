@@ -51,7 +51,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Tables
             row2.Cells.Add("item2");
             row2.Cells.Add("item3");
 
-            dataDir = dataDir + "AutoFitToWindow_out_.pdf";
+            dataDir = dataDir + "AutoFitToWindow_out.pdf";
             // Save updated document containing table object
             doc.Save(dataDir);
             // ExEnd:AutoFitToWindow

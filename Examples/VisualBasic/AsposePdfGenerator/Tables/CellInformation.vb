@@ -35,7 +35,7 @@ Namespace AsposePdfGenerator.Tables
             tab1.DefaultCellBorder = New Aspose.Pdf.Generator.BorderInfo(CInt(Aspose.Pdf.Generator.BorderSide.All), 0.1F)
 
             ' After setting default cell format information for the table, you can add rows
-            ' and columns in the table
+            ' And columns in the table
             Dim row1 As Aspose.Pdf.Generator.Row = tab1.Rows.Add()
             row1.Cells.Add("col1")
             row1.Cells.Add("col2")

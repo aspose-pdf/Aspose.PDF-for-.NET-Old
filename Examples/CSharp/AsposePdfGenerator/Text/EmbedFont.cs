@@ -39,7 +39,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Text
             // Set IsFontEmbedded to true
             t1.Segments[0].TextInfo.IsFontEmbedded = true;
             // ExEnd:EmbedFont
-            dataDir = dataDir + "EmbedFont_out_.pdf";
+            dataDir = dataDir + "EmbedFont_out.pdf";
             // Create the result PDF Document
             pdf1.Save(dataDir);
             
@@ -65,7 +65,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Text
             // Set the font to bold
             t1.Segments[0].TextInfo.IsTrueTypeFontBold = true;
             // ExEnd:TrueTypeBoldFont
-            dataDir = dataDir + "TrueTypeBoldFont_out_.pdf";
+            dataDir = dataDir + "TrueTypeBoldFont_out.pdf";
             // Create the result PDF Document
             pdf1.Save(dataDir);
             
@@ -88,7 +88,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Text
             t1.Segments[0].TextInfo.FontName = "Courier New";
 
             // ExEnd:TrueTypeFont
-            dataDir = dataDir + "TrueTypeFont_out_.pdf";
+            dataDir = dataDir + "TrueTypeFont_out.pdf";
             // Create the result PDF Document
             pdf1.Save(dataDir);
         }
@@ -114,7 +114,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Text
             // Add text to paragraphs collection of section object
             sec1.Paragraphs.Add(t1);
             // Save the PDF document
-            pdf.Save(dataDir + "Unicode_out_.pdf");
+            pdf.Save(dataDir + "Unicode_out.pdf");
             // ExEnd:Unicode
         }
     }

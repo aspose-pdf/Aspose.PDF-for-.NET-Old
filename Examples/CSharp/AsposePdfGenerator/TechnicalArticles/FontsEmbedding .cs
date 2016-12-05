@@ -42,7 +42,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.TechnicalArticles
             text1.Segments.Add(s1);
 
             // Save the Pdf
-            pdf1.Save(dataDir + @"FontsEmbedding_out_.pdf");
+            pdf1.Save(dataDir + @"FontsEmbedding_out.pdf");
             // ExEnd:FontsEmbedding            
         }
         public static void FontsEmbeddingUsingHTML()
@@ -70,7 +70,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.TechnicalArticles
             sec1.Paragraphs.Add(t1);
 
             // Save the pdf document
-            pdf1.Save( dataDir + "inLineFormated_HtmlSuported_out_.pdf");
+            pdf1.Save( dataDir + "inLineFormated_HtmlSuported_out.pdf");
             // ExEnd:FontsEmbeddingUsingHTML 
         }
     }

@@ -16,7 +16,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.SecuritySignatures
             fileSecurity.BindPdf(dataDir + "Encrypt.pdf");
             // Encrypt file using 256-bit encryption
             fileSecurity.EncryptFile("user", "owner", DocumentPrivilege.Print, KeySize.x256, Algorithm.AES);
-            fileSecurity.Save(dataDir + "Encrypt_out_.pdf");
+            fileSecurity.Save(dataDir + "Encrypt_out.pdf");
             // ExEnd:EncryptFile   
            
         }

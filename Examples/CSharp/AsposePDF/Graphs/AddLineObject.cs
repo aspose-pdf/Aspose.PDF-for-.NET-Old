@@ -27,7 +27,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Graphs
             line.GraphInfo.DashPhase = 1;
             // Add rectangle object to shapes collection of Graph object
             graph.Shapes.Add(line);
-            dataDir = dataDir + "AddLineObject_out_.pdf";
+            dataDir = dataDir + "AddLineObject_out.pdf";
             // Save PDF file
             doc.Save(dataDir);
             // ExEnd:AddLineObject

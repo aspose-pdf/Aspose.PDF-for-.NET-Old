@@ -26,7 +26,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
             // Add HTML Fragment to paragraphs collection of page
             page.Paragraphs.Add(titel);
 
-            dataDir = dataDir + "AddHTMLUsingDOM_out_.pdf";
+            dataDir = dataDir + "AddHTMLUsingDOM_out.pdf";
             // Save PDF file
             doc.Save(dataDir);
 

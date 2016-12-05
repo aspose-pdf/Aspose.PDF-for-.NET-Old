@@ -44,7 +44,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Images
                     // Set the desired scaling of the image
                     img1.ImageScale = 0.1F;
 
-                    pdf1.Save( dataDir + "CCITTImage_out_.pdf");
+                    pdf1.Save( dataDir + "CCITTImage_out.pdf");
                     // ExEnd:CCITTImage   
                 }
                 else

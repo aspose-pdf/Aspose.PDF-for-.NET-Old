@@ -24,7 +24,7 @@ Namespace AsposePdfGenerator.TechnicalArticles
                 ' Add a section into the pdf document
                 Dim sec1 As Aspose.Pdf.Generator.Section = pdf1.Sections.Add()
 
-                'Save the document
+                ' Save the document
                 ' ExEnd:CreatePdfA1  
                 pdf1.Save(dataDir & Convert.ToString("CreatePdfA1_out_.pdf"))
             Catch ex As Exception

@@ -18,7 +18,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.SecuritySignatures
                 string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
                 string pbxFile = "";
                 string inFile = dataDir + @"DigitallySign.pdf";
-                string outFile = dataDir + @"DigitallySign_out_.pdf";
+                string outFile = dataDir + @"DigitallySign_out.pdf";
                 using (Document document = new Document(inFile))
                 {
                     using (PdfFileSignature signature = new PdfFileSignature(document))

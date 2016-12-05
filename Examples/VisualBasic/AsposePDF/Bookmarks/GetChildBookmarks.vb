@@ -22,7 +22,7 @@ Namespace AsposePDF.Bookmarks
 
                 If outlineItem.Count > 0 Then
                     Console.WriteLine("Child Bookmarks")
-                    'there are child bookmarks then loop through that as well
+                    ' There are child bookmarks then loop through that as well
                     For Each childOutline As OutlineItemCollection In outlineItem
                         Console.WriteLine(childOutline.Title)
                         Console.WriteLine(childOutline.Italic)

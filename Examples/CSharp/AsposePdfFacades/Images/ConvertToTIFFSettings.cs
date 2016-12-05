@@ -26,7 +26,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Images
             TiffSettings tiffSettings = new TiffSettings();
             tiffSettings.Depth = Aspose.Pdf.Devices.ColorDepth.Format1bpp;
             // Convert to TIFF image
-            pdfConverter.SaveAsTIFF(dataDir+ "output_out_.tif", 300, 300, tiffSettings);
+            pdfConverter.SaveAsTIFF(dataDir+ "output_out.tif", 300, 300, tiffSettings);
             // Close Converter object
             pdfConverter.Close();
             // ExEnd:ConvertToTIFFSettings

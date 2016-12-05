@@ -42,7 +42,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
             page.Paragraphs.Add(text1);
             page.Paragraphs.Add(text2);
 
-            dataDir = dataDir + "CustomTabStops_out_.pdf";
+            dataDir = dataDir + "CustomTabStops_out.pdf";
             _pdfdocument.Save(dataDir);
             // ExEnd:CustomTabStops            
             Console.WriteLine("\nCustom tab stops setup successfully.\nFile saved at " + dataDir);

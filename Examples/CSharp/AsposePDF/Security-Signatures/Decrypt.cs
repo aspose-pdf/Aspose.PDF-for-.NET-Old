@@ -15,7 +15,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.SecuritySignatures
             Document document = new Document(dataDir+ "Decrypt.pdf", "password");
             // Decrypt PDF
             document.Decrypt();
-            dataDir = dataDir + "Decrypt_out_.pdf";
+            dataDir = dataDir + "Decrypt_out.pdf";
             // Save updated PDF
             document.Save(dataDir);
             // ExEnd:Decrypt

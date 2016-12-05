@@ -16,7 +16,7 @@ Namespace AsposePDF.Text
 
             ' Create TextAbsorber object to find all the phrases matching the regular expression
             Dim textFragmentAbsorber As New TextFragmentAbsorber("\d{4}-\d{4}")
-            'like 1999-2000
+            ' Like 1999-2000
             ' Set text search option to specify regular expression usage
             Dim textSearchOptions As New TextSearchOptions(True)
 

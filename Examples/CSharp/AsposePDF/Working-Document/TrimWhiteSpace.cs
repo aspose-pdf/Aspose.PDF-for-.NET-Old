@@ -111,7 +111,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.WorkingDocuments
                         bmp.UnlockBits(imageBitmapData);
                 }
             }
-            dataDir = dataDir + "TrimWhiteSpace_out_.pdf";
+            dataDir = dataDir + "TrimWhiteSpace_out.pdf";
             // Save the updated document
             doc.Save(dataDir);
             // ExEnd:TrimWhiteSpace

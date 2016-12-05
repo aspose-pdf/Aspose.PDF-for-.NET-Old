@@ -20,7 +20,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.WorkingDocument
             fileInfo.Keywords = "Peace and Development";
             fileInfo.Creator = "Aspose";             
             // Save updated file
-            fileInfo.SaveNewInfo(dataDir+ "SetFileInfo_out_.pdf");
+            fileInfo.SaveNewInfo(dataDir+ "SetFileInfo_out.pdf");
             // ExEnd:SetFileInfo           
             
         }

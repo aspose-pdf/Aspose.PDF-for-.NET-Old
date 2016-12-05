@@ -42,7 +42,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Annotations
             border.Style = BorderStyle.Solid;
             doc.Pages[1].Annotations.Add(a1);
 
-            dataDir = dataDir + "lnkAnnotationLineWidth_out_.pdf";
+            dataDir = dataDir + "lnkAnnotationLineWidth_out.pdf";
             // Save output file
             doc.Save(dataDir);
             // ExEnd:lnkAnnotationLineWidth

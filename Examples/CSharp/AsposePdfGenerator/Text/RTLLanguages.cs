@@ -34,7 +34,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Text
 
             // Enable text alignment from right to left
             seg0.TextInfo.IsRightToLeft = true;
-            seg1.TextInfo.IsRightToLeft = false;         //default
+            seg1.TextInfo.IsRightToLeft = false;         // Default
             seg2.TextInfo.IsRightToLeft = true;
 
             // Enable unicode character set for the text segment
@@ -52,13 +52,13 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Text
             seg2.TextInfo.FontSize = 14;
 
             // Align text to right hand side using AlignmentType enumeration    
-            // Make the text right aligned(The meaning of Alignment.Left and AlignmentType.Right are //exchanged when processing RTL language).
+            // Make the text right aligned(The meaning of Alignment.Left and AlignmentType.Right are // Exchanged when processing RTL language).
             text1.TextInfo.Alignment = Aspose.Pdf.Generator.AlignmentType.Left;
 
             pdf.Sections[0].Paragraphs.Add(text1);
-            pdf.IsRtlInSegmentMode = true;         //default
+            pdf.IsRtlInSegmentMode = true;         // Default
 
-            pdf.Save(dataDir + "RTLLanguages_out_.pdf");
+            pdf.Save(dataDir + "RTLLanguages_out.pdf");
             // ExEnd:RTLLanguages
             
             

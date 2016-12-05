@@ -123,10 +123,10 @@ Namespace AsposePDFFacades.TechnicalArticles
             End If
 
             ' Plan: built into Windows GDI is the ability to convert
-            ' bitmaps from one format to another. Most of the time, this
-            ' job is actually done by the graphics hardware accelerator card
-            ' and so is extremely fast. The rest of the time, the job is done by
-            ' very fast native code.
+            ' Bitmaps from one format to another. Most of the time, this
+            ' Job is actually done by the graphics hardware accelerator card
+            ' And so is extremely fast. The rest of the time, the job is done by
+            ' Very fast native code.
             ' We will call into this GDI functionality from C#. Our plan:
             ' (1) Convert our Bitmap into a GDI hbitmap (ie. copy unmanaged->managed)
             ' (2) Create a GDI monochrome hbitmap
@@ -135,27 +135,27 @@ Namespace AsposePDFFacades.TechnicalArticles
 
             Dim w As Integer = b.Width, h As Integer = b.Height
             Dim hbm As IntPtr = b.GetHbitmap()
-            ' this is step (1)
+            ' This is step (1)
             '
             ' Step (2): create the monochrome bitmap.
             ' "BITMAPINFO" is an interop-struct which we define below.
-            ' In GDI terms, it's a BITMAPHEADERINFO followed by an array of two RGBQUADs
+            ' In GDI terms, it' S a BITMAPHEADERINFO followed by an array of two RGBQUADs
             Dim bmi As New BITMAPINFO()
             bmi.biSize = 40
-            ' the size of the BITMAPHEADERINFO struct
+            ' The size of the BITMAPHEADERINFO struct
             bmi.biWidth = w
             bmi.biHeight = h
             bmi.biPlanes = 1
             ' "planes" are confusing. We always use just 1. Read MSDN for more info.
             bmi.biBitCount = CShort(bpp)
-            ' ie. 1bpp or 8bpp
+            ' Ie. 1bpp or 8bpp
             bmi.biCompression = BI_RGB
-            ' ie. the pixels in our RGBQUAD table are stored as RGBs, not palette indexes
+            ' Ie. the pixels in our RGBQUAD table are stored as RGBs, not palette indexes
             bmi.biSizeImage = CUInt(((w + 7) And &HFFFFFFF8UI) * h / 8)
             bmi.biXPelsPerMeter = 1000000
-            ' not really important
+            ' Not really important
             bmi.biYPelsPerMeter = 1000000
-            ' not really important
+            ' Not really important
             ' Now for the colour table.
             Dim ncols As UInteger = CUInt(1) << bpp
             ' 2 colours for 1bpp; 256 colours for 8bpp
@@ -167,9 +167,9 @@ Namespace AsposePDFFacades.TechnicalArticles
                 bmi.cols(0) = MAKERGB(0, 0, 0)
                 bmi.cols(1) = MAKERGB(255, 255, 255)
             ElseIf bpp = 4 Then
-                ' For 8bpp we've created an palette with just greyscale colours.
+                ' For 8bpp we' Ve created an palette with just greyscale colours.
                 ' You can set up any palette you want here. Here are some possibilities:
-                ' rainbow: 
+                ' Rainbow: 
                 bmi.biClrUsed = 16
                 bmi.biClrImportant = 16
                 Dim colv As Integer() = New Integer(15) {8, 24, 38, 56, 72, 88, _
@@ -180,9 +180,9 @@ Namespace AsposePDFFacades.TechnicalArticles
                     bmi.cols(i) = MAKERGB(colv(i), colv(i), colv(i))
                 Next
             ElseIf bpp = 8 Then
-                ' For 8bpp we've created an palette with just greyscale colours.
+                ' For 8bpp we' Ve created an palette with just greyscale colours.
                 ' You can set up any palette you want here. Here are some possibilities:
-                ' rainbow:
+                ' Rainbow:
                 bmi.biClrUsed = 216
                 bmi.biClrImportant = 216
                 Dim colv As Integer() = New Integer(5) {0, 51, 102, 153, 204, 255}
@@ -196,17 +196,17 @@ Namespace AsposePDFFacades.TechnicalArticles
             ' 
             ' Now create the indexed bitmap "hbm0"
             Dim bits0 As IntPtr
-            ' not used for our purposes. It returns a pointer to the raw bits that make up the bitmap.
+            ' Not used for our purposes. It returns a pointer to the raw bits that make up the bitmap.
             Dim hbm0 As IntPtr = CreateDIBSection(IntPtr.Zero, bmi, DIB_RGB_COLORS, bits0, IntPtr.Zero, 0)
             '
-            ' Step (3): use GDI's BitBlt function to copy from original hbitmap into monocrhome bitmap
+            ' Step (3): use GDI' S BitBlt function to copy from original hbitmap into monocrhome bitmap
             ' GDI programming is kind of confusing... nb. The GDI equivalent of "Graphics" is called a "DC".
             Dim sdc As IntPtr = GetDC(IntPtr.Zero)
             ' First we obtain the DC for the screen
             ' Next, create a DC for the original hbitmap
             Dim hdc As IntPtr = CreateCompatibleDC(sdc)
             SelectObject(hdc, hbm)
-            ' and create a DC for the monochrome hbitmap
+            ' And create a DC for the monochrome hbitmap
             Dim hdc0 As IntPtr = CreateCompatibleDC(sdc)
             SelectObject(hdc0, hbm0)
             ' Now we can do the BitBlt:

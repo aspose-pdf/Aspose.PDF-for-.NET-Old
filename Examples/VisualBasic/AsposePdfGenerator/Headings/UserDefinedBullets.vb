@@ -16,7 +16,7 @@ Namespace AsposePdfGenerator.Headings
             Dim sec1 As Aspose.Pdf.Generator.Section = pdf1.Sections.Add()
 
             '
-            '             * Create 1st heading in the Pdf object's section with level=1. Then create a text 
+            '             * Create 1st heading in the Pdf object' S section with level=1. Then create a text 
             '             * segment and add it in the heading. Set its UserLabel="98" to use a user defined
             '             * bullet. You must set BulletFontName to "Symbol" or "ZapfDingbats". After setting
             '             * all properties, add heading into the paragraphs collection of the section
@@ -32,7 +32,7 @@ Namespace AsposePdfGenerator.Headings
             sec1.Paragraphs.Add(heading1)
 
             '
-            '             * Create 2nd heading in the Pdf object's section with level=2. Then create a text 
+            '             * Create 2nd heading in the Pdf object' S section with level=2. Then create a text 
             '             * segment and add it in the heading. Set its UserLabel="99" to use a user defined
             '             * bullet. You must set BulletFontName to "Symbol" or "ZapfDingbats". After setting
             '             * all properties, add heading into the paragraphs collection of the section
@@ -48,7 +48,7 @@ Namespace AsposePdfGenerator.Headings
             sec1.Paragraphs.Add(heading2)
 
             '
-            '             * Create 3rd heading in the Pdf object's section with level=3. Then create a text 
+            '             * Create 3rd heading in the Pdf object' S section with level=3. Then create a text 
             '             * segment and add it in the heading. Set its UserLabel="100" to use a user defined
             '             * bullet. You must set BulletFontName to "Symbol" or "ZapfDingbats". After setting
             '             * all properties, add heading into the paragraphs collection of the section

@@ -16,7 +16,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.MakeNUp
             PdfFileEditor pdfEditor = new PdfFileEditor();
             // Create streams
             FileStream inputStream = new FileStream(dataDir + "input.pdf", FileMode.Open);
-            FileStream outputStream = new FileStream(dataDir + "UsingPageSizeHorizontalVerticalValuesAndStreams_out_.pdf", FileMode.Create);
+            FileStream outputStream = new FileStream(dataDir + "UsingPageSizeHorizontalVerticalValuesAndStreams_out.pdf", FileMode.Create);
             // Make NUp
             pdfEditor.MakeNUp(inputStream, outputStream, 2, 3);
             // ExEnd:UsingPageSizeHorizontalVerticalValuesAndStreams

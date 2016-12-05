@@ -18,7 +18,7 @@ Namespace AsposePDF.Pages
             For Each pdfPage As Page In pdfDocument.Pages
                 Dim newDocument As New Document()
                 newDocument.Pages.Add(pdfPage)
-                newDocument.Save((dataDir & Convert.ToString("page_")) + pageCount.ToString() + "_out_" + ".pdf")
+                newDocument.Save((dataDir & Convert.ToString("page_")) + pageCount.ToString() + "_out" + ".pdf")
                 pageCount += 1
             Next
             ' ExEnd:SplitToPages       

@@ -33,7 +33,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Operators
             }
 
             oc.Delete(list);
-            doc.Save(dataDir+ "No_Graphics_out_.pdf");
+            doc.Save(dataDir+ "No_Graphics_out.pdf");
             // ExEnd:RemoveGraphicsObjects
         }
     }

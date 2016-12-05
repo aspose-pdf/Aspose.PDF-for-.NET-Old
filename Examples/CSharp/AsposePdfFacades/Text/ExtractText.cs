@@ -30,7 +30,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Text
                 text = streamReader.ReadToEnd();
             }
 
-            File.WriteAllText(dataDir+ "output_out_.txt", text);
+            File.WriteAllText(dataDir+ "output_out.txt", text);
             // ExEnd:ExtractText
         }
     }

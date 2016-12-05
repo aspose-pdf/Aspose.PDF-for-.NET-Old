@@ -19,7 +19,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Forms
             // Set the form fields type as standard AcroForm
             document.Form.Type = FormType.Standard;
 
-            dataDir = dataDir + "Standard_AcroForm_out_.pdf";
+            dataDir = dataDir + "Standard_AcroForm_out.pdf";
             // Save the resultant PDF
             document.Save(dataDir);
             // ExEnd:DynamicXFAToAcroForm

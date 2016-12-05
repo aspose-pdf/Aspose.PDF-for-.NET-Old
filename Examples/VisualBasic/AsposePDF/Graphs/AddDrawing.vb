@@ -18,7 +18,7 @@ Namespace AsposePDF.Graphs
             Dim blue As Integer = 0
             ' Create Color object using Alpha RGB 
             Dim alphaColor As Color = Color.FromArgb(alpha, red, green, blue)
-            ' provide alpha channel
+            ' Provide alpha channel
             ' Instantiate Document object
             Dim document As New Document()
             ' Add page to pages collection of PDF file

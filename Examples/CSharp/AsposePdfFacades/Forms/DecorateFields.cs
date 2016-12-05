@@ -34,7 +34,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Forms
             form.DecorateField(FieldType.Text);
 
             // Close and validate the modification like this:
-            form.Save(dataDir + "DecorateFields_out_.pdf");
+            form.Save(dataDir + "DecorateFields_out.pdf");
             // ExEnd:DecorateFields
         }
     }

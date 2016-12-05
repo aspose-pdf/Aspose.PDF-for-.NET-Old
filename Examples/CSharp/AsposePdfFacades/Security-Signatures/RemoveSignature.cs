@@ -28,7 +28,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.SecuritySignatures
                     pdfSign.RemoveSignature((string)names[index]);
                 }
                 // Save updated PDF file
-                pdfSign.Save(dataDir + "RemoveSignature_out_.pdf");
+                pdfSign.Save(dataDir + "RemoveSignature_out.pdf");
                 // ExEnd:RemoveSignature
             }
             catch (Exception ex)

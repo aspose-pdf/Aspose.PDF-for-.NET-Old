@@ -21,7 +21,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion
                 Aspose.Pdf.Document pdf = new Aspose.Pdf.Document(dataDir + "EPUBToPDF.epub", epubload);
 
                 // Save the resultant PDF document
-                pdf.Save(dataDir + "EPUBToPDF_out_.pdf");
+                pdf.Save(dataDir + "EPUBToPDF_out.pdf");
                 // ExEnd:EPUBToPDF
             }
             catch (Exception ex)

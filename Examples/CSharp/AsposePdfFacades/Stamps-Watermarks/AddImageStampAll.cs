@@ -29,7 +29,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.StampsWatermarks
             fileStamp.AddStamp(stamp);
 
             // Save updated PDF file
-            fileStamp.Save(dataDir + "AddImageStampAll_out_.pdf");
+            fileStamp.Save(dataDir + "AddImageStampAll_out.pdf");
 
             // Close fileStamp
             fileStamp.Close();

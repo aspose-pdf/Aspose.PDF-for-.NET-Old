@@ -22,7 +22,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Forms
             // Fill form field with arabic text
             txtFld.Value = "يولد جميع الناس أحراراً متساوين في";
 
-            dataDir = dataDir + "ArabicTextFilling_out_.pdf";
+            dataDir = dataDir + "ArabicTextFilling_out.pdf";
             // Save updated document
             pdfDocument.Save(dataDir);
             // ExEnd:ArabicTextFilling

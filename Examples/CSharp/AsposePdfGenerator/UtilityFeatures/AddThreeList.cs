@@ -43,7 +43,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.UtilityFeatures
             // Add the list section to the sections collection of the Pdf document
             pdf1.Sections.Add(lofSection); 
 
-            dataDir = dataDir + "AddThreeList_out_.pdf";
+            dataDir = dataDir + "AddThreeList_out.pdf";
             // Save the Pdf
             pdf1.Save(dataDir);
             // ExEnd:AddThreeList           

@@ -41,21 +41,21 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.TechnicalArticles
             editor.AddField(FieldType.Signature, "Signature from John", 1, 120, 150, 220, 250);
             editor.AddField(FieldType.Signature, "Signature from Smith", 1, 300, 200, 400, 300);
             // Save the form
-            editor.Save(dataDir + "AddSignatureFields_1_out_.pdf");
+            editor.Save(dataDir + "AddSignatureFields_1_out.pdf");
 
             Document doc2 = new Document(dataDir + "inFile2.pdf");
             // Add signature to any of the signature fields
             PdfFileSignature pdfSign = new PdfFileSignature(doc2);
             pdfSign.Sign("Signature from John", "Signature Reason", "John", "Kharkov", new PKCS1("inFile1.pdf", "password"));
             // Each time new signature is added you must save the document
-            pdfSign.Save(dataDir + "AddSignatureFields_2_out_.pdf");
+            pdfSign.Save(dataDir + "AddSignatureFields_2_out.pdf");
 
             Document doc3 = new Document(dataDir + "FilledForm.pdf");
             // Add second signature
             PdfFileSignature pdfSign2 = new PdfFileSignature(doc3);
             pdfSign2.Sign("Signature from Alice", "Signature Reason", "Alice", "Odessa", new PKCS1(dataDir + "FilledForm - 2.pfx", "password"));
             // Each time new signature is added you must save the document
-            pdfSign2.Save(dataDir + "AddSignatureFields_3_out_.pdf");
+            pdfSign2.Save(dataDir + "AddSignatureFields_3_out.pdf");
             // ExEnd:AddSignatureFields
         }
         public static void VerifySignatures()

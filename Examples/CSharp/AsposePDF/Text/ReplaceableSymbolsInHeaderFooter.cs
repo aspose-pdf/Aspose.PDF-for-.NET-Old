@@ -128,7 +128,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
                 }
             }
 
-            dataDir = dataDir + "ReplaceableSymbolsInHeaderFooter_out_.pdf";
+            dataDir = dataDir + "ReplaceableSymbolsInHeaderFooter_out.pdf";
             doc.Save(dataDir);
             // ExEnd:ReplaceableSymbolsInHeaderFooter            
             Console.WriteLine("\nSymbols replaced successfully in header and footer.\nFile saved at " + dataDir);

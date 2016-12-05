@@ -19,7 +19,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion
             Aspose.Pdf.XpsSaveOptions saveOptions = new Aspose.Pdf.XpsSaveOptions();
             
             // Save the XPS document
-            pdfDocument.Save("PDFToXPS_out_.xps", saveOptions);       
+            pdfDocument.Save("PDFToXPS_out.xps", saveOptions);       
             // ExEnd:PDFToXPS
         }
     }

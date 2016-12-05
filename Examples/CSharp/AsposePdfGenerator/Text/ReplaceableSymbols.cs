@@ -27,7 +27,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Text
             // Add a text paragraph containing current page number of total number of pages
             hf.Paragraphs.Add(new Aspose.Pdf.Generator.Text(hf, "page $p of $P"));
 
-            dataDir = dataDir + "ReplaceableSymbols_out_.pdf";
+            dataDir = dataDir + "ReplaceableSymbols_out.pdf";
             // Create the result PDF Document
             pdf1.Save(dataDir);
             // ExEnd:ReplaceableSymbols
@@ -71,7 +71,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Text
             text4.ID = "page4";
             sec2.Paragraphs.Add(text4);
 
-            pdf1.Save( dataDir + "test_out_.pdf");
+            pdf1.Save( dataDir + "test_out.pdf");
 
             // ExEnd:SpecifiedParagraph
         }

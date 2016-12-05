@@ -26,7 +26,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Forms
             fdfInputStream.Close();
 
             // Save updated document
-            form.Save(dataDir + "ImportDataFromPdf_out_.pdf");
+            form.Save(dataDir + "ImportDataFromPdf_out.pdf");
             // ExEnd:ImportDataFromPdf
         }        
     }

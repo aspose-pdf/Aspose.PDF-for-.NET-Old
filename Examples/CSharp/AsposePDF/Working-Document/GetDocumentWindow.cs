@@ -48,7 +48,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.WorkingDocuments
             Console.WriteLine("PageLayout : {0}", pdfDocument.PageLayout);
             
             // How the document should display when opened
-            // i.e. show thumbnails, full-screen, show attachment panel
+            // I.e. show thumbnails, full-screen, show attachment panel
             Console.WriteLine("pageMode : {0}", pdfDocument.PageMode);
             // ExEnd:GetDocumentWindow
         }

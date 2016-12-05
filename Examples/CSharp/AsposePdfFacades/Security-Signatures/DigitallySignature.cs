@@ -29,7 +29,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.SecuritySignatures
                 
                 pdfSign.Sign(1, "Signature Reason", "Contact", "Location", true, rect, signature);
                 // Save output PDF file
-                pdfSign.Save(dataDir + "DigitallySignature_out_.pdf");
+                pdfSign.Save(dataDir + "DigitallySignature_out.pdf");
                 // ExEnd:DigitallySignature
             }
             catch (Exception ex)

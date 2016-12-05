@@ -43,7 +43,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.UtilityFeatures
             // Add the Graph to the List of Figures
             graph1.IsInList = true;
 
-            dataDir = dataDir + "SpecifyListItem_out_.pdf";
+            dataDir = dataDir + "SpecifyListItem_out.pdf";
             // Save the Pdf
             pdf1.Save(dataDir);
             // ExEnd:SpecifyListItem           

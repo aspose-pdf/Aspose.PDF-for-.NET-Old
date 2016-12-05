@@ -22,7 +22,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Forms
             pdfForm.FillField("textfield", "Mike");                    
             
             // Save updated file
-            pdfForm.Save( dataDir + "FillFormFieldF_out_.pdf");
+            pdfForm.Save( dataDir + "FillFormFieldF_out.pdf");
             // ExEnd:FillFormFieldF
         }
     }

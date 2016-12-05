@@ -26,7 +26,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Bookmarks
                 if (outlineItem.Count > 0)
                 {
                     Console.WriteLine("Child Bookmarks");
-                    //there are child bookmarks then loop through that as well
+                    // There are child bookmarks then loop through that as well
                     foreach (OutlineItemCollection childOutline in outlineItem)
                     {
                         Console.WriteLine(childOutline.Title);

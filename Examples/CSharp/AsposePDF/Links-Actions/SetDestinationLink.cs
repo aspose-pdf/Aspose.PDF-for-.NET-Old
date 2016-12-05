@@ -22,7 +22,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.LinksActions
                 // Modification link: change link action and set target as web address
                 linkAnnot.Action = new GoToURIAction("www.aspose.com");           
 
-                dataDir = dataDir + "SetDestinationLink_out_.pdf";
+                dataDir = dataDir + "SetDestinationLink_out.pdf";
                 // Save the document with updated link
                 doc.Save(dataDir);
                 // ExEnd:SetDestinationLink

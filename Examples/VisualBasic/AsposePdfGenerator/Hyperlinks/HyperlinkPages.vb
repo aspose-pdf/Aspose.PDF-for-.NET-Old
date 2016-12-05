@@ -42,7 +42,7 @@ Namespace AsposePdfGenerator.Hyperlinks
             sec1.Paragraphs.Add(text3)
 
             ' Set this paragraph to be the first so that it can be displayed in a separate
-            ' page in the document
+            ' Page in the document
             text3.IsFirstParagraph = True
 
             ' Set the id of this text paragraph to "product1"

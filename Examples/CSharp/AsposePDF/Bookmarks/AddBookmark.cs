@@ -25,7 +25,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Bookmarks
             // Add bookmark in the document's outline collection.
             pdfDocument.Outlines.Add(pdfOutline);
 
-            dataDir = dataDir + "AddBookmark_out_.pdf";
+            dataDir = dataDir + "AddBookmark_out.pdf";
             // Save output
             pdfDocument.Save(dataDir);
             // ExEnd:AddBookmark

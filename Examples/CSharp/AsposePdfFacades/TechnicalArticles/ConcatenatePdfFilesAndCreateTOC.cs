@@ -15,7 +15,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.TechnicalArticles
             // Create PdfFileEditor object
             PdfFileEditor pdfEditor = new PdfFileEditor();
             // Save concatenated output file
-            pdfEditor.Concatenate(new FileStream(dataDir + "input1.pdf", FileMode.Open), new FileStream(dataDir + "input2.pdf", FileMode.Open), new FileStream(dataDir + "ConcatenatePdfFilesAndCreateTOC_out_.pdf", FileMode.Create));
+            pdfEditor.Concatenate(new FileStream(dataDir + "input1.pdf", FileMode.Open), new FileStream(dataDir + "input2.pdf", FileMode.Open), new FileStream(dataDir + "ConcatenatePdfFilesAndCreateTOC_out.pdf", FileMode.Create));
             // ExEnd:ConcatenatePdfFilesAndCreateTOC                      
         }
         public static void InsertBlankPage()
@@ -132,7 +132,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.TechnicalArticles
                         contentEditor.CreateLocalLink(new System.Drawing.Rectangle(150, 650, 100, 20), 2, 1, System.Drawing.Color.Transparent);
                         // Create link for Second document
                         // We have used   new PdfFileInfo("d:/pdftest/Input1.pdf").NumberOfPages + 2   as PdfFileInfo.NumberOfPages(..) returns the page count for first document
-                        // and 2 is because, second document will start at Input1+1 and 1 for the page containing Table Of Contents.
+                        // And 2 is because, second document will start at Input1+1 and 1 for the page containing Table Of Contents.
                         contentEditor.CreateLocalLink(new System.Drawing.Rectangle(150, 620, 100, 20), new PdfFileInfo(dataDir + "Input1.pdf").NumberOfPages + 2, 1, System.Drawing.Color.Transparent);
 
                         // Save updated PDF

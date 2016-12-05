@@ -16,7 +16,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Forms
 
             // Read the source PDF form with FileAccess of Read and Write.
             // We need ReadWrite permission because after modification,
-            // we need to save the updated contents in same document/file.
+            // We need to save the updated contents in same document/file.
             FileStream fs = new FileStream(dataDir + "input.pdf", FileMode.Open, FileAccess.ReadWrite);
             // Instantiate Document instance
             Aspose.Pdf.Document pdfDocument = new Aspose.Pdf.Document(fs);
@@ -48,7 +48,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Forms
             // Fill value in form field
             form.FillField("topmostSubform[0].Page1[0].f1_29_0_[0]", "Nayyer");
             // Save updated document
-            form.Save(dataDir + "PreserveRightsUsingFormClass_out_.pdf");
+            form.Save(dataDir + "PreserveRightsUsingFormClass_out.pdf");
             // ExEnd:PreserveRightsUsingFormClass
         }       
     }

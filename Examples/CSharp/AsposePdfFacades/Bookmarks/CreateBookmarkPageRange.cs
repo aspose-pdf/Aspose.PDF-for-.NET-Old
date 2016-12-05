@@ -22,7 +22,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Bookmarks
             // Create bookmark of a range of pages
             bookmarkEditor.CreateBookmarkOfPage(bookmarkList, pageList);
             // Save updated PDF file
-            bookmarkEditor.Save( dataDir + "CreateBookmarkPageRange_out_.pdf");          
+            bookmarkEditor.Save( dataDir + "CreateBookmarkPageRange_out.pdf");          
             // ExEnd:CreateBookmarkPageRange
         }
     }

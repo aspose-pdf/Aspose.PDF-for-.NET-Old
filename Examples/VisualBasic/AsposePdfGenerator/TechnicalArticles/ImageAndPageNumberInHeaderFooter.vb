@@ -93,7 +93,7 @@ Namespace AsposePdfGenerator.TechnicalArticles
             image1.ImageInfo.ImageFileType = Aspose.Pdf.Generator.ImageFileType.Jpeg
             ' Set the image width Information
             image1.ImageInfo.FixWidth = 150
-            ' Indicate seg1's InlineParagraph is a image.
+            ' Indicate seg1' S InlineParagraph is a image.
             seg1.InlineParagraph = image1
 
             ' Create a new segment to be added to text object

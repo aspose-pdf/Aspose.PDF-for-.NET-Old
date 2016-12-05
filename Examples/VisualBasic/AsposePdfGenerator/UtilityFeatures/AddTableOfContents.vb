@@ -20,7 +20,7 @@ Namespace AsposePdfGenerator.UtilityFeatures
             pdf.Sections.Add(tocSection)
 
             ' Define the format of the four levels list by setting the left margins and
-            ' text format settings of each level
+            ' Text format settings of each level
             tocSection.ListFormatArray.Length = 4
             tocSection.ListFormatArray(0).LeftMargin = 0
             tocSection.ListFormatArray(0).TextInfo.IsTrueTypeFontBold = True
@@ -59,7 +59,7 @@ Namespace AsposePdfGenerator.UtilityFeatures
             pdf.Sections.Add(tocSection2)
 
             ' Define the format of the four levels list by setting the left margins and
-            ' text format settings of each level
+            ' Text format settings of each level
             tocSection2.ListFormatArray.Length = 4
             tocSection2.ListFormatArray(0).LeftMargin = 0
             tocSection2.ListFormatArray(0).TextInfo.IsTrueTypeFontBold = True

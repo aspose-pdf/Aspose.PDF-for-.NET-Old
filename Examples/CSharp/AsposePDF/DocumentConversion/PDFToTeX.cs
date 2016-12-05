@@ -25,7 +25,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion
             saveOptions.OutDirectoryPath = pathToOutputDirectory;
 
             // Save PDF file into LaTex format            
-            doc.Save(dataDir + "PDFToTeX_out_.tex", saveOptions);
+            doc.Save(dataDir + "PDFToTeX_out.tex", saveOptions);
             // ExEnd:PDFToTeX
         }
     }

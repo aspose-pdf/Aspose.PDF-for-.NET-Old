@@ -26,7 +26,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.SecuritySignatures
                     // Create any of the three signature types
                     signature.Sign(1, "Signature Reason", "Contact", "Location", true, rect, pkcs);
                     // Save output PDF file
-                    signature.Save(dataDir + "DigitallySignWithTimeStamp_out_.pdf");
+                    signature.Save(dataDir + "DigitallySignWithTimeStamp_out.pdf");
                 }
             }
             // ExEnd:DigitallySignWithTimeStamp

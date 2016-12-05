@@ -20,11 +20,11 @@ Namespace AsposePdfGenerator.Text
             sec1.TextInfo.Color = New AP.Generator.Color("Blue")
 
             ' Add 1st paragraph (inheriting the text format settings from the section)
-            ' to the section 
+            ' To the section 
             sec1.Paragraphs.Add(New AP.Generator.Text(sec1, "paragraph 1 "))
 
             ' Add 2nd paragraph (inheriting the text format settings from the section)
-            ' to the section
+            ' To the section
             sec1.Paragraphs.Add(New AP.Generator.Text(sec1, "paragraph 2"))
 
             ' Create 3rd paragraph (inheriting the text format settings from the section) 
@@ -58,7 +58,7 @@ Namespace AsposePdfGenerator.Text
             sec1.Paragraphs.Add(t3)
 
             ' Add 4th paragraph (inheriting the text format settings from the section)
-            ' to the section
+            ' To the section
             sec1.Paragraphs.Add(New AP.Generator.Text(sec1, "paragraph 4"))
 
             dataDir = dataDir & Convert.ToString("InheritTextFormat_out_.pdf")

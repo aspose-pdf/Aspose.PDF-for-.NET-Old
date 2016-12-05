@@ -27,8 +27,8 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.TechnicalArticles
                 // Add a section into the pdf document
                 Aspose.Pdf.Generator.Section sec1 = pdf1.Sections.Add();
 
-                //Save the document
-                pdf1.Save(dataDir + "CreatePdfA1_out_.pdf");
+                // Save the document
+                pdf1.Save(dataDir + "CreatePdfA1_out.pdf");
                 // ExEnd:CreatePdfA1  
             }
             catch (Exception ex)

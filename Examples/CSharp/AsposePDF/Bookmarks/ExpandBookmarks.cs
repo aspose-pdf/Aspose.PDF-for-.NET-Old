@@ -24,7 +24,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Bookmarks
                 item.Open = true;
             }
 
-            dataDir = dataDir + "ExpandBookmarks_out_.pdf";
+            dataDir = dataDir + "ExpandBookmarks_out.pdf";
             // Save output
             doc.Save(dataDir);
             // ExEnd:ExpandBookmarks

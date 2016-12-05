@@ -27,7 +27,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
                     textFragment.TextState.Font = FontRepository.FindFont("Arial, Bold");
                 }
 
-                dataDir = dataDir + "RemoveUnusedFonts_out_.pdf";
+                dataDir = dataDir + "RemoveUnusedFonts_out.pdf";
                 // Save updated document
                 doc.Save(dataDir);
                 // ExEnd:RemoveUnusedFonts            

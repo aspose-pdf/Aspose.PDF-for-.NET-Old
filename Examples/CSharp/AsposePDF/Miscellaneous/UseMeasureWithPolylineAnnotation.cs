@@ -25,11 +25,11 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Miscellaneous
             };
             Rectangle rect = new Rectangle(100, 500, 500, 600);
 
-            //Area or perimeter line
+            // Area or perimeter line
             PolylineAnnotation area = new PolylineAnnotation(doc.Pages[1], rect, vertices);
             area.Color = Color.Red;
 
-            //Line endings can be set for perimeter line.
+            // Line endings can be set for perimeter line.
             area.StartingStyle = LineEnding.OpenArrow;
             area.EndingStyle = LineEnding.OpenArrow;
             area.Measure = new Measure(area);
@@ -37,7 +37,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Miscellaneous
             area.Measure.DistanceFormat.Add(new Measure.NumberFormat(area.Measure));
             area.Measure.DistanceFormat[1].UnitLabel = "mm";
             doc.Pages[1].Annotations.Add(area);
-            doc.Save( dataDir + "UseMeasureWithPolylineAnnotation_out_.pdf");
+            doc.Save( dataDir + "UseMeasureWithPolylineAnnotation_out.pdf");
             // ExEnd:UseMeasureWithPolylineAnnotation
         }
     }

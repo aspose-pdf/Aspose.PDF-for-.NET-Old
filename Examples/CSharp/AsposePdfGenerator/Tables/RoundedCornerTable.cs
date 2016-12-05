@@ -64,7 +64,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Tables
             row1.Cells[0].VerticalAlignment = Aspose.Pdf.Generator.VerticalAlignmentType.Center;
 
             // Save the Pdf
-            pdf1.Save(dataDir + "Rounded_Corner-Table_out_.pdf");
+            pdf1.Save(dataDir + "Rounded_Corner-Table_out.pdf");
             // ExEnd:RoundedCornerTable   
                 
         }

@@ -21,7 +21,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.WorkingDocuments
             // Set PageTransitionType poperty of Pdf instance to a pre-defined desired value
             pdf1.PageTransitionType = Aspose.Pdf.Generator.PageTransitionType.Dissolve;
 
-            dataDir = dataDir + "PageTransition_out_.pdf";
+            dataDir = dataDir + "PageTransition_out.pdf";
             pdf1.Save(dataDir);
             // ExEnd:SetPageTransitionEffect
             Console.WriteLine("\nPage transition effect setup successfully.\nFile saved at " + dataDir);

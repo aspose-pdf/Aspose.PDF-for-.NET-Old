@@ -36,7 +36,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Forms
                 formEditor.AddField(FieldType.Radio, "NewField2", 1, 40, 500, 60, 550);
 
 
-                dataDir = dataDir + "HorizontallyAndVerticallyRadioButtons_out_.pdf";
+                dataDir = dataDir + "HorizontallyAndVerticallyRadioButtons_out.pdf";
                 // Save the PDF document
                 formEditor.Save(dataDir);
                 // ExEnd:HorizontallyAndVerticallyRadioButtons

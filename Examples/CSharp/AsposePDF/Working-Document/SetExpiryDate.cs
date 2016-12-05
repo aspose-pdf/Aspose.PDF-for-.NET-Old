@@ -31,7 +31,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.WorkingDocuments
             // Set JavaScript as PDF open action
             doc.OpenAction = javaScript;
 
-            dataDir = dataDir + "SetExpiryDate_out_.pdf";
+            dataDir = dataDir + "SetExpiryDate_out.pdf";
             // Save PDF Document
             doc.Save(dataDir);
             // ExEnd:SetExpiryDate 

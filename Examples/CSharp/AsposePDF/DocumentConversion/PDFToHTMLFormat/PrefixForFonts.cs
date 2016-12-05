@@ -17,14 +17,14 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion.PDFToHTMLForma
                 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion_PDFToHTMLFormat();
 
                 Document doc = new Document(dataDir + "input.pdf");
-                string outHtmlFile = dataDir + "PrefixForFonts_out_.html";
+                string outHtmlFile = dataDir + "PrefixForFonts_out.html";
                 _desiredFontDir = Path.GetDirectoryName(outHtmlFile) + @"\36296_files\";
                 if (!Directory.Exists(_desiredFontDir))
                 {
                     Directory.CreateDirectory(_desiredFontDir);
                 }
                 // Reset counter for font names - this counter will be used in our custom code
-                // to generate unigue font file names
+                // To generate unigue font file names
 
                 _fontNumberForUniqueFontFileNames = 0;
 
@@ -44,7 +44,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion.PDFToHTMLForma
         {
             //-----------------------------------------------------------------------------
             // It's just example of possible realization of cusstom processing of resources
-            // referenced in result HTML
+            // Referenced in result HTML
             //-----------------------------------------------------------------------------
 
             // 1) In this case we need only do something special
@@ -69,7 +69,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion.PDFToHTMLForma
 
 
             // 2) Return the desired URI with which font will be referenced in CSSes
-            string fontUrl = "http://localhost:255/document-viewer/GetFont/" + shortFontFileName;
+            string fontUrl = "http:// Localhost:255/document-viewer/GetFont/" + shortFontFileName;
             return fontUrl;
         }
         // ExEnd:PrefixForFontsHelper

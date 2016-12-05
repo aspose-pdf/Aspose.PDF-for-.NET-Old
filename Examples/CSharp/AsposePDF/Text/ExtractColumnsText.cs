@@ -33,7 +33,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
             String extractedText = textAbsorber.Text;
             textAbsorber.Visit(pdfDocument); 
 
-            dataDir = dataDir + "ExtractColumnsText_out_.txt";
+            dataDir = dataDir + "ExtractColumnsText_out.txt";
 
             System.IO.File.WriteAllText(dataDir, extractedText);           
             // ExEnd:ExtractColumnsText            
@@ -55,7 +55,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
             textAbsorber.ExtractionOptions.ScaleFactor = 0.5; /* 0; */
             pdfDocument.Pages.Accept(textAbsorber);
             String extractedText = textAbsorber.Text;
-            System.IO.File.WriteAllText( dataDir + "ExtractTextUsingScaleFactor_out_.text", extractedText);
+            System.IO.File.WriteAllText( dataDir + "ExtractTextUsingScaleFactor_out.text", extractedText);
             // ExEnd:UsingScaleFactor
         }
     }

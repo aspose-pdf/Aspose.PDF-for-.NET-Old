@@ -28,7 +28,7 @@ Namespace AsposePDFFacades.TechnicalArticles
             editor.DeleteAnnotation("Stamp")
 
             ' Extract annotations to an array list
-            ' string[] annType = { "Text" };
+            ' String[] annType = { "Text" };
             Dim annotType As [Enum]() = {Aspose.Pdf.Annotations.AnnotationType.FreeText, Aspose.Pdf.Annotations.AnnotationType.Line}
             Dim list As ArrayList = DirectCast(editor.ExtractAnnotations(1, 5, annotType), ArrayList)
             For index As Integer = 0 To list.Count - 1

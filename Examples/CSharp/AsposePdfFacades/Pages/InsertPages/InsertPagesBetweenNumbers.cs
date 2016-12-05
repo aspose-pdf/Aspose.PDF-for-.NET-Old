@@ -15,7 +15,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.InsertPages
             // Create PdfFileEditor object
             PdfFileEditor pdfEditor = new PdfFileEditor();
             // Insert pages
-            pdfEditor.Insert(dataDir + "MultiplePages.pdf", 1, dataDir + "InsertPages.pdf", 2, 5,  dataDir + "InsertPagesBetweenNumbers_out_.pdf");
+            pdfEditor.Insert(dataDir + "MultiplePages.pdf", 1, dataDir + "InsertPages.pdf", 2, 5,  dataDir + "InsertPagesBetweenNumbers_out.pdf");
             // ExEnd:InsertPagesBetweenNumbers
         }
     }

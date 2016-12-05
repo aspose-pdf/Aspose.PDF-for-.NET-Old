@@ -28,7 +28,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.WorkingDocuments
             doc.Pages[2].Actions.OnOpen = new JavascriptAction("app.alert('page 1 opened')");
             doc.Pages[2].Actions.OnClose = new JavascriptAction("app.alert('page 1 closed')");
 
-            dataDir = dataDir + "JavaScript-Added_out_.pdf";
+            dataDir = dataDir + "JavaScript-Added_out.pdf";
             // Save PDF Document
             doc.Save(dataDir);
             // ExEnd:AddJavaScriptToPage

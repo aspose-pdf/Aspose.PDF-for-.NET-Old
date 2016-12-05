@@ -14,18 +14,18 @@ Namespace AsposePDF.WorkingDocuments
             Dim pdfDocument As New Document(dataDir & Convert.ToString("SetDocumentWindow.pdf"))
 
             ' Set different document properties
-            ' Sepcify to position document's window - Default: false
+            ' Sepcify to position document' S window - Default: false
             pdfDocument.CenterWindow = True
 
             ' Predominant reading order; determins the position of page
             ' When displayed side by side - Default: L2R
             pdfDocument.Direction = Direction.R2L
 
-            ' Specify whether window's title bar should display document title
+            ' Specify whether window' S title bar should display document title
             ' If false, title bar displays PDF file name - Default: false
             pdfDocument.DisplayDocTitle = True
 
-            ' Specify whether to resize the document's window to fit the size of
+            ' Specify whether to resize the document' S window to fit the size of
             ' First displayed page - Default: false
             pdfDocument.FitWindow = True
 
@@ -39,14 +39,14 @@ Namespace AsposePDF.WorkingDocuments
             ' And leaving only the page contents displayed - Default: false
             pdfDocument.HideWindowUI = True
 
-            ' Document's page mode. specify how to display document on exiting full-screen mode.
+            ' Document' S page mode. specify how to display document on exiting full-screen mode.
             pdfDocument.NonFullScreenPageMode = PageMode.UseOC
 
             ' Specify the page layout i.e. single page, one column
             pdfDocument.PageLayout = PageLayout.TwoColumnLeft
 
             ' Specify how the document should display when opened
-            ' i.e. show thumbnails, full-screen, show attachment panel
+            ' I.e. show thumbnails, full-screen, show attachment panel
             pdfDocument.PageMode = PageMode.UseThumbs
 
             dataDir = dataDir & Convert.ToString("SetDocumentWindow_out_.pdf")

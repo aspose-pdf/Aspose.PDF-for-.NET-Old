@@ -27,7 +27,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Images
 
                 // Write to disk, if you like, or use it otherwise.
                 FileStream fileStream = new
-                FileStream(dataDir+ DateTime.Now.Ticks.ToString() + "_out_.jpg", FileMode.Create);
+                FileStream(dataDir+ DateTime.Now.Ticks.ToString() + "_out.jpg", FileMode.Create);
                 memoryStream.WriteTo(fileStream);
                 fileStream.Close();
             }

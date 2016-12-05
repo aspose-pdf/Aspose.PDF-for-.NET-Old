@@ -19,7 +19,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion
             // During conversion process, the validation is also performed
             pdfDocument.Convert(dataDir + "log.xml", PdfFormat.PDF_A_1B, ConvertErrorAction.Delete);
 
-            dataDir = dataDir + "PDFToPDFA_out_.pdf";
+            dataDir = dataDir + "PDFToPDFA_out.pdf";
             // Save output document
             pdfDocument.Save(dataDir);
             // ExEnd:PDFToPDFA

@@ -22,7 +22,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Images
 
             // Get all the extracted images
             while (pdfExtractor.HasNextImage())
-                pdfExtractor.GetNextImage(dataDir+ DateTime.Now.Ticks.ToString() + "_out_.jpg");
+                pdfExtractor.GetNextImage(dataDir+ DateTime.Now.Ticks.ToString() + "_out.jpg");
             // ExEnd:ExtractImages            
             
         }

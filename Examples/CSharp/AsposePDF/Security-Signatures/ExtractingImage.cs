@@ -22,7 +22,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.SecuritySignatures
                     SignatureField sf = field as SignatureField;
                     if (sf != null)
                     {
-                        string outFile = dataDir+ @"output_out_.jpg";
+                        string outFile = dataDir+ @"output_out.jpg";
                         using (Stream imageStream = sf.ExtractImage())
                         {
                             if (imageStream != null)

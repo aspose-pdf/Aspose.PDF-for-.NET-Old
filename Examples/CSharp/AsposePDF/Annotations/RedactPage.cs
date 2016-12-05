@@ -30,9 +30,9 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Annotations
             // Add annotation to annotations collection of first page
             doc.Pages[1].Annotations.Add(annot);
             // Flattens annotation and redacts page contents (i.e. removes text and image
-            // under redacted annotation)
+            // Under redacted annotation)
             annot.Redact();
-            dataDir = dataDir + "RedactPage_out_.pdf";
+            dataDir = dataDir + "RedactPage_out.pdf";
             doc.Save(dataDir);
             // ExEnd:RedactPage
             Console.WriteLine("\nCertain page region with RedactionAnnotation redact successfully.\nFile saved at " + dataDir);
@@ -48,7 +48,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Annotations
             // Redact certain page region
             editor.RedactArea(1, new Aspose.Pdf.Rectangle(100, 100, 20, 70), System.Drawing.Color.White);
             editor.BindPdf(dataDir + "input.pdf");
-            editor.Save( dataDir + "FacadesApproach_out_.pdf");
+            editor.Save( dataDir + "FacadesApproach_out.pdf");
             // ExEnd:FacadesApproach
 
         }

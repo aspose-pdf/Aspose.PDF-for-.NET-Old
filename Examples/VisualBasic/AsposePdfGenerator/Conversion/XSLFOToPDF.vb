@@ -14,7 +14,7 @@ Namespace AsposePdfGenerator.Conversion
             ' Set up your product license.
             ' If you just want to evaluate Aspose.Pdf, you can annotate these two lines.
             ' License license = new License();
-            ' license.SetLicense(dataDir + "Aspose.Total.lic");
+            ' License.SetLicense(dataDir + "Aspose.Total.lic");
 
             ' Create a Converter object..
             Dim app As Aspose.Pdf.Generator.Pdf
@@ -92,29 +92,29 @@ Namespace AsposePdfGenerator.Conversion
 
             ' 0. An example of how to set the metadata of your generated pdf document
             ' If you do not want to set these tedious metadata of pdf, you can set the
-            ' second parameter of Save method to be "null" simply, as shown in above.
+            ' Second parameter of Save method to be "null" simply, as shown in above.
 
             ' At first create a IDictionary to contain your metadata.
             Dim metadata As System.Collections.IDictionary = New System.Collections.Hashtable()
 
             ' Then set the various items.
-            ' If you don't set them, Aspose.Pdf.Fo will set default value.
-            ' a. title of your pdf doc:
+            ' If you don' T set them, Aspose.Pdf.Fo will set default value.
+            ' A. title of your pdf doc:
             metadata.Add("Title", "New Title")
-            ' b. author of your pdf doc:
+            ' B. author of your pdf doc:
             metadata.Add("Author", "New Author")
-            ' c. subject of your pdf doc:
+            ' C. subject of your pdf doc:
             metadata.Add("Subject", "New Subject")
-            ' d. keywords of your pdf doc:
+            ' D. keywords of your pdf doc:
             metadata.Add("Keywords", "New Key Words")
-            ' e. creator of your pdf doc:
+            ' E. creator of your pdf doc:
             metadata.Add("Creator", "New Creator")
-            ' f. producer of your pdf doc:
+            ' F. producer of your pdf doc:
             metadata.Add("Producer", "New Producer")
 
             ' Make this IDictionary be the parameter of Save method, and start converting.
             app = New Aspose.Pdf.Generator.Pdf()
-            ' app.FoMetaData = metadata;
+            ' App.FoMetaData = metadata;
             app.BindFO(fo)
             app.Save(dataDir & Convert.ToString("Test_out_.pdf"))
             ' ExEnd:XSLFOToPDF

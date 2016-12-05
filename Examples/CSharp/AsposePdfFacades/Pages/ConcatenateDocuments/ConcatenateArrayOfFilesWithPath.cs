@@ -21,7 +21,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.ConcatenateDocuments
             filesArray[0] =  dataDir + "input.pdf";
             filesArray[1] = dataDir + "input2.pdf";
             // Concatenate files
-            pdfEditor.Concatenate(filesArray, dataDir + "ConcatenateArrayOfFilesWithPath_out_.pdf");
+            pdfEditor.Concatenate(filesArray, dataDir + "ConcatenateArrayOfFilesWithPath_out.pdf");
             // ExEnd:ConcatenateArrayOfFilesWithPath
         }
         public static void RenderInBrowser()
@@ -37,7 +37,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.ConcatenateDocuments
             // Create PdfFileEditor object
             PdfFileEditor pdfEditor = new PdfFileEditor();
             // Display the resultant concatenated PDF file in 
-            pdfEditor.Concatenate(filesArray, dataDir + "RenderInBrowser_out_.pdf");
+            pdfEditor.Concatenate(filesArray, dataDir + "RenderInBrowser_out.pdf");
             // ExEnd:RenderInBrowser
         }
 
@@ -49,7 +49,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.ConcatenateDocuments
 
             Aspose.Pdf.Facades.PdfFileEditor pfe = new Aspose.Pdf.Facades.PdfFileEditor();
             pfe.CorruptedFileAction = Aspose.Pdf.Facades.PdfFileEditor.ConcatenateCorruptedFileAction.ConcatenateIgnoringCorrupted;
-            pfe.Concatenate(new string[] { dataDir + "input.pdf", dataDir + "input2.pdf", dataDir + "input3.pdf" }, dataDir + "CorruptedFiles_out_.pdf");
+            pfe.Concatenate(new string[] { dataDir + "input.pdf", dataDir + "input2.pdf", dataDir + "input3.pdf" }, dataDir + "CorruptedFiles_out.pdf");
             if (pfe.CorruptedItems.Length > 0)
             {
                 Console.WriteLine("Corrupted documents:");

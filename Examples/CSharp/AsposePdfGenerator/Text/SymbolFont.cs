@@ -39,7 +39,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Text
             // Add 2nd text segment to the text paragraph
             text1.Segments.Add(s2);
  
-            dataDir = dataDir + "SymbolFont_out_.pdf";
+            dataDir = dataDir + "SymbolFont_out.pdf";
             // Create the result PDF Document
             pdf1.Save(dataDir);
             // ExEnd:SymbolFont

@@ -19,7 +19,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.TechnicalArticles
             string inFile = dataDir + "inFile.pdf";
 
             // Set output file path
-            string outFile = dataDir + "RotatingStamp_out_.pdf";
+            string outFile = dataDir + "RotatingStamp_out.pdf";
 
             // Create PdfFileInfo object to get height and width of the pages
             PdfFileInfo fileInfo = new PdfFileInfo(inFile);

@@ -30,7 +30,7 @@ Namespace AsposePDF.WorkingDocuments
                     Console.WriteLine([String].Format("{0}  - Source page {1} of {2} analyzed.", DateTime.Now.ToLongTimeString(), eventInfo.Value.ToString(), eventInfo.MaxValue.ToString()))
                     Exit Select
                 Case DocSaveOptions.ProgressEventType.ResultPageCreated
-                    Console.WriteLine([String].Format("{0}  - Result page's {1} of {2} layout created.", DateTime.Now.ToLongTimeString(), eventInfo.Value.ToString(), eventInfo.MaxValue.ToString()))
+                    Console.WriteLine([String].Format("{0}  - Result page' S {1} of {2} layout created.", DateTime.Now.ToLongTimeString(), eventInfo.Value.ToString(), eventInfo.MaxValue.ToString()))
                     Exit Select
                 Case DocSaveOptions.ProgressEventType.ResultPageSaved
                     Console.WriteLine([String].Format("{0}  - Result page {1} of {2} exported.", DateTime.Now.ToLongTimeString(), eventInfo.Value.ToString(), eventInfo.MaxValue.ToString()))

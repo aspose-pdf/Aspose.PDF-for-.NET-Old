@@ -32,7 +32,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Forms
 
                 // Add combo box object to form fields collection of document object
                 doc.Form.Add(combo);
-                dataDir = dataDir + "ComboBox_out_.pdf";
+                dataDir = dataDir + "ComboBox_out.pdf";
                 // Save the PDF document
                 doc.Save(dataDir);
                 // ExEnd:ComboBox

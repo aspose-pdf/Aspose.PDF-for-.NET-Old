@@ -16,7 +16,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.SecuritySignatures
             fileSecurity.BindPdf(dataDir + "Decrypt.pdf");
             // Decrypt PDF document
             fileSecurity.DecryptFile("owner");
-            fileSecurity.Save(dataDir + "DecryptFile_out_.pdf");
+            fileSecurity.Save(dataDir + "DecryptFile_out.pdf");
             // ExEnd:DecryptFile   
            
         }

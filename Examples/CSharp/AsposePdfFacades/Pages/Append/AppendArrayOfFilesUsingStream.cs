@@ -16,13 +16,13 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.Append
             PdfFileEditor pdfEditor = new PdfFileEditor();
             // Input and output stream
             FileStream inputStream = new FileStream( dataDir + "input.pdf", FileMode.Open);
-            FileStream outputStream = new FileStream(dataDir + "AppendArrayOfFilesUsingStream_out_.pdf", FileMode.Create);
+            FileStream outputStream = new FileStream(dataDir + "AppendArrayOfFilesUsingStream_out.pdf", FileMode.Create);
             // Srray of streams
             FileStream[] portStreams = new FileStream[2];
             portStreams[0] = new FileStream( dataDir + "input2.pdf", FileMode.Open);
             portStreams[1] = new FileStream(dataDir + "input3.pdf", FileMode.Open);
 
-            //Append file
+            // Append file
             pdfEditor.Append(inputStream, portStreams, 1, 1, outputStream);
             // ExEnd:AppendArrayOfFilesUsingStream
         }

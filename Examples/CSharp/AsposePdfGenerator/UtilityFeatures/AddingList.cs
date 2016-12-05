@@ -24,7 +24,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.UtilityFeatures
             // Add the list section to the sections collection of the Pdf document
             pdf1.Sections.Add(tocSection);
 
-            dataDir = dataDir + "AddingList_out_.pdf";
+            dataDir = dataDir + "AddingList_out.pdf";
             // Save the Pdf
             pdf1.Save(dataDir);
             // ExEnd:AddingList           
@@ -59,7 +59,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.UtilityFeatures
             // Add the list section to the sections collection of the Pdf document
             pdf1.Sections.Add(tocSection);
 
-            dataDir = dataDir + "DefineFormat_out_.pdf";
+            dataDir = dataDir + "DefineFormat_out.pdf";
             // Save the Pdf
             pdf1.Save(dataDir);
                      
@@ -81,7 +81,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.UtilityFeatures
 
             // ExStart:DefineOwnFormat
             // Define the format of the four levels list by setting the left margins and
-            // text format settings of each level
+            // Text format settings of each level
             tocSection.ListFormatArray.Length = 4;
             tocSection.ListFormatArray[0].LeftMargin = 0;
             tocSection.ListFormatArray[0].TextInfo.IsTrueTypeFontBold = true;
@@ -98,7 +98,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.UtilityFeatures
             // Add the list section to the sections collection of the Pdf document
             pdf1.Sections.Add(tocSection);
 
-            dataDir = dataDir + "DefineOwnFormat_out_.pdf";
+            dataDir = dataDir + "DefineOwnFormat_out.pdf";
             // Save the Pdf
             pdf1.Save(dataDir);
 

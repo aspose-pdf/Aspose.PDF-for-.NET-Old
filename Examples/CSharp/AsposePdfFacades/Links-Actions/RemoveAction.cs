@@ -22,7 +22,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.LinksActions
             contentEditor.RemoveDocumentOpenAction();
 
             // Save updated PDF
-            contentEditor.Save( dataDir + "RemoveOpenAction_out_.pdf");
+            contentEditor.Save( dataDir + "RemoveOpenAction_out.pdf");
             // ExEnd:RemoveAction                        
         }
     }

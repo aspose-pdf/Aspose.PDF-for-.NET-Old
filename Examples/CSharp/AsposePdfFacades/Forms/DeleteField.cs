@@ -19,7 +19,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Forms
             // Delete field
             formEditor.RemoveField("textfield");
             // Save updated file
-            formEditor.Save( dataDir + "DeleteFormField_out_.pdf");
+            formEditor.Save( dataDir + "DeleteFormField_out.pdf");
             // ExEnd:DeleteField
         }
     }

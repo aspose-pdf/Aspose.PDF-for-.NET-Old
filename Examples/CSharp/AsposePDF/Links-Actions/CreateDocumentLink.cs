@@ -20,7 +20,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.LinksActions
             link.Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
             link.Action = new GoToRemoteAction(dataDir + "RemoveOpenAction.pdf", 1);
             page.Annotations.Add(link);
-            dataDir = dataDir + "CreateDocumentLink_out_.pdf";
+            dataDir = dataDir + "CreateDocumentLink_out.pdf";
             // Save updated document
             document.Save(dataDir);
             // ExEnd:CreateDocumentLink

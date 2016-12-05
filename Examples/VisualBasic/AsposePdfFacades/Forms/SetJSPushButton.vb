@@ -14,7 +14,7 @@ Namespace AsposePDFFacades.Forms
             ' Open the document and create a FormEditor object
             form.BindPdf(dataDir & Convert.ToString("input.pdf"))
             ' Set JavaScript
-            form.SetFieldScript("pushbutton", "app.alert('Hello World!');")
+            form.SetFieldScript("pushbutton", "app.alert(' Hello World!');")
             ' Save update document
             form.Save(dataDir & Convert.ToString("SetJSPushButton_out_.pdf"))
             ' ExEnd:SetJSPushButton

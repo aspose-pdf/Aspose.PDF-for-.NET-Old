@@ -13,18 +13,18 @@ Namespace AsposePDF.WorkingDocuments
             Dim pdfDocument As New Document(dataDir & Convert.ToString("GetDocumentWindow.pdf"))
 
             ' Get different document properties
-            ' Position of document's window - Default: false
+            ' Position of document' S window - Default: false
             Console.WriteLine("CenterWindow : {0}", pdfDocument.CenterWindow)
 
             ' Predominant reading order; determins the position of page
             ' When displayed side by side - Default: L2R
             Console.WriteLine("Direction : {0}", pdfDocument.Direction)
 
-            ' Whether window's title bar should display document title
+            ' Whether window' S title bar should display document title
             ' If false, title bar displays PDF file name - Default: false
             Console.WriteLine("DisplayDocTitle : {0}", pdfDocument.DisplayDocTitle)
 
-            ' Whether to resize the document's window to fit the size of
+            ' Whether to resize the document' S window to fit the size of
             ' First displayed page - Default: false
             Console.WriteLine("FitWindow : {0}", pdfDocument.FitWindow)
 
@@ -38,14 +38,14 @@ Namespace AsposePDF.WorkingDocuments
             ' And leaving only the page contents displayed - Default: false
             Console.WriteLine("HideWindowUI : {0}", pdfDocument.HideWindowUI)
 
-            ' Document's page mode. How to display document on exiting full-screen mode.
+            ' Document' S page mode. How to display document on exiting full-screen mode.
             Console.WriteLine("NonFullScreenPageMode : {0}", pdfDocument.NonFullScreenPageMode)
 
             ' The page layout i.e. single page, one column
             Console.WriteLine("PageLayout : {0}", pdfDocument.PageLayout)
 
             ' How the document should display when opened
-            ' i.e. show thumbnails, full-screen, show attachment panel
+            ' I.e. show thumbnails, full-screen, show attachment panel
             Console.WriteLine("pageMode : {0}", pdfDocument.PageMode)
             ' ExEnd:GetDocumentWindow
         End Sub

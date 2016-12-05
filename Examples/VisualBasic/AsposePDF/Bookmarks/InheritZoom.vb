@@ -14,9 +14,9 @@ Namespace AsposePDF.Bookmarks
             ' Open document
             Dim doc As New Document(dataDir & Convert.ToString("input.pdf"))
 
-            ' get outlines/bookmarks collection of PDF file
+            ' Get outlines/bookmarks collection of PDF file
             Dim item As New OutlineItemCollection(doc.Outlines)
-            ' set zoom level as 0
+            ' Set zoom level as 0
             Dim dest As New XYZExplicitDestination(2, 100, 100, 0)
             ' Add XYZExplicitDestination as action to outlines collection of PDF
             item.Action = New GoToAction(dest)

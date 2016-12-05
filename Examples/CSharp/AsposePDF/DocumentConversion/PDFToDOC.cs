@@ -12,11 +12,11 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();          
             
-            // open the source PDF document
+            // Open the source PDF document
             Document pdfDocument = new Document(dataDir + "PDFToDOC.pdf");
 
             // Save the file into MS document format
-            pdfDocument.Save(dataDir + "PDFToDOC_out_.doc", SaveFormat.Doc);
+            pdfDocument.Save(dataDir + "PDFToDOC_out.doc", SaveFormat.Doc);
             // ExEnd:PDFToDOC        
             
         }
@@ -43,7 +43,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion
             saveOptions.RecognizeBullets = true;
 
             // Save the resultant DOC file
-            pdfDocument.Save(dataDir + "saveOptionsOutput_out_.doc", saveOptions);
+            pdfDocument.Save(dataDir + "saveOptionsOutput_out.doc", saveOptions);
             // ExEnd:SaveUsingSaveOptions
         }
         public static void ConvertToDOCX()
@@ -60,7 +60,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion
             // Specify the output format as DOCX
             saveOptions.Format = DocSaveOptions.DocFormat.DocX;
             // Save document in docx format
-            pdfDocument.Save("ConvertToDOCX_out_.docx", saveOptions);
+            pdfDocument.Save("ConvertToDOCX_out.docx", saveOptions);
             // ExEnd:ConvertToDOCX
         }
     }

@@ -40,25 +40,25 @@ Namespace AsposePDF.Graphs
         ' ExStart:AddRectangle
         Private Shared Sub AddRectangle(page As Page, x As Single, y As Single, width As Single, height As Single, color As Color, _
             zindex As Integer)
-            ' create graph object with dimensions same as specified for Rectangle object
+            ' Create graph object with dimensions same as specified for Rectangle object
             Dim graph As New Graph(width, height)
-            ' can we change the position of graph instance
+            ' Can we change the position of graph instance
             graph.IsChangePosition = False
-            ' set Left coordinate position for Graph instance
+            ' Set Left coordinate position for Graph instance
             graph.Left = x
-            ' set Top coordinate position for Graph object
+            ' Set Top coordinate position for Graph object
             graph.Top = y
             ' Add a rectangle inside the "graph"
             Dim rect As New APW.Rectangle(0, 0, width, height)
-            ' set rectangle fill color
+            ' Set rectangle fill color
             rect.GraphInfo.FillColor = color
-            ' color of graph object
+            ' Color of graph object
             rect.GraphInfo.Color = color
-            ' add rectangle to shapes collection of graph instance
+            ' Add rectangle to shapes collection of graph instance
             graph.Shapes.Add(rect)
-            ' set Z-Index for rectangle object
+            ' Set Z-Index for rectangle object
             graph.ZIndex = zindex
-            ' add graph to paragraphs collection of page object
+            ' Add graph to paragraphs collection of page object
             page.Paragraphs.Add(graph)
         End Sub
         ' ExEnd:AddRectangle

@@ -23,7 +23,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Pages
 
             newDocument.Pages.Add(pdfPage);
 
-            dataDir = dataDir + "GetParticularPage_out_.pdf";
+            dataDir = dataDir + "GetParticularPage_out.pdf";
             newDocument.Save(dataDir);
             // ExEnd:GetParticularPage
             System.Console.WriteLine("\nParticular page accessed successfully.\nFile saved at " + dataDir);

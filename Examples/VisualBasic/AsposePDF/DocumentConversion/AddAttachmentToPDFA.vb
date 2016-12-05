@@ -14,7 +14,7 @@ Namespace AsposePDF.DocumentConversion
             Dim doc As Document = New Document(dataDir & Convert.ToString("input.pdf"))
             ' Setup new file to be added as attachment
             Dim fileSpecification As New FileSpecification(dataDir & Convert.ToString("aspose-logo.jpg"), "Large Image file")
-            ' Add attachment to document's attachment collection
+            ' Add attachment to document' S attachment collection
             doc.EmbeddedFiles.Add(fileSpecification)
             ' Perform conversion to PDF/A_3a so attachment is included in resultnat file
             doc.Convert(dataDir & Convert.ToString("log.txt"), PdfFormat.PDF_A_3A, ConvertErrorAction.Delete)

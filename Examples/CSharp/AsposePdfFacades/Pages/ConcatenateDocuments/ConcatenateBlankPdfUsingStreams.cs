@@ -18,7 +18,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.ConcatenateDocuments
             FileStream inputStream1 = new FileStream( dataDir + "input.pdf", FileMode.Open);
             FileStream inputStream2 = new FileStream( dataDir + "input2.pdf", FileMode.Open);
             FileStream blankStream = new FileStream(dataDir + "blank.pdf", FileMode.Open);
-            FileStream outputStream = new FileStream(dataDir + "ConcatenateBlankPdfUsingStreams_out_.pdf", FileMode.Create);
+            FileStream outputStream = new FileStream(dataDir + "ConcatenateBlankPdfUsingStreams_out.pdf", FileMode.Create);
             // Concatenate file
             pdfEditor.Concatenate(inputStream1, inputStream2, blankStream, outputStream);
             // ExEnd:ConcatenateBlankPdfUsingStreams

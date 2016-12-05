@@ -35,7 +35,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.TechnicalArticles
             image1.ImageInfo.Title = "JPEG image";            
 
             // Save the Pdf file
-            pdf1.Save(dataDir + "JPGImageToPdf_out_.pdf");
+            pdf1.Save(dataDir + "JPGImageToPdf_out.pdf");
             // ExEnd:ImageToPdf           
         }
         public static void ConvertBMPImageToPdf()
@@ -72,7 +72,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.TechnicalArticles
             // Add image to paragraphs collection of section
             MainSection.Paragraphs.Add(sample_image);
             // Save the resultant PDF
-            pdf.Save(dataDir + "ConvertBMPImageToPdf_out_.pdf");
+            pdf.Save(dataDir + "ConvertBMPImageToPdf_out.pdf");
             // ExEnd:ConvertBMPImageToPdf
         }
     }

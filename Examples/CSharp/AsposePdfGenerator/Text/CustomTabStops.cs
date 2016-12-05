@@ -27,7 +27,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Text
             // Call Add method with specified position and tab leader type as Dot
             text1.TabStops.Add(350, Aspose.Pdf.Generator.TabLeaderType.Dot);
 
-            pdf.Save(dataDir + "CustomTabStops_out_.pdf");
+            pdf.Save(dataDir + "CustomTabStops_out.pdf");
             // ExEnd:CustomTabStops
         }
     }

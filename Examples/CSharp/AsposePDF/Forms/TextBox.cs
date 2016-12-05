@@ -14,7 +14,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Forms
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-            //Open document
+            // Open document
             Document pdfDocument = new Document(dataDir + "TextField.pdf");
 
             // Create a field
@@ -33,7 +33,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Forms
             // Add field to the document
             pdfDocument.Form.Add(textBoxField, 1);
 
-            dataDir = dataDir + "TextBox_out_.pdf";
+            dataDir = dataDir + "TextBox_out.pdf";
             // Save modified PDF
             pdfDocument.Save(dataDir);
             // ExEnd:AddTextBoxField

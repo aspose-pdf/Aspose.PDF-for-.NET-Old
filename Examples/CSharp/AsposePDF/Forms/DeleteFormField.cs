@@ -17,7 +17,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Forms
 
             // Delete a particular field by name
             pdfDocument.Form.Delete("textbox1");
-            dataDir = dataDir + "DeleteFormField_out_.pdf";
+            dataDir = dataDir + "DeleteFormField_out.pdf";
             // Save modified document
             pdfDocument.Save(dataDir);
             // ExEnd:DeleteFormField

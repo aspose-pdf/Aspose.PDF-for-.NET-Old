@@ -14,7 +14,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.TechnicalArticles
             string dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
 
             Stream src = new FileStream(dataDir + "log.xml", FileMode.Open, FileAccess.Read);
-            Stream dest = new FileStream(dataDir + "XMLToPdf_out_.pdf", FileMode.Create, FileAccess.ReadWrite);
+            Stream dest = new FileStream(dataDir + "XMLToPdf_out.pdf", FileMode.Create, FileAccess.ReadWrite);
             FormDataConverter.ConvertXmlToFdf(src, dest);
             dest.Close();
             src.Close();

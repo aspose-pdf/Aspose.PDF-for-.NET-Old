@@ -53,7 +53,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Tables
             table1.IsInNewPage = true;
             // I want to keep table 1 to next page please...
             paragraphs.Add(table1);
-            dataDir = dataDir + "IsNewPageProperty_Test_out_.pdf";
+            dataDir = dataDir + "IsNewPageProperty_Test_out.pdf";
             doc.Save(dataDir);
             // ExEnd:RenderTable
             Console.WriteLine("\nTable render successfully on a page.\nFile saved at " + dataDir); 

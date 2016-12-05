@@ -20,13 +20,13 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.TechnicalArticles
             // Get the current System time and set its format
             string hoursSeconds = DateTime.Now.ToString("hh-mm");
             // Set the value for the final Resultant Pdf document
-            string masterFileName = date + "_" + hoursSeconds + "_out_.pdf";
+            string masterFileName = date + "_" + hoursSeconds + "_out.pdf";
 
             // Instantiate PdfFileEditor object
             Aspose.Pdf.Facades.PdfFileEditor pdfEditor = new PdfFileEditor();
 
-            //Call Concatenate method of PdfFileEditor object to concatenate all input files
-            //into a single output file
+            // Call Concatenate method of PdfFileEditor object to concatenate all input files
+            // Into a single output file
             pdfEditor.Concatenate(fileEntries, dataDir + masterFileName);
             // ExEnd:ConcatenatingAllPdfFiles                      
         }

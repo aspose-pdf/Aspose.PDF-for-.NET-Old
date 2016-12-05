@@ -14,10 +14,10 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion.PDFToHTMLForma
                 // ExStart:PrefixToImportDirectives
                 // The path to the documents directory.
                 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion_PDFToHTMLFormat();
-                string linceseFile = ""; // e.g @"F:\_Sources\Aspose.Total.lic"
+                string linceseFile = ""; // E.g @"F:\_Sources\Aspose.Total.lic"
                 (new Aspose.Pdf.License()).SetLicense(linceseFile);
                 Document pdfDocument = new Document(dataDir + "input.pdf");
-                string outHtmlFile = dataDir + "PrefixToImportDirectives_out_.html";
+                string outHtmlFile = dataDir + "PrefixToImportDirectives_out.html";
                 _folderForReferencedResources_36435 = dataDir;
                 // Create HtmlSaveOption with tested feature
                 HtmlSaveOptions saveOptions = new HtmlSaveOptions();
@@ -66,7 +66,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion.PDFToHTMLForma
         }
         private static string Strategy_10_CSS_ReturnResultPathInPredefinedTestFolder(HtmlSaveOptions.CssUrlRequestInfo requestInfo)
         {
-            string template = "http://localhost:24661/document-viewer/GetResourceForHtmlHandler?documentPath=Deutschland201207Arbeit.pdf&resourcePath=style{0}.css&fileNameOnly=false";
+            string template = "http:// Localhost:24661/document-viewer/GetResourceForHtmlHandler?documentPath=Deutschland201207Arbeit.pdf&resourcePath=style{0}.css&fileNameOnly=false";
             return template;
         }
         // ExEnd:PrefixToImportDirectivesHelper

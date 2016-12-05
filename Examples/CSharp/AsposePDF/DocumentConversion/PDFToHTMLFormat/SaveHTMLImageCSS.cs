@@ -18,10 +18,10 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion.PDFToHTMLForma
 
                 // Pay attention that we put non-existing path here : since we use custon resource processing it won't be in use.
                 // If You forget implement some of required saving strategies(CustomHtmlSavingStrategy,CustomResourceSavingStrategy,CustomCssSavingStrategy), then saving will return "Path not found" exception
-                string outHtmlFile = dataDir + "SaveHTMLImageCSS_out_.html";
+                string outHtmlFile = dataDir + "SaveHTMLImageCSS_out.html";
 
                 // Create HtmlSaveOption with custom saving strategies that will do all the saving job
-                // in such approach You can split HTML in pages if You will
+                // In such approach You can split HTML in pages if You will
                 HtmlSaveOptions saveOptions = new HtmlSaveOptions();
                 saveOptions.SplitIntoPages = true;
 
@@ -59,7 +59,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion.PDFToHTMLForma
         {
             string template = "style{0}.css";
             // One more example of template :
-            // String template = "http://localhost:24661/document-viewer/GetResourceForHtmlHandler?documentPath=Deutschland201207Arbeit.pdf&resourcePath=style{0}.css&fileNameOnly=false";
+            // String template = "http:// Localhost:24661/document-viewer/GetResourceForHtmlHandler?documentPath=Deutschland201207Arbeit.pdf&resourcePath=style{0}.css&fileNameOnly=false";
             return template;
         }
 
@@ -95,7 +95,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion.PDFToHTMLForma
             }
 
             // We should return URI bt which resource will be referenced in CSS(for font)
-            // or HTML(for images)
+            // Or HTML(for images)
             //  This  is very siplistic way - here we just return file name or resource.
             //  You can put here some URI that will include ID of resource in database etc. 
             //  - this URI will be added into result CSS or HTML to refer the resource

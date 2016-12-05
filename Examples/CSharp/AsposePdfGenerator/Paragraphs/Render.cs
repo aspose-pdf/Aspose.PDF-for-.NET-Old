@@ -28,7 +28,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Paragraphs
             // Add the text paragraph to be rendered to the section
             sec1.Paragraphs.Add(t2);
 
-            dataDir = dataDir + "RenderParagraph_out_.pdf";
+            dataDir = dataDir + "RenderParagraph_out.pdf";
             // Save the Pdf document
             pdf1.Save(dataDir);
             // ExEnd:Render   

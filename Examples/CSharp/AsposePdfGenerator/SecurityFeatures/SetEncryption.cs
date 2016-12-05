@@ -33,7 +33,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.SecurityFeatures
             // Add the text paragraph to the section
             sec1.Paragraphs.Add(text1);
 
-            dataDir = dataDir + "SetEncryption_out_.pdf";
+            dataDir = dataDir + "SetEncryption_out.pdf";
             // Save the Pdf                           
             pdf1.Save(dataDir);
             // ExEnd:SetEncryption           

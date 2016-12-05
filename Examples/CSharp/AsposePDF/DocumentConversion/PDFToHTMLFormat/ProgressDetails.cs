@@ -13,11 +13,11 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion.PDFToHTMLForma
                 // ExStart:ProgressDetails
                 // The path to the documents directory.
                 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion_PDFToHTMLFormat();
-                string licenseFile = ""; //e.g F:\_Sources\Aspose_5\trunk\testdata\License\Aspose.Total.lic
+                string licenseFile = ""; // E.g F:\_Sources\Aspose_5\trunk\testdata\License\Aspose.Total.lic
                 (new Aspose.Pdf.License()).SetLicense(licenseFile);
                 Document doc = new Document(dataDir + "input.pdf");
                 HtmlSaveOptions saveOptions = new HtmlSaveOptions();
-                // saveOptions.CustomProgressHandler = new HtmlSaveOptions.ConversionProgessEventHandler(ShowProgressOnConsole);
+                // SaveOptions.CustomProgressHandler = new HtmlSaveOptions.ConversionProgessEventHandler(ShowProgressOnConsole);
                 saveOptions.SplitIntoPages = false;
                 doc.Save(dataDir + "ProgressDetails_out_.html", saveOptions);
                 Console.ReadLine();

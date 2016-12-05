@@ -18,7 +18,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.WorkingDocuments
             // Optimize for web
             pdfDocument.Optimize();
 
-            dataDir = dataDir + "OptimizeDocument_out_.pdf";
+            dataDir = dataDir + "OptimizeDocument_out.pdf";
 
             // Save output document
             pdfDocument.Save(dataDir);

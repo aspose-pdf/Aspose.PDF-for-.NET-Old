@@ -38,7 +38,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Operators
             page.Contents.Add(new Operator.Do(ximage.Name));
             // Using GRestore operator: this operator restores graphics state
             page.Contents.Add(new Operator.GRestore());
-            dataDir = dataDir + "PDFOperators_out_.pdf";
+            dataDir = dataDir + "PDFOperators_out.pdf";
             // Save updated document
             pdfDocument.Save(dataDir);
             // ExEnd:PDFOperators            

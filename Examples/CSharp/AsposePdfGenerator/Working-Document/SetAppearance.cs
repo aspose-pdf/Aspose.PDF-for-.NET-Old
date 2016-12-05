@@ -18,7 +18,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.WorkingDocuments
             // Set OpenType property of Pdf instance to any pre-defined value
             pdf1.OpenType = Aspose.Pdf.Generator.OpenType.Thumbnails;
 
-            dataDir = dataDir + "SetAppearance_out_.pdf";
+            dataDir = dataDir + "SetAppearance_out.pdf";
             pdf1.Save(dataDir);
             // ExEnd:SetAppearance
             Console.WriteLine("\nAppearance setup successfully.\nFile saved at " + dataDir);

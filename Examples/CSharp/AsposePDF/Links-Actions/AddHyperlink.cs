@@ -38,7 +38,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.LinksActions
             textAnnotation.Border = border;
             // Add FreeText annotation to annotations collection of first page of Document
             document.Pages[1].Annotations.Add(textAnnotation);
-            dataDir = dataDir + "AddHyperlink_out_.pdf";
+            dataDir = dataDir + "AddHyperlink_out.pdf";
             // Save updated document
             document.Save(dataDir);
             // ExEnd:AddHyperlink

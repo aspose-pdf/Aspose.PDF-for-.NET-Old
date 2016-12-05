@@ -19,7 +19,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion
             Aspose.Pdf.ExcelSaveOptions excelsave = new ExcelSaveOptions();
 
             // Save the output in XLS format
-            pdfDocument.Save("PDFToXLS_out_.xls", excelsave);
+            pdfDocument.Save("PDFToXLS_out.xls", excelsave);
             // ExEnd:PDFToXLS
         }
         public static void ControlColumn()
@@ -37,7 +37,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion
             // ExEnd:ControlColumn
 
             // Save the output in XLS format
-            pdfDocument.Save("PDFToXLSControlColumn_out_.xls", excelsave);            
+            pdfDocument.Save("PDFToXLSControlColumn_out.xls", excelsave);            
         }
         public static void ExportAllPagesToSingle()
         {
@@ -55,7 +55,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion
             // ExEnd:ExportAllPagesToSingle
 
             // Save the output in XLS format
-            pdfDocument.Save("PDFToXLSExportAllPagesToSingle_out_.xls", excelsave);
+            pdfDocument.Save("PDFToXLSExportAllPagesToSingle_out.xls", excelsave);
         }
     }
 }

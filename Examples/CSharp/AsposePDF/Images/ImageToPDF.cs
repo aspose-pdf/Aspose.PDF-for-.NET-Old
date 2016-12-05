@@ -40,7 +40,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Images
             page.Paragraphs.Add(image1);
             // Set the image file stream
             image1.ImageStream = mystream;
-            dataDir = dataDir + "ImageToPDF_out_.pdf";
+            dataDir = dataDir + "ImageToPDF_out.pdf";
             // Save resultant PDF file
             doc.Save(dataDir);
 

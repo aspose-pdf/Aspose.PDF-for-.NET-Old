@@ -28,7 +28,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.TechnicalArticles
             editor.AddListItem("field2", "item 2");
 
             // Add submit button
-            editor.AddSubmitBtn("submitbutton", 1, "Submit Form", "http://testwebsite.com/testpage", 200, 200, 250, 225);
+            editor.AddSubmitBtn("submitbutton", 1, "Submit Form", "http:// Testwebsite.com/testpage", 200, 200, 250, 225);
 
             // Delete list item
             editor.DelListItem("field2", "item 1");
@@ -58,7 +58,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.TechnicalArticles
             editor.SetFieldLimit("field1", 25);
 
             // Save modifications in the output file
-            editor.Save(dataDir + "FormEditorFeatures2_out_.pdf");
+            editor.Save(dataDir + "FormEditorFeatures2_out.pdf");
             // ExEnd:FormEditorFeatures                      
         }
     }

@@ -14,7 +14,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Images
             string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
             string inputFile = dataDir + "corvette.cgm";
-            dataDir = dataDir + "CGMImageToPDF_out_.pdf";
+            dataDir = dataDir + "CGMImageToPDF_out.pdf";
             // Save CGM into PDF format
             PdfProducer.Produce(inputFile, ImportFormat.Cgm, dataDir);
             // ExEnd:CGMImageToPDF

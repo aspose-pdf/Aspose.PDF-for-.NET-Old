@@ -36,7 +36,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
                 textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
             }
 
-            dataDir = dataDir + "ReplaceTextAll_out_.pdf";
+            dataDir = dataDir + "ReplaceTextAll_out.pdf";
             // Save resulting PDF document.
             pdfDocument.Save(dataDir);
             // ExEnd:ReplaceTextAll

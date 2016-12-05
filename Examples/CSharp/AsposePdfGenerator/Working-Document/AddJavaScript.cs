@@ -23,7 +23,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.WorkingDocuments
 
             // Call the Add method and JavaScript statement as an argument, to show alert
             pdf.JavaScripts.Add("app.alert(\"hello world\");");
-            dataDir = dataDir + "AddJavaScript_out_.pdf";
+            dataDir = dataDir + "AddJavaScript_out.pdf";
             // Save Pdf Document
             pdf.Save(dataDir);
             // ExEnd:AddJavaScript

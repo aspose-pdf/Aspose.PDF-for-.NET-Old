@@ -17,7 +17,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Conversion
             // Bind the source SVG file
             pdf.BindSvg( dataDir + "SVGToPDF.svg");
             // Save the resultant PDF document
-            pdf.Save(dataDir + @"SVGToPDF_out_.pdf");
+            pdf.Save(dataDir + @"SVGToPDF_out.pdf");
             // ExEnd:SVGToPDF
         }
     }

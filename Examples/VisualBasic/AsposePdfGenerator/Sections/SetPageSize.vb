@@ -28,7 +28,7 @@ Namespace AsposePdfGenerator.Sections
 
             dataDir = dataDir & Convert.ToString("SetPageSize_out_.pdf")
 
-            'Save Pdf Document
+            ' Save Pdf Document
             pdf.Save(dataDir)
 
             Console.WriteLine(Convert.ToString(vbLf & "Page size setup successfully." & vbLf & "File saved at ") & dataDir)

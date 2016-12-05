@@ -18,7 +18,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Bookmarks
             // Delete particular outline by Title
             pdfDocument.Outlines.Delete("Child Outline");
 
-            dataDir = dataDir + "DeleteParticularBookmark_out_.pdf";
+            dataDir = dataDir + "DeleteParticularBookmark_out.pdf";
             // Save updated file
             pdfDocument.Save(dataDir);
             // ExEnd:DeleteParticularBookmark

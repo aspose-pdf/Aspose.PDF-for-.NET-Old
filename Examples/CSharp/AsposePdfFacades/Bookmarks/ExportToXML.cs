@@ -18,7 +18,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Bookmarks
             // Export bookmarks
             bookmarkEditor.ExportBookmarksToXML(dataDir+ "bookmarks.xml");
             // Save updated PDF
-            bookmarkEditor.Save(dataDir+ "ExportToXML_out_.pdf");
+            bookmarkEditor.Save(dataDir+ "ExportToXML_out.pdf");
             // ExEnd:ExportToXML            
         }
     }

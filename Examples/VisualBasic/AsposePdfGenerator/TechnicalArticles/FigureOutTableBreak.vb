@@ -51,11 +51,11 @@ Namespace AsposePdfGenerator.TechnicalArticles
             Console.WriteLine("PDF document Height = " + pdf.PageSetup.PageHeight.ToString() + vbLf & "Top Margin Info = " + section.PageInfo.Margin.Top.ToString() + vbLf & "Bottom Margin Info = " + section.PageInfo.Margin.Bottom.ToString() + vbLf & vbLf & "Table-Top Margin Info = " + table1.Margin.Top.ToString() + vbLf & "Average Row Height = " + table1.Rows(0).GetHeight(pdf).ToString() + " " & vbLf & "Table height " + table1.GetHeight(pdf).ToString() + vbLf & " ----------------------------------------" + vbLf & "Total Page Height =" + PageHeight.ToString() + vbLf & "Cummulative height including Table =" + TotalObjectsHeight.ToString())
 
             ' Check if we deduct the sume of Page top margin + Page Bottom margin + Table Top margin and table height from Page height and its less
-            ' than 10 (an average row can be greater than 10)
+            ' Than 10 (an average row can be greater than 10)
             If (PageHeight - TotalObjectsHeight) <= 10 Then
                 ' If the value is less than 10, then display the message. 
                 ' Which shows that another row can not be placed and if we add new 
-                ' row, table will break. It depends upon the row height value.
+                ' Row, table will break. It depends upon the row height value.
                 Console.WriteLine("Page Height - Objects Height < 10, so table will break")
             End If
             ' Save the pdf document

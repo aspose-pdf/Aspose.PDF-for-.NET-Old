@@ -20,7 +20,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Attachments
             contentEditor.DeleteAttachments();
 
             // Save updated PDF
-            contentEditor.Save(dataDir+ "DeleteAllAttachments_out_.pdf");
+            contentEditor.Save(dataDir+ "DeleteAllAttachments_out.pdf");
             // ExEnd:DeleteAllAttachments            
         }
     }

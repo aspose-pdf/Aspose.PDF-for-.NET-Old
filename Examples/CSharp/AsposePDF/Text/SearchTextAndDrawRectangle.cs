@@ -43,7 +43,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
                 }
 
             }
-            dataDir = dataDir + "SearchTextAndDrawRectangle_out_.pdf";
+            dataDir = dataDir + "SearchTextAndDrawRectangle_out.pdf";
             document.Save(dataDir);
             // ExEnd:SearchTextAndDrawRectangle
             Console.WriteLine("\nRectangle drawn successfully on searched text.\nFile saved at " + dataDir);

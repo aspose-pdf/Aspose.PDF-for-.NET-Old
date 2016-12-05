@@ -17,7 +17,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Bookmarks
             // Create bookmark of a particular page
             bookmarkEditor.CreateBookmarkOfPage("Bookmark Name", 2);
             // Save updated PDF file
-            bookmarkEditor.Save(dataDir+ "CreateBookmark-Page_out_.pdf");
+            bookmarkEditor.Save(dataDir+ "CreateBookmark-Page_out.pdf");
             // ExEnd:CreateBookmarkPage
         }
     }

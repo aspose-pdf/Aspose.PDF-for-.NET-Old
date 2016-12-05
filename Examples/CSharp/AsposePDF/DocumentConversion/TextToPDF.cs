@@ -31,7 +31,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion
                 page.Paragraphs.Add(text);
 
                 // Save resultant PDF file
-                doc.Save(dataDir + "TexttoPDF_out_.pdf"); 
+                doc.Save(dataDir + "TexttoPDF_out.pdf"); 
                 // ExEnd:TextToPDF
             }
             catch (Exception ex)

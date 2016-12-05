@@ -26,7 +26,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Images
 
             // Check if pages exist and then convert to image one by one
             while (objConverter.HasNextImage())
-                objConverter.GetNextImage(dataDir+ DateTime.Now.Ticks.ToString() + "_out_.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
+                objConverter.GetNextImage(dataDir+ DateTime.Now.Ticks.ToString() + "_out.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
 
             // Close the PdfConverter object
             objConverter.Close();

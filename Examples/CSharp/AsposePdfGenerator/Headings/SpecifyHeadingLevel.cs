@@ -64,7 +64,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Headings
             heading3.IsAutoSequence = true;
             sec1.Paragraphs.Add(heading3);
 
-            pdf1.Save(dataDir + "SpecifyHeadingLevel_out_.pdf");
+            pdf1.Save(dataDir + "SpecifyHeadingLevel_out.pdf");
             // ExEnd:SpecifyHeadingLevel   
                 
         }

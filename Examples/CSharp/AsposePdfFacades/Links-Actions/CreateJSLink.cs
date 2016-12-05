@@ -22,7 +22,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.LinksActions
             contentEditor.CreateJavaScriptLink("app.alert('Welcome to Aspose!');", rectangle, 1,  System.Drawing.Color.Red);
 
             // Save updated PDF
-            contentEditor.Save( dataDir + "CreateJSLink_out_.pdf");
+            contentEditor.Save( dataDir + "CreateJSLink_out.pdf");
             // ExEnd:CreateJSLink                                 
         }
     }

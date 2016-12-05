@@ -55,7 +55,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.WorkingDocuments
                 // Add heading to page containing TOC
                 tocPage.Paragraphs.Add(heading2);
             }
-            dataDir = dataDir + "TOC_out_.pdf";
+            dataDir = dataDir + "TOC_out.pdf";
             // Save the updated document
             doc.Save(dataDir);
             // ExEnd:AddTOC

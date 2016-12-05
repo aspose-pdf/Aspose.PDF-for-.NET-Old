@@ -22,7 +22,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Bookmarks
             // Create bookmarks
             bookmarkEditor.CreateBookmarks(boomark);
             // Save updated document
-            bookmarkEditor.Save(dataDir+ "AddBookmark_out_.pdf");
+            bookmarkEditor.Save(dataDir+ "AddBookmark_out.pdf");
             // ExEnd:AddBookmark
         }
     }

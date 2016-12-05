@@ -26,7 +26,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Paragraphs
             // Assign and ID to the text paragraph
             text3.ID = "product1";
 
-            dataDir = dataDir + "AssignID_out_.pdf";
+            dataDir = dataDir + "AssignID_out.pdf";
             // Save the resultant PDF
             pdf1.Save(dataDir);
             // ExEnd:AssignID   

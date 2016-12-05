@@ -23,7 +23,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Conversion
                 pdf.BindHTML(htmlAsStream, "");
             }
             // Save the PDF file
-            pdf.Save(dataDir + "HTMLToPDFUsingStream_out_.pdf");
+            pdf.Save(dataDir + "HTMLToPDFUsingStream_out.pdf");
             // ExEnd:HTMLToPDFUsingStream
         }
         public static void EnforceUseAlways()
@@ -43,7 +43,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Conversion
                 pdf.BindHTML(htmlAsStream, "");
             }
             // Save the PDF file
-            pdf.Save(dataDir + "EnforceUseAlways_out_.pdf");
+            pdf.Save(dataDir + "EnforceUseAlways_out.pdf");
             // ExEnd:EnforceUseAlways
         }
     }

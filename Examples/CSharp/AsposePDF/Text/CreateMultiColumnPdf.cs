@@ -68,7 +68,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
 
             page.Paragraphs.Add(box);
 
-            dataDir = dataDir + "CreateMultiColumnPdf_out_.pdf";
+            dataDir = dataDir + "CreateMultiColumnPdf_out.pdf";
             // Save PDF file
             doc.Save(dataDir);
             // ExEnd:CreateMultiColumnPdf            

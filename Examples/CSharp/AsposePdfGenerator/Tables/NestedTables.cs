@@ -66,7 +66,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Tables
             row22.Cells.Add("right bottom cell"); 
             
             // Save the Pdf
-            pdf1.Save(dataDir + "NestedTables_out_.pdf");
+            pdf1.Save(dataDir + "NestedTables_out.pdf");
             // ExEnd:NestedTables   
                 
         }

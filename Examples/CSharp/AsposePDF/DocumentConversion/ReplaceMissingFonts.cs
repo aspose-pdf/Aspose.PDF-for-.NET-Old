@@ -20,10 +20,10 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion
             }
             catch (Exception)
             {
-                //Font is missing on destination machine
+                // Font is missing on destination machine
                 FontRepository.Substitutions.Add(new SimpleFontSubstitution("AgencyFB", "Arial"));
             }
-            var fileNew = new FileInfo(dataDir + "newfile_out_.pdf");
+            var fileNew = new FileInfo(dataDir + "newfile_out.pdf");
             var pdf = new Document(dataDir + "input.pdf");
             pdf.Convert( dataDir +  "log.xml", PdfFormat.PDF_A_1B, ConvertErrorAction.Delete);
             pdf.Save(fileNew.FullName);

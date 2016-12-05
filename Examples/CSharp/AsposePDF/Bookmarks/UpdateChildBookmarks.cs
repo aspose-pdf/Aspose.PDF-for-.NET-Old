@@ -23,7 +23,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Bookmarks
             childOutline.Title = "Updated Outline";
             childOutline.Italic = true;
             childOutline.Bold = true;
-            dataDir = dataDir + "UpdateChildBookmarks_out_.pdf";            
+            dataDir = dataDir + "UpdateChildBookmarks_out.pdf";            
             // Save output
             pdfDocument.Save(dataDir);
             // ExEnd:UpdateChildBookmarks

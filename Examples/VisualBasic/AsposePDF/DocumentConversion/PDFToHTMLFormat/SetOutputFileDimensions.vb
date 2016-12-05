@@ -27,8 +27,8 @@ Namespace AsposePDF.DocumentConversion.PDFToHTMLFormat
                 pdfEditor.HorizontalAlignment = HorizontalAlignment.Center
 
                 ' This scales page content to fit width,
-                ' Comment it out or set Zoom to 1.0F if You don't want to scale
-                ' Content and only want to change page's size (i.e. crop it)
+                ' Comment it out or set Zoom to 1.0F if You don' T want to scale
+                ' Content and only want to change page' S size (i.e. crop it)
                 Dim zoom As Single = Math.Min(CSng(newPageWidth) / CSng(pdfEditor.Document.Pages(1).Rect.Width), CSng(newPageHeight) / CSng(pdfEditor.Document.Pages(1).Rect.Height))
                 pdfEditor.Zoom = zoom
                 ' (float)595;

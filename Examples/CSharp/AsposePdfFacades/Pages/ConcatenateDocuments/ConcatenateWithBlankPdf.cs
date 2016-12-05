@@ -15,7 +15,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.ConcatenateDocuments
             // Create PdfFileEditor object
             PdfFileEditor pdfEditor = new PdfFileEditor();
             // Concatenate files
-            pdfEditor.Concatenate(dataDir + "input.pdf", dataDir + "input2.pdf", dataDir + "blank.pdf", dataDir + "ConcatenateWithBlankPdf_out_.pdf");
+            pdfEditor.Concatenate(dataDir + "input.pdf", dataDir + "input2.pdf", dataDir + "blank.pdf", dataDir + "ConcatenateWithBlankPdf_out.pdf");
             // ExEnd:ConcatenateWithBlankPdf
         }       
     }

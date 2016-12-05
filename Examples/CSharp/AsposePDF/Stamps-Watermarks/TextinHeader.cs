@@ -28,7 +28,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.StampsWatermarks
             }
 
             // Save updated document
-            pdfDocument.Save(dataDir+ "TextinHeader_out_.pdf");
+            pdfDocument.Save(dataDir+ "TextinHeader_out.pdf");
             // ExEnd:TextinHeader
             Console.WriteLine("\nText in header added successfully.\nFile saved at " + dataDir);
             

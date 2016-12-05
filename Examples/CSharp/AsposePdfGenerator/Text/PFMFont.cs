@@ -33,7 +33,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Text
             // Set the font encoding name of the text segment
             t1.Segments[0].TextInfo.FontEncoding = "cp1250";
             // ExEnd:PFMFont
-            dataDir = dataDir + "PFMFont_out_.pdf";
+            dataDir = dataDir + "PFMFont_out.pdf";
             // Create the result PDF Document
             pdf1.Save(dataDir);
             

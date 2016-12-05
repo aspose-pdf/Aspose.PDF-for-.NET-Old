@@ -25,7 +25,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Forms
                 field.PartialName = "NewField";
 
                 // Add radio button options. please note that these options are situated 
-                // neither horizontally nor vertically. 
+                // Neither horizontally nor vertically. 
                 // You can try to set any coordinates (and even size) for them. 
                 RadioButtonOptionField opt1 = new RadioButtonOptionField();
                 opt1.Rect = new Aspose.Pdf.Rectangle(40, 650, 60, 670);
@@ -52,7 +52,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Forms
                 field.Add(opt3);
                 doc.Form.Add(field);
 
-                dataDir = dataDir + "CreateDoc_out_.pdf";
+                dataDir = dataDir + "CreateDoc_out.pdf";
                 // Save the PDF document
                 doc.Save(dataDir);
                 // ExEnd:CreateDoc

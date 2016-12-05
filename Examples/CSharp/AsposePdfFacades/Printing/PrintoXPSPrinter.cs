@@ -29,8 +29,8 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Printing
 
             // Set XPS/PDF printer name
             ps.PrinterName = "Microsoft XPS Document Writer";
-            // or set the PDF printer
-            // ps.PrinterName = "Adobe PDF";
+            // Or set the PDF printer
+            // Ps.PrinterName = "Adobe PDF";
 
             // Set PageSize (if required)
             pgs.PaperSize = new System.Drawing.Printing.PaperSize("A4", 827, 1169);
@@ -61,7 +61,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Printing
             printerSetttings.PrinterName = "Microsoft XPS Document Writer";
 
             // Set output file name and PrintToFile attribute
-            printerSetttings.PrintFileName = dataDir + "print_out_.xps";
+            printerSetttings.PrintFileName = dataDir + "print_out.xps";
             printerSetttings.PrintToFile = true;
 
             // Disable print page dialog
@@ -95,8 +95,8 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Printing
 
             // Set XPS/PDF printer name
             ps.PrinterName = "Microsoft XPS Document Writer";
-            // or set the PDF printer
-            // ps.PrinterName = "Adobe PDF";
+            // Or set the PDF printer
+            // Ps.PrinterName = "Adobe PDF";
 
             // Set PageSize (if required)
             pgs.PaperSize = new System.Drawing.Printing.PaperSize("A4", 827, 1169);

@@ -16,7 +16,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion
                 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
                 // Create a request for the URL.
-                WebRequest request = WebRequest.Create("http://my.signchart.com/Report/PrintBook.asp?ProjectGuid=6FB9DBB0-");
+                WebRequest request = WebRequest.Create("http:// My.signchart.com/Report/PrintBook.asp?ProjectGuid=6FB9DBB0-");
                 // If required by the server, set the credentials.
                 request.Credentials = CredentialCache.DefaultCredentials;
                 // Get the response.
@@ -34,13 +34,13 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion
 
                 MemoryStream stream = new MemoryStream(System.Text.Encoding.UTF8.GetBytes(responseFromServer));
 
-                HtmlLoadOptions options = new HtmlLoadOptions("http://my.signchart.com/");
+                HtmlLoadOptions options = new HtmlLoadOptions("http:// My.signchart.com/");
                 options.ExternalResourcesCredentials = CredentialCache.DefaultCredentials;
 
-                // load HTML file
+                // Load HTML file
                 Document pdfDocument = new Document(stream, options);
-                // save resultant file
-                pdfDocument.Save("ProvideCredentialsDuringHTMLToPDF_out_.pdf");
+                // Save resultant file
+                pdfDocument.Save("ProvideCredentialsDuringHTMLToPDF_out.pdf");
                 // ExEnd:ProvideCredentialsDuringHTMLToPDF
             }
             catch (Exception ex)

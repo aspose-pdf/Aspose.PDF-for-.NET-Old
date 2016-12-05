@@ -24,7 +24,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.TechnicalArticles
             // Import annotations of specified type(s) from XFDF file
             editor.ImportAnnotationFromXfdf(fileStream, annType);
             // Save output pdf file
-            editor.Save(dataDir + "ImportAnnotations_out_.pdf");
+            editor.Save(dataDir + "ImportAnnotations_out.pdf");
             // ExEnd:AnnotationsImport                      
         }
     }

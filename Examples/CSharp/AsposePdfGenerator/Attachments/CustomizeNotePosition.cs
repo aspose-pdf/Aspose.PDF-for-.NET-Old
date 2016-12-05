@@ -42,7 +42,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Attachments
             // Set the position of the note's popup window
             noteAttachment.NoteWindowPosition = new Aspose.Pdf.Generator.RectangleArea(100, 100, 160, 100); 
 
-            dataDir = dataDir + "CustomizeNotePosition_out_.pdf";
+            dataDir = dataDir + "CustomizeNotePosition_out.pdf";
             // Save the Pdf
             pdf1.Save(dataDir);
             // ExEnd:CustomizeNotePosition           

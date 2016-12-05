@@ -30,9 +30,9 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.WorkingDocuments
             pdf.XmpMetadata.AddCreationDate(System.DateTime.Now.ToString());
 
             // User properties
-            pdf.XmpMetadata.AddUserProperty("xmlns:dc=\"http://purl.org/dc/elements/1.1/\"", "dc:contributor", "Aspose");
+            pdf.XmpMetadata.AddUserProperty("xmlns:dc=\"http:// Purl.org/dc/elements/1.1/\"", "dc:contributor", "Aspose");
 
-            dataDir = dataDir + "AddingXMPMetaData_out_.pdf";
+            dataDir = dataDir + "AddingXMPMetaData_out.pdf";
             // Save Pdf Document
             pdf.Save(dataDir);
             // ExEnd:AddingXMPMetaData

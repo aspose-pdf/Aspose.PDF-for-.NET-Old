@@ -24,13 +24,13 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Tables
             // Add the table in paragraphs collection of the desired section
             sec1.Paragraphs.Add(tab1);
 
-            //ExStart:TableRowRepeat
+            // ExStart:TableRowRepeat
             tab1.IsFirstRowRepeated = true;
-            //ExEnd:TableRowRepeat
+            // ExEnd:TableRowRepeat
 
-            //ExStart:TableIsBroken
+            // ExStart:TableIsBroken
             tab1.IsBroken = false;
-            //ExEnd:TableIsBroken
+            // ExEnd:TableIsBroken
 
             // Set with column widths of the table
             tab1.ColumnWidths = "50 50 50";
@@ -61,7 +61,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Tables
             row2.Cells.Add("item3");
 
             // Save the Pdf
-            pdf1.Save(dataDir + "TableAndRowSplitting_out_.pdf");            
+            pdf1.Save(dataDir + "TableAndRowSplitting_out.pdf");            
                 
         }
     }

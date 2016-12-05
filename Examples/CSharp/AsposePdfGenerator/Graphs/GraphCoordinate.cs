@@ -25,17 +25,17 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Graphs
             sec1.Paragraphs.Add(graph1);
 
             // Create an array containing the (X,Y) values of 4 control points
-            // required to position a curve
+            // Required to position a curve
             float[] posArr = new float[]{0,0,200,80,300,40,350,90};
 
             // Create a curve in the graph with the coordinates given as an array to
-            // the constructor of curve class
+            // The constructor of curve class
             Aspose.Pdf.Generator.Curve curve1 = new Aspose.Pdf.Generator.Curve(graph1,posArr);
 
             // Add the curve shape into the shapes collection of the graph
             graph1.Shapes.Add(curve1);
 
-            dataDir = dataDir + "GraphCoordinate_out_.pdf";
+            dataDir = dataDir + "GraphCoordinate_out.pdf";
 
             // Save the Pdf
             pdf1.Save(dataDir);   

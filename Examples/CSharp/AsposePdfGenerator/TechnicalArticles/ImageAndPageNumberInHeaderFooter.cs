@@ -51,7 +51,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.TechnicalArticles
             // Add text to Header section of the Pdf file
             footer.Paragraphs.Add(txt);
             // Save the Pdf file
-            pdf1.Save(dataDir + "ImageAndPageNumberInHeaderFooter_out_.pdf");
+            pdf1.Save(dataDir + "ImageAndPageNumberInHeaderFooter_out.pdf");
             // ExEnd:ImageAndPageNumberInHeaderFooter           
         }
         public static void UsingInlineParagraph()
@@ -105,7 +105,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.TechnicalArticles
             seg2.TextInfo.Color = new Aspose.Pdf.Generator.Color("Maroon");
 
             // Save the Pdf
-            pdf1.Save( dataDir + "ImageAndPageNumberInHeaderFooter_UsingInlineParagraph_out_.pdf");
+            pdf1.Save( dataDir + "ImageAndPageNumberInHeaderFooter_UsingInlineParagraph_out.pdf");
             // ExEnd:UsingInlineParagraph
         }
         public static void UsingFloatingBox()
@@ -135,7 +135,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.TechnicalArticles
             section.Paragraphs.Add(box1);
 
             // Save the document
-            pdf.Save( dataDir + "PageNumber_using_FloatingBox_out_.pdf");
+            pdf.Save( dataDir + "PageNumber_using_FloatingBox_out.pdf");
             // ExEnd:UsingFloatingBox
         }
     }

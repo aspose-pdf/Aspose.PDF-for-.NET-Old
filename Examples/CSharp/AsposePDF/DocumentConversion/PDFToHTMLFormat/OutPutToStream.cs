@@ -22,12 +22,12 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion.PDFToHTMLForma
                 newOptions.FontSavingMode = HtmlSaveOptions.FontSavingModes.SaveInAllFormats;
                 newOptions.PartsEmbeddingMode = HtmlSaveOptions.PartsEmbeddingModes.EmbedAllIntoHtml;
                 newOptions.LettersPositioningMethod = HtmlSaveOptions.LettersPositioningMethods.UseEmUnitsAndCompensationOfRoundingErrorsInCss;
-                newOptions.SplitIntoPages = false;// force write HTMLs of all pages into one output document
+                newOptions.SplitIntoPages = false;// Force write HTMLs of all pages into one output document
 
                 newOptions.CustomHtmlSavingStrategy = new HtmlSaveOptions.HtmlPageMarkupSavingStrategy(SavingToStream);
                 // We can use some non-existing puth as result file name - all real saving will be done
                 // In our custom method SavingToStream() (it's follows this one)                
-                doc.Save(dataDir + "OutPutToStream_out_.html", newOptions);
+                doc.Save(dataDir + "OutPutToStream_out.html", newOptions);
                 // ExEnd:OutPutToStream
             }
             catch (Exception ex)
@@ -41,7 +41,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion.PDFToHTMLForma
             byte[] resultHtmlAsBytes = new byte[htmlSavingInfo.ContentStream.Length];
             htmlSavingInfo.ContentStream.Read(resultHtmlAsBytes, 0, resultHtmlAsBytes.Length);
             // Here You can use any writable stream, file stream is taken just as example
-            string fileName = "stream_out_.html";
+            string fileName = "stream_out.html";
             Stream outStream = File.OpenWrite(fileName);
             outStream.Write(resultHtmlAsBytes, 0, resultHtmlAsBytes.Length);
         }

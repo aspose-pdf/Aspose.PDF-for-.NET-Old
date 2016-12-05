@@ -35,7 +35,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Attachments
             // Set the note to be opened when PDF document is opened
             noteAttachment.IsNoteOpen = true; 
 
-            dataDir = dataDir + "AttachNoteAnnotation_out_.pdf";
+            dataDir = dataDir + "AttachNoteAnnotation_out.pdf";
             // Save the Pdf
             pdf1.Save(dataDir);
             // ExEnd:AttachNoteAnnotation           

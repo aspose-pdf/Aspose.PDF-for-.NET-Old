@@ -38,7 +38,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Text
             seg2.TextInfo.FontSize = 5;
 
             // Save the Pdf
-            pdf1.Save(dataDir + "SetVerticalAlignment_out_.pdf");
+            pdf1.Save(dataDir + "SetVerticalAlignment_out.pdf");
             // ExEnd:SetVerticalAlignment
         }
     }

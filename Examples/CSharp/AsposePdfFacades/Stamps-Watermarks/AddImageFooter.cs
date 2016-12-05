@@ -22,7 +22,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.StampsWatermarks
             fileStamp.AddFooter(new FileStream(dataDir+ "aspose-logo.jpg", FileMode.Open), 10);
 
             // Save updated PDF file
-            fileStamp.Save(dataDir + "AddImage-Footer_out_.pdf");
+            fileStamp.Save(dataDir + "AddImage-Footer_out.pdf");
 
             // Close fileStamp
             fileStamp.Close();

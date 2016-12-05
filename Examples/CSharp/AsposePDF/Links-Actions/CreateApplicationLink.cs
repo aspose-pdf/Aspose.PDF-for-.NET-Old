@@ -23,7 +23,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.LinksActions
             link.Action = new LaunchAction(document, dataDir + "CreateApplicationLink.pdf");
             page.Annotations.Add(link);
 
-            dataDir = dataDir + "CreateApplicationLink_out_.pdf";
+            dataDir = dataDir + "CreateApplicationLink_out.pdf";
             // Save updated document
             document.Save(dataDir);
             // ExEnd:CreateApplicationLink

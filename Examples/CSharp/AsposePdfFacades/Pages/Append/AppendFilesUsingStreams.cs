@@ -17,7 +17,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.Append
             // Create streams
             FileStream inputStream = new FileStream( dataDir + "input.pdf", FileMode.Open);
             FileStream portStream = new FileStream(dataDir + "input2.pdf", FileMode.Open);
-            FileStream outputStream = new FileStream(dataDir + "AppendFilesUsingStreams_out_.pdf", FileMode.Create);
+            FileStream outputStream = new FileStream(dataDir + "AppendFilesUsingStreams_out.pdf", FileMode.Create);
             // Append file
             pdfEditor.Append(inputStream, portStream, 1, 1, outputStream);	
             // ExEnd:AppendFilesUsingStreams

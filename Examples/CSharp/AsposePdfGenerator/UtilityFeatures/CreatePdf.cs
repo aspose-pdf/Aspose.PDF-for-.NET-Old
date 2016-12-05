@@ -13,7 +13,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.UtilityFeatures
             string dataDir = RunExamples.GetDataDir_AsposePdfGenerator_UtilityFeatures();
 
             // Create a file stream to create the PDF document
-            FileStream fs = new FileStream( dataDir +  "SingleSeg-d_out_.pdf", FileMode.Create);
+            FileStream fs = new FileStream( dataDir +  "SingleSeg-d_out.pdf", FileMode.Create);
 
             // Instantiate the Pdf instance and pass the file stream object to its constructor
             Aspose.Pdf.Generator.Pdf pdf = new Aspose.Pdf.Generator.Pdf(fs);
@@ -38,9 +38,9 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.UtilityFeatures
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdfGenerator_UtilityFeatures();
             // Create a file stream to create the PDF document
-            FileStream fs = new FileStream( dataDir +  "CreatePdfUsingXML_out_", FileMode.Create);
+            FileStream fs = new FileStream( dataDir +  "CreatePdfUsingXML_out", FileMode.Create);
 
-            //Instantiate the Pdf instance and pass the file stream object to its constructor
+            // Instantiate the Pdf instance and pass the file stream object to its constructor
             Aspose.Pdf.Generator.Pdf pdf = new Aspose.Pdf.Generator.Pdf(fs);
 
             // Bind the XML file to the Pdf and leave the XSL file parameter as Nothing

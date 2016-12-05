@@ -17,7 +17,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.WorkingDocuments
 
             // Set the DestinationType property of Pdf instance to any pre-defined value
             pdf1.DestinationType = Aspose.Pdf.Generator.DestinationType.FitPage;
-            dataDir = dataDir + "ZoomFactor_out_.pdf";
+            dataDir = dataDir + "ZoomFactor_out.pdf";
             pdf1.Save(dataDir);
             // ExEnd:SetZoomFactor
             Console.WriteLine("\nZoom factor setup successfully.\nFile saved at " + dataDir);

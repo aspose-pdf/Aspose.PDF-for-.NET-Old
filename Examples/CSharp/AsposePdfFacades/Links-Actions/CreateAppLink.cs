@@ -22,7 +22,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.LinksActions
             contentEditor.CreateApplicationLink(rectangle,  dataDir + "test.txt", 1);
 
             // Save updated PDF
-            contentEditor.Save( dataDir + "CreateApplicationLink_out_.pdf");
+            contentEditor.Save( dataDir + "CreateApplicationLink_out.pdf");
             // ExEnd:CreateAppLink                                 
         }
     }

@@ -25,8 +25,8 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.StampsWatermarks
             {
                 page.AddStamp(textStamp);
             }
-            dataDir = dataDir + "TextinFooter_out_.pdf";
-            //save updated PDF file
+            dataDir = dataDir + "TextinFooter_out.pdf";
+            // Save updated PDF file
             pdfDocument.Save(dataDir);
             // ExEnd:TextinFooter
             Console.WriteLine("\nText in footer added successfully.\nFile saved at " + dataDir);

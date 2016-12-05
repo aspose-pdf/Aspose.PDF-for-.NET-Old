@@ -19,7 +19,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.MakeNUp
             filesArray[0] =  dataDir + "input.pdf";
             filesArray[1] = dataDir + "input2.pdf";
             // Make NUp
-            pdfEditor.MakeNUp(filesArray, dataDir + "UsingArrayOfFilesAndPaths_out_.pdf", true);
+            pdfEditor.MakeNUp(filesArray, dataDir + "UsingArrayOfFilesAndPaths_out.pdf", true);
             // ExEnd:UsingArrayOfFilesAndPaths
         }
     }

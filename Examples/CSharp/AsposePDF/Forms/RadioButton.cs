@@ -28,7 +28,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Forms
                 // Add radio button to form object of Document object
                 pdfDocument.Form.Add(radio);
 
-                dataDir = dataDir + "RadioButton_out_.pdf";
+                dataDir = dataDir + "RadioButton_out.pdf";
                 // Save the PDF file
                 pdfDocument.Save(dataDir);
                 // ExEnd:RadioButton

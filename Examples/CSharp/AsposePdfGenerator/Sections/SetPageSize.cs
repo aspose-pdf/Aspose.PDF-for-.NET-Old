@@ -28,9 +28,9 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Sections
             section1.PageInfo.PageHeight = 707.5F;
             // ExEnd:SetPageSize-1
  
-            dataDir = dataDir + "SetPageSize_out_.pdf";
+            dataDir = dataDir + "SetPageSize_out.pdf";
 
-            //Save Pdf Document
+            // Save Pdf Document
             pdf.Save(dataDir);
             
             Console.WriteLine("\nPage size setup successfully.\nFile saved at " + dataDir);

@@ -16,7 +16,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion
             Document pdfDocument = new Document(dataDir + "PDFToHTML.pdf");
 
             // Save the file into MS document format
-            pdfDocument.Save(dataDir + "output_out_.html", SaveFormat.Html);
+            pdfDocument.Save(dataDir + "output_out.html", SaveFormat.Html);
             // ExEnd:PDFToHTML
         }
         public static void MultiPageHTML()
@@ -25,7 +25,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
-            // open the source PDF document
+            // Open the source PDF document
             Document pdfDocument = new Document(dataDir + "PDFToHTML.pdf");
 
             // Instantiate HTML SaveOptions object
@@ -35,7 +35,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion
             htmlOptions.SplitIntoPages = true;
 
             // Save the document
-            pdfDocument.Save(@"MultiPageHTML_out_.html", htmlOptions);
+            pdfDocument.Save(@"MultiPageHTML_out.html", htmlOptions);
             // ExEnd:MultiPageHTML
         }
         public static void SaveSVGFiles()
@@ -54,7 +54,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion
             newOptions.SpecialFolderForSvgImages = dataDir;
 
             // Save the output file
-            doc.Save(dataDir + "SaveSVGFiles_out_.html", newOptions);
+            doc.Save(dataDir + "SaveSVGFiles_out.html", newOptions);
             // ExEnd:SaveSVGFiles
         }
         public static void CompressSVGImages()
@@ -73,7 +73,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion
             newOptions.CompressSvgGraphicsIfAny = true;
             // ExEnd:CompressSVGImages
             // Save the output file
-            doc.Save(dataDir + "CompressSVGImages_out_.html", newOptions);
+            doc.Save(dataDir + "CompressSVGImages_out.html", newOptions);
             
         }
         public static void SpecifyingImageFolder()
@@ -92,7 +92,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion
             newOptions.SpecialFolderForAllImages = dataDir;
             // ExEnd:SpecifyingImageFolder
             // Save the output file
-            doc.Save(dataDir + "SpecifyingImageFolder_out_.html", newOptions);
+            doc.Save(dataDir + "SpecifyingImageFolder_out.html", newOptions);
             
         }
         public static void CreateSubsequentFiles()
@@ -108,7 +108,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion
             options.HtmlMarkupGenerationMode = HtmlSaveOptions.HtmlMarkupGenerationModes.WriteOnlyBodyContent;
             options.SplitIntoPages = true;
 
-            doc.Save(dataDir + "CreateSubsequentFiles_out_.html", options);
+            doc.Save(dataDir + "CreateSubsequentFiles_out.html", options);
             // ExEnd:CreateSubsequentFiles
         }
         public static void TransparentTextRendering()
@@ -121,7 +121,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion
             HtmlSaveOptions htmlOptions = new HtmlSaveOptions();
             htmlOptions.SaveShadowedTextsAsTransparentTexts = true;
             htmlOptions.SaveTransparentTexts = true;
-            doc.Save(dataDir + "TransparentTextRendering_out_.html", htmlOptions);
+            doc.Save(dataDir + "TransparentTextRendering_out.html", htmlOptions);
             // ExEnd:TransparentTextRendering
         }
         public static void LayersRendering()
@@ -138,7 +138,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion
             htmlOptions.ConvertMarkedContentToLayers = true;
 
             // Save the document
-            doc.Save(dataDir + "LayersRendering_out_.html", htmlOptions);
+            doc.Save(dataDir + "LayersRendering_out.html", htmlOptions);
             // ExEnd:LayersRendering
         }
     }

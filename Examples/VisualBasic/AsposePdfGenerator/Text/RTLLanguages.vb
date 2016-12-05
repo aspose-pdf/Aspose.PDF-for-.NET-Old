@@ -33,7 +33,7 @@ Namespace AsposePdfGenerator.Text
             ' Enable text alignment from right to left
             seg0.TextInfo.IsRightToLeft = True
             seg1.TextInfo.IsRightToLeft = False
-            'default
+            ' Default
             seg2.TextInfo.IsRightToLeft = True
 
             ' Enable unicode character set for the text segment
@@ -56,7 +56,7 @@ Namespace AsposePdfGenerator.Text
 
             pdf.Sections(0).Paragraphs.Add(text1)
             pdf.IsRtlInSegmentMode = True
-            'default
+            ' Default
             pdf.Save(dataDir & Convert.ToString("RTLLanguages_out_.pdf"))
             ' ExEnd:RTLLanguages
 

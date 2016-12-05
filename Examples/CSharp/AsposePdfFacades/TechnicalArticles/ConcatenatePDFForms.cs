@@ -15,7 +15,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.TechnicalArticles
             // Set input and output file paths
             string inputFile1 = dataDir + "inFile1.pdf";
             string inputFile2 = dataDir + "inFile2.pdf";
-            string outFile = dataDir + "ConcatenatePDFForms_out_.pdf";
+            string outFile = dataDir + "ConcatenatePDFForms_out.pdf";
 
             // Instantiate PdfFileEditor Object
             PdfFileEditor fileEditor = new PdfFileEditor();

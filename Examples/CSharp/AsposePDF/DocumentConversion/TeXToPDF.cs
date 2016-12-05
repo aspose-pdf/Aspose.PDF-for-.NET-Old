@@ -18,7 +18,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion
                 // Create Document object
                 Aspose.Pdf.Document doc = new Aspose.Pdf.Document(dataDir + "samplefile.tex", Latexoptions);
                 // Save the output in PDF file
-                doc.Save(dataDir + "TeXToPDF_out_.pdf");
+                doc.Save(dataDir + "TeXToPDF_out.pdf");
                 // ExEnd:TeXToPDF
             }
             catch (Exception ex)

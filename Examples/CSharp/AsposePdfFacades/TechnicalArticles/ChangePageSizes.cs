@@ -25,7 +25,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.TechnicalArticles
             pEdit.PageSize = PageSize.PageLetter;
 
             // Save the file
-            pEdit.Save(dataDir + "ChangePageSizes_out_.pdf");
+            pEdit.Save(dataDir + "ChangePageSizes_out.pdf");
 
             // Find at what size a page has been assigned
             pEdit.BindPdf(dataDir + "FilledForm.pdf");

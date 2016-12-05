@@ -34,7 +34,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.TechnicalArticles
             doc.Collection.Add(image);
 
             // Save Portfolio document
-            doc.Save(dataDir + "CreatePDFPortfolio_out_.pdf");
+            doc.Save(dataDir + "CreatePDFPortfolio_out.pdf");
             // ExEnd:CreatePDFPortfolio                      
         }
     }

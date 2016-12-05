@@ -22,7 +22,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion
             options.ContentRecognitionMode = EpubSaveOptions.RecognitionMode.Flow;
             
             // Save the ePUB document
-            pdfDocument.Save(dataDir + "PDFToEPUB_out_.epub", options);
+            pdfDocument.Save(dataDir + "PDFToEPUB_out.epub", options);
             // ExEnd:PDFToEPUB
         }
     }

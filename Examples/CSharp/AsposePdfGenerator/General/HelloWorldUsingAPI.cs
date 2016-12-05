@@ -27,7 +27,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.General
                 // Add a text paragraph into the section
                 sec1.Paragraphs.Add(new Aspose.Pdf.Generator.Text("Hello World"));           
 
-                dataDir = dataDir + "HelloWorldUsingAPI_out_.pdf";
+                dataDir = dataDir + "HelloWorldUsingAPI_out.pdf";
                 // Save the document
                 pdf1.Save(dataDir);
                 // ExEnd:HelloWorldUsingAPI

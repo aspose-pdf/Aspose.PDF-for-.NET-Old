@@ -20,7 +20,7 @@ Namespace AsposePDF.TechnicalArticles
                 fileSpecification.Contents.Read(fileContent, 0, fileContent.Length)
                 Dim filename As String = Path.GetFileName(fileSpecification.Name)
                 ' Save the extracted file to some location
-                Dim fileStream As New FileStream(Convert.ToString(dataDir & Convert.ToString("_out_")) & filename, FileMode.Create)
+                Dim fileStream As New FileStream(Convert.ToString(dataDir & Convert.ToString("_out")) & filename, FileMode.Create)
                 fileStream.Write(fileContent, 0, fileContent.Length)
                 ' Close the stream object
                 fileStream.Close()

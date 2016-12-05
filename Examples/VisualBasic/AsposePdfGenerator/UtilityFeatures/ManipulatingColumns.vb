@@ -9,7 +9,7 @@ Namespace AsposePdfGenerator.UtilityFeatures
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdfGenerator_UtilityFeatures()
 
-            'Instantiate a Pdf object
+            ' Instantiate a Pdf object
             Dim pdf1 As New Aspose.Pdf.Generator.Pdf()
 
             ' Add a section to the Pdf
@@ -69,8 +69,8 @@ Namespace AsposePdfGenerator.UtilityFeatures
             sec1.Paragraphs.Add(text1)
 
             ' Create a graph with specified left and top position settings. Set its
-            ' poition relative to the page. Add a rectangle to its shapes collection and
-            ' then add the graph to the paragraph collection of the section
+            ' Poition relative to the page. Add a rectangle to its shapes collection and
+            ' Then add the graph to the paragraph collection of the section
             Dim graph1 As New Aspose.Pdf.Generator.Graph(200, 50)
             graph1.Left = 200
             graph1.Top = 10
@@ -79,9 +79,9 @@ Namespace AsposePdfGenerator.UtilityFeatures
             sec1.Paragraphs.Add(graph1)
 
             ' Create an attachment as note annotation and add it to the section as a
-            ' pragraph. Set the content and heading for the note. Set its position relative
-            ' to the paragraph. Assign a unique id to this note annotation for the
-            ' reference purposes and then customize its left and top position
+            ' Pragraph. Set the content and heading for the note. Set its position relative
+            ' To the paragraph. Assign a unique id to this note annotation for the
+            ' Reference purposes and then customize its left and top position
             Dim noteAttachment As New Aspose.Pdf.Generator.Attachment()
             sec1.Paragraphs.Add(noteAttachment)
             noteAttachment.AttachmentType = Aspose.Pdf.Generator.AttachmentType.Note

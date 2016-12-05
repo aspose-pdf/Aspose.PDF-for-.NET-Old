@@ -39,7 +39,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Images
             page.Contents.Add(new Operator.Do(ximage.Name));
             // Using GRestore operator: this operator restores graphics state
             page.Contents.Add(new Operator.GRestore());
-            dataDir = dataDir + "AddImage_out_.pdf";
+            dataDir = dataDir + "AddImage_out.pdf";
             // Save updated document
             pdfDocument.Save(dataDir);
             // ExEnd:AddImage

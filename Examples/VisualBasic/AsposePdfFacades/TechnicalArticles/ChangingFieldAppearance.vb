@@ -23,7 +23,7 @@ Namespace AsposePDFFacades.TechnicalArticles
             ' Set field limit - this field will take maximum 20 characters as input
             formEditor.SetFieldLimit("text1", 20)
 
-            'Close the document
+            ' Close the document
             formEditor.Save(dataDir & Convert.ToString("ChangingFieldAppearance_out_.pdf"))
             ' ExEnd:ChangingFieldAppearance                      
         End Sub

@@ -29,7 +29,7 @@ Namespace AsposePDF.Annotations
             ' Add annotation to annotations collection of first page
             doc.Pages(1).Annotations.Add(annot)
             ' Flattens annotation and redacts page contents (i.e. removes text and image
-            ' under redacted annotation)
+            ' Under redacted annotation)
             annot.Redact()
             dataDir = dataDir & Convert.ToString("RedactPage_out_.pdf")
             doc.Save(dataDir)

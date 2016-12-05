@@ -17,7 +17,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Bookmarks
             // Delete bookmark
             bookmarkEditor.DeleteBookmarks("Page2");
             // Save updated PDF file
-            bookmarkEditor.Save(dataDir+ "DeleteABookmark_out_.pdf");
+            bookmarkEditor.Save(dataDir+ "DeleteABookmark_out.pdf");
             // ExEnd:DeleteABookmark
             
         }

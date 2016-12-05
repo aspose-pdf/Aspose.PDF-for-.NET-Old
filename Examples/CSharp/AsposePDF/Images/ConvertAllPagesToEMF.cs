@@ -18,7 +18,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Images
 
             for (int pageCount = 1; pageCount <= pdfDocument.Pages.Count; pageCount++)
             {
-                using (FileStream imageStream = new FileStream(dataDir + "image" + pageCount + "_out_" + ".emf", FileMode.Create))
+                using (FileStream imageStream = new FileStream(dataDir + "image" + pageCount + "_out" + ".emf", FileMode.Create))
                 {
                     // Create Resolution object
                     Resolution resolution = new Resolution(300);

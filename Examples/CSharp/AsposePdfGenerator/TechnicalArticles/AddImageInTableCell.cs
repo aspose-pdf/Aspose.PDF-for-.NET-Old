@@ -42,7 +42,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.TechnicalArticles
             row1.Cells[2].VerticalAlignment = Aspose.Pdf.Generator.VerticalAlignmentType.Center;
 
             // Save the Pdf file
-            pdfConv.Save(dataDir + "AddImageInTableCell_out_.pdf");
+            pdfConv.Save(dataDir + "AddImageInTableCell_out.pdf");
             // ExEnd:AddImageInTableCell           
         }
     }

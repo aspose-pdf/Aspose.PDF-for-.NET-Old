@@ -63,7 +63,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.UtilityFeatures
             pdf1.Watermarks.Add(watermark2);
             pdf1.Watermarks.Add(watermark3);
 
-            dataDir = dataDir + "CustomizingWatermark_out_.pdf";
+            dataDir = dataDir + "CustomizingWatermark_out.pdf";
             // Save the Pdf
             pdf1.Save(dataDir);
             // ExEnd:CustomizingWatermark           

@@ -18,7 +18,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.WorkingDocuments
 
             GoToAction action = new GoToAction(new XYZExplicitDestination(1, 0, 0, .5));
             doc.OpenAction = action;
-            dataDir = dataDir + "Zoomed_pdf_out_.pdf";
+            dataDir = dataDir + "Zoomed_pdf_out.pdf";
             // Save the document
             doc.Save(dataDir);
             // ExEnd:SetZoomFactor

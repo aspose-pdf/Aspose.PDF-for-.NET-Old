@@ -21,7 +21,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Pages
             {
                 Document newDocument = new Document();
                 newDocument.Pages.Add(pdfPage);
-                newDocument.Save(dataDir + "page_" + pageCount + "_out_" + ".pdf");
+                newDocument.Save(dataDir + "page_" + pageCount + "_out" + ".pdf");
                 pageCount++;
             }
             // ExEnd:SplitToPages       

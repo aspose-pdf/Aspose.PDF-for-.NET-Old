@@ -22,13 +22,13 @@ Namespace AsposePdfGenerator.Tables
             ' Add the table in paragraphs collection of the desired section
             sec1.Paragraphs.Add(tab1)
 
-            'ExStart:TableRowRepeat
+            ' ExStart:TableRowRepeat
             tab1.IsFirstRowRepeated = True
-            'ExEnd:TableRowRepeat
+            ' ExEnd:TableRowRepeat
 
-            'ExStart:TableIsBroken
+            ' ExStart:TableIsBroken
             tab1.IsBroken = False
-            'ExEnd:TableIsBroken
+            ' ExEnd:TableIsBroken
 
             ' Set with column widths of the table
             tab1.ColumnWidths = "50 50 50"

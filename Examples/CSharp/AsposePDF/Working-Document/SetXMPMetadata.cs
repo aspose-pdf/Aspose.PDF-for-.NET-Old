@@ -20,7 +20,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.WorkingDocuments
             pdfDocument.Metadata["xmp:Nickname"] = "Nickname";
             pdfDocument.Metadata["xmp:CustomProperty"] = "Custom Value";
 
-            dataDir = dataDir + "SetXMPMetadata_out_.pdf";
+            dataDir = dataDir + "SetXMPMetadata_out.pdf";
             // Save document
             pdfDocument.Save(dataDir);
             // ExEnd:SetXMPMetadata
@@ -34,10 +34,10 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.WorkingDocuments
 
             // Open document
             Document pdfDocument = new Document(dataDir + "SetXMPMetadata.pdf");
-            pdfDocument.Metadata.RegisterNamespaceUri("xmp", "http://ns.adobe.com/xap/1.0/"); // xmlns prefix was removed
+            pdfDocument.Metadata.RegisterNamespaceUri("xmp", "http:// Ns.adobe.com/xap/1.0/"); // Xmlns prefix was removed
             pdfDocument.Metadata["xmp:ModifyDate"] = DateTime.Now;
 
-            dataDir = dataDir + "SetPrefixMetadata_out_.pdf";
+            dataDir = dataDir + "SetPrefixMetadata_out.pdf";
             // Save document
             pdfDocument.Save(dataDir);
             // ExEnd:SetPrefixMetadata

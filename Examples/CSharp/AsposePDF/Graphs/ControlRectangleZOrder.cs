@@ -28,7 +28,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Graphs
             AddRectangle(page1, 20, 20, 30, 30, Aspose.Pdf.Color.Blue, 1);
             // Create a new rectangle with Color as Green, Z-Order as 0 and certain dimensions
             AddRectangle(page1, 40, 40, 60, 30, Aspose.Pdf.Color.Green, 0);
-            dataDir = dataDir + "ControlRectangleZOrder_out_.pdf";
+            dataDir = dataDir + "ControlRectangleZOrder_out.pdf";
             // Save resultant PDF file
             doc1.Save(dataDir);
             // ExEnd:ControlRectangleZOrder
@@ -37,25 +37,25 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Graphs
         // ExStart:AddRectangle
         private static void AddRectangle(Aspose.Pdf.Page page, float x, float y, float width, float height, Aspose.Pdf.Color color, int zindex)
         {
-            // create graph object with dimensions same as specified for Rectangle object
+            // Create graph object with dimensions same as specified for Rectangle object
             Aspose.Pdf.Drawing.Graph graph = new Aspose.Pdf.Drawing.Graph(width, height);
-            // can we change the position of graph instance
+            // Can we change the position of graph instance
             graph.IsChangePosition = false;
-            // set Left coordinate position for Graph instance
+            // Set Left coordinate position for Graph instance
             graph.Left = x;
-            // set Top coordinate position for Graph object
+            // Set Top coordinate position for Graph object
             graph.Top = y;
             // Add a rectangle inside the "graph"
             Aspose.Pdf.Drawing.Rectangle rect = new Aspose.Pdf.Drawing.Rectangle(0, 0, width, height);
-            // set rectangle fill color
+            // Set rectangle fill color
             rect.GraphInfo.FillColor = color;
-            // color of graph object
+            // Color of graph object
             rect.GraphInfo.Color = color;
-            // add rectangle to shapes collection of graph instance
+            // Add rectangle to shapes collection of graph instance
             graph.Shapes.Add(rect);
-            // set Z-Index for rectangle object
+            // Set Z-Index for rectangle object
             graph.ZIndex = zindex;
-            // add graph to paragraphs collection of page object
+            // Add graph to paragraphs collection of page object
             page.Paragraphs.Add(graph);
         }
         // ExEnd:AddRectangle

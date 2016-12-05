@@ -35,7 +35,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.TechnicalArticles
                     }
                 }
             }
-            pdf.Save(dataDir + "BindXML_out_.pdf");
+            pdf.Save(dataDir + "BindXML_out.pdf");
             // ExEnd:BindXML           
         }
     }

@@ -51,7 +51,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion.PDFToHTMLForma
                 htmlOptions.PageBorderIfAny = new SaveOptions.BorderInfo(borderStyle);
 
                 // Conversion to HTML itself
-                exportDoc.Save(dataDir + "SetOutputFileDimensions_out_.html", htmlOptions);
+                exportDoc.Save(dataDir + "SetOutputFileDimensions_out.html", htmlOptions);
                 // Close the stream object
                 output.Close();
                 // ExEnd:SetOutputFileDimensions

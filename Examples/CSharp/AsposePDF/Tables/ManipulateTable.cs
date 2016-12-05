@@ -15,7 +15,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Tables
                 // The path to the documents directory.
                 string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
-                // load existing PDF file
+                // Load existing PDF file
                 Document pdfDocument = new Document(dataDir + "input.pdf");
                 // Create TableAbsorber object to find tables
                 TableAbsorber absorber = new TableAbsorber();
@@ -28,7 +28,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Tables
 
                 // Change text of the first text fragment in the cell
                 fragment.Text = "hi world";
-                dataDir = dataDir + "ManipulateTable_out_.pdf";
+                dataDir = dataDir + "ManipulateTable_out.pdf";
                 pdfDocument.Save(dataDir);
                 // ExEnd:ManipulateTable
                 Console.WriteLine("\nTable manipulated successfully.\nFile saved at " + dataDir);

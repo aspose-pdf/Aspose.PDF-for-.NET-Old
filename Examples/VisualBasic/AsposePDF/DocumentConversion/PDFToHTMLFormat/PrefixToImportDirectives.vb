@@ -12,7 +12,7 @@ Namespace AsposePDF.DocumentConversion.PDFToHTMLFormat
                 ' The path to the documents directory.
                 Dim dataDir As String = RunExamples.GetDataDir_AsposePdf_DocumentConversion_PDFToHTMLFormat()
                 Dim linceseFile As String = ""
-                ' e.g @"F:\_Sources\Aspose.Total.lic"
+                ' E.g @"F:\_Sources\Aspose.Total.lic"
                 Dim license As New License()
                 license.SetLicense(linceseFile)
                 Dim pdfDocument As New Document(dataDir & Convert.ToString("input.pdf"))

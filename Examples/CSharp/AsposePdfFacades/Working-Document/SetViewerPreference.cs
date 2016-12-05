@@ -22,7 +22,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.WorkingDocument
             contentEditor.ChangeViewerPreference(ViewerPreference.PageModeUseNone);
 
             // Save output PDF file
-            contentEditor.Save(dataDir+ "SetViewerPreference_out_.pdf");
+            contentEditor.Save(dataDir+ "SetViewerPreference_out.pdf");
             // ExEnd:SetViewerPreference            
         }
     }

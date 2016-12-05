@@ -32,7 +32,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.StampsWatermarks
             fileStamp.AddPageNumber(formattedText, 0);
 
             // Save updated PDF file
-            fileStamp.Save(dataDir + "AddPageNumber_out_.pdf");
+            fileStamp.Save(dataDir + "AddPageNumber_out.pdf");
 
             // Close fileStamp
             fileStamp.Close();
@@ -53,7 +53,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.StampsWatermarks
             // Add page number stamp at Bottom-Center of page
             fileStamp.AddPageNumber("#");
             // Save updated PDF file
-            fileStamp.Save(dataDir + "CustomNumberStyle_out_.pdf");
+            fileStamp.Save(dataDir + "CustomNumberStyle_out.pdf");
             // ExEnd:CustomNumberStyle
         }
     }

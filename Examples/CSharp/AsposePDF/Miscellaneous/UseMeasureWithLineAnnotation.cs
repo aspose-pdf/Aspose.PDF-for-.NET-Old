@@ -40,7 +40,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Miscellaneous
             line.ShowCaption = true;
             line.CaptionPosition = CaptionPosition.Top;
             doc.Pages[1].Annotations.Add(line);
-            doc.Save(dataDir + "UseMeasureWithLineAnnotation_out_.pdf");
+            doc.Save(dataDir + "UseMeasureWithLineAnnotation_out.pdf");
             // ExEnd:UseMeasureWithLineAnnotation
         }
     }

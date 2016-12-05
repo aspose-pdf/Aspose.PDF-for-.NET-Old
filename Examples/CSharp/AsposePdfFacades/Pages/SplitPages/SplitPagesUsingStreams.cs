@@ -16,7 +16,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.SplitPages
             PdfFileEditor pdfEditor = new PdfFileEditor();
             // Create streams
             FileStream inputStream = new FileStream(dataDir + "MultiplePages.pdf", FileMode.Open);
-            FileStream outputStream = new FileStream(dataDir + "SplitPagesUsingStreams_out_.pdf", FileMode.Create);
+            FileStream outputStream = new FileStream(dataDir + "SplitPagesUsingStreams_out.pdf", FileMode.Create);
             // Split pages
             pdfEditor.SplitFromFirst(inputStream, 3, outputStream);
             // ExEnd:SplitPagesUsingStreams

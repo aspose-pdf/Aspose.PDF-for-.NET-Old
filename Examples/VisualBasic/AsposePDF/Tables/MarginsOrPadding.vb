@@ -47,7 +47,7 @@ Namespace AsposePDF.Tables
             row2.Cells.Add("item2")
             row2.Cells.Add("item3")
             dataDir = dataDir & Convert.ToString("MarginsOrPadding_out_.pdf")
-            'Save the Pdf
+            ' Save the Pdf
             doc.Save(dataDir)
             ' ExEnd:MarginsOrPadding
             Console.WriteLine(Convert.ToString(vbLf & "Cell and table border width setup successfully." & vbLf & "File saved at ") & dataDir)

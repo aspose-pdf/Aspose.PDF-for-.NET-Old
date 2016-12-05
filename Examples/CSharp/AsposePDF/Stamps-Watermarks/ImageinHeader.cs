@@ -26,7 +26,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.StampsWatermarks
             {
                 page.AddStamp(imageStamp);
             }
-            dataDir = dataDir + "ImageinHeader_out_.pdf";
+            dataDir = dataDir + "ImageinHeader_out.pdf";
             // Save updated document
             pdfDocument.Save(dataDir);
             // ExEnd:ImageinHeader

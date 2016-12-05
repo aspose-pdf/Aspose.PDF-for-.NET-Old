@@ -17,7 +17,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Graphs
             int red = 100;
             int blue = 0;
             // Create Color object using Alpha RGB 
-            Aspose.Pdf.Color alphaColor = Aspose.Pdf.Color.FromArgb(alpha, red, green, blue); // provide alpha channel
+            Aspose.Pdf.Color alphaColor = Aspose.Pdf.Color.FromArgb(alpha, red, green, blue); // Provide alpha channel
             // Instantiate Document object
             Document document = new Document();
             // Add page to pages collection of PDF file
@@ -38,7 +38,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Graphs
             graphInfo.FillColor = (alphaColor);
             // Add rectangle shape to shapes collection of graph object
             graph.Shapes.Add(rectangle);
-            dataDir = dataDir + "AddDrawing_out_.pdf";
+            dataDir = dataDir + "AddDrawing_out.pdf";
             // Save PDF file
             document.Save(dataDir);
             // ExEnd:AddDrawing

@@ -38,7 +38,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Paragraphs
             // Add a rectangle to the graph object (g2) in its shapes collection
             g2.Shapes.Add(new Aspose.Pdf.Generator.Rectangle(g2, 20, 20, 60, 60));
 
-            dataDir = dataDir + "SetMargins_out_.pdf";
+            dataDir = dataDir + "SetMargins_out.pdf";
             // Save the resultant PDF
             pdf1.Save(dataDir);
             // ExEnd:SetMargins

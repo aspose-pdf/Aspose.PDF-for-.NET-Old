@@ -29,7 +29,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Forms
             // Set initial field value
             field.Value = "123";
 
-            dataDir = dataDir + "Restricted_out_.pdf";
+            dataDir = dataDir + "Restricted_out.pdf";
             // Save resultant PDF
             doc.Save(dataDir);
             // ExEnd:SetJavaScript

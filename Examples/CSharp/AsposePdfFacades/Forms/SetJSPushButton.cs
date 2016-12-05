@@ -18,7 +18,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Forms
             // Set JavaScript
             form.SetFieldScript("pushbutton", "app.alert('Hello World!');");
             // Save update document
-            form.Save(dataDir + "SetJSPushButton_out_.pdf");
+            form.Save(dataDir + "SetJSPushButton_out.pdf");
             // ExEnd:SetJSPushButton
         }        
     }

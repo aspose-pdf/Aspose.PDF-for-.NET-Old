@@ -16,9 +16,9 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Forms
             // Open the document and create a FormEditor object
             form.BindPdf(dataDir + "input.pdf");
             // Set submit URL
-            form.SetSubmitUrl("submitbutton", "http://www.aspose.com");
+            form.SetSubmitUrl("submitbutton", "http:// Www.aspose.com");
             // Save update document
-            form.Save(dataDir + "SetSubmitButtonURL_out_.pdf"); 
+            form.Save(dataDir + "SetSubmitButtonURL_out.pdf"); 
             // ExEnd:SetSubmitButtonURL
         }        
     }

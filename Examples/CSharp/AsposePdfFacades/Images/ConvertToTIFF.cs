@@ -19,7 +19,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Images
             // Start the conversion process
             pdfConverter.DoConvert();            
             // Convert to TIFF image
-            pdfConverter.SaveAsTIFF(dataDir+ "output_out_.tif");
+            pdfConverter.SaveAsTIFF(dataDir+ "output_out.tif");
             // Close Converter object
             pdfConverter.Close();
             // ExEnd:ConvertToTIFF

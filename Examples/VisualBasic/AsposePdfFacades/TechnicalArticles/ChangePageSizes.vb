@@ -18,7 +18,7 @@ Namespace AsposePDFFacades.TechnicalArticles
             ' Change page size of the selected pages
             pEdit.ProcessPages = New Integer() {1}
 
-            ' Here we select a member named 'LETTER' from the list of members of PageSize class and assign it to PageSize property of the PdfPageEditor class
+            ' Here we select a member named ' LETTER' From the list of members of PageSize class and assign it to PageSize property of the PdfPageEditor class
             pEdit.PageSize = PageSize.PageLetter
 
             ' Save the file

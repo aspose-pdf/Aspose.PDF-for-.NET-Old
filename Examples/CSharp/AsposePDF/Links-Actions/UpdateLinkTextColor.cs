@@ -39,7 +39,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.LinksActions
                     }
 
                 }
-                dataDir = dataDir + "UpdateLinkTextColor_out_.pdf";
+                dataDir = dataDir + "UpdateLinkTextColor_out.pdf";
                 // Save the document with updated link
                 doc.Save(dataDir);
                 // ExEnd:UpdateLinkTextColor

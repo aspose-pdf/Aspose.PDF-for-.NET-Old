@@ -24,7 +24,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion.PDFToHTMLForma
                 options.CustomResourceSavingStrategy = new HtmlSaveOptions.ResourceSavingStrategy(Custom_processor_of_embedded_images);
                                 
                 // Do conversion
-                testDoc.Save(dataDir + @"PrefixForURLs_out_.html", options);
+                testDoc.Save(dataDir + @"PrefixForURLs_out.html", options);
                 // ExEnd:PrefixForURLs
             }
             catch (Exception ex)
@@ -73,11 +73,11 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion.PDFToHTMLForma
             HtmlSaveOptions.HtmlImageSavingInfo asHtmlImageSavingInfo = resourceSavingInfo as HtmlSaveOptions.HtmlImageSavingInfo;
             if (asHtmlImageSavingInfo.ParentType == HtmlSaveOptions.ImageParentTypes.SvgImage)
             {
-                return "http://localhost:255/" + resourceSavingInfo.SupposedFileName;
+                return "http:// Localhost:255/" + resourceSavingInfo.SupposedFileName;
             }
             else
             {
-                return "http://localhost:GetImage/imageID=" + resourceSavingInfo.SupposedFileName;
+                return "http:// Localhost:GetImage/imageID=" + resourceSavingInfo.SupposedFileName;
             }
         }
         // ExEnd:PrefixForURLsHelper

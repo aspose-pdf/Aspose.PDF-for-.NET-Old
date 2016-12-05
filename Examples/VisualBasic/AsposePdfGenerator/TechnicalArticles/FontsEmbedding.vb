@@ -54,7 +54,7 @@ Namespace AsposePdfGenerator.TechnicalArticles
             Dim sec1 As Aspose.Pdf.Generator.Section = pdf1.Sections.Add()
 
             ' Create string variables with text containing html tags
-            Dim s As String = "<html><body><font isUnicode='true' face='Bete Noir NF' size=18><i>Sample text </i>with Custome font Embedded </font><br><font isUnicode='true' face='Courier New' size=10><s>Sample Text </s>in <u>Courier New</u> font</font></body></html>"
+            Dim s As String = "<html><body><font isUnicode=' True' Face=' Bete Noir NF' Size=18><i>Sample text </i>with Custome font Embedded </font><br><font isUnicode=' True' Face=' Courier New' Size=10><s>Sample Text </s>in <u>Courier New</u> font</font></body></html>"
 
             ' Create text paragraphs containing HTML text
             Dim t1 As New Aspose.Pdf.Generator.Text(s)

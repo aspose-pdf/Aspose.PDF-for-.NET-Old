@@ -25,7 +25,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.SecuritySignatures
                 // Only screen reading option is enabled
                 document.Encrypt("user", "owner", documentPrivilege, CryptoAlgorithm.AESx128, false);
                 // Save updated document
-                document.Save(dataDir + "SetPrivileges_out_.pdf");
+                document.Save(dataDir + "SetPrivileges_out.pdf");
             }
             // ExEnd:SetPrivileges   
             

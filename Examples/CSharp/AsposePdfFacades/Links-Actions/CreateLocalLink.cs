@@ -22,7 +22,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.LinksActions
             contentEditor.CreateLocalLink(rectangle, 3, 1,  System.Drawing.Color.Red);
 
             // Save updated PDF
-            contentEditor.Save( dataDir + "CreateLocalLink_out_.pdf");
+            contentEditor.Save( dataDir + "CreateLocalLink_out.pdf");
             // ExEnd:CreateLocalLink                                 
         }
     }

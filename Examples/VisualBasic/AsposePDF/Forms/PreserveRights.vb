@@ -13,7 +13,7 @@ Namespace AsposePDF.Forms
 
             ' Read the source PDF form with FileAccess of Read and Write.
             ' We need ReadWrite permission because after modification,
-            ' we need to save the updated contents in same document/file.
+            ' We need to save the updated contents in same document/file.
             Dim fs As New FileStream(dataDir & Convert.ToString("input.pdf"), FileMode.Open, FileAccess.ReadWrite)
             ' Instantiate Document instance
             Dim pdfDocument As New Document(fs)

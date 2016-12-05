@@ -19,7 +19,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Annotations
             // The last argumnet is for transparency of icon
             editor.CreateFileAttachment(new System.Drawing.Rectangle(50, 50, 10, 10), "here", dataDir + "AddFreeTextAnnotation.pdf", 1, "Paperclip", 0.005);
             // Save the updated PDF file
-            editor.Save(dataDir+ "PdfWith_Transparent_Annotation_out_.pdf");
+            editor.Save(dataDir+ "PdfWith_Transparent_Annotation_out.pdf");
             // ExEnd:CreateFileAnnotation
         }
     }

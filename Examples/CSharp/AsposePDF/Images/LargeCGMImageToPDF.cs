@@ -15,7 +15,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Images
             string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
             string inputFile = dataDir + "corvette.cgm";
-            dataDir = dataDir + "LargeCGMImageToPDF_out_.pdf";
+            dataDir = dataDir + "LargeCGMImageToPDF_out.pdf";
 
             // Create an instance of CgmImportOptions
             CgmImportOptions options = new CgmImportOptions();

@@ -37,12 +37,12 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
                     (int)Math.Round(textFragment.Rectangle.LLY), (int)Math.Round(textFragment.Rectangle.Width + 2),
                     (int)Math.Round(textFragment.Rectangle.Height + 1));
                 Enum[] actionName = new Enum[2] { Aspose.Pdf.Annotations.PredefinedAction.Document_AttachFile, Aspose.Pdf.Annotations.PredefinedAction.Document_ExtractPages };
-                editor.CreateWebLink(rect, "http://www.aspose.com", 1, blue, actionName);
+                editor.CreateWebLink(rect, "http:// Www.aspose.com", 1, blue, actionName);
                 editor.CreateLine(rect, "", (float)textFragment.Rectangle.LLX + 1, (float)textFragment.Rectangle.LLY - 1,
                     (float)textFragment.Rectangle.URX, (float)textFragment.Rectangle.LLY - 1, 1, 1, blue, "S", dashArray, LEArray);
             }
 
-            dataDir = dataDir + "SearchTextAndAddHyperlink_out_.pdf";
+            dataDir = dataDir + "SearchTextAndAddHyperlink_out.pdf";
             editor.Save(dataDir);
             editor.Close();
             // ExEnd:SearchTextAndAddHyperlink

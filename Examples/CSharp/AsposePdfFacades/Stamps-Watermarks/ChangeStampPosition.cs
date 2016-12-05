@@ -30,7 +30,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.StampsWatermarks
                 pdfContentEditor.MoveStamp(pageId, stampIndex, x, y);
 
                 // Save the Pdf file
-                pdfContentEditor.Save(dataDir + "ChangeStampPosition_out_.pdf");
+                pdfContentEditor.Save(dataDir + "ChangeStampPosition_out.pdf");
                 // ExEnd:ChangeStampPosition
             }
             catch (Exception ex)
@@ -60,7 +60,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.StampsWatermarks
             pdfContentEditor.MoveStamp(pageId, stampId, x, y);
 
             // Save the Pdf file
-            pdfContentEditor.Save(dataDir + "ChangeStampPositionByID_out_.pdf");
+            pdfContentEditor.Save(dataDir + "ChangeStampPositionByID_out.pdf");
             // ExEnd:ChangeStampPositionByID
         }
     }

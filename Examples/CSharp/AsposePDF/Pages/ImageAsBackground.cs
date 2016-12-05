@@ -27,7 +27,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Pages
             // Add backgroundartifact to artifacts collection of page
             page.Artifacts.Add(background);
 
-            dataDir = dataDir + "ImageAsBackground_out_.pdf";
+            dataDir = dataDir + "ImageAsBackground_out.pdf";
             // Save the document
             doc.Save(dataDir);
             // ExEnd:ImageAsBackground

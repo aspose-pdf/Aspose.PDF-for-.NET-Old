@@ -35,7 +35,7 @@ Namespace AsposePdfGenerator.UtilityFeatures
             ' Create a file stream to create the PDF document
             Dim fs As New FileStream(dataDir & Convert.ToString("CreatePdfUsingXML_out_"), FileMode.Create)
 
-            'Instantiate the Pdf instance and pass the file stream object to its constructor
+            ' Instantiate the Pdf instance and pass the file stream object to its constructor
             Dim pdf As New Aspose.Pdf.Generator.Pdf(fs)
 
             ' Bind the XML file to the Pdf and leave the XSL file parameter as Nothing

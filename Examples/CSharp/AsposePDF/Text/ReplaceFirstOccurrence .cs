@@ -33,7 +33,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
                 textFragment.TextState.FontSize = 22;
                 textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Blue);
 
-                dataDir = dataDir + "ReplaceFirstOccurrence_out_.pdf";
+                dataDir = dataDir + "ReplaceFirstOccurrence_out.pdf";
                 pdfDocument.Save(dataDir);                 
 
                 Console.WriteLine("\nText replaced successfully.\nFile saved at " + dataDir);

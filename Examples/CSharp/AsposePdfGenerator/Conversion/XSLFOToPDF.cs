@@ -16,7 +16,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Conversion
             // Set up your product license.
             // If you just want to evaluate Aspose.Pdf, you can annotate these two lines.
             // License license = new License();
-            // license.SetLicense(dataDir + "Aspose.Total.lic");
+            // License.SetLicense(dataDir + "Aspose.Total.lic");
 
             // Create a Converter object..
             Aspose.Pdf.Generator.Pdf app;
@@ -93,31 +93,31 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Conversion
 
             // 0. An example of how to set the metadata of your generated pdf document
             // If you do not want to set these tedious metadata of pdf, you can set the
-            // second parameter of Save method to be "null" simply, as shown in above.
+            // Second parameter of Save method to be "null" simply, as shown in above.
 
             // At first create a IDictionary to contain your metadata.
             System.Collections.IDictionary metadata = new System.Collections.Hashtable();
 
             // Then set the various items.
             // If you don't set them, Aspose.Pdf.Fo will set default value.
-            // a. title of your pdf doc:
+            // A. title of your pdf doc:
             metadata.Add("Title", "New Title");
-            // b. author of your pdf doc:
+            // B. author of your pdf doc:
             metadata.Add("Author", "New Author");
-            // c. subject of your pdf doc:
+            // C. subject of your pdf doc:
             metadata.Add("Subject", "New Subject");
-            // d. keywords of your pdf doc:
+            // D. keywords of your pdf doc:
             metadata.Add("Keywords", "New Key Words");
-            // e. creator of your pdf doc:
+            // E. creator of your pdf doc:
             metadata.Add("Creator", "New Creator");
-            // f. producer of your pdf doc:
+            // F. producer of your pdf doc:
             metadata.Add("Producer", "New Producer");
 
             // Make this IDictionary be the parameter of Save method, and start converting.
             app = new Aspose.Pdf.Generator.Pdf();
-            // app.FoMetaData = metadata;
+            // App.FoMetaData = metadata;
             app.BindFO(fo);
-            app.Save(dataDir + "Test_out_.pdf");
+            app.Save(dataDir + "Test_out.pdf");
             // ExEnd:XSLFOToPDF
         }
         public static void XSLFOToPDFUsingBind()
@@ -130,7 +130,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Conversion
             // Bind FO document with Pdf object
             pdf.BindFO( dataDir + "XSLFOToPDF.fo");
             // Save the PDF document
-            pdf.Save(dataDir + "XSLFOToPDFUsingBind_out_.pdf");
+            pdf.Save(dataDir + "XSLFOToPDFUsingBind_out.pdf");
             // ExEnd:XSLFOToPDFUsingBind
         }
        

@@ -37,7 +37,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Bookmarks
             // Create bookmarks
             bookmarkEditor.CreateBookmarks(bookmark);
             // Save updated document
-            bookmarkEditor.Save(dataDir+ "AddChildBookmark_out_.pdf");
+            bookmarkEditor.Save(dataDir+ "AddChildBookmark_out.pdf");
             // ExEnd:AddChildBookmark
         }
     }

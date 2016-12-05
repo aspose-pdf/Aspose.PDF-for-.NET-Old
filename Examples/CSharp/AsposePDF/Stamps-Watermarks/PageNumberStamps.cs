@@ -34,7 +34,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.StampsWatermarks
             // Add stamp to particular page
             pdfDocument.Pages[1].AddStamp(pageNumberStamp);
 
-            dataDir = dataDir + "PageNumberStamp_out_.pdf";
+            dataDir = dataDir + "PageNumberStamp_out.pdf";
             // Save output document
             pdfDocument.Save(dataDir);
             // ExEnd:PageNumberStamps

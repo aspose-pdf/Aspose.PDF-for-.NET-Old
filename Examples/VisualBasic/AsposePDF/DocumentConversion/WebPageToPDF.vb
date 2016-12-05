@@ -15,8 +15,8 @@ Namespace AsposePDF.DocumentConversion
                 Dim request As WebRequest = WebRequest.Create("https://en.wikipedia.org/wiki/Main_Page")
                 ' If required by the server, set the credentials.
                 request.Credentials = CredentialCache.DefaultCredentials
-                ' time out in miliseconds before the request times out
-                ' request.Timeout = 100;
+                ' Time out in miliseconds before the request times out
+                ' Request.Timeout = 100;
 
                 ' Get the response.
                 Dim response As HttpWebResponse = DirectCast(request.GetResponse(), HttpWebResponse)

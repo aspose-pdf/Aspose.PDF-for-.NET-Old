@@ -17,7 +17,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Annotations
             // Delete all annoations
             annotationEditor.DeleteAnnotations();
             // Save updated PDF
-            annotationEditor.Save(dataDir+ "DeleteAllAnnotations_out_.pdf");
+            annotationEditor.Save(dataDir+ "DeleteAllAnnotations_out.pdf");
             // ExEnd:DeleteAllAnnotations
         }
     }

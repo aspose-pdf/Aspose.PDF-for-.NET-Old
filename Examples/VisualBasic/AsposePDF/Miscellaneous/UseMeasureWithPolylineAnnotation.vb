@@ -15,11 +15,11 @@ Namespace AsposePDF.Miscellaneous
             Dim vertices As Point() = New Point() {New Point(100, 600), New Point(500, 600), New Point(500, 500), New Point(400, 300), New Point(100, 500), New Point(100, 600)}
             Dim rect As New Rectangle(100, 500, 500, 600)
 
-            'Area or perimeter line
+            ' Area or perimeter line
             Dim area As New PolylineAnnotation(doc.Pages(1), rect, vertices)
             area.Color = Color.Red
 
-            'Line endings can be set for perimeter line.
+            ' Line endings can be set for perimeter line.
             area.StartingStyle = LineEnding.OpenArrow
             area.EndingStyle = LineEnding.OpenArrow
             area.Measure = New Measure(area)

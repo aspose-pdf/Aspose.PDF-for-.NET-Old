@@ -14,7 +14,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion.PDFToHTMLForma
                 // The path to the documents directory.
                 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion_PDFToHTMLFormat();
 
-                string outFile = dataDir + "SpecifyImages_out_.html";
+                string outFile = dataDir + "SpecifyImages_out.html";
 
                 Document doc = new Document(dataDir + "input.pdf");
                 // Create HtmlSaveOption with tested feature
@@ -55,7 +55,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion.PDFToHTMLForma
                 return "";
             }
 
-            string outFile = dataDir + "SpecifyImages_out_.html";
+            string outFile = dataDir + "SpecifyImages_out.html";
             string imageOutFolder = Path.GetFullPath(Path.GetDirectoryName(outFile)
                               + @"\35956_svg_files\");
             // ImageOutFolder="C:\AsposeImagesTests\";

@@ -18,7 +18,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.MakeNUp
             FileStream[] fileStreams = new FileStream[2];
             fileStreams[0] = new FileStream(dataDir + "input.pdf", FileMode.Open);
             fileStreams[1] = new FileStream(dataDir + "input2.pdf", FileMode.Open);
-            FileStream outputStream = new FileStream(dataDir + "UsingArrayOfFilesAndStreams_out_.pdf", FileMode.Create);
+            FileStream outputStream = new FileStream(dataDir + "UsingArrayOfFilesAndStreams_out.pdf", FileMode.Create);
             // Make NUp
             pdfEditor.MakeNUp(fileStreams, outputStream, true);
             // ExEnd:UsingArrayOfFilesAndStreams

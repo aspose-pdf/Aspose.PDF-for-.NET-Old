@@ -36,7 +36,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.TechnicalArticles
             sec.Paragraphs.Add(imageht);
 
             // Save the Pdf
-            pdf1.Save(dataDir + "ConvertMemoryStreamImageToPdf_out_.pdf");
+            pdf1.Save(dataDir + "ConvertMemoryStreamImageToPdf_out.pdf");
             // Close the MemoryStream Object
             ms.Close();
             // ExEnd:ConvertMemoryStreamImageToPdf           

@@ -34,7 +34,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Text
                 text = sr.ReadToEnd();
             }
 
-            File.WriteAllText(dataDir+ "output_out_.txt", text);
+            File.WriteAllText(dataDir+ "output_out.txt", text);
             // ExEnd:ExtractTextPageRange
         }
     }

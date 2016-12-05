@@ -23,12 +23,12 @@ Namespace AsposePdfGenerator.Graphs
             sec1.Paragraphs.Add(graph1)
 
             ' Create an array containing the (X,Y) values of 4 control points
-            ' required to position a curve
+            ' Required to position a curve
             Dim posArr As Single() = New Single() {0, 0, 200, 80, 300, 40, _
                 350, 90}
 
             ' Create a curve in the graph with the coordinates given as an array to
-            ' the constructor of curve class
+            ' The constructor of curve class
             Dim curve1 As New Aspose.Pdf.Generator.Curve(graph1, posArr)
 
             ' Add the curve shape into the shapes collection of the graph

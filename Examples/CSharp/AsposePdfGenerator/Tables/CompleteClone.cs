@@ -16,7 +16,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Tables
             Aspose.Pdf.Generator.Pdf pdf1 = new Aspose.Pdf.Generator.Pdf();
 
             // Call BindXML method to read information from RepeatExample.xml document. Second
-            // parameter is for Xsl file. In our case, we don't need it so leave it as null.
+            // Parameter is for Xsl file. In our case, we don't need it so leave it as null.
             pdf1.BindXML( dataDir + "RepeatExample.xml", null);
 
             // Obtain the first section from the Pdf
@@ -52,7 +52,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Tables
             }
             
             // Save the Pdf
-            pdf1.Save(dataDir + "CompleteClone_out_.pdf");
+            pdf1.Save(dataDir + "CompleteClone_out.pdf");
             // ExEnd:CompleteClone   
                 
         }

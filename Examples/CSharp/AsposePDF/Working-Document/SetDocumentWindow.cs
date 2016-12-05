@@ -48,10 +48,10 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.WorkingDocuments
             pdfDocument.PageLayout = PageLayout.TwoColumnLeft;
             
             // Specify how the document should display when opened
-            // i.e. show thumbnails, full-screen, show attachment panel
+            // I.e. show thumbnails, full-screen, show attachment panel
             pdfDocument.PageMode = PageMode.UseThumbs;
 
-            dataDir = dataDir + "SetDocumentWindow_out_.pdf";
+            dataDir = dataDir + "SetDocumentWindow_out.pdf";
             // Save updated PDF file
             pdfDocument.Save(dataDir);
             // ExEnd:SetDocumentWindow 

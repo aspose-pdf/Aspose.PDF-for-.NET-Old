@@ -65,7 +65,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Headings
             heading3.IsAutoSequence = true;
 
             floatBox.Paragraphs.Add(heading3);
-            dataDir = dataDir + "ApplyNumberStyle_out_.pdf";
+            dataDir = dataDir + "ApplyNumberStyle_out.pdf";
             pdfDoc.Save(dataDir);
             // ExEnd:ApplyNumberStyle
             Console.WriteLine("\nNumber style applied successfully in headings.\nFile saved at " + dataDir);            

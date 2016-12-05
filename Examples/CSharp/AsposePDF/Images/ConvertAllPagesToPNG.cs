@@ -19,7 +19,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Images
 
             for (int pageCount = 1; pageCount <= pdfDocument.Pages.Count; pageCount++)
             {
-                using (FileStream imageStream = new FileStream(dataDir + "image" + pageCount + "_out_" + ".png", FileMode.Create))
+                using (FileStream imageStream = new FileStream(dataDir + "image" + pageCount + "_out" + ".png", FileMode.Create))
                 {
                     // Create PNG device with specified attributes
                     // Width, Height, Resolution, Quality

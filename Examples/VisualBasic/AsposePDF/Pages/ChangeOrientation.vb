@@ -18,7 +18,7 @@ Namespace AsposePDF.Pages
                 Dim newLLX As Double = r.LLX
                 '  We must to move page upper in order to compensate changing page size
                 ' (lower edge of the page is 0,0 and information is usually placed from the
-                '  Top of the page. That's why we move lover edge upper on difference between
+                '  Top of the page. That' S why we move lover edge upper on difference between
                 '  Old and new height.
                 Dim newLLY As Double = r.LLY + (r.Height - newHeight)
                 page.MediaBox = New Rectangle(newLLX, newLLY, newLLX + newWidth, newLLY + newHeight)

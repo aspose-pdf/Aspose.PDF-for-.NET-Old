@@ -22,7 +22,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Forms
             // Modify field location
             textBoxField.Rect = new Aspose.Pdf.Rectangle(300, 400, 600, 500);
 
-            dataDir = dataDir + "MoveFormField_out_.pdf";
+            dataDir = dataDir + "MoveFormField_out.pdf";
             // Save modified document
             pdfDocument.Save(dataDir);
             // ExEnd:MoveFormField

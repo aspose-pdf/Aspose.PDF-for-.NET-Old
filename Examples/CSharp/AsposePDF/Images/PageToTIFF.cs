@@ -30,7 +30,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Images
             TiffDevice tiffDevice = new TiffDevice(resolution, tiffSettings);
 
             // Convert a particular page and save the image to stream
-            tiffDevice.Process(pdfDocument, 1, 1, dataDir + "PageToTIFF_out_.tif");
+            tiffDevice.Process(pdfDocument, 1, 1, dataDir + "PageToTIFF_out.tif");
             // ExEnd:PageToTIFF
             System.Console.WriteLine("PDF one page converted to tiff successfully!");
         }

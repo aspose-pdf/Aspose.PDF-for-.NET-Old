@@ -24,7 +24,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion.PDFToHTMLForma
                 saveOptions.RasterImagesSavingMode = HtmlSaveOptions.RasterImagesSavingModes.AsExternalPngFilesReferencedViaSvg;
               
                 // Save the output in HTML format
-                doc.Save( dataDir + "SaveImages_out_.html", saveOptions);
+                doc.Save( dataDir + "SaveImages_out.html", saveOptions);
                 // ExEnd:SaveImages
             }
             catch (Exception ex)

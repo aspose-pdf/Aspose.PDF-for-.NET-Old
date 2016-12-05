@@ -49,7 +49,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Attachments
                 byte[] fileContent = new byte[fileSpecification.Contents.Length];
                 fileSpecification.Contents.Read(fileContent, 0,
                 fileContent.Length);
-                FileStream fileStream = new FileStream(dataDir + count + "_out_" + ".txt",
+                FileStream fileStream = new FileStream(dataDir + count + "_out" + ".txt",
                 FileMode.Create);
                 fileStream.Write(fileContent, 0, fileContent.Length);
                 fileStream.Close();

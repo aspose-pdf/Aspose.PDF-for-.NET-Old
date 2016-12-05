@@ -17,7 +17,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Text
             // Replace text on all pages
             pdfContentEditor.ReplaceText("Hello", 1, "World");
             // Save output PDF
-            pdfContentEditor.Save(dataDir + "ReplaceTextPage_out_.pdf");
+            pdfContentEditor.Save(dataDir + "ReplaceTextPage_out.pdf");
             // ExEnd:ReplaceTextPage            
         }
     }

@@ -32,7 +32,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Text
             img1.ImageInfo.File = dataDir + "aspose-logo.jpg";
             // Indicate seg2's InlineParagraph is a image.
             seg2.InlineParagraph = img1;
-            dataDir = dataDir + "InlineImage_out_.pdf";
+            dataDir = dataDir + "InlineImage_out.pdf";
             // Create the result PDF Document
             pdf1.Save(dataDir);
             // ExEnd:InlineParagraph

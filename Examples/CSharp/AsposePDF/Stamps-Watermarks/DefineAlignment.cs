@@ -35,7 +35,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.StampsWatermarks
             // Add the stamp object over first page of document
             doc.Pages[1].AddStamp(stamp);
 
-            dataDir = dataDir + "StampedPDF_out_.pdf";
+            dataDir = dataDir + "StampedPDF_out.pdf";
             // Save the udpated document
             doc.Save(dataDir);
             // ExEnd:DefineAlignment            

@@ -27,7 +27,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.StampsWatermarks
             // Add stamp to particular page
             pdfDocument.Pages[1].AddStamp(imageStamp);
 
-            dataDir = dataDir + "AddImageStamp_out_.pdf";
+            dataDir = dataDir + "AddImageStamp_out.pdf";
             // Save output document
             pdfDocument.Save(dataDir);
             // ExEnd:AddImageStamp
@@ -48,7 +48,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.StampsWatermarks
 
             imageStamp.Quality = 10;
             pdfDocument.Pages[1].AddStamp(imageStamp);
-            pdfDocument.Save(dataDir + "ControlImageQuality_out_.pdf");
+            pdfDocument.Save(dataDir + "ControlImageQuality_out.pdf");
             // ExEnd:ControlImageQuality
         }
     }

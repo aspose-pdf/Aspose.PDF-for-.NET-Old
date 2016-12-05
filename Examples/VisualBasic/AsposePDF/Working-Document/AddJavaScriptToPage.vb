@@ -23,8 +23,8 @@ Namespace AsposePDF.WorkingDocuments
             doc.OpenAction = javaScript
 
             ' Adding JavaScript at Page Level
-            doc.Pages(2).Actions.OnOpen = New JavascriptAction("app.alert('page 1 opened')")
-            doc.Pages(2).Actions.OnClose = New JavascriptAction("app.alert('page 1 closed')")
+            doc.Pages(2).Actions.OnOpen = New JavascriptAction("app.alert(' Page 1 opened')")
+            doc.Pages(2).Actions.OnClose = New JavascriptAction("app.alert(' Page 1 closed')")
 
             dataDir = dataDir & Convert.ToString("JavaScript-Added_out_.pdf")
             ' Save PDF Document

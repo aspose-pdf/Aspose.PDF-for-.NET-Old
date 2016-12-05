@@ -126,7 +126,7 @@ Namespace AsposePDFFacades.TechnicalArticles
                         contentEditor.CreateLocalLink(New System.Drawing.Rectangle(150, 650, 100, 20), 2, 1, System.Drawing.Color.Transparent)
                         ' Create link for Second document
                         ' We have used   new PdfFileInfo("d:/pdftest/Input1.pdf").NumberOfPages + 2   as PdfFileInfo.NumberOfPages(..) returns the page count for first document
-                        ' and 2 is because, second document will start at Input1+1 and 1 for the page containing Table Of Contents.
+                        ' And 2 is because, second document will start at Input1+1 and 1 for the page containing Table Of Contents.
                         contentEditor.CreateLocalLink(New System.Drawing.Rectangle(150, 620, 100, 20), New PdfFileInfo(dataDir & Convert.ToString("Input1.pdf")).NumberOfPages + 2, 1, System.Drawing.Color.Transparent)
 
                         ' Save updated PDF

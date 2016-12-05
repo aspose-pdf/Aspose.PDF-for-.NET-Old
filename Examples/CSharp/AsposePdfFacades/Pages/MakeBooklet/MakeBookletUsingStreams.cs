@@ -16,7 +16,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.MakeBooklet
             PdfFileEditor pdfEditor = new PdfFileEditor();
             // Create streams
             FileStream inputStream = new FileStream( dataDir + "input.pdf", FileMode.Open);
-            FileStream outputStream = new FileStream(dataDir + "MakeBookletUsingStreams_out_.pdf", FileMode.Create);
+            FileStream outputStream = new FileStream(dataDir + "MakeBookletUsingStreams_out.pdf", FileMode.Create);
             // Make booklet
             pdfEditor.MakeBooklet(inputStream, outputStream);
             // ExEnd:MakeBookletUsingStreams

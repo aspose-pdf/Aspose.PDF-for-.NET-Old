@@ -16,17 +16,17 @@ Namespace AsposePDF.Images
             Dim pdfDocument As New Document(dataDir & Convert.ToString("AddImage.pdf"))
 
             For pageCount As Integer = 1 To pdfDocument.Pages.Count
-                Using imageStream As New FileStream("image" & pageCount & "_out_" & ".bmp", FileMode.Create)
-                    'Create BMP device with specified attributes
-                    'Width, Height, Resolution, PageSize
-                    'Create Resolution object
+                Using imageStream As New FileStream("image" & pageCount & "_out" & ".bmp", FileMode.Create)
+                    ' Create BMP device with specified attributes
+                    ' Width, Height, Resolution, PageSize
+                    ' Create Resolution object
                     Dim resolution As New Resolution(300)
                     Dim bmpDevice As New BmpDevice(resolution)
 
-                    'Convert a particular page and save the image to stream
+                    ' Convert a particular page and save the image to stream
                     bmpDevice.Process(pdfDocument.Pages(pageCount), imageStream)
 
-                    'Close stream
+                    ' Close stream
                     imageStream.Close()
 
                 End Using

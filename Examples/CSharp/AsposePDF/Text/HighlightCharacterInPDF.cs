@@ -87,7 +87,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
                             }
                         }
                     }
-                    dataDir = dataDir + "HighlightCharacterInPDF_out_.png";
+                    dataDir = dataDir + "HighlightCharacterInPDF_out.png";
                     bmp.Save(dataDir, System.Drawing.Imaging.ImageFormat.Png);
                 }
                 // ExEnd:HighlightCharacterInPDF            

@@ -41,7 +41,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Tables
             // Add table to paragraphs collection of PDF file
             doc.Pages[1].Paragraphs.Add(tab);
 
-            dataDir = dataDir + "InsertPageBreak_out_.pdf";
+            dataDir = dataDir + "InsertPageBreak_out.pdf";
             // Save the PDF document
             doc.Save(dataDir);
             // ExEnd:InsertPageBreak

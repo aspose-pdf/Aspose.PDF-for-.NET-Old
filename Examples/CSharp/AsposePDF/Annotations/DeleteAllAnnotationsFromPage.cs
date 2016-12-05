@@ -18,7 +18,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Annotations
             // Delete particular annotation
             pdfDocument.Pages[1].Annotations.Delete();
 
-            dataDir = dataDir + "DeleteAllAnnotationsFromPage_out_.pdf";
+            dataDir = dataDir + "DeleteAllAnnotationsFromPage_out.pdf";
             // Save updated document
             pdfDocument.Save(dataDir);
             // ExEnd:DeleteAllAnnotationsFromPage

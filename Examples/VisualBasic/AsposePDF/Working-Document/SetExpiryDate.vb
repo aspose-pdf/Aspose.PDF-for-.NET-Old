@@ -19,7 +19,7 @@ Namespace AsposePDF.WorkingDocuments
             ' Add text fragment to paragraphs collection of page object
             doc.Pages(1).Paragraphs.Add(New TextFragment("Hello World..."))
             ' Create JavaScript object to set PDF expiry date
-            Dim javaScript As New JavascriptAction("var year=2017;" + "var month=5;" + "today = new Date(); today = new Date(today.getFullYear(), today.getMonth());" + "expiry = new Date(year, month);" + "if (today.getTime() > expiry.getTime())" + "app.alert('The file is expired. You need a new one.');")
+            Dim javaScript As New JavascriptAction("var year=2017;" + "var month=5;" + "today = new Date(); today = new Date(today.getFullYear(), today.getMonth());" + "expiry = new Date(year, month);" + "if (today.getTime() > expiry.getTime())" + "app.alert(' The file is expired. You need a new one.');")
             ' Set JavaScript as PDF open action
             doc.OpenAction = javaScript
 

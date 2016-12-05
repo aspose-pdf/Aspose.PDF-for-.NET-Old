@@ -20,7 +20,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Annotations
             // Create annotation
             contentEditor.CreateFreeText(rect, "Sample content", 1);
             // Save updated PDF file
-            contentEditor.Save(dataDir+ "AddFreeTextAnnotation_out_.pdf");
+            contentEditor.Save(dataDir+ "AddFreeTextAnnotation_out.pdf");
             // ExEnd:AddFreeTextAnnotation            
         }
     }

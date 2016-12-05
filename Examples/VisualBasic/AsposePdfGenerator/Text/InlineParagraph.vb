@@ -28,7 +28,7 @@ Namespace AsposePdfGenerator.Text
             Dim img1 As New AP.Generator.Image()
             ' Specify the image file path
             img1.ImageInfo.File = dataDir & Convert.ToString("aspose-logo.jpg")
-            ' Indicate seg2's InlineParagraph is a image.
+            ' Indicate seg2' S InlineParagraph is a image.
             seg2.InlineParagraph = img1
             dataDir = dataDir & Convert.ToString("InlineImage_out_.pdf")
             ' Create the result PDF Document

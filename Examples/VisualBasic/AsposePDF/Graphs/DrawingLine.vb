@@ -15,7 +15,7 @@ Namespace AsposePDF.Graphs
             Dim pDoc As New Document()
             ' Add page to pages collection of PDF document
             Dim pg As Page = pDoc.Pages.Add()
-            ' set page margin on all sides as 0
+            ' Set page margin on all sides as 0
             pg.PageInfo.Margin.Left = InlineAssignHelper(pg.PageInfo.Margin.Right, InlineAssignHelper(pg.PageInfo.Margin.Bottom, InlineAssignHelper(pg.PageInfo.Margin.Top, 0)))
             ' Create Graph object with Width and Height equal to page dimensions
             Dim graph As New APD.Graph(CSng(pg.PageInfo.Width), CSng(pg.PageInfo.Height))

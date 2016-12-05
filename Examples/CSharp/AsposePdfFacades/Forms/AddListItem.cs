@@ -24,7 +24,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Forms
             string[] listItems = { "Item 3", "Item 4", "Item 5" };
             form.AddListItem("listbox", listItems);
             // Save updated file
-            form.Save(dataDir + "AddListItem_out_.pdf");
+            form.Save(dataDir + "AddListItem_out.pdf");
             // ExEnd:AddListItem
         }        
     }

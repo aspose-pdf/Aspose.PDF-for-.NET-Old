@@ -78,7 +78,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.TechnicalArticles
             // Add the text paragraphs containing HTML text to the table cell
             SecondRow.Cells[0].Paragraphs.Add(SecondRowText);
             // Save the Pdf file
-            pdf1.Save(dataDir + "PlacingTextAroundImage_out_.pdf");
+            pdf1.Save(dataDir + "PlacingTextAroundImage_out.pdf");
             // ExEnd:PlacingTextAroundImage           
         }
     }

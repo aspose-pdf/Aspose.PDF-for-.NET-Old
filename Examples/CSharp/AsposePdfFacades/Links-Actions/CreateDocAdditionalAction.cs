@@ -22,7 +22,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.LinksActions
             contentEditor.AddDocumentAdditionalAction(PdfContentEditor.DocumentClose, "app.alert('Thank you for using Aspose products!');");
 
             // Save updated PDF
-            contentEditor.Save( dataDir + "CreateDocAdditionalAction_out_.pdf");
+            contentEditor.Save( dataDir + "CreateDocAdditionalAction_out.pdf");
             // ExEnd:CreateDocAdditionalAction
                      
         }

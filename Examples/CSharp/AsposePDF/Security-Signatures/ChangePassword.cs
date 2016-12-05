@@ -16,7 +16,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.SecuritySignatures
             Document document = new Document(dataDir+ "ChangePassword.pdf", "owner");
             // Change password
             document.ChangePasswords("owner", "newuser", "newowner");
-            dataDir = dataDir + "ChangePassword_out_.pdf";
+            dataDir = dataDir + "ChangePassword_out.pdf";
             // Save updated PDF
             document.Save(dataDir);
             // ExEnd:ChangePassword  

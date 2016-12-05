@@ -28,12 +28,12 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.TechnicalArticles
             // Extract all text from the PDF
             extractor.ExtractText();
             // Save extracted text in a text file
-            extractor.GetText(dataDir + "PdfExtractorFeatures_text_out_.txt");
+            extractor.GetText(dataDir + "PdfExtractorFeatures_text_out.txt");
 
             // Text of individual pages can also be saved individually in single text files
             if (extractor.HasNextPageText())
             {
-                extractor.GetNextPageText(dataDir + DateTime.Now.Ticks.ToString() + "_out_.txt");
+                extractor.GetNextPageText(dataDir + DateTime.Now.Ticks.ToString() + "_out.txt");
             }
 
             // Extract images from PDF file
@@ -41,7 +41,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.TechnicalArticles
             // Save each individual image in an image file
             if (extractor.HasNextImage())
             {
-                extractor.GetNextImage(dataDir + DateTime.Now.Ticks.ToString() + "_out_.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
+                extractor.GetNextImage(dataDir + DateTime.Now.Ticks.ToString() + "_out.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
             }
 
             // Extract attachments

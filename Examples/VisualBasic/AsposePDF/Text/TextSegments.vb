@@ -24,7 +24,7 @@ Namespace AsposePDF.Text
             ' Please use following regular expression to find text following to the regex match.
             textFragmentAbsorber = New TextFragmentAbsorber("(?<=word).*")
 
-            ' In order to search Hyperlink/URL's inside PDF document, please try using following regular expression.
+            ' In order to search Hyperlink/URL' S inside PDF document, please try using following regular expression.
             textFragmentAbsorber = New TextFragmentAbsorber("(http|ftp|https):\/\/([\w\-_]+(?:(?:\.[\w\-_]+)+))([\w\-\.,@?^=%&amp;:/~\+#]*[\w\-\@?^=%&amp;/~\+#])?")
 
             ' ExEnd: TextSegments

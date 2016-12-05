@@ -62,7 +62,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Tables
                 curCell.BackgroundColor = new Aspose.Pdf.Generator.Color("Blue"); 
 
             // Save the Pdf
-            pdf1.Save(dataDir + "IntegrateWithDatabase_out_.pdf"); 
+            pdf1.Save(dataDir + "IntegrateWithDatabase_out.pdf"); 
             // ExEnd:IntegrateWithDatabase   
                 
         }

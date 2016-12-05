@@ -24,7 +24,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.TechnicalArticles
                 fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
                 string filename = Path.GetFileName(fileSpecification.Name);
                 // Save the extracted file to some location
-                FileStream fileStream = new FileStream(dataDir + "_out_" + filename, FileMode.Create);
+                FileStream fileStream = new FileStream(dataDir + "_out" + filename, FileMode.Create);
                 fileStream.Write(fileContent, 0, fileContent.Length);
                 // Close the stream object
                 fileStream.Close();

@@ -28,7 +28,7 @@ Namespace AsposePDF.WorkingDocuments
             Next
 
             doc1.JavaScript.Remove("func1")
-            Console.WriteLine("Key 'func1' removed ")
+            Console.WriteLine("Key ' Func1' Removed ")
             Console.WriteLine("=============================== ")
             ' ExEnd:AddRemoveJavascriptToDoc
             Console.WriteLine(vbLf & "Javascript added/removed successfully to a document.")

@@ -39,7 +39,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Text
                 sec.Paragraphs.Add(text);
 
                 // Save the document
-                pdf.Save(dataDir + "AddEndnote_out_.pdf");
+                pdf.Save(dataDir + "AddEndnote_out.pdf");
                 // ExEnd:AddEndnote
             }
             catch (Exception ex)

@@ -25,7 +25,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.LinksActions
                 // Next line update file
                 goToR.File = new FileSpecification(dataDir +  "input.pdf");
 
-                dataDir = dataDir + "SetTargetLink_out_.pdf";
+                dataDir = dataDir + "SetTargetLink_out.pdf";
                 // Save the document with updated link
                 document.Save(dataDir);
                 // ExEnd:SetTargetLink

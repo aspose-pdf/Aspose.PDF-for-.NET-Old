@@ -17,7 +17,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.InsertPages
             // Create streams
             FileStream inputStream = new FileStream(dataDir + "MultiplePages.pdf", FileMode.Open);
             FileStream portStream = new FileStream(dataDir + "InsertPages.pdf", FileMode.Open);
-            FileStream outputStream = new FileStream(dataDir + "InsertPagesBetweenNumbersUsingStreams_out_.pdf", FileMode.Create);
+            FileStream outputStream = new FileStream(dataDir + "InsertPagesBetweenNumbersUsingStreams_out.pdf", FileMode.Create);
             // Insert pages
             pdfEditor.Insert(inputStream, 1, portStream, 1, 4, outputStream);
             // ExEnd:InsertPagesBetweenNumbersUsingStreams

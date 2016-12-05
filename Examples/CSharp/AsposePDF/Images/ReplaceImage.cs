@@ -18,7 +18,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Images
             // Replace a particular image
             pdfDocument.Pages[1].Resources.Images.Replace(1, new FileStream(dataDir + "aspose-logo.jpg", FileMode.Open));
 
-            dataDir = dataDir + "ReplaceImage_out_.pdf";
+            dataDir = dataDir + "ReplaceImage_out.pdf";
             // Save updated PDF file
             pdfDocument.Save(dataDir);
             // ExEnd:ReplaceImage

@@ -19,7 +19,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion
             svgDoc.Pages[1].PageInfo.Margin.Left = 0;
             svgDoc.Pages[1].PageInfo.Margin.Bottom = 0;
             svgDoc.Pages[1].PageInfo.Margin.Right = 0;
-            svgDoc.Save(dataDir + "GetSVGDimensions_out_.pdf");
+            svgDoc.Save(dataDir + "GetSVGDimensions_out.pdf");
             // ExEnd:GetSVGDimensions
         }
     }

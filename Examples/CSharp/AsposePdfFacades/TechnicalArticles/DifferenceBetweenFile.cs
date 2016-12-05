@@ -25,7 +25,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.TechnicalArticles
                 // Box in FormFieldFacade class holds field's location.
                 box[i] = facade.Box;
             }
-            form.Save(dataDir + "DifferenceBetweenFile_out_.pdf");
+            form.Save(dataDir + "DifferenceBetweenFile_out.pdf");
 
             Document document = new Document(dataDir + "FilledForm - 2.pdf");
             // Now we need to add a textfield just upon the original one
@@ -35,8 +35,8 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.TechnicalArticles
                 // Add text field beneath every existing form field
                 editor.AddField(FieldType.Text, "TextField" + i, allfields[i], 1, box[i].Left, box[i].Top, box[i].Left + 50, box[i].Top + 10);
             }
-            //Close the document
-            editor.Save(dataDir + "DifferenceBetweenFile_out_.pdf"); 
+            // Close the document
+            editor.Save(dataDir + "DifferenceBetweenFile_out.pdf"); 
             // ExEnd:DifferenceBetweenFile                      
         }
     }

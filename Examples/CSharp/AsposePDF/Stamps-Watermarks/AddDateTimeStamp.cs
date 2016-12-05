@@ -45,7 +45,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.StampsWatermarks
             textAnnotation.Rect = new Aspose.Pdf.Rectangle(0, 0, 0, 0);
             pdfDocument.Pages[1].Annotations.Add(textAnnotation);
 
-            dataDir = dataDir + "AddDateTimeStamp_out_.pdf";
+            dataDir = dataDir + "AddDateTimeStamp_out.pdf";
             // Save output document
             pdfDocument.Save(dataDir);
             // ExEnd:AddDateTimeStamp

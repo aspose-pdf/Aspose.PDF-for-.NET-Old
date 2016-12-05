@@ -41,7 +41,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Hyperlinks
             // Set the page number of the document to which the link is to be created
             segment1.Hyperlink.LinkPageNumber = 2;
    
-            dataDir = dataDir + "HyperlinkOtherPdf_out_.pdf";
+            dataDir = dataDir + "HyperlinkOtherPdf_out.pdf";
             // Save the Pdf
             pdf1.Save(dataDir);
             // ExEnd:HyperlinkOtherPdf           

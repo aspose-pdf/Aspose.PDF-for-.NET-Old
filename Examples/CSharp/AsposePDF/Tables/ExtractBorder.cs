@@ -129,7 +129,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Tables
                     }
                 }
             }
-            dataDir = dataDir + "ExtractBorder_out_.png";
+            dataDir = dataDir + "ExtractBorder_out.png";
             bitmap.Save(dataDir, ImageFormat.Png);
             // ExEnd:ExtractBorder
             Console.WriteLine("\nBorder extracted successfully as image.\nFile saved at " + dataDir);

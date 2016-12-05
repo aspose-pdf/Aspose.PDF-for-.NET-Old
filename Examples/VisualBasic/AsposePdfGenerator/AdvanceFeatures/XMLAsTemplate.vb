@@ -14,7 +14,7 @@ Namespace AsposePdfGenerator.AdvanceFeatures
             pdf1.BindXML(dataDir & Convert.ToString("Template.xml"), Nothing)
 
             ' Get the section and then table from the obtained section of the Pdf that
-            ' is built from the XML template
+            ' Is built from the XML template
             Dim sec1 As Aspose.Pdf.Generator.Section = pdf1.Sections("Section1")
             Dim table1 As Aspose.Pdf.Generator.Table = TryCast(sec1.Paragraphs("Table1"), Aspose.Pdf.Generator.Table)
 
@@ -41,7 +41,7 @@ Namespace AsposePdfGenerator.AdvanceFeatures
             Dim sec2 As Aspose.Pdf.Generator.Section = TryCast(sec1.CompleteClone(), Aspose.Pdf.Generator.Section)
 
             ' Add a cloned section to the Pdf and change the contents of the text segments
-            ' in the section2 of the Pdf object        
+            ' In the section2 of the Pdf object        
             pdf1.Sections.Add(sec2)
             item = TryCast(sec2.GetObjectByID("Item1"), Aspose.Pdf.Generator.Segment)
             item.Content = "item1 sec2"

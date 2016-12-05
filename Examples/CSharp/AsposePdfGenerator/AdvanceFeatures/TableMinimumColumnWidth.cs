@@ -40,7 +40,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.AdvanceFeatures
             // Call SetColumnWidth and pass the column number with minimum width
             tab1.SetColumnWidth(0, width);                                
 
-            dataDir = dataDir + "TableMinimumColumnWidth_out_.pdf";
+            dataDir = dataDir + "TableMinimumColumnWidth_out.pdf";
             // Save the Pdf
             pdf1.Save(dataDir);
             // ExEnd:TableMinimumColumnWidth           

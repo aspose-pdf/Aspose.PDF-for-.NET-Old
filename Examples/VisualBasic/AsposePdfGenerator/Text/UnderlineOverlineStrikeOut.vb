@@ -10,7 +10,7 @@ Namespace AsposePdfGenerator.Text
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdfGenerator_Text()
 
-            'Instantiate Pdf instance by calling its empty constructor
+            ' Instantiate Pdf instance by calling its empty constructor
             Dim pdf1 As New Aspose.Pdf.Generator.Pdf()
 
             ' Create a section in the Pdf object

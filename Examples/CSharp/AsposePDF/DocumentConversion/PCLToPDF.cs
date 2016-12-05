@@ -21,7 +21,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion
                 Aspose.Pdf.Document doc = new Aspose.Pdf.Document(dataDir + "hidetext.pcl", loadopt);
 
                 // Save the resultant PDF document
-                doc.Save(dataDir + "PCLToPDF_out_.pdf");
+                doc.Save(dataDir + "PCLToPDF_out.pdf");
                 // ExEnd:PCLToPDF
             }
             catch (Exception ex)

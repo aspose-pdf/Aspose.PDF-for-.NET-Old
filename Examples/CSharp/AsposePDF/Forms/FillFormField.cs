@@ -21,7 +21,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Forms
             
             // Modify field value
             textBoxField.Value = "Value to be filled in the field";
-            dataDir = dataDir + "FillFormField_out_.pdf";
+            dataDir = dataDir + "FillFormField_out.pdf";
             // Save updated document
             pdfDocument.Save(dataDir);
             // ExEnd:FillFormField

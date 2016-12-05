@@ -15,7 +15,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.TechnicalArticles
 
             // Specify input and output PDF file paths
             string inputFile = dataDir + "inFile.pdf";
-            string outputFile = dataDir + "AddTextImagesUsingPdfFileMend_out_.pdf";
+            string outputFile = dataDir + "AddTextImagesUsingPdfFileMend_out.pdf";
 
             // Specify image file path
             string imageName = dataDir + "aspose-logo.jpg";

@@ -34,7 +34,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Images
             image1.ImageInfo.Title = "JPEG image";
 
             // Save the Pdf
-            pdf1.Save(dataDir + "ImageFromLocalDisk_out_.pdf");
+            pdf1.Save(dataDir + "ImageFromLocalDisk_out.pdf");
             // ExEnd:ImageFromLocalDisk         
         }
     }

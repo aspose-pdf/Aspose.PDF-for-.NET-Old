@@ -16,7 +16,7 @@ Namespace AsposePDFFacades.LinksActions
             Dim rectangle As New System.Drawing.Rectangle(100, 100, 200, 200)
 
             ' Create application link
-            contentEditor.CreateJavaScriptLink("app.alert('Welcome to Aspose!');", rectangle, 1, System.Drawing.Color.Red)
+            contentEditor.CreateJavaScriptLink("app.alert(' Welcome to Aspose!');", rectangle, 1, System.Drawing.Color.Red)
 
             ' Save updated PDF
             contentEditor.Save(dataDir & "CreateJSLink_out_.pdf")

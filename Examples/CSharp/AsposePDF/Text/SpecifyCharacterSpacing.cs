@@ -38,7 +38,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
             wideFragment.Position = new Position(100, 650);
             // Append TextFragment to TextBuilder instance
             builder.AppendText(wideFragment);
-            dataDir = dataDir + "CharacterSpacingUsingTextBuilderAndFragment_out_.pdf";
+            dataDir = dataDir + "CharacterSpacingUsingTextBuilderAndFragment_out.pdf";
             // Save resulting PDF document.
             pdfDocument.Save(dataDir);
             // ExEnd:UsingTextBuilderAndFragment
@@ -69,7 +69,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
             // Append TextParagraph to TextBuilder instance
             builder.AppendParagraph(paragraph);
 
-            dataDir = dataDir + "CharacterSpacingUsingTextBuilderAndParagraph_out_.pdf";
+            dataDir = dataDir + "CharacterSpacingUsingTextBuilderAndParagraph_out.pdf";
             // Save resulting PDF document.
             pdfDocument.Save(dataDir);
             // ExEnd:UsingTextBuilderAndParagraph
@@ -99,7 +99,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
             stamp.YIndent = 500;
             // Add textual stamp to page instance
             stamp.Put(page);
-            dataDir = dataDir + "CharacterSpacingUsingTextStamp_out_.pdf";
+            dataDir = dataDir + "CharacterSpacingUsingTextStamp_out.pdf";
             // Save resulting PDF document.
             pdfDocument.Save(dataDir);
             // ExEnd:UsingTextStamp
@@ -118,7 +118,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
             Aspose.Pdf.Generator.Section sec1 = pdf1.Sections.Add();
 
             // Add 1st paragraph (inheriting the text format settings from the section)
-            // to the section 
+            // To the section 
             sec1.Paragraphs.Add(new Aspose.Pdf.Generator.Text(sec1, "This is generator text paragraph with default character spacing"));
 
             Aspose.Pdf.Generator.Section sec2 = pdf1.Sections.Add();
@@ -137,7 +137,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
             t2.Segments.Add(seg1);
             // Add 2nd text paragraph to the section with overridden text format settings
             sec1.Paragraphs.Add(t2); ;
-            dataDir = dataDir + "UsingAsposePdfGenerator_out_.pdf";
+            dataDir = dataDir + "UsingAsposePdfGenerator_out.pdf";
             // Save resulting PDF document.
             pdf1.Save(dataDir);
             // ExEnd:UsingAsposePdfGenerator

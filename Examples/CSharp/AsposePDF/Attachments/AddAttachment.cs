@@ -21,7 +21,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Attachments
             // Add attachment to document's attachment collection
             pdfDocument.EmbeddedFiles.Add(fileSpecification);
 
-            dataDir = dataDir + "AddAttachment_out_.pdf";
+            dataDir = dataDir + "AddAttachment_out.pdf";
 
             // Save new output
             pdfDocument.Save(dataDir);

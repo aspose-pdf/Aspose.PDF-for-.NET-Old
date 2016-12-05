@@ -26,7 +26,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.WorkingDocuments
                     strategy.Convert(page);
                 }
                 // Save resultant file
-                document.Save(dataDir + "Test-gray_out_.pdf");
+                document.Save(dataDir + "Test-gray_out.pdf");
             }
             // ExEnd:ConvertFromRGBToGrayscale             
         }

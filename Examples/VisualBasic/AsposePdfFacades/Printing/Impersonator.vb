@@ -15,13 +15,13 @@ Namespace AsposePDFFacades.Printing
 
     ''' <summary>
     ''' Impersonation of a user. Allows to execute code under another
-    ''' user context.
+    ''' User context.
     ''' Please note that the account that instantiates the Impersonator class
-    ''' needs to have the 'Act as part of operating system' privilege set.
+    ''' Needs to have the ' Act as part of operating system' Privilege set.
     ''' </summary>
     ''' <remarks>	
     ''' This class is based on the information in the Microsoft knowledge base
-    ''' article http://support.microsoft.com/default.aspx?scid=kb;en-us;Q306158
+    ''' Article http://support.microsoft.com/default.aspx?scid=kb;en-us;Q306158
     ''' 
     ''' Encapsulate an instance into a using-directive like e.g.:
     ''' 
@@ -35,7 +35,7 @@ Namespace AsposePDFFacades.Printing
     '''		...
     ''' 
     ''' Please contact the author Uwe Keim (mailto:uwe.keim@zeta-software.de)
-    ''' for questions regarding this class.
+    ''' For questions regarding this class.
     ''' </remarks>
     Public Class Impersonator
         Implements IDisposable
@@ -45,7 +45,7 @@ Namespace AsposePDFFacades.Printing
         ''' <summary>
         ''' Constructor. Starts the impersonation with the given credentials.
         ''' Please note that the account that instantiates the Impersonator class
-        ''' needs to have the 'Act as part of operating system' privilege set.
+        ''' Needs to have the ' Act as part of operating system' Privilege set.
         ''' </summary>
         ''' <param name="userName">The name of the user to act as.</param>
         ''' <param name="domainName">The domain name of the user to act as.</param>

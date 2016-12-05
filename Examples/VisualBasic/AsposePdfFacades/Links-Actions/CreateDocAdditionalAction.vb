@@ -16,7 +16,7 @@ Namespace AsposePDFFacades.LinksActions
             Dim rectangle As New System.Drawing.Rectangle(100, 100, 200, 200)
 
             ' Create application link
-            contentEditor.AddDocumentAdditionalAction(PdfContentEditor.DocumentClose, "app.alert('Thank you for using Aspose products!');")
+            contentEditor.AddDocumentAdditionalAction(PdfContentEditor.DocumentClose, "app.alert(' Thank you for using Aspose products!');")
 
             ' Save updated PDF
             contentEditor.Save(dataDir & "CreateDocAdditionalAction_out_.pdf")

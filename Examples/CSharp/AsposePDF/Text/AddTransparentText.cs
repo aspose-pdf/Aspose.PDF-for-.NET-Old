@@ -40,7 +40,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
             // Add text to paragraphs collection of page instance
             page.Paragraphs.Add(text);
 
-            dataDir = dataDir + "AddTransparentText_out_.pdf";
+            dataDir = dataDir + "AddTransparentText_out.pdf";
             doc.Save(dataDir);
             // ExEnd:AddTransparentText            
             Console.WriteLine("\nTransparent text added successfully.\nFile saved at " + dataDir);

@@ -20,7 +20,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.General
                 Aspose.Pdf.Generator.Section sec1 = pdf1.Sections.Add();
                 // Create FloatingBox with 108 as width and 80 as height
                 Aspose.Pdf.Generator.FloatingBox box1 = new Aspose.Pdf.Generator.FloatingBox(108, 80);
-                // add FloatingBox to paragraphs collection of section object
+                // Add FloatingBox to paragraphs collection of section object
                 sec1.Paragraphs.Add(box1);
                 // ExStart:PositionFloatingBox-1
                 // Specify the Horizontal Positioning type for FloatingBox as Margin
@@ -35,7 +35,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.General
                 // Add sample text string to paragraphs collection of FloatingBox object
                 box1.Paragraphs.Add(new Aspose.Pdf.Generator.Text("Hello."));              
 
-                dataDir = dataDir + "PositionFloatingBox_out_.pdf";
+                dataDir = dataDir + "PositionFloatingBox_out.pdf";
                 // Save the resultant PDF
                 pdf1.Save(dataDir);
                 // ExEnd:PositionFloatingBox

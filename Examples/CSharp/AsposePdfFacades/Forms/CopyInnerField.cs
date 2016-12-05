@@ -22,7 +22,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Forms
                 formEditor.CopyInnerField("textfield", "newfieldname", 1);
 
                 // Close and save the output document
-                formEditor.Save(dataDir + "CopyInnerField_out_.pdf");
+                formEditor.Save(dataDir + "CopyInnerField_out.pdf");
                 // ExEnd:CopyInnerField
             }
             catch (Exception ex)

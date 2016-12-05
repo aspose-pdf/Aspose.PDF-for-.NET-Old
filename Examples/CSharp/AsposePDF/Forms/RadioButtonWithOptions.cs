@@ -72,7 +72,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Forms
                 c2.Paragraphs.Add(opt2);
                 c3.Paragraphs.Add(opt3);
 
-                dataDir = dataDir + "RadioButtonWithOptions_out_.pdf";
+                dataDir = dataDir + "RadioButtonWithOptions_out.pdf";
                 // Save the PDF file
                 doc.Save(dataDir);
                 // ExEnd:RadioButtonWithOptions

@@ -61,7 +61,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.TechnicalArticles
             }
 
             // Save the Pdf
-            pdf1.Save(dataDir + "PerformaceImprovement_out_.pdf");
+            pdf1.Save(dataDir + "PerformaceImprovement_out.pdf");
             // ExEnd:PerformaceImprovement           
         }
     }

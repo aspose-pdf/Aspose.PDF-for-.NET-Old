@@ -48,7 +48,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Text
             sec1.Paragraphs.Add(text4);
 
             // Save the Pdf
-            pdf1.Save(dataDir + "SetRenderingMode_out_.pdf");
+            pdf1.Save(dataDir + "SetRenderingMode_out.pdf");
             // ExEnd:SetRenderingMode
         }
             

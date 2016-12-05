@@ -19,7 +19,7 @@ Namespace AsposePDFFacades.TechnicalArticles
             pEdit.Rotation = 180
             pEdit.Save(dataDir & Convert.ToString("Aspose.Pdf.Facades_rotate_180_out_.pdf"))
 
-            'rotate even pages at 270 degrees
+            ' Rotate even pages at 270 degrees
             pEdit.BindPdf(dataDir & Convert.ToString("inFile2.pdf"))
             pEdit.ProcessPages = New Integer() {1}
             pEdit.Rotation = 270

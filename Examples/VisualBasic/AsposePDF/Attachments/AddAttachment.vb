@@ -16,7 +16,7 @@ Namespace AsposePDF.Attachments
             ' Setup new file to be added as attachment
             Dim fileSpecification As New FileSpecification(dataDir & Convert.ToString("test.txt"), "Sample text file")
 
-            ' Add attachment to document's attachment collection
+            ' Add attachment to document' S attachment collection
             pdfDocument.EmbeddedFiles.Add(fileSpecification)
 
             dataDir = dataDir & Convert.ToString("AddAttachment_out_.pdf")

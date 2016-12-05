@@ -30,7 +30,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.WorkingDocuments
             fragment.Segments.Add(segment);
             page.Paragraphs.Add(fragment);
 
-            dataDir = dataDir + "EmbedFontWhileDocCreation_out_.pdf";
+            dataDir = dataDir + "EmbedFontWhileDocCreation_out.pdf";
             // Save PDF Document
             doc.Save(dataDir);
             // ExEnd:EmbedFontWhileDocCreation 

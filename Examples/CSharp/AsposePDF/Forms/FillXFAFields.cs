@@ -21,7 +21,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Forms
             // Set field values
             doc.Form.XFA[names[0]] = "Field 0";
             doc.Form.XFA[names[1]] = "Field 1";
-            dataDir = dataDir + "Filled_XFA_out_.pdf";
+            dataDir = dataDir + "Filled_XFA_out.pdf";
             // Save the updated document
             doc.Save(dataDir);
             // ExEnd:FillXFAFields

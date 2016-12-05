@@ -24,7 +24,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.SecuritySignatures
                     {
                         foreach (string sigName in signature.GetSignNames())
                         {
-                            string outFile = dataDir + "ExtractImages_out_.jpg";
+                            string outFile = dataDir + "ExtractImages_out.jpg";
                             using (Stream imageStream = signature.ExtractImage(sigName))
                             {
                                 if (imageStream != null)

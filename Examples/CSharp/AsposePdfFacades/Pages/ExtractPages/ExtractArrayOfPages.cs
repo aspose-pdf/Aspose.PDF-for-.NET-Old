@@ -16,7 +16,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.ExtractPages
             PdfFileEditor pdfEditor = new PdfFileEditor();
             int[] pagesToExtract = new int[] { 1, 2 };
             // Extract pages
-            pdfEditor.Extract(dataDir + "Extract.pdf", pagesToExtract, dataDir + "ExtractArrayOfPages_out_.pdf");
+            pdfEditor.Extract(dataDir + "Extract.pdf", pagesToExtract, dataDir + "ExtractArrayOfPages_out.pdf");
             // ExEnd:ExtractArrayOfPages
         }
     }

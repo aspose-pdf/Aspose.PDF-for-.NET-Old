@@ -19,7 +19,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Images
             contentEditor.DeleteImage();
 
             // Save output PDF
-            contentEditor.Save(dataDir+ "DeleteAllImages_out_.pdf");
+            contentEditor.Save(dataDir+ "DeleteAllImages_out.pdf");
             // ExEnd:DeleteAllImages
             
         }

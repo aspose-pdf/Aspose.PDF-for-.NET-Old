@@ -25,8 +25,8 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.TechnicalArticles
             // Set field limit - this field will take maximum 20 characters as input
             formEditor.SetFieldLimit("text1", 20);
 
-            //Close the document
-            formEditor.Save(dataDir + "ChangingFieldAppearance_out_.pdf");
+            // Close the document
+            formEditor.Save(dataDir + "ChangingFieldAppearance_out.pdf");
             // ExEnd:ChangingFieldAppearance                      
         }
     }

@@ -56,7 +56,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Text
                 Aspose.Pdf.Generator.Segment seg33 = text1.Segments.Add("radio3  ");
                 
                 // Save the document
-                pdf1.Save(dataDir + "InlineRadioButton_out_.pdf");
+                pdf1.Save(dataDir + "InlineRadioButton_out.pdf");
                 // ExEnd:InlineRadioButton
             }
             catch (Exception ex)

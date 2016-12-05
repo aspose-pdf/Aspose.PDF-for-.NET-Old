@@ -76,7 +76,7 @@ Namespace AsposePdfGenerator.UtilityFeatures
 
             ' ExStart:DefineOwnFormat
             ' Define the format of the four levels list by setting the left margins and
-            ' text format settings of each level
+            ' Text format settings of each level
             tocSection.ListFormatArray.Length = 4
             tocSection.ListFormatArray(0).LeftMargin = 0
             tocSection.ListFormatArray(0).TextInfo.IsTrueTypeFontBold = True

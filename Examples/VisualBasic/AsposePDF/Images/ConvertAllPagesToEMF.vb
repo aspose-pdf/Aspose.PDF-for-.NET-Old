@@ -14,7 +14,7 @@ Namespace AsposePDF.Images
             Dim pdfDocument As New Document(dataDir & Convert.ToString("ConvertAllPagesToEMF.pdf"))
 
             For pageCount As Integer = 1 To pdfDocument.Pages.Count
-                Using imageStream As New FileStream("image" & pageCount & "_out_" & ".emf", FileMode.Create)
+                Using imageStream As New FileStream("image" & pageCount & "_out" & ".emf", FileMode.Create)
                     ' Create Resolution object
                     Dim resolution As New Resolution(300)
                     ' Create EMF device with specified attributes

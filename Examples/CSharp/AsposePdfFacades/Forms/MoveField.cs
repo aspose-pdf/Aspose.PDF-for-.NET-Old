@@ -19,7 +19,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Forms
             // Move field to new location
             formEditor.MoveField("textfield", 300, 300, 400, 400);
             // Save updated file
-            formEditor.Save( dataDir + "MoveFormField_out_.pdf");
+            formEditor.Save( dataDir + "MoveFormField_out.pdf");
             // ExEnd:MoveField
         }
     }

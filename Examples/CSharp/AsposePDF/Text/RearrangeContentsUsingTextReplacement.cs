@@ -32,7 +32,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
                     // Replace the text with larger string than placeholder
                     textFragment.Text = "This is a Larger String for the Testing of this issue";
                 }
-                dataDir = dataDir + "RearrangeContentsUsingTextReplacement_out_.pdf";
+                dataDir = dataDir + "RearrangeContentsUsingTextReplacement_out.pdf";
                 // Save resultant PDF
                 doc.Save(dataDir);
                 // ExEnd:RearrangeContentsUsingTextReplacement            

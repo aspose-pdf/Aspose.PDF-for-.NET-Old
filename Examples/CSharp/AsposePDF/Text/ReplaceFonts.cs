@@ -34,7 +34,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
 
                 }
 
-                dataDir = dataDir + "ReplaceFonts_out_.pdf";
+                dataDir = dataDir + "ReplaceFonts_out.pdf";
                 // Save updated document
                 pdfDocument.Save(dataDir);
                 // ExEnd:ReplaceFonts            

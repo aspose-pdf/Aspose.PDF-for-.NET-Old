@@ -25,7 +25,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Pages
             // So A4 dimensions in points will be (842.4, 597.6)
             pdfPage.SetPageSize(597.6, 842.4);
 
-            dataDir = dataDir + "UpdateDimensions_out_.pdf";
+            dataDir = dataDir + "UpdateDimensions_out.pdf";
             // Save the updated document
             pdfDocument.Save(dataDir);
             // ExEnd:UpdateDimensions

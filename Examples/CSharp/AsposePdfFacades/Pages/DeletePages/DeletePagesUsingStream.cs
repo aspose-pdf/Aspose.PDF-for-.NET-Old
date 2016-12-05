@@ -16,7 +16,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.DeletePages
             PdfFileEditor pdfEditor = new PdfFileEditor();
             // Create streams
             FileStream inputStream = new FileStream( dataDir + "input.pdf", FileMode.Open);
-            FileStream outputStream = new FileStream(dataDir + "DeletePagesUsingStream_out_.pdf", FileMode.Create);
+            FileStream outputStream = new FileStream(dataDir + "DeletePagesUsingStream_out.pdf", FileMode.Create);
             // Array of pages to delete
             int[] pagesToDelete = new int[] { 1, 3 };
             // Delete pages

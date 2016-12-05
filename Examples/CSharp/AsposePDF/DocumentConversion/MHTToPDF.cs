@@ -14,7 +14,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion
             // Load document
             Document document = new Document(dataDir  + "test.mht", options);
             // Save the output as PDF document
-            document.Save(dataDir + "MHTToPDF_out_.pdf");
+            document.Save(dataDir + "MHTToPDF_out.pdf");
             // ExEnd:MHTToPDF
         }
     }

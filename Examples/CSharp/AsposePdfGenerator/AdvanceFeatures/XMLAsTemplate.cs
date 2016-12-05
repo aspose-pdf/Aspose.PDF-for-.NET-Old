@@ -17,7 +17,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.AdvanceFeatures
             pdf1.BindXML( dataDir + "Template.xml", null);
 
             // Get the section and then table from the obtained section of the Pdf that
-            // is built from the XML template
+            // Is built from the XML template
             Aspose.Pdf.Generator.Section sec1 = pdf1.Sections["Section1"];
             Aspose.Pdf.Generator.Table table1 = sec1.Paragraphs["Table1"] as Aspose.Pdf.Generator.Table;
 
@@ -44,7 +44,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.AdvanceFeatures
             Aspose.Pdf.Generator.Section sec2 = sec1.CompleteClone() as Aspose.Pdf.Generator.Section;
 
             // Add a cloned section to the Pdf and change the contents of the text segments
-            // in the section2 of the Pdf object        
+            // In the section2 of the Pdf object        
             pdf1.Sections.Add(sec2);
             item = sec2.GetObjectByID("Item1") as Aspose.Pdf.Generator.Segment;
             item.Content = "item1 sec2";
@@ -52,7 +52,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.AdvanceFeatures
             item.Content = "item2 sec2";
 
             // Save the Pdf
-            pdf1.Save( dataDir + "XmlTemp_out_.pdf");   
+            pdf1.Save( dataDir + "XmlTemp_out.pdf");   
             // ExEnd:XMLAsTemplate           
         }
     }

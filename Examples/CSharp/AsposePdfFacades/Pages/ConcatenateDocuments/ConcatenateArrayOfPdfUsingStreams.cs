@@ -15,7 +15,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.ConcatenateDocuments
             // Create PdfFileEditor object
             PdfFileEditor pdfEditor = new PdfFileEditor();
             // Output stream
-            FileStream outputStream = new FileStream(dataDir + "ConcatenateArrayOfPdfUsingStreams_out_.pdf", FileMode.Create);
+            FileStream outputStream = new FileStream(dataDir + "ConcatenateArrayOfPdfUsingStreams_out.pdf", FileMode.Create);
             // Array of streams
             FileStream[] inputStreams = new FileStream[2];
             inputStreams[0] = new FileStream(dataDir + "input.pdf", FileMode.Open);

@@ -26,7 +26,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.LinksActions
             // Set the document open action
             doc.OpenAction = action;
             // Save updated document
-            doc.Save(dataDir + "goto2page_out_.pdf");
+            doc.Save(dataDir + "goto2page_out.pdf");
             // ExEnd:SpecifyPageWhenViewing                        
         }
     }

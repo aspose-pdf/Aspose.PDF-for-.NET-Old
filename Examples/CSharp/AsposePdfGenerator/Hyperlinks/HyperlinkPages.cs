@@ -45,12 +45,12 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Hyperlinks
             sec1.Paragraphs.Add(text3); 
 
             // Set this paragraph to be the first so that it can be displayed in a separate
-            // page in the document
+            // Page in the document
             text3.IsFirstParagraph = true; 
 
             // Set the id of this text paragraph to "product1"
             text3.ID = "product1"; 
-            dataDir = dataDir + "HyperlinkPages_out_.pdf";
+            dataDir = dataDir + "HyperlinkPages_out.pdf";
             // Save the Pdf
             pdf1.Save(dataDir);
             // ExEnd:HyperlinkPages           

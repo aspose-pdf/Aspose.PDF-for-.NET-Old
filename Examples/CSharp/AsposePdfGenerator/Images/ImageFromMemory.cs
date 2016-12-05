@@ -45,7 +45,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.General
                 image1.ImageScale = 0.5F; 
 
                 // Save the Pdf
-                pdf1.Save(dataDir + "ImageFromMemory_out_.pdf"); 
+                pdf1.Save(dataDir + "ImageFromMemory_out.pdf"); 
                 // ExEnd:ImageFromMemory
             }
             catch (Exception ex)

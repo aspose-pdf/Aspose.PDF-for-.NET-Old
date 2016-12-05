@@ -29,7 +29,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Images
             Resolution resolution = new Resolution(300);
             // Create PNG device with specified attributes
             PngDevice pngDevice = new PngDevice(resolution);
-            dataDir = dataDir + "ConvertPageRegionToDOM_out_.png";
+            dataDir = dataDir + "ConvertPageRegionToDOM_out.png";
             // Convert a particular page and save the image to stream
             pngDevice.Process(document.Pages[1], dataDir);
             ms.Close();

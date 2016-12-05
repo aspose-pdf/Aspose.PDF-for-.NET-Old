@@ -31,9 +31,9 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Hyperlinks
             segment2.Hyperlink.LinkType = Aspose.Pdf.Generator.HyperlinkType.Web;
 
             // Set the URL of the web location to create a web link for the segment
-            segment2.Hyperlink.Url = "http://localhost/popup.htm";
+            segment2.Hyperlink.Url = "http:// Localhost/popup.htm";
 
-            dataDir = dataDir + "HyperlinkToWeb_out_.pdf";
+            dataDir = dataDir + "HyperlinkToWeb_out.pdf";
             // Save the Pdf
             pdf1.Save(dataDir);
             // ExEnd:HyperlinkToWeb           

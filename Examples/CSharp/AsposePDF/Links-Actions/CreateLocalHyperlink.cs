@@ -40,7 +40,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.LinksActions
             // Add text to paragraphs collection of page object
             page.Paragraphs.Add(text);    
 
-            dataDir = dataDir + "CreateLocalHyperlink_out_.pdf";
+            dataDir = dataDir + "CreateLocalHyperlink_out.pdf";
             // Save updated document
             doc.Save(dataDir);
             // ExEnd:CreateLocalHyperlink

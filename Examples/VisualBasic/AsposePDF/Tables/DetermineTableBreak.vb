@@ -50,12 +50,12 @@ Namespace AsposePDF.Tables
             Dim TotalObjectsHeight As Single = CSng(page.PageInfo.Margin.Top) + CSng(page.PageInfo.Margin.Bottom) + CSng(table1.Margin.Top) + CSng(table1.GetHeight())
 
             ' Display Page Height, Table Height, table Top margin and Page Top 
-            ' and Bottom margin information
+            ' And Bottom margin information
             Console.WriteLine("PDF document Height = " + pdf.PageInfo.Height.ToString() + vbLf & "Top Margin Info = " + page.PageInfo.Margin.Top.ToString() + vbLf & "Bottom Margin Info = " + page.PageInfo.Margin.Bottom.ToString() + vbLf & vbLf & "Table-Top Margin Info = " + table1.Margin.Top.ToString() + vbLf & "Average Row Height = " + table1.Rows(0).MinRowHeight.ToString() + " " & vbLf & "Table height " + table1.GetHeight().ToString() + vbLf & " ----------------------------------------" + vbLf & "Total Page Height =" + PageHeight.ToString() + vbLf & "Cummulative height including Table =" + TotalObjectsHeight.ToString())
 
             ' Check if we deduct the sume of Page top margin + Page Bottom margin
             ' + Table Top margin and table height from Page height and its less
-            ' than 10 (an average row can be greater than 10)
+            ' Than 10 (an average row can be greater than 10)
             If (PageHeight - TotalObjectsHeight) <= 10 Then
                 ' If the value is less than 10, then display the message. 
                 ' Which shows that another row can not be placed and if we add new 

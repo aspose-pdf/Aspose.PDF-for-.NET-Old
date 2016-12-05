@@ -42,7 +42,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.UtilityFeatures
             // Add the combo form field to the paragraphs collection of the section
             sec1.Paragraphs.Add(combo); 
 
-            dataDir = dataDir + "ManipulatingFormFields_out_.pdf";
+            dataDir = dataDir + "ManipulatingFormFields_out.pdf";
             // Save the Pdf
             pdf1.Save(dataDir);
             // ExEnd:ManipulatingFormFields           
@@ -59,7 +59,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.UtilityFeatures
 
 
             // Create a table, set its column widths and add it to paragraphs collection
-            // of the  section
+            // Of the  section
             Aspose.Pdf.Generator.Table tab1 = new Aspose.Pdf.Generator.Table();
             tab1.ColumnWidths = "120 120 120";
             sec1.Paragraphs.Add(tab1);
@@ -70,21 +70,21 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.UtilityFeatures
 
 
             // Add 1st cell to the row, set its padding and set the ID of the first paragraph
-            // in the cell to "text1"
+            // In the cell to "text1"
             Aspose.Pdf.Generator.Cell c1 = r1.Cells.Add("item1");
             c1.Padding.Left = 30;
             c1.Paragraphs[0].ID = "text1";
 
 
             // Add 2nd cell to the row, set its padding and set the ID of the first paragraph
-            // in the cell to "text2"
+            // In the cell to "text2"
             Aspose.Pdf.Generator.Cell c2 = r1.Cells.Add("item2");
             c2.Padding.Left = 30;
             c2.Paragraphs[0].ID = "text2";
 
 
             // Add 3rd cell to the row, set its padding and set the ID of the first paragraph
-            // in the cell to "text3"
+            // In the cell to "text3"
             Aspose.Pdf.Generator.Cell c3 = r1.Cells.Add("item3");
             c3.Padding.Left = 30;
             c3.Paragraphs[0].ID = "text3";
@@ -101,8 +101,8 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.UtilityFeatures
 
             // Create 1st radio button instance and add it to above created radio form field.
             // Set its width and height. The position of the radio button is set to be
-            // relative to the paragraph. Link this radio button with the paragraph with ID
-            // equal to "text1".
+            // Relative to the paragraph. Link this radio button with the paragraph with ID
+            // Equal to "text1".
             Aspose.Pdf.Generator.RadioButton bt1 = radio.RadioButtons.Add();
             bt1.ButtonHeight = 12;
             bt1.ButtonWidth = 12;
@@ -114,8 +114,8 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.UtilityFeatures
 
             // Create 2nd radio button instance and add it to above created radio form field.
             // Set its width and height. The position of the radio button is set to be
-            // relative to the paragraph. Link this radio button with the paragraph with ID
-            // equal to "text2".
+            // Relative to the paragraph. Link this radio button with the paragraph with ID
+            // Equal to "text2".
             Aspose.Pdf.Generator.RadioButton bt2 = radio.RadioButtons.Add();
             bt2.ButtonHeight = 12;
             bt2.ButtonWidth = 12;
@@ -127,8 +127,8 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.UtilityFeatures
 
             // Create 3rd radio button instance and add it to above created radio form field.
             // Set its width and height. The position of the radio button is set to be
-            // relative to the paragraph. Link this radio button with the paragraph with ID
-            // equal to "text3".
+            // Relative to the paragraph. Link this radio button with the paragraph with ID
+            // Equal to "text3".
             Aspose.Pdf.Generator.RadioButton bt3 = radio.RadioButtons.Add();
             bt3.ButtonHeight = 12;
             bt3.ButtonWidth = 12;
@@ -141,7 +141,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.UtilityFeatures
             // Add the radio form field to the paragraphs collection of the section
             sec1.Paragraphs.Add(radio);
 
-            dataDir = dataDir + "RadioButtonWithCustomPosition_out_.pdf";
+            dataDir = dataDir + "RadioButtonWithCustomPosition_out.pdf";
             // Save the Pdf
             pdf1.Save(dataDir);
             // ExEnd:RadioButtonWithCustomPosition           

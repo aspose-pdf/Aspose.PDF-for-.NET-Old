@@ -26,7 +26,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.StampsWatermarks
             fileStamp.AddHeader(formattedText, 10);
            
             // Save updated PDF file
-            fileStamp.Save(dataDir + "AddHeader_out_.pdf");
+            fileStamp.Save(dataDir + "AddHeader_out.pdf");
             
             // Close fileStamp
             fileStamp.Close();

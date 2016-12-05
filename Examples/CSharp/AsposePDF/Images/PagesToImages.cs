@@ -18,7 +18,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Images
 
             for (int pageCount = 1; pageCount <= pdfDocument.Pages.Count; pageCount++)
             {
-                using (FileStream imageStream = new FileStream(dataDir + "image" + pageCount + "_out_" + ".jpg", FileMode.Create))
+                using (FileStream imageStream = new FileStream(dataDir + "image" + pageCount + "_out" + ".jpg", FileMode.Create))
                 {
                     // Create JPEG device with specified attributes
                     // Width, Height, Resolution, Quality

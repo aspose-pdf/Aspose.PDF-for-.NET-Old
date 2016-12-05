@@ -47,7 +47,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Forms
                 // Add radio button to form object of Document object
                 pdfDocument.Form.Add(radio);
 
-                dataDir = dataDir + "GroupedCheckBoxes_out_.pdf";
+                dataDir = dataDir + "GroupedCheckBoxes_out.pdf";
                 // Save the PDF document
                 pdfDocument.Save(dataDir);
                 // ExEnd:GroupedCheckBoxes

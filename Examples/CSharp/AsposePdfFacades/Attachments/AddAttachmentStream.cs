@@ -22,7 +22,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Attachments
             contentEditor.AddDocumentAttachment(fileStream, "Attachment Name", "Attachment Description");
 
             // Save updated PDF
-            contentEditor.Save(dataDir+ "AddAttachment-Stream_out_.pdf");
+            contentEditor.Save(dataDir+ "AddAttachment-Stream_out.pdf");
             // ExEnd:AddAttachmentStream            
             
         }

@@ -14,13 +14,13 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Operators
 
             string imageFile = dataDir+ "aspose-logo.jpg";
             string inFile = dataDir + "DrawXFormOnPage.pdf";
-            string outFile = dataDir + "blank-sample2_out_.pdf";
+            string outFile = dataDir + "blank-sample2_out.pdf";
 
             using (Document doc = new Document(inFile))
             {
                 OperatorCollection pageContents = doc.Pages[1].Contents;
 
-                // the sample demonstrates 
+                // The sample demonstrates 
                 // GSave/GRestore operators usage
                 // ContatenateMatrix operator usage to position xForm
                 // Do operator usage to draw xForm on page

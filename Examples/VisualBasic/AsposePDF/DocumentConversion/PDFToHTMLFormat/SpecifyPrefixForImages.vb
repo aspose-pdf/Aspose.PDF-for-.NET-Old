@@ -27,9 +27,9 @@ Namespace AsposePDF.DocumentConversion.PDFToHTMLFormat
         ' ExStart:SpecifyPrefixForImagesHelper
         Private Shared Function SavingTestStrategy_1(resourceSavingInfo As SaveOptions.ResourceSavingInfo) As String
             ' This sample method saving strategy method saves only svg-files in some folder and returns specific path
-            ' To be used as value of 'src' or 'data' relevant attribute in generated HTML
+            ' To be used as value of ' Src' or ' Data' Relevant attribute in generated HTML
             ' All other files will be processed with converter itself cause for them flag
-            ' ResourceSavingInfo.CustomProcessingCancelled is set to 'true'
+            ' ResourceSavingInfo.CustomProcessingCancelled is set to ' True'
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_AsposePdf_DocumentConversion_PDFToHTMLFormat()
             If Not (TypeOf resourceSavingInfo Is HtmlSaveOptions.HtmlImageSavingInfo) Then

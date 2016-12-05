@@ -18,7 +18,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.MakeBooklet
             int[] leftPages = new int[] { 1, 5};
             int[] rightPages = new int[] { 2, 3 };
             // Make booklet
-            pdfEditor.MakeBooklet(dataDir + "MultiplePages.pdf", dataDir + "MakeBookletUsingLeftRightPagesAndPaths_out_.pdf", leftPages, rightPages);
+            pdfEditor.MakeBooklet(dataDir + "MultiplePages.pdf", dataDir + "MakeBookletUsingLeftRightPagesAndPaths_out.pdf", leftPages, rightPages);
             // ExEnd:MakeBookletUsingLeftRightPagesAndPaths
         }
     }

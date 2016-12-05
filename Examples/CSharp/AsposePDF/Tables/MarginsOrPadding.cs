@@ -48,7 +48,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Tables
             row2.Cells.Add("item1");
             row2.Cells.Add("item2");
             row2.Cells.Add("item3");
-            dataDir = dataDir + "MarginsOrPadding_out_.pdf";
+            dataDir = dataDir + "MarginsOrPadding_out.pdf";
             // Save the Pdf
             doc.Save(dataDir);
             // ExEnd:MarginsOrPadding

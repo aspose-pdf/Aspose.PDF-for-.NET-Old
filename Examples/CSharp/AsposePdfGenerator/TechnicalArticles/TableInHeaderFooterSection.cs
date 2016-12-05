@@ -72,7 +72,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.TechnicalArticles
             row2.Cells[1].Alignment = Aspose.Pdf.Generator.AlignmentType.Center;
 
             // Save the Pdf file
-            pdfConv.Save(dataDir + "TableInHeaderFooterSection_out_.pdf");
+            pdfConv.Save(dataDir + "TableInHeaderFooterSection_out.pdf");
             // ExEnd:TableInHeaderFooterSection           
         }
     }

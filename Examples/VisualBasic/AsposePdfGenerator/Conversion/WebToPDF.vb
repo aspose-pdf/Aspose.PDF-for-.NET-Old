@@ -41,7 +41,7 @@ Namespace AsposePdfGenerator.Conversion
             section.Paragraphs.Add(text2)
 
             ' Specify the URL which serves as images database
-            ' pdf.HtmlInfo.ImgUrl = "http://en.wikipedia.org/";
+            ' Pdf.HtmlInfo.ImgUrl = "http://en.wikipedia.org/";
             ' Save the pdf document            
             pdf.Save(dataDir & Convert.ToString("WebToPDF_out_.pdf"))
             localWebResponse.Close()

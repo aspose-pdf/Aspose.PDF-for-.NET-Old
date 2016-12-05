@@ -34,9 +34,9 @@ Namespace AsposePDF.DocumentConversion
                 Dim options As New HtmlLoadOptions("http://my.signchart.com/")
                 options.ExternalResourcesCredentials = CredentialCache.DefaultCredentials
 
-                ' load HTML file
+                ' Load HTML file
                 Dim pdfDocument As New Document(stream, options)
-                ' save resultant file
+                ' Save resultant file
                 pdfDocument.Save("ProvideCredentialsDuringHTMLToPDF_out_.pdf")
                 ' ExEnd:ProvideCredentialsDuringHTMLToPDF
             Catch ex As Exception

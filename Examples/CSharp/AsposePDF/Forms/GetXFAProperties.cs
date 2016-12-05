@@ -27,7 +27,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Forms
             // Get field position
             Console.WriteLine(doc.Form.XFA.GetFieldTemplate(names[0]).Attributes["y"].Value);
 
-            dataDir = dataDir + "Filled_XFA_out_.pdf";
+            dataDir = dataDir + "Filled_XFA_out.pdf";
             // Save the updated document
             doc.Save(dataDir);
             // ExEnd:GetXFAProperties

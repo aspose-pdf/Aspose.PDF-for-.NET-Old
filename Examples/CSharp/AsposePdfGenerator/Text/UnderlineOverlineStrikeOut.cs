@@ -41,7 +41,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Text
             sec1.Paragraphs.Add(text3);
 
             // Save the Pdf
-            pdf1.Save(dataDir + "UnderlineOverlineStrikeOut_out_.pdf");
+            pdf1.Save(dataDir + "UnderlineOverlineStrikeOut_out.pdf");
             // ExEnd:UnderlineOverlineStrikeOut
         }
     }

@@ -32,7 +32,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.WorkingDocument
 
             // Add user defined property
             // Step #1: register namespace prefix and URI
-            xmpMetaData.RegisterNamespaceURI("customNamespace", "http://www.customNameSpaces.com/ns/");
+            xmpMetaData.RegisterNamespaceURI("customNamespace", "http:// Www.customNameSpaces.com/ns/");
             // Step #2: add user property with the prefix
             xmpMetaData.Add("customNamespace:UserPropertyName", "UserPropertyValue");
 
@@ -40,7 +40,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.WorkingDocument
             xmpMetaData["customNamespace:UserPropertyName"] = "UserPropertyValue2";
 
             // Save xmp meta data in the pdf file
-            xmpMetaData.Save(dataDir+ "SetXMPMetadata_out_.pdf");
+            xmpMetaData.Save(dataDir+ "SetXMPMetadata_out.pdf");
 
             // Close the object
             xmpMetaData.Close();

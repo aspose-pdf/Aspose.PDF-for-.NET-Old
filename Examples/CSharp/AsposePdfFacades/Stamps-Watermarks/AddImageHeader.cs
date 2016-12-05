@@ -22,7 +22,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.StampsWatermarks
             fileStamp.AddHeader(new FileStream(dataDir + "AddImageHeader.jpg", FileMode.Open), 10);
 
             // Save updated PDF file
-            fileStamp.Save(dataDir + "AddImage-Header_out_.pdf");
+            fileStamp.Save(dataDir + "AddImage-Header_out.pdf");
 
             // Close fileStamp
             fileStamp.Close();

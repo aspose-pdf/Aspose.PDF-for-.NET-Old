@@ -35,7 +35,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Hyperlinks
             // Set the path of the external Non-Pdf file
             segment1.Hyperlink.LinkFile = dataDir + "aspose-logo.jpg";
 
-            dataDir = dataDir + "HyperlinkNonPdfFile_out_.pdf";
+            dataDir = dataDir + "HyperlinkNonPdfFile_out.pdf";
             // Save the Pdf
             pdf1.Save(dataDir);
             // ExEnd:HyperlinkNonPdfFile           

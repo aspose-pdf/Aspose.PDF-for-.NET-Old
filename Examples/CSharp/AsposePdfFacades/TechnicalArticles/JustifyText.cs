@@ -31,7 +31,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.TechnicalArticles
 
                 ms.Seek(0, SeekOrigin.Begin);
 
-                FileStream dest = new FileStream(dataDir + "JustifyText_out_.pdf", FileMode.Create);
+                FileStream dest = new FileStream(dataDir + "JustifyText_out.pdf", FileMode.Create);
 
                 // Create formEditor Object
                 FormEditor formEditor = new FormEditor();

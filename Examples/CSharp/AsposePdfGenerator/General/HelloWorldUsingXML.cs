@@ -24,7 +24,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.General
                 // Bind XML into the document
                 pdf1.BindXML(dataDir + "HelloWorld.XML", null);
 
-                dataDir = dataDir + "HelloWorldUsingXML_out_.pdf";
+                dataDir = dataDir + "HelloWorldUsingXML_out.pdf";
                 // Save the document
                 pdf1.Save(dataDir);
                 // ExEnd:HelloWorldUsingXML

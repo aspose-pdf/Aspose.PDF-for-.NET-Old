@@ -17,7 +17,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.DeletePages
             // Array of pages to delete
             int[] pagesToDelete = new int[] { 1, 2};
             // Delete pages
-            pdfEditor.Delete(dataDir + "input.pdf", pagesToDelete, dataDir + "DeletePagesUsingFilePath_out_.pdf");
+            pdfEditor.Delete(dataDir + "input.pdf", pagesToDelete, dataDir + "DeletePagesUsingFilePath_out.pdf");
             // ExEnd:DeletePagesUsingFilePath
         }
     }

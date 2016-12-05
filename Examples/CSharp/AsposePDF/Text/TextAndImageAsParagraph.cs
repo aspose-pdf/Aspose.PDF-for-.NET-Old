@@ -42,7 +42,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
             // Add newly created TextFragment to paragraphs collection of page
             page.Paragraphs.Add(text);
 
-            dataDir = dataDir + "TextAndImageAsParagraph_out_.pdf";
+            dataDir = dataDir + "TextAndImageAsParagraph_out.pdf";
             doc.Save(dataDir);
             // ExEnd:TextAndImageAsParagraph
             Console.WriteLine("\nText and image added successfully as an inline paragraphs.\nFile saved at " + dataDir);

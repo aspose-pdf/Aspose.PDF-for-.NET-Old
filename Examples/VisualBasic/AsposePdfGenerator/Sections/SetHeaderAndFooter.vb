@@ -17,7 +17,7 @@ Namespace AsposePdfGenerator.Sections
             Dim section1 As AP.Generator.Section = pdf.Sections.Add()
             ' ExStart:SetHeaderAndFooter
             ' Instantiate HeaderFooter object and pass the Section reference in which
-            ' the header or footer is to be added
+            ' The header or footer is to be added
             Dim hf1 As New AP.Generator.HeaderFooter(section1)
 
             ' Set the header of odd pages of the PDF document
@@ -30,12 +30,12 @@ Namespace AsposePdfGenerator.Sections
             Dim text As New AP.Generator.Text(hf1, "header")
 
             ' Add the text object to the Paragraphs collection of HeaderFooter object to
-            ' display header on the pages of PDF document
+            ' Display header on the pages of PDF document
             hf1.Paragraphs.Add(text)
             ' ExEnd:SetHeaderAndFooter
             dataDir = dataDir & Convert.ToString("SetHeaderAndFooter_out_.pdf")
 
-            'Save Pdf Document
+            ' Save Pdf Document
             pdf.Save(dataDir)
 
             Console.WriteLine(Convert.ToString(vbLf & "Header and footer setup successfully." & vbLf & "File saved at ") & dataDir)

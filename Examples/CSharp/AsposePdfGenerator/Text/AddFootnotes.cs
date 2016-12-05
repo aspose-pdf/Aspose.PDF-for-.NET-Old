@@ -38,7 +38,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Text
                 sec.Paragraphs.Add(text);
 
                 // Save the document
-                pdf.Save(dataDir + "AddFootnotes_out_.pdf");
+                pdf.Save(dataDir + "AddFootnotes_out.pdf");
                 // ExEnd:AddFootnotes
             }
             catch (Exception ex)

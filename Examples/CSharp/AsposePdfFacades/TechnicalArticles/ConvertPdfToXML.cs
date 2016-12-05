@@ -15,7 +15,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.TechnicalArticles
             // Create a file stream for FDF file - input file
             System.IO.FileStream fdfInputStream = new FileStream(dataDir + "inFile.pdf", FileMode.Open);
             // Create a file stream for XML file - output file
-            System.IO.FileStream xmlOutputStream = new FileStream(dataDir + "ConvertPdfToXML_out_.xml", FileMode.Create);
+            System.IO.FileStream xmlOutputStream = new FileStream(dataDir + "ConvertPdfToXML_out.xml", FileMode.Create);
             // Create a file stream for XML file - output file
             FormDataConverter.ConvertFdfToXml(fdfInputStream, xmlOutputStream);
             // ExEnd:ConvertPdfToXML                      

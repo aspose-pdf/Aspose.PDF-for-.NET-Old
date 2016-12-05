@@ -15,7 +15,7 @@ Namespace AsposePDF.Attachments
             Dim fileSpecification As New FileSpecification("test_out_.txt", "Sample text file")
             ' Specify Encoding proparty setting it to FileEncoding.None
             fileSpecification.Encoding = FileEncoding.None
-            ' Add attachment to document's attachment collection
+            ' Add attachment to document' S attachment collection
             pdfDocument.EmbeddedFiles.Add(fileSpecification)
             dataDir = dataDir & Convert.ToString("DisableFilesCompression_out_.pdf")
             ' Save new output

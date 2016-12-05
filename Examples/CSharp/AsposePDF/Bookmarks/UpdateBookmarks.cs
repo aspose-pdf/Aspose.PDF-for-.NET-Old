@@ -21,7 +21,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Bookmarks
             pdfOutline.Italic = true;
             pdfOutline.Bold = true;
 
-            dataDir = dataDir + "UpdateBookmarks_out_.pdf";
+            dataDir = dataDir + "UpdateBookmarks_out.pdf";
             // Save output
             pdfDocument.Save(dataDir);
             // ExEnd:UpdateBookmarks

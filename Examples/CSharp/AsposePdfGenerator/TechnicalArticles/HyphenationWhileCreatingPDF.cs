@@ -33,11 +33,11 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.TechnicalArticles
                 // Set the hyphenation area width. Default value is 12 points.
                 pdf1.HyphenationZoneWidth = 0;
 
-                // Set the maximum number of consecutive hyphenations. Default value is zero that means no //limits.
+                // Set the maximum number of consecutive hyphenations. Default value is zero that means no // Limits.
                 pdf1.ConsecutiveHyphensLimits = 0;
 
                 // Save the Pdf file
-                pdf1.Save(dataDir + "Hyphen-test_out_.pdf");
+                pdf1.Save(dataDir + "Hyphen-test_out.pdf");
                 // ExEnd:HyphenationWhileCreatingPDF     
             }
             catch (Exception ex)

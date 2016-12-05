@@ -18,7 +18,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Forms
             // Delete list item
             form.DelListItem("listbox", "Item 2");
             // Save updated file
-            form.Save(dataDir + "DeleteListItem_out_.pdf");
+            form.Save(dataDir + "DeleteListItem_out.pdf");
             // ExEnd:DeleteListItem
         }        
     }

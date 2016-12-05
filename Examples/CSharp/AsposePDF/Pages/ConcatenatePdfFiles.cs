@@ -19,7 +19,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Pages
             // Add pages of second document to the first
             pdfDocument1.Pages.Add(pdfDocument2.Pages);
 
-            dataDir = dataDir + "ConcatenatePdfFiles_out_.pdf";
+            dataDir = dataDir + "ConcatenatePdfFiles_out.pdf";
             // Save concatenated output file
             pdfDocument1.Save(dataDir);
             // ExEnd:ConcatenatePdfFiles

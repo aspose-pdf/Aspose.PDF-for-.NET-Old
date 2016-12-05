@@ -33,7 +33,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Text
                     streamReader.BaseStream.Seek(0, SeekOrigin.Begin);
                     text = streamReader.ReadToEnd();
                 }
-                File.WriteAllText(dataDir+ "output" + pageNumber + "_out_.txt", text);
+                File.WriteAllText(dataDir+ "output" + pageNumber + "_out.txt", text);
                 pageNumber++;
             }
             // ExEnd:ExtractTextPage

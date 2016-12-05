@@ -16,10 +16,10 @@ Namespace AsposePdfGenerator.Headings
             Dim sec1 As Aspose.Pdf.Generator.Section = pdf1.Sections.Add()
 
             '
-            '             * Create 1st heading in the Pdf object's section with level=1. Then create
+            '             * Create 1st heading in the Pdf object' S section with level=1. Then create
             '             * a text segment and add it in the heading. Set its StartNumber=6 to start 
-            '             * the numbering from 6 and onwards. And don't forget to set IsAutoSequence=true.
-            '             * If IsAutoSeguence property is set to true then the heading's sequence is 
+            '             * the numbering from 6 and onwards. And don' T forget to set IsAutoSequence=true.
+            '             * If IsAutoSeguence property is set to true then the heading' S sequence is 
             '             * controlled automatically by Aspose.Pdf for .NET. After setting all properties, add 
             '             * heading into the paragraphs collection of the section
             '             
@@ -34,10 +34,10 @@ Namespace AsposePdfGenerator.Headings
             sec1.Paragraphs.Add(heading1)
 
             '
-            '             * Create 2nd heading in the Pdf object's section with level=2. Then create
-            '             * a text segment and add it in the heading. And don't forget to set 
+            '             * Create 2nd heading in the Pdf object' S section with level=2. Then create
+            '             * a text segment and add it in the heading. And don' T forget to set 
             '             * IsAutoSequence=true.If IsAutoSeguence property is set to true then the 
-            '             * heading's sequence is controlled automatically by Aspose.Pdf for .NET. After setting
+            '             * heading' S sequence is controlled automatically by Aspose.Pdf for .NET. After setting
             '             * all properties, add heading into the paragraphs collection of the section
             '             
 
@@ -50,10 +50,10 @@ Namespace AsposePdfGenerator.Headings
             sec1.Paragraphs.Add(heading2)
 
             '
-            '             * Create 3rd heading in the Pdf object's section with level=3. Then create
-            '             * a text segment and add it in the heading. And don't forget to set 
+            '             * Create 3rd heading in the Pdf object' S section with level=3. Then create
+            '             * a text segment and add it in the heading. And don' T forget to set 
             '             * IsAutoSequence=true.If IsAutoSeguence property is set to true then the 
-            '             * heading's sequence is controlled automatically by Aspose.Pdf for .NET. After setting
+            '             * heading' S sequence is controlled automatically by Aspose.Pdf for .NET. After setting
             '             * all properties, add heading into the paragraphs collection of the section
             '             
 

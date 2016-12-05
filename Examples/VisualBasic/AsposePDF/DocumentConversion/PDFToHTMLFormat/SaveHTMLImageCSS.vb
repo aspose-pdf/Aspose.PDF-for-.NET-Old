@@ -13,12 +13,12 @@ Namespace AsposePDF.DocumentConversion.PDFToHTMLFormat
 
                 Dim doc As New Document(dataDir & Convert.ToString("input.pdf"))
 
-                ' Pay attention that we put non-existing path here : since we use custon resource processing it won't be in use.
+                ' Pay attention that we put non-existing path here : since we use custon resource processing it won' T be in use.
                 ' If You forget implement some of required saving strategies(CustomHtmlSavingStrategy,CustomResourceSavingStrategy,CustomCssSavingStrategy), then saving will return "Path not found" exception
                 Dim outHtmlFile As String = dataDir & Convert.ToString("SaveHTMLImageCSS_out_.html")
 
                 ' Create HtmlSaveOption with custom saving strategies that will do all the saving job
-                ' in such approach You can split HTML in pages if You will
+                ' In such approach You can split HTML in pages if You will
                 Dim saveOptions As New HtmlSaveOptions()
                 saveOptions.SplitIntoPages = True
 
@@ -43,9 +43,9 @@ Namespace AsposePDF.DocumentConversion.PDFToHTMLFormat
             ' Get target file name and write content to it
             Dim reader As System.IO.BinaryReader = New BinaryReader(htmlSavingInfo.ContentStream)
             Dim htmlAsByte As Byte() = reader.ReadBytes(CInt(htmlSavingInfo.ContentStream.Length))
-            Console.WriteLine("Html page processed with handler. Length of page's text in bytes is " + htmlAsByte.Length.ToString())
+            Console.WriteLine("Html page processed with handler. Length of page' S text in bytes is " + htmlAsByte.Length.ToString())
 
-            ' Here You can put code that will save page's HTML to some storage, f.e database
+            ' Here You can put code that will save page' S HTML to some storage, f.e database
             Dim targetStream As New MemoryStream()
             targetStream.Write(htmlAsByte, 0, htmlAsByte.Length)
         End Sub
@@ -61,7 +61,7 @@ Namespace AsposePDF.DocumentConversion.PDFToHTMLFormat
             Dim cssAsBytes As Byte() = reader.ReadBytes(CInt(resourceInfo.ContentStream.Length))
             Console.WriteLine("Css page processed with handler. Length of css in bytes is " + cssAsBytes.Length.ToString())
 
-            ' Here You can put code that will save page's HTML to some storage, f.e database
+            ' Here You can put code that will save page' S HTML to some storage, f.e database
             Dim targetStream As New MemoryStream()
             targetStream.Write(cssAsBytes, 0, cssAsBytes.Length)
         End Sub

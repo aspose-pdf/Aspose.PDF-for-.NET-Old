@@ -37,14 +37,14 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Tables
             tab1.DefaultCellBorder = new Aspose.Pdf.Generator.BorderInfo((int)Aspose.Pdf.Generator.BorderSide.All, 0.1F);
 
             // After setting default cell format information for the table, you can add rows
-            // and columns in the table
+            // And columns in the table
             Aspose.Pdf.Generator.Row row1 = tab1.Rows.Add();
             row1.Cells.Add("col1");
             row1.Cells.Add("col2");
             row1.Cells.Add("col3");
             
             // Save the Pdf
-            pdf1.Save(dataDir + "CellInformation_out_.pdf");
+            pdf1.Save(dataDir + "CellInformation_out.pdf");
             // ExEnd:CellInformation   
                 
         }

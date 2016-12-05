@@ -12,7 +12,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Sections
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdfGenerator_Sections();
             
-            //Instantiate a PDF Object 
+            // Instantiate a PDF Object 
             Aspose.Pdf.Generator.Pdf pdf = new Aspose.Pdf.Generator.Pdf();
 
             // Add a section into the pdf document
@@ -24,9 +24,9 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Sections
             // Set the image type using ImageFileType enumeration
             section1.BackgroundImageType = Aspose.Pdf.Generator.ImageFileType.Jpeg;
 
-            dataDir = dataDir + "SetPageBackgroundImage_out_.pdf";
+            dataDir = dataDir + "SetPageBackgroundImage_out.pdf";
 
-            //Save Pdf Document
+            // Save Pdf Document
             pdf.Save(dataDir);
             // ExEnd:SetPageBackgroundImage
             Console.WriteLine("\nPage background image setup successfully.\nFile saved at " + dataDir);

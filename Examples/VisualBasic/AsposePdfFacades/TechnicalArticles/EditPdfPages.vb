@@ -16,14 +16,14 @@ Namespace AsposePDFFacades.TechnicalArticles
             ' Specify an array of pages which need to be manipulated pages can be multiple, here we have specified only one page
             pEditor.ProcessPages = New Integer() {1}
 
-            'alignment related code
+            ' Alignment related code
 
             ' Horizontal alignment
             pEditor.HorizontalAlignment = HorizontalAlignment.Right
 
             ' Specify transition type for the pages
             pEditor.TransitionType = 2
-            'specify transition duration
+            ' Specify transition duration
             pEditor.TransitionDuration = 5
 
             ' Display related code

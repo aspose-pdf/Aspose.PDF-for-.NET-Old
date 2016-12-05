@@ -16,7 +16,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Conversion
             // Bind the source PCL file
             pdf.BindPCL( dataDir + "hidetext.pcl");
             // Save the resultant PDF document
-            pdf.Save(dataDir + "PCLToPDF_out_.pdf");
+            pdf.Save(dataDir + "PCLToPDF_out.pdf");
             // ExEnd:PCLToPDF
         }
     }

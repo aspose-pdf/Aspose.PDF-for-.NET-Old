@@ -19,7 +19,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.Append
             portFiles[0] = dataDir + "input.pdf";
             portFiles[1] = dataDir + "input2.pdf";
             // Append file
-            pdfEditor.Append(dataDir + "input3.pdf", portFiles, 1, 1, dataDir + "AppendArrayOfFiles_out_.pdf");
+            pdfEditor.Append(dataDir + "input3.pdf", portFiles, 1, 1, dataDir + "AppendArrayOfFiles_out.pdf");
             // ExEnd:AppendArrayOfFiles
         }
     }

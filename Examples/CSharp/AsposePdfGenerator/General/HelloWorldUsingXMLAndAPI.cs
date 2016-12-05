@@ -33,7 +33,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.General
                 // Add a text Segment to the text paragraph
                 text1.Segments.Add("Hello World");
 
-                dataDir = dataDir + "HelloWorldUsingXMLAndAPI_out_.pdf";
+                dataDir = dataDir + "HelloWorldUsingXMLAndAPI_out.pdf";
                 // Save the document
                 pdf1.Save(dataDir);
                 // ExEnd:HelloWorldUsingXMLAndAPI

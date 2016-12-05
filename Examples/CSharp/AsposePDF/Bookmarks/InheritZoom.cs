@@ -16,16 +16,16 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Bookmarks
             // Open document
             Document doc = new Document(dataDir + "input.pdf");
 
-            // get outlines/bookmarks collection of PDF file
+            // Get outlines/bookmarks collection of PDF file
             OutlineItemCollection item = new OutlineItemCollection(doc.Outlines);
-            // set zoom level as 0
+            // Set zoom level as 0
             XYZExplicitDestination dest = new XYZExplicitDestination(2, 100, 100, 0);
             // Add XYZExplicitDestination as action to outlines collection of PDF
             item.Action = new GoToAction(dest);
             // Add item to outlines collection of PDF file
             doc.Outlines.Add(item);
 
-            dataDir = dataDir + "InheritZoom_out_.pdf";
+            dataDir = dataDir + "InheritZoom_out.pdf";
             // Save output
             doc.Save(dataDir);
             // ExEnd:InheritZoom

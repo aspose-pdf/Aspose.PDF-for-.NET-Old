@@ -34,7 +34,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Tables
             cell.Border = border;
             // Add table to paragraphs collection of Page
             page.Paragraphs.Add(table);
-            dataDir = dataDir + "TableBorderTest_out_.pdf";
+            dataDir = dataDir + "TableBorderTest_out.pdf";
             // Save the PDF document
             doc.Save(dataDir);
             // ExEnd:SetBorder

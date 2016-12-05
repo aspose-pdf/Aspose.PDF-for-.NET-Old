@@ -30,7 +30,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Graphs
             line.GraphInfo.DashPhase = 1;
             // Add line to shapes collection of drawing object
             canvas.Shapes.Add(line);
-            dataDir = dataDir + "DashLength_out_.pdf";
+            dataDir = dataDir + "DashLength_out.pdf";
             // Save PDF document
             doc.Save(dataDir);
             // ExEnd:DashLength

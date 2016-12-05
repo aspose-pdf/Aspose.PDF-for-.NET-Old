@@ -19,7 +19,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Attachments
             contentEditor.AddDocumentAttachment(dataDir+ "test.txt", "Attachment Description");
 
             // Save updated PDF
-            contentEditor.Save(dataDir+ "AddAttachment_out_.pdf");
+            contentEditor.Save(dataDir+ "AddAttachment_out.pdf");
             // ExEnd:AddAttachment
         }
     }

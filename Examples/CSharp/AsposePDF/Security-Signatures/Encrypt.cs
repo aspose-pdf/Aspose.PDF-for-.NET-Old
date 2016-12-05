@@ -15,7 +15,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.SecuritySignatures
             Document document = new Document(dataDir+ "Encrypt.pdf");
             // Encrypt PDF
             document.Encrypt("user", "owner", 0, CryptoAlgorithm.RC4x128);
-            dataDir = dataDir + "Encrypt_out_.pdf";
+            dataDir = dataDir + "Encrypt_out.pdf";
             // Save updated PDF
             document.Save(dataDir);
             // ExEnd:Encrypt   

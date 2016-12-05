@@ -20,13 +20,13 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.TechnicalArticles
             pEdit.BindPdf(dataDir + "inFile1.pdf");
             pEdit.ProcessPages = new int[] { 1 };
             pEdit.Rotation = 180;
-            pEdit.Save(dataDir + "Aspose.Pdf.Facades_rotate_180_out_.pdf");
+            pEdit.Save(dataDir + "Aspose.Pdf.Facades_rotate_180_out.pdf");
 
-            //rotate even pages at 270 degrees
+            // Rotate even pages at 270 degrees
             pEdit.BindPdf(dataDir + "inFile2.pdf");
             pEdit.ProcessPages = new int[] { 1 };
             pEdit.Rotation = 270;
-            pEdit.Save(dataDir + "Aspose.Pdf.Facades_rotate_270_out_.pdf");
+            pEdit.Save(dataDir + "Aspose.Pdf.Facades_rotate_270_out.pdf");
 
             // Find at what degrees a page was rotated
             pEdit.BindPdf(dataDir + "inFile.pdf");

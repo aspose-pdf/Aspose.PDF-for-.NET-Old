@@ -34,7 +34,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.TechnicalArticles
                 }
             }
             // Save the resultant PDF
-            pdf.Save(dataDir + "RemoveHyperlinksFromText_out_.pdf");
+            pdf.Save(dataDir + "RemoveHyperlinksFromText_out.pdf");
             // ExEnd:RemoveHyperlinksFromText           
         }
     }

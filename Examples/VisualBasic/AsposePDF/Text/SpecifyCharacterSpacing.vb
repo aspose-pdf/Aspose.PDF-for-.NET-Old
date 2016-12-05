@@ -113,7 +113,7 @@ Namespace AsposePDF.Text
             Dim sec1 As APG.Section = pdf1.Sections.Add()
 
             ' Add 1st paragraph (inheriting the text format settings from the section)
-            ' to the section 
+            ' To the section 
             sec1.Paragraphs.Add(New APG.Text(sec1, "This is generator text paragraph with default character spacing"))
 
             Dim sec2 As APG.Section = pdf1.Sections.Add()

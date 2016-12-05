@@ -39,7 +39,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
             // Add the TextParagraph using TextBuilder
             textBuilder.AppendParagraph(par);
 
-            dataDir = dataDir + "RenderingReplaceableSymbols_out_.pdf";
+            dataDir = dataDir + "RenderingReplaceableSymbols_out.pdf";
             pdfApplicationDoc.Save(dataDir);
             // ExEnd:RenderingReplaceableSymbols            
             Console.WriteLine("\nReplaceable symbols render successfully duing pdf creation.\nFile saved at " + dataDir);

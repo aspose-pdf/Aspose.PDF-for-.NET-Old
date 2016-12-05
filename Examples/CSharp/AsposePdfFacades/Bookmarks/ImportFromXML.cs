@@ -18,7 +18,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Bookmarks
             // Import bookmarks
             bookmarkEditor.ImportBookmarksWithXML(dataDir+ "bookmarks.xml");
             // Save updated PDF file
-            bookmarkEditor.Save(dataDir+ "ImportFromXML_out_.pdf");
+            bookmarkEditor.Save(dataDir+ "ImportFromXML_out.pdf");
             // ExEnd:ImportFromXML           
             
         }

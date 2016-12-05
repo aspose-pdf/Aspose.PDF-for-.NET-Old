@@ -45,7 +45,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Conversion
             // ExEnd:SpecialCharacters
 
             // Save the Pdf document
-            pdf.Save(dataDir + "HTML2pdf_out_.pdf");
+            pdf.Save(dataDir + "HTML2pdf_out.pdf");
             // ExEnd:HTMLToPDF
         }
     }

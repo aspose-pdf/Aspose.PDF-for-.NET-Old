@@ -16,8 +16,8 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Images
             // Open document
             Document pdfDocument = new Document(dataDir+ "PageToTIFF.pdf");
 
-            string outputImageFile = dataDir + "resultant_out_.tif";
-            string outputBinImageFile = dataDir + "37116-bin_out_.tif";
+            string outputImageFile = dataDir + "resultant_out.tif";
+            string outputBinImageFile = dataDir + "37116-bin_out.tif";
 
             // Create Resolution object
             Resolution resolution = new Resolution(300);

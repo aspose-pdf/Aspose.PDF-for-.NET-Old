@@ -35,12 +35,12 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePdfGenerator.Text
             t2.Margin.Left = 60;
 
             // Set the first line indentation of the text paragraph to a negative value for
-            // producing the effect of left hanging text paragraph
+            // Producing the effect of left hanging text paragraph
             t2.FirstLineIndent = -6;
 
             // Add this left hanging text paragraph to the section
             sec1.Paragraphs.Add(t2);
-            dataDir = dataDir + "LeftHangingTextParagraph_out_.pdf";
+            dataDir = dataDir + "LeftHangingTextParagraph_out.pdf";
             // Save the pdf file
             pdf1.Save(dataDir);
             // ExEnd:TextLayout            

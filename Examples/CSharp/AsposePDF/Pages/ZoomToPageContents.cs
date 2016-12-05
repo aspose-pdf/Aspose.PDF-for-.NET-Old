@@ -25,7 +25,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Pages
             // Update page size
             ppe.PageSize = new Aspose.Pdf.PageSize((float)rect.Height, (float)rect.Width);
 
-            dataDir = dataDir + "ZoomToPageContents_out_.pdf";
+            dataDir = dataDir + "ZoomToPageContents_out.pdf";
             // Save output file
             doc.Save(dataDir);
             // ExEnd:ZoomToPageContents

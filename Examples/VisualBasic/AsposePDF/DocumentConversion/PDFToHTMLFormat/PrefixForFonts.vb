@@ -20,7 +20,7 @@ Namespace AsposePDF.DocumentConversion.PDFToHTMLFormat
                     Directory.CreateDirectory(_desiredFontDir)
                 End If
                 ' Reset counter for font names - this counter will be used in our custom code
-                ' to generate unigue font file names
+                ' To generate unigue font file names
 
                 _fontNumberForUniqueFontFileNames = 0
 
@@ -36,12 +36,12 @@ Namespace AsposePDF.DocumentConversion.PDFToHTMLFormat
         ' ExStart:PrefixForFontsHelper
         Private Shared Function CustomResourcesProcessing(resourceSavingInfo As SaveOptions.ResourceSavingInfo) As String
             '-----------------------------------------------------------------------------
-            ' It's just example of possible realization of cusstom processing of resources
-            ' referenced in result HTML
+            ' It' S just example of possible realization of cusstom processing of resources
+            ' Referenced in result HTML
             '-----------------------------------------------------------------------------
 
             ' 1) In this case we need only do something special
-            '    with fonts, so let's leave processing of all other resources
+            '    with fonts, so let' S leave processing of all other resources
             '    to converter itself
             If resourceSavingInfo.ResourceType <> SaveOptions.NodeLevelResourceType.Font Then
                 resourceSavingInfo.CustomProcessingCancelled = True
@@ -50,7 +50,7 @@ Namespace AsposePDF.DocumentConversion.PDFToHTMLFormat
 
             ' If supplied font resource, process it ourselves
             ' 1) Write supplied font with short name  to desired folder
-            '    You can easily do anythings  - it's just one of realizations
+            '    You can easily do anythings  - it' S just one of realizations
 
             _fontNumberForUniqueFontFileNames += 1
             Dim shortFontFileName As String = (_fontNumberForUniqueFontFileNames.ToString() + Path.GetExtension(resourceSavingInfo.SupposedFileName))
