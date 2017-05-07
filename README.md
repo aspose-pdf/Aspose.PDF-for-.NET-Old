@@ -20,8 +20,8 @@ Directory | Description
 ## Resources
 
 + **Website:** [www.aspose.com](http://www.aspose.com)
-+ **Product Home:** [Aspose.Pdf for .NET](http://www.aspose.com/products/pdf/net)
-+ **Download:** [Download Aspose.Pdf for .NET](http://www.aspose.com/downloads/pdf/net)
++ **Product Home:** [Aspose.Pdf for .NET](https://www.aspose.com/products/pdf/net)
++ **Download:** [Download Aspose.Pdf for .NET](https://downloads.aspose.com/pdf/net)
 + **Documentation:** [Aspose.Pdf for .NET Documentation](https://docs.aspose.com/display/pdfnet/Home)
-+ **Forum:** [Aspose.Pdf for .NET Forum](http://www.aspose.com/community/forums/aspose.pdf-product-family/20/showforum.aspx)
-+ **Blog:** [Aspose.Pdf for .NET Blog](https://blog.aspose.com/aspose-products/aspose-pdf-product-family.html)
++ **Forum:** [Aspose.Pdf for .NET Forum](https://www.aspose.com/community/forums/aspose.pdf-product-family/20/showforum.aspx)
++ **Blog:** [Aspose.Pdf for .NET Blog](https://blog.aspose.com/category/aspose-products/aspose-pdf-product-family/)
