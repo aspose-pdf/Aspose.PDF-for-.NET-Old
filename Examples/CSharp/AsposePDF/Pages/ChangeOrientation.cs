@@ -14,6 +14,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Pages
             Document doc = new Document(dataDir + "input.pdf");
             foreach (Page page in doc.Pages)
             {
+                
                 Aspose.Pdf.Rectangle r = page.MediaBox;
                 double newHeight = r.Width;
                 double newWidth = r.Height;
@@ -36,6 +37,45 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Pages
             doc.Save(dataDir);
             // ExEnd:ChangeOrientation
             System.Console.WriteLine("\nPage orientation changed successfully.\nFile saved at " + dataDir);
+        }
+        static private bool HasOnlyWhiteColor(Page
+page)
+        {
+
+            foreach (Operator op
+            in page.Contents)
+
+                if (op is Operator.SetColorOperator)
+                {
+
+                    Operator.SetColorOperator
+                    opSC = op as Operator.SetColorOperator;
+
+                    System.Drawing.Color color = opSC.getColor();
+
+                    if (color.R != 255 || color.G != 255 || color.B !=
+                    255)
+
+                        return false;
+
+                }
+
+
+            return true;
+
+        }
+        static private bool IsBlankPage(Page page)
+        {
+            if (page.Contents.Count == 0 && page.Annotations.Count == 0)
+            {
+
+                return true;
+            }
+            else
+            {
+
+                return false;
+            }
         }
     }
 }

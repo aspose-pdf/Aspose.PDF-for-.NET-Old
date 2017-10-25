@@ -3,7 +3,6 @@ using System.IO;
 using Aspose.Pdf;
 using Aspose.Pdf.Text;
 using Aspose.Pdf.Facades;
-using Aspose.Pdf.Text.TextOptions;
 
 namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
 {
@@ -13,8 +12,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
         {
             UsingTextBuilderAndFragment();
             UsingTextBuilderAndParagraph();
-            UsingTextStamp();
-            UsingAsposePdfGenerator();
+            UsingTextStamp();          
            
         }
         public static void UsingTextBuilderAndFragment()
@@ -105,44 +103,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
             // ExEnd:UsingTextStamp
             Console.WriteLine("\nCharacter spacing specified successfully using text stamp.\nFile saved at " + dataDir);
         }
-        public static void UsingAsposePdfGenerator()
-        {
-            // ExStart:UsingAsposePdfGenerator
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-
-            // Instantiate Pdf instance
-            Aspose.Pdf.Generator.Pdf pdf1 = new Aspose.Pdf.Generator.Pdf();
-
-            // Create a new section in the Pdf object
-            Aspose.Pdf.Generator.Section sec1 = pdf1.Sections.Add();
-
-            // Add 1st paragraph (inheriting the text format settings from the section)
-            // To the section 
-            sec1.Paragraphs.Add(new Aspose.Pdf.Generator.Text(sec1, "This is generator text paragraph with default character spacing"));
-
-            Aspose.Pdf.Generator.Section sec2 = pdf1.Sections.Add();
-
-            // Create 2nd paragraph (inheriting the text format settings from the section) 
-            Aspose.Pdf.Generator.Text t2 = new Aspose.Pdf.Generator.Text(sec1);
-
-            // Create a segment "seg1" in the paragraph "t2"
-            Aspose.Pdf.Generator.Segment seg1 = new Aspose.Pdf.Generator.Segment(t2);
-            // Assign some content to the segment
-            seg1.Content = "This is generator text paragraph with increased character spacing";
-            // Set character spacing of the segment to 2.0
-            seg1.TextInfo.CharSpace = 2.0f;
-
-            // Add segment (with character spacing) to the paragraph
-            t2.Segments.Add(seg1);
-            // Add 2nd text paragraph to the section with overridden text format settings
-            sec1.Paragraphs.Add(t2); ;
-            dataDir = dataDir + "UsingAsposePdfGenerator_out.pdf";
-            // Save resulting PDF document.
-            pdf1.Save(dataDir);
-            // ExEnd:UsingAsposePdfGenerator
-            Console.WriteLine("\nCharacter spacing specified successfully using Aspose Pdf Generator.\nFile saved at " + dataDir);
-        }
+        
         
     }
 }

@@ -1,7 +1,6 @@
 using System.IO;
 using Aspose.Pdf;
 using Aspose.Pdf.Text;
-using Aspose.Pdf.Text.TextOptions;
 using System;
 using Aspose.Pdf.Facades;
 

@@ -1,6 +1,5 @@
 using Aspose.Pdf;
 using Aspose.Pdf.Text;
-using Aspose.Pdf.Text.TextOptions;
 using System;
 
 namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
