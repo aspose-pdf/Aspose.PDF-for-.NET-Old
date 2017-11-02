@@ -45,6 +45,10 @@
     <StartupObject>Aspose.Pdf.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Aspose.Cells, Version=17.10.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.17.10\lib\net40\Aspose.Cells.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Aspose.Pdf, Version=17.10.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
       <HintPath>..\packages\Aspose.Pdf.17.10\lib\net40-client\Aspose.Pdf.dll</HintPath>
       <Private>True</Private>
@@ -273,6 +277,8 @@
     <Compile Include="AsposePDF\Bookmarks\UpdateChildBookmarks.cs" />
     <Compile Include="AsposePDF\DocumentConversion\CGMToPDF.cs" />
     <Compile Include="AsposePDF\DocumentConversion\EPUBToPDF.cs" />
+    <Compile Include="AsposePDF\DocumentConversion\PageOrientationAccordingImageDimensions.cs" />
+    <Compile Include="AsposePDF\DocumentConversion\RemoveHyperlinksAfterConvertingFromHtml.cs" />
     <Compile Include="AsposePDF\DocumentConversion\ReplaceMissingFonts.cs" />
     <Compile Include="AsposePDF\DocumentConversion\ProvideCredentialsDuringHTMLToPDF.cs" />
     <Compile Include="AsposePDF\DocumentConversion\HTMLToPDF.cs" />
@@ -292,6 +298,7 @@
     <Compile Include="AsposePDF\DocumentConversion\PDFToHTMLFormat\SplitCSSToPages.cs" />
     <Compile Include="AsposePDF\DocumentConversion\PDFToHTMLFormat\SaveImages.cs" />
     <Compile Include="AsposePDF\DocumentConversion\PDFToPPT.cs" />
+    <Compile Include="AsposePDF\DocumentConversion\TIFFtoPDFPerformanceImprovement.cs" />
     <Compile Include="AsposePDF\DocumentConversion\WebPageToPDF.cs" />
     <Compile Include="AsposePDF\DocumentConversion\XMLToPDF.cs" />
     <Compile Include="AsposePDF\DocumentConversion\TextToPDF.cs" />
@@ -348,6 +355,7 @@
     <Compile Include="AsposePDF\Headings\ApplyNumberStyle.cs" />
     <Compile Include="AsposePDF\Images\AddImage.cs" />
     <Compile Include="AsposePDF\Images\BradleyAlgorithm.cs" />
+    <Compile Include="AsposePDF\Images\ConvertImageStreamtoPDF.cs" />
     <Compile Include="AsposePDF\Images\ConvertToBMP.cs" />
     <Compile Include="AsposePDF\Images\IdentifyImages.cs" />
     <Compile Include="AsposePDF\Images\ConvertPageRegionToDOM.cs" />
@@ -417,16 +425,22 @@
     <Compile Include="AsposePDF\Stamps-Watermarks\AddDateTimeStamp.cs" />
     <Compile Include="AsposePDF\Stamps-Watermarks\CountingArtifacts.cs" />
     <Compile Include="AsposePDF\Stamps-Watermarks\GetWatermark.cs" />
+    <Compile Include="AsposePDF\Stamps-Watermarks\ImageandPageNumberinHeaderFootersection.cs" />
+    <Compile Include="AsposePDF\Stamps-Watermarks\PageNumberinHeaderFooterUsingFloatingBox.cs" />
+    <Compile Include="AsposePDF\Stamps-Watermarks\ImageandPageNumberinHeaderFootersectionInline.cs" />
     <Compile Include="AsposePDF\Stamps-Watermarks\ImageInFooter.cs" />
     <Compile Include="AsposePDF\Stamps-Watermarks\ImageinHeader.cs" />
     <Compile Include="AsposePDF\Stamps-Watermarks\AddImageStamp.cs" />
     <Compile Include="AsposePDF\Stamps-Watermarks\AddPDFPageStamp.cs" />
+    <Compile Include="AsposePDF\Stamps-Watermarks\TableInHeaderFooterSection.cs" />
     <Compile Include="AsposePDF\Stamps-Watermarks\TextinFooter.cs" />
     <Compile Include="AsposePDF\Stamps-Watermarks\TextinHeader.cs" />
     <Compile Include="AsposePDF\Stamps-Watermarks\AddTextStamp.cs" />
     <Compile Include="AsposePDF\Stamps-Watermarks\PageNumberStamps.cs" />
     <Compile Include="AsposePDF\Stamps-Watermarks\DefineAlignment.cs" />
+    <Compile Include="AsposePDF\Tables\AddImageinATableCell.cs" />
     <Compile Include="AsposePDF\Tables\AddSVGObject.cs" />
+    <Compile Include="AsposePDF\Tables\ExportExcelWorksheetDataToTable.cs" />
     <Compile Include="AsposePDF\Tables\ManipulateTable.cs" />
     <Compile Include="AsposePDF\Tables\DetermineTableBreak.cs" />
     <Compile Include="AsposePDF\Tables\RoundedCornerTable.cs" />
@@ -441,6 +455,7 @@
     <Compile Include="AsposePDF\TechnicalArticles\RemoveFilesFromPortfolio.cs" />
     <Compile Include="AsposePDF\TechnicalArticles\ExtractFilesFromPortfolio.cs" />
     <Compile Include="AsposePDF\TechnicalArticles\CreatePDFPortfolio.cs" />
+    <Compile Include="AsposePDF\Text\PlacingTextAroundImage.cs" />
     <Compile Include="AsposePDF\Text\RotateTextUsingTextParagraphAndBuilder.cs" />
     <Compile Include="AsposePDF\Text\RotateTextUsingTextFragmentAndParagraph.cs" />
     <Compile Include="AsposePDF\Text\RotateTextUsingParagraph.cs" />
@@ -476,6 +491,9 @@
     <Compile Include="AsposePDF\Text\TextSegments.cs" />
     <Compile Include="AsposePDF\Text\SearchTextSegmentsPage.cs" />
     <Compile Include="AsposePDF\Working-Document\ConvertFromRGBToGrayscale.cs" />
+    <Compile Include="AsposePDF\Working-Document\CreateMultilayerPDFFirstApproach.cs" />
+    <Compile Include="AsposePDF\Working-Document\CreateMultilayerPDFSecondApproach.cs" />
+    <Compile Include="AsposePDF\Working-Document\CreatePDFA1WithAsposePdf.cs" />
     <Compile Include="AsposePDF\Working-Document\SetExpiryDate.cs" />
     <Compile Include="AsposePDF\Working-Document\EmbedFontWhileDocCreation.cs" />
     <Compile Include="AsposePDF\Working-Document\EmbedFont .cs" />

@@ -88,6 +88,7 @@ namespace Aspose.Pdf.Examples.CSharp
             // ReplaceableSymbolsInHeaderFooter.Run();
             // AddTransparentText.Run();
             // SearchTextAndDrawRectangle.Run();
+            // PlacingTextAroundImage.Run();
 
             //// Images
             //// =====================================================   
@@ -108,6 +109,7 @@ namespace Aspose.Pdf.Examples.CSharp
             // ConvertToBMP.Run();
             // IdentifyImages.Run();
             // ConvertPageRegionToDOM.Run();
+            // ConvertImageStreamtoPDF.Run();
 
             //// Stamps-Watermarks
             //// =====================================================   
@@ -122,6 +124,10 @@ namespace Aspose.Pdf.Examples.CSharp
             // AddingDifferentHeaders.Run();
             // DefineAlignment.Run();
             // AddDateTimeStamp.Run();
+            // ImageandPageNumberinHeaderFootersection.Run();
+            // ImageandPageNumberinHeaderFootersectionInline.Run();
+            // PageNumberinHeaderFooterUsingFloatingBox.Run();
+            // TableInHeaderFooterSection.Run();
 
             //// Attachments
             //// =====================================================   
@@ -171,6 +177,9 @@ namespace Aspose.Pdf.Examples.CSharp
             // EmbedFontWhileDocCreation.Run();
             // ConvertFromRGBToGrayscale.Run();
             // SetExpiryDate.Run();
+            // CreateMultilayerPDFFirstApproach.Run();
+            // CreateMultilayerPDFSecondApproach.Run();
+            // CreatePDFA1WithAsposePdf.Run();
 
             //// Bookmarks
             //// =====================================================   
@@ -268,7 +277,8 @@ namespace Aspose.Pdf.Examples.CSharp
             // UseMeasureWithPolylineAnnotation.Run();
 
             //// Tables
-            //// =====================================================   
+            //// =====================================================  
+            // AddImageinATableCell.Run();
             // AddTable.Run();
             // AutoFitToWindow.Run();  
             // MarginsOrPadding.Run();
@@ -279,6 +289,7 @@ namespace Aspose.Pdf.Examples.CSharp
             // ExtractBorder.Run();
             // InsertPageBreak.Run();
             // DetermineTableBreak.Run();
+            // ExportExcelWorksheetDataToTable.Run();
 
             //// Graphs
             //// =====================================================   
@@ -302,6 +313,9 @@ namespace Aspose.Pdf.Examples.CSharp
             // PDFToDOC.Run();
             // PDFToTeX.Run();
             // Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion.SVGToPDF.Run();
+            // RemoveHyperlinksAfterConvertingFromHtml.Run();
+            // PageOrientationAccordingImageDimensions.Run();
+            // TIFFtoPDFPerformanceImprovement.Run();
             // GetSVGDimensions.Run();
             // EPUBToPDF.Run();
             // PDFToEPUB.Run();
@@ -316,7 +330,7 @@ namespace Aspose.Pdf.Examples.CSharp
             // PDFAToPDF.Run();
             // XMLToPDF.Run();
 
-                                    
+
             // Stop before exiting
             Console.WriteLine("\n\nProgram Finished. Press any key to exit....");
             Console.ReadKey();
