@@ -49,8 +49,8 @@
       <HintPath>..\packages\Aspose.Cells.17.10\lib\net40\Aspose.Cells.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Aspose.Pdf, Version=17.10.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Pdf.17.10\lib\net40-client\Aspose.Pdf.dll</HintPath>
+    <Reference Include="Aspose.Pdf, Version=17.11.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Pdf.17.11\lib\net40-client\Aspose.Pdf.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -455,6 +455,8 @@
     <Compile Include="AsposePDF\TechnicalArticles\RemoveFilesFromPortfolio.cs" />
     <Compile Include="AsposePDF\TechnicalArticles\ExtractFilesFromPortfolio.cs" />
     <Compile Include="AsposePDF\TechnicalArticles\CreatePDFPortfolio.cs" />
+    <Compile Include="AsposePDF\Text\AddTooltipToText.cs" />
+    <Compile Include="AsposePDF\Text\HiddenTextBlock.cs" />
     <Compile Include="AsposePDF\Text\PlacingTextAroundImage.cs" />
     <Compile Include="AsposePDF\Text\RotateTextUsingTextParagraphAndBuilder.cs" />
     <Compile Include="AsposePDF\Text\RotateTextUsingTextFragmentAndParagraph.cs" />
@@ -480,6 +482,7 @@
     <Compile Include="AsposePDF\Text\ExtractTextPage.cs" />
     <Compile Include="AsposePDF\Text\AddText.cs" />
     <Compile Include="AsposePDF\Text\ReplaceTextAll.cs" />
+    <Compile Include="AsposePDF\Text\SpecifyLineSpacing.cs" />
     <Compile Include="AsposePDF\Text\TextAndImageAsParagraph.cs" />
     <Compile Include="AsposePDF\Text\SearchTextAndAddHyperlink.cs" />
     <Compile Include="AsposePDF\Text\ReplaceTextPage.cs" />
@@ -494,6 +497,7 @@
     <Compile Include="AsposePDF\Working-Document\CreateMultilayerPDFFirstApproach.cs" />
     <Compile Include="AsposePDF\Working-Document\CreateMultilayerPDFSecondApproach.cs" />
     <Compile Include="AsposePDF\Working-Document\CreatePDFA1WithAsposePdf.cs" />
+    <Compile Include="AsposePDF\Working-Document\HidePageNumbersInTOC.cs" />
     <Compile Include="AsposePDF\Working-Document\SetExpiryDate.cs" />
     <Compile Include="AsposePDF\Working-Document\EmbedFontWhileDocCreation.cs" />
     <Compile Include="AsposePDF\Working-Document\EmbedFont .cs" />

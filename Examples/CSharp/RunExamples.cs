@@ -89,6 +89,9 @@ namespace Aspose.Pdf.Examples.CSharp
             // AddTransparentText.Run();
             // SearchTextAndDrawRectangle.Run();
             // PlacingTextAroundImage.Run();
+            // AddTooltipToText.Run();
+            // HiddenTextBlock.Run();
+            // SpecifyLineSpacing.Run();
 
             //// Images
             //// =====================================================   
@@ -180,6 +183,7 @@ namespace Aspose.Pdf.Examples.CSharp
             // CreateMultilayerPDFFirstApproach.Run();
             // CreateMultilayerPDFSecondApproach.Run();
             // CreatePDFA1WithAsposePdf.Run();
+            // HidePageNumbersInTOC.Run();
 
             //// Bookmarks
             //// =====================================================   
