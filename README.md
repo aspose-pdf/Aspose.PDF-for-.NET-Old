@@ -20,7 +20,7 @@ Directory | Description
 ## Resources
 
 + **Website:** [www.aspose.com](http://www.aspose.com)
-+ **Product Home:** [Aspose.Pdf for .NET](https://www.aspose.com/products/pdf/net)
++ **Product Home:** [Aspose.Pdf for .NET](https://products.aspose.com/pdf/net)
 + **Download:** [Download Aspose.Pdf for .NET](https://www.nuget.org/packages/Aspose.Pdf/)
 + **Documentation:** [Aspose.Pdf for .NET Documentation](https://docs.aspose.com/display/pdfnet/Home)
 + **Free Support:** [Aspose.Pdf for .NET Free Support Forum](https://forum.aspose.com/c/pdf)
