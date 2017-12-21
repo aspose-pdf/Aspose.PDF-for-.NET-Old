@@ -411,6 +411,11 @@
     <Compile Include="AsposePDF\Pages\SplitToPages.cs" />
     <Compile Include="AsposePDF\Pages\GetDimensions.cs" />
     <Compile Include="AsposePDF\Pages\UpdateDimensions.cs" />
+    <Compile Include="AsposePDF\QuickStart\ApplyMeteredLicense.cs" />
+    <Compile Include="AsposePDF\QuickStart\HelloWorld.cs" />
+    <Compile Include="AsposePDF\QuickStart\LoadLicenseFromFile.cs" />
+    <Compile Include="AsposePDF\QuickStart\LoadLicenseFromStreamObject.cs" />
+    <Compile Include="AsposePDF\QuickStart\SetLicenseUsingEmbeddedResource.cs" />
     <Compile Include="AsposePDF\Security-Signatures\ChangePassword.cs" />
     <Compile Include="AsposePDF\Security-Signatures\Decrypt.cs" />
     <Compile Include="AsposePDF\Security-Signatures\DetermineCorrectPassword.cs" />

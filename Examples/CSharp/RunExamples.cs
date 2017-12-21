@@ -21,6 +21,7 @@ using Aspose.Pdf.Examples.CSharp.AsposePDF.Miscellaneous;
 using Aspose.Pdf.Examples.CSharp.AsposePDF.Graphs;
 using Aspose.Pdf.Examples.CSharp.AsposePDF.Headings;
 using Aspose.Pdf.Examples.CSharp.AsposePDF.TechnicalArticles;
+using Aspose.Pdf.Examples.CSharp.AsposePDF.QuickStart;
 
 using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Annotations;
 using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Attachments;
@@ -60,6 +61,13 @@ namespace Aspose.Pdf.Examples.CSharp
             // Aspose.Pdf 
             // =====================================================
             // =====================================================
+
+            //// QuickStart
+            //// =====================================================   
+            // HelloWorld.Run();
+            // LoadLicenseFromFile.Run();
+            // LoadLicenseFromStreamObject.Run();
+            // SetLicenseUsingEmbeddedResource.Run();
 
             //// Text
             //// =====================================================            
@@ -402,6 +410,10 @@ namespace Aspose.Pdf.Examples.CSharp
         public static String GetDataDir_AsposePdf_SecuritySignatures()
         {
             return Path.GetFullPath(GetDataDir_Data() + "AsposePDF/Security-Signatures/");
+        }
+        public static String GetDataDir_AsposePdf_QuickStart()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "AsposePDF/QuickStart/");
         }
         public static String GetDataDir_AsposePdf_StampsWatermarks()
         {
