@@ -53,6 +53,10 @@
       <HintPath>..\packages\Aspose.Pdf.17.11\lib\net40-client\Aspose.Pdf.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Ionic.Zip.Reduced, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Ionic.Zip.Reduced.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -415,6 +419,7 @@
     <Compile Include="AsposePDF\QuickStart\HelloWorld.cs" />
     <Compile Include="AsposePDF\QuickStart\LoadLicenseFromFile.cs" />
     <Compile Include="AsposePDF\QuickStart\LoadLicenseFromStreamObject.cs" />
+    <Compile Include="AsposePDF\QuickStart\SecureLicense.cs" />
     <Compile Include="AsposePDF\QuickStart\SetLicenseUsingEmbeddedResource.cs" />
     <Compile Include="AsposePDF\Security-Signatures\ChangePassword.cs" />
     <Compile Include="AsposePDF\Security-Signatures\Decrypt.cs" />
