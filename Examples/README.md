@@ -1,6 +1,6 @@
 ## Aspose.Pdf for .NET Examples
 
-This repository contains C# and VB.NET examples for [Aspose.Pdf for .NET](http://www.aspose.com/products/pdf/net) which will help you learn Aspose.Pdf for .NET and write your own applications.
+This repository contains C# and VB.NET examples for [Aspose.Pdf for .NET](http://https://products.aspose.com/pdf/net) which will help you learn Aspose.Pdf for .NET and write your own applications.
 
 <p align="center">
   <a title="Download Examples ZIP" href="https://github.com/aspose-pdf/Aspose.Pdf-for-.NET/archive/master.zip">

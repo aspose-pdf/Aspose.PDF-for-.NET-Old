@@ -1,8 +1,8 @@
 ## Aspose.Pdf for .NET
 
-[Aspose.Pdf for .NET](http://www.aspose.com/products/pdf/net) is a set of PDF APIs for document creation and manipulation that enables your .NET applications to read, write and manipulate existing PDF documents without using Adobe Acrobat. It also allows you to create forms and manage form fields embedded in a PDF document.
+[Aspose.Pdf for .NET](http://https://products.aspose.com/pdf/net) is a set of PDF APIs for document creation and manipulation that enables your .NET applications to read, write and manipulate existing PDF documents without using Adobe Acrobat. It also allows you to create forms and manage form fields embedded in a PDF document.
 
-This repository contains [Examples](Examples), [Plugins](Plugins) and [Showcase](Showcases) projects for [Aspose.Pdf for .NET](http://www.aspose.com/products/pdf/net) to help you learn and write your own applications.
+This repository contains [Examples](Examples), [Plugins](Plugins) and [Showcase](Showcases) projects for [Aspose.Pdf for .NET](http://https://products.aspose.com/pdf/net) to help you learn and write your own applications.
 
 <p align="center">
 
