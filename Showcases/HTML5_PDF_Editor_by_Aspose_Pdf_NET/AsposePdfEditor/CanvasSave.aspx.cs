@@ -2,21 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 using System.Web.Script.Services;
 using System.Web.Services;
 using System.IO;
 using Aspose.Pdf;
 using Aspose.Pdf.Devices;
-using Aspose.Pdf.Facades;
-using System.Threading;
 using System.Drawing;
 using Aspose.Pdf.Text;
 using System.Net;
-using Aspose.Pdf.Text.TextOptions;
-using Aspose.Pdf.InteractiveFeatures.Forms;
-using System.Text.RegularExpressions;
+using Aspose.Pdf.Forms;
 
 namespace AsposePdfEditor
 {
@@ -29,16 +23,16 @@ namespace AsposePdfEditor
            
         }
 
-        public void ProcessRequest(HttpContext context)
+        public override void ProcessRequest(HttpContext context)
         {
             try
             {
-
-                if (context.Request.QueryString["Download"] != null)
+                var path = context.Request.QueryString["Download"];
+                if (path != null)
                 {
-                    context.Response.AddHeader("Content-disposition", "attachment; filename=" + context.Request.QueryString["Download"].Split('/')[1].ToString());
+                    context.Response.AddHeader("Content-disposition", "attachment; filename=" + path.Split('/')[1]);
                     context.Response.ContentType = "application/octet-stream";
-                    context.Response.TransmitFile(Server.MapPath(context.Request.QueryString["Download"].ToString()));
+                    context.Response.TransmitFile(Server.MapPath(path));
                     context.Response.End();
                 }
 
@@ -73,10 +67,13 @@ namespace AsposePdfEditor
                     {
 
                         //Or just save it locally
-                        file.SaveAs(Server.MapPath("Attachments/" + file.FileName));
-                        AddAttachments(Server.MapPath("Attachments/" + file.FileName), file.FileName);                      
-                        
-                        context.Response.Write(file.FileName);
+                        if (file != null)
+                        {
+                            file.SaveAs(Server.MapPath("Attachments/" + file.FileName));
+                            AddAttachments(Server.MapPath("Attachments/" + file.FileName), file.FileName);
+
+                            context.Response.Write(file.FileName);
+                        }
                     }
                     else
                     {
@@ -167,7 +164,7 @@ namespace AsposePdfEditor
                     //Create Resolution object
                     Resolution resolution = new Resolution(300);
                     //create PNG device with specified attributes
-                    PngDevice pngDevice = new PngDevice();
+                    PngDevice pngDevice = new PngDevice(resolution);
                     //Convert a particular page and save the image to stream
                     pngDevice.Process(doc.Pages[doc.Pages.Count], imageStream);
                     //Close stream
@@ -295,16 +292,9 @@ namespace AsposePdfEditor
                     if (shapes[i].Itype == "highlight" || shapes[i].Itype == "image")
                     {
 
-                        if (shapes[i].Itype == "highlight")
-                        {
-                            imageStamp = new ImageStamp(HttpContext.Current.Server.MapPath("test.png"));
-                        }
-                        else
-                        {
-
-                            imageStamp = new ImageStamp(HttpContext.Current.Server.MapPath("Images/"+shapes[i].imName));
-                        
-                        }
+                        imageStamp = shapes[i].Itype == "highlight" 
+                            ? new ImageStamp(HttpContext.Current.Server.MapPath("test.png")) 
+                            : new ImageStamp(HttpContext.Current.Server.MapPath("Images/"+shapes[i].imName));
                                                 
                         imageStamp.Background = false;
                         imageStamp.XIndent = (float)(shapeX);
@@ -420,7 +410,7 @@ namespace AsposePdfEditor
 
                             // Get a field
                             ComboBoxField comboBoxField = doc.Form.Fields[Convert.ToInt32(shapes[i].imName)] as ComboBoxField;
-                            var values = shapes[i].t.Split(new string[]{"^^^"},StringSplitOptions.None)[0];
+                            var values = shapes[i].t.Split(new[]{"^^^"},StringSplitOptions.None)[0];
 
                             foreach (var item in comboBoxField.Options.Cast<Option>())
                             {
@@ -468,7 +458,7 @@ namespace AsposePdfEditor
                 int TotalPages = 0;
                 bool licensed = CheckLicense();
 
-                if (licensed || (!licensed && doc.Pages.Count <= 4))
+                if (licensed || doc.Pages.Count <= 4)
                     TotalPages = doc.Pages.Count;
                 else
                     TotalPages = 4;
@@ -688,7 +678,7 @@ namespace AsposePdfEditor
                         //get the extracted text
                         string extractedText = textAbsorber.Text;
 
-                        System.IO.File.WriteAllText(HttpContext.Current.Server.MapPath("Convert/output.txt"), extractedText);
+                        File.WriteAllText(HttpContext.Current.Server.MapPath("Convert/output.txt"), extractedText);
                         return "output.txt";
                     case "pdf":
                         return "Export.pdf";
@@ -726,11 +716,11 @@ namespace AsposePdfEditor
             return highPage.Max();
         }
 
-        [System.Web.Services.WebMethod()]
+        [WebMethod()]
         public static string SearchData(string searchText, string[] pageList)
         {
             string name = DateTime.Now.Millisecond.ToString();
-            System.IO.DirectoryInfo downloadedMessageInfo = new DirectoryInfo(HttpContext.Current.Server.MapPath("search/"));
+            var downloadedMessageInfo = new DirectoryInfo(HttpContext.Current.Server.MapPath("search/"));
 
             foreach (FileInfo file in downloadedMessageInfo.GetFiles())
             {
@@ -741,7 +731,7 @@ namespace AsposePdfEditor
                 dir.Delete(true);
             }
 
-            System.IO.Directory.CreateDirectory(HttpContext.Current.Server.MapPath("search/" + name));
+            Directory.CreateDirectory(HttpContext.Current.Server.MapPath("search/" + name));
 
             Document doc = new Document(HttpContext.Current.Server.MapPath("Convert/output.pdf"));
 
@@ -829,7 +819,7 @@ namespace AsposePdfEditor
             return "success";
         }
 
-        [System.Web.Services.WebMethod()]
+        [WebMethod()]
         public static string GetFileAttachments()
         {
             string outAttach = "";
@@ -864,7 +854,7 @@ namespace AsposePdfEditor
                 return outAttach;
         }
 
-        [System.Web.Services.WebMethod()]
+        [WebMethod()]
         public static string RemoveAttachments(string name)
         {
 
@@ -882,7 +872,7 @@ namespace AsposePdfEditor
             return "success";
         }
 
-        [System.Web.Services.WebMethod()]
+        [WebMethod()]
         public static bool CheckLicense()
         {
 
@@ -897,20 +887,13 @@ namespace AsposePdfEditor
             // Get the extracted text
             String extractedText = textAbsorber.Text;
             
-            if (extractedText.Contains("Evaluation Only. Created with Aspose.Pdf"))
-            {
-                return false;
-            }
-            else
-            {
-                return true;
-            }
+            return !extractedText.Contains("Evaluation Only. Created with Aspose.Pdf");
         }
         [WebMethod]
         public static string CreateSignature(string imageData)
         {
 
-            System.IO.DirectoryInfo downloadedMessageInfo = new DirectoryInfo(HttpContext.Current.Server.MapPath("Images/Signature/"));
+            var downloadedMessageInfo = new DirectoryInfo(HttpContext.Current.Server.MapPath("Images/Signature/"));
 
             foreach (FileInfo file in downloadedMessageInfo.GetFiles())
             {
@@ -931,7 +914,7 @@ namespace AsposePdfEditor
 
             return "Signature/sign" + rand + ".png";
         }
-        [System.Web.Services.WebMethod()]
+        [WebMethod()]
         public static string ReplaceText(string txtFind, string txtReplace, string[] pageList)
         {
             try
@@ -939,9 +922,15 @@ namespace AsposePdfEditor
                 Document doc = new Document(HttpContext.Current.Server.MapPath("Convert/output.pdf"));
 
                 //create TextAbsorber object to find all instances of the input search phrase
-                TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("(?i)" + txtFind, new Aspose.Pdf.Text.TextOptions.TextSearchOptions(true));
+                TextFragmentAbsorber textFragmentAbsorber =
+                    new TextFragmentAbsorber("(?i)" + txtFind, new TextSearchOptions(true))
+                    {
+                        TextReplaceOptions =
+                        {
+                            ReplaceAdjustmentAction = TextReplaceOptions.ReplaceAdjustment.WholeWordsHyphenation
+                        }
+                    };
 
-                textFragmentAbsorber.TextReplaceOptions.ReplaceAdjustmentAction = TextReplaceOptions.ReplaceAdjustment.WholeWordsHyphenation;
 
                 //accept the absorber for all the pages
                 doc.Pages.Accept(textFragmentAbsorber);
@@ -960,7 +949,7 @@ namespace AsposePdfEditor
 
                 doc = new Document(HttpContext.Current.Server.MapPath("Convert/output.pdf"));
 
-                System.IO.DirectoryInfo downloadedMessageInfo = new DirectoryInfo(HttpContext.Current.Server.MapPath("Input/"));
+                var downloadedMessageInfo = new DirectoryInfo(HttpContext.Current.Server.MapPath("Input/"));
 
                 foreach (FileInfo file in downloadedMessageInfo.GetFiles())
                 {
@@ -1007,7 +996,7 @@ namespace AsposePdfEditor
         public static void Startup()
         {
 
-            System.IO.DirectoryInfo downloadedMessageInfo = new DirectoryInfo(HttpContext.Current.Server.MapPath("Input/"));
+            DirectoryInfo downloadedMessageInfo = new DirectoryInfo(HttpContext.Current.Server.MapPath("Input/"));
 
             foreach (FileInfo file in downloadedMessageInfo.GetFiles())
             {

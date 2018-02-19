@@ -20,6 +20,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -39,9 +40,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Pdf, Version=9.8.0.0, Culture=neutral, PublicKeyToken=6947866647e416ec, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Aspose.Pdf.dll</HintPath>
+    <Reference Include="Aspose.PDF">
+      <HintPath>..\packages\Aspose.PDF.18.2.0\lib\net2.0\Aspose.PDF.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Runtime.Serialization" />
@@ -109,6 +110,7 @@
     <None Include="bootstrap\fonts\glyphicons-halflings-regular.eot" />
     <None Include="bootstrap\fonts\glyphicons-halflings-regular.ttf" />
     <None Include="bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
