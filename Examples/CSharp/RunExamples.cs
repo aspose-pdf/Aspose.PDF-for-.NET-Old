@@ -100,6 +100,13 @@ namespace Aspose.Pdf.Examples.CSharp
             // AddTooltipToText.Run();
             // HiddenTextBlock.Run();
             // SpecifyLineSpacing.Run();
+            // EmbedStandardType1Fonts.Run();
+            // UseLatexScript.Run();
+            // UseLatexScript2.Run();
+            // ExtractParagraphs.Run();
+            // ExtractParagraphsByDrawingBorder.Run();
+            // AddTextBorder.Run();
+            // AddSubsequentLinesIndent.Run();
 
             //// Images
             //// =====================================================   
@@ -139,6 +146,7 @@ namespace Aspose.Pdf.Examples.CSharp
             // ImageandPageNumberinHeaderFootersectionInline.Run();
             // PageNumberinHeaderFooterUsingFloatingBox.Run();
             // TableInHeaderFooterSection.Run();
+            // FillStrokeText.Run();
 
             //// Attachments
             //// =====================================================   
@@ -244,6 +252,7 @@ namespace Aspose.Pdf.Examples.CSharp
             // SetJavaScript.Run();
             // HorizontallyAndVerticallyRadioButtons.Run();
             // GroupedCheckBoxes.Run();
+            // SetRadioButtonCaption.Run();
 
             //// TechnicalArticles
             //// =====================================================            
@@ -341,6 +350,9 @@ namespace Aspose.Pdf.Examples.CSharp
             // PDFToPPT.Run();
             // PDFAToPDF.Run();
             // XMLToPDF.Run();
+            // PDFToPNGFontHinting.Run();
+            // PostscriptToPDF.Run();
+            // XMLToPDFSetImagePath.Run();
 
 
             // Stop before exiting
