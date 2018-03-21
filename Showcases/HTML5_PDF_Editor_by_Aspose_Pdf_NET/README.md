@@ -1,8 +1,8 @@
-## HTML5 PDF Editor by Aspose.Pdf for .NET v2.3.1
+## HTML5 PDF Editor by Aspose.PDF for .NET v2.3.1
 
 ### Introduction
 
-HTML5 PDF Editor by Aspose.Pdf for .NET is an open source web based PDF editor that allows users to create, edit and convert PDF files online and users can easily embed the editor in their own web applications for viewing and editing PDF files. HTML5 PDF Editor is developed using HTML5, jQuery Ajax, ASP.NET, Bootstrap and backend is powered by Aspose.Pdf for .NET. The UI of the editor is kept very simple for easy understanding and enhancement of the features as per user requirements.
+HTML5 PDF Editor by Aspose.PDF for .NET is an open source web based PDF editor that allows users to create, edit and convert PDF files online and users can easily embed the editor in their own web applications for viewing and editing PDF files. HTML5 PDF Editor is developed using HTML5, jQuery Ajax, ASP.NET, Bootstrap and backend is powered by Aspose.PDF for .NET. The UI of the editor is kept very simple for easy understanding and enhancement of the features as per user requirements.
 
 ![Select.png](https://bitbucket.org/repo/7ykgBb/images/3937904428-Select.png)
  
@@ -34,5 +34,3 @@ Following are some of the features we have already implemented in HTML5 PDF Edit
 * Download the Attachment files
 * Remove the Attachment files
 * Signing PDF using Free-Hand Drawing
-
-Read more on this project on [our documentation website](http://www.aspose.com/docs/display/pdfnet/1.1.1.+Introduction).

@@ -1,4 +1,4 @@
-# Aspose.Pdf .NET for Microsoft Dynamics CRM
+# Aspose.PDF .NET for Microsoft Dynamics CRM
 
 We have developed the following plugins for Microsoft Dynamics CRM
 

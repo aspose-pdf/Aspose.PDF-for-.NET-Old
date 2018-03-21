@@ -1,6 +1,6 @@
 <h3>Aspose .NET Export GridView To Pdf Control for Visual Studio</h3>
 
-<p>Export GridView To Pdf Control is an ASP.NET server control which allows exporting contents of GridView into Pdf document using <a rel="nofollow" class="external-link" href="http://www.aspose.com/.net/pdf-component.aspx">Aspose.Pdf</a>. It adds <b>Export to Pdf</b> button on top of the GridView control. Clicking the button dynamically exports the content of the GridView control to a Pdf document and then automatically downloads the exported file to the disk location selected by the user in just couple of seconds.</p>
+<p>Export GridView To Pdf Control is an ASP.NET server control which allows exporting contents of GridView into Pdf document using <a rel="nofollow" class="external-link" href="https://products.aspose.com/pdf/net">Aspose.PDF</a>. It adds <b>Export to Pdf</b> button on top of the GridView control. Clicking the button dynamically exports the content of the GridView control to a Pdf document and then automatically downloads the exported file to the disk location selected by the user in just couple of seconds.</p>
 
 <p>This initial version of the control provides the following features:</p>
 <ul>
