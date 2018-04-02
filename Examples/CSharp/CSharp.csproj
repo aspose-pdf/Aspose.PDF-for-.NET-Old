@@ -45,13 +45,11 @@
     <StartupObject>Aspose.Pdf.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=17.10.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.17.10\lib\net40\Aspose.Cells.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Aspose.Cells, Version=18.2.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.18.2.0\lib\net40\Aspose.Cells.dll</HintPath>
     </Reference>
-    <Reference Include="Aspose.Pdf, Version=17.11.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Pdf.17.11\lib\net40-client\Aspose.Pdf.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Aspose.PDF, Version=18.2.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.PDF.18.2.0\lib\net40-client\Aspose.PDF.dll</HintPath>
     </Reference>
     <Reference Include="Ionic.Zip.Reduced, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
       <HintPath>..\packages\DotNetZip.Reduced.1.9.1.8\lib\net20\Ionic.Zip.Reduced.dll</HintPath>
@@ -281,6 +279,8 @@
     <Compile Include="AsposePDF\DocumentConversion\CGMToPDF.cs" />
     <Compile Include="AsposePDF\DocumentConversion\EPUBToPDF.cs" />
     <Compile Include="AsposePDF\DocumentConversion\PageOrientationAccordingImageDimensions.cs" />
+    <Compile Include="AsposePDF\DocumentConversion\PDFToPNGFontHinting.cs" />
+    <Compile Include="AsposePDF\DocumentConversion\PostscriptToPDF.cs" />
     <Compile Include="AsposePDF\DocumentConversion\RemoveHyperlinksAfterConvertingFromHtml.cs" />
     <Compile Include="AsposePDF\DocumentConversion\ReplaceMissingFonts.cs" />
     <Compile Include="AsposePDF\DocumentConversion\ProvideCredentialsDuringHTMLToPDF.cs" />
@@ -320,6 +320,7 @@
     <Compile Include="AsposePDF\DocumentConversion\PDFToTeX.cs" />
     <Compile Include="AsposePDF\DocumentConversion\PDFToXML.cs" />
     <Compile Include="AsposePDF\DocumentConversion\SVGToPDF.cs" />
+    <Compile Include="AsposePDF\DocumentConversion\XMLToPDFSetImagePath.cs" />
     <Compile Include="AsposePDF\DocumentConversion\XPSToPDF.cs" />
     <Compile Include="AsposePDF\DocumentConversion\GetSVGDimensions.cs" />
     <Compile Include="AsposePDF\Forms\GroupedCheckBoxes.cs" />
@@ -333,6 +334,7 @@
     <Compile Include="AsposePDF\Forms\SelectRadioButton.cs" />
     <Compile Include="AsposePDF\Forms\RadioButtonWithOptions.cs" />
     <Compile Include="AsposePDF\Forms\RadioButton.cs" />
+    <Compile Include="AsposePDF\Forms\SetRadioButtonCaption.cs" />
     <Compile Include="AsposePDF\Forms\TextBox.cs" />
     <Compile Include="AsposePDF\Forms\AddTooltipToField.cs" />
     <Compile Include="AsposePDF\Forms\DeleteFormField.cs" />
@@ -464,7 +466,13 @@
     <Compile Include="AsposePDF\TechnicalArticles\RemoveFilesFromPortfolio.cs" />
     <Compile Include="AsposePDF\TechnicalArticles\ExtractFilesFromPortfolio.cs" />
     <Compile Include="AsposePDF\TechnicalArticles\CreatePDFPortfolio.cs" />
+    <Compile Include="AsposePDF\Text\AddSubsequentLinesIndent.cs" />
+    <Compile Include="AsposePDF\Text\AddTextBorder.cs" />
     <Compile Include="AsposePDF\Text\AddTooltipToText.cs" />
+    <Compile Include="AsposePDF\Text\EmbedStandardType1Fonts.cs" />
+    <Compile Include="AsposePDF\Text\ExtractParagraphs.cs" />
+    <Compile Include="AsposePDF\Text\ExtractParagraphsByDrawingBorder.cs" />
+    <Compile Include="AsposePDF\Stamps-Watermarks\FillStrokeText.cs" />
     <Compile Include="AsposePDF\Text\HiddenTextBlock.cs" />
     <Compile Include="AsposePDF\Text\PlacingTextAroundImage.cs" />
     <Compile Include="AsposePDF\Text\RotateTextUsingTextParagraphAndBuilder.cs" />
@@ -502,6 +510,8 @@
     <Compile Include="AsposePDF\Text\ReplaceTextonRegularExpression.cs" />
     <Compile Include="AsposePDF\Text\TextSegments.cs" />
     <Compile Include="AsposePDF\Text\SearchTextSegmentsPage.cs" />
+    <Compile Include="AsposePDF\Text\UseLatexScript.cs" />
+    <Compile Include="AsposePDF\Text\UseLatexScript2.cs" />
     <Compile Include="AsposePDF\Working-Document\ConvertFromRGBToGrayscale.cs" />
     <Compile Include="AsposePDF\Working-Document\CreateMultilayerPDFFirstApproach.cs" />
     <Compile Include="AsposePDF\Working-Document\CreateMultilayerPDFSecondApproach.cs" />
