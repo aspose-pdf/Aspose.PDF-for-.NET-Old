@@ -107,6 +107,7 @@ namespace Aspose.Pdf.Examples.CSharp
             // ExtractParagraphsByDrawingBorder.Run();
             // AddTextBorder.Run();
             // AddSubsequentLinesIndent.Run();
+            // DetermineLineBreak.Run();
 
             //// Images
             //// =====================================================   
@@ -311,6 +312,7 @@ namespace Aspose.Pdf.Examples.CSharp
             // InsertPageBreak.Run();
             // DetermineTableBreak.Run();
             // ExportExcelWorksheetDataToTable.Run();
+            // AddRepeatingColumn.Run();
 
             //// Graphs
             //// =====================================================   
