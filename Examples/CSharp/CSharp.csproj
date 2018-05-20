@@ -453,6 +453,7 @@
     <Compile Include="AsposePDF\Tables\AddRepeatingColumn.cs" />
     <Compile Include="AsposePDF\Tables\AddSVGObject.cs" />
     <Compile Include="AsposePDF\Tables\ExportExcelWorksheetDataToTable.cs" />
+    <Compile Include="AsposePDF\Tables\HTMLTagsInsideTable.cs" />
     <Compile Include="AsposePDF\Tables\ManipulateTable.cs" />
     <Compile Include="AsposePDF\Tables\DetermineTableBreak.cs" />
     <Compile Include="AsposePDF\Tables\RoundedCornerTable.cs" />
@@ -518,7 +519,9 @@
     <Compile Include="AsposePDF\Working-Document\CreateMultilayerPDFFirstApproach.cs" />
     <Compile Include="AsposePDF\Working-Document\CreateMultilayerPDFSecondApproach.cs" />
     <Compile Include="AsposePDF\Working-Document\CreatePDFA1WithAsposePdf.cs" />
+    <Compile Include="AsposePDF\Working-Document\GetAllFonts.cs" />
     <Compile Include="AsposePDF\Working-Document\HidePageNumbersInTOC.cs" />
+    <Compile Include="AsposePDF\Working-Document\SetDefaultFont.cs" />
     <Compile Include="AsposePDF\Working-Document\SetExpiryDate.cs" />
     <Compile Include="AsposePDF\Working-Document\EmbedFontWhileDocCreation.cs" />
     <Compile Include="AsposePDF\Working-Document\EmbedFont .cs" />

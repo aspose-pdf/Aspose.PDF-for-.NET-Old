@@ -201,6 +201,8 @@ namespace Aspose.Pdf.Examples.CSharp
             // CreateMultilayerPDFSecondApproach.Run();
             // CreatePDFA1WithAsposePdf.Run();
             // HidePageNumbersInTOC.Run();
+            // SetDefaultFont.Run();
+            // GetAllFonts.Run();
 
             //// Bookmarks
             //// =====================================================   
@@ -313,6 +315,7 @@ namespace Aspose.Pdf.Examples.CSharp
             // DetermineTableBreak.Run();
             // ExportExcelWorksheetDataToTable.Run();
             // AddRepeatingColumn.Run();
+            // HTMLTagsInsideTable.Run();
 
             //// Graphs
             //// =====================================================   
