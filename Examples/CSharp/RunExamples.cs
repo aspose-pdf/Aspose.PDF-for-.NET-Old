@@ -108,7 +108,7 @@ namespace Aspose.Pdf.Examples.CSharp
             // AddTextBorder.Run();
             // AddSubsequentLinesIndent.Run();
             // DetermineLineBreak.Run();
-            RemoveAllText.Run();
+            // RemoveAllText.Run();
 
             //// Images
             //// =====================================================   
@@ -231,6 +231,7 @@ namespace Aspose.Pdf.Examples.CSharp
             // AddSwfFileAsAnnotation.Run();
             // SetFreeTextAnnotationFormatting.Run();
             // StrikeOutWords.Run();
+            // ExtractHighlightedText.Run();
 
             //// Forms
             //// =====================================================   
