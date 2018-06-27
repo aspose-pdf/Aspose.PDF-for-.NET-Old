@@ -3,6 +3,7 @@ using System.IO;
 using Aspose.Pdf;
 using System.Collections;
 using Aspose.Pdf.Annotations;
+using System.Collections.Generic;
 
 namespace Aspose.Pdf.Examples.CSharp.AsposePDF.LinksActions
 {
@@ -26,7 +27,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.LinksActions
 
                     page.Accept(selector);
                     // Create list holding all the links
-                    IList list = selector.Selected;
+                    IList<Annotation> list = selector.Selected;
                     // Iterate through invidiaul item inside list
                     foreach (LinkAnnotation a in list)
                     {

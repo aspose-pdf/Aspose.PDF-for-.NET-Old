@@ -27,12 +27,12 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Images
             foreach (Operator op in doc.Pages[1].Contents)
             {
                 // Use GSave/GRestore operators to revert the transformations back to previously set
-                Operator.GSave opSaveState = op as Operator.GSave;
-                Operator.GRestore opRestoreState = op as Operator.GRestore;
+                Aspose.Pdf.Operators.GSave opSaveState = op as Aspose.Pdf.Operators.GSave;
+                Aspose.Pdf.Operators.GRestore opRestoreState = op as Aspose.Pdf.Operators.GRestore;
                 // Instantiate ConcatenateMatrix object as it defines current transformation matrix.
-                Operator.ConcatenateMatrix opCtm = op as Operator.ConcatenateMatrix;
+                Aspose.Pdf.Operators.ConcatenateMatrix opCtm = op as Aspose.Pdf.Operators.ConcatenateMatrix;
                 // Create Do operator which draws objects from resources. It draws Form objects and Image objects
-                Operator.Do opDo = op as Operator.Do;
+                Aspose.Pdf.Operators.Do opDo = op as Aspose.Pdf.Operators.Do;
 
                 if (opSaveState != null)
                 {

@@ -45,11 +45,11 @@ page)
             foreach (Operator op
             in page.Contents)
 
-                if (op is Operator.SetColorOperator)
+                if (op is Aspose.Pdf.Operators.SetColorOperator)
                 {
 
-                    Operator.SetColorOperator
-                    opSC = op as Operator.SetColorOperator;
+                    Aspose.Pdf.Operators.SetColorOperator
+                    opSC = op as Aspose.Pdf.Operators.SetColorOperator;
 
                     System.Drawing.Color color = opSC.getColor();
 

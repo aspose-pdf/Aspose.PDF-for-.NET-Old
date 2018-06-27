@@ -19,20 +19,12 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Operators
 
             // Used path-painting operators
             Operator[] operators = new Operator[] {
-                    new Operator.Stroke(),
-                    new Operator.ClosePathStroke(),
-                    new Operator.Fill()
+                    new Aspose.Pdf.Operators.Stroke(),
+                    new Aspose.Pdf.Operators.ClosePathStroke(),
+                    new Aspose.Pdf.Operators.Fill()
             };
 
-            ArrayList list = new ArrayList();
-            foreach (Operator op in operators)
-            {
-                OperatorSelector os = new OperatorSelector(op);
-                oc.Accept(os);
-                list.AddRange(os.Selected);
-            }
-
-            oc.Delete(list);
+            oc.Delete(operators);
             doc.Save(dataDir+ "No_Graphics_out.pdf");
             // ExEnd:RemoveGraphicsObjects
         }

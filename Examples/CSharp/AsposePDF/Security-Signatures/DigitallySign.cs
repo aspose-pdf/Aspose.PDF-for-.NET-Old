@@ -4,6 +4,7 @@ using Aspose.Pdf;
 using Aspose.Pdf.Facades;
 using System.Collections;
 using Aspose.Pdf.Forms;
+using System.Collections.Generic;
 
 namespace Aspose.Pdf.Examples.CSharp.AsposePDF.SecuritySignatures
 {
@@ -39,7 +40,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.SecuritySignatures
                 {
                     using (PdfFileSignature signature = new PdfFileSignature(document))
                     {
-                        IList sigNames = signature.GetSignNames();
+                        IList<string> sigNames = signature.GetSignNames();
                         if (sigNames.Count > 0) // Any signatures?
                         {
                             if (signature.VerifySigned(sigNames[0] as string)) // Verify first one

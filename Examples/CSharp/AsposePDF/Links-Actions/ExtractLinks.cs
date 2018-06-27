@@ -3,6 +3,7 @@ using Aspose.Pdf;
 using Aspose.Pdf.Annotations;
 using System.Collections;
 using System;
+using System.Collections.Generic;
 
 namespace Aspose.Pdf.Examples.CSharp.AsposePDF.LinksActions
 {
@@ -19,7 +20,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.LinksActions
             Page page = document.Pages[1];
             AnnotationSelector selector = new AnnotationSelector(new LinkAnnotation(page, Aspose.Pdf.Rectangle.Trivial));
             page.Accept(selector);
-            IList list = selector.Selected;
+            IList<Annotation> list = selector.Selected;
             Annotation annotation = (Annotation)list[0];
             dataDir = dataDir + "ExtractLinks_out.pdf";
             // Save updated document

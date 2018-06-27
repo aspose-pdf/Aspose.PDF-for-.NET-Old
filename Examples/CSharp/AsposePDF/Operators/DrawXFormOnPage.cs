@@ -28,47 +28,47 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Operators
                 // Wrap existing contents with GSave/GRestore operators pair
                 //        this is to get initial graphics state at the and of existing contents
                 //        otherwise there might remain some undesirable transformations at the end of existing operators chain
-                pageContents.Insert(1, new Operator.GSave());
-                pageContents.Add(new Operator.GRestore());
+                pageContents.Insert(1, new Aspose.Pdf.Operators.GSave());
+                pageContents.Add(new Aspose.Pdf.Operators.GRestore());
 
                 // Add save graphics state operator to properly clear graphics state after new commands
-                pageContents.Add(new Operator.GSave());
+                pageContents.Add(new Aspose.Pdf.Operators.GSave());
 
                 #region create xForm
 
                 // Create xForm
                 XForm form = XForm.CreateNewForm(doc.Pages[1], doc);
                 doc.Pages[1].Resources.Forms.Add(form);
-                form.Contents.Add(new Operator.GSave());
+                form.Contents.Add(new Aspose.Pdf.Operators.GSave());
                 // Define image width and heigh
-                form.Contents.Add(new Operator.ConcatenateMatrix(200, 0, 0, 200, 0, 0));
+                form.Contents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(200, 0, 0, 200, 0, 0));
                 // Load image into stream
                 Stream imageStream = new FileStream(imageFile, FileMode.Open);
                 // Add image to Images collection of the XForm Resources
                 form.Resources.Images.Add(imageStream);
                 XImage ximage = form.Resources.Images[form.Resources.Images.Count];
                 // Using Do operator: this operator draws image
-                form.Contents.Add(new Operator.Do(ximage.Name));
-                form.Contents.Add(new Operator.GRestore());
+                form.Contents.Add(new Aspose.Pdf.Operators.Do(ximage.Name));
+                form.Contents.Add(new Aspose.Pdf.Operators.GRestore());
 
                 #endregion
 
-                pageContents.Add(new Operator.GSave());
+                pageContents.Add(new Aspose.Pdf.Operators.GSave());
                 // Place form to the x=100 y=500 coordinates
-                pageContents.Add(new Operator.ConcatenateMatrix(1, 0, 0, 1, 100, 500));
+                pageContents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(1, 0, 0, 1, 100, 500));
                 // Draw form with Do operator
-                pageContents.Add(new Operator.Do(form.Name));
-                pageContents.Add(new Operator.GRestore());
+                pageContents.Add(new Aspose.Pdf.Operators.Do(form.Name));
+                pageContents.Add(new Aspose.Pdf.Operators.GRestore());
 
-                pageContents.Add(new Operator.GSave());
+                pageContents.Add(new Aspose.Pdf.Operators.GSave());
                 // Place form to the x=100 y=300 coordinates
-                pageContents.Add(new Operator.ConcatenateMatrix(1, 0, 0, 1, 100, 300));
+                pageContents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(1, 0, 0, 1, 100, 300));
                 // Draw form with Do operator
-                pageContents.Add(new Operator.Do(form.Name));
-                pageContents.Add(new Operator.GRestore());
+                pageContents.Add(new Aspose.Pdf.Operators.Do(form.Name));
+                pageContents.Add(new Aspose.Pdf.Operators.GRestore());
 
                 // Restore grahics state with GRestore after the GSave
-                pageContents.Add(new Operator.GRestore());
+                pageContents.Add(new Aspose.Pdf.Operators.GRestore());
                 doc.Save(outFile);                
             }
             // ExEnd:DrawXFormOnPage

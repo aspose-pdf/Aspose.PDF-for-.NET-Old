@@ -45,11 +45,11 @@
     <StartupObject>Aspose.Pdf.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=18.4.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.18.4.0\lib\net40\Aspose.Cells.dll</HintPath>
+    <Reference Include="Aspose.Cells, Version=18.6.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.18.6.0\lib\net40\Aspose.Cells.dll</HintPath>
     </Reference>
-    <Reference Include="Aspose.PDF, Version=18.5.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.PDF.18.5.0\lib\net40-client\Aspose.PDF.dll</HintPath>
+    <Reference Include="Aspose.PDF, Version=18.6.1.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.PDF.18.6.1\lib\net4.0\Aspose.PDF.dll</HintPath>
     </Reference>
     <Reference Include="Ionic.Zip.Reduced, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
       <HintPath>..\packages\DotNetZip.Reduced.1.9.1.8\lib\net20\Ionic.Zip.Reduced.dll</HintPath>
@@ -478,6 +478,7 @@
     <Compile Include="AsposePDF\Stamps-Watermarks\FillStrokeText.cs" />
     <Compile Include="AsposePDF\Text\HiddenTextBlock.cs" />
     <Compile Include="AsposePDF\Text\PlacingTextAroundImage.cs" />
+    <Compile Include="AsposePDF\Text\RemoveAllText.cs" />
     <Compile Include="AsposePDF\Text\RotateTextUsingTextParagraphAndBuilder.cs" />
     <Compile Include="AsposePDF\Text\RotateTextUsingTextFragmentAndParagraph.cs" />
     <Compile Include="AsposePDF\Text\RotateTextUsingParagraph.cs" />

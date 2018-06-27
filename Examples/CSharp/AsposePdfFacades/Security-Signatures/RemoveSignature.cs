@@ -4,6 +4,7 @@ using Aspose.Pdf;
 using Aspose.Pdf.Facades;
 using System.Collections;
 using Aspose.Pdf.Forms;
+using System.Collections.Generic;
 
 namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.SecuritySignatures
 {
@@ -21,7 +22,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.SecuritySignatures
                 // Open PDF document
                 pdfSign.BindPdf(dataDir + "DigitallySign.pdf");
                 // Get list of signature names
-                IList names = pdfSign.GetSignNames();
+                IList<string> names = pdfSign.GetSignNames();
                 // Remove all the signatures from the PDF file
                 for (int index = 0; index < names.Count; index++)
                 {
@@ -46,7 +47,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.SecuritySignatures
 
             PdfFileSignature pdfSignSingle = new PdfFileSignature();
             pdfSignSingle.BindPdf(inSingleSignedFile);
-            IList names = pdfSignSingle.GetSignNames();
+            IList<string> names = pdfSignSingle.GetSignNames();
             Stream pfx = new FileStream(@"C:\pdftest\test1.pfx", FileMode.Open);
             PKCS7 pcks = new PKCS7(pfx, "test1");
             string sigNameSingle = names[0] as string;
@@ -70,7 +71,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.SecuritySignatures
             string inOutManyResignedFile = @"C:\pdftest\PDFNEWNET_34561_ManyReSigned.pdf";
             PdfFileSignature pdfSignMany = new Aspose.Pdf.Facades.PdfFileSignature();
 
-            IList sigNames = pdfSignMany.GetSignNames();
+            IList<string> sigNames = pdfSignMany.GetSignNames();
             foreach (string sigName in sigNames)
             {
                 pdfSignMany.RemoveSignature(sigName, false);

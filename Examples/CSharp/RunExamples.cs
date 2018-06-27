@@ -108,6 +108,7 @@ namespace Aspose.Pdf.Examples.CSharp
             // AddTextBorder.Run();
             // AddSubsequentLinesIndent.Run();
             // DetermineLineBreak.Run();
+            RemoveAllText.Run();
 
             //// Images
             //// =====================================================   
