@@ -4,6 +4,7 @@ using Aspose.Pdf;
 using Aspose.Pdf.Facades;
 using System;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Annotations
 {
@@ -17,7 +18,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Annotations
 
             Document doc = new Document();
             doc.Pages.Add();
-            ArrayList inkList = new ArrayList();
+            IList<Point[]> inkList = new List<Point[]>();
             LineInfo lineInfo = new LineInfo();
             lineInfo.VerticeCoordinate = new float[] { 55, 55, 70, 70, 70, 90, 150, 60 };
             lineInfo.Visibility = true;

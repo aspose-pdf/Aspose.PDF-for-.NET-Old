@@ -19,7 +19,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Annotations
             AnnotationEditor.BindPdf(dataDir+ "ImportAnnotations.pdf");
             // Import annotations
             FileStream fileStream = new System.IO.FileStream(dataDir+ "annotations.xfdf", System.IO.FileMode.Open, System.IO.FileAccess.Read);
-            Enum[] annotType = { AnnotationType.FreeText, AnnotationType.Line };
+            AnnotationType[] annotType = { AnnotationType.FreeText, AnnotationType.Line };
             AnnotationEditor.ImportAnnotationFromXfdf(fileStream, annotType);
             // Save output PDF
             AnnotationEditor.Save(dataDir + "ImportAnnotations_out.pdf");

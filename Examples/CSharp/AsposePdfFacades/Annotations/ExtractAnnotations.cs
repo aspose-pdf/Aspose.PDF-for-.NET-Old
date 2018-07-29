@@ -21,7 +21,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Annotations
                 // Open PDF document
                 annotationEditor.BindPdf(dataDir + "ExtractAnnotations.pdf");
                 // Extract annotations
-                Enum[] annotType = { AnnotationType.FreeText, AnnotationType.Line };
+                string[] annotType = { AnnotationType.FreeText.ToString(), AnnotationType.Line.ToString() };
                 ArrayList annotList = (ArrayList)annotationEditor.ExtractAnnotations(1, 2, annotType);
                 for (int index = 0; index < annotList.Count; index++)
                 {

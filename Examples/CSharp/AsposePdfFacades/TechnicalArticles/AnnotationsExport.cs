@@ -20,7 +20,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.TechnicalArticles
             // Create a file stream for output XFDF file to export annotations
             FileStream fileStream = new FileStream(dataDir + "exportannotations.xfdf", FileMode.Create, FileAccess.Write);
             // Create an enumeration of all the annotation types which you want to export
-            Enum[] annoType = { AnnotationType.Text };
+            string[] annoType = { AnnotationType.Text.ToString() };
             // Export annotations of specified type(s) to XFDF file
             editor.ExportAnnotationsXfdf(fileStream, 1, 5, annoType);
             // ExEnd:AnnotationsExport                      

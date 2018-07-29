@@ -3,6 +3,7 @@ using Aspose.Pdf.Annotations;
 using Aspose.Pdf;
 using System;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Annotations
 {
@@ -22,7 +23,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Annotations
             drect.X = 0;
             drect.Y = 0;
             Aspose.Pdf.Rectangle arect = Aspose.Pdf.Rectangle.FromRect(drect);
-            ArrayList inkList = new ArrayList();
+            IList<Point[]> inkList = new List<Point[]>();
             Aspose.Pdf.Point[] arrpt = new Aspose.Pdf.Point[3];
             inkList.Add(arrpt);
             arrpt[0] = new Aspose.Pdf.Point(100, 800);

@@ -109,6 +109,8 @@ namespace Aspose.Pdf.Examples.CSharp
             // AddSubsequentLinesIndent.Run();
             // DetermineLineBreak.Run();
             // RemoveAllText.Run();
+            // RemoveAllTextFromPDF.Run();
+            // AddTextWithShadingColors.Run();
 
             //// Images
             //// =====================================================   
@@ -318,6 +320,9 @@ namespace Aspose.Pdf.Examples.CSharp
             // ExportExcelWorksheetDataToTable.Run();
             // AddRepeatingColumn.Run();
             // HTMLTagsInsideTable.Run();
+            // RemoveTable.Run();
+            // RemoveMultipleTables.Run();
+            // ReplaceTable.Run();
 
             //// Graphs
             //// =====================================================   

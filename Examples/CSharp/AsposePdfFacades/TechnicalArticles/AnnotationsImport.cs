@@ -20,7 +20,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.TechnicalArticles
             // Create a file stream for input XFDF file to import annotations
             FileStream fileStream = new FileStream(dataDir + "exportannotations.xfdf", FileMode.Open, FileAccess.Read);
             // Create an enumeration of all the annotation types which you want to import
-            Enum[] annType = { AnnotationType.Text };
+            AnnotationType[] annType = { AnnotationType.Text };
             // Import annotations of specified type(s) from XFDF file
             editor.ImportAnnotationFromXfdf(fileStream, annType);
             // Save output pdf file

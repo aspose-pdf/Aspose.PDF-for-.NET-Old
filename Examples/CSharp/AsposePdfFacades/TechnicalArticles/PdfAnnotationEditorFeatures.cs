@@ -35,7 +35,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDFFacades.TechnicalArticles
 
             // Extract annotations to an array list
             // String[] annType = { "Text" };
-            Enum[] annotType = { Aspose.Pdf.Annotations.AnnotationType.FreeText, Aspose.Pdf.Annotations.AnnotationType.Line };
+            string[] annotType = { Aspose.Pdf.Annotations.AnnotationType.FreeText.ToString(), Aspose.Pdf.Annotations.AnnotationType.Line.ToString() };
             ArrayList list = (ArrayList)editor.ExtractAnnotations(1, 5, annotType);
             for (int index = 0; index < list.Count; index++)
             {
