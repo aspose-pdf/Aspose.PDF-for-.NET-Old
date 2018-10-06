@@ -22,6 +22,25 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion
             pdfDocument.Save("PDFToXLS_out.xls", excelsave);
             // ExEnd:PDFToXLS
         }
+
+        public static void PDFtoXLSX()
+        {
+            // ExStart:PDFToXLSX
+            // The path to the documents directory.
+            string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+            // Load PDF document
+            Document pdfDocument = new Document(dataDir + "input.pdf");
+
+            // Instantiate ExcelSave Option object
+            Aspose.Pdf.ExcelSaveOptions excelsave = new ExcelSaveOptions();
+            excelsave.Format = ExcelSaveOptions.ExcelFormat.XLSX;
+
+            // Save the output in XLS format
+            pdfDocument.Save("PDFToXLSX_out.xlsx", excelsave);
+            // ExEnd:PDFToXLSX
+        }
+
         public static void ControlColumn()
         {            
             // The path to the documents directory.

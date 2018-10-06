@@ -29,5 +29,26 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion
                 Console.WriteLine(ex.Message);
             }
         }
+
+        public static void PCLstream()
+        {
+            // ExStart:PCLstream
+            // The path to the documents directory.
+            string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+            using (FileStream fileStream = new FileStream(dataDir + "sample.pcl", FileMode.Open))
+            using (MemoryStream memoryStream = new MemoryStream())
+            {
+                fileStream.CopyTo(memoryStream);
+
+                memoryStream.Seek(0, SeekOrigin.Begin);
+
+                using (Document document = new Document(memoryStream, new PclLoadOptions()))
+                {
+
+                }
+            }
+            // ExEnd:PCLstream
+        }
     }
 }

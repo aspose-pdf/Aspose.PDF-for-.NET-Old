@@ -17,6 +17,7 @@ using Aspose.Pdf.Examples.CSharp.AsposePDF.StampsWatermarks;
 using Aspose.Pdf.Examples.CSharp.AsposePDF.Tables;
 using Aspose.Pdf.Examples.CSharp.AsposePDF.Text;
 using Aspose.Pdf.Examples.CSharp.AsposePDF.WorkingDocuments;
+using Aspose.Pdf.Examples.CSharp.AsposePDF.Working_Document;
 using Aspose.Pdf.Examples.CSharp.AsposePDF.Miscellaneous;
 using Aspose.Pdf.Examples.CSharp.AsposePDF.Graphs;
 using Aspose.Pdf.Examples.CSharp.AsposePDF.Headings;
@@ -84,6 +85,7 @@ namespace Aspose.Pdf.Examples.CSharp
             // ReplaceFonts.Run();
             // HighlightCharacterInPDF.Run();
             // AddHTMLUsingDOM.Run();
+            // AddHTMLUsingDOM.HTMLfragmentRectangle();
             // RearrangeContentsUsingTextReplacement.Run();
             // FootAndEndNotes.Run();
             // SearchTextAndAddHyperlink.Run();
@@ -111,6 +113,7 @@ namespace Aspose.Pdf.Examples.CSharp
             // RemoveAllText.Run();
             // RemoveAllTextFromPDF.Run();
             // AddTextWithShadingColors.Run();
+            // MulticolumnParagraphs.Run();
 
             //// Images
             //// =====================================================   
@@ -183,6 +186,7 @@ namespace Aspose.Pdf.Examples.CSharp
             // SetDocumentWindow.Run();
             // GetDocumentWindow.Run();
             // ValidatePDFAStandard.Run();
+            // ValidatePDFUAstandard.Run();
             // OptimizeDocument.Run();
             // Aspose.Pdf.Examples.CSharp.AsposePDF.WorkingDocuments.SetFileInfo.Run();
             // Aspose.Pdf.Examples.CSharp.AsposePDF.WorkingDocuments.GetFileInfo.Run();
@@ -206,6 +210,8 @@ namespace Aspose.Pdf.Examples.CSharp
             // HidePageNumbersInTOC.Run();
             // SetDefaultFont.Run();
             // GetAllFonts.Run();
+            // CreatePDFwithTaggedText.Run();
+            // CreatePDFwithTaggedImage.Run();
 
             //// Bookmarks
             //// =====================================================   
@@ -354,6 +360,7 @@ namespace Aspose.Pdf.Examples.CSharp
             // PDFToEPUB.Run();
             // PDFToXPS.Run();
             // PDFToXLS.Run();
+            // PDFToXLS.PDFtoXLSX();
             // PDFToSVG.Run();
             // PDFToXML.Run();
             // MHTToPDF.Run();
@@ -365,6 +372,8 @@ namespace Aspose.Pdf.Examples.CSharp
             // PDFToPNGFontHinting.Run();
             // PostscriptToPDF.Run();
             // XMLToPDFSetImagePath.Run();
+            // PCLToPDF.Run();
+            // PCLToPDF.PCLstream();
 
 
             // Stop before exiting

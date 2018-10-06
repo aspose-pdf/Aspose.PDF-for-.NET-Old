@@ -33,5 +33,21 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
             // ExEnd:AddHTMLUsingDOM            
             Console.WriteLine("\nHTML using DOM added successfully.\nFile saved at " + dataDir);
         }
+
+        public static void HTMLfragmentRectangle()
+        {
+            // ExStart:HTMLfragmentRectangle
+            // The path to the documents directory.
+            string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+            Document doc = new Document();
+            Page page = doc.Pages.Add();
+            HtmlFragment html = new HtmlFragment("<fontsize=10><b><i>Aspose.PDF</i></b></fontsize>");
+            page.Paragraphs.Add(html);
+            dataDir = dataDir + "HTMLfragmentRectangle_out.pdf";
+            doc.Save(dataDir);
+            Console.WriteLine(html.Rectangle.Width);
+            // ExEnd:HTMLfragmentRectangle
+        }
     }
 }
