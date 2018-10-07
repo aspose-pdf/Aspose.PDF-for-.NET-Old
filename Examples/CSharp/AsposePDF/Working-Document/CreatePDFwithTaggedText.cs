@@ -20,12 +20,11 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Working_Document
             Aspose.Pdf.Page page2 = doc.Pages.Add();
             Aspose.Pdf.Page page3 = doc.Pages.Add();
 
-            //Create TextState and configure it
+            // Create TextState and configure it
             Aspose.Pdf.Text.TextState ts = new Aspose.Pdf.Text.TextState();
             ts.Font = FontRepository.FindFont("Arial");
 
-            //Creating tagged text element
-            //supported tags P, H,H1-H6
+            // Creating tagged text element i.e. Supported tags P, H,H1-H6
             TaggedPdfTextElement textElement1 = new TaggedPdfTextElement(doc, "P", "text", ts);
             TaggedPdfTextElement textElement2 = new TaggedPdfTextElement(doc, "P", "test1", ts);
             TaggedPdfTextElement textElement3 = new TaggedPdfTextElement(doc, "P", "test2", ts);
@@ -35,7 +34,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Working_Document
             TaggedPdfTextElement textElement7 = new TaggedPdfTextElement(doc, "P", "test6", ts);
             TaggedPdfTextElement textElement8 = new TaggedPdfTextElement(doc, "P", "test7", ts);
 
-            //Addg tagged text element to content
+            // Add tagged text element to content
             page1.TaggedPdfContent.Add(textElement1);
             page1.TaggedPdfContent.Add(textElement2);
             page1.TaggedPdfContent.Add(textElement3);
