@@ -25,15 +25,14 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Working_Document
             ts.Font = FontRepository.FindFont("Arial");
 
             // Creating tagged text element i.e. Supported tags P, H,H1-H6
-            TaggedPdfTextElement textElement1 = new TaggedPdfTextElement(doc, "P", "text", ts);
-            TaggedPdfTextElement textElement2 = new TaggedPdfTextElement(doc, "P", "test1", ts);
-            TaggedPdfTextElement textElement3 = new TaggedPdfTextElement(doc, "P", "test2", ts);
-            TaggedPdfTextElement textElement4 = new TaggedPdfTextElement(doc, "P", "test3", ts);
-            TaggedPdfTextElement textElement5 = new TaggedPdfTextElement(doc, "P", "test4", ts);
-            TaggedPdfTextElement textElement6 = new TaggedPdfTextElement(doc, "P", "test5", ts);
-            TaggedPdfTextElement textElement7 = new TaggedPdfTextElement(doc, "P", "test6", ts);
-            TaggedPdfTextElement textElement8 = new TaggedPdfTextElement(doc, "P", "test7", ts);
-
+            TaggedPdfBlockLevelTextElement textElement1 = new TaggedPdfBlockLevelTextElement(doc, "P", "text", ts);
+            TaggedPdfBlockLevelTextElement textElement2 = new TaggedPdfBlockLevelTextElement(doc, "P", "test1", ts);
+            TaggedPdfBlockLevelTextElement textElement3 = new TaggedPdfBlockLevelTextElement(doc, "P", "test2", ts);
+            TaggedPdfBlockLevelTextElement textElement4 = new TaggedPdfBlockLevelTextElement(doc, "P", "test3", ts);
+            TaggedPdfBlockLevelTextElement textElement5 = new TaggedPdfBlockLevelTextElement(doc, "P", "test4", ts);
+            TaggedPdfBlockLevelTextElement textElement6 = new TaggedPdfBlockLevelTextElement(doc, "P", "test5", ts);
+            TaggedPdfBlockLevelTextElement textElement7 = new TaggedPdfBlockLevelTextElement(doc, "P", "test6", ts);
+            TaggedPdfBlockLevelTextElement textElement8 = new TaggedPdfBlockLevelTextElement(doc, "P", "test7", ts);
             // Add tagged text element to content
             page1.TaggedPdfContent.Add(textElement1);
             page1.TaggedPdfContent.Add(textElement2);
