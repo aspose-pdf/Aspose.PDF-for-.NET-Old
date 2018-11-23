@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using Aspose.Pdf;
+using Aspose.Pdf.Optimization;
 
 namespace Aspose.Pdf.Examples.CSharp.AsposePDF.WorkingDocuments
 {
@@ -15,15 +16,14 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.WorkingDocuments
             // Open document
             Document pdfDocument = new Document(dataDir + "OptimizeDocument.pdf");
 
+            OptimizationOptions optimizationOptions = new OptimizationOptions();
+            optimizationOptions.LinkDuplcateStreams = true;
+            optimizationOptions.RemoveUnusedObjects = true;
+            optimizationOptions.RemoveUnusedStreams = true;
+            optimizationOptions.ImageCompressionOptions.CompressImages = true;
+            optimizationOptions.ImageCompressionOptions.ImageQuality = 10;
             // Optimzie the file size by removing unused objects
-            pdfDocument.OptimizeResources(new Document.OptimizationOptions()
-            {
-                LinkDuplcateStreams = true,
-                RemoveUnusedObjects = true,
-                RemoveUnusedStreams = true,
-                CompressImages = true,
-                ImageQuality = 10
-            });            
+            pdfDocument.OptimizeResources(optimizationOptions);
             dataDir = dataDir + "OptimizeFileSize_out.pdf";
             // Save output document
             pdfDocument.Save(dataDir);
