@@ -212,6 +212,18 @@ namespace Aspose.Pdf.Examples.CSharp
             // GetAllFonts.Run();
             // CreatePDFwithTaggedText.Run();
             // CreatePDFwithTaggedImage.Run();
+            // TaggedPDFContent.Run();
+            // CreateStructureElements.Run();
+            // RootStructure.Run();
+            // CreateStructureElementsTree.Run();
+            // StructureElementsProperties.Run();
+            // AccessChildrenElements.Run();
+            // TextStructureElements.Run();
+            // TextBlockStructureElements.Run();
+            // InlineStructureElements.Run();
+            // CustomTagName.Run();
+            // StyleTextStructure.Run();
+            // IllustrationStructureElements.Run();
 
             //// Bookmarks
             //// =====================================================   
