@@ -135,6 +135,7 @@ namespace Aspose.Pdf.Examples.CSharp
             // IdentifyImages.Run();
             // ConvertPageRegionToDOM.Run();
             // ConvertImageStreamtoPDF.Run();
+            // SetImageSize.Run();
 
             //// Stamps-Watermarks
             //// =====================================================   
