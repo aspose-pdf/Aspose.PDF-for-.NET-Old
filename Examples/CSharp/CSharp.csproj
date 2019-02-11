@@ -360,6 +360,7 @@
     <Compile Include="AsposePDF\Graphs\CreateFilledRectangle.cs" />
     <Compile Include="AsposePDF\Headings\ApplyNumberStyle.cs" />
     <Compile Include="AsposePDF\Images\AddImage.cs" />
+    <Compile Include="AsposePDF\Images\SetImageSize.cs" />
     <Compile Include="AsposePDF\Images\BradleyAlgorithm.cs" />
     <Compile Include="AsposePDF\Images\ConvertImageStreamtoPDF.cs" />
     <Compile Include="AsposePDF\Images\ConvertToBMP.cs" />

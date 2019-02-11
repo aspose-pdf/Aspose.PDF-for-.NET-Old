@@ -11,7 +11,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Working_Document
     {
         public static void Run()
         {
-            // ExStart:TaggedPDFContent
+            // ExStart:TextStructureElements
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
