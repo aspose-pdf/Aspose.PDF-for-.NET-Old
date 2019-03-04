@@ -136,6 +136,9 @@ namespace Aspose.Pdf.Examples.CSharp
             // ConvertPageRegionToDOM.Run();
             // ConvertImageStreamtoPDF.Run();
             // SetImageSize.Run();
+            // ShrinkImages.Run();
+            // FastShrinkImages.Run();
+            // ResizeImages.Run();
 
             //// Stamps-Watermarks
             //// =====================================================   
@@ -225,6 +228,13 @@ namespace Aspose.Pdf.Examples.CSharp
             // CustomTagName.Run();
             // StyleTextStructure.Run();
             // IllustrationStructureElements.Run();
+            // ShrinkDocuments.Run();
+            // RemoveUnusedObjects.Run();
+            // RemoveUnusedStreams.Run();
+            // LinkDuplicateStreams.Run();
+            // AllowResusePageContent.Run();
+            // UnembedFonts.Run();
+            // FlattenAnnotation.Run();
 
             //// Bookmarks
             //// =====================================================   
@@ -279,6 +289,7 @@ namespace Aspose.Pdf.Examples.CSharp
             // HorizontallyAndVerticallyRadioButtons.Run();
             // GroupedCheckBoxes.Run();
             // SetRadioButtonCaption.Run();
+            // FlattenForms.Run();
 
             //// TechnicalArticles
             //// =====================================================            

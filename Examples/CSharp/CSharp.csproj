@@ -324,6 +324,7 @@
     <Compile Include="AsposePDF\DocumentConversion\XMLToPDFSetImagePath.cs" />
     <Compile Include="AsposePDF\DocumentConversion\XPSToPDF.cs" />
     <Compile Include="AsposePDF\DocumentConversion\GetSVGDimensions.cs" />
+    <Compile Include="AsposePDF\Forms\FlattenForms.cs" />
     <Compile Include="AsposePDF\Forms\GroupedCheckBoxes.cs" />
     <Compile Include="AsposePDF\Forms\HorizontallyAndVerticallyRadioButtons.cs" />
     <Compile Include="AsposePDF\Forms\CreateDoc.cs" />
@@ -360,6 +361,8 @@
     <Compile Include="AsposePDF\Graphs\CreateFilledRectangle.cs" />
     <Compile Include="AsposePDF\Headings\ApplyNumberStyle.cs" />
     <Compile Include="AsposePDF\Images\AddImage.cs" />
+    <Compile Include="AsposePDF\Images\FastShrinkImages.cs" />
+    <Compile Include="AsposePDF\Images\ResizeImages.cs" />
     <Compile Include="AsposePDF\Images\SetImageSize.cs" />
     <Compile Include="AsposePDF\Images\BradleyAlgorithm.cs" />
     <Compile Include="AsposePDF\Images\ConvertImageStreamtoPDF.cs" />
@@ -382,6 +385,7 @@
     <Compile Include="AsposePDF\Images\ImagePlacements.cs" />
     <Compile Include="AsposePDF\Images\ReplaceImage.cs" />
     <Compile Include="AsposePDF\Images\SearchAndGetImages.cs" />
+    <Compile Include="AsposePDF\Images\ShrinkImages.cs" />
     <Compile Include="AsposePDF\Links-Actions\CreateLocalHyperlink.cs" />
     <Compile Include="AsposePDF\Links-Actions\AddHyperlink.cs" />
     <Compile Include="AsposePDF\Links-Actions\CreateApplicationLink.cs" />
@@ -525,6 +529,7 @@
     <Compile Include="AsposePDF\Text\UseLatexScript.cs" />
     <Compile Include="AsposePDF\Text\UseLatexScript2.cs" />
     <Compile Include="AsposePDF\Working-Document\AccessChildrenElements.cs" />
+    <Compile Include="AsposePDF\Working-Document\AllowResusePageContent.cs" />
     <Compile Include="AsposePDF\Working-Document\ConvertFromRGBToGrayscale.cs" />
     <Compile Include="AsposePDF\Working-Document\CreateMultilayerPDFFirstApproach.cs" />
     <Compile Include="AsposePDF\Working-Document\CreateMultilayerPDFSecondApproach.cs" />
@@ -534,10 +539,14 @@
     <Compile Include="AsposePDF\Working-Document\CreateStructureElements.cs" />
     <Compile Include="AsposePDF\Working-Document\CreateStructureElementsTree.cs" />
     <Compile Include="AsposePDF\Working-Document\CustomTagName.cs" />
+    <Compile Include="AsposePDF\Working-Document\FlattenAnnotation.cs" />
     <Compile Include="AsposePDF\Working-Document\GetAllFonts.cs" />
     <Compile Include="AsposePDF\Working-Document\HidePageNumbersInTOC.cs" />
     <Compile Include="AsposePDF\Working-Document\IllustrationStructureElements.cs" />
     <Compile Include="AsposePDF\Working-Document\InlineStructureElements.cs" />
+    <Compile Include="AsposePDF\Working-Document\LinkDuplicateStreams.cs" />
+    <Compile Include="AsposePDF\Working-Document\RemoveUnusedObjects.cs" />
+    <Compile Include="AsposePDF\Working-Document\RemoveUnusedStreams.cs" />
     <Compile Include="AsposePDF\Working-Document\RootStructure.cs" />
     <Compile Include="AsposePDF\Working-Document\SetDefaultFont.cs" />
     <Compile Include="AsposePDF\Working-Document\SetExpiryDate.cs" />
@@ -546,6 +555,7 @@
     <Compile Include="AsposePDF\Working-Document\AddRemoveJavascriptToDoc.cs" />
     <Compile Include="AsposePDF\Working-Document\AddLayers.cs" />
     <Compile Include="AsposePDF\Working-Document\AddJavaScriptToPage.cs" />
+    <Compile Include="AsposePDF\Working-Document\ShrinkDocuments.cs" />
     <Compile Include="AsposePDF\Working-Document\StructureElementsProperties.cs" />
     <Compile Include="AsposePDF\Working-Document\StyleTextStructure.cs" />
     <Compile Include="AsposePDF\Working-Document\TaggedPDFContent.cs" />
@@ -564,6 +574,7 @@
     <Compile Include="AsposePDF\Working-Document\SetDocumentWindow.cs" />
     <Compile Include="AsposePDF\Working-Document\SetFileInfo.cs" />
     <Compile Include="AsposePDF\Working-Document\SetXMPMetadata.cs" />
+    <Compile Include="AsposePDF\Working-Document\UnembedFonts.cs" />
     <Compile Include="AsposePDF\Working-Document\ValidatePDFABStandard.cs" />
     <Compile Include="AsposePDF\Working-Document\ValidatePDFAStandard.cs" />
     <Compile Include="AsposePDF\Working-Document\ValidatePDFUAstandard.cs" />
