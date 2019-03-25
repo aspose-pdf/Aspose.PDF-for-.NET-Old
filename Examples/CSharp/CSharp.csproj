@@ -48,8 +48,8 @@
     <Reference Include="Aspose.Cells, Version=18.7.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
       <HintPath>..\packages\Aspose.Cells.18.7.0\lib\net40\Aspose.Cells.dll</HintPath>
     </Reference>
-    <Reference Include="Aspose.PDF, Version=19.1.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.PDF.19.1.0\lib\net4.0\Aspose.PDF.dll</HintPath>
+    <Reference Include="Aspose.PDF, Version=19.3.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.PDF.19.3.0\lib\net4.0\Aspose.PDF.dll</HintPath>
     </Reference>
     <Reference Include="Ionic.Zip.Reduced, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
       <HintPath>..\packages\DotNetZip.Reduced.1.9.1.8\lib\net20\Ionic.Zip.Reduced.dll</HintPath>
@@ -361,6 +361,7 @@
     <Compile Include="AsposePDF\Graphs\CreateFilledRectangle.cs" />
     <Compile Include="AsposePDF\Headings\ApplyNumberStyle.cs" />
     <Compile Include="AsposePDF\Images\AddImage.cs" />
+    <Compile Include="AsposePDF\Images\CreateThumbnailImages.cs" />
     <Compile Include="AsposePDF\Images\FastShrinkImages.cs" />
     <Compile Include="AsposePDF\Images\ResizeImages.cs" />
     <Compile Include="AsposePDF\Images\SetImageSize.cs" />
@@ -459,6 +460,7 @@
     <Compile Include="AsposePDF\Tables\AddRepeatingColumn.cs" />
     <Compile Include="AsposePDF\Tables\AddSVGObject.cs" />
     <Compile Include="AsposePDF\Tables\ExportExcelWorksheetDataToTable.cs" />
+    <Compile Include="AsposePDF\Tables\GetTableWidth.cs" />
     <Compile Include="AsposePDF\Tables\HTMLTagsInsideTable.cs" />
     <Compile Include="AsposePDF\Tables\ManipulateTable.cs" />
     <Compile Include="AsposePDF\Tables\DetermineTableBreak.cs" />
@@ -531,6 +533,8 @@
     <Compile Include="AsposePDF\Working-Document\AccessChildrenElements.cs" />
     <Compile Include="AsposePDF\Working-Document\AllowResusePageContent.cs" />
     <Compile Include="AsposePDF\Working-Document\ConvertFromRGBToGrayscale.cs" />
+    <Compile Include="AsposePDF\Working-Document\GetTags.cs" />
+    <Compile Include="AsposePDF\Working-Document\HelloWorldPDFUsingXmlAndXslt.cs" />
     <Compile Include="AsposePDF\Working-Document\CreateMultilayerPDFFirstApproach.cs" />
     <Compile Include="AsposePDF\Working-Document\CreateMultilayerPDFSecondApproach.cs" />
     <Compile Include="AsposePDF\Working-Document\CreatePDFA1WithAsposePdf.cs" />
@@ -583,7 +587,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

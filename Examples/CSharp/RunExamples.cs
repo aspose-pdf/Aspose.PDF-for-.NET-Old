@@ -235,6 +235,8 @@ namespace Aspose.Pdf.Examples.CSharp
             // AllowResusePageContent.Run();
             // UnembedFonts.Run();
             // FlattenAnnotation.Run();
+            // CreateThumbnailImages.Run();
+            // HelloWorldPDFUsingXmlAndXslt.Run();
 
             //// Bookmarks
             //// =====================================================   
@@ -353,6 +355,7 @@ namespace Aspose.Pdf.Examples.CSharp
             // RemoveTable.Run();
             // RemoveMultipleTables.Run();
             // ReplaceTable.Run();
+            // GetTableWidth.Run();
 
             //// Graphs
             //// =====================================================   

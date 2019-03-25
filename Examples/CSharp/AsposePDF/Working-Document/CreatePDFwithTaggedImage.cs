@@ -1,4 +1,6 @@
-﻿using Aspose.Pdf.TaggedPdf;
+﻿using Aspose.Pdf.LogicalStructure;
+using Aspose.Pdf.Tagged;
+using Aspose.Pdf.TaggedPdf;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,26 +15,23 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Working_Document
             // ExStart:CreatePDFwithTaggedImage
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+     
+            Document document = new Document();
+            ITaggedContent taggedContent = document.TaggedContent;
 
-            Document doc = new Document();
-            Aspose.Pdf.Page page1 = doc.Pages.Add();
-            // Create image
-            Image image = new Image();
-            // Assign image file 
-            image.File = dataDir + @"aspose-logo.jpg";
+            taggedContent.SetTitle("CreatePDFwithTaggedImage");
+            taggedContent.SetLanguage("en-US");
 
-            // Create BBox element
-            Rectangle BBox = new Rectangle(30, 70, 300, 720);
-            // Create tagged figure element
-            TaggedPdfFigureElement figureElement = new TaggedPdfFigureElement(doc, image, BBox);
-            Rectangle BBox1 = new Rectangle(550, 570, 300, 720);
-            TaggedPdfFigureElement figureElement1 = new TaggedPdfFigureElement(doc, image, BBox1);
-            // Add tagged figure element into content
-            page1.TaggedPdfContent.Add(figureElement);
-            page1.TaggedPdfContent.Add(figureElement1);
+            IllustrationElement figure1 = taggedContent.CreateFigureElement();
+            taggedContent.RootElement.AppendChild(figure1);
+            figure1.AlternativeText = "Aspose Logo";
+            figure1.Title = "Image 1";
+            figure1.SetTag("Fig");
+            // Add image with resolution 300 DPI (by default)
+            figure1.SetImage(dataDir + @"aspose-logo.jpg");
 
             // Save PDF Document
-            doc.Save(dataDir + "PDFwithTaggedImage.pdf");
+            document.Save(dataDir + "PDFwithTaggedImage.pdf");
             // ExEnd:CreatePDFwithTaggedImage
         }
     }
