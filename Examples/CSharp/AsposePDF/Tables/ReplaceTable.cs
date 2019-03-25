@@ -15,7 +15,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Tables
             string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
             // Load existing PDF document
-            Document pdfDocument = new Document(dataDir + @"Table_input2.pdf");
+            Document pdfDocument = new Document(dataDir + @"Table_input.pdf");
 
             // Create TableAbsorber object to find tables
             TableAbsorber absorber = new TableAbsorber();
