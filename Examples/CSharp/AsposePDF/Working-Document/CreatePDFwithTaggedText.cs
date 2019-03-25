@@ -1,4 +1,5 @@
-﻿using Aspose.Pdf.TaggedPdf;
+﻿using Aspose.Pdf.LogicalStructure;
+using Aspose.Pdf.Tagged;
 using Aspose.Pdf.Text;
 using System;
 using System.Collections.Generic;
@@ -15,36 +16,36 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Working_Document
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-            Document doc = new Document();
-            Aspose.Pdf.Page page1 = doc.Pages.Add();
-            Aspose.Pdf.Page page2 = doc.Pages.Add();
-            Aspose.Pdf.Page page3 = doc.Pages.Add();
+            // Create Pdf Document
+            Document document = new Document();
 
-            // Create TextState and configure it
-            Aspose.Pdf.Text.TextState ts = new Aspose.Pdf.Text.TextState();
-            ts.Font = FontRepository.FindFont("Arial");
+            // Get Content for work with TaggedPdf
+            ITaggedContent taggedContent = document.TaggedContent;
 
-            // Creating tagged text element i.e. Supported tags P, H,H1-H6
-            TaggedPdfBlockLevelTextElement textElement1 = new TaggedPdfBlockLevelTextElement(doc, "P", "text", ts);
-            TaggedPdfBlockLevelTextElement textElement2 = new TaggedPdfBlockLevelTextElement(doc, "P", "test1", ts);
-            TaggedPdfBlockLevelTextElement textElement3 = new TaggedPdfBlockLevelTextElement(doc, "P", "test2", ts);
-            TaggedPdfBlockLevelTextElement textElement4 = new TaggedPdfBlockLevelTextElement(doc, "P", "test3", ts);
-            TaggedPdfBlockLevelTextElement textElement5 = new TaggedPdfBlockLevelTextElement(doc, "P", "test4", ts);
-            TaggedPdfBlockLevelTextElement textElement6 = new TaggedPdfBlockLevelTextElement(doc, "P", "test5", ts);
-            TaggedPdfBlockLevelTextElement textElement7 = new TaggedPdfBlockLevelTextElement(doc, "P", "test6", ts);
-            TaggedPdfBlockLevelTextElement textElement8 = new TaggedPdfBlockLevelTextElement(doc, "P", "test7", ts);
-            // Add tagged text element to content
-            page1.TaggedPdfContent.Add(textElement1);
-            page1.TaggedPdfContent.Add(textElement2);
-            page1.TaggedPdfContent.Add(textElement3);
-            page2.TaggedPdfContent.Add(textElement4);
-            page2.TaggedPdfContent.Add(textElement5);
-            page3.TaggedPdfContent.Add(textElement6);
-            page3.TaggedPdfContent.Add(textElement7);
-            page3.TaggedPdfContent.Add(textElement8);
+            // Set Title and Language for Documnet
+            taggedContent.SetTitle("Tagged Pdf Document");
+            taggedContent.SetLanguage("en-US");
+
+            // Create Text Block-Level Structure Elements
+            HeaderElement headerElement = taggedContent.CreateHeaderElement();
+            headerElement.ActualText = "Heading 1";
+            ParagraphElement paragraphElement1 = taggedContent.CreateParagraphElement();
+            paragraphElement1.ActualText = "test1";
+            ParagraphElement paragraphElement2 = taggedContent.CreateParagraphElement();
+            paragraphElement2.ActualText = "test 2";
+            ParagraphElement paragraphElement3 = taggedContent.CreateParagraphElement();
+            paragraphElement3.ActualText = "test 3";
+            ParagraphElement paragraphElement4 = taggedContent.CreateParagraphElement();
+            paragraphElement4.ActualText = "test 4";
+            ParagraphElement paragraphElement5 = taggedContent.CreateParagraphElement();
+            paragraphElement5.ActualText = "test 5";
+            ParagraphElement paragraphElement6 = taggedContent.CreateParagraphElement();
+            paragraphElement6.ActualText = "test 6";
+            ParagraphElement paragraphElement7 = taggedContent.CreateParagraphElement();
+            paragraphElement7.ActualText = "test 7";
 
             // Save PDF Document
-            doc.Save( dataDir + "PDFwithTaggedText.pdf");
+            document.Save( dataDir + "PDFwithTaggedText.pdf");
             // ExEnd:CreatePDFwithTaggedText
         }
     }

@@ -33,16 +33,16 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.DocumentConversion.PDFToHTMLForma
         {
             switch (eventInfo.EventType)
             {
-                case HtmlSaveOptions.ProgressEventType.TotalProgress:
+                case ProgressEventType.TotalProgress:
                     Console.WriteLine(String.Format("{0}  - Conversion progress : {1}% .", DateTime.Now.TimeOfDay, eventInfo.Value.ToString()));
                     break;
-                case HtmlSaveOptions.ProgressEventType.SourcePageAnalized:
+                case ProgressEventType.SourcePageAnalized:
                     Console.WriteLine(String.Format("{0}  - Source page {1} of {2} analyzed.", DateTime.Now.TimeOfDay, eventInfo.Value.ToString(), eventInfo.MaxValue.ToString()));
                     break;
-                case HtmlSaveOptions.ProgressEventType.ResultPageCreated:
+                case ProgressEventType.ResultPageCreated:
                     Console.WriteLine(String.Format("{0}  - Result page's {1} of {2} layout created.", DateTime.Now.TimeOfDay, eventInfo.Value.ToString(), eventInfo.MaxValue.ToString()));
                     break;
-                case HtmlSaveOptions.ProgressEventType.ResultPageSaved:
+                case ProgressEventType.ResultPageSaved:
                     Console.WriteLine(String.Format("{0}  - Result page {1} of {2} exported.", DateTime.Now.TimeOfDay, eventInfo.Value.ToString(), eventInfo.MaxValue.ToString()));
                     break;
                 default:
