@@ -206,6 +206,7 @@ namespace Aspose.Pdf.Examples.CSharp
             // AddLayers.Run();
             // Aspose.Pdf.Examples.CSharp.AsposePDF.WorkingDocuments.EmbedFont.Run();
             // EmbedFontWhileDocCreation.Run();
+            // EmbedFontsUsingSubsetStrategy.Run();
             // ConvertFromRGBToGrayscale.Run();
             // SetExpiryDate.Run();
             // CreateMultilayerPDFFirstApproach.Run();

@@ -12,7 +12,7 @@
             //Bind XML and XSLT files to the document
             try
             {
-                pdf.BindXml(dataDir + "\\DemoXml.xml", dataDir + "\\DemoXslt.xslt");
+                pdf.BindXml(dataDir + "\\HelloWorld.xml", dataDir + "\\HelloWorld.xslt");
             }
             catch (System.Exception)
             {
@@ -21,8 +21,8 @@
             }
             
             //Save the document
-            pdf.Save(dataDir + "HelloWorldUsingXmlAndXslt.pdf");
+             pdf.Save(dataDir + "HelloWorldUsingXmlAndXslt.pdf");
             // ExEnd:HelloWorldPDFUsingXmlAndXslt
-        }
+         }
     }
 }
