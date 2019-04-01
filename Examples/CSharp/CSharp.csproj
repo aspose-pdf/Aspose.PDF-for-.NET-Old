@@ -533,7 +533,7 @@
     <Compile Include="AsposePDF\Working-Document\AccessChildrenElements.cs" />
     <Compile Include="AsposePDF\Working-Document\AllowResusePageContent.cs" />
     <Compile Include="AsposePDF\Working-Document\ConvertFromRGBToGrayscale.cs" />
-    <Compile Include="AsposePDF\Working-Document\GetTags.cs" />
+    <Compile Include="AsposePDF\Working-Document\EmbedFontsUsingSubsetStrategy.cs" />
     <Compile Include="AsposePDF\Working-Document\HelloWorldPDFUsingXmlAndXslt.cs" />
     <Compile Include="AsposePDF\Working-Document\CreateMultilayerPDFFirstApproach.cs" />
     <Compile Include="AsposePDF\Working-Document\CreateMultilayerPDFSecondApproach.cs" />
