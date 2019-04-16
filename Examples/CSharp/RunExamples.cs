@@ -45,6 +45,7 @@ using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.MakeNUp;
 using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.SplitPages;
 using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.ManipulatePageProperties;
 using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.TechnicalArticles;
+using Aspose.Pdf.Examples.CSharp.AsposePDF.Working_with_TaggedPDFs;
 
 namespace Aspose.Pdf.Examples.CSharp
 {
@@ -215,6 +216,18 @@ namespace Aspose.Pdf.Examples.CSharp
             // HidePageNumbersInTOC.Run();
             // SetDefaultFont.Run();
             // GetAllFonts.Run();
+            // ShrinkDocuments.Run();
+            // RemoveUnusedObjects.Run();
+            // RemoveUnusedStreams.Run();
+            // LinkDuplicateStreams.Run();
+            // AllowResusePageContent.Run();
+            // UnembedFonts.Run();
+            // FlattenAnnotation.Run();
+            // CreateThumbnailImages.Run();
+            // HelloWorldPDFUsingXmlAndXslt.Run();
+
+            //// Working-with-Tagged PDFs
+            //// ===================================================== 
             // CreatePDFwithTaggedText.Run();
             // CreatePDFwithTaggedImage.Run();
             // TaggedPDFContent.Run();
@@ -229,15 +242,9 @@ namespace Aspose.Pdf.Examples.CSharp
             // CustomTagName.Run();
             // StyleTextStructure.Run();
             // IllustrationStructureElements.Run();
-            // ShrinkDocuments.Run();
-            // RemoveUnusedObjects.Run();
-            // RemoveUnusedStreams.Run();
-            // LinkDuplicateStreams.Run();
-            // AllowResusePageContent.Run();
-            // UnembedFonts.Run();
-            // FlattenAnnotation.Run();
-            // CreateThumbnailImages.Run();
-            // HelloWorldPDFUsingXmlAndXslt.Run();
+            // LinkStructureElements.Run();
+            // AddStructureElementIntoElement.Run();
+            // TagImageInExistingPDF.Run();
 
             //// Bookmarks
             //// =====================================================   
