@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Working_Document
+namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Working_with_TaggedPDFs
 {
     public class InlineStructureElements
     {

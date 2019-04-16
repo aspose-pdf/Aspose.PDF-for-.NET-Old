@@ -1,12 +1,11 @@
 ﻿using Aspose.Pdf.LogicalStructure;
 using Aspose.Pdf.Tagged;
-using Aspose.Pdf.TaggedPdf;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Working_Document
+namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Working_with_TaggedPDFs
 {
     public class CreatePDFwithTaggedImage
     {

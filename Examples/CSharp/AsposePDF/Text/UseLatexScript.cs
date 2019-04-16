@@ -9,7 +9,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
     {
         public static void Run()
         {
-            // ExStart:WithoutPreambleanddocument
+            // ExStart:UseLatexScript
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
             // Create a new Document Object
@@ -31,7 +31,7 @@ namespace Aspose.Pdf.Examples.CSharp.AsposePDF.Text
             page.Paragraphs.Add(table);
             // Save the document
             doc.Save(dataDir + "LatextScriptInPdf_out.pdf");
-            // ExEnd:WithoutPreambleanddocument
+            // ExEnd:UseLatexScript
         }
     }
 }
