@@ -57,6 +57,7 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
@@ -188,6 +189,7 @@
     <Compile Include="AsposePdfFacades\Security-Signatures\RemoveRights.cs" />
     <Compile Include="AsposePdfFacades\Security-Signatures\ExtractImages.cs" />
     <Compile Include="AsposePdfFacades\Security-Signatures\ExtractSignatureInfo.cs" />
+    <Compile Include="AsposePDF\Security-Signatures\SignWithSmartCardUsingPdfFileSignature.cs" />
     <Compile Include="AsposePdfFacades\Security-Signatures\VerifyValidSignature.cs" />
     <Compile Include="AsposePdfFacades\Security-Signatures\VerifySignature.cs" />
     <Compile Include="AsposePdfFacades\Security-Signatures\RemoveSignature.cs" />
@@ -439,6 +441,7 @@
     <Compile Include="AsposePDF\Security-Signatures\Encrypt.cs" />
     <Compile Include="AsposePDF\Security-Signatures\ExtractingImage.cs" />
     <Compile Include="AsposePDF\Security-Signatures\ExtractSignatureInfo.cs" />
+    <Compile Include="AsposePDF\Security-Signatures\SignWithSmartCardUsingSignatureField.cs" />
     <Compile Include="AsposePDF\Stamps-Watermarks\AddingDifferentHeaders.cs" />
     <Compile Include="AsposePDF\Stamps-Watermarks\AddDateTimeStamp.cs" />
     <Compile Include="AsposePDF\Stamps-Watermarks\CountingArtifacts.cs" />
