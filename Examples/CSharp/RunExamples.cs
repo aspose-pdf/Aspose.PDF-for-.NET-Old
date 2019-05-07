@@ -46,6 +46,7 @@ using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.SplitPages;
 using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.Pages.ManipulatePageProperties;
 using Aspose.Pdf.Examples.CSharp.AsposePDFFacades.TechnicalArticles;
 using Aspose.Pdf.Examples.CSharp.AsposePDF.Working_with_TaggedPDFs;
+using Aspose.Pdf.Examples.CSharp.AsposePdfFacades.Security_Signatures;
 
 namespace Aspose.Pdf.Examples.CSharp
 {
@@ -87,6 +88,9 @@ namespace Aspose.Pdf.Examples.CSharp
             // HighlightCharacterInPDF.Run();
             // AddHTMLUsingDOM.Run();
             // AddHTMLUsingDOM.HTMLfragmentRectangle();
+            // AddHTMLOrderedListIntoDocuments.Run();
+            // SetHTMLStringFormatting.Run();
+            // AddHTMLUsingDOMAndOverwrite.Run();
             // RearrangeContentsUsingTextReplacement.Run();
             // FootAndEndNotes.Run();
             // SearchTextAndAddHyperlink.Run();
@@ -411,8 +415,6 @@ namespace Aspose.Pdf.Examples.CSharp
             // XMLToPDFSetImagePath.Run();
             // PCLToPDF.Run();
             // PCLToPDF.PCLstream();
-
-
             // Stop before exiting
             Console.WriteLine("\n\nProgram Finished. Press any key to exit....");
             Console.ReadKey();

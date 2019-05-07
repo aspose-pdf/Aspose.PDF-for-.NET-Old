@@ -185,10 +185,12 @@
     <Compile Include="AsposePdfFacades\Printing\PrintToDefaultPrinter.cs" />
     <Compile Include="AsposePdfFacades\Printing\PrintPageRange.cs" />
     <Compile Include="AsposePdfFacades\Security-Signatures\ChangeFilePassword.cs" />
+    <Compile Include="AsposePdfFacades\Security-Signatures\ChangeLanguageInDigitalSignText.cs" />
     <Compile Include="AsposePdfFacades\Security-Signatures\DecryptFile.cs" />
     <Compile Include="AsposePdfFacades\Security-Signatures\RemoveRights.cs" />
     <Compile Include="AsposePdfFacades\Security-Signatures\ExtractImages.cs" />
     <Compile Include="AsposePdfFacades\Security-Signatures\ExtractSignatureInfo.cs" />
+    <Compile Include="AsposePdfFacades\Security-Signatures\SuppressLocationAndReason.cs" />
     <Compile Include="AsposePdfFacades\Security-Signatures\VerifyValidSignature.cs" />
     <Compile Include="AsposePdfFacades\Security-Signatures\VerifySignature.cs" />
     <Compile Include="AsposePdfFacades\Security-Signatures\RemoveSignature.cs" />
@@ -482,6 +484,8 @@
     <Compile Include="AsposePDF\TechnicalArticles\RemoveFilesFromPortfolio.cs" />
     <Compile Include="AsposePDF\TechnicalArticles\ExtractFilesFromPortfolio.cs" />
     <Compile Include="AsposePDF\TechnicalArticles\CreatePDFPortfolio.cs" />
+    <Compile Include="AsposePDF\Text\AddHTMLOrderedListIntoDocuments.cs" />
+    <Compile Include="AsposePDF\Text\AddHTMLUsingDOMAndOverwrite.cs" />
     <Compile Include="AsposePDF\Text\AddSubsequentLinesIndent.cs" />
     <Compile Include="AsposePDF\Text\AddTextBorder.cs" />
     <Compile Include="AsposePDF\Text\AddTextWithShadingColors.cs" />
@@ -510,6 +514,7 @@
     <Compile Include="AsposePDF\Text\ExtractColumnsText.cs" />
     <Compile Include="AsposePDF\Text\CustomTabStops.cs" />
     <Compile Include="AsposePDF\Text\SearchTextAndDrawRectangle.cs" />
+    <Compile Include="AsposePDF\Text\SetHTMLStringFormatting.cs" />
     <Compile Include="AsposePDF\Text\SpecifyCharacterSpacing.cs" />
     <Compile Include="AsposePDF\Text\FootAndEndNotes.cs" />
     <Compile Include="AsposePDF\Text\HighlightCharacterInPDF.cs" />
