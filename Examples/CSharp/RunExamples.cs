@@ -335,8 +335,8 @@ namespace Aspose.Pdf.Examples.CSharp
             // DetermineCorrectPassword.Run();
             // ExtractingImage.Run();
             // SetPrivileges.Run();
-            SignWithSmartCardUsingSignatureField.Run();
-            SignWithSmartCardUsingPdfFileSignature.Run();
+            // SignWithSmartCardUsingSignatureField.Run();
+            // SignWithSmartCardUsingPdfFileSignature.Run();
 
             //// Operators
             //// =====================================================   
