@@ -250,6 +250,7 @@
     <Compile Include="AsposePdfFacades\Working-Document\GetXMPMetadata.cs" />
     <Compile Include="AsposePdfFacades\Working-Document\SetXMPMetadata.cs" />
     <Compile Include="AsposePDF\Annotations\ExtractHighlightedText.cs" />
+    <Compile Include="AsposePDF\Annotations\GetResourceOfAnnotation.cs" />
     <Compile Include="AsposePDF\Annotations\lnkAnnotationLineWidth.cs" />
     <Compile Include="AsposePDF\Annotations\AddlnkAnnotation.cs" />
     <Compile Include="AsposePDF\Annotations\InvisibleAnnotation.cs" />
@@ -547,6 +548,7 @@
     <Compile Include="AsposePDF\Working-Document\CreateMultilayerPDFSecondApproach.cs" />
     <Compile Include="AsposePDF\Working-Document\CreatePDFA1WithAsposePdf.cs" />
     <Compile Include="AsposePDF\Working-with-TaggedPDFs\AddStructureElementIntoElement.cs" />
+    <Compile Include="AsposePDF\Working-with-TaggedPDFs\CreateNoteStructureElement.cs" />
     <Compile Include="AsposePDF\Working-with-TaggedPDFs\CreatePDFwithTaggedImage.cs" />
     <Compile Include="AsposePDF\Working-with-TaggedPDFs\CreatePDFwithTaggedText.cs" />
     <Compile Include="AsposePDF\Working-with-TaggedPDFs\CreateStructureElements.cs" />
