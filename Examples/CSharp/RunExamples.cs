@@ -249,6 +249,7 @@ namespace Aspose.Pdf.Examples.CSharp
             // LinkStructureElements.Run();
             // AddStructureElementIntoElement.Run();
             // TagImageInExistingPDF.Run();
+            // CreateNoteStructureElement.Run();
 
             //// Bookmarks
             //// =====================================================   
@@ -277,6 +278,7 @@ namespace Aspose.Pdf.Examples.CSharp
             // SetFreeTextAnnotationFormatting.Run();
             // StrikeOutWords.Run();
             // ExtractHighlightedText.Run();
+            // GetResourceOfAnnotation.Run();
 
             //// Forms
             //// =====================================================   
