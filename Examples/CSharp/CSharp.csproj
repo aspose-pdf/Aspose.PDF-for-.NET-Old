@@ -187,6 +187,7 @@
     <Compile Include="AsposePdfFacades\Security-Signatures\ChangeFilePassword.cs" />
     <Compile Include="AsposePdfFacades\Security-Signatures\ChangeLanguageInDigitalSignText.cs" />
     <Compile Include="AsposePdfFacades\Security-Signatures\DecryptFile.cs" />
+    <Compile Include="AsposePdfFacades\Security-Signatures\HideDigitallySignedByCaption.cs" />
     <Compile Include="AsposePdfFacades\Security-Signatures\RemoveRights.cs" />
     <Compile Include="AsposePdfFacades\Security-Signatures\ExtractImages.cs" />
     <Compile Include="AsposePdfFacades\Security-Signatures\ExtractSignatureInfo.cs" />
